@@ -1,0 +1,19 @@
+Homework 2 
+Operating Systems • Inha University in Tashkent • Fall 2026
+Student ID
+U0000000
+Section
+00X   (001, 002, 003 or 004)
+Declaration. The code, the screenshots and the handwriting in this report are my own work. Every screenshot was taken on my own machine. I can explain and modify any part of this submission on request.
+Signature (type your full name)   _______________________________
+
+Part 1 — Try it on your machine
+1.1 Read until 0
+Screenshot: ./pipe_eof
+What read returning 0 means:  The two closes that made it possible:
+1.2 One forgotten close
+Screenshot: the hang, after commenting out the parent's close(p[1])
+Which process sleeps, in which call, waiting for whose write end:
+1.3 The line that prints twice
+Screenshot: ./twice as given, and again with setvbuf
+Where "hello " was when fork ran:  What setvbuf(stdout, NULL, _IONBF, 0) changed:

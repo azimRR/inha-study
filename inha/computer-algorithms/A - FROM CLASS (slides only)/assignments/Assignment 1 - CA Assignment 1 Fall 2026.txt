@@ -1,0 +1,59 @@
+INHA UNIVERSITY IN TASHKENT
+School of Computers and Information Engineering
+Computer Algorithms (CIE3090) 
+Assignment #1- Fall semester 2026
+Submission Date:  29 /09/ 2026 (23:30 Hr) Tuesday
+ID 	_______________	Name    _________________________________  Gp_____
+NOTE:
+1. You are required to take print out of this page and solve (handwritten) the questions on this sheet only. [Submissions not conforming to the given format will not be evaluated]
+2. Copying of solution is strictly prohibited. In case it is found, then zero marks will be awarded.
+3. Submit scan copy on eclass. Hardcopy submission not required. 
+Questions
+Q1. For following functions ((Show the steps to evaluate value of c and no)
+Find the O- notation. 					 Find the  big omega- notation
+	•	f(n) = 8n3 +6n + 8
+
+
+
+
+
+
+	•	f(n) = n2 + 2n
+
+
+
+
+
+Q2 Comment on the following (check bounds are correct or incorrect)
+Given  	f(n) = 10n3 + 2n2+3   and  	g(n)= n3
+	•	Is f(n) = o g(n) ?	[o is small oh]
+	•	Is f(n) = Ω g(n)    ? [Ω is big omega]
+
+
+Q3. Solving Recurrence Equation using Masters Theorem
+3a. T(n)= 4 T (n/2) + n2      
+[a=  ___, b= ____, k=____, p=__]
+Case = ________
+
+
+Ans  = ______________
+3b. T(n)= 2 T (n/2) + n log n
+[a=  ___, b= ____, k=____, p=__ ]
+Case = ________
+
+
+Ans  = ______________
+
+Q4. Solve recursive Equations using recurrence Tree
+	•	T(n) 	= 2 T(n/2) + n     	: n>1
+   	= 1			: n=1
+	•	T(n) 	= 2 T(n-1) + 1     	: n>1
+   	= 1			: n=1
+
+
+
+
+
+
+
+

@@ -1,0 +1,36 @@
+Homework 1 
+Operating Systems • Inha University in Tashkent • Fall 2026
+Assigned
+18.09.2026
+Instructor
+Yusupov Jalolliddin
+Due
+30.09.2026, 23:55 (UTC+5)
+Weight
+100 points (2.5%) 
+Submit 
+One ZIP with source code
+Work
+Individual
+Student ID
+U0000000
+Section
+00X   (001, 002, 003 or 004)
+Declaration. The code, the screenshots and the handwriting in this report are my own work. Every screenshot was taken on my own machine. I can explain and modify any part of this submission on request.
+
+Part 1 — Try it on your machine
+1.1 Signals arriving at a running program
+Screenshot: both terminals, the program running and the signals being sent
+For each of the four cases, say whether the handler ran and whether the program survived.
+1. Ctrl-C — 2. kill -TERM — 3. kill -USR1 — 4. kill -9 —
+Why did case 4 behave differently? One sentence.
+Your answer
+
+1.2 Counting what fork() prints
+
+Part 2 — Process graphs, by hand
+Parts 2 and 5 must be handwritten on paper and photographed. Put your name and student ID at the top of every sheet. Typed graphs and typed Gantt charts score zero.
+2.1 Draw and count
+
+etc…
+
