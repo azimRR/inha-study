@@ -1,0 +1,92 @@
+[
+ {
+  "q": "Q1",
+  "focus": "Equilibrium: what it is and why markets move toward it (interaction principle 2). Q2 covers efficiency, equity and government.",
+  "variants": [
+   {
+    "q": "<p>One of the principles of interaction is \"Markets move toward equilibrium.\" Define equilibrium and explain this principle using the supermarket checkout example.</p>",
+    "a": "<p>An economic situation is in <b>equilibrium</b> when <b>no individual would be better off doing something different</b>.</p><p>Example: a supermarket has several checkout lines. If one line is much shorter, shoppers move to it. That line gets longer and the other lines get shorter. This continues until all lines are about the same length. Now no shopper can gain by switching, so everybody stays. This is equilibrium.</p><p>Nobody plans this. Each person only looks after himself, and the situation settles by itself. That is what \"markets move toward equilibrium\" means.</p>"
+   },
+   {
+    "q": "<p>At a bazaar, two stalls sell the same melons side by side. Stall A charges 20,000 so'm per melon and Stall B charges 12,000 so'm. Is this situation an equilibrium? Explain what will happen next and where it will stop.</p>",
+    "a": "<p><b>No, it is not an equilibrium.</b> Buyers at Stall A would be better off buying the same melon at Stall B, so some individuals would be better off doing something different.</p><p>What happens: buyers move to Stall B. B sells out quickly and can raise its price. A loses buyers and must cut its price. The two prices move toward each other.</p><p>It stops when the prices are about the same, so no buyer gains by switching stalls and no seller gains by changing price. At that point nobody would be better off doing something different: this is <b>equilibrium</b>. Markets move toward it by themselves, like shoppers choosing checkout lines.</p>"
+   },
+   {
+    "q": "<p>True or false? Give a reason for each.</p><ol><li>In equilibrium, everybody is completely happy with what they have.</li><li>A market needs a planner to tell people what to do in order to reach equilibrium.</li><li>When one checkout line is much shorter than the others, the supermarket is not in equilibrium.</li></ol>",
+    "a": "<ol><li><b>False.</b> Equilibrium does not mean everyone is happy. It means no individual would be better off <i>doing something different</i>. A shopper may still dislike waiting, but switching lines would not help him.</li><li><b>False.</b> Markets move toward equilibrium by themselves. Each person acts in his own interest (e.g. moves to a shorter line), and this pushes the situation to equilibrium without anyone planning it.</li><li><b>True.</b> Shoppers in the long lines would be better off moving to the short line, so someone would be better off doing something different. They will switch until all lines are about equal; only then is it equilibrium.</li></ol>"
+   }
+  ]
+ },
+ {
+  "q": "Q2",
+  "focus": "Efficiency vs equity, markets usually lead to efficiency, and the three cases where government intervention can improve welfare (interaction principles 3–5).",
+  "variants": [
+   {
+    "q": "<p>\"Resources should be used as efficiently as possible to achieve society's goals.\" Define efficiency and equity. Which concept is better defined, and why?</p>",
+    "a": "<p><b>Efficiency:</b> an economy is efficient if it <b>takes all opportunities to make some people better off without making other people worse off</b>. If a chance like this is wasted (e.g. an empty bus seat while an old man stands), the situation is not efficient.</p><p><b>Equity:</b> <b>everyone gets his or her fair share</b>.</p><p><b>Efficiency is better defined.</b> It has a clear test: is there still a chance to make someone better off without hurting anyone? Equity isn't as well-defined a concept as efficiency, because people disagree about what is \"fair\" (equal shares? more for hard workers? more for the poor?).</p><p>Society chooses its goals (equity is often one of them); efficiency means not wasting resources on the way to those goals.</p>"
+   },
+   {
+    "q": "<p>Explain the principle \"Markets usually lead to efficiency.\" Why does it say \"usually\"? When markets do not achieve efficiency, what can happen? Give the three cases with an example of each.</p>",
+    "a": "<p><b>Markets usually lead to efficiency</b> because of the <b>incentives</b> built into a market economy. Sellers want profit, so they make what people will pay for; buyers buy when a good is worth the price to them. So resources are usually put to good use and opportunities to make people better off are not wasted.</p><p>It says <b>\"usually\"</b> because markets do not always succeed. <b>When markets don't achieve efficiency, government intervention can improve society's welfare.</b> Three cases:</p><ol><li>Individual actions have <b>side effects</b> that the market does not take into account properly, e.g. a factory polluting the neighbours' air.</li><li><b>One party prevents mutually beneficial trades</b> to capture a greater share of resources for itself, e.g. a <b>monopoly</b> charging a high price.</li><li>Some goods, <b>by their very nature, are unsuited</b> for efficient management by markets, e.g. <b>drugs</b>.</li></ol><p>Note \"can\": government intervention may improve welfare, but it is not automatic.</p>"
+   },
+   {
+    "q": "<p>For each situation, say whether it is efficient or not. If the market fails, say which case of market failure it is and whether government could help.</p><ol><li>A town has only one internet provider. It charges a very high price, so many families who would happily pay a normal price have no internet.</li><li>A cement plant's dust makes nearby residents sick. The residents are not paid anything.</li><li>A classroom has 10 empty seats while students from another group stand at the back, and nobody needs those seats.</li></ol>",
+    "a": "<ol><li><b>Not efficient.</b> Families and the provider would both gain from trading at a normal price, but the trade does not happen. Case: <b>one party prevents mutually beneficial trades</b> to capture more for itself (<b>monopoly</b>). Government intervention can improve welfare.</li><li><b>Not efficient.</b> The plant's action has a <b>side effect</b> that the market does not take into account properly: the residents are not part of the deal and nobody pays them. Government intervention (e.g. a rule on dust) can improve welfare.</li><li><b>Not efficient.</b> Letting the standing students sit makes them better off and makes nobody worse off. This opportunity is wasted, so the situation is not efficient (efficiency = taking all chances to make some better off without making others worse off).</li></ol>"
+   }
+  ]
+ },
+ {
+  "q": "Q3",
+  "focus": "The questions economics tries to answer (jobs, production, distribution, consumption, rich vs poor countries) and the common principles behind them.",
+  "variants": [
+   {
+    "q": "<p>Economics is a scientific study of the economy. List the questions that economics tries to answer. What do all these questions have in common?</p>",
+    "a": "<p>Economics asks questions about:</p><ol><li><b>Jobs:</b> Who creates jobs? What kinds of jobs? How many jobs are created?</li><li><b>Production:</b> What to produce? How much? How to produce?</li><li><b>Distribution:</b> Who gets, and how much?</li><li><b>Consumption:</b> Consume what, and how much?</li><li><b>Rich and poor countries:</b> Why are some countries richer and other countries poor?</li></ol><p>All these questions are <b>based on a set of common principles</b>: the 12 economic principles (4 on individual choice, 5 on interaction, 3 on economy-wide interactions).</p>"
+   },
+   {
+    "q": "<p>Put each question into the correct group of economic questions and name the group.</p><ol><li>Should a textile company use hand sewing or machines?</li><li>Why is Switzerland richer than many African countries?</li><li>Should a student spend her stipend on books or on clothes?</li><li>How many new jobs will a new IT park in Tashkent create?</li><li>Who should receive the free medicine that a hospital has?</li><li>How many cars should a factory make this year?</li></ol>",
+    "a": "<ol><li><b>Production</b>: how to produce.</li><li><b>Rich vs poor countries</b>: why some countries are richer and others poor.</li><li><b>Consumption</b>: consume what.</li><li><b>Jobs</b>: how many jobs are created.</li><li><b>Distribution</b>: who gets.</li><li><b>Production</b>: how much to produce.</li></ol>"
+   },
+   {
+    "q": "<p>Take a new bakery in your city. Write the economic questions it faces in each of the groups that economics studies (jobs, production, distribution, consumption). Then explain what is meant by \"All these questions are based on a set of common principles.\"</p>",
+    "a": "<ul><li><b>Jobs:</b> Who creates the jobs (the bakery owner)? What kinds of jobs (bakers, cashiers)? How many workers to hire?</li><li><b>Production:</b> What to produce (bread or cakes)? How much (how many loaves a day)? How to produce (by hand in a tandir or with a machine)?</li><li><b>Distribution:</b> Who gets the bread, and how much each person gets?</li><li><b>Consumption:</b> Customers decide what to consume (bread or rice) and how much.</li></ul><p>At the level of the whole country, economics also asks why some countries are richer and others poor.</p><p><b>Common principles:</b> these are not separate topics. The same small set of ideas answers all of them. In this course they are the <b>12 economic principles</b>: 4 on individual choice (e.g. resources are scarce), 5 on interaction (e.g. there are gains from trade) and 3 on economy-wide interactions (4 + 5 + 3 = 12).</p>"
+   }
+  ]
+ },
+ {
+  "q": "Q4",
+  "focus": "The five principles that underlie the interaction of individual choices: list, explain, apply.",
+  "variants": [
+   {
+    "q": "<p>Write the five principles that underlie the interaction of individual choices, in order, and explain each one briefly.</p>",
+    "a": "<ol><li><b>There are gains from trade.</b> By trading, people get more of what they want than by being self-sufficient, because of <b>specialization</b>: each person does the task he or she is good at.</li><li><b>Markets move toward equilibrium.</b> Equilibrium = no individual would be better off doing something different (e.g. supermarket checkout lines become about equal).</li><li><b>Resources should be used as efficiently as possible to achieve society's goals.</b> Efficient = all opportunities to make some people better off without making others worse off are taken. (Equity = fair share; less well-defined.)</li><li><b>Markets usually lead to efficiency.</b> Market incentives usually put resources to good use, so opportunities are not wasted.</li><li><b>When markets don't achieve efficiency, government intervention can improve society's welfare.</b> Cases: side effects (pollution), monopoly, goods unsuited for markets (drugs).</li></ol>"
+   },
+   {
+    "q": "<p>Which principle of interaction does each story show? Explain briefly.</p><ol><li>A doctor treats patients all day and pays a mechanic to fix his car, instead of learning to fix it himself.</li><li>On a highway, drivers move from a slow lane to a faster lane until all lanes move at about the same speed.</li><li>A tobacco company sells cigarettes, and the smoke harms non-smokers; the government bans smoking in cafés.</li><li>Without any order from the government, farmers grow more tomatoes when people are willing to pay more for them.</li></ol>",
+    "a": "<ol><li><b>Principle 1: there are gains from trade.</b> The doctor specializes in what he is good at and trades for the mechanic's service, so both get more than if each did everything himself.</li><li><b>Principle 2: markets move toward equilibrium.</b> Drivers switch until no one is better off changing lanes.</li><li><b>Principle 5: when markets don't achieve efficiency, government intervention can improve society's welfare.</b> Smoke is a side effect the market does not take into account.</li><li><b>Principle 4: markets usually lead to efficiency.</b> The profit incentive makes farmers put resources where people value them most, without anyone ordering it.</li></ol>"
+   },
+   {
+    "q": "<p>True or false? Give a reason for each, using the principles of interaction.</p><ol><li>Markets always lead to efficiency.</li><li>Government intervention always improves society's welfare.</li><li>Trade helps one side only: what one person gains, the other loses.</li><li>Efficiency and equity mean the same thing.</li></ol>",
+    "a": "<ol><li><b>False.</b> The principle says markets <b>usually</b> lead to efficiency. They fail when there are side effects, when one party blocks good trades (monopoly), or with goods unsuited for markets.</li><li><b>False.</b> The principle says that when markets don't achieve efficiency, government intervention <b>can</b> improve welfare. It is possible, not guaranteed, and mainly in cases of market failure.</li><li><b>False.</b> There are gains from trade: thanks to specialization, total output rises, so both sides can get more of what they want than by being self-sufficient.</li><li><b>False.</b> Efficiency = taking all opportunities to make some people better off without making others worse off. Equity = everyone gets a fair share. Equity is less well-defined, because people disagree about what is fair.</li></ol>"
+   }
+  ]
+ },
+ {
+  "q": "Q8",
+  "focus": "Opportunity cost: \"no such thing as a free lunch\", choosing means giving up, the opportunity cost of time, and the definition.",
+  "variants": [
+   {
+    "q": "<p>Define opportunity cost. Explain the saying \"There is no such thing as a free lunch\" and who it is associated with.</p>",
+    "a": "<p><b>Opportunity cost</b> is the value of the <b>next-best alternative</b> that we give up when we make a choice. For any decision we should ask: <i>How much do I value this? What am I giving up now to have it?</i> It is often expressed in market prices.</p><p>\"There is no such thing as a free lunch\" is associated with <b>Milton Friedman</b>. It describes opportunity cost: <b>every choice has at least one alternative that we passed up</b>. Choosing one thing means giving up an alternative.</p><p>Example: a friend offers a free lunch. I pay no money, but the 2 hours could have been used to study or work. So the lunch is not really free.</p>"
+   },
+   {
+    "q": "<p>Sardor has a free Sunday. He can (a) go to a free football match, (b) tutor school students for 4 hours at 60,000 so'm per hour, or (c) watch TV at home. If he does not go to the match, he would tutor. What is the opportunity cost of going to the match? Is the match free? (Also: Sardor's friend says the cost is the tutoring money <i>plus</i> the value of watching TV. Is he right?)</p>",
+    "a": "<p><b>Step 1.</b> Next-best alternative = tutoring (that is what he would do instead).</p><p><b>Step 2.</b> Value = 4 × 60,000 = <b>240,000 so'm</b>.</p><p><b>Step 3.</b> Opportunity cost of the match = <b>240,000 so'm</b> of lost earnings.</p><p><b>Step 4.</b> The ticket costs no money, but the match is <b>not free</b>: every activity has the opportunity cost of time. \"There is no such thing as a free lunch.\"</p><p><b>Friend:</b> wrong. Opportunity cost counts only the <b>next-best</b> alternative, not all the options given up. Sardor can use the day only once, so watching TV is not added.</p>"
+   },
+   {
+    "q": "<p>True or false? Give a reason for each.</p><ol><li>Hiking in the mountains costs no money, so it has no opportunity cost.</li><li>An unemployed person searching for a new job pays nothing, so the search is free.</li><li>Opportunity cost is the total value of all the alternatives we did not choose.</li><li>Opportunity cost is often expressed in market prices.</li></ol>",
+    "a": "<ol><li><b>False.</b> Every activity has the <b>opportunity cost of time</b>, including activities with no monetary cost. The day spent hiking could have been used to work or study.</li><li><b>False.</b> The opportunity cost of time also includes the activity of <b>searching for alternatives</b>, such as a new job. The hours spent searching could be used for something else.</li><li><b>False.</b> Opportunity cost is the value of the <b>next-best</b> alternative only, the one we would really have chosen.</li><li><b>True.</b> We often measure it in money, e.g. \"the hike cost me $40 of lost wages\" (5 hours × $8).</li></ol>"
+   }
+  ]
+ }
+]

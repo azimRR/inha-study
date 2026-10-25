@@ -1,0 +1,175 @@
+[
+ {
+  "lesson": "W4-1",
+  "questions": [
+   {
+    "type": "calculation",
+    "q": "<p><b>(a)</b> Depict graphically: <b>Phased</b> development methodology.</p><p><b>(b)</b> During the Project Planning phase, the next cash flows were identified:</p><ul><li><b>Development costs:</b> Office space and equipment $45,000; Vendor installation $35,000; Data conversion tools $20,000</li><li><b>Operational costs:</b> Software upgrades $15,000; Operational team salaries $20,000; User training $5,000</li><li><b>Tangible benefits:</b> Increased sales $50,000; Reduction in staff $25,000; Better supplier prices $10,000</li></ul><p>Find: ROI, BEP and NPV, if the project life cycle is 3 years and rate of return = 7%.</p>",
+    "a": "<p><b>(a)</b> Draw Planning and Analysis once, then 3 cycles (Analysis → Design → Implementation), each in a dotted ellipse and each ending in a rounded \"System version n\". A long arrow goes from each version into the Analysis of the next cycle. Add wavy back-arrows between boxes. Write: \"The system is built as a series of versions; the most important requirements go into version 1. Pro: a useful system reaches users quickly. Con: users work with an intentionally incomplete system. RAD methodology.\"</p><p><b>(b)</b> Assumption: development costs once in Year 0; operational costs and benefits every year, Years 1–3.</p><p>Development = 45,000 + 35,000 + 20,000 = <b>100,000</b>. Operational = 15,000 + 20,000 + 5,000 = <b>40,000/yr</b>. Benefits = 50,000 + 25,000 + 10,000 = <b>85,000/yr</b>.</p><table><tr><th></th><th>Year 0</th><th>Year 1</th><th>Year 2</th><th>Year 3</th><th>Total</th></tr><tr><td>Total Benefits</td><td>0</td><td>85,000</td><td>85,000</td><td>85,000</td><td>255,000</td></tr><tr><td>Total Costs</td><td>100,000</td><td>40,000</td><td>40,000</td><td>40,000</td><td>220,000</td></tr><tr><td>Net Benefits</td><td>(100,000)</td><td>45,000</td><td>45,000</td><td>45,000</td><td>35,000</td></tr><tr><td>Cumulative</td><td>(100,000)</td><td>(55,000)</td><td>(10,000)</td><td>35,000</td><td></td></tr><tr><td>Divide by 1.07<sup>n</sup></td><td>1</td><td>1.07</td><td>1.1449</td><td>1.225043</td><td></td></tr><tr><td>PV of Benefits</td><td>0</td><td>79,439.25</td><td>74,242.29</td><td>69,385.32</td><td><b>223,066.86</b></td></tr><tr><td>PV of Costs</td><td>100,000.00</td><td>37,383.18</td><td>34,937.55</td><td>32,651.92</td><td><b>204,972.64</b></td></tr></table><p><b>ROI</b> = (255,000 − 220,000) / 220,000 = 35,000 / 220,000 = <b>15.91%</b></p><p><b>BEP:</b> cumulative turns positive in Year 3; negative years before it (not counting Year 0) = 2. BEP = 2 + (45,000 − 35,000) / 45,000 = 2 + 0.22 = <b>2.22 years</b>.</p><p><b>NPV</b> = 223,066.86 − 204,972.64 = <b>$18,094.22 &gt; 0</b> → economically acceptable.</p>",
+    "diagram": "flowchart TD\n  P[Planning] --> A0[Analysis]\n  A0 -.->|back| P\n  subgraph C1[\"Version 1 cycle\"]\n    direction LR\n    A1[Analysis] --> D1[Design] --> I1[Implementation]\n  end\n  A0 --> A1\n  I1 --> S1([\"System version 1\"])\n  S1 --> A2\n  subgraph C2[\"Version 2 cycle\"]\n    direction LR\n    A2[Analysis] --> D2[Design] --> I2[Implementation]\n  end\n  I2 --> S2([\"System version 2\"])\n  S2 --> A3\n  subgraph C3[\"Version 3 cycle\"]\n    direction LR\n    A3[Analysis] --> D3[Design] --> I3[Implementation]\n  end\n  I3 --> S3([\"System version 3\"])"
+   },
+   {
+    "type": "calculation",
+    "q": "<p><b>(a)</b> Depict graphically: <b>Throwaway prototyping</b> development methodology.</p><p><b>(b)</b> During the Project Planning phase, the next cash flows were identified:</p><ul><li><b>Development costs:</b> Office space and equipment $50,000; Vendor installation $30,000; Data conversion tools $25,000</li><li><b>Operational costs:</b> Software upgrades $10,000; Operational team salaries $15,000; User training $10,000</li><li><b>Tangible benefits:</b> Increased sales $70,000; Reduction in staff $30,000; Better supplier prices $20,000</li></ul><p>Find: ROI, BEP and NPV, if the project life cycle is 3 years and rate of return = 18%.</p>",
+    "a": "<p><b>(a)</b> Draw Planning → Analysis, then a stacked block (Analysis / Design / Implementation) that produces a rounded <b>\"Design prototype\"</b>, with a loop from the prototype back into the block. From the prototype, the real system is built on a separate path: Design → Implementation → System. Write: \"The design prototype is used only to clarify unclear requirements and is then thrown away, because prototypes are undocumented, have a degraded structure and do not meet quality standards. Rated excellent for unclear requirements, unfamiliar technology, complex systems and reliable systems.\"</p><p><b>(b)</b> Assumption: development costs in Year 0; operational costs and benefits every year, Years 1–3.</p><p>Development = 50,000 + 30,000 + 25,000 = <b>105,000</b>. Operational = 10,000 + 15,000 + 10,000 = <b>35,000/yr</b>. Benefits = 70,000 + 30,000 + 20,000 = <b>120,000/yr</b>.</p><table><tr><th></th><th>Year 0</th><th>Year 1</th><th>Year 2</th><th>Year 3</th><th>Total</th></tr><tr><td>Total Benefits</td><td>0</td><td>120,000</td><td>120,000</td><td>120,000</td><td>360,000</td></tr><tr><td>Total Costs</td><td>105,000</td><td>35,000</td><td>35,000</td><td>35,000</td><td>210,000</td></tr><tr><td>Net Benefits</td><td>(105,000)</td><td>85,000</td><td>85,000</td><td>85,000</td><td>150,000</td></tr><tr><td>Cumulative</td><td>(105,000)</td><td>(20,000)</td><td>65,000</td><td>150,000</td><td></td></tr><tr><td>Divide by 1.18<sup>n</sup></td><td>1</td><td>1.18</td><td>1.3924</td><td>1.643032</td><td></td></tr><tr><td>PV of Benefits</td><td>0</td><td>101,694.92</td><td>86,182.13</td><td>73,035.70</td><td><b>260,912.75</b></td></tr><tr><td>PV of Costs</td><td>105,000.00</td><td>29,661.02</td><td>25,136.46</td><td>21,302.08</td><td><b>181,099.55</b></td></tr></table><p><b>ROI</b> = (360,000 − 210,000) / 210,000 = 150,000 / 210,000 = <b>71.43%</b></p><p><b>BEP:</b> cumulative turns positive in Year 2; negative years before it (not counting Year 0) = 1. BEP = 1 + (85,000 − 65,000) / 85,000 = 1 + 0.24 = <b>1.24 years</b>.</p><p><b>NPV</b> = 260,912.75 − 181,099.55 = <b>$79,813.20 &gt; 0</b> → economically acceptable.</p>",
+    "diagram": "flowchart LR\n  P[Planning] --> A[Analysis]\n  A -.->|back| P\n  subgraph BLK[\"Repeated together\"]\n    direction TB\n    A2[Analysis] --- D2[Design] --- I2[Implementation]\n  end\n  A --> A2\n  I2 --> DP([\"Design prototype\"])\n  DP -.->|\"feedback, repeat\"| A2\n  DP --> D3[Design]\n  D3 --> I3[Implementation]\n  I3 -.->|back| D3\n  I3 --> S([System])"
+   },
+   {
+    "type": "classify",
+    "q": "<p>Before you calculate, classify each item as <b>development cost (Year 0)</b>, <b>operational cost (every year)</b>, <b>tangible benefit</b>, or <b>leave out</b>: Data conversion tools · User training · Increased sales · Vendor installation · Software upgrades · Better customer image (no dollar value could be estimated) · Operational team salaries · Reduction in staff.</p>",
+    "a": "<table><tr><th>Development (Year 0)</th><th>Operational (Years 1–3)</th><th>Tangible benefit</th><th>Leave out</th></tr><tr><td>Data conversion tools, Vendor installation</td><td>User training, Software upgrades, Operational team salaries</td><td>Increased sales, Reduction in staff</td><td>Better customer image (intangible, no value)</td></tr></table><p>Trap: User training and Software upgrades look like one-time costs, but they are <b>operational</b>, so they repeat every year.</p>"
+   },
+   {
+    "type": "short",
+    "q": "<p>A student solved Quiz 1 Version 2 (development $110,000 incl. Data conversion tools $20,000; operational $40,000/yr; benefits $110,000/yr; 10%) and wrote these three lines. Find the mistake in each and give the correct result.</p><ol><li>\"Development = 40,000 + 50,000 + 20,000 + User training 10,000 = 120,000.\"</li><li>\"PV of Year 0 cost = 110,000 / 1.10 = 100,000.\"</li><li>\"Cumulative: (110,000), (40,000), 30,000. Years 0 and 1 are negative, so BEP = 2 + (70,000 − 30,000) / 70,000 = 2.57 years.\"</li></ol>",
+    "a": "<ol><li>User training is an <b>operational</b> cost (every year), not development. Development = 40,000 + 50,000 + 20,000 = <b>110,000</b>.</li><li><b>Year 0 is not discounted</b> ((1 + r)<sup>0</sup> = 1). PV of Year 0 cost = <b>110,000</b>.</li><li><b>Year 0 is not counted</b> as a negative year. Only Year 1 counts: BEP = 1 + 40,000 / 70,000 = <b>1.57 years</b>.</li></ol><p>With these fixes: ROI = 43.48%, NPV = $64,079.64 &gt; 0 → acceptable.</p>"
+   },
+   {
+    "type": "mcq",
+    "q": "<p>For the same project, the rate of return in the question changes from 7% to 18%. All cash flows stay the same. Which results change?</p><p>A) ROI, BEP and NPV<br>B) Only ROI<br>C) Only NPV<br>D) BEP and NPV</p>",
+    "a": "<p><b>C</b>, because only NPV uses the rate (it discounts future money). ROI and BEP use the undiscounted table, so they do not change. A higher rate makes the NPV <b>smaller</b>.</p>"
+   }
+  ]
+ },
+ {
+  "lesson": "W4-2",
+  "questions": [
+   {
+    "type": "mcq",
+    "q": "<p>In which stage of the project management process does the manager <b>develop a risk management strategy</b>?</p><p>A) Initiation<br>B) Planning<br>C) Execution<br>D) Monitoring and Controlling</p>",
+    "a": "<p><b>B</b>, because Planning = create the project plan, create the WBS and develop a risk management strategy. (Initiation creates the project charter.)</p>"
+   },
+   {
+    "type": "classify",
+    "q": "<p>Put each activity into the correct stage of the project management process: (a) document lessons learned; (b) create the project charter; (c) monitor progress against KPIs; (d) assign tasks to team members; (e) create the WBS; (f) identify key stakeholders; (g) apply changes after a regular review; (h) complete the deliverables.</p>",
+    "a": "<table><tr><th>Stage</th><th>Activities</th></tr><tr><td>Initiation</td><td>(b) charter, (f) key stakeholders</td></tr><tr><td>Planning</td><td>(e) WBS</td></tr><tr><td>Execution</td><td>(d) assign tasks</td></tr><tr><td>Monitoring and Controlling</td><td>(c) KPIs, (g) apply changes</td></tr><tr><td>Closure</td><td>(a) lessons learned, (h) complete deliverables</td></tr></table>"
+   },
+   {
+    "type": "scenario",
+    "q": "<p>The university library wants a mobile app so students can reserve books and study rooms. It needs <b>3 developers</b>, costs about <b>$25,000</b>, takes <b>4 months</b>, and is used only by the <b>library department</b>. The team has built similar apps before. The library expects to save staff time at the front desk. Classify this project using the 7 ways.</p>",
+    "a": "<ul><li><b>Size:</b> small, 3 people.</li><li><b>Cost:</b> $25,000 (low).</li><li><b>Purpose:</b> improve operations (less front-desk work, better service).</li><li><b>Length:</b> 4 months; value comes when the app goes live.</li><li><b>Risk:</b> low, the team has built similar apps.</li><li><b>Scope:</b> one department (the library), not the whole university.</li><li><b>ROI:</b> compare the saved staff time (in money) with the $25,000.</li></ul>"
+   },
+   {
+    "type": "drawing",
+    "q": "<p>Depict graphically: the <b>five stages of the project management process</b>, with the key activities of each stage.</p>",
+    "a": "<p>Five boxes in a row: <b>Initiation → Planning → Execution → Monitoring and Controlling → Closure</b>, with a back-arrow from Monitoring and Controlling to Execution (changes are applied and work continues). Under each box write 2–3 key activities: charter and stakeholders; plan, WBS and risk strategy; workflows and task assignment; reviews, KPIs and changes; deliverables and lessons learned.</p>",
+    "diagram": "flowchart LR\n  I([\"1 Initiation<br/>purpose, scope, charter\"]) --> P([\"2 Planning<br/>plan, WBS, risk strategy\"])\n  P --> E([\"3 Execution<br/>workflows, assign tasks\"])\n  E --> M([\"4 Monitoring and Controlling<br/>reviews, KPIs, changes\"])\n  M -.->|changes| E\n  M --> C([\"5 Closure<br/>deliverables, lessons learned\"])"
+   },
+   {
+    "type": "short",
+    "q": "<p>A task is <b>\"Conduct user interviews\"</b>. List the 10 pieces of information that describe a task and fill each one with a sensible value for this task.</p>",
+    "a": "<table><tr><th>Information</th><th>Example value</th></tr><tr><td>Name</td><td>Conduct user interviews</td></tr><tr><td>Start date</td><td>Nov 2</td></tr><tr><td>Completion date</td><td>Nov 13</td></tr><tr><td>Person assigned</td><td>Systems analyst: A. Karimov</td></tr><tr><td>Deliverable(s)</td><td>Interview reports</td></tr><tr><td>Completion status</td><td>Open</td></tr><tr><td>Priority</td><td>High</td></tr><tr><td>Resources needed</td><td>Meeting room, voice recorder</td></tr><tr><td>Estimated time</td><td>20 hours</td></tr><tr><td>Actual time</td><td>(filled in when done)</td></tr></table>"
+   },
+   {
+    "type": "mcq",
+    "q": "<p>Which of these is <b>NOT</b> one of the three traditional project management tools?</p><p>A) Work breakdown structure<br>B) Gantt chart<br>C) Network diagram<br>D) Use case diagram</p>",
+    "a": "<p><b>D</b>, because the 3 traditional tools are the WBS, the Gantt chart and the network diagram (PERT/CPM). A use case diagram is an analysis-phase model, not a PM tool.</p>"
+   }
+  ]
+ },
+ {
+  "lesson": "W4-3",
+  "questions": [
+   {
+    "type": "calculation",
+    "q": "<p><b>Library self-checkout system</b> (durations in weeks).</p><table><tr><th>Task</th><th>Name</th><th>Weeks</th><th>Depends on</th></tr><tr><td>A</td><td>Define requirements</td><td>2</td><td>–</td></tr><tr><td>B</td><td>Select RFID hardware</td><td>3</td><td>A</td></tr><tr><td>C</td><td>Design database</td><td>4</td><td>A</td></tr><tr><td>D</td><td>Order and install hardware</td><td>5</td><td>B</td></tr><tr><td>E</td><td>Develop software</td><td>6</td><td>C</td></tr><tr><td>F</td><td>Integrate and test</td><td>2</td><td>D, E</td></tr><tr><td>G</td><td>Train librarians</td><td>1</td><td>D</td></tr><tr><td>H</td><td>Go live and review</td><td>1</td><td>F, G</td></tr></table><p>(a) Draw the network diagram. (b) Do the forward pass. (c) Give the critical path and the total duration. (d) Which tasks can slip, and by how much?</p>",
+    "a": "<p><b>(a)</b> See the diagram: one box per task (ID, name, duration), one arrow per dependency; critical tasks get a double/thick border.</p><p><b>(b) Forward pass</b> (ES = biggest EF of predecessors; EF = ES + duration):</p><table><tr><th>Task</th><th>Dur</th><th>Pred.</th><th>ES</th><th>EF</th><th>Spare</th></tr><tr><td>A</td><td>2</td><td>–</td><td>0</td><td>2</td><td>0</td></tr><tr><td>B</td><td>3</td><td>A</td><td>2</td><td>5</td><td>2</td></tr><tr><td>C</td><td>4</td><td>A</td><td>2</td><td>6</td><td>0</td></tr><tr><td>D</td><td>5</td><td>B</td><td>5</td><td>10</td><td>2</td></tr><tr><td>E</td><td>6</td><td>C</td><td>6</td><td>12</td><td>0</td></tr><tr><td>F</td><td>2</td><td>D, E</td><td>max(10, 12) = 12</td><td>14</td><td>0</td></tr><tr><td>G</td><td>1</td><td>D</td><td>10</td><td>11</td><td>3</td></tr><tr><td>H</td><td>1</td><td>F, G</td><td>max(14, 11) = 14</td><td><b>15</b></td><td>0</td></tr></table><p><b>(c) Paths:</b> A-B-D-F-H = 2 + 3 + 5 + 2 + 1 = 13; A-B-D-G-H = 2 + 3 + 5 + 1 + 1 = 12; <b>A-C-E-F-H = 2 + 4 + 6 + 2 + 1 = 15</b>. Critical path <b>A → C → E → F → H</b>, total duration <b>15 weeks</b>.</p><p><b>(d)</b> Spare = 15 − longest path through the task. <b>B and D: 2 weeks</b> (path 13), but they share it: if B uses 1 week, D has only 1 left. <b>G: 3 weeks</b> (path 12). A, C, E, F, H: 0, they cannot slip.</p>",
+    "diagram": "flowchart LR\n  ST((Start)) ==> A[\"A Define requirements<br/>2 wks\"]\n  A --> B[\"B Select RFID hardware<br/>3 wks\"]\n  A ==> C[\"C Design database<br/>4 wks\"]\n  B --> D[\"D Install hardware<br/>5 wks\"]\n  C ==> E[\"E Develop software<br/>6 wks\"]\n  D --> F[\"F Integrate and test<br/>2 wks\"]\n  E ==> F\n  D --> G[\"G Train librarians<br/>1 wk\"]\n  F ==> H[\"H Go live<br/>1 wk\"]\n  G --> H\n  H ==> FN((Finish))\n  classDef crit stroke-width:4px\n  class A,C,E,F,H crit"
+   },
+   {
+    "type": "drawing",
+    "q": "<p><b>Café ordering app MVP</b> (durations in days). Depict graphically the <b>Gantt chart</b> (every task as early as possible, start Mon 2 Nov), then find the critical path, the total duration and the spare time of each task.</p><table><tr><th>Task</th><th>Name</th><th>Days</th><th>Depends on</th></tr><tr><td>A</td><td>Kick-off and requirements</td><td>3</td><td>–</td></tr><tr><td>B</td><td>UI design</td><td>5</td><td>A</td></tr><tr><td>C</td><td>API design</td><td>4</td><td>A</td></tr><tr><td>D</td><td>Build mobile screens</td><td>8</td><td>B</td></tr><tr><td>E</td><td>Build server API</td><td>7</td><td>C</td></tr><tr><td>F</td><td>Payment integration</td><td>4</td><td>E</td></tr><tr><td>G</td><td>Integration testing</td><td>3</td><td>D, F</td></tr><tr><td>H</td><td>Store submission</td><td>2</td><td>G</td></tr><tr><td>I</td><td>Write user guide</td><td>3</td><td>B</td></tr></table>",
+    "a": "<p><b>Gantt chart:</b> one row per task, days across the top, each bar from ES to EF, arrows for dependencies, critical bars highlighted, a ◆ milestone \"Launch\" at the end.</p><table><tr><th>Task</th><th>Dur</th><th>Pred.</th><th>ES</th><th>EF</th><th>Spare</th></tr><tr><td>A</td><td>3</td><td>–</td><td>0</td><td>3</td><td>0</td></tr><tr><td>B</td><td>5</td><td>A</td><td>3</td><td>8</td><td>2</td></tr><tr><td>C</td><td>4</td><td>A</td><td>3</td><td>7</td><td>0</td></tr><tr><td>D</td><td>8</td><td>B</td><td>8</td><td>16</td><td>2</td></tr><tr><td>E</td><td>7</td><td>C</td><td>7</td><td>14</td><td>0</td></tr><tr><td>F</td><td>4</td><td>E</td><td>14</td><td>18</td><td>0</td></tr><tr><td>G</td><td>3</td><td>D, F</td><td>max(16, 18) = 18</td><td>21</td><td>0</td></tr><tr><td>H</td><td>2</td><td>G</td><td>21</td><td><b>23</b></td><td>0</td></tr><tr><td>I</td><td>3</td><td>B</td><td>8</td><td>11</td><td>12</td></tr></table><p><b>Paths:</b> A-B-D-G-H = 3 + 5 + 8 + 3 + 2 = 21; <b>A-C-E-F-G-H = 3 + 4 + 7 + 4 + 3 + 2 = 23</b>; A-B-I = 3 + 5 + 3 = 11.</p><p><b>Critical path A → C → E → F → G → H = 23 days</b> (2 Nov to 24 Nov). <b>B and D</b> can slip <b>2 days</b> (shared). <b>I</b> can slip <b>12 days</b> (23 − 11). All others: 0.</p>",
+    "diagram": "gantt\n  title Cafe app MVP, earliest start, in days\n  dateFormat YYYY-MM-DD\n  axisFormat %d %b\n  todayMarker off\n  section Design\n  A Kick-off and requirements :crit, a, 2026-11-02, 3d\n  B UI design :b, after a, 5d\n  C API design :crit, c, after a, 4d\n  section Build\n  D Build mobile screens :d, after b, 8d\n  E Build server API :crit, e, after c, 7d\n  F Payment integration :crit, f, after e, 4d\n  I Write user guide :i, after b, 3d\n  section Release\n  G Integration testing :crit, g, after d f, 3d\n  H Store submission :crit, h, after g, 2d\n  Launch :milestone, m1, after h, 0d"
+   },
+   {
+    "type": "calculation",
+    "q": "<p><b>New HR system: PERT + CPM</b> (weeks; o = optimistic, m = most likely, p = pessimistic).</p><table><tr><th>Task</th><th>Name</th><th>o</th><th>m</th><th>p</th><th>Depends on</th></tr><tr><td>A</td><td>Plan project</td><td>1</td><td>2</td><td>3</td><td>–</td></tr><tr><td>B</td><td>Gather requirements</td><td>2</td><td>3</td><td>10</td><td>A</td></tr><tr><td>C</td><td>Set up servers</td><td>1</td><td>2</td><td>9</td><td>A</td></tr><tr><td>D</td><td>Design system</td><td>3</td><td>4</td><td>11</td><td>B</td></tr><tr><td>E</td><td>Develop</td><td>4</td><td>6</td><td>14</td><td>C, D</td></tr><tr><td>F</td><td>Migrate data</td><td>2</td><td>3</td><td>4</td><td>C</td></tr><tr><td>G</td><td>Test</td><td>1</td><td>2</td><td>3</td><td>E, F</td></tr><tr><td>H</td><td>Deploy</td><td>1</td><td>1</td><td>1</td><td>G</td></tr></table><p>(a) Compute each PERT estimate. (b) Draw the network and find the critical path and expected duration. (c) The server supplier warns that C may take 4 weeks longer. Does the project end later?</p>",
+    "a": "<p><b>(a)</b> PERT = (o + 4m + p) / 6: A = (1 + 8 + 3)/6 = <b>2</b>; B = (2 + 12 + 10)/6 = <b>4</b>; C = (1 + 8 + 9)/6 = <b>3</b>; D = (3 + 16 + 11)/6 = <b>5</b>; E = (4 + 24 + 14)/6 = <b>7</b>; F = (2 + 12 + 4)/6 = <b>3</b>; G = (1 + 8 + 3)/6 = <b>2</b>; H = (1 + 4 + 1)/6 = <b>1</b>.</p><p><b>(b) Forward pass:</b></p><table><tr><th>Task</th><th>Dur</th><th>Pred.</th><th>ES</th><th>EF</th><th>Spare</th></tr><tr><td>A</td><td>2</td><td>–</td><td>0</td><td>2</td><td>0</td></tr><tr><td>B</td><td>4</td><td>A</td><td>2</td><td>6</td><td>0</td></tr><tr><td>C</td><td>3</td><td>A</td><td>2</td><td>5</td><td>6</td></tr><tr><td>D</td><td>5</td><td>B</td><td>6</td><td>11</td><td>0</td></tr><tr><td>E</td><td>7</td><td>C, D</td><td>max(5, 11) = 11</td><td>18</td><td>0</td></tr><tr><td>F</td><td>3</td><td>C</td><td>5</td><td>8</td><td>10</td></tr><tr><td>G</td><td>2</td><td>E, F</td><td>max(18, 8) = 18</td><td>20</td><td>0</td></tr><tr><td>H</td><td>1</td><td>G</td><td>20</td><td><b>21</b></td><td>0</td></tr></table><p>Paths: <b>A-B-D-E-G-H = 2 + 4 + 5 + 7 + 2 + 1 = 21</b>; A-C-E-G-H = 15; A-C-F-G-H = 11. Critical path <b>A → B → D → E → G → H</b>, expected duration <b>21 weeks</b>.</p><p><b>(c)</b> No. C has <b>6 weeks</b> spare (21 − 15). With +4 weeks the longest path through C is 19, still under 21, so the end date stays at week 21.</p>",
+    "diagram": "flowchart LR\n  A[\"A Plan project<br/>2 wks\"] ==> B[\"B Gather requirements<br/>4 wks\"]\n  A --> C[\"C Set up servers<br/>3 wks\"]\n  B ==> D[\"D Design system<br/>5 wks\"]\n  D ==> E[\"E Develop<br/>7 wks\"]\n  C --> E\n  C --> F[\"F Migrate data<br/>3 wks\"]\n  E ==> G[\"G Test<br/>2 wks\"]\n  F --> G\n  G ==> H[\"H Deploy<br/>1 wk\"]\n  classDef crit stroke-width:4px\n  class A,B,D,E,G,H crit"
+   },
+   {
+    "type": "calculation",
+    "q": "<p><b>University online exam system</b> (durations in weeks).</p><table><tr><th>Task</th><th>Name</th><th>Weeks</th><th>Depends on</th></tr><tr><td>A</td><td>Study current exam process</td><td>2</td><td>–</td></tr><tr><td>B</td><td>Write requirements</td><td>3</td><td>A</td></tr><tr><td>C</td><td>Buy cloud hosting</td><td>1</td><td>A</td></tr><tr><td>D</td><td>Design question bank</td><td>4</td><td>B</td></tr><tr><td>E</td><td>Design exam interface</td><td>3</td><td>B</td></tr><tr><td>F</td><td>Build question bank</td><td>5</td><td>D</td></tr><tr><td>G</td><td>Build exam interface</td><td>6</td><td>C, E</td></tr><tr><td>H</td><td>Security testing</td><td>2</td><td>F, G</td></tr><tr><td>I</td><td>Pilot exam with one faculty</td><td>2</td><td>H</td></tr><tr><td>J</td><td>Train teachers</td><td>3</td><td>G</td></tr></table><p>(a) Forward pass, critical path(s) and total duration. (b) Which tasks can slip and by how much? (c) What happens if E takes 1 week longer? If J takes 2 weeks longer?</p>",
+    "a": "<table><tr><th>Task</th><th>Dur</th><th>Pred.</th><th>ES</th><th>EF</th><th>Spare</th></tr><tr><td>A</td><td>2</td><td>–</td><td>0</td><td>2</td><td>0</td></tr><tr><td>B</td><td>3</td><td>A</td><td>2</td><td>5</td><td>0</td></tr><tr><td>C</td><td>1</td><td>A</td><td>2</td><td>3</td><td>5</td></tr><tr><td>D</td><td>4</td><td>B</td><td>5</td><td>9</td><td>0</td></tr><tr><td>E</td><td>3</td><td>B</td><td>5</td><td>8</td><td>0</td></tr><tr><td>F</td><td>5</td><td>D</td><td>9</td><td>14</td><td>0</td></tr><tr><td>G</td><td>6</td><td>C, E</td><td>max(3, 8) = 8</td><td>14</td><td>0</td></tr><tr><td>H</td><td>2</td><td>F, G</td><td>max(14, 14) = 14</td><td>16</td><td>0</td></tr><tr><td>I</td><td>2</td><td>H</td><td>16</td><td><b>18</b></td><td>0</td></tr><tr><td>J</td><td>3</td><td>G</td><td>14</td><td>17</td><td>1</td></tr></table><p><b>(a) Paths:</b> A-B-D-F-H-I = 2 + 3 + 4 + 5 + 2 + 2 = <b>18</b>; A-B-E-G-H-I = 2 + 3 + 3 + 6 + 2 + 2 = <b>18</b>; A-B-E-G-J = 17; A-C-G-H-I = 13; A-C-G-J = 12.</p><p>There are <b>two critical paths</b>, both 18 weeks: <b>A → B → D → F → H → I</b> and <b>A → B → E → G → H → I</b>. Total duration <b>18 weeks</b>. Mark A, B, D, E, F, G, H, I with a double border.</p><p><b>(b)</b> Only <b>C: 5 weeks</b> (18 − 13) and <b>J: 1 week</b> (18 − 17). Every other task is critical (0).</p><p><b>(c)</b> E + 1: path A-B-E-G-H-I becomes 19, so the project ends <b>1 week later (19 weeks)</b>. J + 2: path A-B-E-G-J becomes 19, so the project also ends <b>1 week later</b> (J had only 1 week spare).</p>",
+    "diagram": "flowchart LR\n  A[\"A Study exam process<br/>2\"] ==> B[\"B Write requirements<br/>3\"]\n  A --> C[\"C Buy cloud hosting<br/>1\"]\n  B ==> D[\"D Design question bank<br/>4\"]\n  B ==> E[\"E Design exam interface<br/>3\"]\n  D ==> F[\"F Build question bank<br/>5\"]\n  E ==> G[\"G Build exam interface<br/>6\"]\n  C --> G\n  F ==> H[\"H Security testing<br/>2\"]\n  G ==> H\n  H ==> I[\"I Pilot exam<br/>2\"]\n  G --> J[\"J Train teachers<br/>3\"]\n  classDef crit stroke-width:4px\n  class A,B,D,E,F,G,H,I crit"
+   },
+   {
+    "type": "mcq",
+    "q": "<p>On a network diagram, task 6 is drawn with <b>crossed lines (an X)</b> and task 9 with <b>one diagonal line</b>. What does this mean?</p><p>A) 6 is critical, 9 is not critical<br>B) 6 is completed, 9 is partially completed<br>C) 6 is cancelled, 9 is delayed<br>D) 6 is a milestone, 9 is a dependency</p>",
+    "a": "<p><b>B</b>, because one diagonal line = partially completed and crossed lines = completed. Critical tasks are shown with a special (double) border, milestones are diamonds or upside-down triangles on a Gantt chart.</p>"
+   },
+   {
+    "type": "short",
+    "q": "<p>Compare the <b>Gantt chart</b> and the <b>network diagram</b>: what does each show best, and where do both get their data from?</p>",
+    "a": "<ul><li><b>Gantt chart:</b> a horizontal bar chart; tasks are rows, time runs across the top. Best for <b>time</b>: when each task starts and ends, progress (filled bars), milestones (◆/▼), who is assigned. Shows high-level status quickly.</li><li><b>Network diagram:</b> a node-and-arc graph; nodes = tasks with time estimates, arcs = dependencies. Best for <b>dependencies</b> and finding the <b>critical path</b> (CPM, with or without PERT).</li><li>Both are driven by the <b>WBS</b> (tasks, durations, status, dependencies).</li></ul>"
+   }
+  ]
+ },
+ {
+  "lesson": "W4-4",
+  "questions": [
+   {
+    "type": "calculation",
+    "q": "<p>At the end of inception, a well-done project plan estimates a new hospital appointment system at <b>$120,000</b> and <b>16 weeks</b>. Using the hurricane model, give the realistic ranges for cost and schedule. How should these ranges change later in the project?</p>",
+    "a": "<p>Hurricane model: <b>±100% for cost</b>, <b>±25% for schedule</b> at the end of inception.</p><p>Cost: 120,000 ± 120,000 = <b>$0 to $240,000</b>.</p><p>Schedule: 16 ± 0.25 × 16 = 16 ± 4 = <b>12 to 20 weeks</b>.</p><p>The ranges get <b>narrower</b> through Elaboration, Construction and Transition, as the system becomes better defined.</p>"
+   },
+   {
+    "type": "calculation",
+    "q": "<p>A project was planned for <b>24 weeks</b>. Analysis was planned for <b>6 weeks</b> but took <b>8</b>. The remaining work is planned for 18 weeks. Give the new end week under each of the three actions, and the risk of each.</p>",
+    "a": "<table><tr><th>Action</th><th>Working</th><th>New end</th><th>Risk</th></tr><tr><td>Do not change the schedule</td><td>assume you make up the 2 weeks</td><td>week <b>24</b></td><td>High</td></tr><tr><td>Add the time you are behind</td><td>24 + 2</td><td>week <b>26</b></td><td>Moderate</td></tr><tr><td>Add the same percentage</td><td>% = 2 ÷ 6 (planned) = 33.3%; 18 × 1.333 = 24; 8 + 24</td><td>week <b>32</b></td><td>Low</td></tr></table><p>If the sponsor cannot accept week 32, <b>reduce the scope</b>. Trap: the % uses the <b>planned</b> 6 weeks, not the actual 8.</p>"
+   },
+   {
+    "type": "mcq",
+    "q": "<p>Which is <b>NOT</b> one of the three underlying problems of traditional work breakdown structures?</p><p>A) They focus on the design of the system and force premature decomposition<br>B) They have too many or too few levels of detail<br>C) They are project-specific and hard to compare across projects<br>D) They cannot show task dependencies</p>",
+    "a": "<p><b>D</b>, because a WBS must show dependencies (with duration and status). The 3 problems are design focus, wrong level of detail, and being hard to compare across projects.</p>"
+   },
+   {
+    "type": "scenario",
+    "q": "<p>In a 20-week project, the design phase finishes <b>2 weeks early</b>. The team leader wants to tell the sponsor \"we will now finish in week 18\". What should the project manager do instead, and why?</p>",
+    "a": "<p>Move the <b>next deadlines 2 weeks sooner</b>, but <b>do not change the promised completion date</b> (keep week 20). Estimates early in a project are still uncertain (hurricane model), so the saved time is a buffer for later problems. Also record the <b>actual</b> time so future estimates are better.</p>"
+   },
+   {
+    "type": "short",
+    "q": "<p>The sponsor of a café ordering app says: \"Deliver 4 weeks earlier, same budget.\" Using the idea of project trade-offs, explain what the project manager can offer.</p>",
+    "a": "<p>Project management is making <b>trade-offs</b> among <b>functionality, time and cost</b>. If time goes down and cost stays the same, <b>functionality must go down</b>: deliver the core (menu, order, pay) on the earlier date and postpone extras (loyalty card) to a later version. The other option is to keep all functionality and raise the cost, but adding people to a project does not always increase productivity.</p>"
+   }
+  ]
+ },
+ {
+  "lesson": "W4-5",
+  "questions": [
+   {
+    "type": "scenario",
+    "q": "<p>A hospital appointment system is half built. Three new requests arrive: (1) the head doctor saw the prototype and now wants online video visits; (2) a developer wants to add a voice assistant because he finds it interesting; (3) the director wants the system to support a new partnership strategy announced at a board meeting. Name the problem, its source in each case, and what the project manager should do.</p>",
+    "a": "<p>This is <b>scope creep</b>: new requirements added after the scope was defined and frozen, the most common reason for schedule and cost overruns.</p><ul><li>(1) <b>Users</b> see the system's potential and want new functions.</li><li>(2) <b>Developers</b> get attached to an interesting capability.</li><li>(3) A <b>senior manager</b> adds a new strategy.</li></ul><p><b>Actions:</b> carefully examine the impact of each change; allow only changes that are absolutely necessary; delay the rest as <b>future enhancements</b> (e.g. video visits in version 2); or use timeboxing.</p>"
+   },
+   {
+    "type": "drawing",
+    "q": "<p>Depict graphically: <b>timeboxing</b> for a university festival app that must be ready on 1 March. Wanted features: registration, event schedule, campus map, chat.</p>",
+    "a": "<p>Draw the 6 steps as a flow with a loop: <b>1</b> set the delivery date (1 March) → <b>2</b> prioritize functionality → <b>3</b> build the core (registration and schedule) → <b>4</b> postpone what cannot be done in time (map, chat) → <b>5</b> deliver with core functionality → <b>6</b> repeat steps 3–5 to add refinements. Note: timeboxing is time-oriented; it places meeting the deadline above delivering all functionality.</p>",
+    "diagram": "flowchart TD\n  S1[\"1. Set delivery date: 1 March\"] --> S2[\"2. Prioritize: register, schedule, map, chat\"]\n  S2 --> S3[\"3. Build core: register and schedule\"]\n  S3 --> S4[\"4. Postpone map and chat\"]\n  S4 --> S5[\"5. Deliver core on 1 March\"]\n  S5 -.->|\"6. Repeat 3 to 5: add map, then chat\"| S3"
+   },
+   {
+    "type": "scenario",
+    "q": "<p>In the café app team, only one developer knows the payment system, and she may leave the company next month. Fill in a risk assessment for this risk.</p>",
+    "a": "<table><tr><th>Field</th><th>Answer</th></tr><tr><td>Risk 1</td><td>Only one developer knows the payment integration; if she leaves, payment work stops (weak personnel)</td></tr><tr><td>Likelihood</td><td>Medium probability</td></tr><tr><td>Potential impact</td><td>Payment tasks delayed by several weeks; launch date missed</td></tr><tr><td>Ways to address it</td><td>Pair a second developer with her now; ask her to document the payment code; keep an outside payment expert ready</td></tr></table>"
+   },
+   {
+    "type": "mcq",
+    "q": "<p>A tester reports in JIRA: \"The <i>Pay</i> button does nothing on iPhone.\" Which issue type should this be?</p><p>A) Epic<br>B) Story<br>C) Sub-Task<br>D) Bug</p>",
+    "a": "<p><b>D</b>, because a Bug is \"a problem that impairs or prevents the functions of the product\". An Epic is a big user story to break down; a Story is a user story; a Sub-Task is a smaller piece of an issue.</p>"
+   },
+   {
+    "type": "classify",
+    "q": "<p>Classify each case by its <b>cause of risk</b> (weak personnel, scope creep, poor design, overly optimistic estimates): (a) the schedule assumed no one would ever be sick; (b) the client keeps adding new reports every week; (c) the team has never built a mobile app; (d) the database was designed without thinking about growth, and the system becomes very slow.</p>",
+    "a": "<ul><li>(a) <b>Overly optimistic estimates</b></li><li>(b) <b>Scope creep</b></li><li>(c) <b>Weak personnel</b></li><li>(d) <b>Poor design</b></li></ul>"
+   },
+   {
+    "type": "mcq",
+    "q": "<p>Which statement about timeboxing is correct?</p><p>A) It is task-oriented: more tasks make the project longer<br>B) It places meeting a deadline above delivering functionality<br>C) It delivers all functionality before the deadline is set<br>D) It is used only to estimate costs</p>",
+    "a": "<p><b>B</b>, because timeboxing is a time-oriented approach to scope management: set the date first, build the core, and postpone what does not fit.</p>"
+   }
+  ]
+ }
+]

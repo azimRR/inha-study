@@ -1,0 +1,302 @@
+[
+  {
+    "id": "W6-1",
+    "label": "W6·1",
+    "week": "W6",
+    "slides": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18
+    ],
+    "kind": "theory",
+    "title": "JAD and questionnaires: gathering requirements from many people",
+    "hook": "After this lesson you can explain JAD (roles, 5 steps, e-JAD) and questionnaires (sampling, return rates, 9 design rules, 4 steps), with the numbers he likes to ask.",
+    "cards": [
+      {
+        "h": "JAD: put everyone in one room",
+        "body": "<p>Imagine the Tashkent café wants a new ordering app. You could interview 15 baristas, cashiers and managers <b>one by one</b>. That is slow, and each person tells a different story.</p><p><b>JAD</b> does the opposite: everyone sits in <b>one room</b> and works on the requirements <b>together</b>.</p><p>Slide definition: JAD is an information-gathering technique that allows the <b>project team, users, and management</b> to work together to identify requirements for the system. <b>IBM</b> developed it in the <b>late 1970s</b>. It is \"often the <b>most useful</b> method for collecting information from users\".</p><p>The room picture (S5): a big U-shaped table, a whiteboard and a screen at the front, flip chart sheets on the wall, name cards, projectors, a printer and computers.</p><p>Small naming glitch: S4 says Joint Application <b>Development</b>, the S34 table says Joint Application <b>Design</b>. Same thing: JAD.</p>",
+        "diagram": "flowchart TD\n  F([\"Facilitator: runs the agenda, stays neutral\"])\n  S([\"1-2 Scribes: notes and copies\"])\n  U[\"10-20 users\"]\n  M[\"Management\"]\n  P[\"Project team and analysts\"]\n  F --> U\n  F --> M\n  F --> P\n  S -.->|records the session| F"
+      },
+      {
+        "h": "The facilitator and the scribes",
+        "body": "<p>A JAD session has <b>10 to 20 users</b>, one <b>facilitator</b> and <b>1 or 2 scribes</b>.</p><p><b>Facilitator</b> = the referee of the meeting.</p><ul><li>Sets the meeting <b>agenda</b> and <b>guides</b> the discussion.</li><li>Does <b>not</b> join the discussion as a participant.</li><li>Gives <b>no ideas or opinions</b>, so he or she stays <b>neutral</b>.</li><li>Must be an expert in <b>group-process techniques</b> AND in <b>systems analysis and design</b>.</li></ul><p><b>Scribes</b> help the facilitator: they record notes, make copies, often using computers and <b>CASE tools</b>.</p><p>Why is facilitating hard (S11)? People come with <b>strong feelings</b>. The facilitator must move the session forward and make people <b>recognize and accept, but not necessarily agree with</b>, other opinions. This needs skill in systems analysis and design, JAD, and interpersonal skills. Most analysts first <b>apprentice</b> with a skilled facilitator.</p><p><b>Exam trap:</b> \"The facilitator gives opinions to help the group decide\" is FALSE.</p>"
+      },
+      {
+        "h": "e-JAD: JAD with computers",
+        "body": "<p>In a normal JAD meeting only <b>one person talks at a time</b>, and a cashier may be afraid to disagree with the boss.</p><p><b>e-JAD</b> (electronic JAD) fixes this with <b>groupware</b>: each participant sits at a networked computer with special software and sends <b>anonymous</b> ideas and opinions to everyone.</p><table><tr><th></th><th>JAD</th><th>e-JAD</th></tr><tr><td>How ideas are shared</td><td>spoken, one person at a time</td><td>typed, anonymous, all at the same time</td></tr><tr><td>Fear of reprisal</td><td>possible</td><td>no (anonymous)</td></tr><tr><td>Typical length</td><td>5–10 days over 3 weeks</td><td>1–4 days in 1 week</td></tr><tr><td>Time saved</td><td>—</td><td>50–80% less (initial research)</td></tr></table><p>Small slide gap: S7 says e-JAD overcomes \"these problems\" but the deck never lists them. From the slide's own words, they are: people cannot all speak at once, and they fear reprisal.</p>"
+      },
+      {
+        "h": "The 5 JAD steps (a copy of the interview steps)",
+        "body": "<p>JAD follows the same 5 steps as an interview. The slides say \"as with interviews\" again and again.</p><table><tr><th>Step</th><th>What to remember</th></tr><tr><td>1. Select participants</td><td>Chosen like interviewees, by the <b>information they can contribute</b>. Aim: a broad mix of organizational levels and <b>political support</b>. Big problem: everyone must be <b>away from the office at the same time</b>, so the office may close or run with a skeleton staff.</td></tr><tr><td>2. Design the session</td><td>From <b>half a day to several weeks</b>; most last <b>5–10 days over 3 weeks</b>. JAD goes <b>beyond collecting</b> into analysis: users and analysts can build the functional models or the requirements definition together.</td></tr><tr><td>3. Prepare</td><td>Sessions are often <b>off-site</b>, so tell people what is expected. Goal = understand the current system? Bring procedure manuals and documents. Goal = improvements? Think about them before coming.</td></tr><tr><td>4. Conduct</td><td>Formal agenda + <b>ground rules</b>: follow the schedule, respect others' opinions, accept disagreement, only one person talks at a time.</td></tr><tr><td>5. Post-JAD follow-up</td><td>A <b>post-session report</b> (like the interview report), ready <b>a week or two</b> later. Interview report: within 48 hours.</td></tr></table>",
+        "diagram": "flowchart LR\n  A[\"1. Select participants\"] --> B[\"2. Design the session\"]\n  B --> C[\"3. Prepare\"]\n  C --> D[\"4. Conduct with ground rules\"]\n  D --> E[\"5. Post-session report: 1-2 weeks\"]"
+      },
+      {
+        "h": "Questionnaires: when you need MANY people",
+        "body": "<p>The café app will have 5,000 customers. You cannot interview them all, or put them in one room. You send a <b>questionnaire</b>.</p><p>Slide definition: a questionnaire is <b>a set of written questions used to obtain information from individuals</b>. Use it when:</p><ul><li>there is a <b>large number of people</b> whose information and opinions you need;</li><li>the system is for users <b>outside the organization</b> (customers, vendors).</li></ul><p>You do not ask everyone. You choose a <b>sample</b>: a subset of people who represent the whole group.</p><p>Not everyone answers. Return rates:</p><ul><li>paper and e-mail: <b>30–50%</b></li><li>Web-based: often only <b>5–30%</b></li></ul><p>So you must send many more questionnaires than the answers you need.</p>",
+        "diagram": "flowchart LR\n  A[\"1. Select participants: a sample\"] --> B[\"2. Design the questions\"]\n  B --> C[\"3. Administer: get them back\"]\n  C --> D[\"4. Follow-up: questionnaire report\"]"
+      },
+      {
+        "h": "Designing good questions",
+        "body": "<p>On paper, nobody can help a confused person. So questions must be very clear, and <b>closed-ended</b> questions are used most.</p><p>Separate <b>facts</b> from <b>opinions</b>:</p><ul><li>Opinion question: \"Are network problems common?\" (agree or disagree)</li><li>Factual question: \"How often does a network problem occur: once an hour, once a day, once a week?\" (a precise value)</li></ul><p>The most obvious issue, but often forgotten: decide <b>how you will analyze and use the answers BEFORE you send it</b>. Afterwards it is too late.</p><p><b>The 9 design guidelines (S16):</b></p><ol><li>Begin with nonthreatening and interesting questions.</li><li>Group items into logically coherent sections.</li><li>Do not put important items at the very end.</li><li>Do not crowd a page with too many items.</li><li>Avoid abbreviations.</li><li>Avoid biased or suggestive items or terms.</li><li>Number the questions.</li><li>Pretest the questionnaire to find confusing questions.</li><li>Provide anonymity to respondents.</li></ol>"
+      },
+      {
+        "h": "Getting answers back, then the report",
+        "body": "<p><b>Step 3, Administer.</b> The key problem is getting people to complete it and send it back. Common tricks:</p><ul><li>explain <b>why</b> the questionnaire exists and why <b>this person</b> was chosen;</li><li>give a <b>return date</b>;</li><li>offer an <b>inducement</b> (e.g., a free pen);</li><li>offer to send a <b>summary of the results</b>.</li></ul><p>Inside the organization, analysts can also: hand it out <b>personally</b>, contact people who did not return it <b>after a week or two</b>, or ask <b>supervisors</b> to run it in a group meeting.</p><p><b>Step 4, Follow-up.</b> Process the answers and write a <b>questionnaire report soon after the deadline</b>, so analysis stays on time and people who asked for results get them quickly.</p><p>Compare the steps: interviews 5, JAD 5, questionnaires <b>4</b> (\"administer\" replaces \"prepare\" and \"conduct\").</p>"
+      }
+    ],
+    "example": {
+      "problem": "<p>You design a <b>Web</b> questionnaire for café app customers. You need at least <b>120 completed answers</b>.</p><ol><li>How many people must you send it to, in the best case and in the worst case?</li><li>Fix these three bad items: (a) \"Don't you agree our old app is annoying?\" (b) \"Rate the UX of our POS.\" (c) \"Is ordering slow?\" (you want a fact, not an opinion).</li></ol>",
+      "solution": "<p><b>1.</b> Web return rate is 5–30%.</p><ul><li>Best case: 120 ÷ 0.30 = <b>400</b> people.</li><li>Worst case: 120 ÷ 0.05 = <b>2,400</b> people.</li></ul><p>(With paper or e-mail at 30–50% you would need 240 to 400.)</p><p><b>2.</b></p><ul><li>(a) is <b>biased / suggestive</b>. Better: \"How satisfied are you with the current app? 1 = very unhappy … 5 = very happy.\"</li><li>(b) uses <b>abbreviations</b>. Better: \"How easy is our ordering screen to use?\"</li><li>(c) is an <b>opinion</b> question. Factual version: \"How long does it usually take you to place an order: under 1 minute, 1–3 minutes, more than 3 minutes?\"</li></ul>"
+    },
+    "check": [
+      {
+        "q": "Who takes part in a JAD session, and how many?",
+        "a": "The project team, users and management. 10–20 users, one facilitator, 1–2 scribes."
+      },
+      {
+        "q": "True or false: the JAD facilitator gives his own ideas to help the group reach a decision.",
+        "a": "<b>False.</b> The facilitator gives no ideas or opinions, to stay neutral. He sets the agenda and guides the discussion."
+      },
+      {
+        "q": "Give three benefits of e-JAD and its typical length.",
+        "a": "Anonymous input, everyone contributes at the same time, no fear of reprisal; 50–80% less time. Typically 1–4 days in a 1-week period (JAD: 5–10 days over 3 weeks)."
+      },
+      {
+        "q": "What are the return rates for paper/e-mail and for Web questionnaires?",
+        "a": "Paper and e-mail: 30–50%. Web: often only 5–30%."
+      },
+      {
+        "q": "His W6-S2 question: \"Describe the five major steps in conducting interviews.\" Which other technique uses the same steps?",
+        "a": "1 Selecting interviewees (interview schedule) → 2 Designing interview questions → 3 Preparing for the interview → 4 Conducting the interview → 5 Post-interview follow-up (report within 48 hours). <b>JAD</b> uses the same 5 steps (but its report takes a week or two)."
+      },
+      {
+        "q": "Why are closed-ended questions used most on questionnaires?",
+        "a": "Because a confused respondent cannot get help on the spot, so questions must leave little room for misunderstanding."
+      }
+    ],
+    "exam": {
+      "question": "<p>What is JAD? Describe the role of the facilitator and the scribes, list the five steps of a JAD session, and explain how e-JAD differs from JAD.</p>",
+      "answer": "<p><b>JAD</b> (Joint Application Development, IBM, late 1970s) is an information-gathering technique in which the project team, users and management work together to identify the requirements. 10–20 users meet under a facilitator.</p><p><b>Facilitator:</b> sets the agenda and guides the discussion, but does not participate and gives no opinions (stays neutral). Expert in group-process techniques and in systems analysis and design. <b>Scribes (1–2):</b> record notes and make copies, often with CASE tools.</p><p><b>Five steps:</b> 1) select participants, 2) design the JAD session, 3) prepare for the session, 4) conduct the session (agenda + ground rules), 5) post-JAD follow-up (post-session report after 1–2 weeks).</p><p><b>e-JAD</b> uses groupware: participants send anonymous ideas from networked computers, all at the same time, without fear of reprisal. It can cut session time by 50–80% (1–4 days in one week instead of 5–10 days over three weeks).</p>"
+    },
+    "memorize": [
+      "JAD = project team + users + management together; IBM, late 1970s",
+      "10–20 users · 1 neutral facilitator · 1–2 scribes",
+      "e-JAD: groupware, anonymous, simultaneous, 50–80% less time",
+      "JAD 5–10 days over 3 weeks; e-JAD 1–4 days in 1 week",
+      "JAD steps: select → design → prepare → conduct → follow-up (report in 1–2 weeks)",
+      "Ground rules: schedule, respect opinions, accept disagreement, one talks at a time",
+      "Questionnaire: many people / outside users; sample; mostly closed-ended",
+      "Returns: paper/e-mail 30–50%, Web 5–30%",
+      "Questionnaire steps (4): select → design → administer → follow-up"
+    ],
+    "note": "Slide typos: S6 \"as the JAD session proceedings\" means \"proceeds\"; S7 mentions \"these problems\" that are never listed."
+  },
+  {
+    "id": "W6-2",
+    "label": "W6·2",
+    "week": "W6",
+    "slides": [
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      34
+    ],
+    "kind": "theory",
+    "title": "Document analysis, observation, and the big techniques table",
+    "hook": "After this lesson you can explain document analysis and observation, redraw the 5-technique comparison table, and pick the right technique for any scenario.",
+    "cards": [
+      {
+        "h": "Document analysis: read what already exists",
+        "body": "<p>Before you ask people anything, read the papers. Project teams use <b>document analysis</b> to understand the <b>as-is</b> system.</p><p><b>Ideal world:</b> the team that built the old system wrote documentation, and every later project updated it.</p><p><b>Real world:</b> most systems are <b>not well documented</b>. Teams don't document along the way, and after the project there is no time. Documents may be missing or out of date.</p><p>But many useful documents still exist (7 kinds):</p><ol><li>paper reports</li><li>memorandums</li><li>policy manuals</li><li>user-training manuals</li><li>organization charts</li><li>forms</li><li>the user interface of the existing system</li></ol><p>University example: the add/drop form, the student handbook, the registrar's monthly report.</p>"
+      },
+      {
+        "h": "Forms tell the truth",
+        "body": "<p>S20 shows a filled <b>Central Veterinary Clinic</b> patient card with three notes:</p><ul><li>The customer wrote the <b>pet's</b> name in \"Name\" → the field should say <b>Owner's Name</b>.</li><li>Staff wrote in <b>type of animal</b> and <b>date of birth</b> → these fields should be added.</li><li>The customer left out the <b>area code</b> → the phone field should make it clearer.</li></ul><p><b>The key sentence (S21):</b> the <b>most powerful indication that the system needs to be changed</b> is when users <b>create their own forms</b> or <b>add extra information</b> to existing ones.</p><ul><li>So review both <b>blank</b> and <b>completed</b> forms, and look for these changes.</li><li>If users must open <b>several reports</b> to get what they need, new information or a new format is needed.</li></ul><p>Café example: the barista keeps a paper notebook of \"no sugar\" requests because the app has no field for it. That notebook is a requirement.</p>"
+      },
+      {
+        "h": "Observation: watch, don't just listen",
+        "body": "<p><b>Observation</b> = the act of <b>watching processes being performed</b>.</p><p>Why? In interviews people <b>describe</b> their work. When you watch, you see the <b>reality</b>. Research shows many managers <b>do not remember</b> how they work or how they spend their time. (Quick: how many hours did you spend last week on each course?)</p><p>So observation is a good way to <b>check the validity</b> of information from <b>indirect sources</b>, like interviews and questionnaires.</p><p>Example: the registrar says \"each add/drop takes 2 minutes\". You stand at the counter and see it takes 7 minutes because the staff re-type data into two systems.</p>"
+      },
+      {
+        "h": "Ethnography and focused ethnography",
+        "body": "<p>Ethnography = long, careful observation of people at work. It finds requirements that come from:</p><ul><li>how people <b>actually</b> work, not how the official process says they <b>ought</b> to work;</li><li><b>cooperation</b> and awareness of other people's activities (seeing what others do changes how we work).</li></ul><p><b>Strength:</b> great for understanding <b>existing</b> processes.<br><b>Weakness:</b> it <b>cannot identify new features</b> for the system.</p><p><b>Focused ethnography</b> (from an <b>air traffic control</b> project) = ethnography <b>+ prototyping</b>. Building the prototype raises unanswered questions, and those questions <b>focus</b> what you observe.</p><p>Another problem: ethnography studies existing practices that may have a <b>historical basis that is no longer relevant</b> (\"we always did it this way\").</p><p>Slide typo: S23 \"the way I which\" means \"the way in which\".</p>"
+      },
+      {
+        "h": "⭐ The big table: 5 techniques side by side (S34)",
+        "body": "<p>This is the most useful slide of the week. Learn to redraw it: 6 rows × 5 columns.</p><table><tr><th></th><th>Interviews</th><th>JAD</th><th>Questionnaires</th><th>Document analysis</th><th>Observation</th></tr><tr><td><b>Type of information</b></td><td>As-is, improvements, to-be</td><td>As-is, improvements, to-be</td><td>As-is, improvements</td><td>As-is</td><td>As-is</td></tr><tr><td><b>Depth</b></td><td>High</td><td>High</td><td>Medium</td><td>Low</td><td>Low</td></tr><tr><td><b>Breadth</b></td><td>Low</td><td>Medium</td><td>High</td><td>High</td><td>Low</td></tr><tr><td><b>Integration</b></td><td>Low</td><td>High</td><td>Low</td><td>Low</td><td>Low</td></tr><tr><td><b>User involvement</b></td><td>Medium</td><td>High</td><td>Low</td><td>Low</td><td>Low</td></tr><tr><td><b>Cost</b></td><td>Medium</td><td>Low–Medium</td><td>Low</td><td>Low</td><td>Low to Medium</td></tr></table><p>What the rows mean (simple textbook meaning; the slide does not define them):</p><ul><li><b>Depth</b> = how rich and detailed the information is (the \"why\" behind facts).</li><li><b>Breadth</b> = how many people or topics you cover.</li><li><b>Integration</b> = combining information from many people and resolving their differences.</li><li><b>User involvement</b> = how much users take part, which builds their support.</li></ul><p>The slide heads the column \"Joint Application <b>Design</b>\"; S4 says \"Development\". Same JAD.</p>"
+      },
+      {
+        "h": "Reading the table: 5 simple rules",
+        "body": "<ol><li><b>To-be information only comes from talking:</b> interviews and JAD. Questionnaires add improvements. Documents and observation give <b>as-is only</b> (papers and watching cannot tell you the future).</li><li><b>JAD is the only High</b> for integration and user involvement (everyone is in one room).</li><li><b>Depth High:</b> interviews and JAD. <b>Breadth High:</b> questionnaires and document analysis. Depth and breadth trade off: talk deeply to few, or lightly to many.</li><li><b>Cost:</b> Low = questionnaires, document analysis; Low–Medium = JAD; Low to Medium = observation; <b>Medium = interviews</b> (the most expensive in the table).</li><li><b>Observation</b> is Low on almost everything. Its value is different: it shows the <b>reality</b> and checks what people told you.</li></ol><p>Memory hook for depth/breadth: <b>I-J deep, Q-D wide</b>.</p>"
+      },
+      {
+        "h": "When to use which: a decision path",
+        "body": "<p>Exam scenarios give you clues. Look for these words:</p><ul><li>\"new system ideas\", \"agree together\", \"build the requirements in the session\" → <b>JAD</b></li><li>\"detailed\", \"one key expert\", \"why\" → <b>interviews</b></li><li>\"thousands\", \"customers or vendors\", \"cheap\" → <b>questionnaires</b></li><li>\"existing forms, manuals, reports\" → <b>document analysis</b></li><li>\"what really happens\", \"check what they said\" → <b>observation</b></li></ul><p>In real projects analysts <b>mix</b> techniques, e.g. read documents first, then interview or run JAD, then confirm with a questionnaire and check with observation.</p>",
+        "diagram": "flowchart TD\n  Q1{\"Need to-be ideas for the new system?\"}\n  Q1 -->|yes| Q2{\"Many groups must agree together?\"}\n  Q2 -->|yes| JAD[\"JAD: integration and involvement High\"]\n  Q2 -->|no| INT[\"Interviews: depth High\"]\n  Q1 -->|no| Q3{\"Many people or outside users?\"}\n  Q3 -->|yes| QN[\"Questionnaires: breadth High, cost Low\"]\n  Q3 -->|no| Q4{\"Check what really happens?\"}\n  Q4 -->|yes| OBS[\"Observation\"]\n  Q4 -->|no| DOC[\"Document analysis: breadth High, cost Low\"]"
+      }
+    ],
+    "example": {
+      "problem": "<p>Inha University in Tashkent is replacing its course-registration system. Pick the best technique for each situation and give a reason from the table.</p><ol><li>You want to know how the current paper add/drop process works. There are five years of filled forms.</li><li>You need the opinions of 3,000 students about the current system and ideas to improve it, cheaply.</li><li>The dean, registrar staff, IT and student representatives must agree on the new system's features and draft the requirements together.</li><li>Registrar staff say every request takes 2 minutes. You doubt it.</li><li>You need very detailed rules for exam scheduling from the one IT expert who knows them.</li></ol>",
+      "solution": "<ol><li><b>Document analysis</b>: as-is, breadth High, cost Low. Look for fields people add by hand.</li><li><b>Questionnaire</b>: large number of people; as-is + improvements; breadth High, cost Low. Use a sample and expect low returns.</li><li><b>JAD</b> (or e-JAD if time is short or people fear speaking): to-be info, integration and user involvement High; JAD can produce the requirements definition in the session.</li><li><b>Observation</b>: shows the reality and checks the validity of what people said.</li><li><b>Interview</b>: depth High, to-be info; one person, so breadth is not needed.</li></ol>"
+    },
+    "check": [
+      {
+        "q": "According to the table, which technique gives only as-is information, with High breadth but Low depth?",
+        "a": "<b>Document analysis.</b> (Observation is as-is but breadth Low; questionnaires have breadth High but depth Medium and also give improvements.)"
+      },
+      {
+        "q": "What is \"the most powerful indication that the system needs to be changed\"?",
+        "a": "When users create their own forms or add additional information to existing ones."
+      },
+      {
+        "q": "Which two techniques can give to-be information? Which one alone is High in integration and user involvement?",
+        "a": "Interviews and JAD give to-be. Only <b>JAD</b> is High in integration and user involvement."
+      },
+      {
+        "q": "Ethnography: one strength, one weakness. What does focused ethnography combine it with?",
+        "a": "Strength: understanding existing processes (how people really work). Weakness: cannot identify new features (and may study practices that are no longer relevant). Focused ethnography = ethnography + <b>prototyping</b>."
+      },
+      {
+        "q": "His W6-S2 question: \"What is the difference between an as-is system and a to-be system?\" Which techniques give only as-is?",
+        "a": "As-is = the current state of systems and processes. To-be = a concept for the new system. Document analysis and observation give as-is only."
+      },
+      {
+        "q": "Rank the techniques by cost from the table.",
+        "a": "Low: questionnaires, document analysis · Low–Medium: JAD · Low to Medium: observation · Medium: interviews."
+      }
+    ],
+    "exam": {
+      "question": "<p>Draw the table comparing the five requirements-gathering techniques. When would you use JAD instead of questionnaires?</p>",
+      "answer": "<p>(Draw the 6 × 5 table exactly as in card 5: type of information, depth, breadth, integration, user involvement, cost.)</p><p><b>JAD instead of questionnaires</b> when the project needs information about the <b>to-be</b> system and wants users, management and analysts to <b>work together</b>: JAD has High depth, High integration and High user involvement, and it can produce analysis deliverables (functional models, requirements definition) in the session.</p><p><b>Questionnaires</b> are better when information and opinions are needed from a <b>large number of people</b> or from <b>outside users</b> (customers, vendors): High breadth at Low cost, but only as-is and improvements, Medium depth, Low integration and involvement.</p>"
+    },
+    "memorize": [
+      "Document analysis = as-is; most systems are poorly documented",
+      "7 documents: reports, memos, policy manuals, training manuals, org charts, forms, user interface",
+      "Users making their own forms / adding info = strongest sign of change",
+      "Observation = watching processes; shows reality; checks interviews and questionnaires",
+      "Ethnography cannot identify new features; focused ethnography = + prototyping (air traffic control)",
+      "To-be: only interviews and JAD",
+      "JAD: only High in integration and user involvement",
+      "Deep: interviews, JAD · Wide: questionnaires, document analysis",
+      "Cheapest: questionnaires, document analysis · Most expensive: interviews (Medium)"
+    ],
+    "note": "The meanings of depth, breadth and integration come from the textbook, not the slides (the slide only rates them). Slides S23–S33 carry another course's footer (\"SEN 301 Requirements Engineering\"): the professor borrowed them."
+  },
+  {
+    "id": "W6-3",
+    "label": "W6·3",
+    "week": "W6",
+    "slides": [
+      2,
+      3,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      35,
+      36,
+      37
+    ],
+    "kind": "theory",
+    "title": "Validation, requirements management, the system proposal, and the W6 review questions",
+    "hook": "After this lesson you can name the 5 checks, 3 validation techniques and 4 review checks without mixing them, explain why requirements change, list the 10 proposal sections, and answer his W6 review questions.",
+    "cards": [
+      {
+        "h": "Validation: is this what the customer really wants?",
+        "body": "<p>You order a birthday cake. If the baker writes the wrong name on the <b>order form</b>, fixing it costs nothing. If he notices <b>after</b> the cake is baked, he must bake a new cake.</p><p>Requirements are the same. <b>Requirements validation</b> = showing that the requirements define the system that the <b>customer really wants</b>.</p><p>Why it matters: fixing a requirements error <b>after delivery</b> may cost <b>up to 100 times</b> the cost of fixing an implementation error. So we check requirements early.</p>"
+      },
+      {
+        "h": "The 5 requirements checks",
+        "body": "<p>Five questions to ask about the requirements (S26). Order: <b>V-C-C-R-V</b>.</p><table><tr><th>Check</th><th>Question</th><th>Café app example of a failure</th></tr><tr><td><b>Validity</b></td><td>Does the system give the functions that best support the customer's needs?</td><td>The app has a games section, but the owner needs faster orders.</td></tr><tr><td><b>Consistency</b></td><td>Are there any conflicts between requirements?</td><td>\"Cash only\" and \"card only\" in the same document.</td></tr><tr><td><b>Completeness</b></td><td>Are all functions the customer needs included?</td><td>Nobody wrote a requirement for refunds.</td></tr><tr><td><b>Realism</b></td><td>Can it be built with the available budget and technology?</td><td>AI that predicts every order perfectly, budget $500.</td></tr><tr><td><b>Verifiability</b></td><td>Can the requirements be checked?</td><td>\"The app should be fast.\" (How fast? Can't test it.)</td></tr></table>"
+      },
+      {
+        "h": "3 validation techniques, and how reviews work",
+        "body": "<p><b>How</b> do we validate? Three techniques (S27):</p><ol><li><b>Requirements reviews</b>: systematic <b>manual</b> analysis of the requirements (people read and discuss them).</li><li><b>Prototyping</b>: using an <b>executable model</b> of the system to check requirements (users click a demo).</li><li><b>Test-case generation</b>: writing tests for requirements to check <b>testability</b>. If you can't write a test, the requirement is bad.</li></ol><p><b>Requirements reviews (S28):</b></p><ul><li>held <b>regularly</b> while the requirements definition is being written;</li><li><b>both client and contractor staff</b> take part;</li><li>can be <b>formal</b> (with completed documents) or <b>informal</b>;</li><li>good communication between developers, customers and users solves problems <b>early</b>.</li></ul>"
+      },
+      {
+        "h": "The 4 review checks: don't mix the three lists",
+        "body": "<p>During a review, check each requirement for (S29):</p><ul><li><b>Verifiability</b>: is it realistically testable?</li><li><b>Comprehensibility</b>: is it properly understood?</li><li><b>Traceability</b>: is its <b>origin</b> clearly stated (who asked for it, why)?</li><li><b>Adaptability</b>: can it be changed without a large impact on other requirements?</li></ul><p>Three lists, side by side:</p><table><tr><th>Requirements checks (5)</th><th>Validation techniques (3)</th><th>Review checks (4)</th></tr><tr><td>Validity</td><td>Requirements reviews</td><td>Verifiability</td></tr><tr><td>Consistency</td><td>Prototyping</td><td>Comprehensibility</td></tr><tr><td>Completeness</td><td>Test-case generation</td><td>Traceability</td></tr><tr><td>Realism</td><td></td><td>Adaptability</td></tr><tr><td>Verifiability</td><td></td><td></td></tr></table><p><b>Trap:</b> Verifiability is in <b>both</b> check lists, with different words (\"can it be checked?\" vs \"realistically testable?\"). Hook for review checks: <b>V-C-T-A</b>.</p>"
+      },
+      {
+        "h": "Requirements management: requirements always change",
+        "body": "<p><b>Requirements management</b> = managing <b>changing</b> requirements during requirements engineering and system development. New requirements appear <b>while</b> the system is built AND <b>after</b> it is in use.</p><p>What you do: keep track of <b>each</b> requirement, keep <b>links</b> between dependent requirements (to see the impact of a change), and have a <b>formal process</b> for change proposals.</p><p><b>Why requirements change (3 reasons, S31–S32):</b></p><ol><li>The <b>business and technical environment</b> changes after installation: new hardware, links to other systems, new business priorities, new laws and regulations.</li><li>The people who <b>pay</b> are rarely the people who <b>use</b> the system. Payers' budget limits may conflict with users' needs, so features get added after delivery.</li><li>Large systems have <b>diverse users</b> with conflicting priorities. The final requirements are a <b>compromise</b>, and the balance often has to change.</li></ol><p>The S33 picture shows it over time:</p>",
+        "diagram": "flowchart LR\n  A[\"Initial understanding of problem\"] --> B[\"Initial requirements\"]\n  B -->|time passes| C[\"Changed understanding of problem\"]\n  C --> D[\"Changed requirements\"]"
+      },
+      {
+        "h": "⭐ The system proposal: 10 sections",
+        "body": "<p>Analysis ends with one big document, the <b>system proposal</b>, which goes to the <b>approval committee</b> (W5b).</p><table><tr><th>#</th><th>Section</th><th>What is inside</th></tr><tr><td>1</td><td>Table of Contents</td><td>—</td></tr><tr><td>2</td><td>Executive Summary</td><td>all essential info, so a <b>busy executive</b> can read quickly and decide what to read in depth</td></tr><tr><td>3</td><td>System Request</td><td>the <b>revised</b> system request form</td></tr><tr><td>4</td><td>Workplan</td><td>the original workplan, <b>revised</b> after analysis</td></tr><tr><td>5</td><td>Feasibility Analysis</td><td>a <b>revised</b> feasibility analysis, using information from analysis</td></tr><tr><td>6</td><td>Requirements Definition</td><td>the functional and nonfunctional business requirements</td></tr><tr><td>7</td><td>Functional Model</td><td>activity diagram, use case descriptions, use-case diagram</td></tr><tr><td>8</td><td>Structural Models</td><td>CRC cards, class diagram, object diagrams (to-be; may include as-is)</td></tr><tr><td>9</td><td>Behavioral Models</td><td>sequence diagrams, communication diagrams, behavioral-state machines, CRUDE matrix (to-be; may include as-is)</td></tr><tr><td>10</td><td>Appendices</td><td>supporting material, e.g. questionnaire or interview results</td></tr></table><p><b>Memory story:</b> Contents + Summary (2 openers) → 3 <b>old</b> documents, revised (Request, Workplan, Feasibility) → the <b>new</b> list (Requirements) → 3 <b>models</b> (Functional, Structural, Behavioral = what it does, what it is made of, how it behaves) → Appendices.</p><p>The Appendices sentence on S37 stops in the middle at \"industry\". Learn it as shown.</p>",
+        "diagram": "flowchart LR\n  SR[\"System request\"] --> RD[\"Requirements definition\"]\n  SR --> MO[\"Models\"]\n  SR --> FA[\"Feasibility analysis\"]\n  SR --> WP[\"Workplan\"]\n  RD --> SP([\"System proposal\"])\n  MO --> SP\n  FA --> SP\n  WP --> SP\n  SP --> AC{\"Approval committee\"}"
+      },
+      {
+        "h": "His W6 review questions (they test W5b)",
+        "body": "<p>W6 opens with 7 open questions and 2 MCQs about last week. Short exam answers:</p><table><tr><th>#</th><th>Question</th><th>Answer</th></tr><tr><td>1</td><td>Key deliverables of analysis?</td><td>Requirements definition, models (functional, structural, behavioral), revised feasibility analysis and workplan → together the <b>system proposal</b>, sent to the approval committee.</td></tr><tr><td>2</td><td>As-is vs to-be?</td><td>As-is = the current systems and processes. To-be = the concept of the new system.</td></tr><tr><td>3</td><td>Purpose of the requirements definition?</td><td>To convert high-level business requirements (from the system request) into <b>detailed</b> requirements used as inputs for creating models.</td></tr><tr><td>4</td><td>3 analysis steps; which is skipped, why?</td><td>Understand as-is → identify improvements → develop to-be. The <b>as-is</b> step is rushed, especially in <b>BPR</b>, which focuses on new ideas (BPA spends much time on it, BPI less).</td></tr><tr><td>5</td><td>5 interview steps?</td><td>Select interviewees → design questions → prepare → conduct → follow-up (report within 48 h).</td></tr><tr><td>6</td><td>Closed / open / probing?</td><td>Closed: a specific answer, for precise facts. Open: room to elaborate, for rich information. Probing: follow-up when an answer is unclear.</td></tr><tr><td>7</td><td>Unstructured vs structured?</td><td>Unstructured: broad, early in the project, hardest to conduct. Structured: prepared specific questions, later, more closed-ended.</td></tr></table><p><b>MCQ 1:</b> NOT a purpose of the requirements definition → <b>Create cost/benefit analysis</b> (that is economic feasibility, proposal section 5). Careful: \"a very high-level explanation\" is also arguably wrong, because the definition makes requirements <b>detailed</b>. If only one answer, choose cost/benefit.</p><p><b>MCQ 2:</b> functional requirement → <b>Access to the customer order system</b>. The rest are nonfunctional: English and Spanish = cultural/political; Blackberry and browsers = operational; updated every 5 seconds = performance.</p>"
+      }
+    ],
+    "example": {
+      "problem": "<p>A reviewer reads the café app requirements. For each one, which requirements check (Validity, Consistency, Completeness, Realism, Verifiability) fails?</p><ol><li>\"The menu screen must be user-friendly.\"</li><li>R5: \"Orders are taken only at the counter.\" R9: \"Customers order from their table with the app.\"</li><li>\"The system must work offline, sync instantly with 50 branches, and cost under $300.\"</li><li>The owner's main problem is long queues, but the requirements only describe a loyalty-points game.</li><li>Payment and ordering are described, but nothing about cancelling an order, which the owner asked for.</li></ol>",
+      "solution": "<ol><li><b>Verifiability</b>: \"user-friendly\" cannot be checked. Better: \"a new customer can place an order in under 60 seconds.\"</li><li><b>Consistency</b>: R5 and R9 conflict.</li><li><b>Realism</b>: not possible with that budget and technology.</li><li><b>Validity</b>: the functions do not support the customer's real need.</li><li><b>Completeness</b>: a function the customer needs is missing.</li></ol><p>Bonus: if nobody knows <b>who asked</b> for the loyalty game, that fails the review check <b>Traceability</b>.</p>"
+    },
+    "check": [
+      {
+        "q": "Why is requirements validation so important? Give the number.",
+        "a": "Fixing a requirements error after delivery may cost up to <b>100 times</b> the cost of fixing an implementation error."
+      },
+      {
+        "q": "Match: (i) \"Are there any requirements conflicts?\" (ii) \"Is the origin of the requirement clearly stated?\" (iii) \"Can it be changed without a large impact on other requirements?\"",
+        "a": "(i) Consistency (ii) Traceability (iii) Adaptability."
+      },
+      {
+        "q": "Which validation technique uses an executable model of the system?",
+        "a": "<b>Prototyping.</b> (Reviews = manual analysis; test-case generation = writing tests to check testability.)"
+      },
+      {
+        "q": "Give the 3 reasons requirements change.",
+        "a": "1) The business and technical environment changes after installation (hardware, interfaces, priorities, laws). 2) Payers are rarely the users, so their constraints conflict. 3) Diverse users with conflicting needs, so the requirements are a compromise that must be rebalanced."
+      },
+      {
+        "q": "Which proposal section has sequence diagrams, communication diagrams, behavioral-state machines and a CRUDE matrix? Which has CRC cards and class diagrams?",
+        "a": "9 Behavioral Models; 8 Structural Models."
+      },
+      {
+        "q": "His W6-S3 MCQ: \"Which is NOT a purpose of the requirements definition?\"",
+        "a": "<b>Create cost/benefit analysis</b>: it belongs to the feasibility analysis (economic feasibility), a separate section."
+      }
+    ],
+    "exam": {
+      "question": "<p>List the ten sections of the system proposal and briefly describe each.</p>",
+      "answer": "<ol><li><b>Table of Contents.</b></li><li><b>Executive Summary</b>: all essential information, so a busy executive can read it quickly and decide what to read in depth.</li><li><b>System Request</b>: the revised system request form.</li><li><b>Workplan</b>: the original workplan, revised after analysis.</li><li><b>Feasibility Analysis</b>: revised, using information from analysis.</li><li><b>Requirements Definition</b>: the functional and nonfunctional business requirements.</li><li><b>Functional Model</b>: activity diagram, use case descriptions and use-case diagram (the processes the system must support).</li><li><b>Structural Models</b>: CRC cards, class diagram, object diagrams (structure of the to-be system, maybe also the as-is).</li><li><b>Behavioral Models</b>: sequence diagrams, communication diagrams, behavioral-state machines, CRUDE matrix (internal behavior of the to-be system).</li><li><b>Appendices</b>: supporting material, e.g. questionnaire or interview results.</li></ol>"
+    },
+    "memorize": [
+      "Validation = requirements define what the customer really wants; late error up to 100×",
+      "5 checks: Validity, Consistency, Completeness, Realism, Verifiability",
+      "3 techniques: reviews (manual), prototyping (executable model), test-case generation",
+      "Reviews: regular, client + contractor staff, formal or informal",
+      "4 review checks: Verifiability, Comprehensibility, Traceability, Adaptability",
+      "Req. management: track each requirement, link dependent ones, formal change process",
+      "Why change: environment changes · payers ≠ users · diverse users",
+      "Proposal: Contents, Exec Summary, Request, Workplan, Feasibility, Requirements Def, Functional, Structural, Behavioral, Appendices",
+      "Sections 3–5 are REVISED old documents; 7–9 are the three models"
+    ],
+    "note": "The proposal's model types (use cases, CRC cards, sequence diagrams, CRUDE matrix) are only named on W6; W7 starts teaching the functional models. W6-S3 MCQ1 has two arguable answers; pick cost/benefit analysis if only one is allowed. Review question 4: the slides never say \"skipped\"; the answer is inferred from the BPA/BPI/BPR time differences."
+  }
+]

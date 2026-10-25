@@ -1,0 +1,220 @@
+[
+ {
+  "lesson": "W7-1",
+  "questions": [
+   {
+    "type": "mcq",
+    "q": "<p>Analysis ends with the system proposal. Which part of the system proposal is produced by <b>functional modeling</b> (use cases and activity diagrams)?</p><p>A) Requirements definition<br>B) Feasibility analysis<br>C) Models<br>D) Workplan</p>",
+    "a": "<p><b>C</b>, because system proposal = requirements definition + <b>models</b> + feasibility analysis + workplan, and use-case and activity diagrams are the functional models.</p>"
+   },
+   {
+    "type": "classify",
+    "q": "<p>A gym wants a membership app. Classify each requirement as <b>functional</b>, <b>non-functional</b> or <b>constraint</b>. Which ones will become use cases?</p><ol type=\"a\"><li>A member can book a group class.</li><li>The booking screen opens in under 2 seconds.</li><li>The app must run on the gym's existing Windows server.</li><li>A trainer can see the list of members booked for his class.</li><li>Members' card data must be encrypted.</li><li>The app must be finished within a budget of $8,000.</li></ol>",
+    "a": "<ol type=\"a\"><li><b>Functional</b> → use case <i>Book group class</i>.</li><li><b>Non-functional</b> (performance).</li><li><b>Constraint</b> (technology).</li><li><b>Functional</b> → use case <i>View class list</i>.</li><li><b>Non-functional</b> (security).</li><li><b>Constraint</b> (budget).</li></ol><p>Only (a) and (d) become use cases: use cases model functional requirements only.</p>"
+   },
+   {
+    "type": "short",
+    "q": "<p>Compare <b>use-case diagrams</b> and <b>activity diagrams</b>: what each one shows, from whose point of view, and whether it can model the as-is or the to-be system.</p>",
+    "a": "<table><tr><th></th><th>Use-case diagram</th><th>Activity diagram</th></tr><tr><td>Shows</td><td><b>WHAT</b> the system does: its basic functions and the actors that use them</td><td><b>HOW</b> the goals are reached: the logic of a business process or workflow, step by step</td></tr><tr><td>View</td><td>external, the user's view (not the internal mechanism)</td><td>the flow of activities and of objects (data) between them</td></tr><tr><td>As-is / to-be</td><td>both</td><td>both (computerized or not)</td></tr></table><p>Both are <b>functional models</b> in object-oriented analysis.</p>"
+   },
+   {
+    "type": "scenario",
+    "q": "<p>Explain <b>event-driven modeling</b> using an online food-order app. Give three trigger events and the use case each one starts. What does the system do between events?</p>",
+    "a": "<p>Everything the system does is a reaction to a <b>trigger event</b>. With no event, the system is <b>at rest, waiting</b>. When a trigger happens, the system and its users carry out the steps of one use case, then the system goes back to waiting.</p><ul><li>The customer taps \"Place order\" → <i>Place order</i>.</li><li>The restaurant presses \"Accept\" → <i>Accept order</i>.</li><li>The courier marks the order as delivered → <i>Confirm delivery</i>.</li></ul><p>(A time event also works: every night at 00:00 → <i>Produce daily sales report</i>.)</p>"
+   },
+   {
+    "type": "short",
+    "q": "<p>Match each sentence with one of the three major requirements activities (<b>anticipation</b>, <b>investigation</b>, <b>specification</b>):</p><ol type=\"a\"><li>The analyst interviews the café cashiers and watches them during peak hours.</li><li>From past projects, the analyst expects payment problems even before studying the café.</li><li>The analyst picks the essential requirements and describes the new system.</li></ol><p>Which activity is called \"the heart of systems analysis\", and in which <b>subphase</b> does elicitation happen?</p>",
+    "a": "<ol type=\"a\"><li><b>Investigation</b> (fact-finding: interview, observation).</li><li><b>Anticipation</b> (from past experience).</li><li><b>Specification</b>.</li></ol><p>The heart of systems analysis = <b>requirements investigation</b>. Elicitation happens in the <b>Analysis</b> subphase (Analysis → Modeling → Definition/Specification).</p>"
+   },
+   {
+    "type": "mcq",
+    "q": "<p>Which statement about a use case is TRUE?</p><p>A) It shows the internal mechanism of the system.<br>B) It is a sequence of actions that gives an observable result of value to an actor.<br>C) It can model only the new (to-be) system.<br>D) \"The app loads fast\" can be a use case.</p>",
+    "a": "<p><b>B</b>, because that is the definition. A is wrong (it is an external view), C is wrong (as-is too), D is wrong (non-functional requirements are never use cases).</p>"
+   }
+  ]
+ },
+ {
+  "lesson": "W7-2",
+  "questions": [
+   {
+    "type": "mcq",
+    "q": "<p>In a food-order system, <b>every time</b> a customer places an order, the system validates the delivery address. How do you draw this?</p><p>A) Dashed arrow «extend» from <i>Validate address</i> to <i>Place order</i><br>B) Dashed arrow «include» from <i>Place order</i> to <i>Validate address</i><br>C) Dashed arrow «include» from <i>Validate address</i> to <i>Place order</i><br>D) Solid line from <i>Place order</i> to <i>Validate address</i></p>",
+    "a": "<p><b>B</b>, because it happens every time (mandatory) → «include», and the include arrow goes from the <b>base</b> use case to the <b>included</b> one.</p>"
+   },
+   {
+    "type": "classify",
+    "q": "<p>Library system. For each sentence choose <b>association</b>, <b>include</b>, <b>extend</b> or <b>generalization</b>, and say which way the arrow points.</p><ol type=\"a\"><li>Every time a member renews a book, the system checks whether someone has reserved it.</li><li>While searching the catalogue, a member may reserve a book if it is checked out.</li><li>Student Member and Staff Member are both kinds of Member.</li><li>The librarian adds new books.</li><li><i>Borrow e-book</i> and <i>Borrow printed book</i> are special kinds of <i>Borrow book</i>.</li><li>If a fine payment fails, the system may record the failure.</li></ol>",
+    "a": "<ol type=\"a\"><li><b>Include</b> (always): <i>Renew book</i> --«include»--&gt; <i>Check reservations</i>.</li><li><b>Extend</b> (optional, condition): <i>Reserve book</i> --«extend» [book is checked out]--&gt; <i>Search catalogue</i>.</li><li><b>Generalization</b> of actors: hollow triangle from Student Member / Staff Member to Member.</li><li><b>Association</b>: solid line Librarian — <i>Add book</i>.</li><li><b>Generalization</b> of use cases: hollow triangle from each special use case to <i>Borrow book</i>.</li><li><b>Extend</b>: <i>Record payment failure</i> --«extend» [payment fails]--&gt; <i>Pay fine</i>.</li></ol>"
+   },
+   {
+    "type": "short",
+    "q": "<p>Hotel booking system. Is each one an <b>actor</b>? Why?</p><ol type=\"a\"><li>Guest</li><li>Receptionist</li><li>The hotel's own room-availability database</li><li>The bank's card payment service</li><li>The cleaning staff, who only get a printed list from the receptionist</li><li>The national tax system, which receives an automatic monthly tax file from the hotel system</li></ol>",
+    "a": "<ol type=\"a\"><li><b>Actor</b>: a person who uses the system (role).</li><li><b>Actor</b>: a role that uses the system.</li><li><b>Not an actor</b>: it is inside our system; we design and can change it.</li><li><b>Actor</b>: an outside system we cannot change → «actor» box.</li><li><b>Not an actor</b>: they never interact with the system (the receptionist does).</li><li><b>Actor</b>: an outside system that receives output directly from our system.</li></ol>"
+   },
+   {
+    "type": "drawing",
+    "q": "<p>Depict graphically: a use-case diagram fragment for a <b>cinema ticket system</b> that shows all four relationships. A customer buys a ticket online. Every purchase always includes paying by card through the bank's Card Payment Service. While buying, the customer may choose a VIP seat. Club members and guests are both customers; only club members collect bonus points.</p>",
+    "a": "<ul><li><b>Association</b>: Customer — <i>Buy ticket</i>; Club Member — <i>Collect bonus points</i>; <i>Pay by card</i> — «actor» Card Payment Service.</li><li><b>Include</b> (always): <i>Buy ticket</i> → <i>Pay by card</i>.</li><li><b>Extend</b> (optional): <i>Choose VIP seat</i> → <i>Buy ticket</i>, condition [customer wants a VIP seat].</li><li><b>Generalization</b>: Club Member and Guest → Customer (hollow triangle at Customer). Both inherit <i>Buy ticket</i>.</li><li>Boundary box \"Cinema Ticket System\"; all actors outside it.</li></ul>",
+    "diagram": "flowchart LR\n  CU([\"👤 Customer\"])\n  CM([\"👤 Club Member\"])\n  GU([\"👤 Guest\"])\n  subgraph CTS[\"Cinema Ticket System\"]\n    BT((\"Buy ticket\"))\n    PC((\"Pay by card\"))\n    VS((\"Choose VIP seat\"))\n    BP((\"Collect bonus points\"))\n  end\n  CP([\"🖥 «actor» Card Payment Service\"])\n  CU --- BT\n  BT -.->|include| PC\n  VS -.->|\"extend: customer wants a VIP seat\"| BT\n  CM -->|is a kind of| CU\n  GU -->|is a kind of| CU\n  CM --- BP\n  PC --- CP"
+   },
+   {
+    "type": "short",
+    "q": "<p>A classmate drew a use-case diagram for a gym. Find and fix the errors:</p><ol><li>The actor \"Member\" is drawn inside the system box.</li><li>One use case is called \"Membership\".</li><li>A dashed «extend» arrow goes from <i>Book class</i> to <i>Join waiting list</i>.</li><li>The gym's own member database is drawn as an actor.</li><li><i>Pay fee</i> is linked to <i>Register</i> with «extend», but payment happens every time someone registers.</li></ol>",
+    "a": "<ol><li>Actors are <b>outside</b> the subject boundary → move Member outside.</li><li>Names must be <b>verb–noun</b> → \"Buy membership\".</li><li>Extend points from the <b>optional</b> case to the <b>base</b> → arrow from <i>Join waiting list</i> to <i>Book class</i> [class is full].</li><li>Its own database is part of the system → <b>delete</b> the actor.</li><li>Mandatory behaviour = <b>«include»</b>, arrow from <i>Register</i> to <i>Pay fee</i>.</li></ol>"
+   },
+   {
+    "type": "mcq",
+    "q": "<p>How do you draw an external system (for example, a payment gateway) on a use-case diagram?</p><p>A) An oval inside the boundary<br>B) A rectangle with «actor» (or a stick figure) outside the boundary<br>C) A database cylinder inside the boundary<br>D) It is not shown</p>",
+    "a": "<p><b>B</b>, because an outside system that interacts with ours is an actor, and a non-human actor can be drawn as a rectangle with «actor» and its name, outside the subject boundary.</p>"
+   }
+  ]
+ },
+ {
+  "lesson": "W7-3",
+  "questions": [
+   {
+    "type": "drawing",
+    "q": "<p>Depict graphically: the use-case diagram for the <b>FitZone gym system</b>. People register online as members and pay the membership fee; every payment is processed by the external Payment Gateway. Members book group classes (at most 2 per day). If a class is full, a member may join the waiting list. Premium members are members who can also book a personal-trainer session. Trainers update the class timetable and view the attendance list of their classes. The gym manager produces a monthly membership report. At the entrance, the external Turnstile System sends each card scan to FitZone, which checks the member in.</p>",
+    "a": "<ul><li><b>Actors</b>: Member, Premium Member, Trainer, Gym Manager (people); «actor» Payment Gateway, «actor» Turnstile System (outside systems, drawn on the right).</li><li><b>Use cases</b>: Register as member, Pay membership fee, Book group class, Join waiting list, Book personal-trainer session, Update class timetable, View attendance list, Produce monthly report, Check in member.</li><li><b>Include</b>: registering always means paying → <i>Register as member</i> → <i>Pay membership fee</i>.</li><li><b>Extend</b>: <i>Join waiting list</i> → <i>Book group class</i> [class is full].</li><li><b>Generalization</b>: Premium Member → Member (inherits Register and Book group class, adds the PT session).</li><li><b>Not a use case</b>: \"at most 2 classes per day\" is a <b>business rule</b> (it goes into the use-case description).</li></ul>",
+    "diagram": "flowchart LR\n  ME([\"👤 Member\"])\n  PM([\"👤 Premium Member\"])\n  TR([\"👤 Trainer\"])\n  GM([\"👤 Gym Manager\"])\n  subgraph FZ[\"FitZone Gym System\"]\n    U1((\"Register as member\"))\n    U2((\"Pay membership fee\"))\n    U3((\"Book group class\"))\n    U4((\"Join waiting list\"))\n    U5((\"Book personal-trainer session\"))\n    U6((\"Update class timetable\"))\n    U7((\"View attendance list\"))\n    U8((\"Produce monthly report\"))\n    U9((\"Check in member\"))\n  end\n  PG([\"🖥 «actor» Payment Gateway\"])\n  TS([\"🖥 «actor» Turnstile System\"])\n  ME --- U1\n  ME --- U3\n  PM -->|is a kind of| ME\n  PM --- U5\n  U1 -.->|include| U2\n  U4 -.->|\"extend: class is full\"| U3\n  TR --- U6\n  TR --- U7\n  GM --- U8\n  U2 --- PG\n  U9 --- TS"
+   },
+   {
+    "type": "drawing",
+    "q": "<p>Depict graphically: the use-case diagram for <b>QuickBite</b>, an online food-ordering platform. Customers browse restaurant menus and place orders. Every order is paid online through the external Payment Service. When placing an order, a customer may apply a promo code. Restaurant staff accept orders and update the order status. Couriers see their assigned deliveries and confirm delivery. After delivery the customer may rate the order. Delivery is free for orders above 100,000 UZS. The app must be fast and easy to use.</p>",
+    "a": "<ul><li><b>Actors</b>: Customer, Restaurant Staff, Courier; «actor» Payment Service.</li><li><b>Use cases</b>: Browse menu, Place order, Pay online, Apply promo code, Rate order, Accept order, Update order status, View assigned deliveries, Confirm delivery.</li><li><b>Include</b>: <i>Place order</i> → <i>Pay online</i> (every order).</li><li><b>Extend</b>: <i>Apply promo code</i> → <i>Place order</i> [customer has a promo code].</li><li><i>Rate order</i> is its <b>own</b> use case linked to Customer, not an extend of Place order: it starts later, with its own trigger.</li><li><b>Not use cases</b>: \"free delivery above 100,000 UZS\" = business rule; \"fast and easy to use\" = non-functional requirements.</li></ul>",
+    "diagram": "flowchart LR\n  CU([\"👤 Customer\"])\n  RS([\"👤 Restaurant Staff\"])\n  CO([\"👤 Courier\"])\n  subgraph QB[\"QuickBite Food-Ordering System\"]\n    U1((\"Browse menu\"))\n    U2((\"Place order\"))\n    U3((\"Pay online\"))\n    U4((\"Apply promo code\"))\n    U5((\"Rate order\"))\n    U6((\"Accept order\"))\n    U7((\"Update order status\"))\n    U8((\"View assigned deliveries\"))\n    U9((\"Confirm delivery\"))\n  end\n  PS([\"🖥 «actor» Payment Service\"])\n  CU --- U1\n  CU --- U2\n  CU --- U5\n  U2 -.->|include| U3\n  U4 -.->|\"extend: customer has a promo code\"| U2\n  U3 --- PS\n  RS --- U6\n  RS --- U7\n  CO --- U8\n  CO --- U9"
+   },
+   {
+    "type": "drawing",
+    "q": "<p>Depict graphically: the use-case diagram for a library's <b>Study Room Booking System</b>. Students and staff of the university use it. They search free rooms and book a room (at most 3 hours per day). Each time someone books a room, the system verifies the person's university account with the university's external Identity Service. When booking, a user may also ask for a projector. A user can cancel a booking. The librarian blocks rooms for maintenance and prints the daily room schedule.</p>",
+    "a": "<ul><li><b>Actors</b>: Library User, with Student and Staff as kinds of Library User (actor generalization, so we do not draw two copies of every use case); Librarian; «actor» Identity Service.</li><li><b>Use cases</b>: Search free rooms, Book room, Verify university account, Request projector, Cancel booking, Block room for maintenance, Print daily schedule.</li><li><b>Include</b>: <i>Book room</i> → <i>Verify university account</i> (each time); the verification talks to the Identity Service.</li><li><b>Extend</b>: <i>Request projector</i> → <i>Book room</i> [user needs a projector].</li><li><b>Business rule</b>, not a use case: \"at most 3 hours per day\".</li></ul>",
+    "diagram": "flowchart LR\n  ST([\"👤 Student\"])\n  SF([\"👤 Staff\"])\n  LU([\"👤 Library User\"])\n  LB([\"👤 Librarian\"])\n  subgraph SRB[\"Study Room Booking System\"]\n    U1((\"Search free rooms\"))\n    U2((\"Book room\"))\n    U3((\"Verify university account\"))\n    U4((\"Request projector\"))\n    U5((\"Cancel booking\"))\n    U6((\"Block room for maintenance\"))\n    U7((\"Print daily schedule\"))\n  end\n  IS([\"🖥 «actor» Identity Service\"])\n  ST -->|is a kind of| LU\n  SF -->|is a kind of| LU\n  LU --- U1\n  LU --- U2\n  LU --- U5\n  U2 -.->|include| U3\n  U4 -.->|\"extend: user needs a projector\"| U2\n  U3 --- IS\n  LB --- U6\n  LB --- U7"
+   },
+   {
+    "type": "scenario",
+    "q": "<p>An AI tool produced these elements for the FitZone gym text from the first question of this lesson. Audit them: what is wrong with each, and which error from the classic list is it? What should you send back to the AI?</p><ol><li>Actor \"Building Owner\"</li><li>Use case \"Limit bookings to 2 per day\"</li><li>«extend» arrow from <i>Book group class</i> to <i>Join waiting list</i></li><li>Use case \"Manage system\"</li><li>The Payment Gateway drawn as a stick figure called \"Payment Clerk\"</li><li>Two use cases \"Member books class\" and \"Premium member books class\"</li></ol>",
+    "a": "<ol><li><b>Invented actor</b>: no sentence mentions him → delete.</li><li><b>Business rule promoted to a use case</b> → delete; put the rule in the description of Book group class.</li><li><b>«extend» the wrong way</b> → reverse: Join waiting list → Book group class.</li><li><b>Generic name</b> → delete or replace with real verb–noun functions.</li><li><b>Non-human actor drawn as human</b> → «actor» Payment Gateway box.</li><li><b>Near-identical use cases instead of actor generalization</b> → one <i>Book group class</i>, Premium Member → Member.</li></ol><p>Audit rule: every element must be justified by a sentence in the text. Then send <b>targeted corrections</b> (\"remove actor Building Owner\", \"reverse the extend arrow\"); do not regenerate from scratch.</p>"
+   },
+   {
+    "type": "mcq",
+    "q": "<p>An LLM writes PlantUML or Mermaid code from a text description, and the code is then rendered as a diagram. Which approach is this, and what is the human's role?</p><p>A) Fine-tuned domain model; the human is the author<br>B) Interactive clarification loop; the human is the renderer<br>C) Direct code generation; the human is the auditor and corrector<br>D) Direct code generation; the human is not needed</p>",
+    "a": "<p><b>C</b>, because direct code generation is the dominant approach (diagram-as-code: interpretable and editable). In LLM-assisted modeling the human audits and corrects; in manual modeling the human is the author.</p>"
+   },
+   {
+    "type": "classify",
+    "q": "<p>Parking app text: \"<i>A driver finds a free spot on the map and pays for parking through the City Payment System. Parking costs 3,000 UZS per hour. The driver can extend the parking time. Free spots are stored in the app's own parking-spot database. The map should load in 1 second.</i>\" Classify each item: actor, use case, business rule, non-functional requirement, or not an actor (part of the system).</p><ol type=\"a\"><li>Driver</li><li>Pay for parking</li><li>3,000 UZS per hour</li><li>City Payment System</li><li>The app's own parking-spot database</li><li>Map loads in 1 second</li><li>Extend parking time</li></ol>",
+    "a": "<ol type=\"a\"><li><b>Actor</b> (human).</li><li><b>Use case</b> (verb–noun).</li><li><b>Business rule</b>, not a use case.</li><li><b>Actor</b>: outside system → «actor».</li><li><b>Not an actor</b>: inside our system.</li><li><b>Non-functional</b> (performance), not a use case.</li><li><b>Use case</b>. (Careful: this is a normal use case named \"extend\", not an «extend» relationship.)</li></ol><p>\"Find free spot\" is also a use case.</p>"
+   }
+  ]
+ },
+ {
+  "lesson": "W7-4",
+  "questions": [
+   {
+    "type": "scenario",
+    "q": "<p>Write the use-case description for <b>Book group class</b> in the FitZone gym system, in the fully dressed template (name, ID, priority, actor, description, trigger and type, preconditions, normal course with information for steps, alternative courses, postconditions, exceptions, summary inputs/outputs). Rules from the text: a member may book at most 2 classes per day; if a class is full, he may join the waiting list; only members with an active membership can book.</p>",
+    "a": "<table><tr><td><b>Use Case Name:</b> Book group class</td><td><b>ID:</b> UC-3</td><td><b>Priority:</b> High</td></tr><tr><td colspan=\"3\"><b>Actor:</b> Member</td></tr><tr><td colspan=\"3\"><b>Description:</b> A member chooses a group class from the timetable and the system reserves a place for him, or puts him on the waiting list if the class is full.</td></tr><tr><td colspan=\"3\"><b>Stakeholders and interests:</b> Member: get a place in the class. Trainer: know who is coming. Gym manager: full classes, fair use of places.</td></tr><tr><td colspan=\"3\"><b>Trigger:</b> A member wants to attend a group class. <b>Type:</b> ☑ External ☐ Temporal</td></tr><tr><td colspan=\"3\"><b>Preconditions:</b><br>1. The member is logged in.<br>2. The trainers have published the class timetable.</td></tr><tr><td colspan=\"2\"><b>Normal Course:</b><br>1.0 Book a place<br>1. The member opens the class timetable.<br>2. The system shows the classes with the number of free places.<br>3. The member selects a class.<br>4. The system checks that the membership is active and that the member has fewer than 2 bookings that day.<br>5. The system checks that the class has a free place (Alternative Course 1.1).<br>6. The system saves the booking and reduces the free places by one.<br>7. The system sends a booking confirmation.</td><td><b>Information for Steps:</b><br><br>&rarr; timetable, free places<br>&larr; selected class<br>&larr; membership status, bookings that day<br>&larr; free places<br>&rarr; booking record<br>&rarr; confirmation</td></tr><tr><td colspan=\"3\"><b>Alternative Courses:</b><br>1.1 The class is full (branch at step 5)<br>1. The system offers the waiting list.<br>2. The member accepts.<br>3. The system adds the member to the waiting list and shows his position.<br>4. The system sends a waiting-list confirmation; the use case ends.</td></tr><tr><td colspan=\"3\"><b>Postconditions:</b><br>1. The booking (or waiting-list entry) is stored.<br>2. The free places of the class are updated.<br>3. The member has a confirmation; the trainer's attendance list shows him.</td></tr><tr><td colspan=\"3\"><b>Exceptions:</b><br>E1: The membership has expired (occurs at step 4)<br>1. The system displays \"Your membership has expired\".<br>2. The system terminates the use case.<br>E2: The member already has 2 bookings that day (occurs at step 4)<br>1. The system displays \"Daily limit of 2 classes reached\".<br>2. The system terminates the use case.</td></tr></table><p><b>Summary Inputs / Outputs:</b></p><table><tr><th>Summary Inputs</th><th>Source</th><th>Outputs</th><th>Destination</th></tr><tr><td>Selected class</td><td>Member</td><td>Timetable with free places</td><td>Member</td></tr><tr><td>Membership status</td><td>Member datastore</td><td>Booking record</td><td>Booking datastore</td></tr><tr><td>Bookings that day, free places</td><td>Booking datastore</td><td>Booking / waiting-list confirmation</td><td>Member</td></tr><tr><td>Waiting-list answer</td><td>Member</td><td>Error message</td><td>Member</td></tr></table><p>Why: the full class still ends in a useful result → <b>alternative course</b> (it is the <i>Join waiting list</i> extend from the diagram). Expired membership and the daily limit end in failure → <b>exceptions</b>. The \"2 per day\" business rule lives here, not on the diagram.</p>"
+   },
+   {
+    "type": "short",
+    "q": "<p>QuickBite food app, use case <b>Place order</b> (every order is paid online through the Payment Service; a customer may apply a promo code). Fill in only these parts of the template: <b>Trigger + Type</b>, <b>Preconditions</b>, <b>Postconditions</b>, one <b>Alternative Course</b> and one <b>Exception</b>.</p>",
+    "a": "<table><tr><td><b>Trigger:</b> The customer wants to order food. <b>Type:</b> ☑ External ☐ Temporal</td></tr><tr><td><b>Preconditions:</b><br>1. The customer is logged in.<br>2. The restaurant is open and its menu is available.<br>3. The Payment Service is reachable.</td></tr><tr><td><b>Postconditions:</b><br>1. The order is stored with status \"New\".<br>2. The payment is recorded.<br>3. The restaurant is notified of the order.<br>4. The customer has an order number.</td></tr><tr><td><b>Alternative Courses:</b><br>1.1 The customer has a promo code (branch at step 4, before payment)<br>1. The customer enters the code.<br>2. The system checks it and reduces the total.<br>3. Continue at step 5 (pay online).</td></tr><tr><td><b>Exceptions:</b><br>E1: The card is declined (occurs at the payment step)<br>1. The system displays \"Payment declined\".<br>2. The system cancels the order and terminates the use case.</td></tr></table><p>The postconditions (order stored, restaurant notified) become the preconditions of the next use case, <i>Accept order</i>.</p>"
+   },
+   {
+    "type": "classify",
+    "q": "<p>QuickBite, use case <b>Place order</b>. Is each situation an <b>alternative course</b> or an <b>exception</b>?</p><ol type=\"a\"><li>The customer applies a promo code.</li><li>The Payment Service is down.</li><li>The customer chooses \"pick up myself\" instead of delivery.</li><li>The card is declined.</li><li>The restaurant closed while the customer was choosing.</li><li>The customer picks one of his saved addresses instead of typing a new one.</li></ol>",
+    "a": "<ol type=\"a\"><li><b>Alternative</b>: another branch, still a successful order.</li><li><b>Exception</b>: error, no order.</li><li><b>Alternative</b>: success.</li><li><b>Exception</b>: unsuccessful result.</li><li><b>Exception</b>: unusual event, no order.</li><li><b>Alternative</b>: success.</li></ol><p>Rule: both branch off the normal course; an alternative still ends in <b>success</b>, an exception ends <b>unsuccessfully</b>.</p>"
+   },
+   {
+    "type": "classify",
+    "q": "<p>External or temporal trigger?</p><ol type=\"a\"><li>A member scans his card at the gym turnstile.</li><li>At midnight, memberships that end today are marked as expired.</li><li>A customer places a food order.</li><li>On the 1st of every month, the manager's membership report is produced.</li><li>A courier confirms a delivery.</li><li>A study-room booking starts in 15 minutes, so a reminder is sent.</li></ol>",
+    "a": "<ol type=\"a\"><li><b>External</b></li><li><b>Temporal</b></li><li><b>External</b></li><li><b>Temporal</b></li><li><b>External</b></li><li><b>Temporal</b></li></ol><p>External = something happens outside the system (a person or system acts). Temporal = time passes (a date, a deadline, \"every month\").</p>"
+   },
+   {
+    "type": "mcq",
+    "q": "<p>Which part of a fully dressed use-case description lists <b>all</b> inputs with their <b>source</b> and all outputs with their <b>destination</b>?</p><p>A) Information for Steps<br>B) Summary Inputs and Outputs<br>C) Postconditions<br>D) Normal Course</p>",
+    "a": "<p><b>B</b>, because the summary table collects every possible input (with source) and output (with destination) of the normal and alternative courses. Information for Steps only marks the data used in each step (&larr; input, &rarr; output).</p>"
+   },
+   {
+    "type": "short",
+    "q": "<p>FitZone gym. The postconditions of <i>Register as member</i> are: \"1. The membership is active. 2. The member has a card number.\" (a) How does this link to <i>Book group class</i>? (b) Who is the primary actor of <i>Book group class</i>, and must he be in the stakeholders list? (c) Why does every use case get an ID?</p>",
+    "a": "<p>(a) The postconditions of one use case become the <b>preconditions</b> of the next: <i>Book group class</i> needs an active membership, which <i>Register as member</i> produced.</p><p>(b) The <b>Member</b>: he triggers the use case, and it exists to meet his goal. Yes, the stakeholders list <b>always includes the primary actor</b>.</p><p>(c) So each use case is easy to find and the team can <b>trace design decisions back</b> to a specific requirement.</p>"
+   }
+  ]
+ },
+ {
+  "lesson": "W7-5",
+  "questions": [
+   {
+    "type": "mcq",
+    "q": "<p>A thick black bar has <b>one</b> arrow coming in and <b>three</b> arrows going out. What is it?</p><p>A) Decision node<br>B) Merge node<br>C) Fork node<br>D) Join node</p>",
+    "a": "<p><b>C</b>, because a fork (thick bar, 1 in, several out) splits the flow into parallel paths that are all executed. A join is also a bar but has several in and 1 out; decision and merge are diamonds.</p>"
+   },
+   {
+    "type": "classify",
+    "q": "<p>Name each activity-diagram element:</p><ol type=\"a\"><li>a small filled circle</li><li>a circle with an X inside</li><li>a square-cornered rectangle labelled \"Order\"</li><li>a dashed arrow from an activity to that rectangle</li><li>a diamond with two arrows in and one out</li><li>a bull's-eye</li><li>a rounded rectangle \"Print receipt\" that cannot be broken down further</li></ol>",
+    "a": "<ol type=\"a\"><li><b>Initial node</b>.</li><li><b>Final-flow node</b>: stops one path.</li><li><b>Object node</b> (class name).</li><li><b>Object flow</b>.</li><li><b>Merge node</b>.</li><li><b>Final-activity node</b>: stops everything.</li><li><b>Action</b> (an activity can be decomposed, an action cannot).</li></ol>"
+   },
+   {
+    "type": "drawing",
+    "q": "<p>Depict graphically: in an online food order, after the customer pays, two things happen in parallel: (1) the system sends an SMS receipt, and that path simply stops; (2) the restaurant prepares the food and the courier delivers it, which ends the whole process. Which final node goes at the end of each path, and why?</p>",
+    "a": "<ul><li>After <i>Pay online</i>: a <b>fork</b> bar (\"in parallel\").</li><li>SMS path ends with a <b>final-flow node</b> (circle with X): it stops <b>only this path</b>; delivery goes on.</li><li>Delivery path ends with a <b>final-activity node</b> (bull's-eye): it stops <b>the whole process</b>, including any path still running.</li><li>No join is needed here, because the SMS path stops by itself.</li></ul>",
+    "diagram": "flowchart TD\n  S(( )) --> PO(\"Place order\")\n  PO --> PY(\"Pay online\")\n  PY --> F[\" \"]\n  F --> SR(\"Send SMS receipt\")\n  SR --> FF((\"X\"))\n  F --> PF(\"Prepare food\")\n  PF --> DL(\"Deliver order\")\n  DL --> E(((\" \")))\n  classDef bar fill:#222,stroke:#222,color:#222\n  class F bar\n  style S fill:#222,stroke:#222\n  style E fill:#222,stroke:#222"
+   },
+   {
+    "type": "short",
+    "q": "<p>Compare <b>control flow</b> and <b>object flow</b> (line style, what each shows, what it connects). Give one example of each from a library \"Borrow Books\" process.</p>",
+    "a": "<table><tr><th></th><th>Control flow</th><th>Object flow</th></tr><tr><td>Line</td><td>solid arrow</td><td>dashed arrow</td></tr><tr><td>Shows</td><td>the order of execution</td><td>objects (information) moving into and out of activities</td></tr><tr><td>Connects</td><td>actions/activities only</td><td>an action/activity with an object node</td></tr><tr><td>Example</td><td><i>Validate ID Card</i> → <i>Check for Overdue Books and Fines</i></td><td><i>Validate ID Card</i> - - &gt; [Borrower] object node - - &gt; <i>Check Out Books</i></td></tr></table>"
+   },
+   {
+    "type": "classify",
+    "q": "<p>Schedlbauer's best practices for business process modeling: <b>true or false</b>?</p><ol type=\"a\"><li>Model alone, so the team does not confuse you.</li><li>Use whiteboards while modeling; use a CASE tool later to document.</li><li>Try to identify every task now.</li><li>Put tasks that belong to other processes on a to-do list.</li><li>Include every minor task so the model is complete.</li><li>Come back and revise the model as you learn more.</li></ol>",
+    "a": "<ol type=\"a\"><li><b>False</b>: modeling is collaborative; work in teams.</li><li><b>True</b>.</li><li><b>False</b>: be realistic, you cannot find everything now.</li><li><b>True</b>: stay focused.</li><li><b>False</b>: a model is an abstraction; leave out minor tasks.</li><li><b>True</b>: iterate.</li></ol><p>(The seventh one: be agile, so what you do identify, identify rigorously.)</p>"
+   },
+   {
+    "type": "short",
+    "q": "<p>Why do we draw business process models? What does \"business processes cut across functional departments\" mean (give a gym example), and what is the main risk of these models?</p>",
+    "a": "<p>A business process model shows the activities that together support one business process. It is <b>very powerful for communicating</b> the analyst's understanding to the users.</p><p>One process uses several departments: a new gym member's registration goes through Sales (form), Finance (payment) and Front Desk (card), so no single department owns it.</p><p>Risk: it can push the team into a <b>functional decomposition mindset</b> (and early OO approaches often ignored process modeling).</p>"
+   }
+  ]
+ },
+ {
+  "lesson": "W7-6",
+  "questions": [
+   {
+    "type": "drawing",
+    "q": "<p>Depict graphically: an activity diagram with swimlanes for <b>FitZone gym registration</b>. A new member fills in the online registration form. The FitZone system checks whether the e-mail is already registered. If it is, the system shows a message and the process ends. Otherwise the member pays the fee and the Payment Gateway processes the card. If the card is declined, the member pays again with another card. If it is approved, the system at the same time creates the membership card and sends a welcome e-mail. When both are done, the member receives the card number.</p>",
+    "a": "<ul><li><b>Lanes</b>: Member, FitZone System, Payment Gateway.</li><li>● in the Member lane → <i>Fill in registration form</i> → <i>Check if e-mail is registered</i>.</li><li><b>Decision 1</b>: [e-mail already registered] → <i>Show already-registered message</i> → end; [new e-mail] → <i>Pay membership fee</i>.</li><li>\"Pays again\" = a <b>loop</b>: a <b>merge</b> diamond just before <i>Pay membership fee</i>; <b>Decision 2</b> after <i>Process card payment</i>: [declined] → back to the merge; [approved] → continue.</li><li>\"At the same time\" → <b>fork</b>: <i>Create membership card</i> and <i>Send welcome e-mail</i>; \"when both are done\" → <b>join</b>.</li><li><i>Receive card number</i> → ◉ final-activity node.</li></ul>",
+    "diagram": "flowchart TD\n  subgraph MB[\"Member\"]\n    S(( ))\n    FO(\"Fill in registration form\")\n    M0{\" \"}\n    PF(\"Pay membership fee\")\n    RC(\"Receive card number\")\n    E(((\" \")))\n  end\n  subgraph FZ[\"FitZone System\"]\n    CE(\"Check if e-mail is registered\")\n    D1{\" \"}\n    SM(\"Show already-registered message\")\n    F[\" \"]\n    CC(\"Create membership card\")\n    SW(\"Send welcome e-mail\")\n    J[\" \"]\n  end\n  subgraph PG[\"Payment Gateway\"]\n    PC(\"Process card payment\")\n    D2{\" \"}\n  end\n  S --> FO\n  FO --> CE\n  CE --> D1\n  D1 -->|\"[e-mail already registered]\"| SM\n  SM --> E\n  D1 -->|\"[new e-mail]\"| M0\n  M0 --> PF\n  PF --> PC\n  PC --> D2\n  D2 -->|\"[declined]\"| M0\n  D2 -->|\"[approved]\"| F\n  F --> CC\n  F --> SW\n  CC --> J\n  SW --> J\n  J --> RC\n  RC --> E\n  classDef bar fill:#222,stroke:#222,color:#222\n  class F,J bar\n  style S fill:#222,stroke:#222\n  style E fill:#222,stroke:#222"
+   },
+   {
+    "type": "drawing",
+    "q": "<p>Depict graphically: an activity diagram with swimlanes for a <b>QuickBite food order</b>. The customer places and pays for an order. The restaurant checks whether it can make the order. If not, it rejects the order, the customer gets a refund and the process ends. If yes, the restaurant cooks the food while, at the same time, a courier accepts the delivery request and goes to the restaurant. When the food is ready and the courier has arrived, the courier picks up the food and delivers it, and the customer receives the order.</p>",
+    "a": "<ul><li><b>Lanes</b>: Customer, Restaurant, Courier.</li><li>● → <i>Place and pay for order</i> (Customer) → <i>Check if order can be made</i> (Restaurant).</li><li><b>Decision</b> with guards [cannot make] → <i>Reject order</i> → <i>Receive refund</i> (Customer) → end; [can make] → fork.</li><li>\"While, at the same time\" → <b>fork</b>: <i>Cook food</i> (Restaurant) ∥ <i>Accept delivery request</i> → <i>Go to restaurant</i> (Courier).</li><li>\"When the food is ready and the courier has arrived\" → <b>join</b>, then <i>Pick up food</i> → <i>Deliver order</i> → <i>Receive order</i> → ◉.</li><li>Arrows crossing lanes = hand-overs between roles.</li></ul>",
+    "diagram": "flowchart TD\n  subgraph CU[\"Customer\"]\n    S(( ))\n    PO(\"Place and pay for order\")\n    RF(\"Receive refund\")\n    RO(\"Receive order\")\n    E(((\" \")))\n  end\n  subgraph RE[\"Restaurant\"]\n    CK(\"Check if order can be made\")\n    D1{\" \"}\n    RJ(\"Reject order\")\n    F[\" \"]\n    CF(\"Cook food\")\n  end\n  subgraph CR[\"Courier\"]\n    AD(\"Accept delivery request\")\n    GR(\"Go to restaurant\")\n    J[\" \"]\n    PU(\"Pick up food\")\n    DL(\"Deliver order\")\n  end\n  S --> PO\n  PO --> CK\n  CK --> D1\n  D1 -->|\"[cannot make]\"| RJ\n  RJ --> RF\n  RF --> E\n  D1 -->|\"[can make]\"| F\n  F --> CF\n  F --> AD\n  AD --> GR\n  CF --> J\n  GR --> J\n  J --> PU\n  PU --> DL\n  DL --> RO\n  RO --> E\n  classDef bar fill:#222,stroke:#222,color:#222\n  class F,J bar\n  style S fill:#222,stroke:#222\n  style E fill:#222,stroke:#222"
+   },
+   {
+    "type": "drawing",
+    "q": "<p>Depict graphically: an activity diagram for <b>Return Book</b> in a library. When a borrower returns a book, the librarian scans it. If the book is overdue, the system calculates the fine and the borrower pays it. Then the system closes the loan record. If another borrower has reserved the book, the system notifies that borrower and the book is kept at the desk; otherwise the book goes back on the shelf.</p>",
+    "a": "<ul><li>● → <i>Scan returned book</i>.</li><li><b>Decision 1</b>: [overdue] → <i>Calculate fine</i> → <i>Pay fine</i>; [on time] → straight on. Both paths meet at a <b>merge</b> → <i>Close loan record</i>.</li><li><b>Decision 2</b>: [reserved by another borrower] → <i>Notify requesting borrower</i> → <i>Keep book at the desk</i>; [not reserved] → <i>Put book back on shelf</i>.</li><li><b>Merge</b> → ◉ final-activity node.</li><li>No fork: nothing happens in parallel. Every decision exit has a guard. (Swimlanes Borrower / Librarian / Library System would make it even better.)</li></ul>",
+    "diagram": "flowchart TD\n  S(( )) --> SB(\"Scan returned book\")\n  SB --> D1{\" \"}\n  D1 -->|\"[overdue]\"| CF(\"Calculate fine\")\n  CF --> PF(\"Pay fine\")\n  D1 -->|\"[on time]\"| M1{\" \"}\n  PF --> M1\n  M1 --> CL(\"Close loan record\")\n  CL --> D2{\" \"}\n  D2 -->|\"[reserved by another borrower]\"| NR(\"Notify requesting borrower\")\n  NR --> KD(\"Keep book at the desk\")\n  D2 -->|\"[not reserved]\"| PS(\"Put book back on shelf\")\n  KD --> M2{\" \"}\n  PS --> M2\n  M2 --> E(((\" \")))\n  style S fill:#222,stroke:#222\n  style E fill:#222,stroke:#222"
+   },
+   {
+    "type": "classify",
+    "q": "<p>Which activity-diagram element does each phrase of a narrative point to?</p><ol type=\"a\"><li>\"If the card is valid…, otherwise…\"</li><li>\"Meanwhile, the kitchen prepares the food\"</li><li>\"When both are ready…\"</li><li>\"The courier does…\" / \"The restaurant does…\"</li><li>\"…and the order is complete\" (everything stops)</li><li>\"The SMS part stops here, but delivery continues\"</li><li>\"The address entered at the start is used later, at delivery\"</li></ol>",
+    "a": "<ol type=\"a\"><li><b>Decision</b> node with guards [valid] / [invalid].</li><li><b>Fork</b>.</li><li><b>Join</b>.</li><li><b>Swimlanes</b>, one per role.</li><li><b>Final-activity</b> node (bull's-eye).</li><li><b>Final-flow</b> node (circle with X).</li><li><b>Object node</b> + dashed <b>object flows</b> (shown because the information is used later, not in the next step).</li></ol>"
+   },
+   {
+    "type": "short",
+    "q": "<p>A classmate drew an activity diagram for a food order. Find and fix the errors:</p><ol><li>There are two initial nodes.</li><li>A diamond with one arrow in and two out, going to \"Cook food\" and \"Assign courier\", which happen at the same time.</li><li>A decision diamond with exits but no labels.</li><li>The whole process ends with a circle with an X.</li><li>An arrow to the object node \"Order\" is drawn solid.</li><li>An activity is called \"Payment\".</li></ol>",
+    "a": "<ol><li>Exactly <b>one</b> initial node.</li><li>Parallel work needs a <b>fork bar</b> (and a join bar later), not a diamond.</li><li>Put a <b>guard condition in [brackets] on every exit</b>, covering all cases.</li><li>When everything stops, use the <b>final-activity</b> node (bull's-eye); the X is final-flow.</li><li>Object flow is <b>dashed</b>.</li><li>Use <b>verb + noun</b>: \"Pay for order\".</li></ol>"
+   },
+   {
+    "type": "scenario",
+    "q": "<p>Apply the <b>5 steps for creating an activity diagram</b> to the FitZone use case <i>Book group class</i> (if the class is full, the member may join the waiting list; maximum 2 bookings per day). Say what you do in each step.</p>",
+    "a": "<ol><li><b>Choose a business process</b>: the use case <i>Book group class</i> (from the use-case diagram and requirements).</li><li><b>Identify the activities</b>: Select class, Check membership and daily limit, Check free places, Save booking, Add to waiting list, Send confirmation.</li><li><b>Identify control flows and nodes</b>: initial node; decision [active, under limit] / [expired or limit reached]; decision [place free] / [class full]; merge before Send confirmation; final node. No fork: nothing runs in parallel.</li><li><b>Identify object flows and nodes</b>: usually not shown; none needed here, because each piece of information is used in the very next step.</li><li><b>Lay out and draw</b>, minimizing line crossings.</li></ol>"
+   }
+  ]
+ }
+]

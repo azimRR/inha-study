@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Econ Midterm Lessons</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=IBM+Plex+Mono:wght@400;600&family=Schibsted+Grotesk:wght@600;800&display=swap">
+<link rel="stylesheet" href="econ.css">
+<style>
+  html, body { height: 100%; }
+  body { display: grid; grid-template-columns: 290px 1fr; overflow: hidden; }
+  aside { border-right: 1.5px solid var(--line); background: var(--sheet); overflow-y: auto; padding: 16px 12px 24px; display: grid; gap: 14px; align-content: start; }
+  aside .home { font-weight: 700; text-decoration: none; padding: 0 8px; }
+  aside h3 { font: 700 12px/1 var(--body); letter-spacing: .1em; text-transform: uppercase; color: var(--muted); padding: 10px 8px 4px; }
+  .lesson-link { display: grid; grid-template-columns: auto 1fr auto; gap: 10px; align-items: center; padding: 9px 10px; border-radius: 10px;
+    text-decoration: none; color: var(--ink); font-size: 14.5px; line-height: 1.3; border: 1.5px solid transparent; }
+  .lesson-link:hover { background: var(--tint); }
+  .lesson-link.cur { border-color: var(--green); background: var(--green-soft); }
+  .lesson-link .q { font: 800 12px/1 var(--mono); color: var(--muted); min-width: 52px; }
+  .lesson-link .done { color: var(--green); font-weight: 800; }
+  main { display: grid; grid-template-rows: auto 1fr auto; overflow: hidden; min-width: 0; }
+  .top { display: flex; align-items: center; gap: 12px; padding: 12px 20px; border-bottom: 1.5px solid var(--line); background: var(--sheet); }
+  .top .menu { display: none; }
+  .top .lt { font: 800 16px/1.2 var(--display); flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .dots { display: flex; gap: 5px; flex-wrap: wrap; }
+  .dots button { width: 10px; height: 10px; border-radius: 50%; border: 0; padding: 0; background: var(--line); cursor: pointer; }
+  .dots button.on { background: var(--green); transform: scale(1.3); }
+  .dots button.seen { background: var(--ink-soft); }
+  .stage { overflow-y: auto; padding: 28px 20px 40px; }
+  .slide { max-width: 1060px; margin: 0 auto; display: grid; gap: 20px; animation: up .25s ease-out; }
+  @keyframes up { from { opacity: .5; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+  .kicker { font: 700 13px/1 var(--mono); color: var(--muted); letter-spacing: .03em; }
+  .slide h1 { font-size: clamp(32px, 4.6vw, 54px); font-weight: 800; }
+  .slide h2 { font-size: clamp(26px, 3.4vw, 38px); font-weight: 800; }
+  .hook { font-size: 1.22em; color: var(--ink-soft); max-width: 60ch; }
+  .meta { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+  .learnlist { display: grid; gap: 8px; counter-reset: c; padding: 0; margin: 0; list-style: none; }
+  .learnlist li { counter-increment: c; display: flex; gap: 12px; align-items: baseline; font-size: 1.05em; }
+  .learnlist li::before { content: counter(c); font: 800 14px/1 var(--mono); color: var(--green); background: var(--green-soft); border-radius: 6px; padding: 5px 8px; }
+  .two { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr); gap: 24px; align-items: start; }
+  .body { font-size: 1.08em; }
+  .body table { font-size: .85em; }
+  .body.solo { max-width: 72ch; font-size: 1.14em; }
+  .checks { display: grid; gap: 12px; }
+  .bottom { display: flex; align-items: center; gap: 12px; padding: 12px 20px; padding-bottom: calc(12px + env(safe-area-inset-bottom, 0px)); border-top: 1.5px solid var(--line); background: var(--sheet); }
+  .bottom .sp { flex: 1; font: 600 13px var(--mono); color: var(--muted); text-align: center; }
+  .navb { font: 700 15px/1 var(--body); padding: 11px 16px; border-radius: 999px; border: 1.5px solid var(--line); background: var(--sheet); color: var(--ink); cursor: pointer; }
+  .navb:hover { border-color: var(--green); color: var(--green); }
+  .navb.primary { background: var(--green); border-color: var(--green); color: var(--sheet); }
+  .navb:disabled { opacity: .4; cursor: default; }
+  .mem { display: grid; gap: 10px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); }
+  .mem div { background: var(--sheet); border: 1.5px solid var(--line); border-left: 5px solid var(--gold); border-radius: 10px; padding: 12px 14px; font-weight: 700; }
+  .finish { display: flex; flex-wrap: wrap; gap: 10px; }
+  .empty { max-width: 640px; margin: 10vh auto; text-align: center; display: grid; gap: 14px; color: var(--ink-soft); }
+  @media (max-width: 900px) {
+    body { grid-template-columns: 1fr; }
+    aside { position: fixed; inset: 0 30% 0 0; z-index: 20; box-shadow: var(--shadow); transform: translateX(-105%); transition: transform .2s; }
+    aside.open { transform: none; }
+    .top .menu { display: inline-flex; }
+    .two { grid-template-columns: 1fr; }
+    body { font-size: 16px; }
+  }
+</style>
+</head>
+<body>
+  <aside id="side"></aside>
+  <main>
+    <div class="top">
+      <button class="navb menu" id="menu" aria-label="Lessons">☰</button>
+      <div class="lt" id="lt"></div>
+      <div class="dots" id="dots"></div>
+    </div>
+    <div class="stage" id="stage"></div>
+    <div class="bottom">
+      <button class="navb" id="prev">← Back</button>
+      <div class="sp" id="sp"></div>
+      <button class="navb primary" id="next">Next →</button>
+    </div>
+  </main>
+
+<script src="list.js"></script>
+<script src="lessons-data.js"></script>
+<script src="chart.js"></script>
+<script>
+  const LS = (typeof LESSONS !== "undefined" ? LESSONS : []);
+  const store = { get(k, d) { try { return JSON.parse(localStorage.getItem(k)) ?? d; } catch (e) { return d; } }, set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} } };
+  let done = store.get("econ-done", {});
+  let li = 0, si = 0;
+  const stage = document.getElementById("stage");
+  const rich = (h) => `<div class="rich">${(h || "").replace(/<table/g, '<div class="tblwrap"><table').replace(/<\/table>/g, "</table></div>")}</div>`;
+  const revealBlock = (label, inner, cls = "sol") => `<button class="reveal" data-reveal>${label}</button><div class="panel ${cls}" hidden><span class="lbl">Answer</span>${rich(inner)}</div>`;
+
+  function stepsOf(L) {
+    const s = [{ type: "intro" }];
+    (L.cards || []).forEach((c, i) => s.push({ type: "card", c, i }));
+    if (L.example) s.push({ type: "example" });
+    if (L.check && L.check.length) s.push({ type: "check" });
+    if (L.exam) s.push({ type: "exam" });
+    s.push({ type: "wrap" });
+    return s;
+  }
+
+  function renderStep(L, st, n) {
+    const head = `<div class="kicker">${L.label} · WEEK ${L.week} · STEP ${si + 1} OF ${n}</div>`;
+    if (st.type === "intro") return `${head}
+      <div class="meta"><span class="qbadge">${L.label}</span><span class="chip ${L.kind === "calculation" ? "calc" : ""}">${L.kind}</span><span class="chip">Week ${L.week} · slide${L.slides.length > 1 ? "s" : ""} ${L.slides.join(", ")}</span></div>
+      <h1>${L.title}</h1>
+      <p class="hook">${L.hook || ""}</p>
+      ${L.note ? `<div class="panel note"><span class="lbl">Check your note</span><p>${L.note}</p></div>` : ""}
+      <div class="panel"><span class="lbl">In this lesson</span><ol class="learnlist">${(L.cards || []).map((c) => `<li>${c.h}</li>`).join("")}${L.example ? "<li>A worked example</li>" : ""}<li>Quick self-test + the exam answer</li></ol></div>`;
+    if (st.type === "card") {
+      const c = st.c;
+      return `${head}<h2>${c.h}</h2>${c.chart ? `<div class="two"><div class="body">${rich(c.body)}</div>${renderChart(c.chart)}</div>` : `<div class="body solo">${rich(c.body)}</div>`}`;
+    }
+    if (st.type === "example") return `${head}<h2>Worked example</h2>
+      <div class="panel"><span class="lbl">Problem</span>${rich(L.example.problem)}</div>
+      ${revealBlock("Show the solution", L.example.solution)}
+      ${L.example.chart ? renderChart(L.example.chart) : ""}`;
+    if (st.type === "check") return `${head}<h2>Quick self-test</h2><p class="hook">Answer in your head first, then tap to check.</p>
+      <div class="checks">${L.check.map((q, i) => `<div class="panel"><span class="lbl">Question ${i + 1}</span>${rich(q.q)}${revealBlock("Check", q.a)}</div>`).join("")}</div>`;
+    if (st.type === "exam") return `${head}<h2>On the exam</h2>
+      <div class="panel exam"><span class="lbl">Likely question</span>${rich(L.exam.question)}</div>
+      ${revealBlock("Show model answer", L.exam.answer)}`;
+    const next = LS[li + 1];
+    return `${head}<h2>Remember these</h2>
+      <div class="mem">${(L.memorize || []).map((m) => `<div>${m}</div>`).join("")}</div>
+      <div class="finish">
+        <button class="navb primary" id="markDone">${done[L.id] ? "✓ Done" : "Mark lesson as done"}</button>
+        ${next ? `<button class="navb" id="goNext">Next lesson: ${next.label} · ${next.title} →</button>` : `<a class="navb" href="index.html">Back to all lessons</a>`}
+      </div>`;
+  }
+
+  function renderSide() {
+    const weeks = [...new Set(LS.map((l) => l.week))];
+    document.getElementById("side").innerHTML = `<a class="home" href="index.html">← All lessons</a><a class="home" href="midterm.html">★ Midterm guide &amp; quiz</a>` +
+      weeks.map((w) => `<div><h3>Week ${w}</h3>${LS.map((l, i) => l.week !== w ? "" :
+        `<a class="lesson-link ${i === li ? "cur" : ""}" href="#l${i + 1}-1"><span class="q">${l.label}</span><span>${l.title}</span><span class="done">${done[l.id] ? "✓" : ""}</span></a>`).join("")}</div>`).join("");
+  }
+
+  function go(l, s) {
+    if (!LS.length) {
+      stage.innerHTML = `<div class="empty"><h2>Lessons are being written</h2><p>Refresh this page in a few minutes.</p></div>`;
+      return;
+    }
+    li = Math.max(0, Math.min(LS.length - 1, l));
+    const L = LS[li], steps = stepsOf(L);
+    si = Math.max(0, Math.min(steps.length - 1, s));
+    stage.innerHTML = `<article class="slide">${renderStep(L, steps[si], steps.length)}</article>`;
+    stage.scrollTop = 0;
+    document.getElementById("lt").textContent = `${L.label} · ${L.title}`;
+    document.getElementById("dots").innerHTML = steps.map((_, i) => `<button class="${i === si ? "on" : i < si ? "seen" : ""}" data-s="${i}" aria-label="Step ${i + 1}"></button>`).join("");
+    document.getElementById("sp").textContent = `Lesson ${li + 1} of ${LS.length}`;
+    document.getElementById("prev").disabled = li === 0 && si === 0;
+    document.getElementById("next").textContent = si === steps.length - 1 ? (LS[li + 1] ? "Next lesson →" : "Finish") : "Next →";
+    renderSide();
+    history.replaceState(null, "", `#l${li + 1}-${si + 1}`);
+    document.getElementById("side").classList.remove("open");
+  }
+
+  function next() {
+    const n = stepsOf(LS[li]).length;
+    if (si < n - 1) go(li, si + 1);
+    else if (li < LS.length - 1) go(li + 1, 0);
+    else location.href = "index.html";
+  }
+  function prev() {
+    if (si > 0) go(li, si - 1);
+    else if (li > 0) go(li - 1, stepsOf(LS[li - 1]).length - 1);
+  }
+
+  document.getElementById("next").onclick = next;
+  document.getElementById("prev").onclick = prev;
+  document.getElementById("menu").onclick = () => document.getElementById("side").classList.toggle("open");
+  document.addEventListener("click", (e) => {
+    const r = e.target.closest("[data-reveal]");
+    if (r) { r.nextElementSibling.hidden = false; r.remove(); return; }
+    const d = e.target.closest("[data-s]");
+    if (d) return go(li, +d.dataset.s);
+    if (e.target.id === "markDone") { done[LS[li].id] = true; store.set("econ-done", done); go(li, si); }
+    if (e.target.id === "goNext") go(li + 1, 0);
+  });
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "ArrowRight") { e.preventDefault(); next(); }
+    else if (e.key === "ArrowLeft") { e.preventDefault(); prev(); }
+  });
+  let tx = null, ty = null;
+  stage.addEventListener("touchstart", (e) => { tx = e.touches[0].clientX; ty = e.touches[0].clientY; }, { passive: true });
+  stage.addEventListener("touchend", (e) => {
+    if (tx === null) return;
+    const dx = e.changedTouches[0].clientX - tx, dy = e.changedTouches[0].clientY - ty;
+    if (Math.abs(dx) > 70 && Math.abs(dx) > Math.abs(dy) * 1.6) dx < 0 ? next() : prev();
+    tx = null;
+  });
+  function fromHash() {
+    const m = /^#l(\d+)-(\d+)$/.exec(location.hash);
+    go(m ? +m[1] - 1 : 0, m ? +m[2] - 1 : 0);
+  }
+  window.addEventListener("hashchange", () => { const m = /^#l(\d+)-(\d+)$/.exec(location.hash); if (m && (+m[1] - 1 !== li || +m[2] - 1 !== si)) fromHash(); });
+  fromHash();
+</script>
+</body>
+</html>

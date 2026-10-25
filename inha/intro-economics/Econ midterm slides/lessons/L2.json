@@ -1,0 +1,1394 @@
+[
+ {
+  "id": "Q29-31",
+  "label": "Q29–Q31",
+  "week": 2,
+  "slides": [
+   25
+  ],
+  "kind": "calculation",
+  "title": "PPF, opportunity cost and comparative advantage: US and Brazil",
+  "hook": "With two PPF equations you can build the opportunity-cost table, find who should make what, and prove that trade makes both countries richer: three exam questions from one slide.",
+  "cards": [
+   {
+    "h": "1. What a PPF shows",
+    "body": "<p>Think of a baker in a Tashkent bazaar. In one day she can bake <b>only bread</b>, <b>only samsa</b>, or a mix. If she bakes more samsa, she must bake less bread. That is a <b>trade-off</b>.</p><p>The <b>production possibility frontier (PPF)</b> draws this. It shows the <b>maximum</b> of one good you can make for each amount of the other good. The slides say a PPF shows two things: (1) <b>trade-offs</b> and (2) <b>opportunity cost</b>.</p><ul><li><b>On</b> the line: possible and efficient (nothing wasted).</li><li><b>Inside</b>: possible, but not efficient (you could make more).</li><li><b>Outside</b>: not possible with your own resources.</li></ul><p>The graph is the US PPF from slide 25: sugar on the x axis, parts on the y axis.</p>",
+    "chart": {
+     "x": "Sugar",
+     "y": "Parts",
+     "xmax": 24,
+     "ymax": 6,
+     "xticks": [
+      4,
+      8,
+      12,
+      16,
+      20
+     ],
+     "yticks": [
+      1,
+      2,
+      3,
+      4,
+      5
+     ],
+     "lines": [
+      {
+       "pts": [
+        [
+         0,
+         5
+        ],
+        [
+         20,
+         0
+        ]
+       ],
+       "label": "US PPF",
+       "role": "ppf"
+      }
+     ],
+     "points": [
+      {
+       "x": 16,
+       "y": 1,
+       "label": "On: (16, 1)",
+       "guides": true
+      },
+      {
+       "x": 8,
+       "y": 1,
+       "label": "Inside: (8, 1)"
+      },
+      {
+       "x": 16,
+       "y": 3,
+       "label": "Outside: (16, 3)"
+      }
+     ],
+     "caption": "US PPF x/20 + y/5 = 1. On the line = efficient, inside = waste, outside = impossible alone."
+    }
+   },
+   {
+    "h": "2. Reading the PPF equation x/a + y/b = 1",
+    "body": "<p>The professor writes each PPF as an equation. Here <b>x = sugar</b> and <b>y = parts</b>.</p><ul><li><b>a</b> = the most sugar you can make (put y = 0, then x = a).</li><li><b>b</b> = the most parts you can make (put x = 0, then y = b).</li></ul><table><tr><th></th><th>Equation</th><th>Max sugar</th><th>Max parts</th></tr><tr><td>US</td><td>x/20 + y/5 = 1</td><td>20</td><td>5</td></tr><tr><td>Brazil</td><td>x/40 + y/4 = 1</td><td>40</td><td>4</td></tr></table><p><b>Point test:</b> put the point into x/a + y/b.</p><ul><li>= 1 → on the PPF</li><li>&lt; 1 → inside</li><li>&gt; 1 → outside (impossible alone)</li></ul><p>Example (US): (16, 1) → 16/20 + 1/5 = 0.8 + 0.2 = 1, so it is on the line. (16, 3) → 0.8 + 0.6 = 1.4 &gt; 1, so the US cannot reach it alone.</p>"
+   },
+   {
+    "h": "3. Opportunity cost from a straight PPF (Step 1)",
+    "body": "<p>Opportunity cost = what you <b>give up</b> to get one more unit.</p><p>The US can make 20 sugar <b>or</b> 5 parts. So 5 parts \"cost\" 20 sugar:</p><ul><li>1 part costs 20 ÷ 5 = <b>4 sugar</b>.</li><li>1 sugar costs 5 ÷ 20 = <b>1/4 part</b>.</li></ul><p>Brazil can make 40 sugar <b>or</b> 4 parts:</p><ul><li>1 part costs 40 ÷ 4 = <b>10 sugar</b>.</li><li>1 sugar costs 4 ÷ 40 = <b>1/10 part</b>.</li></ul><p><b>Easy rule:</b> cost of 1 unit of a good = (max of the <i>other</i> good) ÷ (max of <i>this</i> good). The two numbers for one country are always <b>upside-down</b> of each other (4 and 1/4).</p><table><tr><th></th><th>US opportunity cost</th><th>Brazil opportunity cost</th></tr><tr><td>One sugar</td><td>1/4 part</td><td>1/10 part</td></tr><tr><td>One part</td><td>4 sugar</td><td>10 sugar</td></tr></table><p>A straight PPF means the cost stays the same all along the line (constant opportunity cost). Brazil's line is flatter: sugar is cheap there.</p>",
+    "chart": {
+     "x": "Sugar",
+     "y": "Parts",
+     "xmax": 44,
+     "ymax": 6,
+     "xticks": [
+      10,
+      20,
+      30,
+      40
+     ],
+     "yticks": [
+      1,
+      2,
+      3,
+      4,
+      5
+     ],
+     "lines": [
+      {
+       "pts": [
+        [
+         0,
+         5
+        ],
+        [
+         20,
+         0
+        ]
+       ],
+       "label": "US: x/20 + y/5 = 1",
+       "role": "ppf"
+      },
+      {
+       "pts": [
+        [
+         0,
+         4
+        ],
+        [
+         40,
+         0
+        ]
+       ],
+       "label": "Brazil: x/40 + y/4 = 1",
+       "role": "ppf2"
+      }
+     ],
+     "caption": "Steep US line: 1 sugar costs 1/4 part. Flat Brazil line: 1 sugar costs only 1/10 part."
+    }
+   },
+   {
+    "h": "4. Comparative vs absolute advantage (Step 2)",
+    "body": "<p><b>Comparative advantage</b> = you have the <b>lower opportunity cost</b> (slide 12). <b>Absolute advantage</b> = you can simply make <b>more</b> of it. They are not the same thing.</p><p>Compare across countries, one row at a time:</p><ul><li>Sugar: Brazil 1/10 &lt; US 1/4 → <b>Brazil</b> has the comparative advantage in sugar.</li><li>Parts: US 4 &lt; Brazil 10 → the <b>US</b> has the comparative advantage in parts.</li></ul><p>Absolute advantage here: Brazil in sugar (40 &gt; 20), US in parts (5 &gt; 4).</p><p><b>Specialize:</b> the US makes only parts (5), Brazil makes only sugar (40). Together: <b>40 sugar + 5 parts</b>.</p><p><i>Careful:</i> do not compare a country with itself (US 1/4 vs 4). Always compare the US number with the Brazil number in the same row.</p>"
+   },
+   {
+    "h": "5. Is the deal possible? (Step 3, part 1)",
+    "body": "<p>The deal: the US gives <b>2 parts</b>, Brazil gives <b>16 sugar</b>.</p><p><b>Rule:</b> a country accepts if it gets <b>at least</b> (amount it gives) × (its own opportunity cost). That is what the goods would cost to make at home.</p><ul><li>US gives 2 parts. 1 part costs the US 4 sugar → it needs at least 2 × 4 = <b>8 sugar</b>. It gets 16. Yes.</li><li>Brazil gives 16 sugar. 1 sugar costs Brazil 1/10 part → it needs at least 16 × (4/40) = <b>1.6 parts</b>. It gets 2. Yes.</li></ul><p>Price of the deal: 16 sugar ÷ 2 parts = <b>8 sugar per part</b>. It is between 4 (US cost) and 10 (Brazil cost), so both win. Any price between 4 and 10 sugar per part works.</p><p><b>Small slide error:</b> slide 24 writes \"2 × (20/4) = 10 sugar\". From the slide's own table, 1 part = 20/5 = 4 sugar, so it should be 2 × (20/5) = <b>8</b>. The conclusion is the same: 16 is more than enough.</p>"
+   },
+   {
+    "h": "6. Both are better off (Step 3, part 2)",
+    "body": "<p>Before trade the US makes and eats (16 sugar, 1 part), a point <b>on</b> its PPF.</p><table><tr><th></th><th>Makes</th><th>Gives</th><th>Gets</th><th>Eats after trade</th><th>Point test</th></tr><tr><td>US</td><td>5 parts</td><td>2 parts</td><td>16 sugar</td><td>16 sugar, 3 parts</td><td>16/20 + 3/5 = 1.4 &gt; 1</td></tr><tr><td>Brazil</td><td>40 sugar</td><td>16 sugar</td><td>2 parts</td><td>24 sugar, 2 parts</td><td>24/40 + 2/4 = 1.1 &gt; 1</td></tr></table><p>Both after-trade points are <b>outside</b> their own PPF. Alone they could never get there. So both are better off.</p><ul><li>US: same 16 sugar, but 3 parts instead of 1 (<b>+2 parts</b>).</li><li>Brazil: with 2 parts, alone it could have only 40 × (1 − 2/4) = 20 sugar. With trade it has 24 (<b>+4 sugar</b>).</li></ul><p>Check: 16 + 24 = 40 sugar and 3 + 2 = 5 parts. Exactly what was produced.</p><p>Note: the slide writes the US point as (16, 3) (sugar, parts) but the Brazil point as (2, 24) (parts, sugar). Both mean the same bundles as in the table.</p>",
+    "chart": {
+     "x": "Sugar",
+     "y": "Parts",
+     "xmax": 24,
+     "ymax": 6,
+     "xticks": [
+      4,
+      8,
+      12,
+      16,
+      20
+     ],
+     "yticks": [
+      1,
+      2,
+      3,
+      4,
+      5
+     ],
+     "lines": [
+      {
+       "pts": [
+        [
+         0,
+         5
+        ],
+        [
+         20,
+         0
+        ]
+       ],
+       "label": "US PPF",
+       "role": "ppf"
+      }
+     ],
+     "points": [
+      {
+       "x": 16,
+       "y": 1,
+       "label": "Before trade (16, 1)",
+       "guides": true
+      },
+      {
+       "x": 16,
+       "y": 3,
+       "label": "After trade (16, 3)",
+       "guides": true
+      }
+     ],
+     "arrows": [
+      {
+       "from": [
+        16.6,
+        1.3
+       ],
+       "to": [
+        16.6,
+        2.7
+       ],
+       "label": "+2 parts"
+      }
+     ],
+     "caption": "This is the dot outside the US line on slide 25: the US eats more than it could make alone."
+    }
+   },
+   {
+    "h": "7. The red \"combined\" line x/40 + y/5 = 1",
+    "body": "<p>The third graph on slide 25 puts both PPFs together and adds a <b>red line</b> from <b>5 parts</b> (the US maximum) to <b>40 sugar</b> (the Brazil maximum). Its equation is x/40 + y/5 = 1.</p><p>What it means: it is the line of the <b>deal</b>. Its steepness is 40 sugar for 5 parts = <b>8 sugar per part</b>, the same price as 16 sugar for 2 parts.</p><p>Both after-trade points sit exactly on it:</p><ul><li>US (16, 3): 16/40 + 3/5 = 0.4 + 0.6 = 1</li><li>Brazil (24, 2): 24/40 + 2/5 = 0.6 + 0.4 = 1</li></ul><p>The red line lies <b>above</b> both green lines (except at the ends). So with trade each country can eat bundles beyond its own PPF.</p>",
+    "chart": {
+     "x": "Sugar",
+     "y": "Parts",
+     "xmax": 44,
+     "ymax": 6,
+     "xticks": [
+      10,
+      20,
+      30,
+      40
+     ],
+     "yticks": [
+      1,
+      2,
+      3,
+      4,
+      5
+     ],
+     "lines": [
+      {
+       "pts": [
+        [
+         0,
+         5
+        ],
+        [
+         20,
+         0
+        ]
+       ],
+       "label": "US PPF",
+       "role": "ppf"
+      },
+      {
+       "pts": [
+        [
+         0,
+         4
+        ],
+        [
+         40,
+         0
+        ]
+       ],
+       "label": "Brazil PPF",
+       "role": "ppf2"
+      },
+      {
+       "pts": [
+        [
+         0,
+         5
+        ],
+        [
+         40,
+         0
+        ]
+       ],
+       "label": "Red line x/40 + y/5 = 1",
+       "role": "other"
+      }
+     ],
+     "points": [
+      {
+       "x": 16,
+       "y": 3,
+       "label": "US after (16, 3)"
+      },
+      {
+       "x": 24,
+       "y": 2,
+       "label": "Brazil after (24, 2)"
+      }
+     ],
+     "caption": "Both after-trade bundles lie on the red line (price 8 sugar per part), outside their own PPFs."
+    }
+   }
+  ],
+  "example": {
+   "problem": "<p>(Class example, slides 13–14.) Tom can catch 40 fish <b>or</b> gather 30 coconuts. Hank can catch 10 fish <b>or</b> gather 20 coconuts. Without trade Tom eats (28 fish, 9 coconuts) and Hank eats (6 fish, 8 coconuts). With trade Tom catches only fish (40), Hank gathers only coconuts (20), and Tom gives 10 fish for 10 coconuts.</p><p>(1) Make the opportunity-cost table. (2) Who has the comparative advantage in what? (3) Is the deal possible, and are both better off?</p>",
+   "solution": "<p><b>Step 1.</b></p><table><tr><th></th><th>Tom</th><th>Hank</th></tr><tr><td>One fish</td><td>30/40 = 3/4 coconut</td><td>20/10 = 2 coconuts</td></tr><tr><td>One coconut</td><td>40/30 = 4/3 fish</td><td>10/20 = 1/2 fish</td></tr></table><p><b>Step 2.</b> Fish: Tom 3/4 &lt; Hank 2 → Tom has the comparative advantage in fish. Coconuts: Hank 1/2 &lt; Tom 4/3 → Hank in coconuts. (Tom has the absolute advantage in both, but that does not matter.)</p><p><b>Step 3 (1).</b> Tom gives 10 fish, needs at least 10 × 3/4 = 7.5 coconuts, gets 10 → yes. Hank gives 10 coconuts, needs at least 10 × 1/2 = 5 fish, gets 10 → yes. The deal is possible.</p><p><b>Step 3 (2).</b> Tom eats (30 fish, 10 coconuts) instead of (28, 9): +2 fish, +1 coconut. Hank eats (10 fish, 10 coconuts) instead of (6, 8): +4 fish, +2 coconuts. Point test: Tom 30/40 + 10/30 = 13/12 &gt; 1, Hank 10/10 + 10/20 = 1.5 &gt; 1. Both are outside their PPFs → both better off.</p><p>(On slide 13 Hank's cost of a fish is written \"(2) fish\"; it means 2 <b>coconuts</b>.)</p>"
+  },
+  "check": [
+   {
+    "q": "A country's PPF is x/30 + y/6 = 1 (x = sugar, y = parts). What is the opportunity cost of 1 part?",
+    "a": "30 ÷ 6 = <b>5 sugar</b> (and 1 sugar costs 1/5 part)."
+   },
+   {
+    "q": "Is the bundle (10 sugar, 4 parts) possible for the US (x/20 + y/5 = 1)?",
+    "a": "10/20 + 4/5 = 0.5 + 0.8 = 1.3 &gt; 1 → <b>no</b>, it is outside the PPF."
+   },
+   {
+    "q": "Which country has the comparative advantage in parts, and why?",
+    "a": "The <b>US</b>: 1 part costs it 4 sugar, but costs Brazil 10 sugar. Lower opportunity cost."
+   },
+   {
+    "q": "Would the US accept 6 sugar for 2 parts?",
+    "a": "<b>No.</b> 2 parts cost the US 2 × 4 = 8 sugar to make at home, and 6 &lt; 8."
+   },
+   {
+    "q": "What is the price on the red combined line?",
+    "a": "40 sugar / 5 parts = <b>8 sugar per part</b>, the same as 16 sugar for 2 parts."
+   }
+  ],
+  "exam": {
+   "question": "<p>US PPF: x/20 + y/5 = 1. Brazil PPF: x/40 + y/4 = 1 (x = sugar, y = parts).</p><p><b>Q29.</b> Make the opportunity-cost table for both countries.</p><p><b>Q30.</b> Who has the comparative advantage in each good? What should each country produce, and how much in total?</p><p><b>Q31.</b> Without trade the US consumes 16 sugar and 1 part. With trade the US gives 2 parts and receives 16 sugar. Is this trade possible? Are both countries better off?</p>",
+   "answer": "<p><b>Q29.</b> US: max 20 sugar or 5 parts. Brazil: max 40 sugar or 4 parts.</p><table><tr><th></th><th>US</th><th>Brazil</th></tr><tr><td>One sugar</td><td>5/20 = 1/4 part</td><td>4/40 = 1/10 part</td></tr><tr><td>One part</td><td>20/5 = 4 sugar</td><td>40/4 = 10 sugar</td></tr></table><p><b>Q30.</b> Sugar: Brazil 1/10 &lt; US 1/4 → Brazil has the comparative advantage in sugar. Parts: US 4 &lt; Brazil 10 → the US has the comparative advantage in parts. The US produces only parts (5), Brazil only sugar (40). Total: 40 sugar and 5 parts.</p><p><b>Q31.</b> (1) US gives 2 parts; it needs at least 2 × 4 = 8 sugar and receives 16 → acceptable. Brazil gives 16 sugar; it needs at least 16 × 1/10 = 1.6 parts and receives 2 → acceptable. The price, 8 sugar per part, lies between 4 and 10, so the trade is possible.</p><p>(2) After trade the US has 16 sugar and 5 − 2 = 3 parts: 16/20 + 3/5 = 1.4 &gt; 1. Brazil has 40 − 16 = 24 sugar and 2 parts: 24/40 + 2/4 = 1.1 &gt; 1. Both bundles are outside their own PPFs, so neither country could reach them without trade. Both are better off (the US gains 2 parts with the same sugar). Both bundles lie on the line x/40 + y/5 = 1.</p>"
+  },
+  "memorize": [
+   "x/a + y/b = 1: a = max x (sugar), b = max y (parts)",
+   "Point test: = 1 on, &lt; 1 inside, &gt; 1 outside (impossible alone)",
+   "Cost of 1 unit = max of OTHER good ÷ max of THIS good",
+   "US: 1 part = 4 sugar, 1 sugar = 1/4 part. Brazil: 1 part = 10 sugar, 1 sugar = 1/10 part",
+   "Comparative advantage = lower opportunity cost: US parts, Brazil sugar",
+   "Accept if received ≥ amount given × own opportunity cost (US 8 sugar, Brazil 1.6 parts)",
+   "After trade: US (16 sugar, 3 parts), Brazil (24 sugar, 2 parts), both outside own PPF",
+   "Red line x/40 + y/5 = 1 = deal price 8 sugar per part (slide's \"20/4 = 10\" should be 20/5 → 8)"
+  ]
+ },
+ {
+  "id": "Q5-6",
+  "label": "Q5–Q6",
+  "week": 3,
+  "slides": [
+   18,
+   19
+  ],
+  "kind": "theory",
+  "title": "What shifts the demand curve (Table 3-1)",
+  "hook": "Slides 18–19 are one big table of the events that move the whole demand curve. Learn the 7 rows and you can answer any \"what happens to demand?\" question.",
+  "cards": [
+   {
+    "h": "1. Shift of the curve vs movement along it",
+    "body": "<p>Watermelon in a Tashkent bazaar. If the <b>price of watermelon</b> falls, people buy more. They <b>move along</b> the same demand curve (A → B).</p><p>But on a very hot day people buy more watermelon <b>at every price</b>. Now the whole curve <b>shifts</b> (A → C). Something <i>other</i> than the own price changed.</p><p>The professor's question: <b>\"Other things being equal or not?\"</b></p><ul><li>Equal (only the own price changed) → movement along the curve.</li><li>Not equal (weather, a doctor's new advice, tastes, ...) → shift of the curve.</li></ul>",
+    "chart": {
+     "x": "Quantity of watermelons",
+     "y": "Price",
+     "xmax": 14,
+     "ymax": 11,
+     "lines": [
+      {
+       "pts": [
+        [
+         0,
+         10
+        ],
+        [
+         10,
+         0
+        ]
+       ],
+       "label": "D1",
+       "role": "demand"
+      },
+      {
+       "pts": [
+        [
+         3,
+         10
+        ],
+        [
+         13,
+         0
+        ]
+       ],
+       "label": "D2",
+       "role": "demand2"
+      }
+     ],
+     "points": [
+      {
+       "x": 4,
+       "y": 6,
+       "label": "A"
+      },
+      {
+       "x": 6,
+       "y": 4,
+       "label": "B"
+      },
+      {
+       "x": 7,
+       "y": 6,
+       "label": "C"
+      }
+     ],
+     "caption": "A → B: own price fell (movement along D1). A → C: same price, more bought (shift to D2)."
+    }
+   },
+   {
+    "h": "2. Right = increase, left = decrease",
+    "body": "<p>Every cell of Table 3-1 has a tiny graph with an arrow.</p><ul><li><b>Demand increases</b> → the curve shifts <b>right</b> (D1 → D2). People want more at every price.</li><li><b>Demand decreases</b> → the curve shifts <b>left</b>. People want less at every price.</li></ul><p>The left column of the table is \"demand increases\", the right column is the opposite event, \"demand decreases\". So you only need to learn one side; the other is the mirror.</p>",
+    "chart": {
+     "x": "Quantity",
+     "y": "Price",
+     "xmax": 12,
+     "ymax": 10,
+     "lines": [
+      {
+       "pts": [
+        [
+         0,
+         8
+        ],
+        [
+         8,
+         0
+        ]
+       ],
+       "label": "D1",
+       "role": "demand"
+      },
+      {
+       "pts": [
+        [
+         3,
+         8
+        ],
+        [
+         11,
+         0
+        ]
+       ],
+       "label": "D2",
+       "role": "demand2"
+      }
+     ],
+     "arrows": [
+      {
+       "from": [
+        4.4,
+        4
+       ],
+       "to": [
+        6.6,
+        4
+       ],
+       "label": "increase"
+      }
+     ],
+     "caption": "Increase in demand: the whole curve moves right (left column of Table 3-1)."
+    }
+   },
+   {
+    "h": "3. Slide 18: substitutes and complements",
+    "body": "<p><b>Substitutes</b> = used <i>instead of</i> each other (coffee and tea).</p><ul><li>Price of the substitute <b>rises</b> → demand for the original good <b>increases</b> (right).</li><li>Price of the substitute <b>falls</b> → demand <b>decreases</b> (left).</li></ul><p>Tea gets expensive → people switch to coffee. <b>Same direction.</b></p><p><b>Complements</b> = used <i>together</i> (coffee and sugar).</p><ul><li>Price of the complement <b>falls</b> → demand for the original good <b>increases</b>.</li><li>Price of the complement <b>rises</b> → demand <b>decreases</b>.</li></ul><p>Sugar gets expensive → people drink less sweet coffee. <b>Opposite direction.</b></p><p>In the slide 14 formula style: substitutes ∂Q<sub>y</sub>/∂P<sub>x</sub> &gt; 0, complements ∂Q<sub>y</sub>/∂P<sub>x</sub> &lt; 0.</p>"
+   },
+   {
+    "h": "4. Slide 18 (last row) and slide 19 (first row): income",
+    "body": "<ul><li><b>Normal good</b>: income <b>rises</b> → demand <b>increases</b>; income falls → demand decreases.</li><li><b>Inferior good</b>: income <b>falls</b> → demand <b>increases</b>; income rises → demand decreases.</li></ul><p>Example: after a pay rise you take more taxis (normal good) and fewer crowded buses (inferior good for you).</p><p>Notice the slide puts the inferior row on slide 19 starting with \"When income <b>falls</b>\" in the increase column. Read the trigger carefully.</p>",
+    "chart": {
+     "x": "Quantity",
+     "y": "Price",
+     "xmax": 12,
+     "ymax": 10,
+     "lines": [
+      {
+       "pts": [
+        [
+         3,
+         8
+        ],
+        [
+         11,
+         0
+        ]
+       ],
+       "label": "D1",
+       "role": "demand"
+      },
+      {
+       "pts": [
+        [
+         0,
+         8
+        ],
+        [
+         8,
+         0
+        ]
+       ],
+       "label": "D2",
+       "role": "demand2"
+      }
+     ],
+     "arrows": [
+      {
+       "from": [
+        6.6,
+        4
+       ],
+       "to": [
+        4.4,
+        4
+       ],
+       "label": "decrease"
+      }
+     ],
+     "caption": "Decrease in demand: e.g. income rises for an inferior good, or a complement gets dearer."
+    }
+   },
+   {
+    "h": "5. Slide 19: tastes, expectations, number of consumers",
+    "body": "<ul><li><b>Tastes</b>: tastes change <b>in favor of</b> the good → demand increases. Tastes change <b>against</b> it → demand decreases. (A doctor says green tea is healthy → demand for green tea up.)</li><li><b>Expected future price</b>: price expected to <b>rise</b> in the future → demand <b>today</b> increases. Expected to <b>fall</b> → demand today decreases. (You hear phones will cost more next month → you buy one today.)</li><li><b>Number of consumers</b>: more consumers → <b>market</b> demand increases; fewer → decreases. (More students move to Tashkent → more demand for rented flats.)</li></ul><p>Heads-up: slide 13 says there are <b>four</b> principal shifters (related-goods prices, income, tastes, expectations). Table 3-1 adds a fifth, the number of consumers, which changes <i>market</i> demand.</p>"
+   }
+  ],
+  "example": {
+   "problem": "<p>For each event, say what happens to the demand for <b>coffee</b> and which way the demand curve shifts. (a) The price of tea rises. (b) The price of sugar rises. (c) People expect coffee prices to jump next month. (d) The price of coffee falls.</p>",
+   "solution": "<ol><li>Tea is a <b>substitute</b>. Its price rises → people switch to coffee → demand for coffee <b>increases</b>, curve shifts <b>right</b>.</li><li>Sugar is a <b>complement</b>. Its price rises → less coffee wanted → demand <b>decreases</b>, shifts <b>left</b>.</li><li>Price expected to <b>rise</b> → people buy today → demand today <b>increases</b>, shifts <b>right</b>.</li><li>Trap! This is coffee's <b>own</b> price. The curve does <b>not</b> shift: it is a <b>movement along</b> the demand curve (quantity demanded rises).</li></ol>"
+  },
+  "check": [
+   {
+    "q": "The price of a complement falls. What happens to demand for the original good?",
+    "a": "It <b>increases</b> (shift right)."
+   },
+   {
+    "q": "Income rises. What happens to demand for an inferior good?",
+    "a": "It <b>decreases</b> (shift left)."
+   },
+   {
+    "q": "The price of a good is expected to fall next month. Demand today?",
+    "a": "<b>Decreases</b> today (people wait), shift left."
+   },
+   {
+    "q": "Is \"the price of the good itself rises\" in Table 3-1?",
+    "a": "<b>No.</b> That is a movement along the curve, not a shift."
+   }
+  ],
+  "exam": {
+   "question": "<p><b>Q5.</b> Explain how the demand curve for a good shifts when (a) the price of a substitute rises or falls, (b) the price of a complement rises or falls, (c) income rises or falls for a normal good.</p><p><b>Q6.</b> Explain how it shifts when (a) income rises or falls for an inferior good, (b) tastes change, (c) the price is expected to rise or fall in the future, (d) the number of consumers rises or falls.</p>",
+   "answer": "<p>An increase in demand shifts the curve <b>right</b> (D1 → D2); a decrease shifts it <b>left</b>. These are changes in things other than the good's own price.</p><p><b>Q5.</b></p><ul><li>Substitute (coffee and tea): its price rises → demand for the good increases (right); falls → decreases (left).</li><li>Complement (coffee and sugar): its price falls → demand increases (right); rises → decreases (left).</li><li>Normal good: income rises → demand increases (right); income falls → decreases (left).</li></ul><p><b>Q6.</b></p><ul><li>Inferior good: income falls → demand increases (right); income rises → decreases (left).</li><li>Tastes change in favor of the good → demand increases; against it → decreases.</li><li>Price expected to rise in the future → demand today increases; expected to fall → demand today decreases.</li><li>Number of consumers rises → market demand increases; falls → market demand decreases.</li></ul>"
+  },
+  "memorize": [
+   "Increase in demand = shift RIGHT; decrease = shift LEFT",
+   "Own price change = movement ALONG the curve, not a shift",
+   "Substitute price ↑ → demand ↑ (same direction)",
+   "Complement price ↑ → demand ↓ (opposite direction)",
+   "Income ↑: normal good D ↑, inferior good D ↓",
+   "Tastes for the good → D ↑; price expected to rise later → D ↑ today",
+   "More consumers → market demand ↑"
+  ]
+ },
+ {
+  "id": "Q7",
+  "label": "Q7",
+  "week": 3,
+  "slides": [
+   15
+  ],
+  "kind": "theory",
+  "title": "Normal goods and inferior goods",
+  "hook": "Slide 15 gives two definitions about income. You will be able to define both, give examples and draw the shift.",
+  "cards": [
+   {
+    "h": "1. Income is a demand shifter",
+    "body": "<p>When your income changes, the price of the good has not changed. But you want a different amount <b>at every price</b>. So income <b>shifts</b> the demand curve (it is not a movement along it).</p><p>The question is only: <b>which way?</b> That depends on the kind of good.</p>"
+   },
+   {
+    "h": "2. Normal good",
+    "body": "<p>Slide 15: \"When a rise in income <b>increases</b> the demand for a good, the normal case, we say that the good is a <b>normal good</b>.\"</p><p>Most goods are normal. You get a better job → you eat out more, buy more clothes, take more taxis.</p><ul><li>Income ↑ → demand ↑ → curve shifts <b>right</b>.</li><li>Income ↓ → demand ↓ → curve shifts <b>left</b>.</li></ul>",
+    "chart": {
+     "x": "Quantity of restaurant meals",
+     "y": "Price",
+     "xmax": 12,
+     "ymax": 10,
+     "lines": [
+      {
+       "pts": [
+        [
+         0,
+         8
+        ],
+        [
+         8,
+         0
+        ]
+       ],
+       "label": "D1",
+       "role": "demand"
+      },
+      {
+       "pts": [
+        [
+         3,
+         8
+        ],
+        [
+         11,
+         0
+        ]
+       ],
+       "label": "D2",
+       "role": "demand2"
+      }
+     ],
+     "arrows": [
+      {
+       "from": [
+        4.4,
+        4
+       ],
+       "to": [
+        6.6,
+        4
+       ],
+       "label": "increase"
+      }
+     ],
+     "caption": "Normal good (restaurant meals): income rises → demand shifts right."
+    }
+   },
+   {
+    "h": "3. Inferior good",
+    "body": "<p>Slide 15: \"When a rise in income <b>decreases</b> the demand for a good, it is an <b>inferior good</b>.\"</p><p>A student eats instant noodles and rides the crowded bus. After getting a good job, he buys <b>fewer</b> noodles and takes <b>fewer</b> bus rides. For him these are inferior goods.</p><ul><li>Income ↑ → demand ↓ → curve shifts <b>left</b>.</li><li>Income ↓ → demand ↑ → curve shifts <b>right</b>.</li></ul>",
+    "chart": {
+     "x": "Quantity of instant noodles",
+     "y": "Price",
+     "xmax": 12,
+     "ymax": 10,
+     "lines": [
+      {
+       "pts": [
+        [
+         3,
+         8
+        ],
+        [
+         11,
+         0
+        ]
+       ],
+       "label": "D1",
+       "role": "demand"
+      },
+      {
+       "pts": [
+        [
+         0,
+         8
+        ],
+        [
+         8,
+         0
+        ]
+       ],
+       "label": "D2",
+       "role": "demand2"
+      }
+     ],
+     "arrows": [
+      {
+       "from": [
+        6.6,
+        4
+       ],
+       "to": [
+        4.4,
+        4
+       ],
+       "label": "decrease"
+      }
+     ],
+     "caption": "Inferior good (instant noodles): income rises → demand shifts left."
+    }
+   },
+   {
+    "h": "4. Common mistakes",
+    "body": "<ul><li>\"Inferior\" does <b>not</b> mean bad quality or broken. It only means people buy <b>less</b> of it when they get richer.</li><li>It is defined by the <b>direction</b> of the change, not by the price. A cheap good can be normal, too.</li><li>Do not mix it up with substitutes/complements: those are about <b>another good's price</b>. Normal/inferior is about <b>income</b>.</li></ul><p>Link to week 5: the income elasticity of demand is <b>positive</b> for a normal good and <b>negative</b> for an inferior good.</p>"
+   }
+  ],
+  "example": {
+   "problem": "<p>Aziz's salary rises from 5 to 8 million sum per month. He now buys more meat and goes to the cinema more often, but he buys less cheap margarine and uses the marshrutka less. Classify each good and say how each demand curve shifts.</p>",
+   "solution": "<ul><li>Meat: income ↑, demand ↑ → <b>normal good</b>, curve shifts <b>right</b>.</li><li>Cinema: income ↑, demand ↑ → <b>normal good</b>, shifts <b>right</b>.</li><li>Cheap margarine: income ↑, demand ↓ → <b>inferior good</b>, shifts <b>left</b>.</li><li>Marshrutka rides: income ↑, demand ↓ → <b>inferior good</b>, shifts <b>left</b>.</li></ul>"
+  },
+  "check": [
+   {
+    "q": "Define a normal good.",
+    "a": "A good whose demand <b>increases</b> when income rises (the normal case)."
+   },
+   {
+    "q": "Income falls. Which way does the demand curve for an inferior good shift?",
+    "a": "<b>Right</b> (demand increases)."
+   },
+   {
+    "q": "Does \"inferior\" mean low quality?",
+    "a": "<b>No.</b> It only means demand falls when income rises."
+   }
+  ],
+  "exam": {
+   "question": "<p>Define a normal good and an inferior good. Give an example of each, and explain how each demand curve shifts when income rises.</p>",
+   "answer": "<p>A change in income shifts the demand curve.</p><ul><li>A <b>normal good</b> is a good for which a rise in income <b>increases</b> demand; this is the normal case. Example: restaurant meals. When income rises, its demand curve shifts to the <b>right</b>.</li><li>An <b>inferior good</b> is a good for which a rise in income <b>decreases</b> demand. Example: instant noodles or bus rides. When income rises, its demand curve shifts to the <b>left</b>.</li></ul><p>When income falls, the opposite happens: demand for a normal good decreases (left) and demand for an inferior good increases (right).</p>"
+  },
+  "memorize": [
+   "Normal good: income ↑ → demand ↑ (the normal case)",
+   "Inferior good: income ↑ → demand ↓",
+   "Income ↑: normal D shifts right, inferior D shifts left",
+   "Inferior ≠ bad quality: people just buy less when richer",
+   "Income elasticity: + normal, − inferior (week 5)"
+  ]
+ },
+ {
+  "id": "Q15",
+  "label": "Q15",
+  "week": 3,
+  "slides": [
+   29,
+   30
+  ],
+  "kind": "theory",
+  "title": "What shifts the supply curve (Table 3-2)",
+  "hook": "Slides 29–30 are Table 3-2: five kinds of events that move the whole supply curve. You will be able to say which way supply moves and why.",
+  "cards": [
+   {
+    "h": "1. A shift of supply",
+    "body": "<p>A <b>shift</b> of the supply curve means: at <b>every price</b>, sellers now want to sell a different amount.</p><ul><li>Supply <b>increases</b> → curve shifts <b>right</b> (S1 → S2).</li><li>Supply <b>decreases</b> → curve shifts <b>left</b>.</li></ul><p>A change in the good's <b>own price</b> is only a movement <b>along</b> the supply curve.</p><p>Simple idea: anything that makes producing the good <b>cheaper or more attractive</b> shifts supply right. Anything that makes it <b>costlier or less attractive</b> shifts it left.</p>",
+    "chart": {
+     "x": "Quantity",
+     "y": "Price",
+     "xmax": 12,
+     "ymax": 10,
+     "lines": [
+      {
+       "pts": [
+        [
+         0,
+         1
+        ],
+        [
+         7,
+         9
+        ]
+       ],
+       "role": "supply",
+       "label": "S1"
+      },
+      {
+       "pts": [
+        [
+         3,
+         1
+        ],
+        [
+         10,
+         9
+        ]
+       ],
+       "role": "supply2",
+       "label": "S2"
+      }
+     ],
+     "arrows": [
+      {
+       "from": [
+        3.8,
+        5
+       ],
+       "to": [
+        6.2,
+        5
+       ],
+       "label": "increase"
+      }
+     ],
+     "caption": "Supply increases: more offered at every price (left column of Table 3-2)."
+    }
+   },
+   {
+    "h": "2. Input prices",
+    "body": "<p>An <b>input</b> is a good used to produce another good (slide 28). Flour is an input for bread.</p><ul><li>Input price <b>falls</b> → making bread is cheaper → supply of bread <b>increases</b> (right).</li><li>Input price <b>rises</b> → supply <b>decreases</b> (left).</li></ul><p>Example: the price of flour in Tashkent goes up → bakeries bake less bread at each price.</p>",
+    "chart": {
+     "x": "Quantity of bread",
+     "y": "Price",
+     "xmax": 12,
+     "ymax": 10,
+     "lines": [
+      {
+       "pts": [
+        [
+         3,
+         1
+        ],
+        [
+         10,
+         9
+        ]
+       ],
+       "label": "S1",
+       "role": "supply"
+      },
+      {
+       "pts": [
+        [
+         0,
+         1
+        ],
+        [
+         7,
+         9
+        ]
+       ],
+       "label": "S2",
+       "role": "supply2"
+      }
+     ],
+     "arrows": [
+      {
+       "from": [
+        6.2,
+        5
+       ],
+       "to": [
+        3.8,
+        5
+       ],
+       "label": "decrease"
+      }
+     ],
+     "caption": "Supply decreases: e.g. an input (flour) becomes more expensive."
+    }
+   },
+   {
+    "h": "3. Prices of related goods in production",
+    "body": "<p><b>Substitutes in production</b> = goods made with the <i>same</i> resources, so you choose one or the other. A farmer can grow wheat <b>or</b> cotton on his field.</p><ul><li>Price of the substitute in production <b>rises</b> → supply of the original good <b>decreases</b>. (Cotton price up → more cotton, less wheat.)</li><li>Its price <b>falls</b> → supply of the original good <b>increases</b>.</li></ul><p><b>Complements in production</b> = goods made <i>together</i>. One sheep gives both meat and wool.</p><ul><li>Price of the complement in production <b>rises</b> → supply of the original good <b>increases</b>. (Meat price up → more sheep → more wool.)</li><li>Its price <b>falls</b> → supply <b>decreases</b>.</li></ul><p>Note: the complement-in-production row appears on <b>both</b> slide 29 and slide 30. It is the same row twice.</p>"
+   },
+   {
+    "h": "4. Technology, expectations, number of producers",
+    "body": "<ul><li><b>Technology</b>: better technology lowers the cost of production → supply <b>increases</b> (right). If the best technology is no longer available → supply <b>decreases</b>.</li><li><b>Expectations</b>: price expected to <b>fall</b> in the future → sell now → supply <b>increases today</b>. Price expected to <b>rise</b> → hold goods back → supply <b>decreases today</b>.</li><li><b>Number of producers</b>: more producers → <b>market</b> supply increases; fewer → decreases.</li></ul><p>Careful: expectations work the <b>opposite</b> way for sellers and buyers. If the price is expected to rise, buyers buy more today (demand ↑) but sellers sell less today (supply ↓).</p><p>Small slide note: slide 27 says shifts come mainly from \"<b>three</b> factors\" but then lists <b>five</b>. Learn all five, as in Table 3-2.</p>"
+   }
+  ],
+  "example": {
+   "problem": "<p>What happens to the supply of <b>wheat</b> in each case? (a) Fertilizer becomes cheaper. (b) The price of cotton (grown on the same land) rises. (c) A new seed gives more wheat per field. (d) Farmers expect wheat prices to rise next season. (e) The price of wheat rises.</p>",
+   "solution": "<ol><li>Fertilizer is an <b>input</b>; cheaper input → supply <b>increases</b> (right).</li><li>Cotton is a <b>substitute in production</b>; its price rises → wheat supply <b>decreases</b> (left).</li><li>Better <b>technology</b> → supply <b>increases</b> (right).</li><li>Price expected to <b>rise</b> → farmers hold wheat back → supply today <b>decreases</b> (left).</li><li>Trap! Own price → <b>movement along</b> the supply curve (quantity supplied rises), no shift.</li></ol>"
+  },
+  "check": [
+   {
+    "q": "The price of an input rises. Supply?",
+    "a": "<b>Decreases</b> (shift left)."
+   },
+   {
+    "q": "Beef price rises. What happens to the supply of leather?",
+    "a": "Leather is a complement in production → supply of leather <b>increases</b>."
+   },
+   {
+    "q": "Sellers expect the price to fall next month. Supply today?",
+    "a": "<b>Increases</b> today (they sell now)."
+   },
+   {
+    "q": "Name the five supply shifters.",
+    "a": "Input prices, prices of related goods (in production), technology, expectations, number of producers."
+   }
+  ],
+  "exam": {
+   "question": "<p>List the factors that shift the supply curve (Table 3-2). For each, say when supply increases and when it decreases.</p>",
+   "answer": "<p>A change in a factor other than the good's own price shifts the supply curve: right = supply increases, left = supply decreases.</p><ol><li><b>Input prices</b>: input price falls → supply increases; rises → decreases.</li><li><b>Prices of related goods in production</b>: substitute in production's price falls → supply increases, rises → decreases. Complement in production's price rises → supply increases, falls → decreases.</li><li><b>Technology</b>: technology improves → supply increases; best technology no longer available → decreases.</li><li><b>Expectations</b>: price expected to fall in the future → supply increases today; expected to rise → supply decreases today.</li><li><b>Number of producers</b>: more producers → market supply increases; fewer → decreases.</li></ol>"
+  },
+  "memorize": [
+   "Shift right = supply ↑; left = supply ↓; own price = movement along",
+   "Input price ↓ → supply ↑",
+   "Substitute-in-production price ↑ → supply ↓",
+   "Complement-in-production price ↑ → supply ↑",
+   "Better technology → supply ↑",
+   "Price expected to RISE later → supply ↓ TODAY",
+   "More producers → market supply ↑"
+  ],
+  "note": "Your note says W5 S29–30, but week 5 has only 25 slides, so this lesson uses week 3 slides 29–30. Tell me if it should be another week."
+ },
+ {
+  "id": "Q28",
+  "label": "Q28",
+  "week": 3,
+  "slides": [
+   21,
+   22,
+   6
+  ],
+  "kind": "calculation",
+  "title": "Ticket market: schedules, equilibrium, surplus/shortage and a supply shift",
+  "hook": "With the demand and supply schedules for tickets you can find the equilibrium, measure a surplus or shortage, and show what a supply decrease does.",
+  "cards": [
+   {
+    "h": "1. Demand schedule → demand curve (slide 6)",
+    "body": "<p>A <b>demand schedule</b> is a table: at each price, how many tickets people want to buy. Draw each row as a point and join them → the <b>demand curve</b>.</p><table><tr><th>Price</th><th>$350</th><th>$300</th><th>$250</th><th>$200</th><th>$150</th><th>$100</th></tr><tr><td>Qd</td><td>5,000</td><td>6,000</td><td>8,000</td><td>11,000</td><td>15,000</td><td>20,000</td></tr></table><p>As the price rises, the quantity demanded falls: the <b>law of demand</b>. So the curve slopes <b>down</b>.</p><p>The professor's red warning: <b>\"In economics, the Y axis is always for the Price, and X axis is the quantity.\"</b></p>",
+    "chart": {
+     "x": "Quantity of tickets (thousands)",
+     "y": "Price of ticket ($)",
+     "xmax": 22,
+     "ymax": 400,
+     "xticks": [
+      5,
+      10,
+      15,
+      20
+     ],
+     "yticks": [
+      100,
+      150,
+      200,
+      250,
+      300,
+      350
+     ],
+     "lines": [
+      {
+       "pts": [
+        [
+         5,
+         350
+        ],
+        [
+         6,
+         300
+        ],
+        [
+         8,
+         250
+        ],
+        [
+         11,
+         200
+        ],
+        [
+         15,
+         150
+        ],
+        [
+         20,
+         100
+        ]
+       ],
+       "label": "D",
+       "role": "demand"
+      }
+     ],
+     "points": [
+      {
+       "x": 5,
+       "y": 350
+      },
+      {
+       "x": 6,
+       "y": 300
+      },
+      {
+       "x": 8,
+       "y": 250
+      },
+      {
+       "x": 11,
+       "y": 200
+      },
+      {
+       "x": 15,
+       "y": 150
+      },
+      {
+       "x": 20,
+       "y": 100
+      }
+     ],
+     "caption": "Figure 3-1: price on the Y axis, quantity on the X axis. Higher price → fewer tickets wanted."
+    }
+   },
+   {
+    "h": "2. Supply schedule → supply curve (slide 21)",
+    "body": "<p>A <b>supply schedule</b> shows how many tickets sellers want to sell at each price (Figure 3-5).</p><table><tr><th>Price</th><th>$350</th><th>$300</th><th>$250</th><th>$200</th><th>$150</th><th>$100</th></tr><tr><td>Qs</td><td>8,800</td><td>8,500</td><td>8,000</td><td>7,000</td><td>5,000</td><td>2,000</td></tr></table><p>A higher price → sellers offer <b>more</b>. So the supply curve slopes <b>up</b>.</p><p><b>Equilibrium</b> = the price where quantity demanded = quantity supplied. Look for the row where the two numbers match: at <b>$250</b>, Qd = 8,000 and Qs = 8,000. So the equilibrium is <b>$250 and 8,000 tickets</b> (point E, as on slide 32).</p>",
+    "chart": {
+     "x": "Quantity of tickets (thousands)",
+     "y": "Price of ticket ($)",
+     "xmax": 22,
+     "ymax": 400,
+     "xticks": [
+      5,
+      10,
+      15,
+      20
+     ],
+     "yticks": [
+      100,
+      150,
+      200,
+      250,
+      300,
+      350
+     ],
+     "lines": [
+      {
+       "pts": [
+        [
+         5,
+         350
+        ],
+        [
+         6,
+         300
+        ],
+        [
+         8,
+         250
+        ],
+        [
+         11,
+         200
+        ],
+        [
+         15,
+         150
+        ],
+        [
+         20,
+         100
+        ]
+       ],
+       "label": "D",
+       "role": "demand"
+      },
+      {
+       "pts": [
+        [
+         2,
+         100
+        ],
+        [
+         5,
+         150
+        ],
+        [
+         7,
+         200
+        ],
+        [
+         8,
+         250
+        ],
+        [
+         8.5,
+         300
+        ],
+        [
+         8.8,
+         350
+        ]
+       ],
+       "label": "S",
+       "role": "supply"
+      }
+     ],
+     "points": [
+      {
+       "x": 8,
+       "y": 250,
+       "label": "E ($250, 8,000)",
+       "guides": true
+      }
+     ],
+     "caption": "Demand (slide 6) and supply (slide 21) cross at E: $250 and 8,000 tickets."
+    }
+   },
+   {
+    "h": "3. Surplus and shortage",
+    "body": "<p>At any other price the two quantities do not match.</p><table><tr><th>Price</th><th>Qd</th><th>Qs</th><th>Qs − Qd</th><th>Result</th></tr><tr><td>$350</td><td>5,000</td><td>8,800</td><td>+3,800</td><td>surplus</td></tr><tr><td>$300</td><td>6,000</td><td>8,500</td><td>+2,500</td><td>surplus</td></tr><tr><td>$250</td><td>8,000</td><td>8,000</td><td>0</td><td><b>equilibrium</b></td></tr><tr><td>$200</td><td>11,000</td><td>7,000</td><td>−4,000</td><td>shortage</td></tr><tr><td>$150</td><td>15,000</td><td>5,000</td><td>−10,000</td><td>shortage</td></tr><tr><td>$100</td><td>20,000</td><td>2,000</td><td>−18,000</td><td>shortage</td></tr></table><ul><li><b>Surplus</b> (Qs &gt; Qd): price above equilibrium. Unsold tickets → sellers cut the price → price <b>falls</b>.</li><li><b>Shortage</b> (Qd &gt; Qs): price below equilibrium. People can't get tickets → price <b>rises</b>.</li></ul><p>The professor's note (slide 35): if a government policy keeps a surplus → \"<b>buyers market</b>\"; keeps a shortage → \"<b>sellers market</b>\".</p>",
+    "chart": {
+     "x": "Quantity of tickets (thousands)",
+     "y": "Price of ticket ($)",
+     "xmax": 22,
+     "ymax": 400,
+     "xticks": [
+      5,
+      10,
+      15,
+      20
+     ],
+     "yticks": [
+      100,
+      150,
+      200,
+      250,
+      300,
+      350
+     ],
+     "lines": [
+      {
+       "pts": [
+        [
+         5,
+         350
+        ],
+        [
+         6,
+         300
+        ],
+        [
+         8,
+         250
+        ],
+        [
+         11,
+         200
+        ],
+        [
+         15,
+         150
+        ],
+        [
+         20,
+         100
+        ]
+       ],
+       "label": "D",
+       "role": "demand"
+      },
+      {
+       "pts": [
+        [
+         2,
+         100
+        ],
+        [
+         5,
+         150
+        ],
+        [
+         7,
+         200
+        ],
+        [
+         8,
+         250
+        ],
+        [
+         8.5,
+         300
+        ],
+        [
+         8.8,
+         350
+        ]
+       ],
+       "label": "S",
+       "role": "supply"
+      }
+     ],
+     "areas": [
+      {
+       "pts": [
+        [
+         5,
+         345
+        ],
+        [
+         8.8,
+         345
+        ],
+        [
+         8.8,
+         355
+        ],
+        [
+         5,
+         355
+        ]
+       ],
+       "role": "gap",
+       "label": "Surplus 3,800"
+      },
+      {
+       "pts": [
+        [
+         5,
+         145
+        ],
+        [
+         15,
+         145
+        ],
+        [
+         15,
+         155
+        ],
+        [
+         5,
+         155
+        ]
+       ],
+       "role": "gap",
+       "label": "Shortage 10,000"
+      }
+     ],
+     "points": [
+      {
+       "x": 8,
+       "y": 250,
+       "label": "E"
+      }
+     ],
+     "caption": "At $350: Qs 8,800 − Qd 5,000 = surplus 3,800. At $150: Qd 15,000 − Qs 5,000 = shortage 10,000."
+    }
+   },
+   {
+    "h": "4. A decrease in supply (slide 22)",
+    "body": "<p>Figure 3-6: after the announcement of Gretzky's retirement, sellers offer <b>1,000 fewer tickets at every price</b>.</p><table><tr><th>Price</th><th>Before (S1)</th><th>After (S2)</th><th>Change</th></tr><tr><td>$350</td><td>9,800</td><td>8,800</td><td>−1,000</td></tr><tr><td>$300</td><td>9,500</td><td>8,500</td><td>−1,000</td></tr><tr><td>$250</td><td>9,000</td><td>8,000</td><td>−1,000</td></tr><tr><td>$200</td><td>8,000</td><td>7,000</td><td>−1,000</td></tr><tr><td>$150</td><td>6,000</td><td>5,000</td><td>−1,000</td></tr><tr><td>$100</td><td>3,000</td><td>2,000</td><td>−1,000</td></tr></table><p>Less at <b>every</b> price → the whole curve shifts <b>left</b> (S1 → S2). The \"after\" column is exactly the slide 21 schedule.</p><p>Effect on the market: with S1, at $250 there is a surplus of 1,000 and at $200 a shortage of 3,000, so the old equilibrium is between $200 and $250 (a straight-line estimate: about $237.50 and 8,750 tickets). With S2 it is $250 and 8,000. A decrease in supply → <b>price up, quantity down</b>.</p>",
+    "chart": {
+     "x": "Quantity of tickets (thousands)",
+     "y": "Price of ticket ($)",
+     "xmax": 22,
+     "ymax": 400,
+     "xticks": [
+      5,
+      10,
+      15,
+      20
+     ],
+     "yticks": [
+      100,
+      150,
+      200,
+      250,
+      300,
+      350
+     ],
+     "lines": [
+      {
+       "pts": [
+        [
+         5,
+         350
+        ],
+        [
+         6,
+         300
+        ],
+        [
+         8,
+         250
+        ],
+        [
+         11,
+         200
+        ],
+        [
+         15,
+         150
+        ],
+        [
+         20,
+         100
+        ]
+       ],
+       "label": "D",
+       "role": "demand"
+      },
+      {
+       "pts": [
+        [
+         3,
+         100
+        ],
+        [
+         6,
+         150
+        ],
+        [
+         8,
+         200
+        ],
+        [
+         9,
+         250
+        ],
+        [
+         9.5,
+         300
+        ],
+        [
+         9.8,
+         350
+        ]
+       ],
+       "label": "S1 (before)",
+       "role": "supply"
+      },
+      {
+       "pts": [
+        [
+         2,
+         100
+        ],
+        [
+         5,
+         150
+        ],
+        [
+         7,
+         200
+        ],
+        [
+         8,
+         250
+        ],
+        [
+         8.5,
+         300
+        ],
+        [
+         8.8,
+         350
+        ]
+       ],
+       "label": "S2 (after)",
+       "role": "supply2"
+      }
+     ],
+     "points": [
+      {
+       "x": 8.75,
+       "y": 237.5,
+       "label": "E1 ≈ ($237.50, 8,750)"
+      },
+      {
+       "x": 8,
+       "y": 250,
+       "label": "E2 ($250, 8,000)",
+       "guides": true
+      }
+     ],
+     "arrows": [
+      {
+       "from": [
+        5.9,
+        150
+       ],
+       "to": [
+        5.1,
+        150
+       ],
+       "label": "−1,000 at every price"
+      }
+     ],
+     "caption": "Supply falls by 1,000 at each price: S shifts left, price rises, quantity falls."
+    }
+   },
+   {
+    "h": "5. Shift or movement?",
+    "body": "<ul><li>(250, 9,000) → (250, 8,000): the price is the <b>same</b>, the quantity changed → a <b>shift</b> of the supply curve.</li><li>(250, 8,000) → (200, 7,000) on S2: the quantity changed <b>because the price changed</b> → a <b>movement along</b> the supply curve.</li></ul><p>Quick test: same price, new quantity = shift. New price = movement along.</p>"
+   }
+  ],
+  "example": {
+   "problem": "<p>Use the ticket schedules. (a) Before the announcement (S1), is there a surplus or a shortage at $300? How big? (b) After the announcement (S2), what is the shortage at $200? (c) Between which two prices is the old (S1) equilibrium?</p>",
+   "solution": "<ol><li>At $300: Qs (S1) = 9,500, Qd = 6,000 → Qs &gt; Qd → <b>surplus of 3,500</b>.</li><li>At $200: Qd = 11,000, Qs (S2) = 7,000 → <b>shortage of 4,000</b>.</li><li>With S1: at $250 Qs 9,000 &gt; Qd 8,000 (surplus 1,000); at $200 Qs 8,000 &lt; Qd 11,000 (shortage 3,000). The sign flips, so the equilibrium is <b>between $200 and $250</b> (about $237.50 and 8,750 tickets).</li></ol>"
+  },
+  "check": [
+   {
+    "q": "Which axis is price?",
+    "a": "The <b>Y</b> axis. Quantity is on the X axis."
+   },
+   {
+    "q": "Equilibrium with S2 (Figure 3-5)?",
+    "a": "<b>$250</b> and <b>8,000</b> tickets (Qd = Qs)."
+   },
+   {
+    "q": "At $350 with S2: surplus or shortage, how much?",
+    "a": "Surplus: 8,800 − 5,000 = <b>3,800</b>. Price will fall."
+   },
+   {
+    "q": "At $150 with S2?",
+    "a": "Shortage: 15,000 − 5,000 = <b>10,000</b>. Price will rise."
+   },
+   {
+    "q": "Supply falls by 1,000 at every price. Which way does S move, and what happens to P and Q?",
+    "a": "S shifts <b>left</b>; equilibrium price <b>rises</b>, quantity <b>falls</b>."
+   }
+  ],
+  "exam": {
+   "question": "<p>Use the demand schedule for tickets (Figure 3-1) and the supply schedules (Figures 3-5 and 3-6).</p><ol><li>Find the equilibrium price and quantity with the supply schedule of Figure 3-5.</li><li>Find the surplus or shortage at $350 and at $150.</li><li>By how much does supply decrease in Figure 3-6? Which way does the curve shift? What happens to the equilibrium price and quantity?</li></ol>",
+   "answer": "<p><b>1.</b> At $250, Qd = 8,000 and Qs = 8,000. Equilibrium price = <b>$250</b>, quantity = <b>8,000 tickets</b>.</p><p><b>2.</b> At $350: Qs − Qd = 8,800 − 5,000 = <b>surplus of 3,800</b>, so the price falls. At $150: Qd − Qs = 15,000 − 5,000 = <b>shortage of 10,000</b>, so the price rises.</p><p><b>3.</b> At every price, after − before = −1,000. Supply decreases by <b>1,000 tickets at each price</b>, so the supply curve <b>shifts left</b> (S1 → S2). With S1 the equilibrium was between $200 and $250 (surplus 1,000 at $250, shortage 3,000 at $200); with S2 it is $250 and 8,000. So a decrease in supply <b>raises the equilibrium price and lowers the equilibrium quantity</b>.</p><p>(Draw it with price on the Y axis and quantity on the X axis.)</p>"
+  },
+  "memorize": [
+   "Y axis = price, X axis = quantity. Always.",
+   "Equilibrium: Qd = Qs → $250, 8,000 tickets",
+   "$350: surplus 3,800 (price falls). $150: shortage 10,000 (price rises)",
+   "Fig 3-6: −1,000 at every price → supply shifts LEFT",
+   "Supply decrease → price up, quantity down",
+   "Same price, new quantity = shift; new price = movement along",
+   "Surplus kept by policy → buyers market; shortage kept → sellers market"
+  ]
+ }
+]

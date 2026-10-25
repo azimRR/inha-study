@@ -1,0 +1,185 @@
+[
+ {
+  "lesson": "W1a-1",
+  "questions": [
+   {
+    "type": "mcq",
+    "q": "<p>What is the <b>primary deliverable of the Design phase</b>?<br/>A) System proposal<br/>B) System specification<br/>C) Installed system<br/>D) Feasibility study</p>",
+    "a": "<p><b>B</b>, because Design ends with the system specification. A is Analysis, C is Implementation, D is Planning.</p>"
+   },
+   {
+    "type": "mcq",
+    "q": "<p>The focus question <i>\"Who, what, where and when?\"</i> belongs to which SDLC phase?<br/>A) Planning<br/>B) Analysis<br/>C) Design<br/>D) Implementation</p>",
+    "a": "<p><b>B</b>, because Analysis studies who will use the system, what it does, and where and when it is used. Planning asks <i>why</i>, Design asks <i>how</i>.</p>"
+   },
+   {
+    "type": "classify",
+    "q": "<p>Put each deliverable into its SDLC phase (Planning, Analysis, Design, Implementation): test plan, alternative matrix, work plan, use cases, migration plan, risk assessment, data model, interface design, support plan, system request.</p>",
+    "a": "<table><tr><th>Phase</th><th>Deliverables</th></tr><tr><td>Planning</td><td>system request, work plan, risk assessment</td></tr><tr><td>Analysis</td><td>use cases, data model (both part of the system proposal)</td></tr><tr><td>Design</td><td>alternative matrix, interface design</td></tr><tr><td>Implementation</td><td>test plan, migration plan, support plan</td></tr></table>"
+   },
+   {
+    "type": "scenario",
+    "q": "<p>Inha builds a new <b>library book-lending system</b>. Which team role does each task?<br/>a) Plans how librarians will learn the new system.<br/>b) Checks whether the servers and network must be upgraded.<br/>c) Is the main contact for the client and monitors the project plan.<br/>d) Decides how technology can speed up lending and designs the information system.<br/>e) Designs the new late-return fine policy and shows its business value.</p>",
+    "a": "<p>a) <b>Change management analyst</b> (training plan)<br/>b) <b>Infrastructure analyst</b><br/>c) <b>Project manager</b><br/>d) <b>Systems analyst</b><br/>e) <b>Business analyst</b> (new processes and policies, business value)</p>"
+   },
+   {
+    "type": "short",
+    "q": "<p>Define a <b>system</b> and explain its 3 basic constraints using a hospital appointment system as the example.</p>",
+    "a": "<p><b>System</b> = an orderly grouping of interdependent components linked together according to a plan to achieve a specific goal.</p><ol><li><b>Structure and behavior for a predefined objective</b>: booking screen, doctor schedule and SMS reminder are built for one goal: patients see a doctor on time.</li><li><b>Interconnectivity and interdependence</b>: booking needs the doctor schedule; reminders need the booking.</li><li><b>Organization goals over subsystem goals</b>: if the reminder module wants many messages but the hospital wants to save money, the hospital goal wins.</li></ol>"
+   },
+   {
+    "type": "drawing",
+    "q": "<p>Depict graphically: the 4 SDLC phases, with the focus question and the main deliverable of each phase.</p>",
+    "a": "<p>Draw 4 boxes in order, with forward arrows, and write the deliverable under each box:</p><ul><li><b>Planning</b>: why build it? → system request, feasibility study, project plan</li><li><b>Analysis</b>: who, what, where, when? → system proposal</li><li><b>Design</b>: how will it work? → system specification</li><li><b>Implementation</b>: delivery and support → installed system</li></ul><p>(Post production / maintenance can be added as a 5th phase if asked.)</p>",
+    "diagram": "flowchart LR\n  P[\"Planning<br/>Why build it?\"] --> A[\"Analysis<br/>Who, what, where, when?\"]\n  A --> D[\"Design<br/>How will it work?\"]\n  D --> I[\"Implementation<br/>Deliver and support\"]\n  P -.-> P1([\"System request, feasibility study, project plan\"])\n  A -.-> A1([System proposal])\n  D -.-> D1([System specification])\n  I -.-> I1([Installed system])"
+   }
+  ]
+ },
+ {
+  "lesson": "W1b-1",
+  "questions": [
+   {
+    "type": "classify",
+    "q": "<p>Soft or hard skill? a) Has an IELTS 7.0 certificate b) Negotiates calmly with an unhappy stakeholder c) Writes Python code d) Justifies decisions e) Can configure Jira boards f) Teaches new team members g) Touch-typing h) Analytical thinking</p>",
+    "a": "<p><b>Hard:</b> a (certificate, confirmed now), c, e (tied to IT, can be tested), g (on the hard list).<br/><b>Soft:</b> b, d, f, h (personal, not tied to one profession, grow over time). Trap: analytical thinking is <b>soft</b>.</p>"
+   },
+   {
+    "type": "mcq",
+    "q": "<p>Which of these is <b>NOT</b> one of the new skills of an AI-augmented analyst?<br/>A) Prompt engineering<br/>B) AI output validation<br/>C) Assembly language programming<br/>D) Data literacy</p>",
+    "a": "<p><b>C</b>, because the 6 new skills are prompt engineering, AI output validation, data literacy, ethical AI awareness, AI-tool orchestration and model evaluation.</p>"
+   },
+   {
+    "type": "mcq",
+    "q": "<p>A bank's AI fraud detector was accurate last year, but now its accuracy slowly drops because customer behavior has changed. Which AI-aware design pattern catches this?<br/>A) Model Wrapper<br/>B) Feature Store<br/>C) Drift Detector<br/>D) Model Version Manager</p>",
+    "a": "<p><b>C</b>, because a Drift Detector (DriftMonitor.check_drift()) watches for the data or model drifting away from what it was trained on.</p>"
+   },
+   {
+    "type": "scenario",
+    "q": "<p>An analyst uses AI while gathering requirements for a clinic system. For each task say what the <b>AI</b> does and what the <b>human</b> does: a) stakeholder interview b) requirement prioritization c) UML diagrams d) ethics check.</p>",
+    "a": "<table><tr><th>Task</th><th>AI</th><th>Human</th></tr><tr><td>Interview</td><td>transcribes and summarizes</td><td>reads body language, asks follow-ups</td></tr><tr><td>Prioritization</td><td>suggests an order</td><td>makes the final judgment</td></tr><tr><td>UML</td><td>drafts the diagram</td><td>reviews and corrects it</td></tr><tr><td>Ethics</td><td>flags possible bias</td><td>judges what is right</td></tr></table><p>Rule: AI = routine, data-heavy work; human = judgment, creativity, ethics, stakeholders. The analyst is enhanced, not replaced.</p>"
+   },
+   {
+    "type": "short",
+    "q": "<p>Give 3 ways an AI component breaks normal object-oriented assumptions, and the design fix for each.</p>",
+    "a": "<ol><li>Same input → same output? No, AI is <b>probabilistic</b> → confidence scores, retries.</li><li>Errors are bugs? No, AI makes <b>statistical errors</b> (false positives/negatives) → human-in-the-loop fallback.</li><li>Predictable speed? No, <b>inference time varies</b> → async, caching, batching.</li></ol><p>(Also: hidden weights → model versioning; exhaustive testing → statistical validation with precision, recall, F1.)</p>"
+   },
+   {
+    "type": "short",
+    "q": "<p>Name the 2 entry-level jobs from which system developers usually start, and 3 positions at the top of the career ladder.</p>",
+    "a": "<p><b>Entry level:</b> business function specialist; programmer/analyst.<br/><b>Top:</b> change management analyst, project manager, software architect.</p>"
+   }
+  ]
+ },
+ {
+  "lesson": "W1b-2",
+  "questions": [
+   {
+    "type": "mcq",
+    "q": "<p>Phased development belongs to which class of methodologies?<br/>A) Structured design<br/>B) Rapid Application Development (RAD)<br/>C) Agile<br/>D) None, it is only a planning technique</p>",
+    "a": "<p><b>B</b>, because RAD includes Phased and Prototyping. Structured = Waterfall, Parallel; Agile = XP, Scrum.</p>"
+   },
+   {
+    "type": "mcq",
+    "q": "<p>According to the agile principles, what is the <b>primary measure of progress</b>?<br/>A) Number of documents completed<br/>B) Working software<br/>C) Hours worked by the team<br/>D) Milestones in the project plan</p>",
+    "a": "<p><b>B</b>, because \"working software is the primary measure of progress\".</p>"
+   },
+   {
+    "type": "short",
+    "q": "<p>Write the 4 values of the Agile Manifesto. Does agile say that the items on the right are worthless?</p>",
+    "a": "<ol><li><b>Individuals and interactions</b> over processes and tools</li><li><b>Working software</b> over comprehensive documentation</li><li><b>Customer collaboration</b> over contract negotiation</li><li><b>Responding to change</b> over following a plan</li></ol><p>No: \"while there is value in the items on the right, we value the items on the left more\".</p>"
+   },
+   {
+    "type": "classify",
+    "q": "<p>Match each statement to Waterfall, RAD, XP or Scrum: a) pair programming b) named after a restart in rugby c) uses CASE tools, JAD sessions and code generators d) a cascade from one phase to another e) a full-time customer works with the team f) new builds several times per day g) gets some part of the system to users quickly</p>",
+    "a": "<p>a) <b>XP</b> b) <b>Scrum</b> c) <b>RAD</b> d) <b>Waterfall</b> e) <b>XP</b> f) <b>XP</b> g) <b>RAD</b></p>"
+   },
+   {
+    "type": "scenario",
+    "q": "<p>Plan-driven or agile? Justify each.<br/>a) A national railway ticketing system, built by teams in 3 cities, with a fixed contract and stable requirements.<br/>b) A student startup's food-delivery app; the founders change their minds every week.</p>",
+    "a": "<p>a) <b>Plan-driven</b> (e.g. Waterfall): requirements are stable, and planning everything in advance helps coordinate a large project developed at several sites.<br/>b) <b>Agile</b> (e.g. Scrum, XP): planning is incremental, so weekly changes are easy to absorb; short 1–4 week iterations deliver working software often.<br/>Note: in practice most processes mix both; there is no right or wrong process.</p>"
+   },
+   {
+    "type": "short",
+    "q": "<p>List the 6 project characteristics you must check before choosing a methodology.</p>",
+    "a": "<ol><li>Clarity of user requirements</li><li>Familiarity with technology</li><li>System complexity</li><li>System reliability</li><li>Short time schedules</li><li>Schedule visibility</li></ol>"
+   }
+  ]
+ },
+ {
+  "lesson": "W1b-3",
+  "questions": [
+   {
+    "type": "drawing",
+    "q": "<p>Depict graphically: <b>Waterfall</b> development methodology. Write how it works, one advantage and one disadvantage.</p>",
+    "a": "<p><b>Drawing:</b> staircase going down to the right: Planning → Analysis → Design → Implementation → rounded <b>System</b>. Solid arrows forward; 3 dashed back arrows (Analysis→Planning, Design→Analysis, Implementation→Design).<br/><b>How it works:</b> the project cascades from one phase to the next; it is plan-driven: all activities are planned and scheduled before work starts.<br/><b>Pro:</b> the plan helps coordinate large projects developed at several sites; works when requirements are well understood.<br/><b>Con:</b> inflexible: hard to respond to changing requirements, and users see the system only at the end.</p>",
+    "diagram": "flowchart TD\n  P[Planning] --> A[Analysis]\n  A --> D[Design]\n  D --> I[Implementation]\n  I --> S([System])\n  A -.-> P\n  D -.-> A\n  I -.-> D"
+   },
+   {
+    "type": "drawing",
+    "q": "<p>Depict graphically: the <b>V-model</b>. Show which test is designed in which phase.</p>",
+    "a": "<p><b>Drawing:</b> a big V. Left side going down: Analysis → Design → Implementation (coding) at the bottom. Right side going up: Unit testing → Integration testing → System testing → Acceptance testing. In the middle, rounded test-design boxes with dashed arrows.<br/><b>Key labels:</b> Analysis → <b>acceptance test design</b> → acceptance testing; Design → <b>system, integration and unit test design</b> → the matching tests.<br/><b>Pro:</b> every test is planned early, so quality is strong. <b>Con:</b> rigid like Waterfall; use when reliability matters and requirements are stable.</p>",
+    "diagram": "flowchart TD\n  AN[Analysis] --> DE[Design]\n  DE --> IM[\"Implementation (coding)\"]\n  IM --> UT[Unit testing]\n  UT --> IT[Integration testing]\n  IT --> ST[System testing]\n  ST --> AT[Acceptance testing]\n  AN -.-> ATD([Acceptance test design])\n  DE -.-> STD([System test design])\n  DE -.-> ITD([Integration test design])\n  DE -.-> UTD([Unit test design])\n  ATD -.-> AT\n  STD -.-> ST\n  ITD -.-> IT\n  UTD -.-> UT"
+   },
+   {
+    "type": "drawing",
+    "q": "<p>Depict graphically: <b>Parallel</b> development methodology. Mark the part that runs in parallel and explain why this is faster than Waterfall.</p>",
+    "a": "<p><b>Drawing:</b> Planning → Analysis → <b>general Design</b> (dashed back arrows), then 3 dotted ellipses <b>Subproject 1, 2, 3</b> (each Design → Implementation with a dashed back arrow) = the parallel part; all join in <b>Integration</b> → rounded <b>System</b>.<br/><b>Why faster:</b> after one general design, the subprojects are designed and implemented at the same time, so the time to deliver is shorter and fewer business changes cause rework.<br/><b>Con:</b> still one delivery at the end; the pieces must fit at integration.</p>",
+    "diagram": "flowchart TD\n  P[Planning] --> A[Analysis]\n  A --> D[General design]\n  A -.-> P\n  D -.-> A\n  subgraph SP1[\"Subproject 1\"]\n    D1[Design] --> I1[Implementation]\n    I1 -.-> D1\n  end\n  subgraph SP2[\"Subproject 2\"]\n    D2[Design] --> I2[Implementation]\n    I2 -.-> D2\n  end\n  subgraph SP3[\"Subproject 3\"]\n    D3[Design] --> I3[Implementation]\n    I3 -.-> D3\n  end\n  D --> D1\n  D --> D2\n  D --> D3\n  I1 --> INT[Integration]\n  I2 --> INT\n  I3 --> INT\n  INT --> SYS([System])"
+   },
+   {
+    "type": "mcq",
+    "q": "<p>In the V-model, the <b>integration test design</b> is produced during which phase?<br/>A) Analysis<br/>B) Design<br/>C) Implementation (coding)<br/>D) Acceptance testing</p>",
+    "a": "<p><b>B</b>, because system, integration and unit test designs come from Design; only the acceptance test design comes from Analysis.</p>"
+   },
+   {
+    "type": "mcq",
+    "q": "<p>Which element does <b>NOT</b> belong in a correct Waterfall drawing?<br/>A) A dashed arrow from Design back to Analysis<br/>B) A rounded System box at the end<br/>C) An Integration box<br/>D) A Planning box at the top left</p>",
+    "a": "<p><b>C</b>, because Integration appears only in Parallel development, where the subprojects are joined.</p>"
+   },
+   {
+    "type": "short",
+    "q": "<p>Compare Waterfall and Parallel development: give 3 differences and 1 similarity.</p>",
+    "a": "<p><b>Differences:</b></p><ol><li>Shape: one staircase vs a staircase that splits into subprojects and joins again.</li><li>Design: done once vs a general design plus a design inside each subproject; Parallel has an extra <b>Integration</b> box.</li><li>Short time schedule: Waterfall is Poor, Parallel is Good (it reduces delivery time).</li></ol><p><b>Similarity:</b> both are <b>Structured</b> methodologies and deliver the whole system only once, at the end.</p>"
+   }
+  ]
+ },
+ {
+  "lesson": "W1b-4",
+  "questions": [
+   {
+    "type": "drawing",
+    "q": "<p>Depict graphically: <b>Phased</b> development methodology for a café ordering app that will be delivered in 3 versions. Label what goes into each version.</p>",
+    "a": "<p><b>Drawing:</b> Planning → Analysis (overall concept, once, dashed back arrow). Then 3 dotted ellipses, each Analysis → Design → Implementation with dashed back arrows, each ending in a rounded <b>System version 1 / 2 / 3</b>. An arrow from System version 1 into the Analysis of version 2, and from version 2 into version 3.<br/><b>Versions:</b> V1 = the most important features (menu and ordering); V2 = online payment plus ideas from users of V1; V3 = delivery tracking.<br/><b>Pro:</b> a useful system reaches users quickly; value sooner; new requirements found sooner.<br/><b>Con:</b> users work with an intentionally incomplete system, so manage expectations.</p>",
+    "diagram": "flowchart TD\n  P[Planning] --> A0[Analysis]\n  A0 -.-> P\n  subgraph V1[\"Version 1: menu and ordering\"]\n    A1[Analysis] --> D1[Design]\n    D1 --> I1[Implementation]\n    D1 -.-> A1\n    I1 -.-> D1\n  end\n  subgraph V2[\"Version 2: online payment\"]\n    A2[Analysis] --> D2[Design]\n    D2 --> I2[Implementation]\n    D2 -.-> A2\n    I2 -.-> D2\n  end\n  subgraph V3[\"Version 3: delivery tracking\"]\n    A3[Analysis] --> D3[Design]\n    D3 --> I3[Implementation]\n    D3 -.-> A3\n    I3 -.-> D3\n  end\n  A0 --> A1\n  I1 --> S1([System version 1])\n  S1 --> A2\n  I2 --> S2([System version 2])\n  S2 --> A3\n  I3 --> S3([System version 3])"
+   },
+   {
+    "type": "drawing",
+    "q": "<p>Depict graphically: <b>Prototyping</b>-based methodology. Give 2 benefits and 2 problems.</p>",
+    "a": "<p><b>Drawing:</b> Planning → a <b>stacked block</b> [Analysis / Design / Implementation] (these happen at the same time), dashed back arrow to Planning. Block → rounded <b>System prototype</b>, with a loop back into the block. Prototype → Implementation → rounded <b>System</b>.<br/><b>How it works:</b> quickly build a quick-and-dirty program with minimal features, show it to users, refine it in cycles until it becomes the system.<br/><b>Benefits:</b> better usability; closer match to real needs (also better design quality, maintainability, less effort).<br/><b>Problems:</b> functionality and error checking may be left out; focuses on functional, not non-functional requirements (reliability, security).</p>",
+    "diagram": "flowchart LR\n  P[Planning] --> B[\"Analysis<br/>Design<br/>Implementation\"]\n  B -.-> P\n  B --> SP([System prototype])\n  SP -->|\"repeat\"| B\n  SP --> I[Implementation]\n  I --> S([System])"
+   },
+   {
+    "type": "drawing",
+    "q": "<p>Depict graphically: <b>Throwaway prototyping</b>-based methodology. Why is the prototype thrown away?</p>",
+    "a": "<p><b>Drawing:</b> Planning → Analysis (dashed back arrow) → stacked block [Analysis / Design / Implementation] → rounded <b>Design prototype</b>, with a loop back into the block. A second path from the block for the real build: Design → Implementation (dashed back arrow) → rounded <b>System</b>.<br/><b>Why discard it:</b> it may be impossible to tune for non-functional requirements; it is undocumented; its structure is degraded by rapid change; it won't meet quality standards.<br/><b>Difference from Prototyping:</b> the output is a <b>design</b> prototype used only to learn; it never becomes the system.</p>",
+    "diagram": "flowchart LR\n  P[Planning] --> A[Analysis]\n  A -.-> P\n  A --> B[\"Analysis<br/>Design<br/>Implementation\"]\n  B -.-> A\n  B --> DP([Design prototype])\n  DP -->|\"repeat\"| B\n  B -->|\"real build\"| D[Design]\n  D --> I[Implementation]\n  I -.-> D\n  I --> S([System])"
+   },
+   {
+    "type": "drawing",
+    "q": "<p>Depict graphically: <b>typical Agile</b> development methodology. Explain the drawing in 2 lines.</p>",
+    "a": "<p><b>Drawing:</b> one stacked block with all 4 phases [Planning / Analysis / Design / Implementation] → rounded <b>System</b> → arrow back to the top of the block (next iteration).<br/><b>Explanation:</b> every iteration is a complete small project done in a short cycle (1–4 weeks) and ends with working software; then the next cycle starts again from planning.<br/><b>Pro:</b> working software early and often, welcomes change. <b>Con:</b> little documentation; needs an available customer and a disciplined team.</p>",
+    "diagram": "flowchart LR\n  B[\"Planning<br/>Analysis<br/>Design<br/>Implementation\"] --> S([System])\n  S -->|\"next iteration\"| B"
+   },
+   {
+    "type": "scenario",
+    "q": "<p>A hospital wants a new patient-records system on a <b>blockchain platform</b> the team has never used. Doctors cannot clearly explain what they need. The system is large, links many departments, and <b>must never lose data</b>. Use the \"Which methodology to use?\" table to choose a methodology.</p>",
+    "a": "<p><b>1) Marked rows:</b> unclear requirements, unfamiliar technology, complex system, reliable system.<br/><b>2) Cross out any Poor:</b> Waterfall and Parallel (Poor on unclear, unfamiliar); Prototyping (Poor on unfamiliar, complex, reliable); XP (Poor on unfamiliar, complex).<br/><b>3) Count Excellents:</b> Phased G, G, G, G = 0; Throwaway E, E, E, E = 4.<br/>→ <b>Throwaway prototyping</b>: design prototypes let the team learn the new technology and clarify requirements, then the real system is built properly.</p>"
+   },
+   {
+    "type": "classify",
+    "q": "<p>Iterative, incremental or iterative-incremental? A team builds a university timetable app.<br/>a) Round 1: a rough version of the whole app; round 2: a better version of the whole app.<br/>b) Round 1: only a finished course list; round 2: add room booking; round 3: add exam schedules.<br/>c) Each round adds a new feature and also improves the features already built.</p>",
+    "a": "<p>a) <b>Iterative</b>: the whole thing is improved each round (sketch → draft → finished painting).<br/>b) <b>Incremental</b>: one finished piece is added each round.<br/>c) <b>Iterative-incremental</b>: both at once; this is how Phased and agile development work.</p>"
+   }
+  ]
+ }
+]

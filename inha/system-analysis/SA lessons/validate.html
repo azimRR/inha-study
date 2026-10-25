@@ -1,0 +1,24 @@
+<!doctype html><meta charset="utf-8"><title>diagram check</title>
+<script src="lessons-data.js"></script>
+<script src="practice-data.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@10.9.1/dist/mermaid.min.js"></script>
+<pre id="out">running</pre>
+<script>
+(async () => {
+  mermaid.initialize({ startOnLoad: false });
+  const res = [];
+  for (const L of LESSONS) {
+    const ds = [];
+    (L.cards || []).forEach((c, i) => c.diagram && ds.push(["card" + (i + 1), c.diagram]));
+    if (L.example && L.example.diagram) ds.push(["example", L.example.diagram]);
+    if (L.exam && L.exam.diagram) ds.push(["exam", L.exam.diagram]);
+    for (const [where, code] of ds) {
+      try { await mermaid.parse(code); } catch (e) { res.push(`FAIL ${L.id} ${where}: ${String(e.message || e).split("\n").slice(0, 3).join(" | ")}`); }
+    }
+  }
+  for (const P of (typeof PRACTICE !== "undefined" ? PRACTICE : [])) for (const [k, q] of P.questions.entries()) if (q.diagram) {
+    try { await mermaid.parse(q.diagram); } catch (e) { res.push(`FAIL practice ${P.lesson} q${k + 1}: ${String(e.message || e).split("\n").slice(0, 3).join(" | ")}`); }
+  }
+  document.getElementById("out").textContent = "DONE " + LESSONS.length + " lessons\n" + (res.join("\n") || "ALL OK");
+})();
+</script>

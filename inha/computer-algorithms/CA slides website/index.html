@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>CA Midterm Slides</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=JetBrains+Mono:wght@400;700&display=swap">
+<link rel="stylesheet" href="style.css">
+<style>
+  .wrap { max-width: 1120px; margin: 0 auto; padding-inline: 16px; padding-block: 40px 64px; display: grid; gap: 40px; }
+  .hero { display: grid; gap: 18px; }
+  .hero h1 { font-size: clamp(38px, 6vw, 68px); letter-spacing: -.02em; }
+  .hero h1 em { font-style: normal; color: var(--blue); }
+  .hero p { font-size: 1.15em; color: var(--ink-soft); max-width: 60ch; margin: 0; }
+  .facts { display: flex; flex-wrap: wrap; gap: 10px; }
+  .fact { background: var(--sheet); border: 1.5px solid var(--line); border-radius: 10px; padding: 10px 14px; display: grid; gap: 2px; }
+  .fact b { font: 700 20px/1.1 var(--display); }
+  .fact span { font-size: 13px; color: var(--muted); }
+  .fact.warn { border-color: var(--red); }
+  .fact.warn b { color: var(--red); }
+  .cta { display: flex; flex-wrap: wrap; gap: 10px; }
+  .sec-title { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; flex-wrap: wrap; margin-bottom: 14px; }
+  .sec-title h2 { font-size: 28px; }
+  .sec-title p { margin: 0; color: var(--muted); font-size: 14px; }
+  .decks { display: grid; gap: 14px; grid-template-columns: repeat(auto-fill, minmax(min(100%, 330px), 1fr)); }
+  .deck {
+    background: var(--sheet); border: 1.5px solid var(--line); border-radius: 16px; padding: 18px;
+    display: grid; grid-template-rows: auto auto 1fr auto; gap: 10px;
+  }
+  .deck:hover { border-color: var(--blue); }
+  .deck .head { display: flex; align-items: center; gap: 10px; }
+  .deck .no {
+    font: 700 15px/1 var(--mono); min-width: 46px; height: 34px; padding: 0 8px; border-radius: 8px;
+    display: grid; place-items: center; background: var(--ink); color: var(--sheet);
+  }
+  .deck.special .no { background: var(--blue); }
+  .deck.warnd .no { background: var(--red); }
+  .deck .wk { font-size: 13px; color: var(--muted); font-weight: 700; letter-spacing: .06em; text-transform: uppercase; }
+  .deck h3 { font-size: 21px; }
+  .deck p { margin: 0; color: var(--ink-soft); font-size: 15px; }
+  .deck .acts { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+  .deck .acts .btn { padding: 9px 13px; font-size: 14px; }
+  .deck .count { font: 600 13px var(--mono); color: var(--muted); margin-left: auto; }
+  .pdfs { display: flex; flex-wrap: wrap; gap: 6px; }
+  .pdfs a { font-size: 13px; font-weight: 700; text-decoration: none; padding: 5px 9px; border-radius: 6px; background: var(--red-soft); color: var(--red); }
+  .pdfs a:hover { text-decoration: underline; }
+  .pdflist { display: grid; gap: 8px; grid-template-columns: repeat(auto-fill, minmax(min(100%, 250px), 1fr)); }
+  .pdflist a {
+    display: flex; gap: 10px; align-items: center; text-decoration: none; color: var(--ink);
+    background: var(--sheet); border: 1.5px solid var(--line); border-radius: 10px; padding: 10px 12px; font-weight: 600; font-size: 15px;
+  }
+  .pdflist a:hover { border-color: var(--red); }
+  .pdflist a span { font: 700 12px var(--mono); color: var(--red); background: var(--red-soft); padding: 4px 6px; border-radius: 5px; }
+  .checklist { display: grid; gap: 8px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr)); }
+  .check { display: flex; gap: 10px; align-items: flex-start; padding: 9px 12px; border: 1.5px solid var(--line); border-radius: 10px; cursor: pointer; background: var(--sheet); font-size: 15px; }
+  .check input { margin-top: 3px; accent-color: var(--green); width: 17px; height: 17px; flex: none; }
+  .check:has(input:checked) { border-color: var(--green); background: var(--green-soft); }
+  .check-count { font-weight: 700; color: var(--green); }
+  footer { color: var(--muted); font-size: 13px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <section class="hero">
+    <span class="tag">SOC3030-003 · Computer Algorithm · Prof. Seth Ashish</span>
+    <h1>CA midterm, <em>explained simply</em></h1>
+    <p>13 short slide decks covering every midterm topic, plus a "what to prepare" deck and a mock quiz. Everything comes from the professor's slides and assignments. Each deck opens in a new tab.</p>
+    <div class="facts">
+      <div class="fact"><b>25%</b><span>of your grade</span></div>
+      <div class="fact"><b>Week 8</b><span>Oct 24–30</span></div>
+      <div class="fact"><b>Decks 01–13</b><span>weeks 1–7</span></div>
+      <div class="fact warn"><b>Tue 27 / Wed 28?</b><span>not announced, check eclass</span></div>
+    </div>
+    <div class="cta">
+      <a class="btn" href="slides.html#plan-1" target="_blank" rel="noopener">Start: what to prepare ↗</a>
+      <a class="btn ghost" href="slides.html#mock-1" target="_blank" rel="noopener">Jump to mock quiz ↗</a>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-title"><h2>Slide decks</h2><p>Use ← → keys or swipe. Red buttons open the professor's original PDF.</p></div>
+    <div class="decks" id="decks"></div>
+  </section>
+
+  <section>
+    <div class="sec-title"><h2>Professor's original slides</h2><p>The real PDFs from eclass, each opens in a new tab</p></div>
+    <div class="pdflist" id="pdflist"></div>
+  </section>
+
+  <section>
+    <div class="sec-title"><h2>Ready checklist</h2><p>Tick it only when you can do it on paper without notes. Saved in this browser.</p></div>
+    <div id="checklist"></div>
+  </section>
+
+  <footer>Built from <code>A - FROM CLASS (slides only)/</code>. Full mock exam + answer key: <code>MIDTERM REVIEW (from slides only).md</code> §7–§8.</footer>
+</div>
+
+<script src="decks.js"></script>
+<script>
+  const special = { plan: "special", exam: "warnd", mock: "special", traps: "warnd" };
+  document.getElementById("decks").innerHTML = DECKS.map((d) => `
+    <article class="deck ${special[d.id] || ""}">
+      <div class="head"><span class="no">${d.n}</span><span class="wk">${d.week}</span></div>
+      <h3>${d.title}</h3>
+      <p>${d.blurb}</p>
+      <div class="stack" style="gap:10px">
+        ${d.pdfs.length ? `<div class="pdfs">${d.pdfs.map(([label, f]) => `<a href="${pdf(f)}" target="_blank" rel="noopener">PDF ${label} ↗</a>`).join("")}</div>` : ""}
+        <div class="acts">
+          <a class="btn" href="slides.html#${d.id}-1" target="_blank" rel="noopener">Open slides ↗</a>
+          <a class="btn ghost" href="slides.html#${d.id}-1">Open here</a>
+          <span class="count">${d.slides.length} slides</span>
+        </div>
+      </div>
+    </article>`).join("");
+
+  const allPdfs = DECKS.flatMap((d) => d.pdfs);
+  document.getElementById("pdflist").innerHTML = allPdfs.map(([label, f]) =>
+    `<a href="${pdf(f)}" target="_blank" rel="noopener"><span>PDF</span>${label}</a>`).join("");
+
+  renderChecklist(document.getElementById("checklist"));
+</script>
+</body>
+</html>

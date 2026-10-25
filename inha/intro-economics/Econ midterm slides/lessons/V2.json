@@ -1,0 +1,146 @@
+[
+ {
+  "q": "Q5",
+  "focus": "Demand shifters, part 1: price of a substitute, price of a complement, income for a normal good (from the Q5–Q6 table)",
+  "variants": [
+   {
+    "q": "<p>Define <b>substitutes</b> and <b>complements</b>. Explain, with one example of each, how the demand curve for a good shifts when the price of a substitute rises or falls and when the price of a complement rises or falls.</p>",
+    "a": "<p><b>Substitutes</b> are goods used instead of each other (coffee and tea). <b>Complements</b> are goods used together (coffee and sugar).</p><ul><li>Price of a substitute <b>rises</b> → demand for the good <b>increases</b>, curve shifts <b>right</b>. (Tea gets expensive → people switch to coffee.) Price of a substitute falls → demand decreases, shifts left.</li><li>Price of a complement <b>falls</b> → demand for the good <b>increases</b>, shifts <b>right</b>. (Sugar gets cheap → more sweet coffee.) Price of a complement rises → demand decreases, shifts left.</li></ul><p>So substitutes move in the <b>same</b> direction, complements in the <b>opposite</b> direction.</p>"
+   },
+   {
+    "q": "<p>For each event, say whether the demand for <b>cars</b> increases or decreases, and which way the demand curve shifts. Draw one of the shifts.</p><ol><li>The price of petrol falls.</li><li>Bus and metro tickets become more expensive.</li><li>Incomes in Uzbekistan rise (cars are a normal good).</li><li>The price of cars falls.</li></ol>",
+    "a": "<ol><li>Petrol is a <b>complement</b> of cars. Its price falls → demand for cars <b>increases</b>, shift <b>right</b>.</li><li>Buses/metro are <b>substitutes</b>. Their price rises → people switch to cars → demand <b>increases</b>, shift <b>right</b>.</li><li>Normal good, income rises → demand <b>increases</b>, shift <b>right</b>.</li><li>Trap: this is the car's <b>own price</b>. No shift; it is a <b>movement along</b> the demand curve (quantity demanded rises).</li></ol><p>Graph: price on the Y axis, quantity of cars on the X axis; downward-sloping D1, and D2 drawn to the right of D1 with an arrow D1 → D2. At the same price, the quantity demanded is larger on D2.</p>"
+   },
+   {
+    "q": "<p>True or false? Give a reason for each.</p><ol><li>If the price of tea rises, the demand curve for coffee shifts left.</li><li>If the price of a complement rises, demand for the original good decreases.</li><li>When income falls, the demand curve for a normal good shifts right.</li><li>A fall in the price of coffee shifts the demand curve for coffee to the right.</li></ol>",
+    "a": "<ol><li><b>False.</b> Tea is a substitute. Its price rises → people buy more coffee → demand for coffee shifts <b>right</b>.</li><li><b>True.</b> Complements are used together; if one becomes dearer, people want less of both, so demand shifts left.</li><li><b>False.</b> For a normal good, income falls → demand <b>decreases</b> → shift <b>left</b>.</li><li><b>False.</b> A change in the good's own price causes a <b>movement along</b> the demand curve, not a shift.</li></ol>"
+   }
+  ]
+ },
+ {
+  "q": "Q6",
+  "focus": "Demand shifters, part 2: income for an inferior good, tastes, expected future price, number of consumers (from the Q5–Q6 table)",
+  "variants": [
+   {
+    "q": "<p>Explain how the demand curve for a good shifts when (a) income rises or falls for an inferior good, (b) tastes change, (c) the price is expected to rise or fall in the future, (d) the number of consumers rises or falls.</p>",
+    "a": "<p>An increase in demand shifts the curve <b>right</b>; a decrease shifts it <b>left</b>.</p><ol><li><b>Inferior good:</b> income falls → demand increases (right); income rises → demand decreases (left).</li><li><b>Tastes:</b> tastes change in favor of the good → demand increases; tastes change against it → demand decreases.</li><li><b>Expected price:</b> price expected to rise in the future → demand <b>today</b> increases (buy now); expected to fall → demand today decreases (wait).</li><li><b>Number of consumers:</b> more consumers → market demand increases; fewer → market demand decreases.</li></ol>"
+   },
+   {
+    "q": "<p>Instant noodles are an inferior good for students. For each event, say what happens to the demand for instant noodles and which way the curve shifts.</p><ol><li>Students' stipends are cut (income falls).</li><li>A popular doctor says on TV that instant noodles are very unhealthy.</li><li>Shops announce that noodle prices will go up next month.</li><li>Ten thousand new students move to Tashkent.</li></ol>",
+    "a": "<ol><li>Inferior good, income <b>falls</b> → demand <b>increases</b>, shift <b>right</b>.</li><li>Tastes change <b>against</b> the good → demand <b>decreases</b>, shift <b>left</b>.</li><li>Price expected to <b>rise</b> → people buy now → demand <b>today increases</b>, shift <b>right</b>.</li><li>More consumers → <b>market</b> demand <b>increases</b>, shift <b>right</b>.</li></ol><p>In all four cases the noodle price itself did not change, so these are <b>shifts</b> of the curve, not movements along it.</p>"
+   },
+   {
+    "q": "<p>True or false? Give a reason for each.</p><ol><li>If buyers expect the price of phones to fall next month, demand for phones today increases.</li><li>If income rises, the demand curve for an inferior good shifts left.</li><li>An advertising campaign that makes a good fashionable shifts its demand curve right.</li><li>If the number of consumers falls, the market demand curve shifts right.</li></ol>",
+    "a": "<ol><li><b>False.</b> If the price is expected to fall, buyers wait, so demand <b>today decreases</b> (shift left).</li><li><b>True.</b> For an inferior good, higher income means people buy less of it, so demand decreases (left).</li><li><b>True.</b> Tastes change in favor of the good → demand increases → shift right.</li><li><b>False.</b> Fewer consumers → market demand <b>decreases</b> → shift <b>left</b>.</li></ol>"
+   }
+  ]
+ },
+ {
+  "q": "Q7",
+  "focus": "Normal goods and inferior goods (definitions, examples, shifts)",
+  "variants": [
+   {
+    "q": "<p>Define a <b>normal good</b> and an <b>inferior good</b>. Give one example of each, and explain how each demand curve shifts when income <b>falls</b>.</p>",
+    "a": "<ul><li>A <b>normal good</b> is a good for which a rise in income <b>increases</b> demand (the normal case). Example: restaurant meals.</li><li>An <b>inferior good</b> is a good for which a rise in income <b>decreases</b> demand. Example: instant noodles or crowded bus rides.</li></ul><p>When income <b>falls</b>: demand for the normal good <b>decreases</b>, so its curve shifts <b>left</b>; demand for the inferior good <b>increases</b>, so its curve shifts <b>right</b>.</p><p>Income is not the good's own price, so it shifts the curve rather than moving along it.</p>"
+   },
+   {
+    "q": "<p>Dilnoza graduates and her monthly income rises from 3 to 9 million sum. She now buys more new clothes and more taxi rides, but fewer second-hand books and fewer marshrutka rides. Classify each good, say which way each demand curve shifts, and draw the graph for one normal and one inferior good.</p>",
+    "a": "<ul><li>New clothes: income ↑, demand ↑ → <b>normal good</b>, shifts <b>right</b>.</li><li>Taxi rides: income ↑, demand ↑ → <b>normal good</b>, shifts <b>right</b>.</li><li>Second-hand books: income ↑, demand ↓ → <b>inferior good</b>, shifts <b>left</b>.</li><li>Marshrutka rides: income ↑, demand ↓ → <b>inferior good</b>, shifts <b>left</b>.</li></ul><p>Graphs (price on Y, quantity on X): for taxi rides, D2 is drawn to the <b>right</b> of D1; for marshrutka rides, D2 is drawn to the <b>left</b> of D1. The price is the same; only the quantity wanted at each price changes.</p>"
+   },
+   {
+    "q": "<p>True or false? Give a reason for each.</p><ol><li>An inferior good is a good of low quality.</li><li>If income falls and the demand for margarine rises, margarine is an inferior good.</li><li>A good can be normal for one person and inferior for another.</li><li>When income rises, consumers move along the demand curve for a normal good.</li></ol>",
+    "a": "<ol><li><b>False.</b> \"Inferior\" only means that demand falls when income rises. It says nothing about quality.</li><li><b>True.</b> Income and demand move in opposite directions, which is the definition of an inferior good.</li><li><b>True.</b> It depends on how each person's demand reacts to income. Bus rides can be inferior for a student who switches to taxis after getting a job, but normal for someone else.</li><li><b>False.</b> Income is not the good's own price; a change in income <b>shifts</b> the demand curve (right for a normal good).</li></ol>"
+   }
+  ]
+ },
+ {
+  "q": "Q15",
+  "focus": "What shifts the supply curve (the five supply shifters)",
+  "variants": [
+   {
+    "q": "<p>Name the five factors that shift the supply curve. For each one, give an example of an event that would <b>increase</b> the supply of bread.</p>",
+    "a": "<p>Supply increases → the curve shifts <b>right</b>.</p><ol><li><b>Input prices:</b> the price of flour falls → bread is cheaper to make → supply increases.</li><li><b>Prices of related goods in production:</b> the price of cakes (a substitute in production, made with the same ovens and flour) falls → bakeries make more bread.</li><li><b>Technology:</b> a faster oven lowers the cost of baking → supply increases.</li><li><b>Expectations:</b> bakers expect the bread price to fall in the future → they sell more now → supply today increases.</li><li><b>Number of producers:</b> new bakeries open → market supply increases.</li></ol>"
+   },
+   {
+    "q": "<p>What happens to the supply of <b>wool</b> in each case? Say which way the supply curve moves.</p><ol><li>The price of mutton (sheep meat) rises.</li><li>The price of sheep feed rises.</li><li>A new shearing machine lets farmers cut more wool per hour.</li><li>Farmers expect the wool price to fall next season.</li><li>Many sheep farmers leave the business.</li><li>The price of wool rises.</li></ol>",
+    "a": "<ol><li>Mutton and wool come from the same sheep: <b>complements in production</b>. Mutton price ↑ → more sheep → wool supply <b>increases</b> (right).</li><li>Sheep feed is an <b>input</b>; its price ↑ → supply <b>decreases</b> (left).</li><li>Better <b>technology</b> → supply <b>increases</b> (right).</li><li>Price expected to <b>fall</b> → sell now → supply <b>today increases</b> (right).</li><li>Fewer <b>producers</b> → market supply <b>decreases</b> (left).</li><li>Trap: the wool's <b>own price</b> → <b>movement along</b> the supply curve (quantity supplied rises), no shift.</li></ol>"
+   },
+   {
+    "q": "<p>True or false? Give a reason for each.</p><ol><li>Cotton and wheat are grown on the same land. If the price of cotton rises, the supply of wheat increases.</li><li>If sellers expect the price to rise next month, supply today increases.</li><li>A fall in the price of an input shifts the supply curve to the right.</li><li>If everyone expects the price to rise next month, demand today increases but supply today decreases.</li></ol>",
+    "a": "<ol><li><b>False.</b> They are <b>substitutes in production</b>. Cotton becomes more profitable, so farmers grow more cotton and <b>less wheat</b>: wheat supply decreases (left).</li><li><b>False.</b> Sellers hold goods back to sell later at the higher price, so supply today <b>decreases</b> (left).</li><li><b>True.</b> Cheaper inputs lower the cost of production, so sellers offer more at every price.</li><li><b>True.</b> Expectations work in opposite ways: buyers buy now (demand ↑), sellers wait (supply ↓).</li></ol>"
+   }
+  ]
+ },
+ {
+  "q": "Q28",
+  "focus": "Calculation: demand and supply schedules, equilibrium, surplus/shortage, and a shift of supply",
+  "variants": [
+   {
+    "q": "<p>The market for football match tickets:</p><table><tr><th>Price</th><th>$12</th><th>$10</th><th>$8</th><th>$6</th><th>$4</th><th>$2</th></tr><tr><td>Qd</td><td>150</td><td>250</td><td>400</td><td>550</td><td>750</td><td>1,000</td></tr><tr><td>Qs</td><td>850</td><td>750</td><td>650</td><td>550</td><td>400</td><td>300</td></tr></table><ol><li>Find the equilibrium price and quantity.</li><li>Find the surplus or shortage at $12 and at $4. What happens to the price in each case?</li><li>A rival match is scheduled on the same day, and sellers now offer <b>250 fewer tickets at every price</b>. Write the new supply schedule, find the new equilibrium, and say which way the supply curve shifts.</li></ol>",
+    "a": "<p><b>1.</b> At $6, Qd = 550 = Qs. Equilibrium: <b>$6 and 550 tickets</b>.</p><p><b>2.</b> At $12: Qs − Qd = 850 − 150 = <b>surplus of 700</b> → sellers cut the price, the price <b>falls</b>. At $4: Qd − Qs = 750 − 400 = <b>shortage of 350</b> → the price <b>rises</b>.</p><p><b>3.</b> New Qs = old Qs − 250:</p><table><tr><th>Price</th><th>$12</th><th>$10</th><th>$8</th><th>$6</th><th>$4</th><th>$2</th></tr><tr><td>Qd</td><td>150</td><td>250</td><td>400</td><td>550</td><td>750</td><td>1,000</td></tr><tr><td>New Qs</td><td>600</td><td>500</td><td>400</td><td>300</td><td>150</td><td>50</td></tr></table><p>At $8, Qd = 400 = new Qs. New equilibrium: <b>$8 and 400 tickets</b>. Less is offered at every price, so the supply curve shifts <b>left</b>. Price rises ($6 → $8), quantity falls (550 → 400).</p>"
+   },
+   {
+    "q": "<p>The market for cinema tickets (price in thousand sum). After a new digital projector cuts costs, the supply schedule changes from S1 to S2:</p><table><tr><th>Price</th><th>60</th><th>50</th><th>40</th><th>30</th><th>20</th><th>10</th></tr><tr><td>Qd</td><td>1,000</td><td>1,400</td><td>1,900</td><td>2,500</td><td>3,200</td><td>4,000</td></tr><tr><td>S1</td><td>2,800</td><td>2,400</td><td>1,900</td><td>1,300</td><td>800</td><td>400</td></tr><tr><td>S2</td><td>4,000</td><td>3,600</td><td>3,100</td><td>2,500</td><td>2,000</td><td>1,600</td></tr></table><ol><li>Find the equilibrium with S1 and with S2.</li><li>By how much did supply change at each price? Which way does the curve shift?</li><li>Right after the change, the price is still 40 thousand sum. Is there a surplus or a shortage, how big, and what happens next?</li></ol>",
+    "a": "<p><b>1.</b> With S1: at 40, Qd = 1,900 = Qs → <b>40 thousand sum, 1,900 tickets</b>. With S2: at 30, Qd = 2,500 = Qs → <b>30 thousand sum, 2,500 tickets</b>.</p><p><b>2.</b> S2 − S1 = 4,000 − 2,800 = 3,600 − 2,400 = … = 1,600 − 400 = <b>+1,200 at every price</b>. Supply <b>increases</b>, so the curve shifts <b>right</b> (S1 → S2). Better technology lowers costs.</p><p><b>3.</b> At 40 with S2: Qs − Qd = 3,100 − 1,900 = <b>surplus of 1,200</b>. Unsold tickets → the price falls until it reaches the new equilibrium of 30. Result: an increase in supply → <b>price down</b> (40 → 30), <b>quantity up</b> (1,900 → 2,500).</p>"
+   },
+   {
+    "q": "<p>The market for concert tickets. The singer announces this is her last tour, and sellers decide to keep some tickets back. The supply schedule changes from S1 to S2:</p><table><tr><th>Price</th><th>$35</th><th>$30</th><th>$25</th><th>$20</th><th>$15</th><th>$10</th></tr><tr><td>Qd</td><td>2,000</td><td>2,600</td><td>3,400</td><td>4,400</td><td>5,600</td><td>7,000</td></tr><tr><td>S1</td><td>5,000</td><td>4,600</td><td>4,000</td><td>3,500</td><td>2,800</td><td>1,800</td></tr><tr><td>S2</td><td>4,400</td><td>4,000</td><td>3,400</td><td>2,900</td><td>2,200</td><td>1,200</td></tr></table><ol><li>With S1, find the surplus or shortage at $25 and at $20. Between which two prices is the S1 equilibrium? Give a straight-line estimate of it.</li><li>By how much did supply change? Which way does the curve shift? Find the S2 equilibrium.</li><li>Is the change from ($25, 4,000) to ($25, 3,400) a shift or a movement along the supply curve? What about ($25, 3,400) to ($20, 2,900) on S2?</li></ol>",
+    "a": "<p><b>1.</b> At $25: Qs − Qd = 4,000 − 3,400 = <b>surplus of 600</b>. At $20: Qd − Qs = 4,400 − 3,500 = <b>shortage of 900</b>. The sign flips, so the S1 equilibrium is <b>between $20 and $25</b>.</p><p>Straight-line estimate: going from $20 up, the gap must close 900 out of a total change of 900 + 600 = 1,500. Share = 900/1,500 = 0.6, so P ≈ 20 + 0.6 × 5 = <b>$23</b>. Then Qd ≈ 4,400 − 0.6 × 1,000 = 3,800 and Qs ≈ 3,500 + 0.6 × 500 = 3,800 → about <b>3,800 tickets</b>.</p><p><b>2.</b> S2 − S1 = −600 at every price ($35: 4,400 − 5,000; … $10: 1,200 − 1,800). Supply <b>decreases by 600 at each price</b> → the curve shifts <b>left</b>. With S2, at $25 Qd = 3,400 = Qs → equilibrium <b>$25 and 3,400 tickets</b>. Price up (≈$23 → $25), quantity down (≈3,800 → 3,400).</p><p><b>3.</b> ($25, 4,000) → ($25, 3,400): same price, new quantity → a <b>shift</b> of the supply curve. ($25, 3,400) → ($20, 2,900): the quantity changed because the price changed → a <b>movement along</b> S2.</p>"
+   }
+  ]
+ },
+ {
+  "q": "Q29",
+  "focus": "Calculation, comparative advantage part 1: reading PPF equations, the point test, and the opportunity-cost table",
+  "variants": [
+   {
+    "q": "<p>Korea's PPF is x/30 + y/10 = 1 and Vietnam's PPF is x/60 + y/12 = 1 (x = rice, y = phones). Find each country's maximum output and make the opportunity-cost table for both countries. Which country's PPF is flatter?</p>",
+    "a": "<p>x/a + y/b = 1: a = max rice, b = max phones. Korea: 30 rice or 10 phones. Vietnam: 60 rice or 12 phones.</p><p>Cost of 1 unit = max of the other good ÷ max of this good.</p><table><tr><th></th><th>Korea</th><th>Vietnam</th></tr><tr><td>One rice</td><td>10/30 = 1/3 phone</td><td>12/60 = 1/5 phone</td></tr><tr><td>One phone</td><td>30/10 = 3 rice</td><td>60/12 = 5 rice</td></tr></table><p>For each country the two numbers are upside-down of each other (3 and 1/3; 5 and 1/5). With rice on the x axis, Vietnam's line is <b>flatter</b> (it gives up only 1/5 phone per rice): rice is cheap there.</p>"
+   },
+   {
+    "q": "<p>Uzbekistan's PPF is x/50 + y/10 = 1 (x = cotton, y = cars).</p><ol><li>What is the most cotton it can make? The most cars?</li><li>Are these bundles on, inside or outside the PPF: (30 cotton, 4 cars), (20 cotton, 3 cars), (40 cotton, 5 cars)?</li><li>What is the opportunity cost of 1 car and of 1 cotton? Check it by moving from (50, 0) to (30, 4).</li></ol>",
+    "a": "<p><b>1.</b> y = 0 → x = <b>50 cotton</b>. x = 0 → y = <b>10 cars</b>.</p><p><b>2.</b> Point test x/50 + y/10:</p><ul><li>(30, 4): 0.6 + 0.4 = 1 → <b>on</b> the PPF (efficient).</li><li>(20, 3): 0.4 + 0.3 = 0.7 &lt; 1 → <b>inside</b> (possible but not efficient).</li><li>(40, 5): 0.8 + 0.5 = 1.3 &gt; 1 → <b>outside</b> (impossible alone).</li></ul><p><b>3.</b> 1 car = 50 ÷ 10 = <b>5 cotton</b>; 1 cotton = 10 ÷ 50 = <b>1/5 car</b>. Check: from (50, 0) to (30, 4) the country gives up 20 cotton for 4 cars, 20 ÷ 4 = 5 cotton per car. The PPF is straight, so the cost is the same everywhere.</p>"
+   },
+   {
+    "q": "<p>In one day Farida can sew 12 shirts <b>or</b> bake 36 cakes. Bekzod can sew 8 shirts <b>or</b> bake 40 cakes. (x = shirts, y = cakes.)</p><ol><li>Write each person's PPF equation.</li><li>Make the opportunity-cost table.</li><li>If each of them sews 4 shirts, how many cakes can each bake at most?</li></ol>",
+    "a": "<p><b>1.</b> Farida: x/12 + y/36 = 1. Bekzod: x/8 + y/40 = 1.</p><p><b>2.</b></p><table><tr><th></th><th>Farida</th><th>Bekzod</th></tr><tr><td>One shirt</td><td>36/12 = 3 cakes</td><td>40/8 = 5 cakes</td></tr><tr><td>One cake</td><td>12/36 = 1/3 shirt</td><td>8/40 = 1/5 shirt</td></tr></table><p><b>3.</b> Farida: y = 36 × (1 − 4/12) = 36 × 2/3 = <b>24 cakes</b> (or 36 − 4 × 3 = 24). Bekzod: y = 40 × (1 − 4/8) = 40 × 1/2 = <b>20 cakes</b> (or 40 − 4 × 5 = 20).</p>"
+   }
+  ]
+ },
+ {
+  "q": "Q30",
+  "focus": "Calculation, comparative advantage part 2: comparative vs absolute advantage, who specializes in what, total output",
+  "variants": [
+   {
+    "q": "<p>Japan's PPF is x/24 + y/8 = 1 and India's PPF is x/36 + y/6 = 1 (x = wheat, y = cars).</p><ol><li>Who has the comparative advantage in each good? Who has the absolute advantage?</li><li>What should each country produce, and what is the total output?</li><li>Compare with the case where each country uses half its resources on each good.</li></ol>",
+    "a": "<p>Opportunity costs:</p><table><tr><th></th><th>Japan</th><th>India</th></tr><tr><td>One wheat</td><td>8/24 = 1/3 car</td><td>6/36 = 1/6 car</td></tr><tr><td>One car</td><td>24/8 = 3 wheat</td><td>36/6 = 6 wheat</td></tr></table><p><b>1.</b> Wheat: India 1/6 &lt; Japan 1/3 → <b>India</b> has the comparative advantage in wheat. Cars: Japan 3 &lt; India 6 → <b>Japan</b> in cars. Absolute advantage: India in wheat (36 &gt; 24), Japan in cars (8 &gt; 6).</p><p><b>2.</b> Japan makes only cars (8), India only wheat (36). Total: <b>36 wheat + 8 cars</b>.</p><p><b>3.</b> Half and half: Japan (12 wheat, 4 cars), India (18 wheat, 3 cars). Total 30 wheat + 7 cars. Specialization gives <b>6 more wheat and 1 more car</b>.</p>"
+   },
+   {
+    "q": "<p>Germany's PPF is x/40 + y/20 = 1 and Uzbekistan's PPF is x/30 + y/5 = 1 (x = grapes, y = machines). A student says: \"Germany can make more of both goods, so it should make both and there is no point in trading.\" Is the student right? Show your working.</p>",
+    "a": "<p>Germany has the <b>absolute advantage</b> in both goods (40 &gt; 30 grapes, 20 &gt; 5 machines). But trade depends on <b>comparative</b> advantage = lower opportunity cost.</p><table><tr><th></th><th>Germany</th><th>Uzbekistan</th></tr><tr><td>One grape</td><td>20/40 = 1/2 machine</td><td>5/30 = 1/6 machine</td></tr><tr><td>One machine</td><td>40/20 = 2 grapes</td><td>30/5 = 6 grapes</td></tr></table><p>Grapes: Uzbekistan 1/6 &lt; Germany 1/2 → <b>Uzbekistan</b> has the comparative advantage in grapes. Machines: Germany 2 &lt; Uzbekistan 6 → <b>Germany</b> in machines.</p><p>So the student is <b>wrong</b>. Germany should specialize in machines (20) and Uzbekistan in grapes (30): total 30 grapes + 20 machines. Each country has a comparative advantage in something, so both can gain from trade.</p>"
+   },
+   {
+    "q": "<p>Kazakhstan's PPF is x/80 + y/16 = 1 and Korea's PPF is x/30 + y/15 = 1 (x = wheat, y = tractors). Without trade, Kazakhstan produces (40 wheat, 8 tractors) and Korea produces (18 wheat, 6 tractors).</p><ol><li>Check that both bundles are on the PPFs.</li><li>Who has the comparative advantage in each good?</li><li>If they specialize, how much do they produce in total? How much extra output does specialization create?</li></ol>",
+    "a": "<p><b>1.</b> Kazakhstan: 40/80 + 8/16 = 0.5 + 0.5 = 1 ✓. Korea: 18/30 + 6/15 = 0.6 + 0.4 = 1 ✓. Both are on their PPFs.</p><p><b>2.</b></p><table><tr><th></th><th>Kazakhstan</th><th>Korea</th></tr><tr><td>One wheat</td><td>16/80 = 1/5 tractor</td><td>15/30 = 1/2 tractor</td></tr><tr><td>One tractor</td><td>80/16 = 5 wheat</td><td>30/15 = 2 wheat</td></tr></table><p>Wheat: Kazakhstan 1/5 &lt; Korea 1/2 → <b>Kazakhstan</b> in wheat. Tractors: Korea 2 &lt; Kazakhstan 5 → <b>Korea</b> in tractors.</p><p><b>3.</b> Before: 40 + 18 = 58 wheat, 8 + 6 = 14 tractors. After specializing: Kazakhstan 80 wheat, Korea 15 tractors. Extra output: 80 − 58 = <b>22 wheat</b> and 15 − 14 = <b>1 tractor</b>.</p>"
+   }
+  ]
+ },
+ {
+  "q": "Q31",
+  "focus": "Calculation, comparative advantage part 3: is a trade deal acceptable (terms of trade), and are both countries better off (gains from trade)",
+  "variants": [
+   {
+    "q": "<p>Chile's PPF is x/30 + y/6 = 1 and China's PPF is x/24 + y/12 = 1 (x = fruit, y = machines). Each country specializes in its comparative-advantage good. Without trade China consumes 12 fruit and 6 machines. With trade China gives 4 machines and receives 12 fruit. Is this trade possible? Are both countries better off?</p>",
+    "a": "<p>Costs: Chile 1 machine = 30/6 = 5 fruit, 1 fruit = 1/5 machine. China 1 machine = 24/12 = 2 fruit, 1 fruit = 1/2 machine. So China specializes in machines (12), Chile in fruit (30).</p><p><b>Possible?</b> China gives 4 machines, needs at least 4 × 2 = 8 fruit, gets 12 ✓. Chile gives 12 fruit, needs at least 12 × 1/5 = 2.4 machines, gets 4 ✓. Price = 12/4 = 3 fruit per machine, between 2 and 5 → the trade is possible.</p><p><b>Better off?</b></p><table><tr><th></th><th>Makes</th><th>Gives</th><th>Gets</th><th>Has after</th><th>Point test</th></tr><tr><td>China</td><td>12 machines</td><td>4 machines</td><td>12 fruit</td><td>12 fruit, 8 machines</td><td>12/24 + 8/12 ≈ 1.17 &gt; 1</td></tr><tr><td>Chile</td><td>30 fruit</td><td>12 fruit</td><td>4 machines</td><td>18 fruit, 4 machines</td><td>18/30 + 4/6 ≈ 1.27 &gt; 1</td></tr></table><p>Both bundles are outside their own PPFs, so both are better off. China: same 12 fruit but 8 machines instead of 6 (+2). Chile: with 4 machines it could make only 30 × (1 − 4/6) = 10 fruit alone; now it has 18 (+8). Check: 12 + 18 = 30 fruit, 8 + 4 = 12 machines.</p>"
+   },
+   {
+    "q": "<p>Olim's PPF is x/40 + y/10 = 1 and Salim's PPF is x/20 + y/10 = 1 (x = potatoes, y = melons). Salim makes melons and Olim makes potatoes.</p><ol><li>Between which prices (potatoes per melon) will both accept a trade?</li><li>Which of these offers would both accept? (a) Salim gives 5 melons for 5 potatoes. (b) Salim gives 3 melons for 9 potatoes. (c) Salim gives 2 melons for 10 potatoes.</li></ol>",
+    "a": "<p>Costs of 1 melon: Olim 40/10 = <b>4 potatoes</b>; Salim 20/10 = <b>2 potatoes</b>. (1 potato: Olim 1/4 melon, Salim 1/2 melon.) Salim has the comparative advantage in melons, Olim in potatoes.</p><p><b>1.</b> Salim will not sell a melon for less than 2 potatoes (his cost). Olim will not pay more than 4 potatoes (his own cost). So the price must be <b>between 2 and 4 potatoes per melon</b>.</p><p><b>2.</b></p><ul><li>(a) Price 5/5 = 1. Salim gives 5 melons, needs at least 5 × 2 = 10 potatoes, gets 5 → <b>Salim rejects</b>.</li><li>(b) Price 9/3 = 3. Salim needs 3 × 2 = 6, gets 9 ✓. Olim gives 9 potatoes, needs at least 9 × 1/4 = 2.25 melons, gets 3 ✓ → <b>both accept</b>.</li><li>(c) Price 10/2 = 5. Olim gives 10 potatoes, needs at least 10 × 1/4 = 2.5 melons, gets 2 → <b>Olim rejects</b>.</li></ul><p>Only offer (b) works, because only its price lies between 2 and 4.</p>"
+   },
+   {
+    "q": "<p>Egypt's PPF is x/50 + y/10 = 1 and Taiwan's PPF is x/20 + y/10 = 1 (x = cotton, y = computers). Without trade Egypt consumes (25 cotton, 5 computers) and Taiwan consumes (12 cotton, 4 computers). They specialize, and Taiwan gives 5 computers to Egypt for 15 cotton.</p><ol><li>Who specializes in what?</li><li>Is the deal acceptable to both?</li><li>Find what each country has after trade and how much each gains.</li></ol>",
+    "a": "<p><b>1.</b> 1 computer costs Egypt 50/10 = 5 cotton and Taiwan 20/10 = 2 cotton. 1 cotton costs Egypt 1/5 computer and Taiwan 1/2 computer. Egypt has the comparative advantage in <b>cotton</b> (makes 50), Taiwan in <b>computers</b> (makes 10).</p><p><b>2.</b> Taiwan gives 5 computers, needs at least 5 × 2 = 10 cotton, gets 15 ✓. Egypt gives 15 cotton, needs at least 15 × 1/5 = 3 computers, gets 5 ✓. Price 3 cotton per computer, between 2 and 5 → acceptable.</p><p><b>3.</b></p><table><tr><th></th><th>Before (cotton, computers)</th><th>After</th><th>Point test</th><th>Gain</th></tr><tr><td>Egypt</td><td>(25, 5)</td><td>(50 − 15, 5) = (35, 5)</td><td>35/50 + 5/10 = 1.2 &gt; 1</td><td>+10 cotton</td></tr><tr><td>Taiwan</td><td>(12, 4)</td><td>(15, 10 − 5) = (15, 5)</td><td>15/20 + 5/10 = 1.25 &gt; 1</td><td>+3 cotton, +1 computer</td></tr></table><p>Both after-trade bundles are outside their own PPFs, so both are better off. Check: 35 + 15 = 50 cotton, 5 + 5 = 10 computers, exactly what was produced.</p>"
+   }
+  ]
+ }
+]

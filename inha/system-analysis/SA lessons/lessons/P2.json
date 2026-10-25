@@ -1,0 +1,140 @@
+[
+ {
+  "lesson": "W2-1",
+  "questions": [
+   {
+    "type": "mcq",
+    "q": "<p>The café app team refuses to work every weekend for three months, because \"everyone should keep the same pace for a long time\". Which Agile principle is this?</p><p>A) Simplicity<br>B) Maintain Constant Pace<br>C) Monitoring<br>D) Motivation</p>",
+    "a": "<p><b>B</b>, because Maintain Constant Pace means sustainable development: the team can keep the same pace indefinitely, with no burnout.</p>"
+   },
+   {
+    "type": "classify",
+    "q": "<p>Classify each statement as <b>Agile</b> or <b>Waterfall</b>:</p><ol><li>The project is divided into sprints.</li><li>A sequential design process.</li><li>The test plan is reviewed after complete development.</li><li>A collection of many different small projects.</li><li>Testers can join requirement changes without problems.</li><li>Structured.</li><li>Flexible.</li><li>Completed as one single project.</li></ol>",
+    "a": "<table><tr><th>Agile</th><th>Waterfall</th></tr><tr><td>1. divided into sprints</td><td>2. sequential design process</td></tr><tr><td>4. many small projects</td><td>3. test plan reviewed after complete development</td></tr><tr><td>5. testers join changes easily</td><td>6. structured</td></tr><tr><td>7. flexible</td><td>8. one single project</td></tr></table>"
+   },
+   {
+    "type": "drawing",
+    "q": "<p>Depict graphically: the difference between <b>traditional single-phase development</b> and <b>Agile</b> development. Write the typical durations on the drawing.</p>",
+    "a": "<p><b>Traditional:</b> one long line Plan → Analyse → Design → Build → Test → Software, lasting <b>6 to 18 months</b>; all requirements and risks are predicted at the start, and real feedback comes only at the end.</p><p><b>Agile:</b> Ideas go into small <b>Define → Code → Test</b> cycles of <b>1 to 4 weeks</b>. Each cycle gives a bigger increment (i1, i2, i3), with <b>review and adjust</b> after each one, until the final software.</p>",
+    "diagram": "flowchart LR\n  subgraph TR[\"Traditional: one phase, 6-18 months\"]\n    T1[\"Plan and analyse\"] --> T2[\"Design and build\"]\n    T2 --> T3[\"Test\"]\n    T3 --> T4([\"Software + first feedback\"])\n  end\n  subgraph AG[\"Agile: cycles of 1-4 weeks\"]\n    A0([\"Ideas\"]) --> A1((\"Define Code Test\"))\n    A1 --> I1[\"i1\"]\n    I1 -->|review and adjust| A2((\"Define Code Test\"))\n    A2 --> I2[\"i2 bigger\"]\n    I2 -->|review and adjust| A3([\"Final software\"])\n  end"
+   },
+   {
+    "type": "scenario",
+    "q": "<p>Inha University wants a new <b>course-registration system</b>. The registrar cannot describe all the rules at the start, the rules change every semester, and the dean wants to see something working within a month. Would you choose <b>Agile</b> or <b>Waterfall</b>? Justify with <b>two Manifesto values</b> and <b>two principles</b>.</p>",
+    "a": "<p><b>Agile.</b> Requirements are unclear and change often, and the client wants early working software.</p><ul><li>Value: <b>Responding to change over following a plan</b>: new semester rules can enter the next iteration.</li><li>Value: <b>Customer collaboration over contract negotiation</b>: the registrar works with the team instead of signing a fixed spec.</li><li>Principle: <b>Welcome Change</b>, even late in development.</li><li>Principle: <b>Deliver the Working Software</b> frequently (iterations of 1 to 4 weeks), so the dean sees a working piece in the first month.</li></ul><p>Waterfall would predict all requirements at the start and give feedback only after 6 to 18 months.</p>"
+   },
+   {
+    "type": "short",
+    "q": "<p>List the <b>12 Agile principles</b> by their names.</p>",
+    "a": "<ol><li>Customer Satisfaction</li><li>Welcome Change</li><li>Deliver the Working Software</li><li>Collaboration</li><li>Motivation</li><li>Face-to-face Conversation</li><li>Measure the Progress as per the Working Software</li><li>Maintain Constant Pace</li><li>Monitoring</li><li>Simplicity</li><li>Self-organized Teams</li><li>Review the Work Regularly</li></ol><p>Hook: Customer, Change, Deliver · Collaboration, Motivation, Face-to-face · the 3 M's · S-S-R.</p>"
+   },
+   {
+    "type": "scenario",
+    "q": "<p>A bank says it is \"now Agile\". It holds daily stand-ups and covers the walls with sticky notes. But the manager still fixes every feature in a one-year contract, refuses all changes, and measures progress by the number of documents written. Is this real Agile? Name the idea and the values that are broken.</p>",
+    "a": "<p><b>No.</b> This is <b>cargo cult Agile</b>: the team copies the <i>form</i> (rituals) without the <i>values</i>, like the straw airplanes that cannot fly.</p><p>Broken values: <b>Customer collaboration over contract negotiation</b> (fixed one-year contract), <b>Responding to change over following a plan</b> (no changes), <b>Working software over comprehensive documentation</b> (progress measured in documents; the principle says working software is the primary measure of progress).</p>"
+   }
+  ]
+ },
+ {
+  "lesson": "W2-2",
+  "questions": [
+   {
+    "type": "mcq",
+    "q": "<p>Which of these is <b>NOT</b> a duty of the Product Owner?</p><p>A) Prioritize the product backlog<br>B) Accept or reject work results<br>C) Remove impediments to the Development Team's progress<br>D) Make scope vs. schedule decisions</p>",
+    "a": "<p><b>C</b>, because removing impediments is a Scrum Master service to the Development Team.</p>"
+   },
+   {
+    "type": "classify",
+    "q": "<p>Write <b>PO</b> (Product Owner), <b>DT</b> (Development Team) or <b>SM</b> (Scrum Master) for each:</p><ol><li>Is responsible for the project's financial goals.</li><li>Creates the Increment.</li><li>Leads and coaches the organization in its Scrum adoption.</li><li>Adjusts features and priority every sprint.</li><li>Decides how to turn backlog items into working software.</li><li>Promotes and supports Scrum as defined in the Scrum Guide.</li><li>Defines the features of the product.</li><li>Facilitates Scrum events as requested or needed.</li></ol>",
+    "a": "<p>1 <b>PO</b> · 2 <b>DT</b> (only the DT) · 3 <b>SM</b> · 4 <b>PO</b> · 5 <b>DT</b> (self-organizing) · 6 <b>SM</b> · 7 <b>PO</b> · 8 <b>SM</b></p>"
+   },
+   {
+    "type": "calculation",
+    "q": "<p>Check the Development Team size in each case and explain. Then, for case (c), count the communication lines with n(n − 1)/2 before and after a split.</p><ol type=\"a\"><li>7 developers + a PO + an SM (the PO and SM do no Sprint Backlog work).</li><li>4 developers + an SM + a PO who also codes Sprint Backlog tasks.</li><li>13 developers + a PO + an SM.</li></ol>",
+    "a": "<ol type=\"a\"><li>Dev Team = <b>7</b> (PO and SM are not counted). Inside 5–9: <b>OK</b>.</li><li>The PO does Sprint Backlog work, so he is counted: 4 + 1 = <b>5</b>. <b>OK</b> (the SM is not counted).</li><li>Dev Team = <b>13</b> &gt; 9: <b>too big</b>, it \"requires too much coordination\".<br>Lines with 13 people: 13 × 12 / 2 = <b>78</b>.<br>Split into teams of 7 and 6: 7 × 6 / 2 = 21 and 6 × 5 / 2 = 15, total <b>36</b> lines inside the teams.<br>The split removes 78 − 36 = <b>42</b> lines, so coordination is much easier.</li></ol>"
+   },
+   {
+    "type": "short",
+    "q": "<p>The Scrum Master is called a <b>servant-leader</b>. Explain what this means and give <b>two</b> ways the SM serves the Development Team and <b>two</b> ways the SM serves the organization.</p>",
+    "a": "<p><b>Servant-leader:</b> the SM is not a boss who gives orders; he leads by helping the team and clearing its way.</p><p><b>Development Team:</b> removes impediments to its progress; coaches it in self-organization and cross-functionality (also: facilitates events, helps it create high-value products).</p><p><b>Organization:</b> leads and coaches Scrum adoption; helps employees and stakeholders understand and enact Scrum (also: plans Scrum implementations, works with other Scrum Masters).</p>"
+   },
+   {
+    "type": "scenario",
+    "q": "<p>Café app project. Say what Scrum says in each situation:</p><ol><li>A marketing manager walks into the team room every day and gives developers new tasks directly.</li><li>Two testers want to form a separate \"testing sub-team\" with the title \"QA Lead\".</li><li>The database administrator can work on the project only two days a week.</li><li>A new developer wants to join in the middle of a Sprint.</li></ol>",
+    "a": "<ol><li>Not allowed: nobody outside directs the team. New work goes to the <b>PO</b>, who orders the Product Backlog. The <b>SM</b> helps the manager see that these interruptions do not help.</li><li>Not allowed: <b>no sub-teams and no titles</b> in the Development Team; accountability belongs to the whole team.</li><li>Acceptable: members should be <b>full-time</b>, but exceptions are possible, for example a database administrator.</li><li>Wait: membership changes <b>only between sprints</b>.</li></ol>"
+   }
+  ]
+ },
+ {
+  "lesson": "W2-3",
+  "questions": [
+   {
+    "type": "drawing",
+    "q": "<p>Depict graphically: the <b>sequence of Scrum events</b> inside one one-month Sprint, from Sprint Planning to the start of the next Sprint. Write the time-box next to each event and show where the Sprint Backlog and the Increment appear.</p>",
+    "a": "<p>Key labels:</p><ul><li><b>Product Backlog</b> → <b>Sprint Planning</b> (max 8 h; What + How; Sprint Goal) → <b>Sprint Backlog</b>.</li><li>Development work with a <b>Daily Scrum</b> loop (15 min, every 24 hours).</li><li>→ <b>Increment</b> (\"Done\" work) → <b>Sprint Review</b> (no time-box on the slides) → <b>Sprint Retrospective</b> (max 3 h).</li><li>→ the next Sprint starts immediately. Sprint = one month or less, fixed length.</li></ul>",
+    "diagram": "flowchart LR\n  PB[\"Product Backlog\"] --> SP[\"Sprint Planning - max 8 h\"]\n  SP --> SB[\"Sprint Backlog + Sprint Goal\"]\n  SB --> DEV((\"Development work\"))\n  DEV --> DS[\"Daily Scrum - 15 min\"]\n  DS -->|every 24 hours| DEV\n  DEV --> INC[\"Increment - Done work\"]\n  INC --> RV[\"Sprint Review\"]\n  RV --> RT[\"Sprint Retrospective - max 3 h\"]\n  RT -.->|next Sprint starts at once| SP"
+   },
+   {
+    "type": "mcq",
+    "q": "<p>Which event is attended by the Scrum Team <b>and key stakeholders invited by the Product Owner</b>, where the Development Team demonstrates the \"Done\" work?</p><p>A) Sprint Planning<br>B) Daily Scrum<br>C) Sprint Review<br>D) Sprint Retrospective</p>",
+    "a": "<p><b>C</b>, because the Sprint Review inspects the product with stakeholders; the Retrospective is for the Scrum Team only and inspects the team itself.</p>"
+   },
+   {
+    "type": "calculation",
+    "q": "<p>The café team's Sprint Backlog has these tasks (hours): menu screen 8, cart API 6, payment 16, login form 4, order history 10, settings page 5.</p><ol type=\"a\"><li>Which task breaks the usual task-size rule, and what should the team do?</li><li>Total the work remaining at the start.</li><li>Update the remaining work at the end of each day:<br>Day 1: login form finished; 3 h of the menu screen done.<br>Day 2: menu screen finished; cart API re-estimated from 6 h to 9 h.<br>Day 3: a new 3 h task \"Click API key setup\" is added; settings page finished.</li><li>Why can the remaining work go <i>up</i>?</li></ol>",
+    "a": "<ol type=\"a\"><li>Tasks are usually <b>2–12 hours</b>. Payment (16 h) is too big: split it, for example into \"payment screen 8 h\" + \"payment API 8 h\".</li><li>8 + 6 + 16 + 4 + 10 + 5 = <b>49 h</b> (the split does not change the total).</li><li>Day 1: 49 − 4 − 3 = <b>42 h</b><br>Day 2: 42 − 5 (rest of the menu screen) + 3 (re-estimate) = <b>40 h</b><br>Day 3: 40 + 3 − 5 = <b>38 h</b></li><li>The Sprint Backlog is a <b>forecast</b>. Work remaining is updated <b>daily</b>, and any team member can add, delete or change items, so re-estimates and newly found work can raise it.</li></ol>"
+   },
+   {
+    "type": "classify",
+    "q": "<p>Classify each statement as <b>Product Backlog</b> or <b>Sprint Backlog</b>:</p><ol><li>A list of all desired work on the project.</li><li>A forecast by the Development Team.</li><li>Prioritized by the Product Owner.</li><li>Individuals sign up for work; work is never assigned.</li><li>Starts from the roadmap and requirements.</li><li>Work remaining is updated daily.</li><li>Reprioritized at the start of each Sprint.</li><li>The selected items plus a plan to reach the Sprint Goal.</li></ol>",
+    "a": "<p><b>Product Backlog:</b> 1, 3, 5, 7<br><b>Sprint Backlog:</b> 2, 4, 6, 8</p>"
+   },
+   {
+    "type": "short",
+    "q": "<p>For an online <b>bus-ticket app</b>, write one user requirement in <b>both</b> class templates. Then give one task with an estimate and one acceptance test, and say how the story and the task are estimated.</p>",
+    "a": "<p>Template 1: \"As a <b>passenger</b> I want <b>to buy a ticket on my phone</b> so that <b>I do not queue at the station</b>.\"</p><p>Template 2: \"In order to <b>avoid queues at the station</b> as a <b>passenger</b> I want <b>to buy a ticket on my phone</b>.\"</p><p>Task: build the seat-selection screen, <b>6 h</b>. Acceptance test: after paying, the ticket with a QR code appears in \"My tickets\" (pass/fail).</p><p>The story (WHAT) gets a rough estimate in <b>relative scale points</b> at release planning. The task (HOW) is estimated in <b>hours (2–12)</b> at iteration planning.</p>"
+   },
+   {
+    "type": "scenario",
+    "q": "<p>Mid-Sprint on the café app. What does Scrum allow?</p><ol><li>The PO wants to add a large new feature that would make the Sprint Goal impossible.</li><li>The team is behind and asks to extend the Sprint by 3 days.</li><li>The team finds that a cart item is unclear.</li><li>The café chain is sold and the new owner drops online ordering.</li></ol>",
+    "a": "<ol><li>Not allowed: no changes that endanger the Sprint Goal. Put the feature in the Product Backlog for the next Sprint.</li><li>Not allowed: the Sprint length is fixed; it cannot be lengthened. \"Sprint end date and team deliverable do not change.\"</li><li>Allowed: scope may be <b>clarified and re-negotiated</b> between the PO and the Development Team.</li><li>The Sprint Goal is obsolete, so <b>only the PO</b> may cancel the Sprint. \"Done\" items are reviewed; incomplete items are re-estimated and put back on the Product Backlog.</li></ol>"
+   }
+  ]
+ },
+ {
+  "lesson": "W2-4",
+  "questions": [
+   {
+    "type": "calculation",
+    "q": "<p>A kanban team (In Progress WIP limit = 3) finished these cards:</p><table><tr><th>Card</th><th>Commitment day</th><th>Delivery day</th></tr><tr><td>A</td><td>2</td><td>7</td></tr><tr><td>B</td><td>3</td><td>11</td></tr><tr><td>C</td><td>5</td><td>9</td></tr><tr><td>D</td><td>6</td><td>12</td></tr><tr><td>E</td><td>8</td><td>14</td></tr></table><ol type=\"a\"><li>Find each card's lead time and the average lead time.</li><li>How many cards were in progress on day 8 (committed by day 8, delivered after day 8)? Was the WIP limit respected?</li><li>Next month, with the WIP limit enforced, five cards take 4, 5, 4, 5 and 4 days. By how much did the average lead time improve?</li></ol>",
+    "a": "<ol type=\"a\"><li>Lead time = delivery − commitment: A 7 − 2 = <b>5</b>; B 11 − 3 = <b>8</b>; C 9 − 5 = <b>4</b>; D 12 − 6 = <b>6</b>; E 14 − 8 = <b>6</b>. Average = 29 / 5 = <b>5.8 days</b>.</li><li>On day 8: B, C, D, E are in progress (A was delivered on day 7) = <b>4 cards</b> &gt; 3. The WIP limit was <b>broken</b>: E should not have been pulled; the team should have swarmed to finish C first.</li><li>New average = 22 / 5 = <b>4.4 days</b>. Improvement = 5.8 − 4.4 = <b>1.4 days</b>, about <b>24%</b> faster, and more predictable (4–5 days instead of 4–8).</li></ol>"
+   },
+   {
+    "type": "drawing",
+    "q": "<p>Depict graphically: the <b>DevOps lifecycle</b> (the Koenig version). Mark the Dev side and the Ops side.</p>",
+    "a": "<p>An endless loop (∞): <b>Dev side</b>: Plan → Code → Build → Test; <b>Release</b> in the middle; <b>Ops side</b>: Deploy → Operate → Monitor → back to Plan.</p><p>Plan = adopt agile practices, break work into small pieces. Operate = manage end-to-end delivery of IT services to customers. The loop never stops.</p>",
+    "diagram": "flowchart LR\n  subgraph DEV[\"Dev\"]\n    P[\"Plan\"] --> C[\"Code\"]\n    C --> B[\"Build\"]\n    B --> T[\"Test\"]\n  end\n  subgraph OPS[\"Ops\"]\n    D[\"Deploy\"] --> O[\"Operate\"]\n    O --> M[\"Monitor\"]\n  end\n  T --> R((\"Release\"))\n  R --> D\n  M -->|feedback, loop never ends| P"
+   },
+   {
+    "type": "mcq",
+    "q": "<p>Which is <b>NOT</b> one of Kanban's three core concepts?</p><p>A) Visualize Workflow<br>B) Limit WIP<br>C) Fixed-length sprints of 1–4 weeks<br>D) Measure the Lead Time</p>",
+    "a": "<p><b>C</b>, because fixed-length sprints belong to Scrum; Kanban's concepts are Visualize, Limit WIP, Measure lead time.</p>"
+   },
+   {
+    "type": "classify",
+    "q": "<p>Classify each DevOps benefit as <b>Technical</b>, <b>Cultural</b> or <b>Business</b>:</p><ol><li>Reduced complexity</li><li>Happier customers</li><li>Stable operating environments</li><li>Continuous delivery</li><li>More productive and efficient teams</li><li>More collaboration and trust</li><li>Faster problem resolution</li><li>Faster delivery</li></ol>",
+    "a": "<p><b>Technical:</b> 1, 4, 7<br><b>Cultural:</b> 2, 5<br><b>Business:</b> 3, 6, 8</p>"
+   },
+   {
+    "type": "short",
+    "q": "<p>Name the DevOps principle:</p><ol><li>\"Don't build in a bubble\"; solve real customer problems.</li><li>Dev and Ops become one team with full-stack ownership of a feature.</li><li>Short feedback loops and real-time live monitoring.</li><li>Automate as much of the lifecycle as possible, as in a CI/CD pipeline.</li><li>Experiment, minimize waste, optimize speed, cost and ease of delivery.</li></ol>",
+    "a": "<ol><li><b>Create with the end in mind</b></li><li><b>Collaboration</b></li><li><b>Customer-centric action</b></li><li><b>Automation</b></li><li><b>Continuous Improvement</b></li></ol>"
+   },
+   {
+    "type": "scenario",
+    "q": "<p>(a) The university <b>IT helpdesk</b> gets unpredictable tickets every hour (password resets, broken projectors, urgent exam-system problems). Should it use Scrum sprints or Kanban? Why?</p><p>(b) In the café company, developers finish the app and \"throw it over the wall\" to the operations staff, and each side blames the other when the server fails. What approach fixes this, and name two of its principles that help?</p>",
+    "a": "<p>(a) <b>Kanban.</b> It is useful for operations and support teams with <b>high uncertainty and variability</b>; work flows continuously instead of waiting for a fixed Sprint. The board makes every ticket visible, <b>WIP limits</b> expose bottlenecks, the team measures <b>lead time</b> per ticket, and urgent cards can use an <b>Expedite</b> swimlane.</p><p>(b) <b>DevOps</b>: practices, tools and a cultural philosophy that integrate development and IT operations. <b>Collaboration</b> merges Dev and Ops into one team that owns the feature from idea to delivery; <b>Automation</b> (CI/CD) builds, tests and deploys with fewer human errors.</p>"
+   }
+  ]
+ }
+]

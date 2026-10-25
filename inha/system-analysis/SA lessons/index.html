@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>SA Midterm Lessons</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=IBM+Plex+Mono:wght@400;600&family=Schibsted+Grotesk:wght@600;800&display=swap">
+<link rel="stylesheet" href="sa.css">
+<style>
+  .wrap { max-width: 1120px; margin: 0 auto; padding-inline: 16px; padding-block: 44px 64px; display: grid; gap: 40px; }
+  .hero { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: 32px; align-items: center; }
+  .hero h1 { font-size: clamp(40px, 6.2vw, 72px); font-weight: 800; letter-spacing: -.03em; }
+  .hero h1 span { color: var(--green); }
+  .hero p { font-size: 1.15em; color: var(--ink-soft); max-width: 54ch; margin-top: 16px; }
+  .cta { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 22px; }
+  .prog { margin-top: 18px; display: grid; gap: 6px; max-width: 420px; }
+  .bar { height: 10px; border-radius: 5px; background: var(--tint); overflow: hidden; }
+  .bar div { height: 100%; background: var(--green); width: 0; transition: width .3s; }
+  .prog span { font: 600 13px var(--mono); color: var(--muted); }
+  #weeks { display: grid; gap: 44px; }
+  .week { display: grid; gap: 14px; }
+  .week-h { display: flex; align-items: baseline; gap: 14px; border-bottom: 2px solid var(--ink); padding-bottom: 8px; }
+  .week-h h2 { font-size: 28px; font-weight: 800; }
+  .week-h span { color: var(--muted); font-size: 15px; }
+  .grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr)); }
+  .lesson { display: grid; gap: 10px; grid-template-rows: auto auto 1fr auto; background: var(--sheet); border: 1.5px solid var(--line); border-radius: 16px; padding: 18px; text-decoration: none; color: var(--ink); box-shadow: var(--shadow); }
+  .lesson:hover { border-color: var(--green); transform: translateY(-2px); transition: transform .15s; }
+  .lesson .row { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+  .lesson h3 { font-size: 21px; font-weight: 800; }
+  .lesson p { color: var(--ink-soft); font-size: 15px; }
+  .lesson .foot { display: flex; justify-content: space-between; align-items: center; font: 600 13px var(--mono); color: var(--muted); }
+  .lesson .foot b { color: var(--green); font-family: var(--body); font-size: 14px; }
+  .lesson.done { border-color: var(--green); }
+  .side-links { display: flex; flex-wrap: wrap; gap: 10px; }
+  .loading { color: var(--muted); }
+  footer { color: var(--muted); font-size: 13px; }
+  @media (max-width: 820px) { .hero { grid-template-columns: 1fr; } .hero .art { display: none; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <section class="hero">
+    <div>
+      <span class="chip green">SOC3070 · System Analysis · Prof. Dragunov · Midterm 40%</span>
+      <h1 style="margin-top:16px">System Analysis, <span>taught simply.</span></h1>
+      <p>Short lessons for weeks 1–7, with diagrams you learn to draw yourself: methodologies, Scrum, Gantt and critical path, use-case and activity diagrams. Each lesson ends with a self-test and the answer to write on the exam.</p>
+      <div class="cta">
+        <a class="btn" href="learn.html#l1-1" target="_blank" rel="noopener">Start learning ↗</a>
+        <a class="btn ghost" href="../A - FROM CLASS (slides only)/slides-pdf (original)/" target="_blank" rel="noopener">His PDFs ↗</a>
+      </div>
+      <div class="prog"><div class="bar"><div id="pbar"></div></div><span id="ptxt"></span></div>
+    </div>
+    <div class="art" id="art"></div>
+  </section>
+  <div id="weeks"><p class="loading">Lessons are being written. Refresh in a few minutes.</p></div>
+  <footer>Your progress is saved in this browser. Keys in a lesson: ← → to move. Built from Prof. Dragunov's week 1–7 slides. Exam date and Quiz 2 news come through the course Telegram group.</footer>
+</div>
+<script src="lessons-data.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@10.9.1/dist/mermaid.min.js"></script>
+<script>
+  const LS = typeof LESSONS !== "undefined" ? LESSONS : [];
+  let done = {}; try { done = JSON.parse(localStorage.getItem("sa-done")) || {}; } catch (e) {}
+  const ORDER = ["W1a", "W1b", "W2", "W3", "W4", "W5a", "W5b", "W6", "W7"];
+  const WEEK_NAMES = { W1a: "Introduction & SDLC", W1b: "Development methodologies", W2: "Agile, Scrum, Kanban, DevOps", W3: "Planning & feasibility", W4: "Project management", W5a: "Staffing, CASE, standards", W5b: "Requirements determination 1", W6: "Requirements determination 2", W7: "Business process & functional modeling" };
+  const dark = matchMedia("(prefers-color-scheme: dark)").matches && document.documentElement.dataset.theme !== "light";
+  document.getElementById("art").innerHTML = `<figure class="diagram"><pre class="mermaid">flowchart TD
+    P(["1 · Planning"]) --> A(["2 · Analysis"]) --> D(["3 · Design"]) --> I(["4 · Implementation"])
+    I -.->|"new needs"| P</pre><figcaption style="font-size:13px;color:var(--muted);padding:6px">The SDLC: every week of the course fits somewhere in this loop.</figcaption></figure>`;
+  if (typeof mermaid !== "undefined") { mermaid.initialize({ startOnLoad: false, theme: dark ? "dark" : "default" }); mermaid.run({ querySelector: "#art .mermaid" }); }
+  if (LS.length) {
+    const weeks = [...new Set(LS.map((l) => l.week))].sort((a, b) => ORDER.indexOf(a) - ORDER.indexOf(b));
+    document.getElementById("weeks").innerHTML = weeks.map((w) => `<section class="week">
+      <div class="week-h"><h2>${w}</h2><span>${WEEK_NAMES[w] || ""}</span></div>
+      <div class="grid">${LS.map((l, i) => l.week !== w ? "" : `
+        <a class="lesson ${done[l.id] ? "done" : ""}" href="learn.html#l${i + 1}-1" target="_blank" rel="noopener">
+          <div class="row"><span class="qbadge">${l.label}</span><span class="chip ${l.kind !== "theory" ? "calc" : ""}">${l.kind}</span>${l.note ? '<span class="chip calc">check note</span>' : ""}</div>
+          <h3>${l.title}</h3>
+          <p>${l.hook || ""}</p>
+          <div class="foot"><span>${l.week} · ${(l.cards || []).length + 4} steps</span><b>${done[l.id] ? "✓ done" : "Open ↗"}</b></div>
+        </a>`).join("")}</div></section>`).join("");
+  }
+  const n = LS.filter((l) => done[l.id]).length;
+  document.getElementById("pbar").style.width = LS.length ? `${(n / LS.length) * 100}%` : "0";
+  document.getElementById("ptxt").textContent = LS.length ? `${n} of ${LS.length} lessons done` : "";
+</script>
+</body>
+</html>

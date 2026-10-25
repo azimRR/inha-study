@@ -1,0 +1,1003 @@
+[
+ {
+  "id": "Q13",
+  "label": "Q13",
+  "week": 4,
+  "slides": [
+   13
+  ],
+  "kind": "calculation",
+  "title": "Price ceiling: rent control and the housing shortage",
+  "hook": "After this lesson you can read Figure 4-7, find the shortage of 400,000 apartments, and explain why a price ceiling makes the market inefficient.",
+  "cards": [
+   {
+    "h": "Start from equilibrium",
+    "body": "<p>Think about flats near a university in Tashkent. If rent is high, many owners want to rent out a flat, but fewer students want one. If rent is low, it is the opposite.</p><p>With no government rule, rent moves until the two numbers are equal. That point is <b>equilibrium (E)</b>.</p><p>Slide 12 gives the apartment market (Figure 4-6). Look at three rows of its table:</p><table><tr><th>Monthly rent</th><th>Quantity demanded</th><th>Quantity supplied</th></tr><tr><td>$1,200</td><td>1.8 million</td><td>2.2 million</td></tr><tr><td><b>$1,000</b></td><td><b>2.0 million</b></td><td><b>2.0 million</b></td></tr><tr><td>$800</td><td>2.2 million</td><td>1.8 million</td></tr></table><p>At $1,000 both sides want 2.0 million. So <b>E = $1,000 and 2.0 million apartments</b>. Pattern: every $100 less rent gives +0.1 million demanded and −0.1 million supplied.</p>"
+   },
+   {
+    "h": "What is a price ceiling?",
+    "body": "<p>A <b>price ceiling</b> is a <b>maximum</b> price that sellers are allowed to charge. The government sets it <b>below</b> the equilibrium price.</p><p>Example from class: <b>rent control</b>. A landlord cannot charge a tenant more than a certain amount.</p><p>Simple picture: the market price of a flat is $1,000, but the law says \"no more than $800\". The ceiling is like a lid on the price: the price cannot go up through it.</p><p>Small but important point: a ceiling <b>above</b> $1,000 (say $1,200) changes nothing, because the market price is already lower. Only a ceiling below equilibrium <b>binds</b> (has an effect).</p>"
+   },
+   {
+    "h": "Slide 13: what happens at $800",
+    "body": "<p>The government sets the ceiling at <b>$800</b>. Two things happen at the same time:</p><ul><li><b>Landlords offer fewer flats.</b> Move down the supply curve to point <b>A</b>: quantity supplied = <b>1.8 million</b>.</li><li><b>More people want flats.</b> Move down the demand curve to point <b>B</b>: quantity demanded = <b>2.2 million</b>.</li></ul><p><b>Shortage = Qd − Qs = 2.2 − 1.8 = 0.4 million = 400,000 apartments.</b></p><p>These are 400,000 people who want an apartment at the legal rent of $800 but cannot get one.</p><p>The shortage is <b>persistent</b> (it does not go away). Normally a shortage pushes the price up until it disappears. Here the law stops the price from rising, so the shortage stays.</p>",
+    "chart": {
+     "x": "Quantity of apartments (millions)",
+     "y": "Monthly rent ($)",
+     "xmax": 2.8,
+     "ymax": 1600,
+     "xticks": [
+      1.6,
+      1.8,
+      2.0,
+      2.2,
+      2.4
+     ],
+     "yticks": [
+      600,
+      800,
+      1000,
+      1200,
+      1400
+     ],
+     "lines": [
+      {
+       "pts": [
+        [
+         1.4,
+         1600
+        ],
+        [
+         2.6,
+         400
+        ]
+       ],
+       "label": "D",
+       "role": "demand"
+      },
+      {
+       "pts": [
+        [
+         1.4,
+         400
+        ],
+        [
+         2.6,
+         1600
+        ]
+       ],
+       "label": "S",
+       "role": "supply"
+      }
+     ],
+     "hlines": [
+      {
+       "y": 800,
+       "label": "Price ceiling $800",
+       "role": "policy"
+      }
+     ],
+     "points": [
+      {
+       "x": 2.0,
+       "y": 1000,
+       "label": "E"
+      },
+      {
+       "x": 1.8,
+       "y": 800,
+       "label": "A"
+      },
+      {
+       "x": 2.2,
+       "y": 800,
+       "label": "B"
+      }
+     ],
+     "arrows": [
+      {
+       "from": [
+        1.8,
+        690
+       ],
+       "to": [
+        2.2,
+        690
+       ],
+       "label": "shortage 0.4m"
+      }
+     ],
+     "caption": "Figure 4-7 numbers: at the $800 ceiling, Qs = 1.8m (A) and Qd = 2.2m (B), so the shortage is 400,000."
+    }
+   },
+   {
+    "h": "Fewer flats are rented: the deadweight loss",
+    "body": "<p>How many flats are really rented at $800? Not 2.2 million. You cannot rent a flat that nobody offers. So only <b>1.8 million</b> are rented (the smaller number, here supply).</p><p>So the quantity falls from 2.0 million to 1.8 million. For those 200,000 flats, some renters would happily pay more than the landlord needs. Both sides could gain, but the trade does not happen. This lost gain is the <b>deadweight loss (DWL)</b>.</p><p>Size, using the table: the demand price of 1.8 million flats is <b>$1,200</b> (point C). The triangle has corners C ($1,200), A ($800) and E ($1,000):</p><p><b>DWL = ½ × (1,200 − 800) × (2.0 − 1.8) million = ½ × 400 × 200,000 = $40 million per month.</b></p><p>(The slide does not print this number. We get it from the table.)</p>",
+    "chart": {
+     "x": "Quantity of apartments (millions)",
+     "y": "Monthly rent ($)",
+     "xmax": 2.8,
+     "ymax": 1600,
+     "xticks": [
+      1.6,
+      1.8,
+      2.0,
+      2.2,
+      2.4
+     ],
+     "yticks": [
+      600,
+      800,
+      1000,
+      1200,
+      1400
+     ],
+     "lines": [
+      {
+       "pts": [
+        [
+         1.4,
+         1600
+        ],
+        [
+         2.6,
+         400
+        ]
+       ],
+       "label": "D",
+       "role": "demand"
+      },
+      {
+       "pts": [
+        [
+         1.4,
+         400
+        ],
+        [
+         2.6,
+         1600
+        ]
+       ],
+       "label": "S",
+       "role": "supply"
+      }
+     ],
+     "hlines": [
+      {
+       "y": 800,
+       "label": "Ceiling $800",
+       "role": "policy"
+      }
+     ],
+     "areas": [
+      {
+       "pts": [
+        [
+         1.8,
+         1200
+        ],
+        [
+         1.8,
+         800
+        ],
+        [
+         2.0,
+         1000
+        ]
+       ],
+       "role": "dwl",
+       "label": "DWL"
+      }
+     ],
+     "points": [
+      {
+       "x": 1.8,
+       "y": 1200,
+       "label": "C"
+      },
+      {
+       "x": 1.8,
+       "y": 800,
+       "label": "A"
+      },
+      {
+       "x": 2.0,
+       "y": 1000,
+       "label": "E"
+      }
+     ],
+     "caption": "Only 1.8m flats are rented. The lost trades between 1.8m and 2.0m form the DWL triangle: ½ × $400 × 0.2m = $40m a month."
+    }
+   },
+   {
+    "h": "Winners and losers (the professor's slide 14 picture)",
+    "body": "<p>The professor's own graph shows welfare after rent control. Welfare = consumer surplus + producer surplus.</p><ul><li><b>Consumer surplus (orange)</b>: tenants who get a flat now pay Pc instead of Pe. They <b>gain</b> the strip between Pc and Pe. But some tenants lose their flat.</li><li><b>Producer surplus (blue)</b>: landlords get less money per flat and rent fewer flats. Only a small triangle is left.</li><li><b>Deadweight loss (yellow)</b>: the triangle from Qc to Qe. Nobody gets it.</li></ul><p>With the slide 13 numbers: the strip = (1,000 − 800) × 1.8 million = $360 million a month moves from landlords to tenants. Tenants gain 360 − 20 = $340m, landlords lose 360 + 20 = $380m, society loses $40m (the DWL).</p><p>Note: slide 14 says \"market clearing quantity moves from Qe to Qc\". The market does <b>not</b> clear at Pc (there is a shortage). Read Qc as \"the quantity actually rented\".</p>",
+    "chart": {
+     "x": "Quantity",
+     "y": "Price",
+     "xmax": 10,
+     "ymax": 11,
+     "lines": [
+      {
+       "pts": [
+        [
+         0,
+         10
+        ],
+        [
+         10,
+         0
+        ]
+       ],
+       "label": "D",
+       "role": "demand"
+      },
+      {
+       "pts": [
+        [
+         0,
+         2
+        ],
+        [
+         8,
+         10
+        ]
+       ],
+       "label": "S",
+       "role": "supply"
+      }
+     ],
+     "areas": [
+      {
+       "pts": [
+        [
+         0,
+         10
+        ],
+        [
+         2,
+         8
+        ],
+        [
+         2,
+         4
+        ],
+        [
+         0,
+         4
+        ]
+       ],
+       "role": "cs",
+       "label": "CS"
+      },
+      {
+       "pts": [
+        [
+         0,
+         2
+        ],
+        [
+         2,
+         4
+        ],
+        [
+         0,
+         4
+        ]
+       ],
+       "role": "ps",
+       "label": "PS"
+      },
+      {
+       "pts": [
+        [
+         2,
+         8
+        ],
+        [
+         2,
+         4
+        ],
+        [
+         4,
+         6
+        ]
+       ],
+       "role": "dwl",
+       "label": "DWL"
+      }
+     ],
+     "hlines": [
+      {
+       "y": 4,
+       "label": "Rent control Pc",
+       "role": "policy"
+      }
+     ],
+     "points": [
+      {
+       "x": 4,
+       "y": 6,
+       "label": "E (Pe, Qe)",
+       "guides": true
+      },
+      {
+       "x": 2,
+       "y": 4,
+       "label": "Qc",
+       "guides": true
+      }
+     ],
+     "caption": "Like slide 14: quantity falls from Qe to Qc. CS gains the Pc–Pe strip, PS shrinks, the yellow triangle is lost."
+    }
+   },
+   {
+    "h": "Why a ceiling is inefficient: four problems",
+    "body": "<p><b>Inefficient</b> means there are missed chances: someone could be better off without making anyone worse off. The shortage causes four problems:</p><ol><li><b>Inefficient allocation to consumers</b>: a person who badly needs a flat (and would pay a lot) may not get one, while a person who cares little gets one.</li><li><b>Wasted resources</b>: people spend much time and money searching for a flat.</li><li><b>Inefficiently low quality</b>: landlords have no reason to repair flats, because people take them anyway.</li><li><b>Black markets</b>: a landlord asks for extra money \"under the table\" in addition to the legal rent.</li></ol><p>Why do ceilings exist then? The people who get cheap flats benefit, and they can be organised and politically strong.</p>"
+   }
+  ],
+  "example": {
+   "problem": "<p>Use the apartment table (equilibrium $1,000, 2.0 million). The city sets a price ceiling of <b>$900</b>. Find quantity supplied, quantity demanded, the shortage, the number of flats actually rented and the deadweight loss.</p>",
+   "solution": "<p><b>Step 1.</b> $900 is below $1,000, so the ceiling binds.</p><p><b>Step 2.</b> Table row $900: Qd = 2.1 million, Qs = 1.9 million.</p><p><b>Step 3.</b> Shortage = 2.1 − 1.9 = <b>0.2 million = 200,000 apartments</b>.</p><p><b>Step 4.</b> Flats rented = the smaller number = <b>1.9 million</b>.</p><p><b>Step 5.</b> Demand price of 1.9 million = $1,100 (table row $1,100: Qd = 1.9). DWL = ½ × (1,100 − 900) × (2.0 − 1.9) million = ½ × 200 × 100,000 = <b>$10 million per month</b>.</p><p>A ceiling closer to equilibrium makes a smaller shortage and a smaller loss.</p>"
+  },
+  "check": [
+   {
+    "q": "At the $800 ceiling, which point is on the supply curve: A or B? What quantity?",
+    "a": "A, on the supply curve: 1.8 million (quantity supplied)."
+   },
+   {
+    "q": "Why does the shortage of 400,000 not disappear over time?",
+    "a": "Because the law does not let the rent rise to $1,000. Without the ceiling, the shortage would push the price up."
+   },
+   {
+    "q": "The government sets a ceiling of $1,200. What happens?",
+    "a": "Nothing. The ceiling is above equilibrium ($1,000), so it does not bind. The market stays at $1,000 and 2.0 million."
+   },
+   {
+    "q": "How many apartments are actually rented at $800?",
+    "a": "1.8 million: the smaller of Qd (2.2m) and Qs (1.8m)."
+   },
+   {
+    "q": "Name the four inefficiencies of a price ceiling.",
+    "a": "Inefficient allocation to consumers, wasted resources, inefficiently low quality, black markets."
+   }
+  ],
+  "exam": {
+   "question": "<p>In the apartment market, equilibrium is a rent of $1,000 per month and 2 million apartments. The government imposes a price ceiling of $800. Using the graph, find the quantity supplied, the quantity demanded and the shortage, and explain why the price ceiling causes inefficiency.</p>",
+   "answer": "<p><b>Definition:</b> a price ceiling is a maximum price sellers may charge, set below the equilibrium price (e.g. rent control).</p><p><b>Graph:</b> D and S cross at E ($1,000, 2.0m). Draw a horizontal line at $800. It cuts S at A (1.8m) and D at B (2.2m).</p><ul><li>Quantity supplied = 1.8 million (A)</li><li>Quantity demanded = 2.2 million (B)</li><li>Shortage = 2.2 − 1.8 = <b>0.4 million = 400,000 apartments</b>: people who want a flat at $800 but cannot get one</li></ul><p><b>Persistent:</b> the rent is not allowed to rise, so the shortage stays.</p><p><b>Inefficiency:</b> only 1.8 million flats are rented instead of 2.0 million, so mutually beneficial rentals are lost (deadweight loss = ½ × $400 × 0.2m = $40m per month). Also: inefficient allocation to consumers, wasted resources (time spent searching), inefficiently low quality, and black markets.</p>"
+  },
+  "memorize": [
+   "Price ceiling = maximum price, set BELOW equilibrium (rent control)",
+   "E = $1,000, 2.0m; ceiling $800 → Qs = 1.8m (A), Qd = 2.2m (B)",
+   "Shortage = Qd − Qs = 0.4m = 400,000, persistent",
+   "Rented = 1.8m (short side); DWL = ½ × 400 × 0.2m = $40m/month",
+   "4 problems: allocation to consumers, wasted resources, low quality, black markets"
+  ]
+ },
+ {
+  "id": "Q14",
+  "label": "Q14",
+  "week": 4,
+  "slides": [
+   20,
+   21,
+   22,
+   23,
+   25
+  ],
+  "kind": "theory",
+  "title": "Price floors: butter, minimum wage and deadweight loss",
+  "hook": "After this lesson you can draw a price floor, show who wins and who loses, compute the $150,000 deadweight loss in the butter market, list the four reasons a floor is inefficient, and say what a quota is.",
+  "cards": [
+   {
+    "h": "What is a price floor?",
+    "body": "<p>A <b>price floor</b> is a <b>minimum</b> price that buyers must pay. The government sets it <b>above</b> the equilibrium price. It is the mirror of a ceiling.</p><p>Main example: the <b>minimum wage</b>, a legal floor on the price of labour. Careful with roles: here <b>firms are the buyers</b> (of labour) and <b>workers are the sellers</b>.</p><p>Class example: <b>butter</b> (slide 19). Without a floor, E = <b>$1.00 per pound, 10 million pounds</b>. Some table rows:</p><table><tr><th>Price</th><th>Qd (million lb)</th><th>Qs (million lb)</th></tr><tr><td>$1.20</td><td>9.0</td><td>12.0</td></tr><tr><td><b>$1.00</b></td><td><b>10.0</b></td><td><b>10.0</b></td></tr><tr><td>$0.90</td><td>10.5</td><td>9.0</td></tr></table>"
+   },
+   {
+    "h": "Slide 20: the butter floor at $1.20",
+    "body": "<p>The government says: butter must cost at least <b>$1.20</b>.</p><ul><li>Buyers want less: quantity demanded = <b>9 million</b> (point A).</li><li>Sellers want to sell more: quantity supplied = <b>12 million</b> (point C).</li></ul><p>Only <b>9 million</b> is sold, because you cannot sell butter that nobody buys. So the quantity falls from 10 to 9 million. That is why the figure is called \"A price floor causes inefficiently low quantity\".</p><p>The rest is a <b>persistent surplus</b> = 12 − 9 = <b>3 million pounds</b> of unsold butter.</p>",
+    "chart": {
+     "x": "Quantity of butter (millions of pounds)",
+     "y": "Price of butter ($ per pound)",
+     "xmax": 15,
+     "ymax": 1.6,
+     "xticks": [
+      6,
+      8,
+      9,
+      10,
+      12,
+      14
+     ],
+     "yticks": [
+      0.6,
+      0.8,
+      1.0,
+      1.2,
+      1.4
+     ],
+     "lines": [
+      {
+       "pts": [
+        [
+         7,
+         1.6
+        ],
+        [
+         15,
+         0
+        ]
+       ],
+       "label": "D",
+       "role": "demand"
+      },
+      {
+       "pts": [
+        [
+         5,
+         0.5
+        ],
+        [
+         15,
+         1.5
+        ]
+       ],
+       "label": "S",
+       "role": "supply"
+      }
+     ],
+     "hlines": [
+      {
+       "y": 1.2,
+       "label": "Floor $1.20",
+       "role": "policy"
+      }
+     ],
+     "areas": [
+      {
+       "pts": [
+        [
+         9,
+         1.2
+        ],
+        [
+         9,
+         0.9
+        ],
+        [
+         10,
+         1.0
+        ]
+       ],
+       "role": "dwl",
+       "label": "DWL"
+      }
+     ],
+     "points": [
+      {
+       "x": 9,
+       "y": 1.2,
+       "label": "A"
+      },
+      {
+       "x": 9,
+       "y": 0.9,
+       "label": "B"
+      },
+      {
+       "x": 10,
+       "y": 1.0,
+       "label": "E"
+      },
+      {
+       "x": 12,
+       "y": 1.2,
+       "label": "C"
+      }
+     ],
+     "arrows": [
+      {
+       "from": [
+        9,
+        1.4
+       ],
+       "to": [
+        12,
+        1.4
+       ],
+       "label": "surplus 3m lb"
+      }
+     ],
+     "caption": "Figure 4-12 numbers: at $1.20, Qd = 9m (A) and Qs = 12m (C). B = (9m, $0.90) on S. DWL triangle A–B–E."
+    }
+   },
+   {
+    "h": "The deadweight loss triangle",
+    "body": "<p>Between 9 and 10 million pounds, buyers value butter at more than $1.00 and sellers can make it for less than $1.00. Both would gain from trading, but at $1.20 buyers will not buy it. These lost trades are the <b>deadweight loss</b>.</p><p>The triangle (yellow on slide 20) has corners:</p><ul><li>A = (9m, $1.20) on the demand curve</li><li>B = (9m, $0.90) on the supply curve (the supply price of 9m)</li><li>E = (10m, $1.00)</li></ul><p><b>DWL = ½ × (1.20 − 0.90) × (10 − 9) million = ½ × 0.30 × 1,000,000 = $150,000.</b></p><p>(The slide shows the triangle but not the number. We compute it from the table.)</p>"
+   },
+   {
+    "h": "Slide 21: who wins, who loses",
+    "body": "<p>The professor's own graph. Quantity falls from Qe to <b>Qf</b> (Qf = quantity demanded at Pf).</p><table><tr><th></th><th>Before (Pe, Qe)</th><th>After floor (Pf, Qf)</th></tr><tr><td>Consumer surplus (orange)</td><td>big triangle above Pe</td><td>only the small triangle above Pf. Loses the Pe–Pf strip and the part Qf→Qe</td></tr><tr><td>Producer surplus (blue)</td><td>triangle below Pe</td><td><b>gains</b> the Pe–Pf strip (taken from consumers), loses the part Qf→Qe</td></tr><tr><td>Deadweight loss (yellow)</td><td>none</td><td>triangle Qf→Qe</td></tr></table><p>Butter numbers: the strip = (1.20 − 1.00) × 9m = $1.8 million moves from buyers to sellers. CS falls by $1.9m, PS rises by $1.75m, society loses $150,000.</p><p>Note: slide 21 says \"market clearing quantity reduces from Qe to Qf\". At Pf the market does <b>not</b> clear (there is a surplus). Read Qf as \"the quantity actually bought\".</p>",
+    "chart": {
+     "x": "Quantity",
+     "y": "Price",
+     "xmax": 10,
+     "ymax": 11,
+     "lines": [
+      {
+       "pts": [
+        [
+         0,
+         10
+        ],
+        [
+         10,
+         0
+        ]
+       ],
+       "label": "D",
+       "role": "demand"
+      },
+      {
+       "pts": [
+        [
+         0,
+         2
+        ],
+        [
+         8,
+         10
+        ]
+       ],
+       "label": "S",
+       "role": "supply"
+      }
+     ],
+     "areas": [
+      {
+       "pts": [
+        [
+         0,
+         10
+        ],
+        [
+         2,
+         8
+        ],
+        [
+         0,
+         8
+        ]
+       ],
+       "role": "cs",
+       "label": "CS"
+      },
+      {
+       "pts": [
+        [
+         0,
+         8
+        ],
+        [
+         2,
+         8
+        ],
+        [
+         2,
+         4
+        ],
+        [
+         0,
+         2
+        ]
+       ],
+       "role": "ps",
+       "label": "PS"
+      },
+      {
+       "pts": [
+        [
+         2,
+         8
+        ],
+        [
+         2,
+         4
+        ],
+        [
+         4,
+         6
+        ]
+       ],
+       "role": "dwl",
+       "label": "DWL"
+      }
+     ],
+     "hlines": [
+      {
+       "y": 8,
+       "label": "Price floor Pf",
+       "role": "policy"
+      }
+     ],
+     "points": [
+      {
+       "x": 4,
+       "y": 6,
+       "label": "E (Pe, Qe)",
+       "guides": true
+      },
+      {
+       "x": 2,
+       "y": 8,
+       "label": "Qf",
+       "guides": true
+      }
+     ],
+     "caption": "Like slide 21: CS shrinks to the small top triangle, PS gains the Pe–Pf strip, the yellow triangle is lost."
+    }
+   },
+   {
+    "h": "Slides 22–23: why a floor is inefficient",
+    "body": "<p>A floor causes four problems. They mirror the four ceiling problems:</p><table><tr><th>Price floor</th><th>Price ceiling (mirror)</th></tr><tr><td><b>1. Inefficient allocation of sales among sellers</b>: the sellers who could sell at the lowest price are not always the ones who manage to sell.</td><td>Inefficient allocation to consumers</td></tr><tr><td><b>2. Wasted resources</b>: the government buys the unwanted surplus. It is destroyed (pure waste) or goes \"out of condition\" in storage and is thrown away.</td><td>Wasted resources (searching)</td></tr><tr><td><b>3. Inefficiently high quality</b>: sellers offer high quality at a high price, but buyers would prefer lower quality at a lower price. It is a <b>buyer's market</b>: buyers choose the sellers they like.</td><td>Inefficiently low quality</td></tr><tr><td><b>4. Illegal activity</b>: e.g. a firm pays less than the minimum wage and bribes the inspector.</td><td>Black markets</td></tr></table><p>Small slide slip: slide 22 says \"government purchases unwanted surpluses\"; it means \"government purchases <b>of</b> unwanted surpluses\".</p>"
+   },
+   {
+    "h": "Slide 25: a quota controls quantity, not price",
+    "body": "<p>The last slide in this question moves to a new tool.</p><ul><li>A <b>quantity control</b>, or <b>quota</b>, is an <b>upper limit</b> on the quantity of a good that can be bought or sold.</li><li>The total amount that can be legally traded is the <b>quota limit</b>.</li><li>A <b>license</b> gives its owner the right to supply the good (e.g. taxi licenses).</li></ul><p>Compare: a <b>price floor</b> fixes the <b>price</b>, and the quantity falls as a result. A <b>quota</b> fixes the <b>quantity</b> directly. Both cut the quantity below Qe, so both create a deadweight-loss triangle. (Quotas in detail: lesson Q16.)</p>"
+   }
+  ],
+  "example": {
+   "problem": "<p>Butter market (equilibrium $1.00, 10 million pounds). The government sets a price floor of <b>$1.40</b>. Using the table, find the quantity sold, the surplus and the deadweight loss.</p>",
+   "solution": "<p><b>Step 1.</b> $1.40 &gt; $1.00, so the floor binds.</p><p><b>Step 2.</b> Table row $1.40: Qd = 8.0 million, Qs = 14.0 million.</p><p><b>Step 3.</b> Quantity sold = the smaller number = <b>8 million pounds</b>.</p><p><b>Step 4.</b> Surplus = 14 − 8 = <b>6 million pounds</b>.</p><p><b>Step 5.</b> Supply price of 8 million = $0.80 (table row $0.80: Qs = 8.0). DWL = ½ × (1.40 − 0.80) × (10 − 8) million = ½ × 0.60 × 2,000,000 = <b>$600,000</b>.</p><p>A higher floor means a bigger surplus and a bigger loss.</p>"
+  },
+  "check": [
+   {
+    "q": "The government sets a butter floor of $0.80. What happens?",
+    "a": "Nothing. $0.80 is below equilibrium ($1.00), so the floor does not bind."
+   },
+   {
+    "q": "At the $1.20 floor, how much butter is sold, and why?",
+    "a": "9 million pounds. Buyers only want 9m at $1.20; sellers cannot sell what nobody buys."
+   },
+   {
+    "q": "Which surplus gains the rectangle between Pe and Pf?",
+    "a": "Producer surplus. It is taken from consumers."
+   },
+   {
+    "q": "What does \"inefficiently high quality\" mean?",
+    "a": "Sellers compete with high quality at a high price, but buyers would prefer cheaper, lower quality. It is a buyer's market."
+   },
+   {
+    "q": "Price floor vs quota: what does each one fix?",
+    "a": "A floor fixes the price (minimum). A quota fixes the quantity (upper limit)."
+   }
+  ],
+  "exam": {
+   "question": "<p>Explain the effects of a price floor using a graph: what happens to quantity, consumer surplus, producer surplus and deadweight loss? Give the reasons why a price floor causes inefficiency. What is a quota and a license?</p>",
+   "answer": "<p><b>1. Definition:</b> a price floor is a minimum price buyers must pay, set above the equilibrium price (e.g. minimum wage).</p><p><b>2. Graph:</b> D and S cross at Pe, Qe. Draw a horizontal line at Pf above Pe. At Pf buyers demand only Qf &lt; Qe, so the quantity sold falls to Qf. Sellers want to sell more than Qf → persistent surplus.</p><ul><li>Consumer surplus falls to the small triangle above Pf.</li><li>Producer surplus gains the rectangle (Pf − Pe) × Qf from consumers, but loses the area between Qf and Qe.</li><li>Deadweight loss = the triangle between D and S from Qf to Qe (lost mutually beneficial trades).</li></ul><p><b>Butter:</b> Pe = $1.00, Qe = 10m; floor $1.20 → Qd = 9m, Qs = 12m, surplus 3m lb; DWL = ½ × (1.20 − 0.90) × 1m = <b>$150,000</b>.</p><p><b>3. Why inefficient:</b> (1) inefficient allocation of sales among sellers; (2) wasted resources (surplus bought, destroyed or spoiled); (3) inefficiently high quality (buyer's market); (4) illegal activity (bribery, paying below the minimum wage).</p><p><b>4. Quota:</b> an upper limit on the quantity of a good that can be bought or sold; the legal total is the quota limit. A <b>license</b> gives its owner the right to supply the good.</p>"
+  },
+  "memorize": [
+   "Price floor = minimum price, set ABOVE equilibrium (minimum wage: firms buy, workers sell)",
+   "Butter: E = $1.00, 10m; floor $1.20 → Qd 9m, Qs 12m, surplus 3m",
+   "DWL = ½ × (1.20 − 0.90) × 1m = $150,000",
+   "Floor: CS shrinks, PS gains Pe–Pf strip, yellow DWL triangle Qf→Qe",
+   "4 problems: allocation of sales among sellers, wasted resources, high quality, illegal activity",
+   "Quota = upper limit on quantity; quota limit = legal total; license = right to supply"
+  ],
+  "note": "Slide 25 (quota definitions) is grouped with the price-floor slides in this question, so the lesson ends with a short floor-vs-quota comparison. The full quota lesson is Q16."
+ },
+ {
+  "id": "Q16",
+  "label": "Q16",
+  "week": 4,
+  "slides": [
+   25,
+   29
+  ],
+  "kind": "calculation",
+  "title": "Quotas and licenses: the wedge and the quota rent",
+  "hook": "After this lesson you can define a quota and a license, find the demand price and supply price at the quota, and compute the quota rent ($2 per ride, $16 million) in the taxi example.",
+  "cards": [
+   {
+    "h": "Slide 25: what is a quota?",
+    "body": "<p>Imagine a city says: \"Only license holders may drive a taxi, and we give out a fixed number of licenses.\" Now the number of rides cannot grow, even if people want more.</p><ul><li>A <b>quantity control</b>, or <b>quota</b>, is an <b>upper limit</b> on the quantity of a good that can be bought or sold.</li><li>The total amount that can be legally traded is the <b>quota limit</b>.</li><li>A <b>license</b> gives its owner the right to supply the good.</li></ul><p>Class example: taxi rides. Without control, E = <b>$5.00 per ride, 10 million rides per year</b>. The city sets a quota of <b>8 million rides</b>.</p><p>A quota above 10 million would change nothing (it does not bind).</p>"
+   },
+   {
+    "h": "One quantity, two prices",
+    "body": "<p>To understand slide 29 you need two words (from slide 27):</p><ul><li><b>Demand price</b> of a quantity = the price at which buyers would want exactly that quantity.</li><li><b>Supply price</b> of a quantity = the price at which sellers would supply exactly that quantity.</li></ul><p>Read the taxi table \"sideways\": start from the quantity, find the price.</p><table><tr><th>Fare</th><th>Qd (million rides)</th><th>Qs (million rides)</th></tr><tr><td>$6.00</td><td><b>8</b></td><td>12</td></tr><tr><td>$5.00</td><td>10</td><td>10</td></tr><tr><td>$4.00</td><td>12</td><td><b>8</b></td></tr></table><p>For 8 million rides: <b>demand price = $6.00</b> (riders want 8m at $6), <b>supply price = $4.00</b> (drivers offer 8m at $4).</p>"
+   },
+   {
+    "h": "Slide 29: the wedge",
+    "body": "<p>With only 8 million rides, taxis are scarce, so riders pay the demand price: <b>$6</b> (point A). But drivers would happily give 8 million rides for only <b>$4</b> (point B).</p><p>The quota pushes a <b>wedge</b> between the two prices: <b>the price buyers pay is higher than the price sellers need</b>.</p><p>Wedge = demand price − supply price = 6 − 4 = <b>$2 per ride</b>.</p>",
+    "chart": {
+     "x": "Quantity of rides (millions per year)",
+     "y": "Fare per ride ($)",
+     "xmax": 21,
+     "ymax": 11,
+     "xticks": [
+      4,
+      8,
+      10,
+      12,
+      16,
+      20
+     ],
+     "yticks": [
+      2,
+      4,
+      5,
+      6,
+      8,
+      10
+     ],
+     "lines": [
+      {
+       "pts": [
+        [
+         0,
+         10
+        ],
+        [
+         20,
+         0
+        ]
+       ],
+       "label": "D",
+       "role": "demand"
+      },
+      {
+       "pts": [
+        [
+         0,
+         0
+        ],
+        [
+         20,
+         10
+        ]
+       ],
+       "label": "S",
+       "role": "supply"
+      }
+     ],
+     "vlines": [
+      {
+       "x": 8,
+       "label": "Quota 8m",
+       "role": "policy"
+      }
+     ],
+     "points": [
+      {
+       "x": 8,
+       "y": 6,
+       "label": "A",
+       "guides": true
+      },
+      {
+       "x": 8,
+       "y": 4,
+       "label": "B",
+       "guides": true
+      },
+      {
+       "x": 10,
+       "y": 5,
+       "label": "E"
+      }
+     ],
+     "arrows": [
+      {
+       "from": [
+        4,
+        4
+       ],
+       "to": [
+        4,
+        6
+       ],
+       "label": "wedge $2"
+      }
+     ],
+     "caption": "Figure 4-14 numbers: at the 8m quota, demand price = $6 (A), supply price = $4 (B). The wedge is $2."
+    }
+   },
+   {
+    "h": "Who gets the $2? The quota rent",
+    "body": "<p>The difference between the demand price and the supply price at the quota limit is the <b>quota rent</b>. It is the money the <b>license holder</b> earns just because they own the right to sell.</p><p>If licenses can be traded or rented out, the quota rent is the <b>market price of the license</b>.</p><p>The professor's taxi story (slide 30): I own the only license but cannot drive today, so I rent my taxi to a driver. The driver collects $6 and needs to keep at least $4.</p><table><tr><th>Rent I ask</th><th>Driver keeps</th><th>Result</th></tr><tr><td>$1.00</td><td>$5.00</td><td>possible, but another driver offers $1.50</td></tr><tr><td><b>$2.00</b></td><td><b>$4.00</b></td><td><b>exactly enough: both happy</b></td></tr><tr><td>$2.50</td><td>$3.50</td><td>impossible: less than $4, nobody rents</td></tr></table><p>Drivers compete the rent up to $2, and it cannot go higher. So <b>quota rent = $6 − $4 = $2 per ride</b>. Total = $2 × 8 million = <b>$16 million per year</b>.</p>"
+   },
+   {
+    "h": "The full picture: rent and deadweight loss",
+    "body": "<p>Now put everything on one graph (like the professor's slide 32):</p><ul><li><b>Quota rent</b> (green rectangle): height $2, width 8m = <b>$16 million</b>. It goes to license holders. Part of it came from riders (above $5) and part from drivers (below $5).</li><li><b>Deadweight loss</b> (yellow triangle A–B–E): 2 million rides that both sides wanted are lost. DWL = ½ × (6 − 4) × (10 − 8) million = <b>$2 million</b>.</li><li>Consumer surplus and producer surplus both shrink (each falls by $9m).</li></ul><p>Costs of quotas (slide 31): missed mutually beneficial trades (\"there are drivers to provide rides and riders willing to pay for it\") and illegal activity (unlicensed cars pick up riders).</p>",
+    "chart": {
+     "x": "Quantity of rides (millions per year)",
+     "y": "Fare per ride ($)",
+     "xmax": 21,
+     "ymax": 11,
+     "xticks": [
+      8,
+      10,
+      20
+     ],
+     "yticks": [
+      4,
+      5,
+      6,
+      10
+     ],
+     "lines": [
+      {
+       "pts": [
+        [
+         0,
+         10
+        ],
+        [
+         20,
+         0
+        ]
+       ],
+       "label": "D",
+       "role": "demand"
+      },
+      {
+       "pts": [
+        [
+         0,
+         0
+        ],
+        [
+         20,
+         10
+        ]
+       ],
+       "label": "S",
+       "role": "supply"
+      }
+     ],
+     "vlines": [
+      {
+       "x": 8,
+       "label": "Quota",
+       "role": "policy"
+      }
+     ],
+     "areas": [
+      {
+       "pts": [
+        [
+         0,
+         10
+        ],
+        [
+         8,
+         6
+        ],
+        [
+         0,
+         6
+        ]
+       ],
+       "role": "cs",
+       "label": "CS"
+      },
+      {
+       "pts": [
+        [
+         0,
+         6
+        ],
+        [
+         8,
+         6
+        ],
+        [
+         8,
+         4
+        ],
+        [
+         0,
+         4
+        ]
+       ],
+       "role": "tax",
+       "label": "Quota rent $16m"
+      },
+      {
+       "pts": [
+        [
+         0,
+         0
+        ],
+        [
+         8,
+         4
+        ],
+        [
+         0,
+         4
+        ]
+       ],
+       "role": "ps",
+       "label": "PS"
+      },
+      {
+       "pts": [
+        [
+         8,
+         6
+        ],
+        [
+         8,
+         4
+        ],
+        [
+         10,
+         5
+        ]
+       ],
+       "role": "dwl",
+       "label": "DWL"
+      }
+     ],
+     "points": [
+      {
+       "x": 8,
+       "y": 6,
+       "label": "A"
+      },
+      {
+       "x": 8,
+       "y": 4,
+       "label": "B"
+      },
+      {
+       "x": 10,
+       "y": 5,
+       "label": "E"
+      }
+     ],
+     "caption": "Quota rent = $2 × 8m = $16m a year (to license holders). DWL = ½ × $2 × 2m = $2m a year."
+    }
+   }
+  ],
+  "example": {
+   "problem": "<p>Same taxi market (equilibrium $5, 10 million rides). The city sets the quota at <b>9 million rides</b>. Find the demand price, the supply price, the quota rent per ride and in total, and the deadweight loss.</p>",
+   "solution": "<p><b>Step 1.</b> 9m &lt; 10m, so the quota binds.</p><p><b>Step 2.</b> Read the table sideways: Qd = 9 at <b>$5.50</b> → demand price = $5.50. Qs = 9 at <b>$4.50</b> → supply price = $4.50.</p><p><b>Step 3.</b> Quota rent per ride = 5.50 − 4.50 = <b>$1.00</b>.</p><p><b>Step 4.</b> Total quota rent = $1 × 9 million = <b>$9 million per year</b>.</p><p><b>Step 5.</b> DWL = ½ × (5.50 − 4.50) × (10 − 9) million = <b>$0.5 million</b>.</p><p>A tighter quota (8m) gives a bigger wedge ($2) and a bigger loss ($2m).</p>"
+  },
+  "check": [
+   {
+    "q": "What is the quota limit?",
+    "a": "The total amount of the good that can be legally bought or sold."
+   },
+   {
+    "q": "At a quota of 8 million rides, what are the demand price and the supply price?",
+    "a": "Demand price $6.00, supply price $4.00."
+   },
+   {
+    "q": "Why can the license owner not charge $2.50 rent per ride?",
+    "a": "The driver would keep only $6 − $2.50 = $3.50, less than the $4 he needs, so nobody would rent."
+   },
+   {
+    "q": "Licenses are traded. What is a license worth per ride?",
+    "a": "The quota rent: $2 per ride."
+   },
+   {
+    "q": "The city sets a quota of 12 million rides. What happens?",
+    "a": "Nothing. 12m is above the equilibrium 10m, so the quota does not bind: no wedge, no rent."
+   }
+  ],
+  "exam": {
+   "question": "<p>Define a quota (quantity control) and a license. In the taxi market, equilibrium is 10 million rides at $5. The city limits rides to 8 million. At 8 million rides the demand price is $6 and the supply price is $4. Find the quota rent per ride and in total, explain who receives it, and find the deadweight loss.</p>",
+   "answer": "<p><b>Definitions:</b> a quantity control, or quota, is an upper limit on the quantity of a good that can be bought or sold; the total amount that can be legally transacted is the quota limit. A license gives its owner the right to supply the good.</p><p><b>Wedge:</b> the quota drives a wedge between the demand price and the supply price: buyers pay more than sellers receive (need).</p><ul><li>Demand price at 8m = $6; supply price at 8m = $4</li><li><b>Quota rent per ride</b> = 6 − 4 = <b>$2</b></li><li><b>Total quota rent</b> = $2 × 8 million = <b>$16 million</b> per year</li></ul><p><b>Who gets it:</b> the license holders, from owning the right to sell. When licenses are traded, the quota rent equals the license's market price. (A driver who rents a license pays $2, keeps $6 − $2 = $4, exactly his supply price.)</p><p><b>Deadweight loss:</b> 2 million mutually beneficial rides are lost: ½ × ($6 − $4) × (10 − 8) million = <b>$2 million</b>.</p>"
+  },
+  "memorize": [
+   "Quota = upper limit on quantity; quota limit = legal total; license = right to supply",
+   "Demand price = price at which buyers want that quantity; supply price = price at which sellers supply it",
+   "Wedge: demand price &gt; supply price at the quota",
+   "Quota rent = demand price − supply price = license price (if traded)",
+   "Taxi: $6 − $4 = $2/ride; × 8m = $16m; DWL = ½ × 2 × 2m = $2m"
+  ],
+  "note": "Slide 29 is text only. The numbers ($6, $4, 8 million rides) come from Figure 4-14 on slide 28 and the professor's taxi story on slide 30."
+ }
+]

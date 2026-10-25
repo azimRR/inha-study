@@ -1,0 +1,1179 @@
+[
+ {
+  "id": "Q11",
+  "label": "Q11",
+  "week": 7,
+  "slides": [
+   3,
+   4
+  ],
+  "kind": "theory",
+  "title": "Perfect competition: everyone is a price-taker",
+  "hook": "After this lesson you can define a perfectly competitive market, a price-taking producer and consumer, and explain the two conditions (plus free entry and exit) that make a market perfectly competitive.",
+  "cards": [
+   {
+    "h": "Start at the bazaar",
+    "body": "<p>Imagine the tomato row at Chorsu bazaar. There are 100 sellers. All the tomatoes look the same.</p><p>One seller, Dilnoza, wants to ask a higher price. What happens? Buyers just walk to the next table. So she cannot choose her price. She <b>takes</b> the price that everybody else is charging.</p><p>The same is true for you as a buyer. If you buy 2 kg or 5 kg, the price of tomatoes does not move. You are too small.</p><p>This is the main idea of Week 7: in perfect competition, <b>nobody alone can change the price</b>.</p>"
+   },
+   {
+    "h": "So who sets the price? The whole market",
+    "body": "<p>Slide 3 says: the price is set by <b>industry demand</b> and <b>industry supply</b>. That is the normal supply-and-demand picture from Week 3, but for <b>all</b> buyers and <b>all</b> sellers together.</p><p>In the textbook tomato example (slide 18), all the farms together and all the buyers together give a market price of <b>$18</b> per bushel, with 500 bushels sold.</p>",
+    "chart": {
+     "x": "Quantity of tomatoes, whole market (bushels)",
+     "y": "Price ($ per bushel)",
+     "xmax": 750,
+     "ymax": 28,
+     "xticks": [
+      100,
+      200,
+      300,
+      400,
+      600,
+      700
+     ],
+     "yticks": [
+      6,
+      10,
+      14,
+      22,
+      26
+     ],
+     "lines": [
+      {
+       "pts": [
+        [
+         300,
+         10
+        ],
+        [
+         650,
+         24
+        ]
+       ],
+       "label": "Industry S",
+       "role": "supply"
+      },
+      {
+       "pts": [
+        [
+         150,
+         20.8
+        ],
+        [
+         700,
+         16.4
+        ]
+       ],
+       "label": "D",
+       "role": "demand"
+      }
+     ],
+     "points": [
+      {
+       "x": 500,
+       "y": 18,
+       "label": "E",
+       "guides": true,
+       "show": true
+      }
+     ],
+     "caption": "Industry demand and industry supply meet at E: the market price is $18. Every farm and every buyer must accept it."
+    }
+   },
+   {
+    "h": "The definitions on slide 3",
+    "body": "<ul><li><b>Price-taking producer</b>: a producer whose actions have <b>no effect</b> on the market price of the good it sells.</li><li><b>Price-taking consumer</b>: a consumer whose actions have <b>no effect</b> on the market price of the good he or she buys.</li><li><b>Perfectly competitive market</b>: a market where <b>all</b> participants, both consumers and producers, are price-takers.</li><li><b>Perfectly competitive industry</b>: an industry where the <b>producers</b> are price-takers.</li></ul><p>Small difference to remember: <i>market</i> = buyers and sellers. <i>Industry</i> = only the producers.</p>"
+   },
+   {
+    "h": "What one price-taking firm sees",
+    "body": "<p>For one farm, the market price is just a fixed number. It can sell 1 bushel or 7 bushels, and each bushel brings <b>$18</b>.</p><ul><li>Ask more than $18: buyers go to other farms, it sells nothing.</li><li>Ask less than $18: no reason, it can already sell all it wants at $18.</li></ul><p>So the firm's demand is a <b>flat (horizontal) line</b> at the market price. Each extra bushel adds exactly $18 to revenue, so <b>marginal revenue = price</b> (MR = P). You will use this line in all the next lessons.</p>",
+    "chart": {
+     "x": "Quantity of ONE farm (bushels)",
+     "y": "Price ($ per bushel)",
+     "xmax": 8,
+     "ymax": 28,
+     "ymin": 0,
+     "xticks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+     ],
+     "yticks": [
+      6,
+      12,
+      18,
+      24
+     ],
+     "lines": [
+      {
+       "pts": [
+        [
+         0,
+         18
+        ],
+        [
+         7.95,
+         18
+        ]
+       ],
+       "label": "Farm's demand: P = MR = $18",
+       "role": "demand"
+      }
+     ],
+     "points": [
+      {
+       "x": 1.5,
+       "y": 18,
+       "label": "sell 1.5"
+      },
+      {
+       "x": 3.5,
+       "y": 18,
+       "label": "sell 3.5"
+      }
+     ],
+     "caption": "A price-taker can sell any amount at the market price, so its demand line is flat: P = MR."
+    }
+   },
+   {
+    "h": "Condition 1: no producer has a large market share",
+    "body": "<p><b>Market share</b> = the fraction of the total industry output that one producer makes.</p><p>Market share = (firm's output) &divide; (total industry output)</p><p>Example: 100 tomato farms make 500 bushels in total. One farm makes 5 bushels. Its share = 5 &divide; 500 = <b>1%</b>. If it doubles or stops production, the market hardly notices. So it cannot move the price.</p><p>Compare: if one company made 60% of all output, it could cut its output, create a shortage, and push the price up. That company is <b>not</b> a price-taker.</p>"
+   },
+   {
+    "h": "Condition 2: a standardized product (a commodity)",
+    "body": "<p>A good is a <b>standardized product</b>, also called a <b>commodity</b>, when consumers see the products of different producers as <b>the same good</b>.</p><p>Examples: wheat, tomatoes, raw cotton, potatoes. Wheat from farm A = wheat from farm B. So if farm A asks more, buyers switch at once.</p><p>Not standardized: iPhone vs Samsung, Coca-Cola vs Pepsi, Nike shoes. People think these are different, so a brand can charge more and still keep some buyers. Then the firm is not a price-taker.</p><p>You need <b>both</b> conditions: many small producers <b>and</b> the same product.</p>"
+   },
+   {
+    "h": "Plus: free entry and exit",
+    "body": "<p>There is <b>free entry and exit</b> when new producers can easily come into an industry, and existing producers can easily leave it.</p><p>Example: anyone can rent land and start growing tomatoes; a farmer who loses money can stop next season.</p><p>Slide 4 lists it separately from the two necessary conditions. In the textbook it is not strictly necessary, but most perfectly competitive industries have it. It becomes very important in the <b>long run</b>: profits pull new firms in, losses push firms out (later slides 19&ndash;24).</p>"
+   }
+  ],
+  "example": {
+   "problem": "<p>A region has 400 wheat farms. Together they grow 80,000 tons of wheat. Farm A grows 200 tons.</p><ol><li>What is Farm A's market share?</li><li>Is Farm A a price-taker? Why?</li><li>In the smartphone industry, Company X sells 30% of all phones. Is this industry perfectly competitive?</li></ol>",
+   "solution": "<ol><li>Market share = 200 &divide; 80,000 = 0.0025 = <b>0.25%</b>.</li><li><b>Yes.</b> Its share is tiny (condition 1) and wheat is a standardized product (condition 2). If Farm A changes its output, or asks a higher price, the market price does not change; buyers simply buy identical wheat from other farms.</li><li><b>No.</b> Company X has a large market share (30%), and phones are not standardized: buyers see brands as different goods. So Company X can affect the price; it is not a price-taker.</li></ol>"
+  },
+  "check": [
+   {
+    "q": "Define a price-taking consumer.",
+    "a": "A consumer whose actions have no effect on the market price of the good he or she buys."
+   },
+   {
+    "q": "What is the formula for market share?",
+    "a": "Firm's output &divide; total industry output."
+   },
+   {
+    "q": "Why does a standardized product make a producer a price-taker?",
+    "a": "Buyers see all producers' goods as the same, so if one producer asks a higher price, buyers just buy from another producer."
+   },
+   {
+    "q": "In a perfectly competitive market, who sets the price?",
+    "a": "No single person. The price is set by industry demand and industry supply together."
+   },
+   {
+    "q": "Is free entry and exit one of the two necessary conditions on slide 4?",
+    "a": "No. It is listed separately. It is a usual feature of perfectly competitive industries, important in the long run."
+   }
+  ],
+  "exam": {
+   "question": "<p>What is a perfectly competitive market? Define a price-taking producer and a price-taking consumer. State the two necessary conditions for perfect competition, and explain free entry and exit.</p>",
+   "answer": "<p>A <b>perfectly competitive market</b> is a market in which all participants, both consumers and producers, are <b>price-takers</b>. The price is determined by industry demand and industry supply. An industry where producers are price-takers is a <b>perfectly competitive industry</b>.</p><p>A <b>price-taking producer</b> is a producer whose actions have no effect on the market price of the good it sells. A <b>price-taking consumer</b> is a consumer whose actions have no effect on the market price of the good he or she buys.</p><p><b>Two necessary conditions:</b></p><ol><li><b>No producer has a large market share.</b> Market share is the fraction of total industry output produced by one producer. When every share is small, no producer can change the price by changing its output.</li><li><b>The good is a standardized product (commodity):</b> consumers regard the products of different producers as the same good. So a producer who raises its price loses its buyers to other producers.</li></ol><p><b>Free entry and exit:</b> new producers can easily enter the industry and existing producers can easily leave it. It is typical of perfectly competitive industries (for example, wheat or tomato farming).</p>"
+  },
+  "memorize": [
+   "Perfectly competitive market: ALL buyers and sellers are price-takers",
+   "Price-taker: own actions have no effect on the market price",
+   "Price comes from industry demand + industry supply",
+   "Condition 1: no large market share (share = own output &divide; industry output)",
+   "Condition 2: standardized product = commodity (all producers' goods seen as the same)",
+   "Free entry and exit: easy to come in or leave (listed separately)",
+   "Firm sees a flat line: P = MR"
+  ]
+ },
+ {
+  "id": "Q23",
+  "label": "Q23",
+  "week": 7,
+  "slides": [
+   11
+  ],
+  "kind": "calculation",
+  "title": "Keep operating with a loss? The shut-down rule (P vs AVC)",
+  "hook": "You will be able to use the slide 11 table to decide when a firm should keep producing even while it loses money, and to show why the rule becomes P &gt; AVC.",
+  "cards": [
+   {
+    "h": "A story: the samsa shop",
+    "body": "<p>You run a samsa shop. You signed a rent contract: <b>1000 per month</b>. You must pay it even if the shop is closed. That is a <b>fixed cost (FC)</b>.</p><p>Meat, flour, gas and your helper's wage are paid only when you work. That is <b>variable cost (VC)</b>. If you close, VC = 0.</p><p>This month, sales will not cover all costs. Should you close the shop? Many people say \"yes, I am losing money\". Economics says: <b>not always</b>.</p>"
+   },
+   {
+    "h": "Two choices, two losses",
+    "body": "<ul><li><b>Shut down:</b> no sales (TR = 0), no VC, but you still pay FC. Profit = <b>&minus;FC</b>.</li><li><b>Operate:</b> profit = TR &minus; VC &minus; FC.</li></ul><p>Choose the option with the <b>smaller loss</b>. Operating is better when</p><p><code>TR &minus; VC &minus; FC &gt; &minus;FC</code>, which means <code>TR &gt; VC</code>.</p><p>In words: keep working if your revenue pays <b>all of the variable cost</b>. Any extra money helps pay the rent.</p>"
+   },
+   {
+    "h": "The slide 11 table, explained",
+    "body": "<p>FC = 1000 in every case. I added three columns to show the logic.</p><table><tr><th>Case</th><th>VC</th><th>TC</th><th>TR</th><th>Profit if operate</th><th>Profit if shut down</th><th>TR &minus; VC</th><th>Operate?</th></tr><tr><td>a</td><td>2000</td><td>3000</td><td>5000</td><td>+2000</td><td>&minus;1000</td><td>3000</td><td>Yes</td></tr><tr><td>b</td><td>3000</td><td>4000</td><td>4000</td><td>0</td><td>&minus;1000</td><td>1000</td><td>Yes</td></tr><tr><td>c</td><td>4000</td><td>5000</td><td>4500</td><td>&minus;500</td><td>&minus;1000</td><td>500</td><td>Yes</td></tr><tr><td>d</td><td>5000</td><td>6000</td><td>5000</td><td>&minus;1000</td><td>&minus;1000</td><td>0</td><td>Maybe</td></tr><tr><td>e</td><td>6000</td><td>7000</td><td>5500</td><td>&minus;1500</td><td>&minus;1000</td><td>&minus;500</td><td>No</td></tr></table><p>Look at the column TR &minus; VC: <b>positive &rarr; operate</b>, <b>zero &rarr; maybe (indifferent)</b>, <b>negative &rarr; shut down</b>.</p>"
+   },
+   {
+    "h": "Case c in plain words",
+    "body": "<p>Revenue is 4500. It pays all the variable cost (4000). The 500 left over pays <b>part of the rent</b>.</p><ul><li>Operate: you lose 1000 &minus; 500 = <b>500</b>.</li><li>Shut down: you lose the full rent, <b>1000</b>.</li></ul><p>Losing 500 is better than losing 1000, so you keep operating. That is exactly the slide's message: <i>\"If you shut down, you will lose more money because of the fixed cost.\"</i></p><p>Case d: revenue only just pays VC, you lose 1000 either way, so \"maybe\". Case e: revenue (5500) does not even pay VC (6000); each day open makes the loss bigger, so close.</p>"
+   },
+   {
+    "h": "From TR &gt; VC to P &gt; AVC",
+    "body": "<p>The slide writes the operating condition as: <code>&minus;(TR &minus; VC &minus; FC) &lt; FC</code>. The left side is the <b>loss</b> from operating. So it says: \"operate while your loss is smaller than FC\".</p><ol><li>Remove the brackets: <code>&minus;TR + VC + FC &lt; FC</code></li><li>Cancel FC: <code>VC &lt; TR</code></li><li>Use TR = P &times; Q and VC = AVC &times; Q: <code>AVC &times; Q &lt; P &times; Q</code></li><li>Divide by Q: <b><code>P &gt; AVC</code></b></li></ol><p><b>Rule (short run):</b> P &gt; AVC &rarr; operate (even with a loss). P = AVC &rarr; indifferent. P &lt; AVC &rarr; shut down. The lowest point of AVC is called the <b>shut-down price</b>.</p><p>This is a <b>short-run</b> rule, because FC exists only in the short run. In the long run the contract ends, nothing is fixed, and a firm that keeps losing money leaves the industry (next lesson).</p>"
+   },
+   {
+    "h": "On the graph: a loss the firm accepts",
+    "body": "<p>The textbook tomato farm (FC = $14). Its shut-down price is $10, its break-even price is $14. Suppose the price is <b>$12</b>.</p><ul><li>Best output: P = MC &rarr; 3.5 bushels. TR = 12 &times; 3.5 = $42.</li><li>ATC = $14.14, so TC = $49.50. <b>Loss = $7.50</b> (red box).</li><li>AVC = $10.14 &lt; P = $12, so revenue pays all VC ($35.50) and $6.50 of the $14 FC.</li><li>Shut down instead: lose the whole FC = $14. So <b>operate</b>: $7.50 &lt; $14.</li></ul>",
+    "chart": {
+     "x": "Quantity of tomatoes (bushels)",
+     "y": "Price, cost ($ per bushel)",
+     "xmax": 8,
+     "ymax": 26,
+     "xticks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+     ],
+     "yticks": [
+      4,
+      8,
+      18,
+      22
+     ],
+     "areas": [
+      {
+       "pts": [
+        [
+         0,
+         12
+        ],
+        [
+         3.5,
+         12
+        ],
+        [
+         3.5,
+         14.143
+        ],
+        [
+         0,
+         14.143
+        ]
+       ],
+       "role": "dwl",
+       "label": "Loss = $7.50"
+      }
+     ],
+     "hlines": [
+      {
+       "y": 12,
+       "label": "P = MR = $12",
+       "role": "policy"
+      }
+     ],
+     "lines": [
+      {
+       "pts": [
+        [
+         1,
+         8
+        ],
+        [
+         1.5,
+         5
+        ],
+        [
+         2,
+         6
+        ],
+        [
+         2.5,
+         8
+        ],
+        [
+         3,
+         10
+        ],
+        [
+         4,
+         14
+        ],
+        [
+         5,
+         18
+        ],
+        [
+         6,
+         22
+        ],
+        [
+         6.6,
+         24.4
+        ]
+       ],
+       "label": "MC",
+       "role": "mc"
+      },
+      {
+       "pts": [
+        [
+         6.0,
+         15.333
+        ],
+        [
+         5.5,
+         14.818
+        ],
+        [
+         5,
+         14.4
+        ],
+        [
+         4.5,
+         14.111
+        ],
+        [
+         4,
+         14.0
+        ],
+        [
+         3.5,
+         14.143
+        ],
+        [
+         3,
+         14.667
+        ],
+        [
+         2.5,
+         15.8
+        ],
+        [
+         2.2,
+         16.945
+        ],
+        [
+         2.0,
+         18.0
+        ],
+        [
+         1.7,
+         20.224
+        ]
+       ],
+       "label": "ATC",
+       "role": "atc"
+      },
+      {
+       "pts": [
+        [
+         1.8,
+         11.6
+        ],
+        [
+         2.0,
+         11.0
+        ],
+        [
+         2.5,
+         10.2
+        ],
+        [
+         3,
+         10.0
+        ],
+        [
+         3.5,
+         10.143
+        ],
+        [
+         4,
+         10.5
+        ],
+        [
+         4.5,
+         11.0
+        ],
+        [
+         5,
+         11.6
+        ],
+        [
+         5.5,
+         12.273
+        ],
+        [
+         5.8,
+         12.703
+        ]
+       ],
+       "label": "AVC",
+       "role": "avc"
+      }
+     ],
+     "points": [
+      {
+       "x": 3.5,
+       "y": 12,
+       "guides": true,
+       "show": true
+      },
+      {
+       "x": 3.5,
+       "y": 14.143,
+       "guides": true,
+       "show": true
+      }
+     ],
+     "caption": "P = $12 is below min ATC ($14) but above min AVC ($10): the farm loses $7.50, less than the $14 FC it would lose by closing."
+    }
+   },
+   {
+    "h": "One picture of the whole rule",
+    "body": "<p>For each price, compare the two losses of the tomato farm (always producing where P = MC):</p><table><tr><th>Price</th><th>$6</th><th>$8</th><th>$10</th><th>$12</th><th>$14</th></tr><tr><td>Loss if operate</td><td>24</td><td>19.5</td><td>14</td><td>7.5</td><td>0</td></tr><tr><td>Loss if shut down</td><td>14</td><td>14</td><td>14</td><td>14</td><td>14</td></tr></table><p>The lines cross at <b>P = $10 = minimum AVC</b>. Below $10: shut down. Above $10: operate.</p>",
+    "chart": {
+     "x": "Market price P ($)",
+     "y": "Loss of the farm ($)",
+     "xmax": 17,
+     "ymax": 26,
+     "xticks": [
+      2,
+      4,
+      6,
+      8,
+      12,
+      14,
+      16
+     ],
+     "yticks": [
+      5,
+      10,
+      14,
+      20
+     ],
+     "hlines": [
+      {
+       "y": 14,
+       "label": "If you shut down (= FC)",
+       "role": "policy"
+      }
+     ],
+     "vlines": [
+      {
+       "x": 10,
+       "label": "Shut-down $10",
+       "role": "policy"
+      }
+     ],
+     "lines": [
+      {
+       "pts": [
+        [
+         14,
+         0
+        ],
+        [
+         13,
+         3.875
+        ],
+        [
+         12,
+         7.5
+        ],
+        [
+         11,
+         10.875
+        ],
+        [
+         10,
+         14
+        ],
+        [
+         9,
+         16.875
+        ],
+        [
+         8,
+         19.5
+        ],
+        [
+         7,
+         21.875
+        ],
+        [
+         6,
+         24
+        ]
+       ],
+       "label": "If you operate",
+       "role": "other"
+      }
+     ],
+     "points": [
+      {
+       "x": 10,
+       "y": 14
+      },
+      {
+       "x": 12,
+       "y": 7.5,
+       "label": "P=12: lose 7.5"
+      },
+      {
+       "x": 14,
+       "y": 0,
+       "label": "Break-even"
+      }
+     ],
+     "caption": "Left of $10, operating loses more than FC, so shut down. Right of $10, operating loses less, so keep producing."
+    }
+   }
+  ],
+  "example": {
+   "problem": "<p>A small shop has fixed cost FC = 600 per month. At its best output, Q = 100 units, its variable cost is VC = 2000. The market price is P = 23.</p><ol><li>Find TR, TC and profit. Should the shop operate or shut down in the short run?</li><li>Show the same answer with the rule P &gt; AVC.</li><li>The price falls to P = 18 (output and VC stay the same). Now what?</li></ol>",
+   "solution": "<ol><li>TR = 23 &times; 100 = 2300. TC = 600 + 2000 = 2600. Profit = 2300 &minus; 2600 = <b>&minus;300</b>. If it shuts down, profit = &minus;FC = <b>&minus;600</b>. &minus;300 is better, so <b>operate</b>.</li><li>AVC = VC &divide; Q = 2000 &divide; 100 = 20. P = 23 &gt; AVC = 20 &rarr; operate. (TR &minus; VC = 300 &gt; 0, and this 300 pays half of the rent.)</li><li>TR = 1800 &lt; VC = 2000. Operating: profit = 1800 &minus; 2600 = &minus;800. Shut down: &minus;600. P = 18 &lt; AVC = 20 &rarr; <b>shut down</b>. This is like case e on the slide.</li></ol>"
+  },
+  "check": [
+   {
+    "q": "If a firm shuts down in the short run, how much does it lose?",
+    "a": "Exactly its fixed cost (FC), because FC must be paid anyway."
+   },
+   {
+    "q": "Case e: why should the firm shut down?",
+    "a": "TR (5500) &lt; VC (6000). Operating loses 1500, shutting down loses only 1000."
+   },
+   {
+    "q": "Case d says \"Maybe\". Why?",
+    "a": "TR = VC = 5000, so the loss is 1000 whether it operates or not: the firm is indifferent."
+   },
+   {
+    "q": "P = 12, AVC = 10.14, ATC = 14.14. Profit or loss? Operate?",
+    "a": "P &lt; ATC, so a loss. But P &gt; AVC, so operate in the short run."
+   },
+   {
+    "q": "What is the shut-down price?",
+    "a": "The minimum of the AVC curve. Below it, the firm shuts down in the short run."
+   }
+  ],
+  "exam": {
+   "question": "<p>Look at the table on slide 11 (cases a&ndash;e, FC = 1000). In case c the firm makes a loss. Should it keep operating? Explain why, say what the firm should do in cases d and e, and show how the business operating condition becomes P &gt; AVC.</p>",
+   "answer": "<p><b>Yes, in case c the firm should keep operating.</b> If it shuts down, it still pays the fixed cost of 1000, so it loses 1000. If it operates, profit = TR &minus; TC = 4500 &minus; 5000 = &minus;500. Losing 500 is better than losing 1000. Revenue (4500) covers all the variable cost (4000), and the remaining 500 covers part of the fixed cost.</p><p>Case d: TR = VC = 5000, so the loss is 1000 whether it operates or not: the firm is indifferent (\"maybe\"). Case e: TR = 5500 &lt; VC = 6000; operating loses 1500, more than the 1000 lost by shutting down, so it should <b>shut down</b>. (Cases a and b: profit 2000 and 0, so operate.)</p><p><b>Operating condition:</b> operate while the loss from operating is smaller than FC:<br>&minus;(TR &minus; VC &minus; FC) &lt; FC &rArr; VC &lt; TR.<br>Since TR = P &times; Q and VC = AVC &times; Q: AVC &times; Q &lt; P &times; Q &rArr; <b>P &gt; AVC</b>.</p><p>So in the short run a firm keeps producing as long as the price is above average variable cost, even if it makes a loss. The minimum of AVC is the shut-down price.</p>"
+  },
+  "memorize": [
+   "Shut down &rarr; still pay FC &rarr; loss = FC",
+   "Operate if loss &lt; FC &hArr; TR &gt; VC",
+   "Divide by Q: P &gt; AVC &rarr; operate (short run)",
+   "Case c: lose 500 open vs 1000 closed &rarr; operate",
+   "Case d: TR = VC &rarr; maybe; case e: TR &lt; VC &rarr; shut down",
+   "Shut-down price = minimum AVC"
+  ]
+ },
+ {
+  "id": "Q24",
+  "label": "Q24",
+  "week": 7,
+  "slides": [
+   15
+  ],
+  "kind": "theory",
+  "title": "Break-even price (min ATC) and shut-down price (min AVC): Table 7-4",
+  "hook": "You will be able to reproduce Table 7-4: compare the price with min ATC and min AVC, and say what a perfectly competitive firm does in the short run and in the long run.",
+  "cards": [
+   {
+    "h": "Two different questions",
+    "body": "<p>A firm owner asks two questions, on two time scales:</p><ol><li><b>Short run: \"Should I produce today?\"</b> The fixed cost must be paid anyway. Only the variable cost matters. &rarr; Compare P with <b>minimum AVC</b>.</li><li><b>Long run: \"Should I stay in this industry?\"</b> In the long run nothing is fixed (contracts end, machines can be sold). The firm must cover <b>all</b> its costs. &rarr; Compare P with <b>minimum ATC</b>.</li></ol><p>Table 7-4 is just these two comparisons. Top half = profitability (long run). Bottom half = production (short run).</p>"
+   },
+   {
+    "h": "Where the two key prices are",
+    "body": "<p>The MC curve cuts both U-shaped curves at their <b>lowest points</b>.</p><ul><li><b>Break-even price = minimum ATC.</b> At this price, profit = 0. Tomato farm: <b>$14</b> (at 4 bushels).</li><li><b>Shut-down price = minimum AVC.</b> Below it, the firm stops producing. Tomato farm: <b>$10</b> (at 3 bushels).</li></ul><p>The shut-down price is always <b>lower</b>, because ATC = AVC + AFC, so ATC lies above AVC.</p>",
+    "chart": {
+     "x": "Quantity of tomatoes (bushels)",
+     "y": "Price, cost ($ per bushel)",
+     "xmax": 8,
+     "ymax": 26,
+     "xticks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+     ],
+     "yticks": [
+      6,
+      10,
+      14,
+      18,
+      22
+     ],
+     "hlines": [
+      {
+       "y": 14,
+       "label": "Break-even $14",
+       "role": "policy"
+      },
+      {
+       "y": 10,
+       "label": "Shut-down $10",
+       "role": "policy"
+      }
+     ],
+     "lines": [
+      {
+       "pts": [
+        [
+         1,
+         8
+        ],
+        [
+         1.5,
+         5
+        ],
+        [
+         2,
+         6
+        ],
+        [
+         2.5,
+         8
+        ],
+        [
+         3,
+         10
+        ],
+        [
+         4,
+         14
+        ],
+        [
+         5,
+         18
+        ],
+        [
+         6,
+         22
+        ],
+        [
+         6.6,
+         24.4
+        ]
+       ],
+       "label": "MC",
+       "role": "mc"
+      },
+      {
+       "pts": [
+        [
+         6.0,
+         15.333
+        ],
+        [
+         5.5,
+         14.818
+        ],
+        [
+         5,
+         14.4
+        ],
+        [
+         4.5,
+         14.111
+        ],
+        [
+         4,
+         14.0
+        ],
+        [
+         3.5,
+         14.143
+        ],
+        [
+         3,
+         14.667
+        ],
+        [
+         2.5,
+         15.8
+        ],
+        [
+         2.2,
+         16.945
+        ],
+        [
+         2.0,
+         18.0
+        ],
+        [
+         1.7,
+         20.224
+        ]
+       ],
+       "label": "ATC",
+       "role": "atc"
+      },
+      {
+       "pts": [
+        [
+         1.5,
+         13.0
+        ],
+        [
+         2.0,
+         11.0
+        ],
+        [
+         2.5,
+         10.2
+        ],
+        [
+         3,
+         10.0
+        ],
+        [
+         3.5,
+         10.143
+        ],
+        [
+         4,
+         10.5
+        ],
+        [
+         4.5,
+         11.0
+        ],
+        [
+         5,
+         11.6
+        ],
+        [
+         5.5,
+         12.273
+        ]
+       ],
+       "label": "AVC",
+       "role": "avc"
+      }
+     ],
+     "points": [
+      {
+       "x": 4,
+       "y": 14
+      },
+      {
+       "x": 3,
+       "y": 10
+      }
+     ],
+     "caption": "MC crosses ATC at its minimum ($14 = break-even price) and AVC at its minimum ($10 = shut-down price)."
+    }
+   },
+   {
+    "h": "Top half: the profitability condition (P vs min ATC)",
+    "body": "<table><tr><th>Price</th><th>Result</th></tr><tr><td>P &gt; min ATC</td><td>Firm <b>profitable</b>. <b>Entry</b> into the industry in the long run.</td></tr><tr><td>P = min ATC</td><td>Firm <b>breaks even</b>. <b>No entry or exit</b> in the long run.</td></tr><tr><td>P &lt; min ATC</td><td>Firm <b>unprofitable</b>. <b>Exit</b> from the industry in the long run.</td></tr></table><p>Why entry and exit? Remember free entry and exit: profit attracts new firms; losses make firms leave. (Profit here means <b>economic</b> profit, so \"break even\" means the owner earns just a normal return.)</p>"
+   },
+   {
+    "h": "Bottom half: the production condition (P vs min AVC)",
+    "body": "<table><tr><th>Price</th><th>Result</th></tr><tr><td>P &gt; min AVC</td><td>Firm <b>produces</b> in the short run. If P &lt; min ATC: covers all variable cost and <b>some but not all</b> fixed cost. If P &gt; min ATC: covers all variable and fixed cost.</td></tr><tr><td>P = min AVC</td><td>Firm is <b>indifferent</b> between producing or not. Just covers variable cost.</td></tr><tr><td>P &lt; min AVC</td><td>Firm <b>shuts down</b> in the short run. Does not cover variable cost.</td></tr></table><p>This is the slide 11 rule (P &gt; AVC) written with the lowest point of AVC.</p>"
+   },
+   {
+    "h": "Three price zones, with the tomato farm",
+    "body": "<p>The farm always chooses output where P = MC. FC = $14.</p><table><tr><th>Price</th><th>Output</th><th>Profit</th><th>Short run</th><th>Long run</th></tr><tr><td>$18</td><td>5</td><td>+$18</td><td>produce</td><td>new firms enter</td></tr><tr><td>$14 (= min ATC)</td><td>4</td><td>$0</td><td>produce</td><td>no entry, no exit</td></tr><tr><td>$12</td><td>3.5</td><td>&minus;$7.50</td><td>produce (loss &lt; FC)</td><td>exit</td></tr><tr><td>$10 (= min AVC)</td><td>3</td><td>&minus;$14</td><td>indifferent (loss = FC)</td><td>exit</td></tr><tr><td>$8</td><td>0</td><td>&minus;$14</td><td>shut down</td><td>exit</td></tr></table><p>The middle zone is the tricky one: <b>between $10 and $14</b> the firm makes a loss but still produces in the short run, then leaves in the long run. (At $8, producing 2.5 bushels would lose $19.50, more than the $14 FC, so it closes.)</p>"
+   },
+   {
+    "h": "Result: the firm's short-run supply curve",
+    "body": "<p>Put the rules together (slides 12&ndash;13):</p><ul><li>If it produces, the firm chooses Q where <b>P = MC</b>. So the MC curve tells how much it supplies at each price.</li><li>But below the shut-down price it produces <b>nothing</b>.</li></ul><p>So the <b>short-run individual supply curve = the part of the MC curve above minimum AVC</b>.</p><p>Small correction: slide 12 writes \"Ps: minimum average cost\". It should be minimum average <b>variable</b> cost (the shut-down price), as slide 13 says: \"P &gt; AVC\".</p>",
+    "chart": {
+     "x": "Quantity of tomatoes (bushels)",
+     "y": "Price ($ per bushel)",
+     "xmax": 8,
+     "ymax": 26,
+     "xticks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+     ],
+     "yticks": [
+      6,
+      14,
+      18,
+      22
+     ],
+     "hlines": [
+      {
+       "y": 10,
+       "label": "Shut-down price $10",
+       "role": "policy"
+      }
+     ],
+     "lines": [
+      {
+       "pts": [
+        [
+         3,
+         10
+        ],
+        [
+         2.5,
+         8
+        ],
+        [
+         2,
+         6
+        ],
+        [
+         1.5,
+         5
+        ],
+        [
+         1,
+         8
+        ]
+       ],
+       "label": "MC",
+       "role": "mc"
+      },
+      {
+       "pts": [
+        [
+         1.6,
+         12.45
+        ],
+        [
+         2.0,
+         11.0
+        ],
+        [
+         2.5,
+         10.2
+        ],
+        [
+         3,
+         10.0
+        ],
+        [
+         3.5,
+         10.143
+        ],
+        [
+         4,
+         10.5
+        ],
+        [
+         4.5,
+         11.0
+        ],
+        [
+         5,
+         11.6
+        ],
+        [
+         5.5,
+         12.273
+        ]
+       ],
+       "label": "AVC",
+       "role": "avc"
+      },
+      {
+       "pts": [
+        [
+         3,
+         10
+        ],
+        [
+         6.5,
+         24
+        ]
+       ],
+       "label": "Firm's S",
+       "role": "supply"
+      }
+     ],
+     "points": [
+      {
+       "x": 3,
+       "y": 10
+      }
+     ],
+     "caption": "Supply = MC above the shut-down point (3 bushels, $10). Below $10 the farm supplies zero."
+    }
+   }
+  ],
+  "example": {
+   "problem": "<p>A perfectly competitive firm has minimum AVC = $20 and minimum ATC = $30. For each market price, say (i) profit, break even or loss, (ii) produce or shut down in the short run, (iii) entry, exit or nothing in the long run.</p><p>(a) P = $35 &nbsp; (b) P = $30 &nbsp; (c) P = $25 &nbsp; (d) P = $15</p>",
+   "solution": "<ul><li>(a) $35 &gt; min ATC: <b>profit</b>; produce; new firms <b>enter</b> in the long run.</li><li>(b) $30 = min ATC: <b>break even</b> (zero economic profit); produce; <b>no entry or exit</b>.</li><li>(c) $25: below min ATC ($30) but above min AVC ($20): <b>loss</b>, but still <b>produce</b> in the short run (covers all VC and part of FC); <b>exit</b> in the long run.</li><li>(d) $15 &lt; min AVC: cannot even cover VC, so <b>shut down</b> now (loss = FC); <b>exit</b> in the long run.</li></ul>"
+  },
+  "check": [
+   {
+    "q": "Break-even price = the minimum of which curve?",
+    "a": "Average total cost (ATC)."
+   },
+   {
+    "q": "Shut-down price = the minimum of which curve?",
+    "a": "Average variable cost (AVC)."
+   },
+   {
+    "q": "Which comparison decides entry and exit in the long run?",
+    "a": "P compared with min ATC (the profitability condition)."
+   },
+   {
+    "q": "min AVC &lt; P &lt; min ATC. What happens?",
+    "a": "Loss, but the firm produces in the short run (covers VC and part of FC); in the long run it exits."
+   },
+   {
+    "q": "What is the firm's short-run supply curve?",
+    "a": "The part of its MC curve above minimum AVC (the shut-down price)."
+   }
+  ],
+  "exam": {
+   "question": "<p>Summarize the perfectly competitive firm's profitability and production conditions (Table 7-4). What are the break-even price and the shut-down price? What does the firm do in the short run and in the long run when P is greater than, equal to, or less than each of them?</p>",
+   "answer": "<p>The <b>break-even price</b> is the firm's <b>minimum average total cost</b>: at this price economic profit is zero. The <b>shut-down price</b> is its <b>minimum average variable cost</b>.</p><p><b>Profitability condition (P vs min ATC), long run:</b></p><ul><li>P &gt; min ATC: the firm is profitable; new firms enter the industry in the long run.</li><li>P = min ATC: the firm breaks even; no entry into or exit from the industry.</li><li>P &lt; min ATC: the firm is unprofitable; firms exit the industry in the long run.</li></ul><p><b>Production condition (P vs min AVC), short run:</b></p><ul><li>P &gt; min AVC: the firm produces. If P &lt; min ATC, it covers its variable cost and some but not all of its fixed cost; if P &gt; min ATC, it covers all variable and fixed cost.</li><li>P = min AVC: the firm is indifferent between producing and not; it just covers variable cost.</li><li>P &lt; min AVC: the firm shuts down in the short run; it does not cover variable cost.</li></ul><p><b>Reason:</b> in the short run fixed cost must be paid anyway, so the firm only needs P &gt; AVC to produce. In the long run all costs can be avoided, so it stays only if P covers ATC. Therefore the firm's short-run supply curve is its MC curve above minimum AVC.</p>"
+  },
+  "memorize": [
+   "Break-even price = min ATC &rarr; profit or loss &rarr; entry/exit (LONG run)",
+   "Shut-down price = min AVC &rarr; produce or not (SHORT run)",
+   "MC cuts ATC and AVC at their minimums",
+   "P &gt; min ATC: profit, entry. P = min ATC: zero profit, no entry/exit. P &lt; min ATC: exit",
+   "min AVC &lt; P &lt; min ATC: loss but produce now, exit later",
+   "P &lt; min AVC: shut down (loss = FC)",
+   "SR supply = MC above min AVC"
+  ]
+ },
+ {
+  "id": "Q12",
+  "label": "Q12",
+  "week": 7,
+  "slides": [
+   17
+  ],
+  "kind": "theory",
+  "title": "Short-run industry supply curve and short-run market equilibrium",
+  "hook": "You will be able to define the short-run industry supply curve and short-run market equilibrium, build industry supply by adding firms' quantities, and explain the tomato example (Figure 7-5).",
+  "cards": [
+   {
+    "h": "From one farm to the whole industry",
+    "body": "<p>Last lesson: each firm's supply curve is its MC curve above minimum AVC. Now we want the supply of <b>all</b> firms together.</p><p>The <b>industry supply curve</b> shows the relationship between the price of a good and the <b>total output of the industry</b> (slide 16).</p><p>How to build it: pick a price, ask every firm \"how much do you sell at this price?\", and <b>add the quantities</b>: Q = q<sub>1</sub> + q<sub>2</sub> + &hellip; + q<sub>k</sub>. Repeat for other prices.</p><p>We add <b>sideways</b> (quantities), never prices. This is called horizontal summation.</p>",
+    "chart": {
+     "x": "Quantity",
+     "y": "Price ($)",
+     "xmax": 12,
+     "ymax": 24,
+     "xticks": [
+      2,
+      4,
+      8,
+      10
+     ],
+     "yticks": [
+      4,
+      8,
+      12,
+      20
+     ],
+     "hlines": [
+      {
+       "y": 16,
+       "label": "P = $16",
+       "role": "policy"
+      }
+     ],
+     "lines": [
+      {
+       "pts": [
+        [
+         0,
+         4
+        ],
+        [
+         5,
+         24
+        ]
+       ],
+       "label": "Firm B",
+       "role": "supply2"
+      },
+      {
+       "pts": [
+        [
+         0,
+         4
+        ],
+        [
+         10,
+         24
+        ]
+       ],
+       "label": "Firm A",
+       "role": "supply2"
+      },
+      {
+       "pts": [
+        [
+         0,
+         4
+        ],
+        [
+         11.9,
+         19.867
+        ]
+       ],
+       "label": "Industry = A + B",
+       "role": "supply"
+      }
+     ],
+     "points": [
+      {
+       "x": 3,
+       "y": 16,
+       "guides": true,
+       "show": true
+      },
+      {
+       "x": 6,
+       "y": 16,
+       "guides": true,
+       "show": true
+      },
+      {
+       "x": 9,
+       "y": 16,
+       "guides": true,
+       "show": true
+      }
+     ],
+     "caption": "At P = $16, firm B sells 3 and firm A sells 6, so the industry sells 3 + 6 = 9."
+    }
+   },
+   {
+    "h": "The definition on slide 17",
+    "body": "<p>The <b>short-run industry supply curve</b> shows how the quantity supplied by an industry depends on the market price, <b>given a fixed number of producers</b>.</p><p>\"Short run\" = there is no time for new firms to build farms, or for old firms to sell everything and leave. So the number of producers is fixed.</p><p>It <b>slopes upward</b>: when the price rises, every firm moves up its own MC curve and produces more, so the total rises.</p>"
+   },
+   {
+    "h": "The tomato example (slide 18, Figure 7-5)",
+    "body": "<p>There are <b>100 identical farms</b>. Each farm is the farm from the last lessons: shut-down price $10, and it supplies where P = MC.</p><table><tr><th>Price</th><th>One farm supplies</th><th>Industry (&times; 100)</th></tr><tr><td>below $10</td><td>0</td><td>0</td></tr><tr><td>$10</td><td>3</td><td>300</td></tr><tr><td>$14</td><td>4</td><td>400</td></tr><tr><td>$18</td><td>5</td><td>500</td></tr><tr><td>$22</td><td>6</td><td>600</td></tr></table><p>So the industry curve starts at (300 bushels, $10). Below $10, no farm wants to produce, so the industry supplies nothing.</p>"
+   },
+   {
+    "h": "Short-run market equilibrium",
+    "body": "<p>There is a <b>short-run market equilibrium</b> when the quantity supplied equals the quantity demanded, <b>taking the number of producers as given</b>.</p><p>In Figure 7-5 the short-run industry supply curve meets demand at E<sub>MKT</sub>: price <b>$18</b>, quantity <b>500 bushels</b>. Each of the 100 farms sells 5 bushels.</p>",
+    "chart": {
+     "x": "Quantity of tomatoes (bushels)",
+     "y": "Price, cost of bushel ($)",
+     "xmax": 750,
+     "ymax": 28,
+     "xticks": [
+      100,
+      200,
+      400,
+      600,
+      700
+     ],
+     "yticks": [
+      6,
+      14,
+      22,
+      26
+     ],
+     "lines": [
+      {
+       "pts": [
+        [
+         300,
+         10
+        ],
+        [
+         650,
+         24
+        ]
+       ],
+       "label": "S",
+       "role": "supply"
+      },
+      {
+       "pts": [
+        [
+         150,
+         20.8
+        ],
+        [
+         700,
+         16.4
+        ]
+       ],
+       "label": "D",
+       "role": "demand"
+      }
+     ],
+     "points": [
+      {
+       "x": 500,
+       "y": 18,
+       "label": "E",
+       "guides": true,
+       "show": true
+      },
+      {
+       "x": 300,
+       "y": 10,
+       "guides": true,
+       "show": true
+      }
+     ],
+     "caption": "Figure 7-5 (demand drawn approximately): supply starts at the shut-down price $10 (300 bushels) and meets demand at $18, 500 bushels."
+    }
+   },
+   {
+    "h": "Why it is only \"short run\"",
+    "body": "<p>At $18 each farm earns a profit: (18 &minus; 14.40) &times; 5 = <b>$18</b> (slide 9). Profit attracts new farms. But along the short-run curve the number of farms is fixed, so this cannot happen yet.</p><p>In the long run (slides 19&ndash;22) new farms enter, the supply curve shifts right, and the price falls until it reaches the break-even price, $14 (zero profit). That is the <b>long-run</b> equilibrium.</p><p>Exam key words: short run = <b>fixed number of producers</b>; long run = <b>entry and exit allowed</b>.</p>"
+   }
+  ],
+  "example": {
+   "problem": "<p>An industry has 100 identical firms. One firm supplies 0 units if P &lt; $10, and 3, 4, 5, 6 units at P = $10, $14, $18, $22. Market demand is: $10 &rarr; 900, $14 &rarr; 700, $18 &rarr; 500, $22 &rarr; 300 units.</p><ol><li>Build the short-run industry supply schedule.</li><li>Find the short-run market equilibrium.</li><li>What is assumed about the number of firms?</li></ol>",
+   "solution": "<ol><li>Multiply each firm's quantity by 100: $10 &rarr; 300, $14 &rarr; 400, $18 &rarr; 500, $22 &rarr; 600 (and 0 below $10).</li><li>Compare: at $14, Qd = 700 &gt; Qs = 400 (shortage, price rises). At $22, Qs = 600 &gt; Qd = 300 (surplus, price falls). At <b>$18, Qs = Qd = 500</b>. Equilibrium: P = $18, Q = 500; each firm sells 5.</li><li>The number of firms is <b>fixed at 100</b>. That is what makes it a short-run supply curve and a short-run equilibrium.</li></ol>"
+  },
+  "check": [
+   {
+    "q": "What is held fixed along the short-run industry supply curve?",
+    "a": "The number of producers."
+   },
+   {
+    "q": "Do we add prices or quantities to get industry supply?",
+    "a": "Quantities: at each price, Q = q<sub>1</sub> + q<sub>2</sub> + &hellip; + q<sub>k</sub> (horizontal summation)."
+   },
+   {
+    "q": "In Figure 7-5, why is there no supply below $10?",
+    "a": "$10 is the shut-down price (min AVC). Below it, every farm shuts down."
+   },
+   {
+    "q": "Define short-run market equilibrium.",
+    "a": "Quantity supplied = quantity demanded, taking the number of producers as given."
+   },
+   {
+    "q": "At E<sub>MKT</sub> ($18) farms earn profit. Is this a long-run equilibrium?",
+    "a": "No. Profit attracts entry; supply shifts right and the price falls toward the break-even price ($14)."
+   }
+  ],
+  "exam": {
+   "question": "<p>What is the short-run industry supply curve? What is a short-run market equilibrium? Explain how the industry supply curve is related to the supply curves of individual firms.</p>",
+   "answer": "<p>The <b>short-run industry supply curve</b> shows how the quantity supplied by an industry depends on the market price, given a <b>fixed number of producers</b>.</p><p>It is built from the individual supply curves: each firm supplies along its MC curve above minimum AVC, and at each price the quantities of all firms are added: Q = q<sub>1</sub> + q<sub>2</sub> + &hellip; + q<sub>k</sub>. As the price rises, each firm produces more, so the industry curve slopes upward. Below the shut-down price no firm produces.</p><p>A <b>short-run market equilibrium</b> exists when the quantity supplied equals the quantity demanded, taking the number of producers as given.</p><p><b>Example (Figure 7-5):</b> 100 tomato farms; below the shut-down price of $10 no farm produces. The short-run industry supply curve meets demand at $18 and 500 bushels (5 bushels per farm). It is \"short run\" because the number of producers cannot change; in the long run firms can enter or exit.</p>"
+  },
+  "memorize": [
+   "SR industry supply: industry Q vs price, FIXED number of producers",
+   "Built by adding firms' quantities at each price (horizontal sum)",
+   "Each firm: MC above min AVC; below shut-down price, 0",
+   "SR market equilibrium: Qs = Qd, number of producers given",
+   "Fig 7-5: 100 farms, shut-down $10 (300 bushels), equilibrium $18 and 500 bushels",
+   "Long run: entry/exit, price goes to break-even ($14)"
+  ]
+ }
+]

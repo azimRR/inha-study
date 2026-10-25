@@ -1,0 +1,167 @@
+/* CA midterm slides — shared styles (graph-paper exam sheet look) */
+:root {
+  --paper: #f5f7fb;
+  --sheet: #ffffff;
+  --grid: #e3e8f2;
+  --ink: #17223b;
+  --ink-soft: #4a5672;
+  --muted: #7b86a0;
+  --line: #d5dcea;
+  --blue: #2449d8;
+  --blue-soft: #e7ecff;
+  --red: #d22f45;
+  --red-soft: #fdeaed;
+  --green: #11865b;
+  --green-soft: #e3f5ec;
+  --amber: #b86e00;
+  --amber-soft: #fff3dc;
+  --node-black: #17223b;
+  --node-red: #d22f45;
+  --shadow: 0 1px 2px rgba(23, 34, 59, .06), 0 8px 28px rgba(23, 34, 59, .08);
+  --display: "Bricolage Grotesque", "Avenir Next", system-ui, sans-serif;
+  --body: "Atkinson Hyperlegible", "Segoe UI", system-ui, sans-serif;
+  --mono: "JetBrains Mono", ui-monospace, "SF Mono", Menlo, monospace;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #0f1424; --sheet: #161d31; --grid: #1c2440;
+    --ink: #e6ebf7; --ink-soft: #b3bdd6; --muted: #7f8aa8; --line: #2b3554;
+    --blue: #7d98ff; --blue-soft: #1f2a52;
+    --red: #ff6b7f; --red-soft: #3a1c27;
+    --green: #4fd19c; --green-soft: #13352a;
+    --amber: #ffb648; --amber-soft: #3a2b12;
+    --node-black: #0b0f1c; --node-red: #e04459;
+    --shadow: 0 1px 2px rgba(0,0,0,.3), 0 8px 28px rgba(0,0,0,.35);
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #0f1424; --sheet: #161d31; --grid: #1c2440;
+  --ink: #e6ebf7; --ink-soft: #b3bdd6; --muted: #7f8aa8; --line: #2b3554;
+  --blue: #7d98ff; --blue-soft: #1f2a52;
+  --red: #ff6b7f; --red-soft: #3a1c27;
+  --green: #4fd19c; --green-soft: #13352a;
+  --amber: #ffb648; --amber-soft: #3a2b12;
+  --node-black: #0b0f1c; --node-red: #e04459;
+  --shadow: 0 1px 2px rgba(0,0,0,.3), 0 8px 28px rgba(0,0,0,.35);
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; }
+body {
+  background-color: var(--paper);
+  background-image:
+    linear-gradient(var(--grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+  background-size: 24px 24px;
+  color: var(--ink);
+  font: 17px/1.55 var(--body);
+}
+a { color: var(--blue); }
+:focus-visible { outline: 3px solid var(--blue); outline-offset: 2px; border-radius: 4px; }
+h1, h2, h3 { font-family: var(--display); line-height: 1.12; text-wrap: balance; margin: 0; }
+code, .mono { font-family: var(--mono); font-size: .9em; }
+.tag {
+  display: inline-block; font: 600 12px/1 var(--body); letter-spacing: .08em; text-transform: uppercase;
+  color: var(--blue); background: var(--blue-soft); padding: 6px 9px; border-radius: 999px;
+}
+.btn {
+  display: inline-flex; align-items: center; gap: 8px; cursor: pointer;
+  font: 600 15px/1 var(--body); text-decoration: none;
+  padding: 11px 16px; border-radius: 10px; border: 1.5px solid var(--ink);
+  background: var(--ink); color: var(--sheet);
+}
+.btn:hover { background: var(--blue); border-color: var(--blue); }
+.btn.ghost { background: transparent; color: var(--ink); border-color: var(--line); }
+.btn.ghost:hover { border-color: var(--blue); color: var(--blue); }
+
+/* ---------- slide content blocks (used in viewer + home) ---------- */
+.lead { font-size: 1.25em; color: var(--ink-soft); max-width: 62ch; }
+.big { font-family: var(--display); font-size: 1.6em; line-height: 1.25; font-weight: 600; max-width: 30ch; }
+.box { border-radius: 12px; padding: 14px 18px; border: 1.5px solid var(--line); background: var(--sheet); }
+.simple { border-color: var(--blue); background: var(--blue-soft); }
+.simple::before { content: "In simple words"; }
+.tip { border-color: var(--green); background: var(--green-soft); }
+.tip::before { content: "Exam tip"; }
+.trap { border-color: var(--red); background: var(--red-soft); }
+.trap::before { content: "Trap"; }
+.why { border-color: var(--amber); background: var(--amber-soft); }
+.why::before { content: "Remember"; }
+.simple::before, .tip::before, .trap::before, .why::before {
+  display: block; font: 700 12px/1 var(--body); letter-spacing: .1em; text-transform: uppercase; margin-bottom: 8px;
+}
+.simple::before { color: var(--blue); }
+.tip::before { color: var(--green); }
+.trap::before { color: var(--red); }
+.why::before { color: var(--amber); }
+.box > :first-child { margin-top: 0; }
+.box > :last-child { margin-bottom: 0; }
+
+.cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 18px; align-items: start; }
+.stack { display: grid; gap: 14px; }
+.scroll { overflow-x: auto; max-width: 100%; }
+table { border-collapse: collapse; font-variant-numeric: tabular-nums; width: 100%; font-size: .92em; }
+th, td { border: 1px solid var(--line); padding: 7px 10px; text-align: left; vertical-align: top; }
+th { background: var(--grid); font-weight: 700; }
+td.c, th.c { text-align: center; }
+.hl { background: var(--amber-soft); font-weight: 700; }
+.sw { color: var(--red); font-weight: 700; }
+.ok { color: var(--green); font-weight: 700; }
+.no { color: var(--red); font-weight: 700; }
+pre {
+  font-family: var(--mono); font-size: .82em; line-height: 1.5; margin: 0;
+  background: var(--sheet); border: 1.5px solid var(--line); border-radius: 12px;
+  padding: 14px 16px; overflow-x: auto; max-width: 100%;
+}
+pre .k { color: var(--blue); font-weight: 700; }
+pre .c { color: var(--muted); }
+.R { color: var(--node-red); font-weight: 700; }
+.B { font-weight: 700; }
+ol.steps, ul.dots { margin: 0; padding-left: 1.3em; display: grid; gap: 6px; }
+ol.steps li::marker { font-weight: 700; color: var(--blue); }
+.pill { display: inline-block; padding: 2px 8px; border-radius: 6px; font-weight: 700; font-size: .9em; }
+.pill.red { background: var(--red-soft); color: var(--red); }
+.pill.blue { background: var(--blue-soft); color: var(--blue); }
+.pill.green { background: var(--green-soft); color: var(--green); }
+.formula {
+  font-family: var(--mono); font-size: 1.05em; background: var(--sheet); border: 1.5px dashed var(--blue);
+  border-radius: 10px; padding: 10px 14px; display: inline-block;
+}
+
+/* reveal answers */
+details.ans { border: 1.5px solid var(--green); border-radius: 12px; background: var(--sheet); }
+details.ans summary {
+  cursor: pointer; padding: 10px 14px; font-weight: 700; color: var(--green); list-style: none;
+}
+details.ans summary::-webkit-details-marker { display: none; }
+details.ans summary::before { content: "▸ "; }
+details.ans[open] summary::before { content: "▾ "; }
+details.ans > div { padding: 0 14px 14px; }
+
+/* RB tree drawing */
+.tree { display: flex; justify-content: center; overflow-x: auto; padding: 4px 0; }
+.tree svg { max-width: 100%; height: auto; }
+.tree text { font: 700 14px var(--mono); fill: #fff; }
+.tree .edge { stroke: var(--muted); stroke-width: 2; }
+.tree .nb { fill: var(--node-black); stroke: var(--ink); stroke-width: 1.5; }
+.tree .nr { fill: var(--node-red); }
+.tree .nil { fill: var(--sheet); stroke: var(--muted); stroke-dasharray: 3 3; }
+.tree .cap { font: 600 13px var(--body); fill: var(--ink-soft); }
+
+@media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
+
+/* midterm question slides */
+.qbox { border-color: var(--ink); }
+.qbox::before { content: "Likely exam question"; display: block; font: 700 12px/1 var(--body); letter-spacing: .1em; text-transform: uppercase; margin-bottom: 8px; color: var(--ink); }
+.cand-head { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
+.cand-head a { font-weight: 700; font-size: 14px; color: var(--red); }
+.why-line { color: var(--muted); font-size: .92em; }
+.thumbs { display: flex; gap: 10px; overflow-x: auto; padding-bottom: 4px; }
+.thumb { flex: none; width: min(300px, 80%); display: grid; gap: 4px; text-decoration: none; color: var(--muted); font: 700 12px var(--mono); }
+.thumb img { width: 100%; border: 1.5px solid var(--line); border-radius: 8px; background: #fff; }
+.thumb:hover img { border-color: var(--blue); }
+details.alt { border: 1.5px dashed var(--line); border-radius: 12px; padding: 10px 14px; }
+details.alt summary { cursor: pointer; font-weight: 700; color: var(--ink-soft); }
+details.alt[open] summary { margin-bottom: 12px; }

@@ -1,0 +1,397 @@
+[
+ {
+  "id": "W2-1",
+  "label": "W2·1",
+  "week": "W2",
+  "slides": [
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   11,
+   12,
+   15
+  ],
+  "kind": "theory",
+  "title": "Agile: the Manifesto, the 12 principles, and Agile vs Waterfall",
+  "hook": "After this lesson you can write the 4 Agile values, name the 12 principles, compare Agile with Waterfall, and draw the typical Agile methodology.",
+  "cards": [
+   {
+    "h": "The big idea: small pieces, fast feedback",
+    "body": "<p>Imagine you build a <b>Tashkent café ordering app</b>.</p><ul><li><b>Traditional way:</b> you plan everything, analyse, design and build for a year. Then you show the owner. He says: \"This is not what I wanted.\" Real feedback comes only at the very end.</li><li><b>Agile way:</b> after 2 weeks you show him a small working menu screen. He says \"add photos\". You adjust. After 2 more weeks you show ordering. The app grows piece by piece.</li></ul><p>The slide picture: Ideas go into small <b>Define → Code → Test</b> cycles. Each cycle gives an increment (i1, i2, i3), and the cubes get bigger. After each one: <b>Review and Adjust</b>.</p><p>In the slide's words, Agile is \"an <b>iterative</b> approach to software development\". Each iteration takes <b>1 to 4 weeks</b>. Single-phase (traditional) development \"takes <b>6 to 18 months</b>\", and all requirements and risks are \"predicted initially\".</p>",
+    "diagram": "flowchart LR\n  I([\"Ideas\"]) --> C1((\"Define Code Test\"))\n  C1 --> I1[\"i1 small\"]\n  I1 -->|review and adjust| C2((\"Define Code Test\"))\n  C2 --> I2[\"i2 bigger\"]\n  I2 -->|review and adjust| C3((\"Define Code Test\"))\n  C3 --> I3[\"i3 bigger still\"]\n  I3 -->|review and adjust| F([\"Final software\"])"
+   },
+   {
+    "h": "The Agile Manifesto: 4 values",
+    "body": "<p>In 2001, <b>17 people</b> signed the Agile Manifesto. Two of them, <b>Jeff Sutherland and Ken Schwaber</b>, later gave us Scrum.</p><table><tr><th>We value MORE (left)</th><th></th><th>over (right)</th></tr><tr><td><b>Individuals and interactions</b></td><td>over</td><td>processes and tools</td></tr><tr><td><b>Working software</b></td><td>over</td><td>comprehensive documentation</td></tr><tr><td><b>Customer collaboration</b></td><td>over</td><td>contract negotiation</td></tr><tr><td><b>Responding to change</b></td><td>over</td><td>following a plan</td></tr></table><p><b>Important nuance:</b> the right side is not bad. \"While there is value in the items on the right, we value the items on the left more.\"</p><p>Exam trap: an MCQ may flip one pair, for example \"Contract negotiation over customer collaboration\". That one is NOT a value.</p>"
+   },
+   {
+    "h": "The 12 principles (1–6): customers and people",
+    "body": "<p>The 4 values are unpacked into 12 principles. Learn the <b>names</b> (bold on the slides) and one idea each.</p><ol><li><b>Customer Satisfaction</b>: satisfy the customer by early and continuous delivery of valuable software.</li><li><b>Welcome Change</b>: changing requirements are welcome, \"even in the late development phase\".</li><li><b>Deliver the Working Software</b>: deliver often, from a few weeks to a few months; prefer the shortest time.</li><li><b>Collaboration</b>: business people and developers work together during the whole project.</li><li><b>Motivation</b>: build projects around motivated people; support them and trust them.</li><li><b>Face-to-face Conversation</b>: the most efficient and effective way to share information.</li></ol><p>Memory hook: <i>Customer, Change, Deliver</i> (what the customer gets), then <i>Collaboration, Motivation, Face-to-face</i> (how people work).</p>"
+   },
+   {
+    "h": "The 12 principles (7–12): progress and team habits",
+    "body": "<ol start=\"7\"><li><b>Measure the Progress as per the Working Software</b>: working software is \"the key and primary measure of the progress\" (not pages of documents).</li><li><b>Maintain Constant Pace</b>: sustainable development; everyone can keep the same pace for a long time (no burnout).</li><li><b>Monitoring</b>: regular attention to technical excellence and good design.</li><li><b>Simplicity</b>: keep things simple; do not do unnecessary work.</li><li><b>Self-organized Teams</b>: the best architectures, requirements and designs come from self-organized teams.</li><li><b>Review the Work Regularly</b>: at regular intervals the team reflects and adjusts how it works.</li></ol><p>Memory hook: the <b>3 M's</b> (Measure, Maintain, Monitoring), then <b>S-S-R</b> (Simplicity, Self-organized, Review).</p>"
+   },
+   {
+    "h": "Agile vs Waterfall: the class table",
+    "body": "<table><tr><th>Agile methodology</th><th>Waterfall model</th></tr><tr><td>incremental approach</td><td>sequential design process</td></tr><tr><td>project is divided into <b>sprints</b></td><td>process is divided into <b>distinct phases</b></td></tr><tr><td><b>flexible</b></td><td><b>structured</b></td></tr><tr><td>a collection of many different (small) projects</td><td>completed as <b>one single project</b></td></tr><tr><td>test plan reviewed <b>after each sprint</b></td><td>test plan reviewed <b>after complete development</b></td></tr><tr><td>testers can join requirement changes without problems</td><td>hard for testers to start any change</td></tr></table><p>Two more facts: Agile is \"not a specific set of ceremonies\". It is \"a group of methodologies\" with tight feedback cycles and continuous improvement. Slide 12 says one iteration takes <b>10 to 15 days</b> (about 2 weeks), which fits \"1 to 4 weeks\". The original Manifesto did <b>not</b> fix 2-week iterations or a team size.</p>"
+   },
+   {
+    "h": "Cargo cult: copying the form is not Agile",
+    "body": "<p>Slide 6 shows photos from Melanesia: a straw airplane, a wooden headset, a radar dish made of sticks. People believed \"cargo\" (Western goods) came from ancestral spirits, so they copied the <i>shape</i> of airports and radios, hoping the cargo would come.</p><p>The copies look real, but they cannot fly or talk.</p><p><b>The lesson (my reading; the slide gives no text):</b> a team can copy Agile rituals, such as stand-up meetings, sprints and sticky notes, without the <b>values</b> behind them. Then it is \"cargo cult Agile\": it looks Agile but brings no results. The Dilbert comic on slide 34 makes the same joke: removing chairs does not fix a company.</p>"
+   }
+  ],
+  "example": {
+   "problem": "<p>The café app team gets these situations. For each one, name the Manifesto <b>value</b> or the <b>principle</b> it shows.</p><ol><li>In month 5 the owner asks to add Click payment. The team says \"yes, next iteration\".</li><li>The manager asks \"how far are we?\" The team shows the running app, not a 60-page report.</li><li>The team refuses to work every weekend for 3 months.</li><li>Instead of long e-mails, the developer walks to the owner's table and asks.</li><li>Every two weeks the team meets to discuss how to work better.</li></ol>",
+   "solution": "<ol><li>Value: <b>Responding to change over following a plan</b>. Principle: <b>Welcome Change</b>.</li><li>Value: <b>Working software over comprehensive documentation</b>. Principle: <b>Measure the Progress as per the Working Software</b>.</li><li>Principle: <b>Maintain Constant Pace</b> (sustainable development).</li><li>Value: <b>Individuals and interactions over processes and tools</b>. Principle: <b>Face-to-face Conversation</b>.</li><li>Principle: <b>Review the Work Regularly</b>.</li></ol>"
+  },
+  "check": [
+   {
+    "q": "Which is NOT an Agile Manifesto value? (A) Individuals and interactions over processes and tools (B) Working software over comprehensive documentation (C) Contract negotiation over customer collaboration (D) Responding to change over following a plan",
+    "a": "<b>C</b>. The real value is \"Customer collaboration over contract negotiation\"; C flips it."
+   },
+   {
+    "q": "How long is one Agile iteration, and how long is single-phase development, according to the slides?",
+    "a": "Agile iteration: <b>1 to 4 weeks</b> (slide 12: 10 to 15 days). Single-phase: <b>6 to 18 months</b>."
+   },
+   {
+    "q": "Match: (a) \"Pay regular attention to technical excellence and good design\" (b) \"The aim of agile development is sustainable development\" (c) \"Working software is the primary measure of progress\"",
+    "a": "(a) <b>Monitoring</b> · (b) <b>Maintain Constant Pace</b> · (c) <b>Measure the Progress as per the Working Software</b>."
+   },
+   {
+    "q": "Which describes the Waterfall model? (A) incremental approach (B) test plan reviewed after each sprint (C) completed as one single project (D) testers join requirement changes without problems",
+    "a": "<b>C</b>. A, B and D describe Agile."
+   },
+   {
+    "q": "Does the Manifesto say the items on the right (processes, documentation, contracts, plans) have no value?",
+    "a": "No. \"While there is value in the items on the right, we value the items on the left <b>more</b>.\""
+   }
+  ],
+  "exam": {
+   "question": "<p><b>Depict graphically: the typical Agile development methodology.</b> Add 2–3 sentences explaining it.</p>",
+   "answer": "<p>Draw one block with the four phases <b>Planning, Analysis, Design, Implementation</b>. An arrow goes to <b>System</b>, and from System an arrow goes back up into Planning (the loop).</p><p>Explanation: every iteration is a small, complete project that runs through all four phases. Each iteration lasts <b>1 to 4 weeks</b> and ends with working software. The team gets feedback and starts the next iteration, so the system grows piece by piece and change is easy.</p>",
+   "diagram": "flowchart LR\n  ID([\"Ideas\"]) --> P\n  subgraph IT[\"One iteration = 1 to 4 weeks\"]\n    P[\"Planning\"] --> A[\"Analysis\"]\n    A --> DS[\"Design\"]\n    DS --> IM[\"Implementation\"]\n  end\n  IM --> SY([\"System - a working piece\"])\n  SY -->|feedback, next iteration| P"
+  },
+  "memorize": [
+   "17 signers; Sutherland and Schwaber also created Scrum",
+   "4 values: individuals and interactions, working software, customer collaboration, responding to change (each OVER the right side)",
+   "12 principles: Customer Satisfaction, Welcome Change, Deliver the Working Software, Collaboration, Motivation, Face-to-face Conversation, Measure the Progress as per the Working Software, Maintain Constant Pace, Monitoring, Simplicity, Self-organized Teams, Review the Work Regularly",
+   "Iteration 1–4 weeks (or 10–15 days); single-phase 6–18 months",
+   "Agile = incremental, sprints, flexible, many small projects; Waterfall = sequential, phases, structured, one single project"
+  ],
+  "note": "Slide errors, said kindly: slides 4–5 say \"Principle\" (should be Principles) and \"Project Owner\" (should be Product Owner). Principles 4 and 6 on the slide mention the Scrum Master, but the Manifesto itself speaks of business people and developers in general. In the S7 agile picture, \"First Time to get real feedback\" also sits next to Final Software, which is confusing; trust the S11 text: Agile \"frequently takes the feedback\". The Simplicity wording on slide 5 is unclear; the original idea is \"avoid unnecessary work\"."
+ },
+ {
+  "id": "W2-2",
+  "label": "W2·2",
+  "week": "W2",
+  "slides": [
+   8,
+   9,
+   10,
+   16,
+   17,
+   18,
+   19,
+   20,
+   21,
+   22,
+   23,
+   24,
+   25,
+   26
+  ],
+  "kind": "theory",
+  "title": "Scrum: the framework and its three roles",
+  "hook": "After this lesson you can define Scrum, name its three roles, and say exactly who does what (and who may NOT do what).",
+  "cards": [
+   {
+    "h": "Scrum is a framework, not a recipe",
+    "body": "<p><b>Creators:</b> Jeff Sutherland and Ken Schwaber. Used by Microsoft, Yahoo, Google, Electronic Arts, IBM, Lockheed Martin, Apple. Used even for fixed-price projects, life-critical (FDA-approved) systems, satellite software and the Joint Strike Fighter, so it is not only for small websites.</p><p>Definition: \"A <b>framework</b> within which people can address complex adaptive problems, while productively and creatively delivering products of the highest possible value.\"</p><p>⭐ \"Scrum is <b>not</b> a process, technique, or definitive method.\" It is a framework within which you can use various processes and techniques.</p><p>Think of football: the <b>rules</b> are fixed (field, players, 90 minutes), but each team picks its own tactics. Scrum gives the rules; the team picks the techniques.</p><p>⭐ Formula: <b>Scrum = roles + events + artifacts + rules</b>. The rules bind the roles, events and artifacts together.</p>"
+   },
+   {
+    "h": "The Scrum Team: three roles, two key features",
+    "body": "<p>\"The Scrum Team consists of a <b>Product Owner</b>, the <b>Development Team</b>, and a <b>Scrum Master</b>.\"</p><ul><li><b>Self-organizing</b>: the team chooses <i>how</i> to do its work; nobody outside the team directs it.</li><li><b>Cross-functional</b>: the team has <i>all the skills</i> needed and does not depend on outsiders.</li></ul><p>Goal of this model: flexibility, creativity and productivity.</p>",
+    "diagram": "flowchart TD\n  ST[\"Scrum Team: self-organizing and cross-functional\"] --> PO([\"Product Owner: WHAT to build, value, priorities\"])\n  ST --> DT([\"Development Team: HOW to build, makes the Increment\"])\n  ST --> SM([\"Scrum Master: servant-leader, Scrum coach\"])\n  SM -.->|serves| PO\n  SM -.->|serves| DT\n  SM -.->|serves| ORG[\"The organization\"]"
+   },
+   {
+    "h": "Product Owner: the voice of value (WHAT)",
+    "body": "<p>The PO \"is responsible for maximizing the value of the product resulting from work of the Development Team\".</p><p>Six duties on the slide:</p><ul><li>define the features of the product</li><li>make scope vs. schedule decisions</li><li>be responsible for the project's financial goals</li><li><b>prioritize the product backlog</b></li><li>adjust features and priority every sprint, as needed</li><li>accept or reject work results</li></ul><p>Other PO powers in the deck: <b>only the PO can cancel a Sprint</b>; the PO invites stakeholders to the Sprint Review.</p><p>Café example: the PO decides that Click payment is more valuable than dark mode, so it goes to the top of the list.</p>"
+   },
+   {
+    "h": "Development Team: the builders (HOW)",
+    "body": "<p>Professionals who deliver a potentially releasable <b>Increment</b> of \"Done\" product at the end of each Sprint.</p><ul><li>⭐ <b>Only</b> members of the Development Team create the Increment.</li><li><b>Self-organizing</b>: no one, \"not even the Scrum Master\", tells them how to turn the backlog into working software.</li><li><b>Cross-functional</b>: programmers, testers, UX designers and so on.</li><li><b>No titles</b>: everyone is just a \"Development Team member\".</li><li><b>No sub-teams</b>: no separate \"testing team\" or \"architecture team\" inside.</li><li>People may have special skills, but <b>accountability belongs to the whole team</b>.</li></ul>"
+   },
+   {
+    "h": "Team size and membership",
+    "body": "<ul><li>Typically <b>5–9 people</b>: small enough to stay nimble, big enough to finish real work in a Sprint.</li><li><b>Too small</b>: skill gaps, so they may fail to deliver an Increment.</li><li><b>More than nine</b>: \"requires too much coordination\"; too complex.</li><li>The PO and Scrum Master are <b>not counted</b>, unless they also do Sprint Backlog work.</li><li>Members should be <b>full-time</b> (exceptions are possible, for example a database administrator).</li><li>Membership changes <b>only between sprints</b>.</li></ul><p>Note: slide 20 says \"Scrum recognizes no titles\", while slide 22 says \"Ideally, no titles but rarely a possibility\". Ideal vs reality.</p>"
+   },
+   {
+    "h": "Scrum Master: the servant-leader",
+    "body": "<p>⭐ \"The Scrum Master is responsible for promoting and supporting Scrum as defined in the Scrum Guide.\" The SM helps everyone understand Scrum theory, practices, rules and values.</p><p>\"The Scrum Master is a <b>servant-leader</b> for the Scrum Team.\" In simple words: the SM is <b>not a boss</b> who gives orders. The SM leads by helping, like a coach who clears the road so the players can play.</p><p>The SM also helps people <b>outside</b> the team see which of their interactions with the team help and which do not. Example: the café owner's manager keeps interrupting the developers every hour, and the SM helps him change that.</p>"
+   },
+   {
+    "h": "Whom the Scrum Master serves: 7 + 5 + 5",
+    "body": "<table><tr><th>Serves</th><th>Key words</th></tr><tr><td><b>Product Owner</b> (7 ways)</td><td>goals, scope and domain understood by all · techniques for Product Backlog management · clear and concise backlog items · product planning in an empirical environment · arrange the backlog to maximize value · practice agility · facilitate events</td></tr><tr><td><b>Development Team</b> (5 ways)</td><td>coach self-organization and cross-functionality · help create high-value products · ⭐ <b>remove impediments</b> · facilitate events · coach where Scrum is not yet adopted</td></tr><tr><td><b>Organization</b> (5 ways)</td><td>lead and coach Scrum adoption · plan Scrum implementations · help staff and stakeholders enact Scrum · cause change that raises team productivity · work with other Scrum Masters</td></tr></table><p>\"Impediment\" = anything that blocks the team (a broken test server, a missing password, a noisy meeting).</p>"
+   }
+  ],
+  "example": {
+   "problem": "<p>Café app project. Who is responsible, or is it not allowed in Scrum?</p><ol><li>Deciding that loyalty points come before dark mode.</li><li>Deciding which database library to use for orders.</li><li>The test server is down for two days and the team is blocked.</li><li>A tester asks for the title \"QA Lead\" and a separate testing sub-team.</li><li>The team has 12 developers plus a PO and an SM.</li><li>The market changes and the Sprint Goal becomes useless. Who may cancel the Sprint?</li></ol>",
+   "solution": "<ol><li><b>Product Owner</b> (prioritizes the product backlog).</li><li><b>Development Team</b> (self-organizing: they decide HOW).</li><li><b>Scrum Master</b> (removing impediments).</li><li><b>Not allowed</b>: Scrum recognizes no titles and no sub-teams in the Development Team.</li><li>Too big: more than nine requires too much coordination. Split into smaller teams of 5–9.</li><li><b>Only the Product Owner</b> (others may influence the PO).</li></ol>"
+  },
+  "check": [
+   {
+    "q": "Scrum is: (A) a process (B) a technique (C) a definitive method (D) a framework within which you can employ various processes and techniques",
+    "a": "<b>D</b>."
+   },
+   {
+    "q": "Complete: \"The Scrum framework consists of Scrum Team members and their associated ______, ______, ______, and ______.\"",
+    "a": "<b>roles, events, artifacts, and rules</b>."
+   },
+   {
+    "q": "Who creates the Increment? Who tells the Development Team how to build it?",
+    "a": "Only the <b>Development Team</b> creates the Increment. <b>No one</b> tells them how, not even the Scrum Master."
+   },
+   {
+    "q": "A team has 11 people: 9 developers, a PO and an SM who do no Sprint Backlog work. Is the Development Team size OK?",
+    "a": "Yes. The PO and SM are not counted, so the Development Team is <b>9</b>, still within 5–9."
+   },
+   {
+    "q": "Which role \"removes impediments to the Development Team's progress\", and what kind of leader is it?",
+    "a": "The <b>Scrum Master</b>, a <b>servant-leader</b>."
+   }
+  ],
+  "exam": {
+   "question": "<p>Name the three roles of the Scrum Team and give the main responsibilities of each.</p>",
+   "answer": "<table><tr><th>Role</th><th>Main responsibilities</th></tr><tr><td><b>Product Owner</b></td><td>Maximizes the value of the product. Defines features, prioritizes the Product Backlog, makes scope vs. schedule decisions, owns the financial goals, accepts or rejects work results. Only the PO can cancel a Sprint.</td></tr><tr><td><b>Development Team</b></td><td>5–9 professionals who build the \"Done\" Increment every Sprint. Self-organizing and cross-functional; no titles, no sub-teams; accountable as a whole.</td></tr><tr><td><b>Scrum Master</b></td><td>Servant-leader who promotes and supports Scrum as defined in the Scrum Guide. Serves the PO, the Development Team (for example, removing impediments) and the organization.</td></tr></table>"
+  },
+  "memorize": [
+   "Creators: Jeff Sutherland and Ken Schwaber",
+   "Scrum = roles + events + artifacts + rules; a framework, not a process",
+   "3 roles: Product Owner, Development Team, Scrum Master",
+   "Self-organizing = chooses HOW itself; cross-functional = has all skills",
+   "PO: value, prioritizes backlog, accepts or rejects, only one who cancels a Sprint",
+   "Dev Team: only creator of the Increment; no titles; no sub-teams; 5–9; more than 9 is too many; PO and SM not counted",
+   "SM: servant-leader; serves PO (7), Dev Team (5, remove impediments), organization (5)"
+  ],
+  "note": "The slides use the older (pre-2020) Scrum Guide wording: \"Development Team\" and \"servant-leader\". The 2020 Scrum Guide says \"Developers\" and calls the roles \"accountabilities\". On the exam, use the slides' words."
+ },
+ {
+  "id": "W2-3",
+  "label": "W2·3",
+  "week": "W2",
+  "slides": [
+   13,
+   14,
+   27,
+   28,
+   29,
+   30,
+   31,
+   32,
+   33,
+   34,
+   35,
+   36,
+   37,
+   38,
+   39,
+   40,
+   41,
+   42,
+   43,
+   44,
+   45,
+   46
+  ],
+  "kind": "drawing",
+  "title": "Scrum events and artifacts: drawing the Sprint cycle",
+  "hook": "After this lesson you can draw the Scrum Sprint cycle from memory, give every event's time-box, and explain the Product Backlog, the Sprint Backlog and user stories.",
+  "cards": [
+   {
+    "h": "The Sprint cycle in one picture",
+    "body": "<p>This is the main picture of the deck (shown 3 times). Follow the café app:</p><ol><li>Executives, stakeholders, customers and users send ideas to the <b>Product Owner</b>.</li><li>The PO keeps a ranked list: the <b>Product Backlog</b> (features, stories…).</li><li>At the <b>Sprint Planning Meeting</b>, the team selects from the top as much as it can commit to finish by the end of the Sprint.</li><li>The chosen items are broken into tasks: the <b>Sprint Backlog</b>.</li><li>The <b>1–4 week Sprint</b> runs, with a <b>Daily Scrum</b> every 24 hours. The Scrum Master watches over it, with burndown charts (a chart of the work left, going down day by day; not explained on the slides).</li><li>Result: <b>Finished Work</b> (the Increment), then the <b>Sprint Review</b> and the <b>Sprint Retrospective</b>.</li></ol><p>⭐ Caption: \"Sprint end date and team deliverable do not change.\"</p>",
+    "diagram": "flowchart LR\n  IN[\"Inputs: executives, team, stakeholders, customers, users\"] --> PO([\"Product Owner\"])\n  PO --> PB[\"Product Backlog: ranked list\"]\n  PB --> SP[\"Sprint Planning Meeting\"]\n  SP --> SB[\"Sprint Backlog: task breakout\"]\n  SB --> SPR((\"1-4 week Sprint\"))\n  SPR --> DS((\"Daily Scrum every 24 hours\"))\n  DS --> SPR\n  SPR --> FW[\"Finished Work = Increment\"]\n  FW --> RV[\"Sprint Review\"]\n  RV --> RT[\"Sprint Retrospective\"]\n  RT -.->|next Sprint starts at once| SP"
+   },
+   {
+    "h": "Time-boxes and the rules of a Sprint",
+    "body": "<p>⭐ \"All events are time-boxed\": each has a <b>maximum</b> length. The <b>Sprint</b> is special: its length is <b>fixed</b> and cannot be shortened or lengthened. The other events may end early when their purpose is done.</p><table><tr><th>Event</th><th>Time-box (one-month Sprint)</th></tr><tr><td>Sprint (\"the heart of Scrum\", a container for all other events)</td><td>one month or less; the next starts immediately</td></tr><tr><td>Sprint Planning</td><td>max <b>8 hours</b></td></tr><tr><td>Daily Scrum</td><td><b>15 minutes</b>, every day</td></tr><tr><td>Sprint Review</td><td>not given on the slides</td></tr><tr><td>Sprint Retrospective</td><td>max <b>3 hours</b></td></tr></table><p><b>During the Sprint:</b> no changes that endanger the Sprint Goal; quality goals do not decrease; scope may be clarified and re-negotiated between the PO and the Development Team.</p><p><b>Cancelling:</b> only the <b>PO</b> can cancel, when the Sprint Goal becomes <b>obsolete</b> (the company changes direction, or the market or technology changes). \"Done\" items are reviewed; incomplete items are re-estimated and put back on the Product Backlog. It is very uncommon and often traumatic.</p>"
+   },
+   {
+    "h": "Sprint Planning and the Sprint Goal",
+    "body": "<p>The <b>whole Scrum Team</b> plans the Sprint together (max 8 h for a one-month Sprint). It answers two questions:</p><ol><li><b>What</b> can be delivered in the Increment of this Sprint?</li><li><b>How</b> will the work needed be achieved?</li></ol><p>The <b>Sprint Goal</b> is created here. It is the <b>why</b> of the Sprint: one objective, often \"one coherent function\". Slide example: \"Sprint 7: implement basic shopping cart functionality including add, remove, and update.\" The goal gives the team some flexibility in what exactly it builds.</p><p>Factors (slide 33): <b>The What</b> (PO describes the goal and items), <b>The How</b> (Dev Team plans the work), <b>The Who</b> (PO defines value; developers say what is possible), <b>The Inputs</b> (the Product Backlog), <b>The Outputs</b> (the goal and how to start).</p>"
+   },
+   {
+    "h": "Daily Scrum: 15 minutes, every day",
+    "body": "<ul><li>A <b>15-minute</b> stand-up for the <b>Development Team</b>.</li><li>Every day, at the <b>same time and place</b> (less complexity).</li><li>The team plans the <b>next 24 hours</b> and inspects progress toward the Sprint Goal and the Sprint Backlog.</li><li>⭐ The <b>Development Team sets the structure</b>. The slide's example card: <b>Did? Doing? Dam?</b></li></ul><p>In plain words: What did I do yesterday? What will I do today? What is blocking me (a \"dam\" in the river)? Blockers go to the Scrum Master, who removes impediments.</p><p>Café example: \"Yesterday I finished the menu API. Today I start the cart. I am blocked: no Click test account.\"</p>"
+   },
+   {
+    "h": "Sprint Review vs Sprint Retrospective",
+    "body": "<table><tr><th></th><th>Sprint Review</th><th>Sprint Retrospective</th></tr><tr><td>Looks at</td><td>the <b>product</b>: what is \"Done\", the Increment, the backlog, the market, timeline and budget</td><td>the <b>team itself</b>: people, relationships, process and tools</td></tr><tr><td>Who</td><td>Scrum Team + <b>key stakeholders invited by the PO</b></td><td>the Scrum Team only</td></tr><tr><td>What happens</td><td>PO explains what is Done / not Done; Dev Team <b>demonstrates</b> the work and answers questions; everyone decides what to do next</td><td>list what went well and what to improve; make a plan for improvements</td></tr><tr><td>Output</td><td>input for the next Sprint Planning</td><td>improvement plan for the next Sprint</td></tr><tr><td>Time-box</td><td>not on the slides</td><td>max <b>3 h</b></td></tr></table><p>Order: <b>Review first, then Retrospective</b>, then the next Sprint Planning. Memory: Review = \"what did we build?\", Retro = \"how did we work?\".</p>"
+   },
+   {
+    "h": "Product Backlog and user stories",
+    "body": "<p><b>Product Backlog</b>: \"a list of all desired work on the project\". <b>Prioritized by the PO</b>, reprioritized at the start of each Sprint, most important on top. It starts with the <b>two R's: roadmap and requirements</b> (roadmap → epics → user stories). The team <b>pulls</b> work from it; the PO does not push.</p><p>PO prioritizes by: customer priority, importance of getting feedback, relative implementation difficulty, symbiotic (linked) relationships between items.</p><p>Items are <b>user requirements</b> (user stories): \"As a &lt;User Role&gt; I want &lt;Functionality&gt; so that &lt;Business Value&gt;\" (or \"In order to &lt;Business value&gt; as a &lt;User Role&gt; I want &lt;Functionality&gt;\"). Hotel example: \"As a guest, I want to cancel a reservation.\" Estimate 5.</p><ul><li>Story = <b>WHAT</b>; rough estimate in <b>relative scale points</b> at release planning.</li><li>Task = <b>HOW</b>; estimated in <b>hours, usually 2–12</b>, at iteration planning.</li><li>Stories are validated by <b>acceptance tests</b> (pass or fail).</li></ul>",
+    "diagram": "flowchart TD\n  US([\"User story: As a student I want to register for a course so that I can follow my study plan\"])\n  US --> T1[\"Task 1: course list screen - 8 h\"]\n  US --> T2[\"Task 2: save registration in the database - 4 h\"]\n  US --> A1([\"Acceptance test 1: registration is saved - PASS\"])\n  US --> A2([\"Acceptance test 2: a full course is refused - FAIL\"])"
+   },
+   {
+    "h": "Sprint Backlog, transparency and \"Done\"",
+    "body": "<p><b>Sprint Backlog</b> = the Product Backlog items selected for the Sprint <b>+ a plan</b> to deliver the Increment and reach the Sprint Goal. It is \"a <b>forecast</b> by the Development Team\".</p><ul><li>Individuals <b>sign up</b> for work; work is <b>never assigned</b>.</li><li>Work remaining is updated <b>daily</b>.</li><li><b>Any team member</b> can add, delete or change it.</li><li>Unclear work? Make a bigger item now and break it down later.</li></ul><p><b>Artifacts</b> exist for transparency, so everyone has the same picture. The slide lists <b>two</b>: Product Backlog and Sprint Backlog. The <b>Scrum Master</b> checks that the artifacts are completely transparent.</p><p><b>Definition of \"Done\"</b>: everyone must share the same meaning of \"Done\" for an item or Increment. It may vary per team, but inside the team it is shared, and it is used to judge when work is complete.</p>",
+    "diagram": "flowchart LR\n  subgraph PB[\"Product Backlog - the PO ranks it\"]\n    P1[\"1 Click payment\"] --> P2[\"2 Order history\"]\n    P2 --> P3[\"3 Loyalty points\"]\n    P3 --> P4[\"4 Dark mode\"]\n  end\n  subgraph SBK[\"Sprint Backlog - the team's forecast\"]\n    S1[\"Click payment: 3 tasks\"]\n    S2[\"Order history: 2 tasks\"]\n  end\n  P1 -->|team pulls| S1\n  P2 -->|team pulls| S2"
+   }
+  ],
+  "example": {
+   "problem": "<p>For the university <b>course-registration system</b>: (a) write one user requirement in the class template; (b) split it into two tasks with estimates; (c) give two acceptance tests; (d) say how the story and the tasks are estimated.</p>",
+   "solution": "<p>(a) \"As a <b>student</b> I want <b>to register for a course</b> so that <b>I can follow my study plan</b>.\"</p><p>(b) Task 1: build the course list screen, <b>8 h</b>. Task 2: save the registration in the database, <b>4 h</b>. Both are inside the 2–12 hour range.</p><p>(c) Acceptance test 1: after registering, the course appears in my timetable (pass/fail). Acceptance test 2: a full course refuses the registration (pass/fail).</p><p>(d) The story gets a rough estimate in <b>relative scale points</b> at release planning. The tasks are estimated in <b>hours</b> at iteration planning.</p>",
+   "diagram": "flowchart TD\n  US([\"User story: As a student I want to register for a course so that I can follow my study plan\"])\n  US --> T1[\"Task 1: course list screen - 8 h\"]\n  US --> T2[\"Task 2: save registration in the database - 4 h\"]\n  US --> A1([\"Acceptance test 1: registration is saved - PASS\"])\n  US --> A2([\"Acceptance test 2: a full course is refused - FAIL\"])"
+  },
+  "check": [
+   {
+    "q": "Put in order: Sprint Retrospective, Sprint Planning, Sprint Review, Daily Scrum.",
+    "a": "Sprint Planning → Daily Scrums (during the development work) → Sprint Review → Sprint Retrospective."
+   },
+   {
+    "q": "Which event is at most 3 hours for a one-month Sprint and happens after the Sprint Review?",
+    "a": "The <b>Sprint Retrospective</b>. It inspects people, relationships, process and tools and makes an improvement plan."
+   },
+   {
+    "q": "True or false: once a Sprint begins, it can be lengthened if the team needs more time.",
+    "a": "<b>False</b>. Its duration is fixed; it cannot be shortened or lengthened."
+   },
+   {
+    "q": "During the Sprint, which is allowed? (A) changes that endanger the Sprint Goal (B) lowering quality goals (C) clarifying and re-negotiating scope between PO and Development Team (D) moving the end date",
+    "a": "<b>C</b>."
+   },
+   {
+    "q": "Product Backlog vs Sprint Backlog: who prioritizes or owns each, and is work pushed or pulled?",
+    "a": "Product Backlog: <b>prioritized by the PO</b>; the team <b>pulls</b> work from it. Sprint Backlog: a <b>forecast by the Development Team</b>; people <b>sign up</b>, and work is never assigned."
+   },
+   {
+    "q": "Who may cancel a Sprint, when, and what happens to unfinished items?",
+    "a": "<b>Only the PO</b>, when the Sprint Goal becomes obsolete. Unfinished items are <b>re-estimated and put back on the Product Backlog</b>."
+   }
+  ],
+  "exam": {
+   "question": "<p><b>Depict graphically: the Scrum framework (the Sprint).</b> Label the roles, events and artifacts and give the time-boxes.</p>",
+   "answer": "<p>Draw: Inputs → <b>Product Owner</b> → <b>Product Backlog</b> (ranked list) → <b>Sprint Planning Meeting</b> → <b>Sprint Backlog</b> (task breakout) → a big loop \"<b>1–4 week Sprint</b>\" with a small loop \"<b>Daily Scrum, every 24 hours</b>\" → <b>Finished Work</b> (Increment) → <b>Sprint Review</b> and <b>Sprint Retrospective</b>. Write the Scrum Master above the loop.</p><p>Time-boxes (one-month Sprint): Sprint ≤ 1 month (fixed once started); Sprint Planning ≤ 8 h; Daily Scrum 15 min; Retrospective ≤ 3 h. Write: \"Sprint end date and team deliverable do not change.\"</p>",
+   "diagram": "flowchart LR\n  IN[\"Inputs: executives, team, stakeholders, customers, users\"] --> PO([\"Product Owner\"])\n  PO --> PB[\"Product Backlog: ranked list\"]\n  PB --> SP[\"Sprint Planning Meeting\"]\n  SP --> SB[\"Sprint Backlog: task breakout\"]\n  SB --> SPR((\"1-4 week Sprint\"))\n  SPR --> DS((\"Daily Scrum every 24 hours\"))\n  DS --> SPR\n  SPR --> FW[\"Finished Work = Increment\"]\n  FW --> RV[\"Sprint Review\"]\n  RV --> RT[\"Sprint Retrospective\"]\n  RT -.->|next Sprint starts at once| SP"
+  },
+  "memorize": [
+   "Events: Sprint (≤ 1 month, fixed) contains Sprint Planning (≤ 8 h), Daily Scrum (15 min), Sprint Review, Sprint Retrospective (≤ 3 h)",
+   "Sprint Planning answers WHAT and HOW; it creates the Sprint Goal",
+   "Only the PO cancels a Sprint (goal obsolete); unfinished items go back to the Product Backlog",
+   "Review = product + stakeholders; Retro = the team itself; Review comes first",
+   "Artifacts on the slide: Product Backlog (PO prioritizes, team pulls) and Sprint Backlog (team forecast, never assigned)",
+   "User story: As a &lt;role&gt; I want &lt;function&gt; so that &lt;value&gt;; points at release planning; tasks 2–12 h; acceptance tests",
+   "Definition of Done: shared by the whole team, for transparency"
+  ],
+  "note": "The slides follow the older (pre-2020) Scrum Guide, so use their wording: Sprint Planning answers two questions (what, how), the Sprint Backlog is a forecast, and only 2 artifacts are listed. Outside the slides, the Scrum Guide also counts the Increment as a third artifact and gives the Sprint Review a 4-hour maximum for a one-month Sprint; mention this only as extra. Watch the trap: W1b slide 56 says a Sprint is \"thirty working days\", but this W2 deck says \"one month or less\" (diagram: 1–4 weeks); for Scrum questions use W2. Slide 33 has missing words (\"The product set the goal\" means the product owner sets the goal)."
+ },
+ {
+  "id": "W2-4",
+  "label": "W2·4",
+  "week": "W2",
+  "slides": [
+   47,
+   48,
+   49,
+   50,
+   51,
+   52,
+   53,
+   54,
+   55,
+   56,
+   57,
+   58,
+   59,
+   60,
+   61,
+   62,
+   63
+  ],
+  "kind": "theory",
+  "title": "Kanban and DevOps: visual flow and one Dev+Ops team",
+  "hook": "After this lesson you can draw and label a kanban board, explain WIP limits and lead time, and describe the DevOps loop, its 5 principles and its 3 kinds of benefits.",
+  "cards": [
+   {
+    "h": "Kanban: the visual board",
+    "body": "<p>\"Kanban\" is Japanese for <b>\"visual board\" or \"sign\"</b>. <b>Toyota</b> used it from the <b>1950s</b> as a scheduling system for just-in-time manufacturing (make only what is needed, when it is needed). The capital-K <b>\"Kanban Method\"</b> was defined in <b>2007</b>.</p><p>Slide definition: \"a popular <b>framework</b> used to implement agile and DevOps software development\". It needs real-time communication of capacity and full transparency: every work item is a card on a board, so anyone can see the state of every piece of work at any time.</p><p>It works for almost any business function (software, IT/Ops, staffing, recruitment, marketing and sales, procurement), with benefits such as <b>reduced lead time, increased throughput</b> (more items finished per week) and <b>higher quality</b>.</p>"
+   },
+   {
+    "h": "Three core concepts",
+    "body": "<ol><li><b>Visualize Workflow</b>: split the work into states shown as named columns; write each item on a card and put it in the right column.</li><li><b>Limit WIP</b> (Work In Progress): set an explicit maximum number of items in each state.</li><li><b>Measure the Lead Time</b>: lead time (the slide says \"also known as cycle time\") is the average time to complete one item. Make it as small and predictable as possible.</li></ol><p>Memory: <b>Visualize → Limit → Measure</b>.</p><p>A Kanban board helps to visualize work, limit WIP and maximize efficiency (flow). It uses cards, columns and continuous improvement.</p>"
+   },
+   {
+    "h": "The kanban board and its 5 elements",
+    "body": "<ol><li><b>Visual signals</b>: the cards, usually one work item (for agile teams, one user story) per card.</li><li><b>Columns</b>: each column is one activity; together they form the workflow, for example To Do, In Progress, Complete.</li><li><b>WIP limits</b>: the maximum number of cards in one column. A column with a limit of 3 cannot hold 4 cards.</li><li><b>Commitment point</b>: the moment an idea is picked up from the board's backlog and work starts.</li><li><b>Delivery point</b>: the end of the workflow, usually when the product is in the customer's hands.</li></ol><p>⭐ <b>Lead Time</b> = the time from the commitment point to the delivery point.</p><p>The S47 picture also shows a <b>swimlane</b> called \"EXPEDITE\": a horizontal band across all columns for urgent cards (labelled only, not explained).</p>",
+    "diagram": "flowchart LR\n  subgraph K1[\"Backlog - ideas\"]\n    B1[\"Loyalty points\"]\n    B2[\"Dark mode\"]\n  end\n  subgraph K2[\"To Do\"]\n    T1[\"Photo menu\"]\n  end\n  subgraph K3[\"In Progress - WIP limit 3\"]\n    W1[\"Click payment\"]\n    W2[\"Order history\"]\n    W3[\"Push alerts\"]\n  end\n  subgraph K4[\"Done - delivery point\"]\n    D1[\"Login\"]\n    D2[\"Menu list\"]\n  end\n  K1 -->|commitment point| K2\n  K2 --> K3\n  K3 --> K4"
+   },
+   {
+    "h": "Why WIP limits matter, and 6 benefits",
+    "body": "<p>When a column is \"maxed out\", nobody may pull a new card into it. The team must <b>swarm</b> on the cards already there and move them forward. This exposes <b>bottlenecks</b> early, \"before a situation becomes dire\", and warns you that you committed to too much work.</p><p><b>6 benefits (slide 51):</b></p><ol><li>Bottlenecks become visible in real time, so people optimize the whole value chain.</li><li>Useful for operations and support teams with high uncertainty and variability.</li><li>Spreads naturally through the organization (even sales and management).</li><li>Reduces inventory by <b>25%–75%</b>, so costs fall.</li><li>Everything is visible, so waiting times shrink.</li><li>No overproduction, which is called <b>eliminating waste</b>.</li></ol><p><b>Agile Kanban</b> = the Agile iteration approach + the Kanban value-stream focus (slide 52).</p>"
+   },
+   {
+    "h": "DevOps: development and operations as one team",
+    "body": "<p>Old way: developers write the café app and \"throw it over the wall\" to the IT operations people, who must run the servers. When something breaks, each side blames the other.</p><p>⭐ DevOps is \"a set of <b>practices, tools, and a cultural philosophy</b> that automate and integrate the processes between software development and IT teams\".</p><ul><li>It emphasizes team empowerment, cross-team communication and collaboration, and technology automation.</li><li>Developers + IT operations work together <b>throughout the product lifecycle</b>.</li><li>Goal: increase the <b>speed and quality</b> of software deployment.</li><li>It is \"a cultural shift\", a new way of working.</li></ul>"
+   },
+   {
+    "h": "The DevOps lifecycle: an endless loop",
+    "body": "<p>Slide 58 draws an <b>infinity loop (∞)</b>: the Dev side on the left, the Ops side on the right, and it never stops.</p><p><b>Koenig version:</b> Plan → Code → Build → Test → <b>Release</b> → Deploy → Operate → Monitor → back to Plan.</p><p><b>DEV/OPS rings version:</b> Plan → Create → Verify → Package → <b>Release</b> → Configure → Monitor → back to Plan.</p><p>Only two stages are explained in words:</p><ul><li><b>Plan</b>: adopt agile practices; break work into smaller pieces to deliver incremental value.</li><li><b>Operate</b>: manage the end-to-end delivery of IT services to customers (design, implementation, configuration, deployment and maintenance of the IT infrastructure).</li></ul>",
+    "diagram": "flowchart LR\n  subgraph DEV[\"Dev side\"]\n    P([\"Plan\"]) --> CO([\"Code\"])\n    CO --> BU([\"Build\"])\n    BU --> TE([\"Test\"])\n  end\n  subgraph OPS[\"Ops side\"]\n    DE([\"Deploy\"]) --> OP([\"Operate\"])\n    OP --> MO([\"Monitor\"])\n  end\n  TE --> RE((\"Release\"))\n  RE --> DE\n  MO -->|feedback, loop again| P"
+   },
+   {
+    "h": "5 DevOps principles and 3 benefit categories",
+    "body": "<table><tr><th>Principle</th><th>Key idea</th></tr><tr><td><b>Collaboration</b></td><td>Dev and Ops merge into one team; \"full stack\" ownership of a feature from idea to delivery</td></tr><tr><td><b>Automation</b></td><td>automate as much of the lifecycle as possible; key part of a CI/CD pipeline; fewer human errors</td></tr><tr><td><b>Continuous Improvement</b></td><td>experiment, minimize waste, optimize speed, cost and ease of delivery; tied to continuous delivery</td></tr><tr><td><b>Customer-centric action</b></td><td>short feedback loops; real-time live monitoring; rapid deployment</td></tr><tr><td><b>Create with the end in mind</b></td><td>solve real customer problems; don't \"build in a bubble\"</td></tr></table><p><b>3 benefit categories:</b></p><ul><li><b>Technical</b>: reduced complexity, continuous delivery, faster problem resolution.</li><li><b>Cultural</b>: more productive and efficient teams, happier customers.</li><li><b>Business</b>: more collaboration and trust, faster delivery, stable operating environments.</li></ul><p>CI/CD (not explained on the slides) = Continuous Integration / Continuous Delivery: every code change is built, tested and made ready to release automatically.</p>"
+   }
+  ],
+  "example": {
+   "problem": "<p>The café app team uses a kanban board. The <b>In Progress</b> column has a WIP limit of 3. Four cards were finished:</p><table><tr><th>Card</th><th>Commitment point (day)</th><th>Delivery point (day)</th></tr><tr><td>Click payment</td><td>1</td><td>6</td></tr><tr><td>Order history</td><td>2</td><td>9</td></tr><tr><td>Photo menu</td><td>3</td><td>6</td></tr><tr><td>Login</td><td>4</td><td>9</td></tr></table><p>(a) Find the lead time of each card and the average lead time. (b) In Progress already holds 3 cards, and an urgent \"Push alerts\" card arrives. What should the team do?</p>",
+   "solution": "<p>(a) Lead time = delivery day − commitment day: Click payment 6 − 1 = <b>5</b>; Order history 9 − 2 = <b>7</b>; Photo menu 6 − 3 = <b>3</b>; Login 9 − 4 = <b>5</b>. Average = (5 + 7 + 3 + 5) / 4 = 20 / 4 = <b>5 days</b>. The team now tries to make this smaller and more predictable.</p><p>(b) The column is maxed out (3 of 3), so the new card <b>cannot</b> enter. The team <b>swarms</b> on the 3 cards in progress, finishes one, and then pulls Push alerts in. (Many teams use an \"Expedite\" swimlane for truly urgent cards.)</p>"
+  },
+  "check": [
+   {
+    "q": "What does \"kanban\" mean, and who first used it?",
+    "a": "\"Visual board\" or \"sign\" in Japanese. First used by <b>Toyota</b> (1950s) for just-in-time manufacturing. The Kanban Method dates from 2007."
+   },
+   {
+    "q": "Name Kanban's three core concepts.",
+    "a": "<b>Visualize Workflow</b>, <b>Limit WIP</b>, <b>Measure the Lead Time</b>."
+   },
+   {
+    "q": "In Kanban, the time between the commitment point and the delivery point is called: (a) throughput (b) WIP limit (c) sprint length (d) value stream (e) Lead Time",
+    "a": "<b>(e) Lead Time</b>."
+   },
+   {
+    "q": "Define DevOps in one sentence.",
+    "a": "A set of <b>practices, tools, and a cultural philosophy</b> that automate and integrate the processes between software development and IT operations, to increase the speed and quality of deployment."
+   },
+   {
+    "q": "List the Koenig DevOps loop in order, and name the 5 principles.",
+    "a": "Plan → Code → Build → Test → Release → Deploy → Operate → Monitor → (Plan). Principles: Collaboration, Automation, Continuous Improvement, Customer-centric action, Create with the end in mind."
+   },
+   {
+    "q": "What are the 3 categories of DevOps benefits?",
+    "a": "<b>Technical, cultural, business</b>."
+   }
+  ],
+  "exam": {
+   "question": "<p>Draw a kanban board for a small project and label its five elements. Define a WIP limit and Lead Time.</p>",
+   "answer": "<p>Draw columns <b>Backlog → To Do → In Progress (WIP 3) → Done</b>, with cards in them. Label: <b>visual signals</b> (the cards), <b>columns</b> (the workflow steps), <b>WIP limit</b> (the \"3\" on In Progress), <b>commitment point</b> (where a card leaves the backlog and work starts) and <b>delivery point</b> (Done, in the customer's hands).</p><p><b>WIP limit</b>: the maximum number of cards allowed in one column at any time; when it is reached, the team swarms to finish cards before pulling new ones, which exposes bottlenecks. <b>Lead Time</b>: the elapsed time from the commitment point to the delivery point (the average time to complete one item); Kanban teams try to make it small and predictable.</p>",
+   "diagram": "flowchart LR\n  subgraph K1[\"Backlog - ideas\"]\n    B1[\"Loyalty points\"]\n    B2[\"Dark mode\"]\n  end\n  subgraph K2[\"To Do\"]\n    T1[\"Photo menu\"]\n  end\n  subgraph K3[\"In Progress - WIP limit 3\"]\n    W1[\"Click payment\"]\n    W2[\"Order history\"]\n    W3[\"Push alerts\"]\n  end\n  subgraph K4[\"Done - delivery point\"]\n    D1[\"Login\"]\n    D2[\"Menu list\"]\n  end\n  K1 -->|commitment point| K2\n  K2 --> K3\n  K3 --> K4"
+  },
+  "memorize": [
+   "Kanban = visual board / sign; Toyota, 1950s, just-in-time; Kanban Method 2007",
+   "3 core concepts: Visualize Workflow, Limit WIP, Measure the Lead Time",
+   "5 board elements: visual signals, columns, WIP limits, commitment point, delivery point",
+   "Lead Time = commitment point to delivery point; inventory down 25–75%; avoiding overproduction = eliminating waste",
+   "DevOps = practices + tools + cultural philosophy joining Dev and IT Ops",
+   "Loop: Plan, Code, Build, Test, Release, Deploy, Operate, Monitor",
+   "5 principles: Collaboration, Automation, Continuous Improvement, Customer-centric action, Create with the end in mind; 3 benefits: technical, cultural, business"
+  ],
+  "note": "Slide 50 says Lead Time is \"also known as cycle time\". Outside the slides, many Kanban sources separate the two (lead time from request to delivery; cycle time from start of work to delivery), but on the exam use the slide's version. Slide 51 benefit 5 is garbled; the idea is simply \"less waiting\". Slide 55 has a typo: \"is the called Lead Time\"."
+ }
+]

@@ -1,0 +1,132 @@
+[
+ {
+  "id": "Q1-2",
+  "label": "Q1–Q2",
+  "week": 1,
+  "slides": [
+   48,
+   49,
+   50,
+   51
+  ],
+  "kind": "theory",
+  "topic": "Interaction principles 2–5: equilibrium, efficiency vs equity, markets and government",
+  "explain": "<p>These 4 slides are interaction principles 2, 3, 4 and 5 (of the 5 on slide 33). One principle per slide.</p><p><b>Slide 48: Markets move toward equilibrium.</b> The definition: a situation is in <b>equilibrium</b> when <i>no individual would be better off doing something different</i>. The picture is supermarket checkout lines. Think about it: if one line is short, people move to it. Soon all lines are about the same length. Now nobody gains by switching lines. That is equilibrium. Nobody wants to change what they do.</p><p><b>Slide 49: Resources should be used as efficiently as possible to achieve society's goals.</b> Two words:</p><ul><li><b>Efficient:</b> an economy is efficient if it takes <i>all</i> opportunities to make some people better off <i>without making other people worse off</i>. Tiny example: a free seat in class while a friend is standing. Giving him the seat helps him and hurts nobody. If nobody does it, that is <i>not</i> efficient (a chance is wasted).</li><li><b>Equity:</b> everyone gets his or her <i>fair share</i>. But people disagree about what is \"fair\". So equity is <b>not as well-defined</b> as efficiency.</li></ul><p><b>Slide 50: Markets usually lead to efficiency.</b> The <b>incentives</b> in a market economy already make sure resources are usually put <b>to good use</b>, and chances to make people better off are <b>not wasted</b>. (Sellers want profit, buyers want a good deal, so good trades happen by themselves.)</p><p><b>Slide 51: When markets don't achieve efficiency, government intervention can improve society's welfare.</b> The slide gives 3 cases where the market fails:</p><ol><li><b>Side effects:</b> people's actions have side effects that the market does not count properly (the textbook calls these externalities). Example: a factory pollutes the air of people who are not part of the trade.</li><li><b>Monopoly:</b> one party blocks good (mutually beneficial) trades to grab a bigger share of resources for itself.</li><li><b>Goods unsuited for markets:</b> some goods, by their nature, cannot be managed well by markets. Slide example: <b>drugs</b>.</li></ol>",
+  "question": "<p>Two questions are likely from these slides:</p><p><b>Q1.</b> What is equilibrium? Explain it using the supermarket checkout line example. (Principle: markets move toward equilibrium.)</p><p><b>Q2.</b> Define efficiency and equity. Why is equity less well-defined than efficiency? Markets usually lead to efficiency; when they do not, how can government help? Give the three cases.</p><p>(It could also be asked as one item: \"Explain interaction principles 2–5.\")</p>",
+  "answer": "<p><b>Q1.</b> An economic situation is in <b>equilibrium</b> when no individual would be better off doing something different. Markets move toward equilibrium. Example: at a supermarket, if one checkout line is shorter, shoppers move to it. The short line gets longer and the long lines get shorter, until all lines are about equal. Then no shopper can gain by switching lines, so nobody changes. This is equilibrium.</p><p><b>Q2.</b></p><ul><li><b>Efficiency:</b> an economy is efficient if it takes all opportunities to make some people better off without making other people worse off.</li><li><b>Equity:</b> everyone gets his or her fair share.</li><li>Equity is less well-defined because people disagree about what is \"fair\". Efficiency has a clear test (is any chance to help someone, without hurting others, left unused?).</li><li>Resources should be used as efficiently as possible to achieve society's goals.</li><li><b>Markets usually lead to efficiency:</b> the incentives built into a market economy make sure resources are usually put to good use and opportunities to make people better off are not wasted.</li><li><b>When markets don't achieve efficiency, government intervention can improve society's welfare.</b> This happens when:<ol><li>individual actions have <i>side effects</i> that the market does not take into account properly (e.g. pollution);</li><li>one party prevents mutually beneficial trades to capture a greater share of resources for itself (e.g. <b>monopoly</b>);</li><li>some goods, by their very nature, are unsuited for efficient management by markets (e.g. <b>drugs</b>).</li></ol></li></ul>",
+  "memorize": [
+   "Equilibrium = no individual would be better off doing something different (checkout lines)",
+   "Efficient = all chances to make some better off without making others worse off are taken",
+   "Equity = fair share; less well-defined than efficiency because people disagree on \"fair\"",
+   "Markets usually lead to efficiency: incentives → resources to good use, chances not wasted",
+   "Market fails → government can help: side effects, monopoly, goods like drugs"
+  ]
+ },
+ {
+  "id": "Q3",
+  "label": "Q3",
+  "week": 1,
+  "slides": [
+   12
+  ],
+  "kind": "theory",
+  "topic": "The questions economics asks",
+  "explain": "<p>Slide 12 says economics is a <b>scientific study of the economy</b>. Then it lists the questions economics tries to answer. There are 5 groups:</p><ul><li><b>Jobs:</b> Who creates jobs? What kinds of jobs? How many jobs are created?</li><li><b>Production:</b> What to produce? How much? How to produce?</li><li><b>Distribution:</b> Who gets it, and how much?</li><li><b>Consumption:</b> Consume what? How much?</li><li><b>Rich vs poor:</b> Why are some countries rich and other countries poor?</li></ul><p>The last line (in red on the slide) is the key point: <b>all these questions are based on a set of common principles</b>. These common principles are the <b>12 economic principles</b> of the course: 4 on individual choice + 5 on interaction + 3 on economy-wide interactions.</p><p>Everyday example: a bakery. What to bake (bread or cakes)? How many? By hand or with a machine? Who gets the bread (whoever pays)? How many workers does it hire? Every one of these is an economics question.</p>",
+  "question": "<p>Economics is the scientific study of the economy. What kinds of questions does economics try to answer? List them, and say what they all have in common.</p>",
+  "answer": "<p>Economics is the scientific study of the economy. It asks questions about:</p><ol><li><b>Jobs</b>: who creates jobs, what kinds of jobs, and how many jobs are created.</li><li><b>Production</b>: what to produce, how much to produce, and how to produce it.</li><li><b>Distribution</b>: who gets the goods, and how much each gets.</li><li><b>Consumption</b>: what to consume and how much.</li><li><b>Wealth of nations</b>: why some countries are rich and other countries are poor.</li></ol><p>All these questions are based on a set of <b>common principles</b> — the 12 economic principles (4 on individual choice, 5 on interaction, 3 on economy-wide interactions).</p>",
+  "memorize": [
+   "Economics = scientific study of the economy",
+   "5 question groups: jobs, production, distribution, consumption, rich vs poor countries",
+   "Production: what? how much? how?",
+   "Distribution: who gets, how much?",
+   "All based on common principles (12 = 4 + 5 + 3)"
+  ]
+ },
+ {
+  "id": "Q4",
+  "label": "Q4",
+  "week": 1,
+  "slides": [
+   33
+  ],
+  "kind": "theory",
+  "topic": "Five principles on interaction",
+  "explain": "<p>Slide 33 is the professor's heading <b>\"II. Five principles on interaction\"</b> (\"Five\" in red) over a textbook table: <i>Principles That Underlie the Interaction of Individual Choices</i>.</p><p>Why \"interaction\"? Because my choices are shaped by other people's choices. When I buy, someone sells. These 5 principles explain what happens when many people's choices meet.</p><ol><li><b>There are gains from trade.</b> People get more of what they want by trading than by doing everything themselves, because each person specializes in what he or she does well.</li><li><b>Markets move toward equilibrium.</b> Things settle until no one would be better off doing something different (checkout lines).</li><li><b>Resources should be used as efficiently as possible to achieve society's goals.</b> Don't waste chances to make someone better off without hurting others.</li><li><b>Markets usually lead to efficiency.</b> Market incentives usually put resources to good use.</li><li><b>When markets don't achieve efficiency, government intervention can improve society's welfare.</b> (Side effects, monopoly, goods like drugs.)</li></ol><p>Where it fits: the 12 principles = 4 on individual choice (I) + <b>5 on interaction (II)</b> + 3 on economy-wide interactions (III).</p>",
+  "question": "<p>List the five principles that underlie the interaction of individual choices, and briefly explain each one.</p>",
+  "answer": "<p>The five principles on interaction are:</p><ol><li><b>There are gains from trade.</b> Through trade, people get more of what they want than if they tried to be self-sufficient. This comes from specialization: each person does the task he or she is good at.</li><li><b>Markets move toward equilibrium.</b> Equilibrium is when no individual would be better off doing something different (e.g. supermarket checkout lines become equal in length).</li><li><b>Resources should be used as efficiently as possible to achieve society's goals.</b> An economy is efficient if it takes all opportunities to make some people better off without making others worse off. (Equity = fair share, but less well-defined.)</li><li><b>Markets usually lead to efficiency.</b> The incentives built into a market economy usually put resources to good use, so chances to make people better off are not wasted.</li><li><b>When markets don't achieve efficiency, government intervention can improve society's welfare.</b> Examples: side effects not counted by the market, monopoly, goods like drugs that markets can't manage well.</li></ol>",
+  "memorize": [
+   "1 Gains from trade (specialization)",
+   "2 Markets move toward equilibrium",
+   "3 Use resources as efficiently as possible for society's goals",
+   "4 Markets usually lead to efficiency",
+   "5 If markets fail, government can improve welfare",
+   "12 principles = 4 individual + 5 interaction + 3 economy-wide"
+  ]
+ },
+ {
+  "id": "Q5-6",
+  "label": "Q5–Q6",
+  "week": 3,
+  "slides": [
+   18,
+   19
+  ],
+  "kind": "theory",
+  "topic": "Table 3-1: factors that shift demand",
+  "explain": "<p>Slides 18 and 19 are one big table (Table 3-1, <i>Factors That Shift Demand</i>). Every cell has a small graph. <b>Demand increases</b> = the curve shifts <b>right</b> (D1 → D2, arrow →). <b>Demand decreases</b> = the curve shifts <b>left</b> (arrow ←).</p><p>Remember: a change in the good's <i>own</i> price is a movement <i>along</i> the curve. These factors are <i>other</i> things, so they <b>shift</b> the whole curve.</p><p><b>Slide 18 (part 1):</b></p><table><tr><th>Factor</th><th>Demand increases (shift right)</th><th>Demand decreases (shift left)</th></tr><tr><td>Substitute (coffee and tea)</td><td>price of substitute <b>rises</b></td><td>price of substitute <b>falls</b></td></tr><tr><td>Complement (coffee and sugar)</td><td>price of complement <b>falls</b></td><td>price of complement <b>rises</b></td></tr><tr><td>Income, <b>normal</b> good</td><td>income <b>rises</b></td><td>income <b>falls</b></td></tr></table><p><b>Slide 19 (part 2):</b></p><table><tr><th>Factor</th><th>Demand increases (shift right)</th><th>Demand decreases (shift left)</th></tr><tr><td>Income, <b>inferior</b> good</td><td>income <b>falls</b></td><td>income <b>rises</b></td></tr><tr><td>Tastes</td><td>tastes change <b>in favor of</b> the good</td><td>tastes change <b>against</b> the good</td></tr><tr><td>Expected future price</td><td>price expected to <b>rise</b> in the future → demand up <b>today</b></td><td>price expected to <b>fall</b> in the future → demand down <b>today</b></td></tr><tr><td>Number of consumers</td><td>number of consumers <b>rises</b> → <i>market</i> demand up</td><td>number of consumers <b>falls</b> → <i>market</i> demand down</td></tr></table><p>Easy way to think:</p><ul><li><b>Substitute</b> = \"instead of\". Tea gets expensive → people switch to coffee → coffee demand up. Same direction.</li><li><b>Complement</b> = \"used together\". Sugar gets expensive → people drink less sweet coffee → coffee demand down. Opposite direction.</li><li><b>Expectations</b>: if you hear phones will cost more next month, you buy one <i>today</i>.</li></ul><p>Note: slide 13 says there are 4 principal shifters (related goods' prices, income, tastes, expectations). The table adds a 5th: the number of consumers, which shifts <i>market</i> demand.</p>",
+  "question": "<p>Two questions are likely from this table:</p><p><b>Q5.</b> (Slide 18) Explain how the demand curve for a good shifts when (a) the price of a substitute rises/falls, (b) the price of a complement rises/falls, (c) income rises/falls for a normal good. Draw/describe the shift.</p><p><b>Q6.</b> (Slide 19) Explain how demand shifts when (a) income rises/falls for an inferior good, (b) tastes change, (c) the price is expected to rise/fall in the future, (d) the number of consumers rises/falls.</p><p>(Or as scenarios, e.g. \"The price of tea rises. What happens to the demand for coffee?\")</p>",
+  "answer": "<p>An increase in demand shifts the demand curve to the <b>right</b> (D1 → D2); a decrease shifts it to the <b>left</b>. These factors shift the whole curve (a change in the good's own price is only a movement along it).</p><p><b>Q5 (Table 3-1, part 1):</b></p><ul><li><b>Substitutes</b> (e.g. coffee and tea): when the price of a substitute <b>rises</b>, demand for the original good <b>increases</b> (shift right). When it <b>falls</b>, demand <b>decreases</b> (shift left). Example: tea price ↑ → demand for coffee ↑.</li><li><b>Complements</b> (e.g. coffee and sugar): when the price of a complement <b>falls</b>, demand for the original good <b>increases</b>. When it <b>rises</b>, demand <b>decreases</b>. Example: sugar price ↑ → demand for coffee ↓.</li><li><b>Normal good</b>: when income <b>rises</b>, demand <b>increases</b>; when income <b>falls</b>, demand <b>decreases</b>.</li></ul><p><b>Q6 (Table 3-1, part 2):</b></p><ul><li><b>Inferior good</b>: when income <b>falls</b>, demand <b>increases</b>; when income <b>rises</b>, demand <b>decreases</b>.</li><li><b>Tastes</b>: tastes change in favor of the good → demand increases; tastes change against the good → demand decreases.</li><li><b>Expectations</b>: if the price is expected to <b>rise</b> in the future, demand <b>today</b> increases; if it is expected to <b>fall</b>, demand today decreases.</li><li><b>Number of consumers</b>: more consumers → <b>market</b> demand increases; fewer consumers → market demand decreases.</li></ul>",
+  "memorize": [
+   "Increase in demand = shift RIGHT; decrease = shift LEFT",
+   "Substitute price ↑ → demand ↑ (same direction)",
+   "Complement price ↑ → demand ↓ (opposite direction)",
+   "Income ↑: normal good D ↑, inferior good D ↓",
+   "Price expected to rise later → demand ↑ today",
+   "More consumers → market demand ↑"
+  ]
+ },
+ {
+  "id": "Q7",
+  "label": "Q7",
+  "week": 3,
+  "slides": [
+   15
+  ],
+  "kind": "theory",
+  "topic": "Normal goods vs inferior goods (changes in income)",
+  "explain": "<p>Slide 15 is about one demand shifter: <b>changes in income</b>. It gives two definitions:</p><ul><li><b>Normal good:</b> a rise in income <b>increases</b> the demand for the good. This is \"the normal case\" — most goods are like this.</li><li><b>Inferior good:</b> a rise in income <b>decreases</b> the demand for the good.</li></ul><p>Tiny example: you are a student eating instant noodles and riding the bus. You get a good job. Now you eat in restaurants more (restaurant meals = <b>normal</b> good) and buy fewer instant noodles (noodles = <b>inferior</b> good for you). \"Inferior\" does not mean bad quality; it just means people buy less of it when they get richer.</p><p>On the graph (Table 3-1): income ↑ → normal good's demand curve shifts <b>right</b>, inferior good's demand curve shifts <b>left</b>. Income ↓ → the opposite.</p><p>Link to week 5: income elasticity of demand is <b>positive</b> for a normal good and <b>negative</b> for an inferior good.</p>",
+  "question": "<p>Define a normal good and an inferior good. Give an example of each, and explain how the demand curve shifts when income rises.</p>",
+  "answer": "<p>A change in income shifts the demand curve.</p><ul><li>A <b>normal good</b> is a good whose demand <b>increases</b> when income rises (the normal case). Example: restaurant meals. When income rises, its demand curve shifts to the <b>right</b>.</li><li>An <b>inferior good</b> is a good whose demand <b>decreases</b> when income rises. Example: instant noodles or bus rides — richer people buy less of them. When income rises, its demand curve shifts to the <b>left</b>.</li></ul><p>When income falls, it is the opposite: demand for a normal good falls (shift left) and demand for an inferior good rises (shift right).</p>",
+  "memorize": [
+   "Normal good: income ↑ → demand ↑ (the normal case)",
+   "Inferior good: income ↑ → demand ↓",
+   "Income ↑: normal D shifts right, inferior D shifts left",
+   "Inferior ≠ bad quality; people just buy less when richer",
+   "Income elasticity: + normal, − inferior (week 5)"
+  ]
+ },
+ {
+  "id": "Q8",
+  "label": "Q8",
+  "week": 1,
+  "slides": [
+   25,
+   26,
+   27,
+   28
+  ],
+  "kind": "theory",
+  "topic": "Opportunity cost (\"no such thing as a free lunch\")",
+  "explain": "<p>These 4 slides are all about <b>opportunity cost</b>.</p><p><b>Slide 25:</b> \"There is no such thing as a free lunch.\" This saying is linked to the American economist <b>Milton Friedman</b>. It describes opportunity cost. <b>Every choice has at least one alternative that we passed up.</b> Even a \"free\" lunch costs you something — for example, the time you spend there.</p><p><b>Slide 26:</b> What happens when we choose? <b>Choosing one thing means we're giving up an alternative.</b> The picture is a kid at a vending machine: picking cola means giving up the juice.</p><p><b>Slide 27:</b> <b>Every activity has the opportunity cost of time.</b> This is true even for activities with <b>no money cost</b> (the picture is a hiker — hiking is free, but it takes your day). It also includes the time spent <b>searching for alternatives</b>, like looking for a new job.</p><p><b>Slide 28:</b> The definition. <b>Opportunity cost = the value of the next-best alternative.</b> For any decision, ask:</p><ul><li>How much do I value this?</li><li>What am I giving up now to have it?</li></ul><p>Opportunity cost is often expressed in <b>market prices</b> (in money).</p><p>Tiny example: on Saturday you can (a) go hiking (free), (b) work 5 hours at $8 an hour, or (c) sleep. Say working is your next-best choice. If you go hiking, your opportunity cost is the $40 you did not earn (5 × $8 = $40). So the hike is not really free. Note: you count only the <b>next-best</b> alternative, not all of them added together.</p>",
+  "question": "<p>What is opportunity cost? Explain the saying \"There is no such thing as a free lunch\" and give an example. Why does even an activity with no monetary cost have an opportunity cost?</p>",
+  "answer": "<p><b>Opportunity cost</b> is the value of the <b>next-best alternative</b> that we give up when we make a choice.</p><ul><li>\"There is no such thing as a free lunch\" (associated with Milton Friedman) describes opportunity cost: every choice has at least one alternative that we passed up. Choosing one thing means giving up an alternative.</li><li>Every activity has the <b>opportunity cost of time</b>. This includes activities with no monetary cost, and also the activity of searching for alternatives, like a new job.</li><li>For any decision we should ask: How much do I value this? What am I giving up now to have it?</li><li>Opportunity cost is often expressed in market prices.</li></ul><p><b>Example:</b> Hiking costs no money. But if my next-best option was working 5 hours at $8 per hour, the opportunity cost of hiking is 5 × $8 = <b>$40</b> of lost wages. So even a \"free\" activity is not free.</p>",
+  "memorize": [
+   "Opportunity cost = value of the next-best alternative",
+   "\"No such thing as a free lunch\" — Milton Friedman",
+   "Every choice gives up at least one alternative",
+   "Every activity has the opportunity cost of time, even if it costs no money",
+   "Ask: How much do I value this? What am I giving up?",
+   "Often expressed in market prices; count only the next-best option"
+  ]
+ }
+]

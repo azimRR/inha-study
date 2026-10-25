@@ -1,0 +1,208 @@
+[
+ {
+  "id": "Q9",
+  "label": "Q9",
+  "week": 5,
+  "slides": [
+   12
+  ],
+  "kind": "theory",
+  "topic": "Revenue and elasticity: reading dR/dP = Q(1 − e)",
+  "explain": "<p>This slide reads one formula: <b>dR/dP = Q(1 − e)</b>. R is total revenue (R = P × Q), P is price, Q is quantity demanded, e is the price elasticity of demand (a positive number).</p>\n<p><b>dR/dP</b> just means: \"if the price goes up a little, how does revenue change?\" Q is always positive, so the sign of dR/dP is the sign of <b>(1 − e)</b>. Only the elasticity decides.</p>\n<ol>\n<li><b>e &lt; 1 (inelastic)</b> → 1 − e &gt; 0 → dR/dP &gt; 0. Raise the price → revenue goes <b>up</b>, even though Q goes down a bit. People keep buying.</li>\n<li><b>e = 1 (unit-elastic)</b> → dR/dP = 0. A small price change does <b>not</b> change revenue. Here revenue is at its <b>maximum or minimum</b>.</li>\n<li><b>e &gt; 1 (elastic)</b> → dR/dP &lt; 0. Raise the price → revenue goes <b>down</b>, because \"demand decreases too much\".</li>\n</ol>\n<p>Everyday example: eggs (e = 0.1 on the week 5 table) — a shop raises the egg price, people still buy eggs, so the shop earns more. Foreign travel (e = 4.1) — raise the price, many people cancel, so the company earns less.</p>",
+  "question": "<p>Using dR/dP = Q(1 − e), explain what happens to a seller's total revenue when he raises the price, if demand is (a) inelastic, (b) unit-elastic, (c) elastic.</p>",
+  "answer": "<p>Total revenue is R = P × Q. Its change when price rises is dR/dP = Q(1 − e). Since Q &gt; 0, the sign of dR/dP is the sign of (1 − e).</p>\n<ol>\n<li><b>Inelastic, e &lt; 1:</b> 1 − e &gt; 0, so dR/dP &gt; 0. When the price goes up, total revenue increases, even though quantity demanded decreases. So the seller should raise the price to earn more. (Example: e = 0.5, Q = 1,000 → dR/dP = 1,000 × 0.5 = 500 &gt; 0.)</li>\n<li><b>Unit-elastic, e = 1:</b> 1 − e = 0, so dR/dP = 0. A price change does not change total revenue. At e = 1 total revenue is at its maximum (or minimum).</li>\n<li><b>Elastic, e &gt; 1:</b> 1 − e &lt; 0, so dR/dP &lt; 0. When the price goes up, total revenue decreases, because quantity demanded falls too much. (Example: e = 2, Q = 1,000 → dR/dP = 1,000 × (1 − 2) = −1,000 &lt; 0.) So the seller should not raise the price; a price cut would raise revenue.</li>\n</ol>",
+  "memorize": [
+   "dR/dP = Q(1 − e); sign depends only on (1 − e)",
+   "e &lt; 1: raise price → revenue UP",
+   "e = 1: revenue unchanged, at max/min",
+   "e &gt; 1: raise price → revenue DOWN (Q falls too much)"
+  ]
+ },
+ {
+  "id": "Q10",
+  "label": "Q10",
+  "week": 6,
+  "slides": [
+   25
+  ],
+  "kind": "theory",
+  "topic": "Minimum average total cost; MC cuts ATC at its bottom",
+  "explain": "<p><b>Minimum-cost output</b> = the quantity where average total cost (ATC) is lowest = the bottom of the U-shaped ATC curve (point M on Figure 7-9).</p>\n<p>The big idea: the <b>marginal cost (MC) curve always cuts the ATC curve at its lowest point</b>. Why? Think of your exam average:</p>\n<ul>\n<li>If your next test score (the \"marginal\") is <b>below</b> your average, your average goes <b>down</b>.</li>\n<li>If your next score is <b>above</b> your average, your average goes <b>up</b>.</li>\n</ul>\n<p>Same with costs. On the graph: on the left, MC is at point MC(L), below ATC, so ATC falls from A1 to A2. On the right, MC is at point MC(H), above ATC, so ATC rises from B1 to B2. ATC stops falling and starts rising exactly where MC = ATC. That is point M, the minimum.</p>\n<p>Ben's Boots numbers (week 6 table): going from 2 to 3 pairs, MC = $60, which is below ATC $78, so ATC falls to $72. Going from 3 to 4 pairs, MC = $84, above ATC $72, so ATC rises to $75. Minimum ATC = $72 at 3 pairs.</p>",
+  "question": "<p>What is the minimum-cost output? Explain why the marginal cost curve must cross the average total cost curve at the minimum point of ATC. Use a graph.</p>",
+  "answer": "<p><b>Definition:</b> The minimum-cost output is the quantity of output at which average total cost is lowest — the bottom of the U-shaped ATC curve (point M).</p>\n<p><b>Why MC crosses ATC at M:</b></p>\n<ul>\n<li>If MC &lt; ATC, producing one more unit adds a cost below the average, so ATC falls (movement A1 → A2).</li>\n<li>If MC &gt; ATC, producing one more unit adds a cost above the average, so ATC rises (movement B1 → B2).</li>\n<li>So ATC falls while MC is below it and rises while MC is above it. It turns around exactly where MC = ATC. That point is the minimum of ATC, point M.</li>\n</ul>\n<p><b>Example (Ben's Boots):</b> 2 → 3 pairs: MC = $60 &lt; ATC = $78, so ATC falls to $72. 3 → 4 pairs: MC = $84 &gt; ATC = $72, so ATC rises to $75. Minimum ATC = $72 at 3 pairs, the minimum-cost output.</p>\n<p><b>Graph:</b> draw a U-shaped ATC and an upward-sloping MC that passes through the bottom of the U at M. Label \"MC below ATC → ATC falling\" on the left and \"MC above ATC → ATC rising\" on the right.</p>",
+  "memorize": [
+   "Minimum-cost output = bottom of U-shaped ATC",
+   "MC &lt; ATC → ATC falls; MC &gt; ATC → ATC rises",
+   "MC cuts ATC at its minimum (point M)",
+   "Ben's Boots: min ATC $72 at 3 pairs"
+  ]
+ },
+ {
+  "id": "Q11",
+  "label": "Q11",
+  "week": 7,
+  "slides": [
+   3,
+   4
+  ],
+  "kind": "theory",
+  "topic": "Perfect competition: price-takers and the conditions",
+  "explain": "<p><b>Slide 3 — what perfect competition is.</b> In a perfectly competitive market <b>everyone is a price-taker</b>: both buyers and sellers. The price is set by <b>industry demand and industry supply</b>, not by any one person.</p>\n<ul>\n<li><b>Price-taking producer:</b> its actions have no effect on the market price of the good it sells.</li>\n<li><b>Price-taking consumer:</b> his or her actions have no effect on the market price of the good he or she buys.</li>\n<li><b>Perfectly competitive industry:</b> an industry where producers are price-takers.</li>\n</ul>\n<p>Example: one farmer selling wheat at a big market. If he sells double or stops selling, the wheat price does not move.</p>\n<p><b>Slide 4 — when does this happen?</b> Two necessary conditions:</p>\n<ol>\n<li><b>No producer has a large market share.</b> Market share = that producer's output ÷ total industry output. If every firm is tiny, none can push the price.</li>\n<li><b>Standardized product (commodity):</b> buyers see the products of different producers as the same good. Wheat from farmer A = wheat from farmer B. So if one farmer charges more, buyers just go to another.</li>\n</ol>\n<p>Plus <b>free entry and exit</b>: new producers can easily enter the industry or leave it. (Slide 4 lists this separately; it is usual in perfectly competitive industries but is not one of the two \"necessary\" conditions.)</p>",
+  "question": "<p>Define a perfectly competitive market and a price-taking producer/consumer. What are the two necessary conditions for perfect competition? Also explain free entry and exit.</p>",
+  "answer": "<p><b>Perfectly competitive market:</b> a market in which all participants, both consumers and producers, are price-takers. The price is determined by industry demand and industry supply.</p>\n<p><b>Price-taking producer:</b> a producer whose actions have no effect on the market price of the good it sells. <b>Price-taking consumer:</b> a consumer whose actions have no effect on the market price of the good he or she buys. A <b>perfectly competitive industry</b> is one in which producers are price-takers.</p>\n<p><b>Two necessary conditions:</b></p>\n<ol>\n<li><b>No producer has a large market share.</b> Market share is the fraction of total industry output produced by one producer. If each share is small, no producer can change the price.</li>\n<li><b>The product is standardized (a commodity):</b> consumers regard the products of different producers as the same good, so a producer who raises its price loses its buyers.</li>\n</ol>\n<p><b>Free entry and exit:</b> new producers can easily enter the industry, and existing producers can easily leave it.</p>\n<p>Example: wheat farming — many small farmers, identical wheat, easy to start or stop farming.</p>",
+  "memorize": [
+   "Perfect competition: ALL buyers and sellers are price-takers",
+   "Price-taker: own actions do not change market price",
+   "Condition 1: no large market share (share = own output ÷ industry output)",
+   "Condition 2: standardized product = commodity",
+   "Free entry and exit: easy to enter or leave"
+  ]
+ },
+ {
+  "id": "Q12",
+  "label": "Q12",
+  "week": 7,
+  "slides": [
+   17
+  ],
+  "kind": "theory",
+  "topic": "Short-run industry supply curve and short-run market equilibrium",
+  "explain": "<p>Two definitions on this slide.</p>\n<p><b>Short-run industry supply curve:</b> shows how the quantity supplied by the whole industry depends on the market price, <b>with a fixed number of producers</b>. In the short run, no new firms come in and no firms leave.</p>\n<p>How is it built? (slide 16 just before it) Each firm supplies along its own MC curve. At each price, add up the quantities of all firms: Q = q1 + q2 + … + qk. That sum, at each price, is the industry supply.</p>\n<p><b>Short-run market equilibrium:</b> quantity supplied = quantity demanded, <b>taking the number of producers as given</b>.</p>\n<p>Example from the next slide (Figure 7-5, tomatoes): 100 producers. Below the shut-down price of $10 nobody produces. Above $10 the curve slopes up. It meets demand at <b>$18 and 500 bushels</b> — that is the short-run market equilibrium (500 ÷ 100 = 5 bushels per farm).</p>\n<p>Key word to remember: <b>\"fixed number of producers\"</b>. That is what makes it \"short run\". (In the long run, firms can enter or exit.)</p>",
+  "question": "<p>What is the short-run industry supply curve? What is a short-run market equilibrium? Explain how the industry supply curve is related to the supply curves of individual firms.</p>",
+  "answer": "<p><b>Short-run industry supply curve:</b> it shows how the quantity supplied by an industry depends on the market price, given a fixed number of producers.</p>\n<p>It is found by adding up the individual supply curves (the MC curves) of all producers horizontally: at each price, industry quantity = q1 + q2 + … + qk. As price rises, each producer supplies more, so the industry supply curve slopes upward.</p>\n<p><b>Short-run market equilibrium:</b> it exists when the quantity supplied equals the quantity demanded, taking the number of producers as given.</p>\n<p><b>Example (Figure 7-5):</b> with 100 tomato producers, nobody produces below the shut-down price of $10. The short-run industry supply curve meets the demand curve at a price of $18 and a quantity of 500 bushels — the short-run market equilibrium.</p>\n<p>It is \"short run\" because the number of producers cannot change; in the long run, firms can enter or exit.</p>",
+  "memorize": [
+   "SR industry supply: industry Q vs price, FIXED number of producers",
+   "Built by adding firms' quantities at each price (sum of MC curves)",
+   "SR market equilibrium: Qs = Qd, number of producers given",
+   "Fig 7-5: 100 producers, shut-down $10, equilibrium $18 and 500 bushels"
+  ]
+ },
+ {
+  "id": "Q13",
+  "label": "Q13",
+  "week": 4,
+  "slides": [
+   13
+  ],
+  "kind": "calculation",
+  "topic": "Effects of a price ceiling (rent control shortage)",
+  "explain": "<p>A <b>price ceiling</b> is a maximum legal price, set <b>below</b> the equilibrium price. Example: rent control.</p>\n<p>Figure 4-7 (apartments): without control, demand and supply meet at <b>E: rent $1,000, 2.0 million apartments</b>. The government says: max rent = <b>$800</b>.</p>\n<ul>\n<li>At $800 landlords offer fewer flats: quantity supplied = <b>1.8 million</b> (point A, on the supply curve).</li>\n<li>At $800 more people want flats: quantity demanded = <b>2.2 million</b> (point B, on the demand curve).</li>\n<li>Shortage = 2.2 − 1.8 = <b>0.4 million = 400,000 apartments</b>. These are 400,000 people who want a flat at the legal rent of $800 but cannot get one.</li>\n</ul>\n<p>The shortage is <b>persistent</b>: the price is not allowed to rise to $1,000, so it never goes away. Only 1.8 million flats are actually rented (the short side of the market — supply). This lower quantity is why the slide says a price ceiling \"causes inefficiency\".</p>",
+  "question": "<p>In the apartment market, equilibrium is a rent of $1,000 with 2 million apartments. The government imposes a price ceiling of $800 per month. Using the graph, find the quantity supplied, the quantity demanded and the size of the shortage, and explain why the price ceiling causes inefficiency.</p>",
+  "answer": "<p><b>Step 1 — before the ceiling:</b> equilibrium E: rent = $1,000, quantity = 2.0 million apartments.</p>\n<p><b>Step 2 — at the ceiling of $800 (below $1,000, so it binds):</b></p>\n<ul>\n<li>Quantity supplied (point A on S) = 1.8 million.</li>\n<li>Quantity demanded (point B on D) = 2.2 million.</li>\n</ul>\n<p><b>Step 3 — shortage</b> = Qd − Qs = 2.2 − 1.8 = <b>0.4 million = 400,000 apartments</b>. 400,000 people want apartments at the legal rent of $800 but cannot get them.</p>\n<p><b>Step 4 — why inefficient:</b> the shortage is persistent because the rent cannot rise back to $1,000. Only 1.8 million apartments are rented instead of 2.0 million, so 200,000 mutually beneficial rentals do not happen (a deadweight loss). The ceiling also leads to inefficient allocation to consumers, wasted resources (time searching), inefficiently low quality and black markets.</p>\n<p><b>Graph:</b> draw D and S crossing at E ($1,000, 2.0m); a horizontal line at $800; mark A (1.8m) on S and B (2.2m) on D; label the gap A–B \"shortage of 400,000\".</p>",
+  "memorize": [
+   "Price ceiling = max price, set BELOW equilibrium (rent control)",
+   "E = $1,000, 2.0m; ceiling $800 → Qs 1.8m (A), Qd 2.2m (B)",
+   "Shortage = 2.2 − 1.8 = 0.4m = 400,000, persistent",
+   "Fewer flats rented (1.8m) → inefficiency"
+  ]
+ },
+ {
+  "id": "Q14",
+  "label": "Q14",
+  "week": 4,
+  "slides": [
+   20,
+   21,
+   22,
+   23,
+   25
+  ],
+  "kind": "theory",
+  "topic": "Price floors: deadweight loss, welfare change, why inefficient (+ quota definition)",
+  "explain": "<p>A <b>price floor</b> is a minimum legal price, set <b>above</b> equilibrium. Example: minimum wage, or a minimum butter price.</p>\n<p><b>Slide 20 (butter, Figure 4-12):</b> equilibrium E = $1.00, 10 million pounds. Floor = <b>$1.20</b>. At $1.20 buyers want only <b>9 million</b>. So only 9 million is sold (instead of 10). The lost trades make a yellow triangle = <b>deadweight loss</b>. Its corners are (9, $1.20), (9, $0.90), (10, $1.00). Area = ½ × 0.30 × 1 million = <b>$150,000</b>. (At $1.20 sellers would supply 12 million, so there is a surplus of 12 − 9 = 3 million.)</p>\n<p><b>Slide 21 (professor's own graph):</b> quantity falls from Qe to Qf (Qf = quantity demanded at Pf).</p>\n<ul>\n<li><b>Consumer surplus</b> (orange) shrinks to the small triangle above Pf.</li>\n<li><b>Producer surplus</b> (blue) gains the rectangle between Pe and Pf (taken from consumers) but loses the part between Qf and Qe.</li>\n<li><b>Deadweight loss</b> (yellow) = triangle between D and S from Qf to Qe. Nobody gets it.</li>\n</ul>\n<p><b>Slides 22–23 — four reasons a floor is inefficient:</b></p>\n<ol>\n<li><b>Inefficient allocation of sales among sellers:</b> the sellers who could sell at the lowest price are not always the ones who get to sell.</li>\n<li><b>Wasted resources:</b> the government buys the unwanted surplus; it is destroyed or goes \"out of condition\" and is thrown away.</li>\n<li><b>Inefficiently high quality:</b> sellers offer high quality at a high price, though buyers would prefer lower quality at a lower price. It is a \"buyer's market\": buyers choose the sellers they like.</li>\n<li><b>Illegal activity:</b> like ceilings, floors tempt people to break the law (e.g. a firm pays below minimum wage and bribes the inspector).</li>\n</ol>\n<p><b>Slide 25:</b> a <b>quantity control (quota)</b> is an upper limit on the quantity that can be bought or sold; the legal total is the <b>quota limit</b>. A <b>license</b> gives its owner the right to supply the good. (A floor controls the price; a quota controls the quantity.)</p>",
+  "question": "<p>Explain the effects of a price floor using a graph: what happens to quantity, consumer surplus, producer surplus and deadweight loss? Then give the reasons why a price floor causes inefficiency. (Also: what is a quota and a license?)</p>",
+  "answer": "<p><b>1. Definition:</b> a price floor is a minimum price buyers must pay, set above the equilibrium price (e.g. minimum wage).</p>\n<p><b>2. Graph and welfare:</b> draw D and S crossing at Pe, Qe; a horizontal line at Pf above Pe. At Pf buyers demand only Qf &lt; Qe, so the quantity sold falls from Qe to Qf (and sellers want to sell more than Qf → persistent surplus).</p>\n<ul>\n<li>Consumer surplus falls: only the triangle above Pf up to Qf is left.</li>\n<li>Producer surplus: gains the rectangle (Pf − Pe) × Qf from consumers, loses the area between Qf and Qe.</li>\n<li>Deadweight loss: the triangle between D and S from Qf to Qe — trades that would benefit both sides but no longer happen.</li>\n</ul>\n<p><b>Butter example:</b> Pe = $1.00, Qe = 10m; floor $1.20 → Qd = 9m, Qs = 12m, surplus = 3m pounds. Deadweight loss = ½ × ($1.20 − $0.90) × (10 − 9)m = <b>$150,000</b>.</p>\n<p><b>3. Why inefficient:</b></p>\n<ol>\n<li>Inefficient allocation of sales among sellers — the lowest-cost sellers do not always get to sell.</li>\n<li>Wasted resources — the government buys the surplus, which is destroyed or spoils.</li>\n<li>Inefficiently high quality — sellers compete with quality, though buyers want cheaper, lower quality; it is a buyer's market.</li>\n<li>Illegal activity — e.g. bribery and paying below the minimum wage.</li>\n</ol>\n<p><b>4. Quota:</b> an upper limit on the quantity of a good that can be bought or sold; the legal total is the quota limit. A license gives its owner the right to supply the good.</p>",
+  "memorize": [
+   "Price floor = min price, ABOVE equilibrium (minimum wage, butter)",
+   "Q falls Qe → Qf; persistent surplus; yellow triangle = DWL",
+   "Butter: floor $1.20 → Qd 9m, Qs 12m, DWL = ½×0.30×1m = $150,000",
+   "CS shrinks; PS gains (Pf−Pe)×Qf rectangle",
+   "4 inefficiencies: allocation among sellers, wasted resources, too-high quality, illegal activity",
+   "Quota = upper limit on quantity; license = right to supply"
+  ]
+ },
+ {
+  "id": "Q15",
+  "label": "Q15",
+  "week": 3,
+  "slides": [
+   29,
+   30
+  ],
+  "kind": "theory",
+  "topic": "Factors that shift the supply curve (Table 3-2)",
+  "note": "Your note says W5 S29–30, but week 5 has only 25 slides. Shown here: week 3 slides 29–30 (Table 3-2, factors that shift supply). Check your note. Other candidates: week 4 slides 29–30 are 'Quota rent' + the professor's taxi story — a strong match for its week-4 neighbours (Q14, Q16), but Q16 already covers W4 S29 and the taxi rent is explained there. Week 6 slides 29–30 = short-run vs long-run costs (Ben's Boots, LRATC, economies of scale); week 2 slides 29–30 = graph basics (curves, intercepts).",
+  "explain": "<p>A <b>shift</b> of the supply curve means: at every price, producers now want to sell a different amount. <b>Right shift = supply increases. Left shift = supply decreases.</b> (A change in the good's own price is not a shift — it is a move along the curve.)</p>\n<p>Table 3-2 lists five things that shift supply:</p>\n<table>\n<tr><th>Factor</th><th>Supply increases (→ right)</th><th>Supply decreases (← left)</th></tr>\n<tr><td>Price of an input</td><td>input price falls</td><td>input price rises</td></tr>\n<tr><td>Price of a substitute in production</td><td>its price falls</td><td>its price rises</td></tr>\n<tr><td>Price of a complement in production</td><td>its price rises</td><td>its price falls</td></tr>\n<tr><td>Technology</td><td>technology improves</td><td>best technology no longer available</td></tr>\n<tr><td>Expected future price</td><td>price expected to fall → supply up today</td><td>price expected to rise → supply down today</td></tr>\n<tr><td>Number of producers</td><td>more producers</td><td>fewer producers</td></tr>\n</table>\n<p>Simple examples:</p>\n<ul>\n<li><b>Input:</b> flour gets cheaper → bread is cheaper to make → more bread supplied.</li>\n<li><b>Substitute in production</b> (two goods made with the same resources): a farmer can grow wheat or corn. Corn price rises → he grows more corn, less wheat → wheat supply falls.</li>\n<li><b>Complement in production</b> (made together): beef and leather come from the same cow. Beef price rises → more cows → more leather supplied.</li>\n<li><b>Expectations:</b> if sellers think the price will be higher next month, they hold goods back today → supply today falls.</li>\n</ul>\n<p>(Slide 30 repeats the complement row from slide 29.)</p>",
+  "question": "<p>List the factors that shift the supply curve. For each, state when supply increases (shifts right) and when it decreases (shifts left), and give an example.</p>",
+  "answer": "<p>A change in a factor other than the good's own price shifts the supply curve: right = supply increases, left = supply decreases.</p>\n<ol>\n<li><b>Input prices:</b> an input is a good used to produce another good. Input price falls → supply increases; rises → supply decreases. (Cheaper flour → more bread.)</li>\n<li><b>Prices of related goods in production:</b>\n<ul><li>Substitute in production: its price rises → supply of the original good decreases; falls → increases. (Corn price up → less wheat.)</li>\n<li>Complement in production: its price rises → supply of the original good increases; falls → decreases. (Beef price up → more leather.)</li></ul></li>\n<li><b>Technology:</b> better technology lowers cost → supply increases; losing the best technology → supply decreases.</li>\n<li><b>Expectations:</b> price expected to rise in the future → supply decreases today; expected to fall → supply increases today.</li>\n<li><b>Number of producers:</b> more producers → market supply increases; fewer → decreases.</li>\n</ol>\n<p>Graph: draw S1, then S2 to the right for an increase (or to the left for a decrease).</p>",
+  "memorize": [
+   "Shift right = supply up; left = supply down",
+   "Input price ↓ → supply ↑",
+   "Substitute-in-production price ↑ → supply ↓; complement price ↑ → supply ↑",
+   "Better technology → supply ↑",
+   "Expect higher future price → supply ↓ TODAY",
+   "More producers → market supply ↑"
+  ]
+ },
+ {
+  "id": "Q16",
+  "label": "Q16",
+  "week": 4,
+  "slides": [
+   25,
+   29
+  ],
+  "kind": "calculation",
+  "topic": "Quantity controls (quota, license) and quota rent",
+  "explain": "<p><b>Slide 25:</b> a <b>quota</b> (quantity control) is an <b>upper limit</b> on how much of a good can be bought or sold. The legal total is the <b>quota limit</b>. A <b>license</b> gives its owner the right to supply the good. Example: a city gives only a limited number of taxi licenses.</p>\n<p><b>Slide 29:</b> a quota drives a <b>wedge</b> between two prices at the quota limit:</p>\n<ul>\n<li><b>Demand price</b> = what buyers are willing to pay for that quantity (high, because taxis are scarce).</li>\n<li><b>Supply price</b> = the price at which sellers are willing to supply that quantity (lower).</li>\n</ul>\n<p>Buyers pay more than sellers need. The gap = <b>quota rent</b> = the money the <b>license holder</b> earns just for owning the right to sell. If licenses can be traded, the quota rent equals the <b>market price of the license</b> (the rent you can charge for it).</p>\n<p>Taxi numbers (week 4): without control, 10 million rides at $5. Quota = 8 million rides. Riders will pay <b>$6</b> for 8 million rides (demand price); drivers would drive 8 million rides for only <b>$4</b> (supply price). Quota rent = 6 − 4 = <b>$2 per ride</b>. The professor's story: if I own the license and rent it out, nobody will pay more than $2 (a driver keeping less than $4 is unhappy), and drivers compete it up to $2. So the rent is exactly $2.</p>",
+  "question": "<p>Define a quota (quantity control) and a license. In the taxi market, equilibrium is 10 million rides at $5. The city limits rides to 8 million. At 8 million rides the demand price is $6 and the supply price is $4. Find the quota rent per ride and in total, explain who receives it, and find the deadweight loss.</p>",
+  "answer": "<p><b>Definitions:</b> a quantity control, or quota, is an upper limit on the quantity of a good that can be bought or sold; the total amount that can be legally transacted is the quota limit. A license gives its owner the right to supply the good.</p>\n<p><b>Wedge:</b> at the quota limit the demand price (what riders pay) is higher than the supply price (what drivers need).</p>\n<ul>\n<li>Demand price at 8m rides = $6</li>\n<li>Supply price at 8m rides = $4</li>\n<li><b>Quota rent per ride</b> = $6 − $4 = <b>$2</b></li>\n<li><b>Total quota rent</b> = $2 × 8 million = <b>$16 million</b> per year</li>\n</ul>\n<p><b>Who gets it:</b> the license holders. It is what they earn from owning the right to sell. If licenses are traded/rented, the quota rent equals the license's market price: a driver pays the owner $2 per ride, keeps $6 − $2 = $4, which is exactly what he needs. More than $2 → the driver keeps less than $4 and refuses; less than $2 → another driver offers more. So the rent is $2.</p>\n<p><b>Deadweight loss</b> (2 million rides that would benefit both sides are lost): ½ × ($6 − $4) × (10 − 8) million = <b>$2 million</b>.</p>",
+  "memorize": [
+   "Quota = upper limit on quantity; quota limit = legal total",
+   "License = right to supply",
+   "Wedge: demand price &gt; supply price at the quota",
+   "Quota rent = demand price − supply price = license price",
+   "Taxi: $6 − $4 = $2/ride; × 8m = $16m; DWL = ½×2×2m = $2m"
+  ]
+ },
+ {
+  "id": "Q17",
+  "label": "Q17",
+  "week": 5,
+  "slides": [
+   9
+  ],
+  "kind": "theory",
+  "topic": "What determines the price elasticity of demand",
+  "explain": "<p>Price elasticity of demand = how strongly buyers react to a price change. Slide 9 names <b>four factors</b> that decide if demand is elastic (big reaction) or inelastic (small reaction). The slide gives only the names; here is the direction for each (standard textbook logic):</p>\n<ol>\n<li><b>Close substitutes available?</b> Many substitutes → <b>more elastic</b>. If one brand of cola gets expensive, you switch to another. No substitutes (e.g. insulin) → inelastic.</li>\n<li><b>Necessity or luxury?</b> Necessity → <b>inelastic</b> (you still buy it). Luxury → <b>elastic</b> (easy to skip).</li>\n<li><b>Time:</b> the <b>longer</b> the time after the price change, the <b>more elastic</b>. Today you must still drive to work; in a year you can move closer or buy a smaller car.</li>\n<li><b>Proportion (share) of the consumer's budget:</b> a <b>big share</b> of your income → <b>more elastic</b> (you notice the change). A tiny share (salt, matches) → inelastic.</li>\n</ol>\n<p>The week 5 table matches this: eggs 0.1, beef 0.4, gasoline 0.5 are inelastic (necessities, few substitutes short-term); housing 1.2, restaurant meals 2.3, airline travel 2.4, foreign travel 4.1 are elastic (luxuries, big budget items, substitutes).</p>",
+  "question": "<p>What factors determine the price elasticity of demand? Explain each one with an example.</p>",
+  "answer": "<p>There are four main factors:</p>\n<ol>\n<li><b>Availability of close substitutes:</b> if close substitutes are available, consumers easily switch when the price rises, so demand is more elastic. Few substitutes → inelastic. (Coke vs Pepsi → elastic.)</li>\n<li><b>Necessity or luxury:</b> demand for a necessity is inelastic because people buy it anyway; demand for a luxury is elastic because people can do without it. (Eggs e = 0.1 vs foreign travel e = 4.1.)</li>\n<li><b>Time:</b> demand becomes more elastic over a longer time, because consumers have more time to adjust and find substitutes. (Gasoline: little change in the short run, bigger change in the long run.)</li>\n<li><b>Share of the consumer's budget (income) spent on the good:</b> if the good takes a large share of the budget, consumers react strongly, so demand is more elastic. A small share → inelastic. (Housing e = 1.2 vs stationery e = 0.5.)</li>\n</ol>",
+  "memorize": [
+   "4 factors: substitutes, necessity/luxury, time, budget share",
+   "More substitutes → more elastic",
+   "Necessity → inelastic; luxury → elastic",
+   "Longer time → more elastic",
+   "Bigger budget share → more elastic"
+  ]
+ },
+ {
+  "id": "Q18",
+  "label": "Q18",
+  "week": 5,
+  "slides": [
+   11,
+   12
+  ],
+  "kind": "calculation",
+  "topic": "Deriving dR/dP = Q(1 − e) and interpreting it",
+  "explain": "<p><b>Slide 11 — the derivation.</b> Revenue R = P × Q. But Q itself depends on P (price up → demand down), so R = P × Q(P).</p>\n<ol>\n<li>Differentiate (product rule): <b>dR/dP = Q + (dQ/dP)·P</b>, where dQ/dP &lt; 0. First part: higher price on every unit sold (good for revenue). Second part: fewer units sold (bad for revenue).</li>\n<li>Divide both sides by Q: (dR/dP)(1/Q) = 1 + (dQ/dP)(P/Q).</li>\n<li>Elasticity e = |(dQ/Q)/(dP/P)| = |(dQ/dP)·(P/Q)|. Because dQ/dP &lt; 0, (dQ/dP)(P/Q) = <b>−e</b>.</li>\n<li>So (dR/dP)(1/Q) = 1 − e, and <b>dR/dP = Q(1 − e)</b>.</li>\n</ol>\n<p>(Small slide slip: it writes the last step of e as a division \"dQ/dP / P/Q\"; it should be a multiplication (dQ/dP)·(P/Q). The next line on the slide uses the correct product.)</p>\n<p><b>Slide 12 — meaning.</b> Q &gt; 0, so the sign depends on 1 − e:</p>\n<ul>\n<li>e &lt; 1 (inelastic): dR/dP &gt; 0 → raising price raises revenue.</li>\n<li>e = 1: dR/dP = 0 → revenue does not change; it is at its max (or min).</li>\n<li>e &gt; 1 (elastic): dR/dP &lt; 0 → raising price lowers revenue (demand falls too much).</li>\n</ul>",
+  "question": "<p>Starting from R = P × Q(P), show that dR/dP = Q(1 − e), where e is the price elasticity of demand. Then use it to explain how revenue responds to a price increase when demand is inelastic, unit-elastic and elastic. (Possible numeric part: demand Q = 100 − 2P; check at P = 10, 25 and 40.)</p>",
+  "answer": "<p><b>Derivation:</b></p>\n<pre>R = P · Q(P)\ndR/dP = Q + P · (dQ/dP)          (product rule; dQ/dP &lt; 0)\n(dR/dP)·(1/Q) = 1 + (dQ/dP)·(P/Q)\ne = |(dQ/dP)·(P/Q)|  and dQ/dP &lt; 0  →  (dQ/dP)·(P/Q) = −e\n(dR/dP)·(1/Q) = 1 − e\ndR/dP = Q(1 − e)</pre>\n<p><b>Interpretation</b> (Q &gt; 0, so the sign of dR/dP = sign of 1 − e):</p>\n<ul>\n<li>e &lt; 1, inelastic: dR/dP &gt; 0 — a higher price raises total revenue, even though Q falls.</li>\n<li>e = 1, unit-elastic: dR/dP = 0 — revenue does not change; revenue is at its maximum (or minimum).</li>\n<li>e &gt; 1, elastic: dR/dP &lt; 0 — a higher price lowers total revenue, because Q falls too much.</li>\n</ul>\n<p><b>Numeric check, Q = 100 − 2P</b> (so dQ/dP = −2, e = 2P/Q, R = 100P − 2P², dR/dP = 100 − 4P):</p>\n<table>\n<tr><th>P</th><th>Q</th><th>e = 2P/Q</th><th>Q(1 − e)</th><th>100 − 4P</th><th>R = P·Q</th><th>Meaning</th></tr>\n<tr><td>10</td><td>80</td><td>0.25</td><td>80 × 0.75 = 60</td><td>60</td><td>800</td><td>inelastic → raise price, R ↑</td></tr>\n<tr><td>25</td><td>50</td><td>1</td><td>50 × 0 = 0</td><td>0</td><td>1,250</td><td>unit-elastic → R at maximum</td></tr>\n<tr><td>40</td><td>20</td><td>4</td><td>20 × (−3) = −60</td><td>−60</td><td>800</td><td>elastic → raise price, R ↓</td></tr>\n</table>\n<p>Both methods give the same dR/dP, so the formula works. Revenue is largest ($1,250) at P = 25, exactly where e = 1.</p>",
+  "memorize": [
+   "R = P·Q(P) → dR/dP = Q + P·(dQ/dP)",
+   "Divide by Q; (dQ/dP)(P/Q) = −e → dR/dP = Q(1 − e)",
+   "e &lt; 1: R ↑ with price; e = 1: R max; e &gt; 1: R ↓",
+   "Linear demand: revenue max where e = 1 (Q = 100 − 2P → P = 25, R = 1,250)"
+  ]
+ }
+]

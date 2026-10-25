@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Econ Midterm Study</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=IBM+Plex+Mono:wght@400;600&family=Schibsted+Grotesk:wght@600;800&display=swap">
+<link rel="stylesheet" href="econ.css">
+<style>
+  html { scroll-padding-top: 20px; }
+  body { display: grid; grid-template-columns: 270px minmax(0, 1fr); }
+  aside { position: sticky; top: 0; height: 100vh; overflow-y: auto; border-right: 1.5px solid var(--line); background: var(--sheet); padding: 20px 12px; display: grid; gap: 4px; align-content: start; }
+  aside .brand { font: 800 18px/1.2 var(--display); padding: 0 8px 4px; }
+  aside .sub { font-size: 13px; color: var(--muted); padding: 0 8px 12px; }
+  aside a { display: flex; gap: 10px; align-items: baseline; padding: 7px 8px; border-radius: 8px; text-decoration: none; color: var(--ink); font-size: 14px; line-height: 1.3; }
+  aside a:hover { background: var(--tint); }
+  aside a .q { font: 700 12px/1 var(--mono); color: var(--green); min-width: 56px; }
+  aside .links { border-top: 1.5px solid var(--line); margin-top: 10px; padding-top: 10px; }
+  main { padding: 36px 24px 80px; min-width: 0; }
+  .inner { max-width: 880px; margin: 0 auto; display: grid; gap: 56px; }
+  .top h1 { font-size: clamp(34px, 5vw, 56px); font-weight: 800; letter-spacing: -.02em; }
+  .top h1 span { color: var(--green); }
+  .top p { font-size: 1.12em; color: var(--ink-soft); margin-top: 12px; max-width: 62ch; }
+  .howto { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
+  .lesson { display: grid; gap: 22px; padding-top: 8px; border-top: 3px solid var(--ink); }
+  .lhead { display: grid; gap: 10px; }
+  .lhead .row { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+  .lhead h2 { font-size: clamp(26px, 3.4vw, 36px); font-weight: 800; }
+  .lhead p { font-size: 1.1em; color: var(--ink-soft); }
+  .teach { display: grid; gap: 18px; }
+  .tcard { display: grid; gap: 10px; }
+  .tcard h3 { font-size: 20px; font-weight: 800; display: flex; gap: 10px; align-items: baseline; }
+  .tcard h3 .n { font: 700 13px/1 var(--mono); color: var(--green); }
+  .tcard .with { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 20px; align-items: start; }
+  .tcard .body { font-size: 1.03em; }
+  .tcard table { font-size: .88em; }
+  .practice { background: var(--sheet); border: 1.5px solid var(--line); border-radius: 18px; padding: 20px; display: grid; gap: 18px; box-shadow: var(--shadow); }
+  .practice > h3 { font-size: 22px; font-weight: 800; }
+  .qgroup { display: grid; gap: 10px; }
+  .qgroup h4 { margin: 0; font: 800 17px/1.3 var(--display); display: flex; gap: 8px; align-items: baseline; flex-wrap: wrap; }
+  .qgroup h4 small { font: 600 14px var(--body); color: var(--muted); }
+  .pq { border: 1.5px solid var(--line); border-radius: 12px; padding: 12px 14px; display: grid; gap: 10px; background: var(--paper); }
+  .pq .qline { display: grid; grid-template-columns: auto 1fr; gap: 12px; align-items: start; }
+  .pq .num { font: 800 15px/1.5 var(--mono); color: var(--green); }
+  .pq .ans { border-left: 4px solid var(--green); background: var(--green-soft); border-radius: 0 10px 10px 0; padding: 10px 14px; }
+  .pending { color: var(--muted); font-style: italic; }
+  .totop { justify-self: start; font-size: 14px; font-weight: 700; text-decoration: none; }
+  .menu { display: none; }
+  @media (max-width: 920px) {
+    body { grid-template-columns: 1fr; }
+    aside { position: fixed; inset: 0 25% 0 0; z-index: 20; transform: translateX(-105%); transition: transform .2s; box-shadow: var(--shadow); }
+    aside.open { transform: none; }
+    .menu { display: inline-flex; position: fixed; right: 16px; bottom: calc(16px + env(safe-area-inset-bottom, 0px)); z-index: 21; }
+    .tcard .with { grid-template-columns: 1fr; }
+    main { padding-inline: 16px; }
+  }
+</style>
+</head>
+<body>
+<aside id="side"></aside>
+<button class="btn menu" id="menu">☰ Questions</button>
+<main><div class="inner" id="inner">
+  <section class="top" id="top">
+    <span class="chip green">NTS3040 · Intro to Economics · Midterm</span>
+    <h1 style="margin-top:14px">Every midterm question: <span>learn it, then practise it.</span></h1>
+    <p>The questions are in the professor's order. Under each one, read the short teaching, then answer the practice questions (1.1, 1.2, 1.3…) in your head or on paper before you tap "Show answer".</p>
+    <div class="howto"><a class="btn" href="#sec0">Start at Q1</a><a class="btn ghost" href="midterm.html">Midterm guide &amp; quiz</a></div>
+  </section>
+</div></main>
+
+<script src="list.js"></script>
+<script src="lessons-data.js"></script>
+<script src="variants-data.js"></script>
+<script src="chart.js"></script>
+<script>
+  const LS = typeof LESSONS !== "undefined" ? LESSONS : [];
+  const VS = typeof VARIANTS !== "undefined" ? VARIANTS : [];
+  const qNums = (id) => { const m = /^Q(\d+)(?:-(\d+))?$/.exec(id); if (!m) return []; const a = +m[1], b = m[2] ? +m[2] : a; return Array.from({ length: b - a + 1 }, (_, k) => a + k); };
+  /* remove slide references: "Slide 13: ", "(slide 48)", "(slides 18–19)", "(S20)", "on slide 14" */
+  const noSlides = (t) => (t || "")
+    .replace(/^\s*Slides?\s*[\d,\s–\-and&+]+[:·—-]\s*/i, "")
+    .replace(/\s*\((?:on\s+)?(?:week\s*\d+\s*)?(?:slides?|S)\s*[\d,\s–\-and&+]+\)/gi, "")
+    .replace(/\b([Ss])lides? \d+(?:\s*(?:[–\-,&]|and)\s*\d+)*/g, (m, c) => (c === "S" ? "The slide" : "the slide"));
+  const rich = (h) => `<div class="rich">${noSlides(h).replace(/<table/g, '<div class="tblwrap"><table').replace(/<\/table>/g, "</table></div>")}</div>`;
+
+  const order = LIST.map((q) => LS.find((l) => l.id === q.id)).filter(Boolean);
+  document.getElementById("side").innerHTML = `<div class="brand">Econ midterm</div><div class="sub">${order.length} topics · Q1–Q31</div>` +
+    order.map((l, i) => `<a href="#sec${i}"><span class="q">${l.label}</span><span>${noSlides(l.title)}</span></a>`).join("") +
+    `<div class="links"><a href="midterm.html">★ Midterm guide &amp; quiz</a><a href="index.html">All lessons (slides view)</a></div>`;
+
+  const html = order.map((l, i) => {
+    const nums = qNums(l.id);
+    const groups = nums.map((n) => {
+      const v = VS.find((x) => x.q === "Q" + n);
+      if (!v) return `<div class="qgroup"><h4>Q${n}</h4><p class="pending">Practice questions are being written. Refresh in a few minutes.</p></div>`;
+      return `<div class="qgroup"><h4>Q${n} <small>${v.focus || ""}</small></h4>` + v.variants.map((x, k) => `
+        <div class="pq"><div class="qline"><span class="num">${n}.${k + 1}</span>${rich(x.q)}</div>
+          <button class="reveal" data-reveal>Show answer</button><div class="ans" hidden>${rich(x.a)}</div></div>`).join("") + `</div>`;
+    }).join("");
+    const cards = (l.cards || []).map((c, k) => `<div class="tcard"><h3><span class="n">${k + 1}</span>${noSlides(c.h)}</h3>${c.chart ? `<div class="with"><div class="body">${rich(c.body)}</div>${renderChart(c.chart)}</div>` : `<div class="body">${rich(c.body)}</div>`}</div>`).join("");
+    return `<section class="lesson" id="sec${i}">
+      <div class="lhead"><div class="row"><span class="qbadge">${l.label}</span><span class="chip ${l.kind === "calculation" ? "calc" : ""}">${l.kind}</span></div><h2>${noSlides(l.title)}</h2><p>${noSlides(l.hook)}</p></div>
+      <div class="teach">${cards}</div>
+      ${l.example ? `<div class="panel"><span class="lbl">Worked example</span>${rich(l.example.problem)}<button class="reveal" data-reveal>Show solution</button><div class="panel sol" hidden><span class="lbl">Solution</span>${rich(l.example.solution)}</div></div>` : ""}
+      <div class="practice"><h3>Practice questions</h3>${groups}</div>
+      <a class="totop" href="#top">↑ Back to top</a>
+    </section>`;
+  }).join("");
+  document.getElementById("inner").insertAdjacentHTML("beforeend", html);
+
+  document.addEventListener("click", (e) => {
+    const r = e.target.closest("[data-reveal]");
+    if (r) { r.nextElementSibling.hidden = false; r.remove(); }
+    if (e.target.closest("aside a")) document.getElementById("side").classList.remove("open");
+  });
+  document.getElementById("menu").onclick = () => document.getElementById("side").classList.toggle("open");
+</script>
+</body>
+</html>

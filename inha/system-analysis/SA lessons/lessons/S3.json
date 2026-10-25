@@ -1,0 +1,360 @@
+[
+ {
+  "id": "W3-1",
+  "label": "W3·1",
+  "week": "W3",
+  "slides": [
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12,
+   13,
+   14,
+   15
+  ],
+  "kind": "theory",
+  "title": "How a project starts: business need, BPM and the system request",
+  "hook": "After this lesson you can explain where project ideas come from, tell automation, improvement and reengineering apart, and fill in the 5 parts of a system request.",
+  "cards": [
+   {
+    "h": "Where we are: Planning, part 1",
+    "body": "<p>The SDLC has phases: Idea → <b>Planning</b> → Analysis → Design → Implementation → System success. This week is the <b>first phase, Planning</b>.</p><p>Planning has <b>two parts</b>:</p><ol><li><b>Project Initiation</b>: develop or receive a <b>system request</b>, then do a <b>feasibility analysis</b> (technical, economic, organizational).</li><li><b>Project Management</b>: develop the work plan, staff the project, monitor and control it.</li></ol><p>This deck covers <b>part 1 only</b>. Part 2 is the W4 deck (WBS, Gantt, CPM).</p>",
+    "diagram": "flowchart LR\n  I([Idea]) --> P[\"Planning: WE ARE HERE\"] --> A[Analysis] --> D[Design] --> M[Implementation] --> S([System success])"
+   },
+   {
+    "h": "A project starts with a business need",
+    "body": "<p>Think of a café in Tashkent. Every morning the queue is long and customers leave. That is a <b>problem</b>. The owner says: \"We need an ordering app.\" A project is born.</p><p>The professor asked in class: <i>\"Where do project ideas come from?\"</i> Answer: <b>a project is identified when someone in the organization identifies a business need to build a system.</b></p><table><tr><th>Kind of need</th><th>Slide examples</th></tr><tr><td>Opportunity</td><td>support a new marketing campaign; reach a new type of customer; improve interactions with suppliers</td></tr><tr><td>\"Pain\" in the organization</td><td>drop in market share; poor customer service; unacceptable product defect rates; increased competition</td></tr><tr><td>Other</td><td>new business initiatives and strategies; a merger or acquisition that needs systems integrated</td></tr></table>"
+   },
+   {
+    "h": "BPM: always improving the business processes",
+    "body": "<p><b>Business process management (BPM)</b> = a methodology to <b>continuously improve end-to-end business processes</b>. It works inside one organization and across business partners. It is a cycle: create, assess, change processes, again and again.</p><p><b>3 benefits</b>: (1) more <b>agility</b> (adapt faster to change), (2) better <b>alignment</b> with industry \"best practices\", (3) more <b>efficiency</b> (costs are found and removed).</p><p>The <b>business analyst's 4 steps</b> in BPM:</p><ol><li>Define and map the steps of a process.</li><li>Improve the steps that add value.</li><li>Remove or merge the steps that do not add value.</li><li><b>Create or adjust electronic workflows</b> to match the improved process.</li></ol><p>Step 4 is the important one for us: <b>this is where the need for information systems projects is most often found.</b></p>"
+   },
+   {
+    "h": "Automation, Improvement, Reengineering: small, medium, big change",
+    "body": "<table><tr><th></th><th>What it means</th><th>Café example</th></tr><tr><td><b>Business Process Automation</b></td><td>Technology <b>complements or replaces manual</b> work. Goal: <b>cost efficiency</b>. The foundation of many IT systems.</td><td>Paper order slips are replaced by a tablet. Same steps, faster.</td></tr><tr><td><b>Business Process Improvement</b></td><td>Study the process and <b>redesign</b> it, maybe with new technology (= BPM steps 2, 3, 4).</td><td>Customers order and pay in the app before they arrive. Some steps disappear.</td></tr><tr><td><b>Business Process Reengineering (BPR)</b></td><td><b>Complete revamping</b>: change the fundamental way the organization works, \"obliterating\" the old way.</td><td>The café closes the hall and becomes a delivery-only kitchen.</td></tr></table><p>BPR has <b>substantial risk</b>, is <b>fairly rare</b>, and needs <b>top management support and careful management</b>. In all three, IT people and business people must work closely together.</p>",
+    "diagram": "flowchart LR\n  A[\"Automation: same steps, done by computer\"] -->|bigger change| B[\"Improvement: redesign some steps\"] -->|biggest change, high risk| C[\"Reengineering BPR: start over\"]"
+   },
+   {
+    "h": "From the need to the system request",
+    "body": "<p>The chain is: <b>business need</b> → <b>high-level business requirements</b> (what the system must do, and why) + <b>business value</b> (the benefits) → the <b>project sponsor</b> formally starts the project → <b>system request</b>.</p><p><b>System request</b> = a document that describes the <b>business reasons</b> for building a system and the <b>value</b> it is expected to provide.</p><p>Who writes it? Usually the <b>project sponsor</b>, as part of a formal project selection process. Then it goes, with the feasibility analysis, to the <b>approval committee</b> (next lesson).</p>",
+    "diagram": "flowchart LR\n  N[Business need] --> R[\"High-level business requirements\"]\n  N --> V[Business value]\n  R --> SR[\"System request, by the project sponsor\"]\n  V --> SR\n  SR --> F[Feasibility analysis]\n  F --> C{\"Approval committee\"}\n  C -->|yes| GO([Project starts])\n  C -->|no| NO([Stop])"
+   },
+   {
+    "h": "The 5 elements of a system request",
+    "body": "<table><tr><th>Element</th><th>Meaning</th><th>Slide example</th></tr><tr><td><b>Project sponsor</b></td><td>the person who starts the project and is the main contact on the business side</td><td>VP of marketing, CIO, CEO, steering committee, several members of finance</td></tr><tr><td><b>Business need</b></td><td>the business reason for the system</td><td>increase sales, improve customer service, decrease product defects</td></tr><tr><td><b>Business requirements</b></td><td>the business <b>capabilities</b> the system will provide</td><td>online access to information, product search, management reports</td></tr><tr><td><b>Business value</b></td><td>the <b>benefits</b> for the organization, usually as numbers</td><td>3% increase in sales, $200,000 cost savings, headcount reduced by 5 FTEs</td></tr><tr><td><b>Special issues or constraints</b></td><td>things the approval committee must know</td><td>government deadline May 30, ready before Christmas, security clearance needed</td></tr></table><p>Memory trick: <b>S-N-R-V-I</b> (Sponsor, Need, Requirements, Value, Issues). Tip: requirements = <i>what it does</i>; value = <i>what we gain</i> (a number).</p>"
+   }
+  ],
+  "example": {
+   "problem": "<p>Inha University in Tashkent wants a new online course-registration system. Every semester students wait in long lines and many registration errors happen. Write a short system request with all 5 elements.</p>",
+   "solution": "<table><tr><th>Element</th><th>Our answer</th></tr><tr><td>Project sponsor</td><td>Head of the Academic Affairs Office</td></tr><tr><td>Business need</td><td>Long lines and many registration errors; improve student service</td></tr><tr><td>Business requirements</td><td>Online course search; online registration with seat limits; automatic prerequisite check; reports for deans</td></tr><tr><td>Business value</td><td>Registration errors down by 80%; 2 fewer office staff needed during registration; about $15,000 saved per year</td></tr><tr><td>Special issues or constraints</td><td>Must be ready before the spring registration week; must connect to the existing student database</td></tr></table><p>Check yourself: is each business value a <b>measurable</b> number? Is each requirement a <b>capability</b>? Yes, so the form is correct.</p>"
+  },
+  "check": [
+   {
+    "q": "(Professor's question, S5) Where do project ideas come from?",
+    "a": "A project is identified when someone in the organization identifies a <b>business need</b> to build a system."
+   },
+   {
+    "q": "(Professor's question, S5) Give examples of such needs.",
+    "a": "Opportunities: new marketing campaign, new type of customer, better interactions with suppliers. \"Pain\": drop in market share, poor customer service, unacceptable defect rates, increased competition. Also new strategies, mergers or acquisitions."
+   },
+   {
+    "q": "Which system-request element is each? (a) \"Include product search capabilities\" (b) \"Government-mandated deadline for May 30\" (c) \"$150,000 savings from removal of existing system\" (d) \"Vice president of marketing\"",
+    "a": "(a) business requirements · (b) special issues or constraints · (c) business value · (d) project sponsor"
+   },
+   {
+    "q": "Which of BPA, BPI and BPR is risky and rare, and what does it need?",
+    "a": "<b>BPR</b>. It needs <b>top management support and careful management</b>."
+   },
+   {
+    "q": "Which of the analyst's 4 BPM steps is where IS projects are most often identified?",
+    "a": "Step 4: <b>creating or adjusting electronic workflows</b> to match the improved process maps."
+   }
+  ],
+  "exam": {
+   "question": "<p>What is a system request? Who usually prepares it? List and describe its five elements.</p>",
+   "answer": "<p>A <b>system request</b> is a document that describes the business reasons for building a system and the value the system is expected to provide. It is usually completed by the <b>project sponsor</b> as part of a formal project selection process, and it is presented (with the feasibility analysis) to the approval committee.</p><ol><li><b>Project sponsor</b>: the person who initiates the project and is the primary point of contact on the business side.</li><li><b>Business need</b>: the business-related reason for initiating the system.</li><li><b>Business requirements</b>: the business capabilities the system will provide.</li><li><b>Business value</b>: the benefits the system will create for the organization.</li><li><b>Special issues or constraints</b>: issues relevant to implementation that the approval committee must know.</li></ol>"
+  },
+  "memorize": [
+   "Planning = Project Initiation (system request + feasibility) + Project Management (work plan, staffing, monitor and control)",
+   "A project is identified when someone identifies a business need",
+   "BPM benefits: agility, alignment with best practices, efficiency",
+   "IS projects are mostly found at BPM step 4: electronic workflows",
+   "Change size: Automation (replace manual work, cost) → Improvement (redesign) → BPR (start over, risky, rare, top management support)",
+   "System request = Sponsor, Need, Requirements, Value, Special issues (S-N-R-V-I); written by the project sponsor"
+  ]
+ },
+ {
+  "id": "W3-2",
+  "label": "W3·2",
+  "week": "W3",
+  "slides": [
+   16,
+   17,
+   18,
+   19,
+   20,
+   21,
+   22,
+   23,
+   33,
+   34
+  ],
+  "kind": "theory",
+  "title": "Feasibility analysis: can we, should we, will they?",
+  "hook": "After this lesson you can name the three feasibility checks with their questions, list the technical risk factors, and sort any cost or benefit into the right box.",
+  "cards": [
+   {
+    "h": "Three questions before we spend money",
+    "body": "<p>Before building the café app, the owner asks three questions:</p><ul><li><b>Technical feasibility</b>: <i>Can we build it?</i></li><li><b>Economic feasibility</b>: <i>Should we build it?</i> (also: <i>Will it provide business value?</i>)</li><li><b>Organizational feasibility</b>: <i>If we build it, will they come?</i> (also: <i>will it be used?</i>)</li></ul><p>The slides call technical \"the first technique\", economic \"the second element\", organizational \"the final technique\". Learn both wordings of each question.</p>",
+    "diagram": "flowchart TD\n  SR[System request] --> FA[Feasibility analysis]\n  FA --> T[\"Technical: Can we build it?\"]\n  FA --> E[\"Economic: Should we build it?\"]\n  FA --> O[\"Organizational: If we build it, will they come?\"]\n  T --> AC{\"Approval or steering committee\"}\n  E --> AC\n  O --> AC\n  AC -->|go| G([Project approved])\n  AC -->|no go| X([Project rejected])"
+   },
+   {
+    "h": "Who decides, and the two jobs of feasibility analysis",
+    "body": "<p>The <b>system request + feasibility analysis</b> go to the <b>information systems approval committee</b> (also called the <b>steering committee</b>). It <b>decides whether the project should be undertaken</b>.</p><p>The committee may ask the systems analyst to prepare a more detailed <b>business case</b>.</p><p>Feasibility analysis has <b>two jobs</b>:</p><ol><li>guide the <b>go / no-go decision</b>;</li><li><b>identify the important risks</b> that must be managed if the project is approved.</li></ol>"
+   },
+   {
+    "h": "Technical feasibility = technical risk analysis",
+    "body": "<p>Definition: the extent to which the system can be successfully <b>designed, developed and installed by the IT group</b>. In essence it is a <b>technical risk analysis</b>: \"Can we build it?\"</p><p><b>4 risk factors</b> (each one makes risk go up):</p><table><tr><th>Factor</th><th>Rule</th><th>Café example</th></tr><tr><td>Familiarity with the <b>application</b></td><td>less familiarity → more risk</td><td>the team never built an ordering system</td></tr><tr><td>Familiarity with the <b>technology</b></td><td>less familiarity → more risk</td><td>the team never made a mobile app</td></tr><tr><td><b>Project size</b></td><td>large project → more risk</td><td>app + website + kitchen screens at once</td></tr><tr><td><b>Compatibility</b></td><td>harder to integrate with existing technology → more risk</td><td>must connect to an old cash register</td></tr></table>"
+   },
+   {
+    "h": "Economic feasibility = cost–benefit analysis",
+    "body": "<p>Also called <b>cost–benefit analysis</b>. Question: <i>\"Should we build the system?\"</i></p><p>How: <b>identify costs and benefits → assign values (money) → calculate future cash flows → measure the financial worthiness</b> (ROI, BEP, NPV).</p><p>The 4 things we look at (S19): <b>development costs</b>, <b>annual operating costs</b>, <b>annual benefits</b> (cost savings and/or more revenue), and <b>intangible benefits and costs</b>.</p><p>Why it matters: money is limited and many projects compete for it. <b>The more expensive the project, the more detailed the analysis should be.</b></p>"
+   },
+   {
+    "h": "Sort every cost and benefit into 4 boxes (S23)",
+    "body": "<table><tr><th>Development costs<br>(one time, Year 0)</th><th>Operational costs<br>(every year)</th><th>Tangible benefits<br>(every year)</th><th>Intangible benefits<br>(no easy $)</th></tr><tr><td>Development team salaries<br>Consultant fees<br>Development training<br>Hardware and software<br>Vendor installation<br>Office space and equipment<br>Data conversion costs</td><td>Software upgrades<br>Software licensing fees<br>Hardware repairs<br>Hardware upgrades<br>Operational team salaries<br>Communications charges<br>User training</td><td>Increased sales<br>Reductions in staff<br>Reductions in inventory<br>Reductions in IT costs<br>Better supplier prices</td><td>Increased market share<br>Increased brand recognition<br>Higher quality products<br>Improved customer service<br>Better supplier relations</td></tr></table><p><b>Tricky pairs:</b> <i>development</i> training (dev.) vs <i>user</i> training (oper.) · hardware <i>and software</i> (dev.) vs hardware <i>repairs/upgrades</i> (oper.) · supplier <i>prices</i> (tangible) vs supplier <i>relations</i> (intangible) · increased <i>sales</i> (tangible) vs <i>market share</i> (intangible).</p><p>Easy test: \"Do we pay it once to <b>build</b>?\" → development. \"Do we pay it every year to <b>run</b>?\" → operational.</p>"
+   },
+   {
+    "h": "The 4 steps of an economic feasibility analysis (S33–S34)",
+    "body": "<ol><li><b>Identify costs and benefits</b>: list the tangible costs and benefits, both <b>one-time and recurring</b>.</li><li><b>Assign values</b>: work with business users and IT people to put numbers on them. <b>Even intangibles</b> should be valued if at all possible.</li><li><b>Determine cash flow</b>: forecast costs and benefits over a period, <b>usually 3 to 5 years</b>. Apply a growth rate if needed.</li><li><b>Assess the project's economic value</b>: use <b>one or more</b> of <b>ROI</b>, <b>BEP</b>, <b>NPV</b> (next lesson).</li></ol>",
+    "diagram": "flowchart LR\n  S1[\"Step 1: identify costs and benefits\"] --> S2[\"Step 2: assign values\"] --> S3[\"Step 3: determine cash flow, 3 to 5 years\"] --> S4[\"Step 4: assess value with ROI, BEP, NPV\"]"
+   }
+  ],
+  "example": {
+   "problem": "<p>Classify each item as development cost, operational cost, tangible benefit or intangible benefit: consultant fees; software licensing fees; reductions in inventory; increased brand recognition; user training; vendor installation; better supplier prices; better supplier relations; development training; communications charges.</p>",
+   "solution": "<table><tr><th>Item</th><th>Box</th><th>Why</th></tr><tr><td>Consultant fees</td><td>Development</td><td>paid to build</td></tr><tr><td>Software licensing fees</td><td>Operational</td><td>paid every year to run</td></tr><tr><td>Reductions in inventory</td><td>Tangible benefit</td><td>money we can count</td></tr><tr><td>Increased brand recognition</td><td>Intangible benefit</td><td>hard to put in $</td></tr><tr><td>User training</td><td>Operational</td><td>users, every year (not development training)</td></tr><tr><td>Vendor installation</td><td>Development</td><td>one time, to set up</td></tr><tr><td>Better supplier prices</td><td>Tangible benefit</td><td>prices = money</td></tr><tr><td>Better supplier relations</td><td>Intangible benefit</td><td>relations = feeling, not $</td></tr><tr><td>Development training</td><td>Development</td><td>training the builders</td></tr><tr><td>Communications charges</td><td>Operational</td><td>monthly bills</td></tr></table>"
+  },
+  "check": [
+   {
+    "q": "Name the three feasibility dimensions and the question each answers.",
+    "a": "Technical: Can we build it? · Economic: Should we build it? / Will it provide business value? · Organizational: If we build it, will they come? / Will it be used?"
+   },
+   {
+    "q": "Who receives the system request and the feasibility analysis, and what do they decide?",
+    "a": "The information systems <b>approval committee</b> (steering committee). It decides whether the project should be undertaken."
+   },
+   {
+    "q": "Besides the go/no-go decision, what else does feasibility analysis do?",
+    "a": "It <b>identifies the important risks</b> that must be managed if the project is approved."
+   },
+   {
+    "q": "List the four technical risk factors.",
+    "a": "Familiarity with the application, familiarity with the technology, project size, compatibility. Less familiarity, bigger size and harder integration all mean more risk."
+   },
+   {
+    "q": "Over what period is the cash flow usually forecast?",
+    "a": "Usually <b>3 to 5 years</b> (step 3, S33)."
+   },
+   {
+    "q": "Is \"Hardware repairs\" a development or operational cost?",
+    "a": "<b>Operational</b> (recurring, every year). This matters a lot in the Small practice calculation."
+   }
+  ],
+  "exam": {
+   "question": "<p>Name the three dimensions of feasibility analysis and the question each one answers. Explain technical feasibility and list its risk factors.</p>",
+   "answer": "<p><b>Technical</b>: \"Can we build it?\" · <b>Economic</b> (cost–benefit analysis): \"Should we build it?\" · <b>Organizational</b>: \"If we build it, will they come?\" The system request and feasibility analysis are presented to the approval (steering) committee, which decides whether to undertake the project.</p><p><b>Technical feasibility</b> is the extent to which the system can be successfully designed, developed and installed by the IT group. It is in essence a technical risk analysis. Risk factors: (1) familiarity with the application, less familiarity = more risk; (2) familiarity with the technology, less familiarity = more risk; (3) project size, large projects = more risk; (4) compatibility, the harder it is to integrate with existing technology, the higher the risk.</p>"
+  },
+  "memorize": [
+   "Technical = Can we build it? · Economic = Should we build it? · Organizational = If we build it, will they come?",
+   "Decided by the approval committee = steering committee",
+   "Feasibility analysis also identifies the important risks",
+   "Technical risk factors: familiarity with application, familiarity with technology, project size, compatibility",
+   "Economic feasibility = cost–benefit analysis; 4 steps: identify → assign values → cash flow (3–5 yrs) → ROI/BEP/NPV",
+   "Development = one time (Year 0); operational + tangible benefits = every year; intangible = only if valued"
+  ]
+ },
+ {
+  "id": "W3-3",
+  "label": "W3·3",
+  "week": "W3",
+  "slides": [
+   24,
+   25,
+   26,
+   27,
+   28,
+   29,
+   30,
+   31,
+   32,
+   40,
+   41
+  ],
+  "kind": "calculation",
+  "title": "Economic feasibility: cash flow, ROI, break-even point and NPV",
+  "hook": "After this lesson you can solve the Quiz 1 Part B task: build the cash-flow table and find ROI, BEP (with the part of the year) and NPV for a 3-year life at any rate.",
+  "cards": [
+   {
+    "h": "Step 1: put every money item in the right year",
+    "body": "<p>Story: the café pays developers <b>once, now</b> to build the app. After that, <b>every year</b> the app brings benefits (more sales, fewer staff) and has running costs (licences, repairs).</p><ul><li><b>Development costs → Year 0 only</b> (the \"initial investment\").</li><li><b>Operational costs</b> and <b>tangible benefits → every year, Year 1 to Year n</b>, same amount if no growth rate is given.</li><li>\"Project life cycle is <b>3 years</b>\" = Year 0 + Years 1, 2, 3 (the slide's S25 layout).</li></ul><p>On the exam, write one line: <i>\"Development costs are one-time in Year 0; operating costs and benefits are annual in Years 1–3.\"</i></p>",
+    "diagram": "flowchart LR\n  Y0[\"Year 0: development costs, paid once\"] --> Y1[\"Year 1: benefits minus operational costs\"] --> Y2[\"Year 2: benefits minus operational costs\"] --> Y3[\"Year 3: benefits minus operational costs\"]"
+   },
+   {
+    "h": "Step 2: the cash-flow table (net and cumulative)",
+    "body": "<p>Four rows. <b>Net = Benefits − Costs</b> for each year. <b>Cumulative = last year's cumulative + this year's net</b> (a running total). Numbers in (parentheses) are <b>negative</b>.</p><p>The slide example (S25):</p><table><tr><th></th><th>Year 0</th><th>Year 1</th><th>Year 2</th><th>Year 3</th><th>Total</th></tr><tr><td>Total Benefits</td><td></td><td>45,000</td><td>50,000</td><td>57,000</td><td>152,000</td></tr><tr><td>Total Costs</td><td>100,000</td><td>10,000</td><td>12,000</td><td>16,000</td><td>138,000</td></tr><tr><td>Net Benefits</td><td>(100,000)</td><td>35,000</td><td>38,000</td><td>41,000</td><td>14,000</td></tr><tr><td>Cumulative</td><td>(100,000)</td><td>(65,000)</td><td>(27,000)</td><td><b>14,000</b></td><td></td></tr></table><p>How the cumulative grows: −100,000 + 35,000 = −65,000 → −65,000 + 38,000 = −27,000 → −27,000 + 41,000 = <b>+14,000</b>. It turns positive in <b>Year 3</b>.</p>"
+   },
+   {
+    "h": "Step 3: ROI (return on investment)",
+    "body": "<p><b>ROI = (Total Benefits − Total Costs) / Total Costs</b></p><p>Use the <b>Total column</b>, and Total Costs <b>includes Year 0</b>.</p><p>Slide: ROI = (152,000 − 138,000) / 138,000 = 14,000 / 138,000 = <b>10.14%</b>.</p><p>Meaning: over the whole life, each 100 sum we spend comes back with about 10 extra. It is the average rate of return on the money invested.</p><p>Weak points (slides): what is a \"high\" ROI is unclear; it is hard to interpret; it should not be the only measure; and it <b>ignores the time value of money</b>.</p><p>Small note: on S26 the minus sign is missing in \"(total benefits  total costs)\". It is a minus.</p>"
+   },
+   {
+    "h": "Step 4: BEP (break-even point) with the fraction of the year",
+    "body": "<p>BEP (also called the <b>payback method</b>) = how many years it takes to get the original investment back.</p><p><b>BEP = number of years of negative cash flow + (that year's Net − that year's Cumulative) / that year's Net</b></p><ol><li>Find <b>\"that year\"</b>: the first year the cumulative is positive. Slide: Year 3.</li><li>Years of negative cash flow = that year − 1 (<b>Year 0 is not counted</b>). Slide: 2.</li><li>Fraction = (41,000 − 14,000) / 41,000 = 27,000 / 41,000 = 0.66.</li><li>BEP = 2 + 0.66 = <b>2.66 years</b>.</li></ol><p>Intuition: at the end of Year 2 we still miss 27,000. Year 3 brings 41,000. So we need 66% of Year 3.</p><p><b>Kind warning:</b> the slide (S27) writes 41,000 − 14,000 = 28,000 and gets 2.68. That is a small typing slip (it is also in the textbook). The correct value is <b>27,000 → 2.66 years</b>. Write 2.66.</p>"
+   },
+   {
+    "h": "Step 5: time value of money and the PV factors",
+    "body": "<p>Would you take 100 today or 100 in three years? Today! You could invest today's money and earn a return. So <b>future money is worth less than money today</b>. ROI and BEP ignore this. NPV fixes it.</p><p><b>PV = Cash flow / (1 + rate)<sup>n</sup></b>, where n = the year of the cash flow.</p><p>Slide: 100 / (1.10)<sup>3</sup> = 100 / 1.331 = <b>75.13</b>. (S28's \"$75\" means $100 received in Year 3.)</p><table><tr><th>Rate</th><th>÷ Year 0</th><th>÷ Year 1</th><th>÷ Year 2</th><th>÷ Year 3</th></tr><tr><td>5%</td><td>1</td><td>1.05</td><td>1.1025</td><td>1.157625</td></tr><tr><td>10%</td><td>1</td><td>1.1</td><td>1.21</td><td>1.331</td></tr><tr><td>15%</td><td>1</td><td>1.15</td><td>1.3225</td><td>1.520875</td></tr><tr><td>20%</td><td>1</td><td>1.2</td><td>1.44</td><td>1.728</td></tr></table><p>Build it fast: multiply by (1 + r) again each year. <b>Year 0 is never discounted</b> (÷ 1).</p>"
+   },
+   {
+    "h": "Step 6: NPV and the decision",
+    "body": "<p>Add two rows: PV of benefits and PV of costs. Then <b>NPV = Σ PV of benefits − Σ PV of costs</b>.</p><table><tr><th>At 10%</th><th>Year 0</th><th>Year 1</th><th>Year 2</th><th>Year 3</th><th>Total</th></tr><tr><td>Total Benefits</td><td></td><td>45,000</td><td>50,000</td><td>57,000</td><td></td></tr><tr><td>PV of Benefits</td><td></td><td>40,909</td><td>41,322</td><td>42,825</td><td><b>125,056</b></td></tr><tr><td>Total Costs</td><td>100,000</td><td>10,000</td><td>12,000</td><td>16,000</td><td></td></tr><tr><td>PV of Costs</td><td>100,000</td><td>9,091</td><td>9,917</td><td>12,021</td><td><b>131,029</b></td></tr></table><p>NPV = 125,056 − 131,029 = <b>(5,973)</b>, negative.</p><p><b>Rule: NPV &gt; 0 → economically acceptable. NPV &lt; 0 → do not accept.</b></p><p><b>Kind warning:</b> S30 prints the Year 3 benefit as <b>55,000</b>. It should be <b>57,000</b> (from S25). Proof: 57,000 / 1.331 = 42,825, the PV on the slide; 55,000 would give 41,322. Use 57,000.</p>"
+   },
+   {
+    "h": "The big lesson: \"naïve\" ROI and BEP vs NPV",
+    "body": "<p>In the slide example, ROI = 10.14% (positive) and BEP = 2.66 years (inside the 3-year life). Both <b>look good</b>. But NPV at 10% = <b>−$5,973</b>, so the project should <b>not</b> be accepted.</p><p>S32: the \"naïve\" ROI and BEP can make a project look acceptable, while the <b>more rigorous and financially correct NPV</b> shows it is not.</p><p>In-class question (S32): \"The required rate of return would have to be less than ???% for a positive NPV.\" Answer on the slide: <b>6.65%</b> (python check: NPV = 0 at about 6.66%).</p><p><b>Mistakes that lose marks:</b> discounting Year 0 · counting Year 0 as a negative year in BEP · leaving Year 0 out of Total Costs in ROI · putting hardware repairs, user training or software upgrades in Year 0 · copying 2.68 or 55,000.</p>",
+    "diagram": "flowchart LR\n  A[Classify items] --> B[\"Cash-flow table\"] --> C[ROI] --> D[BEP] --> E[\"PV rows\"] --> F[NPV] --> G{\"NPV more than 0?\"}\n  G -->|yes| H([Accept])\n  G -->|no| I([Reject])"
+   }
+  ],
+  "example": {
+   "problem": "<p>The slide example (S25–S32). Total Benefits: Year 1 = 45,000, Year 2 = 50,000, Year 3 = 57,000. Total Costs: Year 0 = 100,000, Year 1 = 10,000, Year 2 = 12,000, Year 3 = 16,000. Required rate of return = 10%. Find ROI, BEP and NPV. Should the project be accepted?</p>",
+   "solution": "<p><b>1. Cash-flow table</b></p><table><tr><th></th><th>Year 0</th><th>Year 1</th><th>Year 2</th><th>Year 3</th><th>Total</th></tr><tr><td>Total Benefits</td><td>–</td><td>45,000</td><td>50,000</td><td>57,000</td><td>152,000</td></tr><tr><td>Total Costs</td><td>100,000</td><td>10,000</td><td>12,000</td><td>16,000</td><td>138,000</td></tr><tr><td>Net Benefits</td><td>(100,000)</td><td>35,000</td><td>38,000</td><td>41,000</td><td>14,000</td></tr><tr><td>Cumulative</td><td>(100,000)</td><td>(65,000)</td><td>(27,000)</td><td>14,000</td><td></td></tr></table><p><b>2. ROI</b> = (152,000 − 138,000) / 138,000 = 14,000 / 138,000 = <b>10.14%</b></p><p><b>3. BEP</b>: the cumulative turns positive in Year 3, so 2 negative years. BEP = 2 + (41,000 − 14,000) / 41,000 = 2 + 27,000 / 41,000 = 2 + 0.66 = <b>2.66 years</b> (the slide prints 28,000 and 2.68 by a small slip).</p><p><b>4. PV at 10%</b></p><table><tr><th></th><th>Year 0</th><th>Year 1</th><th>Year 2</th><th>Year 3</th><th>Total</th></tr><tr><td>Divide by</td><td>1</td><td>1.1</td><td>1.21</td><td>1.331</td><td></td></tr><tr><td>PV of Benefits</td><td>–</td><td>40,909</td><td>41,322</td><td>42,825</td><td>125,056</td></tr><tr><td>PV of Costs</td><td>100,000</td><td>9,091</td><td>9,917</td><td>12,021</td><td>131,029</td></tr></table><p>(Use 57,000 for Year 3, not the 55,000 printed on S30.)</p><p><b>5. NPV</b> = 125,056 − 131,029 = <b>(5,973)</b> (exact −5,972.95).</p><p><b>6. Decision</b>: NPV &lt; 0, so at 10% the project should <b>not</b> be accepted, even though ROI and BEP look fine. NPV turns positive only if the rate is below about 6.65%.</p>",
+   "diagram": "flowchart LR\n  A[\"Cumulative Year 2: minus 27,000\"] -->|\"Year 3 brings 41,000\"| B[\"27,000 / 41,000 = 0.66 of Year 3\"] --> C[\"BEP = 2 + 0.66 = 2.66 years\"]"
+  },
+  "check": [
+   {
+    "q": "(Small practice, S40) Hardware repairs $30 000; Increased sales $20 000; Reduction in staff $40 000; Development team salaries $50 000; Office space and equipment $10 000; Data conversion tools $10 000. Find the year when the cumulative net cash flow turns positive.",
+    "a": "Development (Year 0) = 50,000 + 10,000 + 10,000 = 70,000. Every year: benefits 20,000 + 40,000 = 60,000, costs (hardware repairs) 30,000, net 30,000. Cumulative: (70,000) → (40,000) → (10,000) → <b>20,000</b>. Answer: <b>Year 3</b> (BEP = 2 + 10,000/30,000 = 2.33 years). Trap: if you put hardware repairs in Year 0 you wrongly get Year 2."
+   },
+   {
+    "q": "(Small practice, S41) Hardware repairs $20 000; Increased sales $40 000; Reduction in staff $40 000; Development team salaries $50 000; Office space and equipment $10 000; Data conversion tools $10 000. Find ROI, BEP and NPV for a 2-year life at 10%.",
+    "a": "Year 0 cost 70,000; Years 1–2: benefits 80,000, costs 20,000, net 60,000. Cumulative: (70,000) → (10,000) → 50,000. Totals: benefits 160,000, costs 110,000.<br><b>ROI</b> = 50,000 / 110,000 = <b>45.45%</b>.<br><b>BEP</b> = 1 + (60,000 − 50,000) / 60,000 = <b>1.17 years</b>.<br><b>NPV</b> = (72,727 + 66,116) − (70,000 + 18,182 + 16,529) = 138,843 − 104,711 = <b>$34,132</b> &gt; 0 → accept."
+   },
+   {
+    "q": "What is the present value of $2,000 received in Year 2 at 10%?",
+    "a": "2,000 / 1.21 = <b>$1,652.89</b>"
+   },
+   {
+    "q": "Why can ROI and BEP make a bad project look good?",
+    "a": "They ignore the <b>time value of money</b>: a dollar in Year 3 counts the same as a dollar today. NPV discounts future money, so it is \"more rigorous and financially correct\"."
+   },
+   {
+    "q": "(Professor's question, S32) For the slide example, the required rate of return would have to be less than ___% for a positive NPV.",
+    "a": "<b>6.65%</b> (NPV = 0 at about 6.66%)."
+   }
+  ],
+  "exam": {
+   "question": "<p>(Quiz 1 Part B style, new numbers.) During Project Planning phase, next cash flows were identified:</p><p><b>Development costs</b>: Consultant fees $25 000; Hardware and software $45 000; Vendor installation $15 000<br><b>Operational costs</b>: Software licensing fees $10 000; Operational team salaries $15 000; User training $5 000<br><b>Tangible benefits</b>: Increased sales $50 000; Reductions in inventory $15 000; Better supplier prices $10 000</p><p>Find: ROI, BEP and NPV, if project life cycle is 3 years and rate of return = 15%.</p>",
+   "answer": "<p><i>Assumption: development costs are one-time in Year 0; operational costs and benefits are annual in Years 1–3, no growth.</i></p><p>Development (Year 0) = 25,000 + 45,000 + 15,000 = <b>85,000</b>. Operational = 10,000 + 15,000 + 5,000 = <b>30,000 per year</b>. Benefits = 50,000 + 15,000 + 10,000 = <b>75,000 per year</b>.</p><table><tr><th></th><th>Year 0</th><th>Year 1</th><th>Year 2</th><th>Year 3</th><th>Total</th></tr><tr><td>Total Benefits</td><td>–</td><td>75,000</td><td>75,000</td><td>75,000</td><td>225,000</td></tr><tr><td>Total Costs</td><td>85,000</td><td>30,000</td><td>30,000</td><td>30,000</td><td>175,000</td></tr><tr><td>Net Benefits</td><td>(85,000)</td><td>45,000</td><td>45,000</td><td>45,000</td><td>50,000</td></tr><tr><td>Cumulative</td><td>(85,000)</td><td>(40,000)</td><td>5,000</td><td>50,000</td><td></td></tr><tr><td>Divide by (1.15)<sup>n</sup></td><td>1</td><td>1.15</td><td>1.3225</td><td>1.520875</td><td></td></tr><tr><td>PV of Benefits</td><td>–</td><td>65,217.39</td><td>56,710.78</td><td>49,313.72</td><td>171,241.88</td></tr><tr><td>PV of Costs</td><td>85,000.00</td><td>26,086.96</td><td>22,684.31</td><td>19,725.49</td><td>153,496.75</td></tr></table><p><b>ROI</b> = (225,000 − 175,000) / 175,000 = 50,000 / 175,000 = <b>28.57%</b></p><p><b>BEP</b>: the cumulative turns positive in Year 2, so 1 negative year. BEP = 1 + (45,000 − 5,000) / 45,000 = 1 + 40,000 / 45,000 = 1 + 0.89 = <b>1.89 years</b></p><p><b>NPV</b> = 171,241.88 − 153,496.75 = <b>$17,745.13</b> (rounded cells give 17,746). NPV &gt; 0 → the project is <b>economically acceptable</b>.</p><p>Quick check (only when the yearly net is the same): −85,000 + 45,000 × (1/1.15 + 1/1.3225 + 1/1.520875) = −85,000 + 45,000 × 2.283225 = 17,745 ✓</p>"
+  },
+  "memorize": [
+   "Development costs → Year 0 only; operational costs and benefits → every year 1..n",
+   "Net = Benefits − Costs; Cumulative = previous cumulative + this year's net; (x) = negative",
+   "ROI = (Total Benefits − Total Costs) / Total Costs, totals include Year 0",
+   "BEP = negative years (not counting Year 0) + (that year's Net − that year's Cumulative) / that year's Net",
+   "PV = amount / (1 + r)^n; Year 0 is not discounted; 10%: 1.1, 1.21, 1.331",
+   "NPV = Σ PV benefits − Σ PV costs; NPV positive → accept, NPV negative → reject",
+   "Slide example: ROI 10.14%, BEP 2.66 (slide says 2.68 by slip), NPV −5,973 → reject; NPV = 0 at about 6.65%",
+   "S30 Year 3 benefit is 57,000, not 55,000"
+  ],
+  "note": "Rounding: the slides round each PV cell to whole dollars and add them, so your total may differ by about $1 from the exact value. Both are fine if the method is shown. If the slide's \"life cycle n years\" is ambiguous, write your assumption (Year 0 + Years 1..n) in one line."
+ },
+ {
+  "id": "W3-4",
+  "label": "W3·4",
+  "week": "W3",
+  "slides": [
+   35,
+   36,
+   37,
+   38,
+   39
+  ],
+  "kind": "theory",
+  "title": "Organizational feasibility: will people really use it?",
+  "hook": "After this lesson you can explain organizational feasibility, its two assessment methods, the champion, and how to win over each stakeholder group.",
+  "cards": [
+   {
+    "h": "\"If we build it, will they come?\"",
+    "body": "<p>Imagine the university builds a perfect registration system, but professors keep using paper lists and students do not trust it. The system is <b>technically fine and cheap</b>, but it <b>fails</b>.</p><p><b>Organizational feasibility</b> = how well the system will be <b>accepted by its users</b> and <b>incorporated into the ongoing operations</b> of the organization.</p><p>It is \"the final technique\" of feasibility analysis, and experienced developers say it <b>can be the most difficult dimension to assess</b>, because many organizational factors affect the project.</p>"
+   },
+   {
+    "h": "Way 1: strategic alignment",
+    "body": "<p><b>Strategic alignment</b> = the fit between the project and the business strategy. Do the project's goals match the business objectives?</p><p><b>The greater the alignment, the less risky the project</b> (from the organizational point of view).</p><p>Example: the café's strategy is \"fast service for students\". An ordering app fits well = low risk. A luxury wine-tracking system would not fit = high risk.</p>"
+   },
+   {
+    "h": "Way 2: stakeholder analysis",
+    "body": "<p>A <b>stakeholder</b> = a person, group or organization that <b>can affect, or can be affected by</b>, a new system.</p><p>The <b>3 most important stakeholders</b>: the <b>project champion</b>, the <b>system users</b>, and <b>organizational management</b>.</p><p>The S20 checklist for organizational feasibility: project champion(s) · senior management · users · other stakeholders · is the project strategically aligned with the business?</p>",
+    "diagram": "flowchart TD\n  SYS((\"New system\"))\n  CH[\"Project champion\"] --- SYS\n  OM[\"Organizational management\"] --- SYS\n  U[\"System users\"] --- SYS\n  OS[\"Other stakeholders\"] -.- SYS"
+   },
+   {
+    "h": "The champion",
+    "body": "<p>The <b>champion</b> is a <b>high-level executive</b>. Usually, <b>but not always</b>, the champion is the <b>project sponsor</b> who wrote the system request.</p><p>The champion supports the project with:</p><ul><li><b>time and resources</b> (for example, money);</li><li><b>political support</b>: telling other decision makers why the system is important.</li></ul><p><b>More than one champion is better</b>: if the only champion leaves the organization, the support can leave too.</p>"
+   },
+   {
+    "h": "Each group: their role and how to win them (S38)",
+    "body": "<table><tr><th>Stakeholder</th><th>Role</th><th>To improve organizational feasibility</th></tr><tr><td><b>Champion</b></td><td>initiates the project; promotes it; gives his or her time; provides resources</td><td>present the objectives and benefits to the executives who will benefit; build a <b>prototype</b> to show the value</td></tr><tr><td><b>Organizational management</b></td><td>know about the project; budget enough money; encourage users to accept and use the system</td><td>present to management; market the benefits with memos and newsletters; ask the champion to talk to his or her peers</td></tr><tr><td><b>System users</b></td><td>make decisions that influence the project; do hands-on work; <b>ultimately decide success by using or not using the system</b></td><td>give users official roles on the team; give them specific tasks with deadlines; ask for feedback regularly (e.g. weekly meetings)</td></tr></table><p>Count to remember: champion 4 roles / 2 actions; management 3 / 3; users 3 / 3.</p>"
+   },
+   {
+    "h": "Week 3 in one picture (S39 summary)",
+    "body": "<p>The deck's summary has 3 items: <b>Project identification and initiation</b> → <b>System request</b> → <b>Feasibility analysis</b>.</p><table><tr><th>Dimension</th><th>Question</th><th>How it is assessed</th></tr><tr><td>Technical</td><td>Can we build it?</td><td>risk factors: familiarity with application and technology, size, compatibility</td></tr><tr><td>Economic</td><td>Should we build it?</td><td>cash flow → ROI, BEP, NPV</td></tr><tr><td>Organizational</td><td>If we build it, will they come?</td><td>strategic alignment + stakeholder analysis</td></tr></table>",
+    "diagram": "flowchart LR\n  A[\"Business need\"] --> B[\"System request\"] --> C[\"Feasibility: technical, economic, organizational\"] --> D{\"Approval committee\"}\n  D -->|go| E([\"Project Management: W4\"])"
+   }
+  ],
+  "example": {
+   "problem": "<p>A new online registration system has one champion, the Vice-Rector. He suddenly moves to another university. Professors and students were never asked for their opinion, and the system's goals are not in the university's strategy. Find the organizational feasibility problems and suggest actions.</p>",
+   "solution": "<ul><li><b>Only one champion, now gone</b> → the support (time, money, political support) may leave with him. Action: find a new high-level champion, and more than one if possible.</li><li><b>Users were ignored</b> → users ultimately decide success by using or not using the system. Action: give professors and students official roles on the team, specific tasks with deadlines, and regular feedback meetings.</li><li><b>Weak strategic alignment</b> → more risk. Action: show management how the system supports university goals (better student service), present the benefits, market them with memos and newsletters.</li><li>Build a <b>prototype</b> to show the value to executives.</li></ul>"
+  },
+  "check": [
+   {
+    "q": "Define organizational feasibility. Why is it hard?",
+    "a": "How well the system will be accepted by its users and incorporated into the ongoing operations of the organization (\"If we build it, will they come?\"). Many organizational factors affect it, so it can be the most difficult dimension to assess."
+   },
+   {
+    "q": "What are the two ways to assess organizational feasibility?",
+    "a": "(1) <b>Strategic alignment</b>: how well the project goals fit the business objectives (more alignment = less risk). (2) <b>Stakeholder analysis</b>."
+   },
+   {
+    "q": "Define stakeholder and name the three most important ones.",
+    "a": "A person, group or organization that can affect or be affected by a new system. Most important: <b>project champion, system users, organizational management</b>."
+   },
+   {
+    "q": "Why is more than one champion preferable?",
+    "a": "If the champion leaves the organization, the support could leave as well."
+   },
+   {
+    "q": "Which stakeholder group \"ultimately determines whether the project is successful\", and how?",
+    "a": "<b>System users</b>, by using or not using the system."
+   }
+  ],
+  "exam": {
+   "question": "<p>Explain organizational feasibility. Describe the two ways to assess it and the role of the project champion.</p>",
+   "answer": "<p><b>Organizational feasibility</b> asks \"If we build it, will they come?\": how well the system will be accepted by its users and incorporated into the ongoing operations of the organization. It can be the most difficult feasibility dimension to assess.</p><p><b>1. Strategic alignment</b>: the fit between the project and the business strategy; the greater the alignment, the less risky the project.<br><b>2. Stakeholder analysis</b>: a stakeholder is a person, group or organization that can affect or be affected by the system. The most important are the project champion, system users and organizational management.</p><p>The <b>champion</b> is a high-level executive, usually (but not always) the project sponsor. He or she initiates and promotes the project and gives time, resources (money) and political support. More than one champion is preferable, because if the champion leaves, the support may leave too.</p>"
+  },
+  "memorize": [
+   "Organizational = If we build it, will they come? = accepted by users + incorporated into operations",
+   "Can be the most difficult feasibility dimension to assess",
+   "Two ways: strategic alignment (more fit = less risk) and stakeholder analysis",
+   "Stakeholder = can affect or be affected by the system",
+   "Key stakeholders: champion, system users, organizational management",
+   "Champion = high-level executive, usually but not always the sponsor; time, resources, political support; more than one is better",
+   "Users ultimately decide success by using or not using the system"
+  ]
+ }
+]

@@ -1,0 +1,74 @@
+[
+ {
+  "q": "Q11",
+  "focus": "Perfect competition: price-takers, the two necessary conditions, free entry and exit",
+  "variants": [
+   {
+    "q": "<p>Define a <b>perfectly competitive market</b> and a <b>perfectly competitive industry</b>. What is the difference between them? Who determines the price in such a market?</p>",
+    "a": "<p>A <b>perfectly competitive market</b> is a market in which <b>all</b> participants, both consumers and producers, are <b>price-takers</b>. A <b>perfectly competitive industry</b> is an industry in which the <b>producers</b> are price-takers.</p><p>A price-taking producer (consumer) is one whose actions have <b>no effect</b> on the market price of the good it sells (buys).</p><p>Difference: \"market\" covers buyers <b>and</b> sellers; \"industry\" covers only the producers.</p><p>No single buyer or seller sets the price: it is determined by <b>industry demand and industry supply</b> together. Each firm just accepts it, so its demand curve is horizontal at the market price (P = MR).</p>"
+   },
+   {
+    "q": "<p>There are 250 cotton farms in a region. Together they grow 50,000 tons of raw cotton; Farm K grows 150 tons.</p><ol><li>Calculate Farm K's market share.</li><li>Is Farm K a price-taker? Use the two necessary conditions for perfect competition.</li><li>A sportswear brand sells only 2% of all running shoes. Is it a price-taker? Explain.</li></ol>",
+    "a": "<ol><li>Market share = firm's output &divide; total industry output = 150 &divide; 50,000 = 0.003 = <b>0.3%</b>.</li><li><b>Yes.</b> (1) <b>No large market share</b>: 0.3% is tiny, so changing its output cannot move the market price. (2) <b>Standardized product (commodity)</b>: buyers see raw cotton from all farms as the same good, so if Farm K asks a higher price, buyers buy from other farms.</li><li><b>No.</b> Its market share is small, but the product is <b>not standardized</b>: consumers see the brand as different from other shoes, so it can charge a higher price and still keep some buyers. Both conditions are needed; only one holds here.</li></ol>"
+   },
+   {
+    "q": "<p>True or false? Give a reason for each.</p><ol><li>Free entry and exit is one of the two necessary conditions for perfect competition.</li><li>A perfectly competitive firm can sell more by lowering its price below the market price.</li><li>If one firm produces 60% of an industry's output of a commodity, the industry is not perfectly competitive.</li><li>A price-taking consumer can lower the market price by buying less.</li></ol>",
+    "a": "<ol><li><b>False.</b> The two necessary conditions are (1) no producer has a large market share and (2) the good is a standardized product. Free entry and exit (new firms can easily enter, old firms can easily leave) is listed separately; it is typical of perfect competition and important in the long run.</li><li><b>False.</b> It can already sell all it wants at the market price, so cutting the price only lowers revenue. Its demand is a flat line at the market price.</li><li><b>True.</b> With a 60% share, it can cut output, create a shortage and push the price up, so it is not a price-taker.</li><li><b>False.</b> A price-taking consumer's actions have no effect on the market price; he or she is too small compared with the market.</li></ol>"
+   }
+  ]
+ },
+ {
+  "q": "Q12",
+  "focus": "Short-run industry supply curve and short-run market equilibrium (tomato example, Figure 7-5)",
+  "variants": [
+   {
+    "q": "<p>Define the <b>short-run industry supply curve</b> and a <b>short-run market equilibrium</b>. Why are they called \"short run\"?</p>",
+    "a": "<p>The <b>short-run industry supply curve</b> shows how the quantity supplied by an industry depends on the market price, <b>given a fixed number of producers</b>. It is the sum of the quantities of all firms at each price (Q = q<sub>1</sub> + q<sub>2</sub> + &hellip; + q<sub>k</sub>), where each firm supplies along its MC curve above minimum AVC. It slopes upward.</p><p>A <b>short-run market equilibrium</b> exists when the quantity supplied equals the quantity demanded, <b>taking the number of producers as given</b>.</p><p>\"Short run\" because there is no time for new firms to enter or for existing firms to exit. In the long run entry and exit change the number of firms, so supply shifts.</p>"
+   },
+   {
+    "q": "<p>An industry has 50 identical firms. One firm supplies 0 units if P &lt; $8, and 4, 6, 8, 10 units at P = $8, $12, $16, $20. Market demand: $8 &rarr; 700, $12 &rarr; 500, $16 &rarr; 400, $20 &rarr; 300 units.</p><ol><li>Build the short-run industry supply schedule.</li><li>Find the short-run market equilibrium price and quantity. How much does each firm sell?</li><li>Why does the industry supply nothing below $8?</li></ol>",
+    "a": "<ol><li>Multiply each firm's quantity by 50:<table><tr><th>Price</th><th>One firm</th><th>Industry Qs</th><th>Qd</th></tr><tr><td>below $8</td><td>0</td><td>0</td><td>&ndash;</td></tr><tr><td>$8</td><td>4</td><td>200</td><td>700</td></tr><tr><td>$12</td><td>6</td><td>300</td><td>500</td></tr><tr><td>$16</td><td>8</td><td>400</td><td>400</td></tr><tr><td>$20</td><td>10</td><td>500</td><td>300</td></tr></table></li><li>At $12, Qd = 500 &gt; Qs = 300 (shortage, price rises). At $20, Qs = 500 &gt; Qd = 300 (surplus, price falls). At <b>$16, Qs = Qd = 400</b>. Equilibrium: <b>P = $16, Q = 400</b>; each firm sells 400 &divide; 50 = <b>8 units</b>.</li><li>$8 is each firm's <b>shut-down price</b> (minimum AVC). Below it, price does not cover variable cost, so every firm shuts down and industry output is 0.</li></ol>"
+   },
+   {
+    "q": "<p>Draw the short-run market for tomatoes with 100 identical farms (Figure 7-5): the short-run industry supply curve, the demand curve and the equilibrium. Explain where the supply curve starts, why it slopes upward, and whether the equilibrium can last in the long run.</p>",
+    "a": "<p><i>Graph:</i> quantity of tomatoes (bushels) on the x-axis, price on the y-axis. Upward-sloping supply S starting at (300, $10); downward-sloping demand D; they cross at E<sub>MKT</sub> = ($18, 500 bushels).</p><ul><li><b>Start:</b> each farm's shut-down price is $10, where it supplies 3 bushels. So the industry supplies 100 &times; 3 = 300 at $10, and 0 below $10.</li><li><b>Upward slope:</b> each farm supplies along its MC curve; when P rises, every farm produces more (4 at $14, 5 at $18, 6 at $22), so industry Q rises (400, 500, 600).</li><li><b>Equilibrium:</b> Qs = Qd at $18 and 500 bushels, 5 bushels per farm, with the number of farms fixed at 100.</li><li><b>Long run?</b> No. At $18 farms earn a profit (P &gt; min ATC = $14), so new farms enter, supply shifts right and the price falls toward the break-even price $14.</li></ul>"
+   }
+  ]
+ },
+ {
+  "q": "Q23",
+  "focus": "Keep operating with a loss? Shut-down rule TR &gt; VC, i.e. P &gt; AVC (short run)",
+  "variants": [
+   {
+    "q": "<p>A firm has fixed cost FC = 800. For each case, find TC and profit, and decide whether the firm should operate or shut down in the short run.</p><table><tr><th>Case</th><th>VC</th><th>TR</th></tr><tr><td>a</td><td>1500</td><td>3000</td></tr><tr><td>b</td><td>2500</td><td>3000</td></tr><tr><td>c</td><td>3200</td><td>3200</td></tr><tr><td>d</td><td>3500</td><td>3200</td></tr></table>",
+    "a": "<p>If the firm shuts down, TR = 0 and VC = 0 but it still pays FC, so profit = &minus;800. Operate when the loss from operating is smaller, i.e. when TR &gt; VC.</p><table><tr><th>Case</th><th>TC = FC + VC</th><th>Profit if operate</th><th>Profit if shut down</th><th>TR &minus; VC</th><th>Decision</th></tr><tr><td>a</td><td>2300</td><td>+700</td><td>&minus;800</td><td>1500</td><td>Operate</td></tr><tr><td>b</td><td>3300</td><td>&minus;300</td><td>&minus;800</td><td>500</td><td>Operate (loss 300 &lt; 800)</td></tr><tr><td>c</td><td>4000</td><td>&minus;800</td><td>&minus;800</td><td>0</td><td>Indifferent (maybe)</td></tr><tr><td>d</td><td>4300</td><td>&minus;1100</td><td>&minus;800</td><td>&minus;300</td><td>Shut down</td></tr></table><p>Case b: revenue covers all VC and 500 of the FC, so operating loses less. Case d: revenue does not even cover VC, so operating makes the loss bigger.</p>"
+   },
+   {
+    "q": "<p>A firm has FC = 1200. At its best output Q = 200 units, its variable cost is VC = 3000.</p><ol><li>The market price is P = 17. Find TR, TC and profit. Should the firm operate in the short run?</li><li>Show the same decision with the rule P &gt; AVC, and derive this rule from &minus;(TR &minus; VC &minus; FC) &lt; FC.</li><li>The price falls to P = 14 (Q and VC unchanged). What should the firm do?</li></ol>",
+    "a": "<ol><li>TR = 17 &times; 200 = 3400. TC = 1200 + 3000 = 4200. Profit = 3400 &minus; 4200 = <b>&minus;800</b>. Shut down: profit = &minus;FC = &minus;1200. &minus;800 is better, so <b>operate</b>.</li><li>AVC = 3000 &divide; 200 = 15. P = 17 &gt; AVC = 15 &rarr; operate.<br>Derivation: &minus;(TR &minus; VC &minus; FC) &lt; FC &rArr; &minus;TR + VC + FC &lt; FC &rArr; VC &lt; TR &rArr; AVC &times; Q &lt; P &times; Q &rArr; <b>P &gt; AVC</b>.</li><li>TR = 14 &times; 200 = 2800 &lt; VC = 3000. Operate: profit = 2800 &minus; 4200 = &minus;1400. Shut down: &minus;1200. P = 14 &lt; AVC = 15 &rarr; <b>shut down</b> in the short run.</li></ol>"
+   },
+   {
+    "q": "<p>Two firms sell in the same perfectly competitive market at P = $10. Each is at its best output.</p><ul><li>Firm X: Q = 50, AVC = $8, AFC = $4.</li><li>Firm Y: Q = 40, AVC = $11, AFC = $2.</li></ul><p>Both make a loss. Which firm should keep operating in the short run and which should shut down? Show the numbers.</p>",
+    "a": "<p><b>Firm X:</b> TR = 10 &times; 50 = 500; VC = 8 &times; 50 = 400; FC = 4 &times; 50 = 200; TC = 600.<br>Operate: profit = 500 &minus; 600 = &minus;100. Shut down: &minus;200.<br>P = 10 &gt; AVC = 8 &rarr; <b>operate</b> (loss 100 &lt; 200; revenue covers VC and 100 of FC).</p><p><b>Firm Y:</b> TR = 10 &times; 40 = 400; VC = 11 &times; 40 = 440; FC = 2 &times; 40 = 80; TC = 520.<br>Operate: profit = 400 &minus; 520 = &minus;120. Shut down: &minus;80.<br>P = 10 &lt; AVC = 11 &rarr; <b>shut down</b> (TR &lt; VC).</p><p>Both have P &lt; ATC (X: 12, Y: 13), so both lose money. The decision depends only on P vs <b>AVC</b>, not on the size of the loss.</p>"
+   }
+  ]
+ },
+ {
+  "q": "Q24",
+  "focus": "Break-even price (min ATC) vs shut-down price (min AVC): Table 7-4, short run and long run",
+  "variants": [
+   {
+    "q": "<p>Define the <b>break-even price</b> and the <b>shut-down price</b> of a perfectly competitive firm. Why is the shut-down price always lower? Which one decides short-run production and which one decides long-run entry and exit?</p>",
+    "a": "<p><b>Break-even price</b> = minimum <b>average total cost</b> (ATC). At this price economic profit is zero.</p><p><b>Shut-down price</b> = minimum <b>average variable cost</b> (AVC). Below it, the firm stops producing in the short run.</p><p>It is lower because ATC = AVC + AFC, so the ATC curve lies above the AVC curve. The MC curve cuts each at its lowest point.</p><p><b>Short run</b> (fixed cost must be paid anyway): compare P with <b>min AVC</b> &rarr; produce or shut down. <b>Long run</b> (all costs can be avoided): compare P with <b>min ATC</b> &rarr; profit and entry, zero profit and no entry/exit, or loss and exit. So the short-run supply curve is the MC curve above min AVC.</p>"
+   },
+   {
+    "q": "<p>A perfectly competitive firm has minimum AVC = $12 and minimum ATC = $20. For each market price, say (i) profit, break even or loss; (ii) produce or shut down in the short run; (iii) entry, exit or no change in the long run.</p><p>(a) P = $25 &nbsp; (b) P = $20 &nbsp; (c) P = $16 &nbsp; (d) P = $12 &nbsp; (e) P = $9</p>",
+    "a": "<table><tr><th>Price</th><th>Profit?</th><th>Short run</th><th>Long run</th></tr><tr><td>$25 &gt; min ATC</td><td>Profit</td><td>Produce (covers VC and FC)</td><td>Entry</td></tr><tr><td>$20 = min ATC</td><td>Break even</td><td>Produce</td><td>No entry or exit</td></tr><tr><td>$16 (between $12 and $20)</td><td>Loss</td><td>Produce (covers all VC, some FC)</td><td>Exit</td></tr><tr><td>$12 = min AVC</td><td>Loss</td><td>Indifferent (just covers VC)</td><td>Exit</td></tr><tr><td>$9 &lt; min AVC</td><td>Loss (= FC)</td><td>Shut down</td><td>Exit</td></tr></table><p>Key case (c): the firm loses money but keeps producing now, because the loss is smaller than FC; it leaves the industry in the long run.</p>"
+   },
+   {
+    "q": "<p>A perfectly competitive firm has FC = $24 and this variable cost:</p><table><tr><th>Q</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th></tr><tr><td>VC ($)</td><td>10</td><td>16</td><td>21</td><td>30</td><td>45</td><td>66</td></tr></table><ol><li>Calculate AVC and ATC. Find the shut-down price and the break-even price.</li><li>At P = $10 the firm's best output is 4 units. Find its profit. Should it produce in the short run? What happens in the long run?</li><li>What does the firm do at P = $6?</li></ol>",
+    "a": "<ol><li>AVC = VC &divide; Q; ATC = (24 + VC) &divide; Q.<table><tr><th>Q</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th></tr><tr><td>AVC</td><td>10</td><td>8</td><td><b>7</b></td><td>7.5</td><td>9</td><td>11</td></tr><tr><td>ATC</td><td>34</td><td>20</td><td>15</td><td><b>13.5</b></td><td>13.8</td><td>15</td></tr></table>Shut-down price = min AVC = <b>$7</b>. Break-even price = min ATC = <b>$13.50</b>.</li><li>TR = 10 &times; 4 = 40. TC = 24 + 30 = 54. Profit = <b>&minus;$14</b>. Shutting down would lose FC = $24. Since $7 &lt; P = $10 &lt; $13.50, the firm <b>produces</b> in the short run (covers all VC and $10 of FC), but it is unprofitable, so it <b>exits</b> in the long run.</li><li>P = $6 &lt; min AVC = $7: price does not cover variable cost, so it <b>shuts down</b> in the short run (loss = FC = $24) and exits in the long run.</li></ol>"
+   }
+  ]
+ }
+]

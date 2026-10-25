@@ -1,0 +1,381 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Econ Midterm Guide</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=IBM+Plex+Mono:wght@400;600&family=Schibsted+Grotesk:wght@600;800&display=swap">
+<link rel="stylesheet" href="econ.css">
+<style>
+  html { scroll-behavior: smooth; scroll-padding-top: 76px; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  .nav { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 10; background: rgba(255,255,255,.92); backdrop-filter: blur(8px); border-bottom: 1.5px solid var(--line); }
+  .nav .in { max-width: 1120px; margin: 0 auto; padding: 10px 16px; display: flex; gap: 8px; align-items: center; overflow-x: auto; }
+  .nav .brand { font: 800 16px/1 var(--display); white-space: nowrap; margin-right: 8px; text-decoration: none; color: var(--ink); }
+  .nav a.pill { white-space: nowrap; font: 700 14px/1 var(--body); text-decoration: none; color: var(--ink-soft); padding: 8px 12px; border-radius: 999px; }
+  .nav a.pill:hover { background: var(--tint); color: var(--ink); }
+  .wrap { max-width: 1120px; margin: 0 auto; padding-inline: 16px; padding-block: 36px 80px; display: grid; gap: 64px; }
+  section { display: grid; gap: 18px; }
+  .eyebrow { font: 700 13px/1 var(--body); letter-spacing: .12em; text-transform: uppercase; color: var(--green); }
+  h1 { font-size: clamp(40px, 6.4vw, 76px); font-weight: 800; letter-spacing: -.03em; }
+  h1 span { color: var(--green); }
+  section > h2 { font-size: clamp(28px, 3.6vw, 40px); font-weight: 800; }
+  .lead { font-size: 1.18em; color: var(--ink-soft); max-width: 62ch; }
+  .facts { display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr)); }
+  .fact { background: var(--sheet); border: 1.5px solid var(--line); border-radius: 14px; padding: 16px; display: grid; gap: 4px; }
+  .fact b { font: 800 26px/1.1 var(--display); }
+  .fact span { color: var(--muted); font-size: 14px; }
+  .fact.warn { border-color: var(--gold); background: var(--gold-soft); }
+  .fact.warn b { color: var(--gold); }
+  .cols2 { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 330px), 1fr)); align-items: start; }
+  .card { background: var(--sheet); border: 1.5px solid var(--line); border-radius: 16px; padding: 18px 20px; display: grid; gap: 10px; box-shadow: var(--shadow); }
+  .card h3 { font-size: 21px; font-weight: 800; }
+  .card .tag { font: 700 12px/1 var(--mono); color: var(--muted); }
+  .card ul, .card ol { margin: 0; padding-left: 1.2em; display: grid; gap: 4px; }
+  .qtable td:first-child { font-weight: 800; white-space: nowrap; }
+  .qtable tr.calc td:first-child { color: var(--gold); }
+  .qtable a { font-weight: 700; white-space: nowrap; }
+  .weekgrid { display: grid; gap: 12px; grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr)); }
+  .week { background: var(--sheet); border: 1.5px solid var(--line); border-radius: 16px; padding: 18px; display: grid; gap: 8px; }
+  .week .n { font: 800 13px/1 var(--mono); color: var(--green); }
+  .week h3 { font-size: 20px; font-weight: 800; }
+  .week p { color: var(--ink-soft); }
+  .week .kw { display: flex; flex-wrap: wrap; gap: 6px; }
+  .week .kw span { font-size: 13px; font-weight: 700; background: var(--tint); border-radius: 6px; padding: 3px 8px; }
+  .recipe { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 18px; background: var(--sheet); border: 1.5px solid var(--line); border-radius: 18px; padding: 22px; box-shadow: var(--shadow); }
+  .recipe .num { font: 800 44px/1 var(--display); color: var(--green-soft); -webkit-text-stroke: 1.5px var(--green); }
+  .recipe h3 { font-size: 24px; font-weight: 800; }
+  .recipe .q { font-size: 13px; font-weight: 700; color: var(--gold); }
+  .steps { margin: 0; padding-left: 1.3em; display: grid; gap: 6px; }
+  .steps li::marker { font-weight: 800; color: var(--green); }
+  .ex { background: var(--tint); border-radius: 12px; padding: 14px 16px; display: grid; gap: 8px; font-size: .96em; align-content: start; }
+  .recipe > div { align-content: start; }
+  .ex .lbl { font: 700 12px/1 var(--body); letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+  .ex table { font-size: .9em; background: var(--sheet); }
+  .f { font-family: var(--mono); font-size: .9em; background: var(--green-soft); color: var(--ink); padding: 3px 8px; border-radius: 6px; justify-self: start; overflow-wrap: anywhere; }
+  .fsheet { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 330px), 1fr)); }
+  .fsheet .card { gap: 8px; }
+  .fsheet .row { display: grid; gap: 2px; padding: 6px 0; border-bottom: 1px dashed var(--line); }
+  .fsheet .row:last-child { border-bottom: 0; }
+  .fsheet .row small { color: var(--muted); }
+  .graphs { display: grid; gap: 16px; grid-template-columns: repeat(auto-fill, minmax(min(100%, 480px), 1fr)); }
+  .graph { display: grid; gap: 8px; }
+  .graph h3 { font-size: 18px; font-weight: 800; }
+  .graph p { font-size: 14.5px; color: var(--ink-soft); }
+  .quizbar { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; justify-content: space-between; background: var(--sheet); border: 1.5px solid var(--line); border-radius: 14px; padding: 12px 16px; position: sticky; top: 62px; z-index: 5; }
+  .quizbar b { font: 800 20px var(--display); }
+  .quiz { display: grid; gap: 14px; }
+  .mcq { background: var(--sheet); border: 1.5px solid var(--line); border-radius: 16px; padding: 18px; display: grid; gap: 10px; }
+  .mcq .qn { font: 700 12px/1 var(--mono); color: var(--muted); }
+  .mcq .qt { font-weight: 700; font-size: 1.04em; }
+  .opts { display: grid; gap: 8px; }
+  .opt { text-align: left; font: 16px/1.4 var(--body); color: var(--ink); background: var(--paper); border: 1.5px solid var(--line); border-radius: 10px; padding: 10px 12px; cursor: pointer; }
+  .opt:hover:not(:disabled) { border-color: var(--green); }
+  .opt:disabled { cursor: default; }
+  .opt.right { border-color: var(--green); background: var(--green-soft); font-weight: 700; }
+  .opt.wrong { border-color: var(--supply); background: var(--red-soft); }
+  .why { display: none; font-size: .95em; color: var(--ink-soft); border-left: 4px solid var(--green); padding: 4px 0 4px 12px; }
+  .mcq.done .why { display: block; }
+  .plan { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); }
+  .plan .card h3 { display: flex; gap: 10px; align-items: baseline; }
+  .plan .card h3 small { font: 700 13px var(--mono); color: var(--muted); }
+  .tips { display: grid; gap: 10px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); }
+  .tip { background: var(--sheet); border: 1.5px solid var(--line); border-left: 5px solid var(--green); border-radius: 12px; padding: 14px 16px; }
+  .tip.bad { border-left-color: var(--supply); }
+  .tip b { display: block; margin-bottom: 4px; }
+  .cta { display: flex; flex-wrap: wrap; gap: 10px; }
+  footer { color: var(--muted); font-size: 13px; }
+  @media (max-width: 820px) { .recipe { grid-template-columns: 1fr; } .quizbar { top: 56px; } }
+</style>
+</head>
+<body>
+<nav class="nav"><div class="in">
+  <a class="brand" href="#top">Econ midterm</a>
+  <a class="pill" href="#facts">Exam facts</a>
+  <a class="pill" href="#list">His question list</a>
+  <a class="pill" href="#weeks">7 weeks</a>
+  <a class="pill" href="#calc">6 calculations</a>
+  <a class="pill" href="#formulas">Formulas</a>
+  <a class="pill" href="#graphs">Graphs</a>
+  <a class="pill" href="#quiz">Practice quiz</a>
+  <a class="pill" href="#plan">Plan</a>
+  <a class="pill" href="#tips">Exam tips</a>
+  <a class="pill" href="index.html">All lessons →</a>
+</div></nav>
+
+<div class="wrap" id="top">
+
+  <section>
+    <span class="eyebrow">NTS3040 · Introduction to Economics · Prof. Kim Heungsang</span>
+    <h1>Your Econ midterm, <span>explained simply.</span></h1>
+    <p class="lead">Everything you need to know before the exam on one page: what's on it, the six calculations, every formula, the graphs to draw, and a practice quiz. Each topic links to its full lesson.</p>
+    <div class="cta">
+      <a class="btn" href="#quiz">Test yourself now</a>
+      <a class="btn ghost" href="learn.html#l1-1" target="_blank" rel="noopener">Open the lessons ↗</a>
+    </div>
+  </section>
+
+  <section id="facts">
+    <span class="eyebrow">1 · Exam facts</span>
+    <h2>What we know about the exam</h2>
+    <div class="facts">
+      <div class="fact"><b>40%</b><span>of your final grade (final 50%, attendance 10%)</span></div>
+      <div class="fact warn"><b>Mon 26 or Wed 28</b><span>week 8. Check eclass for the exact day and room</span></div>
+      <div class="fact"><b>Weeks 1–7</b><span>"all lectures <em>and discussions</em> of the first half"</span></div>
+      <div class="fact warn"><b>No make-up</b><span>no late or early exam, except a real emergency</span></div>
+    </div>
+    <div class="cols2">
+      <div class="card"><h3>Reading list (from his week 1 slide)</h3><ul><li><b>Krugman</b>, <i>Essentials of Economics</i>, ch. 1–10</li><li><b>Wheelan</b>, <i>Naked Economics</i>: Intro, ch. 1, 2, 3, 4, 13</li></ul><p>The slides follow Krugman. Wheelan has no formulas or graphs, so it can only come up as an idea question.</p></div>
+      <div class="card"><h3>What the questions look like</h3><ul><li><b>Theory (Q1–Q24):</b> explain an idea, a list or a graph from one exact slide.</li><li><b>Calculation (Q25–Q31):</b> elasticity, a cost table, equilibrium from schedules, and comparative advantage.</li><li>He wrote his own slides, so <b>his words are the best answers</b>.</li></ul></div>
+    </div>
+  </section>
+
+  <section id="list">
+    <span class="eyebrow">2 · The professor's list</span>
+    <h2>Every question he named, with its lesson</h2>
+    <p class="lead">These are the slides he said the questions come from. Click "Learn" to open that lesson in a new tab.</p>
+    <div class="tblwrap"><table class="qtable" id="qtable"></table></div>
+    <div class="panel note"><span class="lbl">Check your note</span><p><b>Q15</b> says "week 5 slides 29–30", but week 5 has only 25 slides, so the lesson uses <b>week 3 slides 29–30</b> (what shifts supply). <b>Q20</b> is not in your photo. Ask a classmate about both.</p></div>
+  </section>
+
+  <section id="weeks">
+    <span class="eyebrow">3 · The big picture</span>
+    <h2>The 7 weeks in one minute each</h2>
+    <div class="weekgrid">
+      <div class="week"><span class="n">WEEK 1</span><h3>What is economics</h3><p>Resources are <b>scarce</b>, so we must <b>choose</b>. Every choice costs the next-best thing you give up (<b>opportunity cost</b>). The 12 principles come in three groups: 4 about individual choice, 5 about interaction, 3 about the whole economy.</p><div class="kw"><span>scarcity</span><span>opportunity cost</span><span>marginal decisions</span><span>equilibrium</span><span>efficiency vs equity</span></div></div>
+      <div class="week"><span class="n">WEEK 2</span><h3>Models, PPF and trade</h3><p>The <b>PPF</b> shows the best combinations a country can make. A point on it is efficient, inside it is wasteful, outside it is impossible. Whoever has the <b>lower opportunity cost</b> has the comparative advantage, and both sides gain from trade.</p><div class="kw"><span>PPF</span><span>comparative advantage</span><span>circular flow</span><span>positive vs normative</span><span>slope, derivative</span></div></div>
+      <div class="week"><span class="n">WEEK 3</span><h3>Supply and demand</h3><p>Price up → people buy less (<b>law of demand</b>). A change in the good's <b>own price</b> is a <b>movement along</b> the curve. Anything else (income, tastes, prices of other goods…) <b>shifts</b> the curve. The market settles where Qd = Qs.</p><div class="kw"><span>shift vs movement</span><span>equilibrium</span><span>shortage / surplus</span><span>normal vs inferior</span></div></div>
+      <div class="week"><span class="n">WEEK 4</span><h3>The market strikes back</h3><p>Governments set <b>ceilings</b> (max price → shortage), <b>floors</b> (min price → surplus) and <b>quotas</b> (max quantity → wedge and quota rent). All of them cause <b>deadweight loss</b>: trades that would help both sides never happen.</p><div class="kw"><span>consumer surplus</span><span>producer surplus</span><span>price ceiling / floor</span><span>quota rent</span><span>DWL</span></div></div>
+      <div class="week"><span class="n">WEEK 5</span><h3>Elasticity</h3><p>How strongly buyers react to a price change. e &gt; 1 = <b>elastic</b> (a price rise lowers revenue), e &lt; 1 = <b>inelastic</b> (a price rise raises revenue), e = 1 = unit-elastic. The midpoint method gives the same answer in both directions.</p><div class="kw"><span>% method vs midpoint</span><span>total revenue test</span><span>dR/dP = Q(1 − e)</span><span>determinants</span></div></div>
+      <div class="week"><span class="n">WEEK 6</span><h3>Behind the supply curve</h3><p>Extra workers add less and less (<b>diminishing returns</b>). So costs rise: TC = FC + VC, MC = ΔTC/ΔQ, ATC = TC/Q. MC cuts ATC and AVC at their <b>lowest points</b>, and that lowest ATC is the <b>minimum-cost output</b>.</p><div class="kw"><span>short vs long run</span><span>MPL</span><span>TC, MC, ATC, AVC, AFC</span><span>U-shaped ATC</span></div></div>
+      <div class="week"><span class="n">WEEK 7</span><h3>Perfect competition</h3><p>Many small firms selling the same thing, so each is a <b>price-taker</b> (P = MR). A firm produces where <b>P = MC</b>. If P is below min ATC it makes a loss. If P is below min AVC it <b>shuts down</b>. The firm's supply curve is MC above min AVC.</p><div class="kw"><span>price-taker</span><span>P = MR = MC</span><span>break-even (min ATC)</span><span>shut-down (min AVC)</span></div></div>
+    </div>
+  </section>
+
+  <section id="calc">
+    <span class="eyebrow">4 · Calculations</span>
+    <h2>The 6 calculations you must be able to do</h2>
+    <p class="lead">These are the easiest marks to win, and the easiest to lose. Learn each recipe, then cover the solution and do the example yourself.</p>
+
+    <div class="recipe">
+      <div class="stack" style="display:grid;gap:10px">
+        <span class="num">1</span><h3>Elasticity: simple % and midpoint</h3><span class="q">Q25, Q26 · Week 5 slides 5–6</span>
+        <ol class="steps"><li>%ΔQ = change in Q ÷ <b>starting</b> Q × 100. %ΔP is the same for price.</li><li>e = %ΔQ ÷ %ΔP (ignore the minus sign).</li><li><b>Midpoint:</b> divide by the <b>average</b> of the two values, not the starting one.</li><li>Classify: e &gt; 1 elastic, e &lt; 1 inelastic, e = 1 unit-elastic. Check with revenue R = P × Q.</li></ol>
+      </div>
+      <div class="ex"><span class="lbl">His example</span><p>Price goes $0.90 → $1.10 and quantity goes 1,100 → 900.</p>
+        <table><tr><th></th><th>%ΔQ</th><th>%ΔP</th><th>e</th></tr><tr><td>Start at A ($0.90)</td><td>200/1,100 = 18.18%</td><td>0.20/0.90 = 22.22%</td><td><b>0.82</b></td></tr><tr><td>Start at B ($1.10)</td><td>200/900 = 22.22%</td><td>0.20/1.10 = 18.18%</td><td><b>1.22</b></td></tr><tr><td>Midpoint</td><td>200/1,000 = 20%</td><td>0.20/1.00 = 20%</td><td><b>1.00</b></td></tr></table>
+        <p>Revenue: 0.90 × 1,100 = $990 = 1.10 × 900. Revenue doesn't change, so demand is <b>unit-elastic</b>, which matches the midpoint answer. The simple method gives two different answers, and that is exactly why we use the midpoint.</p></div>
+    </div>
+
+    <div class="recipe">
+      <div style="display:grid;gap:10px">
+        <span class="num">2</span><h3>The cost table</h3><span class="q">Q27 (+ Q10, Q21–Q22) · Week 6 slide 16</span>
+        <ol class="steps"><li><b>TC = FC + VC</b>. FC is the same at every quantity, even at Q = 0.</li><li><b>MC = ΔTC ÷ ΔQ</b>: how much TC rises for one more unit.</li><li><b>ATC = TC/Q · AVC = VC/Q · AFC = FC/Q</b>. Check: ATC = AVC + AFC.</li><li>The lowest ATC is the <b>minimum-cost output</b>. MC crosses ATC exactly there.</li></ol>
+      </div>
+      <div class="ex"><span class="lbl">His example: Ben's Boots (FC = $108)</span>
+        <table><tr><th>Q</th><th>VC</th><th>TC</th><th>MC</th><th>ATC</th></tr><tr><td>0</td><td>0</td><td>108</td><td>–</td><td>–</td></tr><tr><td>1</td><td>12</td><td>120</td><td>12</td><td>120</td></tr><tr><td>2</td><td>48</td><td>156</td><td>36</td><td>78</td></tr><tr><td>3</td><td>108</td><td>216</td><td>60</td><td><b>72 ← lowest</b></td></tr><tr><td>4</td><td>192</td><td>300</td><td>84</td><td>75</td></tr><tr><td>5</td><td>300</td><td>408</td><td>108</td><td>81.6</td></tr></table>
+        <p>MC rises by $24 each time (increasing marginal cost). The minimum-cost output is <b>3 pairs at $72</b>.</p></div>
+    </div>
+
+    <div class="recipe">
+      <div style="display:grid;gap:10px">
+        <span class="num">3</span><h3>Equilibrium, shortage and surplus from a table</h3><span class="q">Q28 · Week 3 slides 21, 22, 6</span>
+        <ol class="steps"><li>Find the price where <b>Qd = Qs</b>. That is the equilibrium.</li><li>Above it: Qs &gt; Qd → <b>surplus</b> = Qs − Qd → the price falls.</li><li>Below it: Qd &gt; Qs → <b>shortage</b> = Qd − Qs → the price rises.</li><li>Supply decreases → S shifts <b>left</b> → P up, Q down. Demand increases → D shifts <b>right</b> → P up, Q up.</li></ol>
+      </div>
+      <div class="ex"><span class="lbl">His example: concert tickets</span><p>Equilibrium: <b>$250 and 8,000 tickets</b>.</p><p>At $350: Qs 8,800 vs Qd 5,000 → <b>surplus 3,800</b> → the price falls.</p><p>At $150: Qd 15,000 vs Qs 5,000 → <b>shortage 10,000</b> → the price rises.</p></div>
+    </div>
+
+    <div class="recipe">
+      <div style="display:grid;gap:10px">
+        <span class="num">4</span><h3>Comparative advantage and trade</h3><span class="q">Q29–Q31 · Week 2 slide 25</span>
+        <ol class="steps"><li>Opportunity cost of 1 X = (max Y) ÷ (max X). Build a 2×2 table.</li><li>Compare <b>across people</b> in the same row. The lower opportunity cost has the <b>comparative advantage</b>.</li><li>Each specializes in its advantage good.</li><li>The deal works if the price lies <b>between</b> the two opportunity costs. Both gain if their after-trade bundle is <b>outside their own PPF</b>.</li></ol>
+      </div>
+      <div class="ex"><span class="lbl">His example: Tom and Hank</span><p>Tom: 40 fish or 30 coconuts → 1 fish costs <b>3/4 coconut</b>. Hank: 1 fish costs <b>2 coconuts</b>.</p><p>3/4 &lt; 2 → <b>Tom has the advantage in fish</b>, and Hank has it in coconuts.</p><p>A workable price for 1 fish is between 3/4 and 2 coconuts. For the PPF line test, use x/a + y/b: = 1 on the line, &lt; 1 inside, &gt; 1 outside.</p></div>
+    </div>
+
+    <div class="recipe">
+      <div style="display:grid;gap:10px">
+        <span class="num">5</span><h3>Ceilings, floors, quotas: gaps and deadweight loss</h3><span class="q">Q13, Q14, Q16 · Week 4</span>
+        <ol class="steps"><li><b>Ceiling</b> (below equilibrium): shortage = Qd − Qs at the ceiling price.</li><li><b>Floor</b> (above equilibrium): surplus = Qs − Qd at the floor price.</li><li><b>Quota</b>: wedge = demand price − supply price at the quota. Quota rent = wedge × quota.</li><li>DWL = ½ × (price gap at the traded Q) × (Qe − traded Q).</li></ol>
+      </div>
+      <div class="ex"><span class="lbl">His three examples</span>
+        <table><tr><th>Case</th><th>Gap</th><th>DWL</th></tr><tr><td>Rent ceiling $800</td><td>shortage 2.2m − 1.8m = 0.4m flats</td><td>½ × 400 × 0.2m = $40m/month</td></tr><tr><td>Butter floor $1.20</td><td>surplus 12m − 9m = 3m lb</td><td>½ × 0.30 × 1m = $150,000</td></tr><tr><td>Taxi quota 8m rides</td><td>wedge $6 − $4 = $2 → rent $16m</td><td>½ × 2 × 2m = $2m</td></tr></table></div>
+    </div>
+
+    <div class="recipe">
+      <div style="display:grid;gap:10px">
+        <span class="num">6</span><h3>Perfect competition: profit, break-even, shut-down</h3><span class="q">Q23, Q24, Q12 · Week 7</span>
+        <ol class="steps"><li>Price-taker: <b>P = MR</b>. Produce where <b>P = MC</b>.</li><li><b>Profit = (P − ATC) × Q</b>.</li><li><b>Break-even price = min ATC.</b> Below it there is a loss, and in the long run firms leave.</li><li><b>Shut-down price = min AVC.</b> Below it, stop now (your loss is only FC).</li></ol>
+      </div>
+      <div class="ex"><span class="lbl">His example: the tomato farm</span><p>At P = $18 the farm makes 5 bushels (MC = 18), with ATC = $14.40.</p><p>Profit = (18 − 14.40) × 5 = <b>$18</b>.</p><p>Break-even = min ATC = <b>$14</b>. Shut-down = min AVC = <b>$10</b>.</p><p>At P = $12: a loss, but 12 &gt; 10, so it <b>keeps producing now</b> and exits in the long run.</p></div>
+    </div>
+  </section>
+
+  <section id="formulas">
+    <span class="eyebrow">5 · Formula sheet</span>
+    <h2>Every formula, in one place</h2>
+    <div class="fsheet">
+      <div class="card"><h3>Weeks 1–2</h3>
+        <div class="row"><span class="f">hire if w &lt; p × MP<sub>L</sub></span><small>wage = marginal cost; price × extra output = marginal benefit</small></div>
+        <div class="row"><span class="f">OC of 1 X = max Y ÷ max X</span><small>lower OC = comparative advantage</small></div>
+        <div class="row"><span class="f">x/a + y/b = 1</span><small>straight PPF; &lt; 1 inside (waste), &gt; 1 outside (impossible)</small></div>
+        <div class="row"><span class="f">slope = Δy/Δx</span><small>f′ &gt; 0 rising, f′ &lt; 0 falling</small></div>
+        <div class="row"><span class="f">max: f′ = 0, f″ &lt; 0 · min: f′ = 0, f″ &gt; 0</span><small>his example: y = 2x² − 8x + 9 → min at x = 2</small></div>
+      </div>
+      <div class="card"><h3>Weeks 3–4</h3>
+        <div class="row"><span class="f">equilibrium: Qd = Qs</span><small>market demand = add quantities at each price</small></div>
+        <div class="row"><span class="f">shortage = Qd − Qs · surplus = Qs − Qd</span><small>shortage → P rises; surplus → P falls</small></div>
+        <div class="row"><span class="f">CS = WTP − price · PS = price − cost</span><small>total surplus (welfare) = CS + PS</small></div>
+        <div class="row"><span class="f">quota rent = demand price − supply price</span><small>total rent = wedge × quota</small></div>
+        <div class="row"><span class="f">tax revenue = t × Q after tax</span><small>Pc = Pp + t, the same whoever pays</small></div>
+      </div>
+      <div class="card"><h3>Week 5</h3>
+        <div class="row"><span class="f">e = %ΔQ ÷ %ΔP</span><small>use the absolute value</small></div>
+        <div class="row"><span class="f">midpoint %ΔX = ΔX ÷ average X</span><small>same answer both ways</small></div>
+        <div class="row"><span class="f">R = P × Q</span><small>e &gt; 1: P↑ → R↓ · e &lt; 1: P↑ → R↑</small></div>
+        <div class="row"><span class="f">dR/dP = Q(1 − e)</span><small>sign of (1 − e) tells what a price rise does</small></div>
+        <div class="row"><span class="f">cross e &gt; 0 substitutes · &lt; 0 complements</span><small>income e &lt; 0 inferior, 0–1 necessity, &gt; 1 luxury</small></div>
+      </div>
+      <div class="card"><h3>Week 6</h3>
+        <div class="row"><span class="f">MPL = ΔQ ÷ ΔL</span><small>falls as L rises (diminishing returns)</small></div>
+        <div class="row"><span class="f">TC = FC + VC</span><small>FC doesn't change with Q</small></div>
+        <div class="row"><span class="f">MC = ΔTC ÷ ΔQ</span><small>= ΔVC ÷ ΔQ</small></div>
+        <div class="row"><span class="f">ATC = TC/Q · AVC = VC/Q · AFC = FC/Q</span><small>ATC = AVC + AFC</small></div>
+        <div class="row"><span class="f">dATC/dQ = (1/Q)(MC − ATC)</span><small>MC &lt; ATC → ATC falls; MC &gt; ATC → ATC rises</small></div>
+      </div>
+      <div class="card"><h3>Week 7</h3>
+        <div class="row"><span class="f">P = MR (price-taker)</span><small>the firm's demand is a flat line</small></div>
+        <div class="row"><span class="f">produce where P = MC</span><small>the profit-maximizing quantity</small></div>
+        <div class="row"><span class="f">profit = (P − ATC) × Q</span><small>negative = loss</small></div>
+        <div class="row"><span class="f">break-even P = min ATC</span><small>long run: entry above it, exit below it</small></div>
+        <div class="row"><span class="f">shut-down P = min AVC</span><small>short run: produce if P &gt; AVC (TR &gt; VC)</small></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="graphs">
+    <span class="eyebrow">6 · Graphs</span>
+    <h2>8 graphs you should be able to draw</h2>
+    <p class="lead">Always put <b>Price on the vertical axis</b> and <b>Quantity on the horizontal axis</b>. Label the curves, the equilibrium point and the shaded areas.</p>
+    <div class="graphs" id="graphgrid"></div>
+  </section>
+
+  <section id="quiz">
+    <span class="eyebrow">7 · Practice</span>
+    <h2>Practice quiz: 29 questions</h2>
+    <p class="lead">These questions are in the professor's style. Tap an answer to see right or wrong and why. Your score shows at the top.</p>
+    <div class="quizbar"><span>Score: <b id="score">0 / 0</b></span><button class="btn ghost" id="reset">Start again</button></div>
+    <div class="quiz" id="quizlist"></div>
+  </section>
+
+  <section id="plan">
+    <span class="eyebrow">8 · Plan</span>
+    <h2>How to use the time left</h2>
+    <div class="plan">
+      <div class="card"><h3>Today <small>Sun 25</small></h3><ol class="steps"><li>Lessons for weeks 1–4 (13 lessons). Do every self-test.</li><li>The 6 calculations above: cover the answer and solve each one.</li><li>Draw graphs 1–4 on paper from memory.</li></ol></div>
+      <div class="card"><h3>If the exam is Mon 26</h3><ol class="steps"><li>Tonight: lessons for weeks 5–7 (12 lessons). Go fast and focus on the exam answers.</li><li>Take the practice quiz and redo every one you missed.</li><li>Morning: read the formula sheet twice. Sleep matters more than one extra lesson.</li></ol></div>
+      <div class="card"><h3>If the exam is Wed 28</h3><ol class="steps"><li>Mon: weeks 5–7 lessons, and graphs 5–8.</li><li>Tue: the quiz, then the full 42-question mock in <code>MIDTERM REVIEW</code> §8 (90 min, timed).</li><li>Tue night: formula sheet, plus the "Remember these" card of every lesson.</li></ol></div>
+    </div>
+  </section>
+
+  <section id="tips">
+    <span class="eyebrow">9 · Exam day</span>
+    <h2>Tips that save marks</h2>
+    <div class="tips">
+      <div class="tip"><b>Write formula → numbers → answer</b>Even if the arithmetic goes wrong, the method still earns marks.</div>
+      <div class="tip"><b>Draw a graph for every "explain"</b>Label the axes (P, Q), the curves, the equilibrium point, and the arrows for shifts.</div>
+      <div class="tip"><b>Use his words</b>"Price-taker", "deadweight loss", "opportunity cost", "ceteris paribus". He wrote the slides, so his terms score best.</div>
+      <div class="tip"><b>Say the direction</b>Don't stop at "price changes": write "the price <b>rises</b> because there is a shortage".</div>
+      <div class="tip bad"><b>Shift or movement?</b>The good's own price changes → movement along the curve. Anything else changes → the curve shifts.</div>
+      <div class="tip bad"><b>Comparative advantage trap</b>Compare opportunity costs <b>across people</b> for the same good, not two goods for one person.</div>
+      <div class="tip bad"><b>Elasticity trap</b>The simple method gives a different answer depending on the starting point. Name the start point, or use the midpoint.</div>
+      <div class="tip bad"><b>Shut-down vs break-even</b>Shut-down uses <b>AVC</b> (short run). Break-even uses <b>ATC</b> (long run). Don't swap them.</div>
+      <div class="tip bad"><b>Slide slips</b>W2 S24 "10 sugar" should be 8. W5 S5 has two division typos (the answers 0.82 and 1.22 are right). W7 S12 means min <b>AVC</b>.</div>
+    </div>
+  </section>
+
+  <footer>Built from Prof. Kim's week 1–7 slides and the verified class notes. Progress in the quiz is not saved; lesson progress is saved in this browser.</footer>
+</div>
+
+<script src="list.js"></script>
+<script src="lessons-data.js"></script>
+<script src="chart.js"></script>
+<script>
+  /* question list table */
+  const LS = typeof LESSONS !== "undefined" ? LESSONS : [];
+  const rows = LIST.map((q) => {
+    const i = LS.findIndex((l) => l.id === q.id), l = LS[i];
+    return `<tr class="${q.calc ? "calc" : ""}"><td>${q.label}${q.calc ? " ✎" : ""}</td><td>Week ${q.week}</td><td>${q.slides.join(", ")}</td><td>${l ? l.title : ""}</td><td>${i >= 0 ? `<a href="learn.html#l${i + 1}-1" target="_blank" rel="noopener">Learn ↗</a>` : ""}</td></tr>`;
+  });
+  document.getElementById("qtable").innerHTML = `<tr><th>Question</th><th>Week</th><th>Slides</th><th>What it's about</th><th></th></tr>` + rows.join("");
+
+  /* graphs */
+  const G = [
+    ["Supply and demand", "Equilibrium where the curves cross. Shaded: consumer surplus (blue) and producer surplus (red).", { x: "Quantity", y: "Price", xmax: 10, ymax: 10, xmin: 0, ymin: 0, lines: [{ pts: [[0, 10], [9, 1]], label: "D", role: "demand" }, { pts: [[0, 0], [9, 9]], label: "S", role: "supply" }], areas: [{ pts: [[0, 5], [5, 5], [0, 10]], role: "cs", label: "CS" }, { pts: [[0, 5], [5, 5], [0, 0]], role: "ps", label: "PS" }], points: [{ x: 5, y: 5, label: "E", guides: true }] }],
+    ["Price ceiling → shortage", "The maximum price is below equilibrium. Sellers offer less and buyers want more. The yellow triangle is the deadweight loss.", { x: "Quantity", y: "Price", xmax: 10, ymax: 10, xmin: 0, ymin: 0, lines: [{ pts: [[0, 10], [9, 1]], label: "D", role: "demand" }, { pts: [[0, 0], [9, 9]], label: "S", role: "supply" }], hlines: [{ y: 3, label: "Ceiling", role: "policy" }], areas: [{ pts: [[3, 3], [5, 5], [3, 7]], role: "dwl", label: "DWL" }], arrows: [{ from: [3, 2], to: [7, 2], label: "shortage" }], points: [{ x: 5, y: 5, label: "E" }] }],
+    ["Price floor → surplus", "The minimum price is above equilibrium (butter, minimum wage). Unsold goods pile up.", { x: "Quantity", y: "Price", xmax: 10, ymax: 10, xmin: 0, ymin: 0, lines: [{ pts: [[0, 10], [9, 1]], label: "D", role: "demand" }, { pts: [[0, 0], [9, 9]], label: "S", role: "supply" }], hlines: [{ y: 7, label: "Floor", role: "policy" }], areas: [{ pts: [[3, 7], [5, 5], [3, 3]], role: "dwl", label: "DWL" }], arrows: [{ from: [3, 8], to: [7, 8], label: "surplus" }], points: [{ x: 5, y: 5, label: "E" }] }],
+    ["Quota → wedge and quota rent", "At the quota, the demand price is above the supply price. The gap (wedge) is the quota rent per unit.", { x: "Quantity", y: "Price", xmax: 10, ymax: 10, xmin: 0, ymin: 0, lines: [{ pts: [[0, 10], [9, 1]], label: "D", role: "demand" }, { pts: [[0, 0], [9, 9]], label: "S", role: "supply" }], vlines: [{ x: 3, label: "Quota", role: "policy" }], areas: [{ pts: [[0, 3], [3, 3], [3, 7], [0, 7]], role: "tax", label: "quota rent" }, { pts: [[3, 3], [5, 5], [3, 7]], role: "dwl", label: "DWL" }], points: [{ x: 3, y: 7, label: "A demand price" }, { x: 3, y: 3, label: "B supply price" }] }],
+    ["Shift vs movement", "Demand increases: the curve shifts right. The new equilibrium E2 has a higher price and a higher quantity.", { x: "Quantity", y: "Price", xmax: 10, ymax: 10, xmin: 0, ymin: 0, lines: [{ pts: [[0, 8], [8, 0]], label: "D1", role: "demand" }, { pts: [[0, 10], [10, 0]], label: "D2", role: "demand2" }, { pts: [[0, 0], [9, 9]], label: "S", role: "supply" }], arrows: [{ from: [2.5, 5.5], to: [3.9, 5.5], label: "shift" }], points: [{ x: 4, y: 4, label: "E1" }, { x: 5, y: 5, label: "E2" }] }],
+    ["Elastic vs inelastic demand", "A flat curve means buyers react a lot (elastic). A steep curve means they hardly react (inelastic).", { x: "Quantity", y: "Price", xmax: 10, ymax: 10, xmin: 0, ymin: 0, lines: [{ pts: [[1, 7], [9, 3]], label: "elastic", role: "demand" }, { pts: [[4, 9.5], [6, 0.5]], label: "inelastic", role: "supply" }], points: [{ x: 5, y: 5, label: "" }] }],
+    ["Cost curves (Ben's Boots)", "MC rises and cuts ATC and AVC at their lowest points. Minimum-cost output: 3 pairs at $72.", { x: "Pairs of boots", y: "Cost ($)", xmax: 6.5, ymax: 150, xmin: 0, ymin: 0, xticks: [1, 2, 3, 4, 5, 6], yticks: [36, 72, 108, 144], lines: [{ pts: [[1, 120], [2, 78], [3, 72], [4, 75], [5, 81.6], [6, 90]], label: "ATC", role: "atc" }, { pts: [[0.5, 6], [6, 72]], label: "AVC", role: "avc" }, { pts: [[0.5, 12], [6, 144]], label: "MC", role: "mc" }], points: [{ x: 3, y: 72, label: "min ATC", guides: true }] }],
+    ["Perfect competition: the firm", "Flat price line P = MR = $18. Produce where P = MC (5 bushels). The profit box is (18 − 14.40) × 5 = $18.", { x: "Bushels", y: "Price, cost ($)", xmax: 7, ymax: 26, xmin: 0, ymin: 0, xticks: [1, 2, 3, 4, 5, 6], yticks: [10, 14, 18], lines: [{ pts: [[2, 18], [3, 14.67], [4, 14], [5, 14.4], [6, 15.33]], label: "ATC", role: "atc" }, { pts: [[2, 11], [3, 10], [4, 10.5], [5, 11.6], [6, 13]], label: "AVC", role: "avc" }, { pts: [[1.5, 4], [6, 22]], label: "MC", role: "mc" }], hlines: [{ y: 18, label: "P = MR = $18", role: "policy" }], areas: [{ pts: [[0, 14.4], [5, 14.4], [5, 18], [0, 18]], role: "other", label: "profit" }], points: [{ x: 5, y: 18, label: "" }] }],
+  ];
+  document.getElementById("graphgrid").innerHTML = G.map(([h, p, c], i) => `<div class="graph card"><h3>${i + 1}. ${h}</h3>${renderChart(c)}<p>${p}</p></div>`).join("");
+
+  /* quiz */
+  const Q = [
+    ["Wheat sells at $12 a bushel and a worker costs $200. Workers 1–4 add 19, 17, 15 and 13 bushels. Using the hiring rule (hire if w < p × MPL), how many workers are hired?", ["1", "8", "2", "3"], 2, "12 × 19 = 228 > 200 → hire. 12 × 17 = 204 > 200 → hire. 12 × 15 = 180 < 200 → stop. So 2 workers."],
+    ["Which statement matches the class slides on opportunity cost?", ["An activity that costs no money has no opportunity cost.", "Two people buying the same $1,000 phone face the same opportunity cost.", "Every activity has the opportunity cost of time.", "Firms face opportunity costs, but governments do not."], 2, "\"Every activity has the opportunity cost of time\", even if it costs no money. And it differs for everyone."],
+    ["Which is one of the three principles about the WHOLE economy?", ["One person's spending is another person's income.", "Markets move toward equilibrium.", "Resources are scarce.", "There are gains from trade."], 0, "Economy-wide principle 1. B and D are interaction principles; C is individual choice."],
+    ["On his \"Economics belongs to the Social Sciences\" slide, which pairing is correct?", ["Formal Sciences – Engineering, Medicine", "Natural Sciences – Human Society", "Applied Sciences – Logic, Mathematics", "Social Sciences – Human Society"], 3, "Social = human society. Natural = materials. Formal = logic, math. Applied = engineering, medicine."],
+    ["Ann: 1 table costs 2 shirts. Ben: 1 table costs 3 shirts. Who has the comparative advantage in tables?", ["Ann, because her cost of a table (2 shirts) is lower than Ben's (3).", "Ben, because 1/3 is smaller than 3 in his own column.", "Ben, because he gives up more shirts per table.", "Neither, because you need an absolute advantage."], 0, "Compare across people for the same good: 2 < 3, so Ann has tables. Comparing inside one person's column is the classic trap."],
+    ["Lola's cost of 1 cake is 1/2 loaf; Timur's is 2 loaves. Lola sells cakes to Timur. Which price (loaves per cake) do both accept?", ["1/4", "1.5", "2.5", "3"], 1, "The price must be between the two opportunity costs: 1/2 to 2. Only 1.5 fits."],
+    ["Near x₀, f′(x) goes negative → zero → positive. So:", ["x₀ is a maximum and f″ < 0", "f is decreasing at x₀", "x₀ is a maximum and f″ > 0", "x₀ is a minimum and f″ > 0"], 3, "Falling, then flat, then rising is the bottom of a U: a minimum, with f″ > 0."],
+    ["The same unemployment data look like a big jump on one chart and almost flat on another. Why?", ["Different data", "An omitted variable", "One vertical axis is truncated (5.3–6) and the other runs 0–7", "One chart is a scatter diagram"], 2, "Same data, different scale. A truncated axis makes small changes look big."],
+    ["In the circular flow, money goes from firms back to households through:", ["factor markets", "markets for goods and services", "barter", "the government budget"], 0, "Firms buy labor, land and capital from households in factor markets."],
+    ["New technology increases supply. The market moves:", ["along the supply curve to a higher price", "to a demand curve shifted right", "along the demand curve to a lower price and higher quantity", "along the demand curve to a higher price and lower quantity"], 2, "S shifts right → surplus at the old price → the price falls, moving down along D. P↓, Q↑."],
+    ["Demand increases AND supply decreases at the same time. What is certain?", ["Quantity rises", "Price rises", "Quantity falls", "Both rise"], 1, "Both changes push the price up. The quantity depends on which shift is bigger."],
+    ["At $6, quantity demanded is 900 and quantity supplied is 500. There is:", ["a surplus of 400; the price falls", "a shortage of 1,400; the price rises", "a surplus of 400; the price rises", "a shortage of 400; the price rises"], 3, "Qd > Qs → shortage = 900 − 500 = 400 → the price rises."],
+    ["Sellers expect the price to RISE next month. Today, supply:", ["shifts left (decreases)", "shifts right (increases)", "stays put", "moves along the curve"], 0, "They hold goods back to sell later at the higher price, so supply today falls."],
+    ["Buyers would pay $50, $42, $30, $25 and $12. The price is $28. Total consumer surplus is:", ["$35", "$38", "$122", "$159"], 1, "Only buyers with WTP above $28 buy: 22 + 14 + 2 = $38."],
+    ["Minimum wage is a ____ and the \"buyers\" are ____.", ["price ceiling; employees", "price floor; employees", "price floor; firms", "quota; firms"], 2, "A minimum price is a floor. In the labor market, firms buy labor."],
+    ["Drivers are happy with $5 a ride; riders pay $8 because taxis are limited. The license owner rents out his taxi. The rent is exactly:", ["$3", "$5", "$8", "$13"], 0, "Quota rent = demand price − supply price = 8 − 5 = $3."],
+    ["A $3 tax moves from producers to consumers. Compared with before:", ["consumers pay $3 more", "producers bear all of it", "tax revenue doubles", "D shifts down instead of S shifting up, and prices and quantity stay the same"], 3, "His slide: \"The same!\" Who legally pays doesn't change the result."],
+    ["Under rent control (Pc below Pe), the rectangle between Pc and Pe for the Qc flats:", ["becomes deadweight loss", "was producer surplus and becomes consumer surplus", "was consumer surplus and becomes producer surplus", "becomes tax revenue"], 1, "Tenants who still get a flat pay less, so that money moves from landlords to tenants."],
+    ["Two lines pass through the same point; line ③ is flatter than ②. On his slide:", ["② is \"More elastic\"", "Both are \"No elastic\"", "③ is \"More elastic\"", "③ is \"Infinitely elastic\""], 2, "The flatter the line, the more elastic."],
+    ["Q = 500 and e = 1.4. Using dR/dP = Q(1 − e):", ["dR/dP = −200, so a price rise lowers revenue", "dR/dP = +200, so a price rise raises revenue", "dR/dP = 0, revenue is at its maximum", "dR/dP = −200, so a price rise raises revenue"], 0, "500 × (1 − 1.4) = −200 < 0. Elastic demand: raising the price loses revenue."],
+    ["The price of X rises 10% and the quantity of Y bought rises 5%. Cross elasticity is ____ and the goods are ____.", ["−0.5; complements", "+2.0; substitutes", "+0.5; complements", "+0.5; substitutes"], 3, "+5% ÷ +10% = +0.5. Positive means substitutes."],
+    ["On the Laffer curve (R = t × Y(t)), raising the tax rate:", ["always raises revenue", "raises revenue only before the peak; after it, revenue falls", "never changes revenue", "always lowers revenue"], 1, "The curve is a hill: it rises to the peak, then falls."],
+    ["The total product curve is at its top (flat tangent) where:", ["MP is highest", "MP is negative", "MP is 0", "TP is 0"], 2, "When the next worker adds nothing (MP = 0), TP stops rising: that is the peak."],
+    ["Wheat farm: a worker costs $200, and output rises from 64 to 75 bushels. MC per bushel of that step is about:", ["$11.00", "$200.00", "$18.67", "$18.18"], 3, "MC = ΔTC ÷ ΔQ = 200 ÷ 11 ≈ $18.18."],
+    ["ATC at 10 units is $40. The 11th unit has MC = $29. The new ATC is:", ["$39, because MC < ATC pulls it down", "$41", "$40", "$29"], 0, "TC = 400; (400 + 29) ÷ 11 = $39. A newcomer below the average pulls the average down."],
+    ["A perfectly competitive firm's demand curve is:", ["downward sloping like the market", "horizontal at the market price (P = MR)", "vertical", "the same as industry demand"], 1, "A price-taker can sell any amount at the market price, so it sees a flat line."],
+    ["Tomato farm: min AVC = $10, min ATC = $14. The market price is $12. The farm should:", ["shut down now", "keep producing now (the loss is smaller than FC) but exit in the long run", "enjoy a profit while more firms enter", "raise its price"], 1, "10 < 12 < 14: a loss, but P > AVC, so it covers VC and part of FC. Produce now, leave later."],
+    ["At P = $18 the farm makes 5 bushels and ATC = $14.40. Its profit is:", ["$18", "$72", "$90", "$3.60"], 0, "(18 − 14.40) × 5 = $18."],
+    ["A competitive firm's short-run supply curve is:", ["its MC curve above min AVC", "its ATC curve", "its AVC curve", "its MC curve below min ATC"], 0, "At each price it produces where P = MC, but never below the shut-down price (min AVC)."],
+  ];
+  const L = ["A", "B", "C", "D"];
+  let answered = 0, right = 0;
+  function renderQuiz() {
+    answered = 0; right = 0; updScore();
+    document.getElementById("quizlist").innerHTML = Q.map(([q, opts, a, why], i) => `
+      <div class="mcq" data-i="${i}"><span class="qn">QUESTION ${i + 1} OF ${Q.length}</span><div class="qt">${q.replace(/</g, "&lt;").replace(/&lt;(\/?)(b|i)>/g, "<$1$2>")}</div>
+        <div class="opts">${opts.map((o, j) => `<button class="opt" data-j="${j}">${L[j]}. ${o.replace(/</g, "&lt;")}</button>`).join("")}</div>
+        <div class="why">${why.replace(/</g, "&lt;")}</div></div>`).join("");
+  }
+  function updScore() { document.getElementById("score").textContent = `${right} / ${answered}${answered === Q.length ? (right >= 24 ? " · great!" : right >= 18 ? " · good, review the misses" : " · redo the lessons for the misses") : ""}`; }
+  document.getElementById("quizlist").addEventListener("click", (e) => {
+    const b = e.target.closest(".opt"); if (!b) return;
+    const card = b.closest(".mcq"); if (card.classList.contains("done")) return;
+    const i = +card.dataset.i, j = +b.dataset.j, a = Q[i][2];
+    card.classList.add("done");
+    card.querySelectorAll(".opt").forEach((o, k) => { o.disabled = true; if (k === a) o.classList.add("right"); });
+    if (j !== a) b.classList.add("wrong"); else right++;
+    answered++; updScore();
+  });
+  document.getElementById("reset").onclick = renderQuiz;
+  renderQuiz();
+</script>
+</body>
+</html>

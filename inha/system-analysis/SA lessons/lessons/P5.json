@@ -1,0 +1,175 @@
+[
+ {
+  "lesson": "W5a-1",
+  "questions": [
+   {
+    "type": "calculation",
+    "q": "<p>A hospital appointment system needs <b>90 person-months</b> of effort. The optimal schedule is <b>10 months</b>.</p><ol><li>What is the average number of staff?</li><li>If all of them work as one team, how many communication lines are there?</li><li>The PM splits them into 3 sub-teams of 3. Inside each sub-team everyone talks to everyone, and only the 3 sub-team contacts talk to each other. How many lines now?</li><li>Which staffing rule does part (c) follow?</li></ol>",
+    "a": "<p><b>(a)</b> Average staff = person-months ÷ optimal schedule = 90 ÷ 10 = <b>9 people</b> on average.</p><p><b>(b)</b> Lines = n(n − 1) ÷ 2 = 9 × 8 ÷ 2 = <b>36 lines</b>.</p><p><b>(c)</b> Inside each sub-team: 3 × 2 ÷ 2 = 3 lines, so 3 sub-teams × 3 = 9 lines. Between the 3 contacts: 3 lines. Total = 9 + 3 = <b>12 lines</b> (one third of 36).</p><p><b>(d)</b> Keep each team to <b>fewer than 8–10 people</b>; if more are needed, create <b>sub-teams</b> that report to a contact at a higher level. Fewer lines = easier coordination.</p>"
+   },
+   {
+    "type": "drawing",
+    "q": "<p>Depict graphically: the reporting structure for a 14-person project team (1 project manager, 5 analysts, 6 programmers, and the two leads). Label each role.</p>",
+    "a": "<p>Key points to show:</p><ul><li><b>Project manager</b> on top: one per project, oversees overall progress.</li><li><b>Functional lead</b> under the PM, managing the <b>5 analysts</b>.</li><li><b>Technical lead</b> under the PM, managing the <b>6 programmers</b>.</li><li>Each sub-team is under 8–10 people, so coordination stays manageable.</li><li>Assign tasks by both <b>technical</b> and <b>interpersonal</b> skills.</li></ul>",
+    "diagram": "flowchart TD\n  PM[\"Project manager\"] --> FL[\"Functional lead\"]\n  PM --> TL[\"Technical lead\"]\n  FL --> A1[\"Analyst 1\"]\n  FL --> A2[\"Analyst 2\"]\n  FL --> A3[\"Analyst 3\"]\n  FL --> A4[\"Analyst 4\"]\n  FL --> A5[\"Analyst 5\"]\n  TL --> P1[\"Programmer 1\"]\n  TL --> P2[\"Programmer 2\"]\n  TL --> P3[\"Programmer 3\"]\n  TL --> P4[\"Programmer 4\"]\n  TL --> P5[\"Programmer 5\"]\n  TL --> P6[\"Programmer 6\"]"
+   },
+   {
+    "type": "mcq",
+    "q": "<p>All of these are characteristics of a jelled team EXCEPT:</p><p>A) very low turnover<br>B) a strong sense of identity<br>C) one star programmer owns the system and the others support him<br>D) the team enjoys its work</p>",
+    "a": "<p><b>C</b>, because in a jelled team <b>the team, not any one individual, owns the system</b>. A, B and D are three of the five traits (the other two: sense of eliteness, ownership by the team).</p>"
+   },
+   {
+    "type": "short",
+    "q": "<p>(a) Define the Ringelmann effect and name the gap between potential and actual group output. (b) Name any five of the \"ten steps to more productive development teams\" and explain \"no more heroes\".</p>",
+    "a": "<p><b>(a)</b> The Ringelmann effect is the tendency for individual members of a group to become <b>less productive as the group gets bigger</b> (tug of war: each person feels their effort is not critical). The gap between potential and actual output is <b>process loss</b>.</p><p><b>(b)</b> Any five of: give them their own space; try agile methods; maximise communication, minimise bureaucracy; no more heroes; let them grow; play time and rest time; trust the team; work iteratively and incrementally; test first design; get a team coach.</p><p><b>No more heroes</b>: no \"lone ranger\" who writes secret code that nobody else understands. Knowledge must be shared by the whole team.</p>"
+   },
+   {
+    "type": "scenario",
+    "q": "<p>A bank's loan system project has 7 developers and is 3 weeks behind. The manager says: \"Let's hire 6 more programmers and put them in the same team, then we will catch up.\" As the analyst, do you agree? Give two reasons and a better suggestion.</p>",
+    "a": "<p><b>No.</b></p><ul><li>\"<b>Adding staff resources does not translate into increased productivity</b>\": a bigger team is harder to coordinate. New people also need time to learn the project.</li><li><b>Ringelmann effect</b>: each member becomes less productive as the group grows. 13 people = 13 × 12 ÷ 2 = 78 communication lines instead of 21.</li><li>13 is above the <b>8–10 person</b> limit for one team.</li></ul><p><b>Better:</b> keep the team small. If the delay is real, adjust the schedule by the percentage behind or reduce scope (timeboxing). If more people are truly needed, add them as a separate <b>sub-team</b> with its own contact.</p>"
+   }
+  ]
+ },
+ {
+  "lesson": "W5a-2",
+  "questions": [
+   {
+    "type": "classify",
+    "q": "<p>Classify each motivator as <b>extrinsic</b> or <b>intrinsic</b>:</p><ol><li>A $300 bonus if the module is finished on time</li><li>Wanting to solve a hard performance problem nobody else could</li><li>Fear of losing the job</li><li>Pride in writing clean, high-quality code</li><li>Two extra days off after the release</li><li>Enjoying working with teammates you trust</li></ol>",
+    "a": "<table><tr><th>#</th><th>Type</th><th>Why</th></tr><tr><td>1</td><td>Extrinsic</td><td>bonus = external reward</td></tr><tr><td>2</td><td>Intrinsic</td><td>desire to beat a challenge</td></tr><tr><td>3</td><td>Extrinsic</td><td>threat of job loss = external</td></tr><tr><td>4</td><td>Intrinsic</td><td>wish to do high-quality work</td></tr><tr><td>5</td><td>Extrinsic</td><td>time off = external</td></tr><tr><td>6</td><td>Intrinsic</td><td>working with people you like and trust</td></tr></table><p>Extrinsic = from outside the person; intrinsic = from inside.</p>"
+   },
+   {
+    "type": "classify",
+    "q": "<p>Which type of standard is each rule?</p><ol><li>Every function must start with a comment stating its inputs and outputs.</li><li>All screens put field labels on the left and the Save button bottom right.</li><li>Every bug must be logged in JIRA within one day, and changes need the PM's approval.</li><li>Every document has the version number and date in the footer.</li><li>Each program specification must list the program name, business rules and pseudocode.</li></ol>",
+    "a": "<ol><li><b>Coding</b> standard: how code is written.</li><li><b>User interface design</b> standard: how screens look.</li><li><b>Procedural</b> standard: when/how people report and approve.</li><li><b>Documentation</b> standard: how documents look.</li><li><b>Specification requirement</b> standard: what a program spec contains.</li></ol>"
+   },
+   {
+    "type": "mcq",
+    "q": "<p>A tool that can automatically <b>generate code</b> for database tables from the design is called:</p><p>A) upper CASE<br>B) lower CASE<br>C) a CASE repository<br>D) a project charter</p>",
+    "a": "<p><b>B</b>, because lower CASE supports the <b>design</b> workflow and generates code. Upper CASE draws diagrams for analysis; the repository only stores diagrams and designs.</p>"
+   },
+   {
+    "type": "mcq",
+    "q": "<p>Which of these is <b>NOT</b> one of the motivation principles recommended for 21st-century firms?</p><p>A) the 20 percent rule<br>B) small \"Now That\" awards given by peers<br>C) a pay raise for everyone on the project<br>D) a high-end development environment</p>",
+    "a": "<p><b>C</b>, because \"give everyone on the project a raise\" is a motivational <b>don't</b>: good people believe mediocrity is rewarded. Money is also \"the last thing that should be done\".</p>"
+   },
+   {
+    "type": "scenario",
+    "q": "<p>A new 8-person team for a university e-learning portal keeps arguing: people come at different times, nobody knows who updates the workplan, and some members don't see why the project matters. What should the PM do? Name the key document and three conflict-avoidance strategies.</p>",
+    "a": "<p>First define clear <b>roles</b>, hold people <b>accountable</b>, and write a <b>project charter</b> with the team's norms and ground rules (when to be at work, when staff meetings are, how the team communicates, how the workplan is updated). This builds <b>group cohesiveness</b>, which adds more to productivity than individual skills.</p><p>Strategies (any three):</p><ul><li>Make sure the team understands <b>why the project is important</b> to the organization.</li><li>Clearly define plans for the project.</li><li>Develop detailed operating procedures and tell the team.</li><li>Develop schedule commitments ahead of time.</li><li>Forecast other priorities and their possible impact.</li></ul>"
+   },
+   {
+    "type": "short",
+    "q": "<p>(a) Which workflow chooses the tools and standards, and which chooses the documentation? (b) List four benefits of CASE tools.</p>",
+    "a": "<p><b>(a)</b> <b>Environment</b> workflow → tools + standards. <b>Infrastructure management</b> workflow → level and type of documentation.</p><p><b>(b)</b> Any four: tasks are done and changed much faster; development information is centralized; information is shown as easy-to-understand diagrams; potentially lower maintenance costs; potentially better quality; enforced discipline; measuring the size of a change; round-trip engineering.</p>"
+   }
+  ]
+ },
+ {
+  "lesson": "W5b-1",
+  "questions": [
+   {
+    "type": "classify",
+    "q": "<p>Classify each requirement for a café ordering app as <b>functional</b> (process / information) or <b>nonfunctional</b> (operational / performance / security / cultural and political). The system must:</p><ol><li>let customers add items to a cart and pay</li><li>keep each customer's order history for two years</li><li>run on Android and iOS phones</li><li>confirm an order in under 3 seconds</li><li>let only the manager change menu prices</li><li>show prices in Uzbek so'm and the menu in Uzbek and Russian</li><li>calculate a 10% loyalty discount on every fifth order</li><li>be available every day from 7:00 to 23:00</li></ol>",
+    "a": "<table><tr><th>#</th><th>Class</th><th>Why</th></tr><tr><td>1</td><td>F, process</td><td>an action the system performs</td></tr><tr><td>2</td><td>F, information</td><td>data it must keep (retain)</td></tr><tr><td>3</td><td>NF, operational</td><td>technical environment</td></tr><tr><td>4</td><td>NF, performance</td><td>speed</td></tr><tr><td>5</td><td>NF, security</td><td>who may access what</td></tr><tr><td>6</td><td>NF, cultural and political</td><td>local currency and languages</td></tr><tr><td>7</td><td>F, process</td><td>a calculation the system does</td></tr><tr><td>8</td><td>NF, performance</td><td>availability = reliability (not operational)</td></tr></table><p>Functional: 1, 2, 7. Nonfunctional: 3, 4, 5, 6, 8.</p>"
+   },
+   {
+    "type": "classify",
+    "q": "<p>For a university library system, classify each item as a <b>business</b> requirement or a <b>system</b> requirement.</p><ol><li>Students must be able to reserve a book online.</li><li>The reservation data is stored in a MySQL table with an index on book ID.</li><li>The library wants to reduce lost books by 30%.</li><li>The search page calls the catalogue REST API in JSON format.</li><li>Librarians must see which books are overdue.</li></ol>",
+    "a": "<p>Business (user) requirement = <b>WHAT</b> the system does, from the business person's view, analysis phase. System requirement = <b>HOW</b> it is implemented, from the developer's view, design phase.</p><ol><li><b>Business</b>: what users need.</li><li><b>System</b>: how data is stored.</li><li><b>Business</b>: a business goal (the \"why\").</li><li><b>System</b>: how the search is built.</li><li><b>Business</b>: what librarians need.</li></ol>"
+   },
+   {
+    "type": "mcq",
+    "q": "<p>Which of these is a <b>nonfunctional performance</b> requirement?</p><p>A) The system must print a monthly sales report.<br>B) The system must refresh stock levels every 10 minutes.<br>C) The system must work in any Web browser.<br>D) Only HR staff may view salaries.</p>",
+    "a": "<p><b>B</b>, because update frequency is about speed/capacity. A = functional (process), C = operational, D = security.</p>"
+   },
+   {
+    "type": "classify",
+    "q": "<p>Project requirement or product requirement?</p><ol><li>Training the call-centre staff to use the new system</li><li>The app must let users track their parcel on a map</li><li>Migrating the old customer data to the new database</li><li>A warranty service agreement (SLA) with the client</li><li>The app must load the main screen in under 2 seconds</li></ol>",
+    "a": "<p>Project requirements = what the <b>project</b> needs to succeed (set by project stakeholders: scope, timeline, budget, resources). Product requirements = what the <b>final product</b> must have (set by the product owner: functionality, performance, usability).</p><ol><li><b>Project</b> (staff training)</li><li><b>Product</b> (functionality)</li><li><b>Project</b> (installing / migrating)</li><li><b>Project</b> (SLA with customers)</li><li><b>Product</b> (performance)</li></ol>"
+   },
+   {
+    "type": "drawing",
+    "q": "<p>Depict graphically: the hierarchy of requirements from business requirements down to the two kinds of solution requirements and their subtypes.</p>",
+    "a": "<p>Key labels:</p><ul><li><b>Business requirements</b> (why, goals) → <b>stakeholder requirements</b> (needs) → <b>solution requirements</b> (capabilities and qualities).</li><li>Solution → <b>functional</b> (capabilities: process-oriented, information-oriented) and <b>nonfunctional</b> (qualities: operational, performance, security, cultural and political).</li></ul>",
+    "diagram": "flowchart TD\n  B[\"Business requirements: why, goals\"] --> S[\"Stakeholder requirements: needs\"]\n  S --> SO[\"Solution requirements\"]\n  SO --> F[\"Functional: capabilities\"]\n  SO --> N[\"Nonfunctional: qualities\"]\n  F --> F1[\"Process-oriented\"]\n  F --> F2[\"Information-oriented\"]\n  N --> N1[\"Operational\"]\n  N --> N2[\"Performance\"]\n  N --> N3[\"Security\"]\n  N --> N4[\"Cultural and political\"]"
+   },
+   {
+    "type": "short",
+    "q": "<p>(a) What is a requirements definition, and how are its two parts organized? (b) List the four real-world problems with requirements determination.</p>",
+    "a": "<p><b>(a)</b> A straightforward text report that lists the functional and nonfunctional requirements <b>in an outline format</b>. Nonfunctional requirements are grouped under the 4 types (operational, performance, security, cultural and political; an empty type is still listed, e.g. \"none anticipated\"). Functional requirements are grouped by <b>process</b> (e.g. manage appointments, produce schedule).</p><p><b>(b)</b> (1) the analyst may not have access to the right users; (2) the specification may be inadequate, especially with agile's light techniques; (3) some requirements cannot be known at the start; (4) verifying and validating requirements is hard.</p>"
+   }
+  ]
+ },
+ {
+  "lesson": "W5b-2",
+  "questions": [
+   {
+    "type": "calculation",
+    "q": "<p>An insurance company takes on average <b>15 working days</b> (8-hour days) to pay a car-damage claim. The analysts time each step: claim entry 0.75 h · document check 1.5 h · damage assessment 2 h · manager approval 0.25 h · payment 0.5 h.</p><ol><li>Apply duration analysis: step total, elapsed working hours, ratio, share of real work, waiting time.</li><li>Repeat the share using 24-hour clock days.</li><li>What does the result show, and which strategy uses this technique?</li></ol>",
+    "a": "<p><b>(a)</b></p><ul><li>Step total = 0.75 + 1.5 + 2 + 0.25 + 0.5 = <b>5 h</b></li><li>Elapsed = 15 × 8 = <b>120 working hours</b></li><li>Ratio = 120 : 5 = <b>24 : 1</b></li><li>Real work = 5 ÷ 120 = <b>4.2%</b></li><li>Waiting = 120 − 5 = <b>115 h = 95.8%</b></li></ul><p><b>(b)</b> 15 × 24 = 360 h; 5 ÷ 360 = <b>1.4%</b> (ratio 72 : 1).</p><p><b>(c)</b> A strong indication that the overall process is <b>badly broken</b>: it takes 15 days to do less than one day's work; the claim mostly waits between steps. Duration analysis belongs to <b>BPI</b> (with activity-based costing and informal benchmarking).</p>"
+   },
+   {
+    "type": "calculation",
+    "q": "<p>Activity-based costing for one online-shop order. Find the direct cost of each step, the total, and which steps to improve first.</p><table><tr><th>Step</th><th>Time</th><th>Staff cost per hour</th><th>Materials</th></tr><tr><td>Order entry</td><td>0.5 h</td><td>$12</td><td>–</td></tr><tr><td>Credit check</td><td>1 h</td><td>$20</td><td>–</td></tr><tr><td>Picking and packing</td><td>1.5 h</td><td>$10</td><td>$3 packaging</td></tr><tr><td>Quality check</td><td>0.25 h</td><td>$16</td><td>–</td></tr><tr><td>Delivery</td><td>2 h</td><td>$14</td><td>–</td></tr></table>",
+    "a": "<p>Direct cost = labour (time × hourly cost) + materials.</p><table><tr><th>Step</th><th>Working</th><th>Cost</th><th>Share</th></tr><tr><td>Order entry</td><td>0.5 × 12</td><td>$6</td><td>7.9%</td></tr><tr><td>Credit check</td><td>1 × 20</td><td>$20</td><td>26.3%</td></tr><tr><td>Picking and packing</td><td>1.5 × 10 + 3</td><td>$18</td><td>23.7%</td></tr><tr><td>Quality check</td><td>0.25 × 16</td><td>$4</td><td>5.3%</td></tr><tr><td>Delivery</td><td>2 × 14</td><td>$28</td><td>36.8%</td></tr><tr><td><b>Total</b></td><td></td><td><b>$76</b></td><td>100%</td></tr></table><p>The most costly steps are <b>delivery ($28)</b> and <b>credit check ($20)</b>: together 63% of the cost. Improve these first. (Indirect costs such as rent could be added.) This is a <b>BPI</b> technique.</p>"
+   },
+   {
+    "type": "scenario",
+    "q": "<p>Which strategy (BPA, BPI or BPR) fits each case? Give one reason each.</p><ol><li>A school library keeps its lending rules but replaces paper cards with barcode scanners.</li><li>A pharmacy chain sees that a competitor lets customers reorder medicine online, and wants to copy this and cut a few slow steps.</li><li>A bank wants to close its loan offices and give instant loans fully inside a mobile app, with no loan officers. Management accepts high cost and very high risk.</li><li>A small café has a low budget and wants a low-risk project, but each waiter keeps losing paper orders. Users say the main problem is unreadable handwriting.</li></ol>",
+    "a": "<ol><li><b>BPA</b>: same process, computers just do some of the work; small change, least impact.</li><li><b>BPI</b>: moderate change, copying what competitors do (informal benchmarking), improving efficiency.</li><li><b>BPR</b>: changes the fundamental way of doing business (\"obliterating\" the current way); high value, high cost, very high risk, very broad.</li><li><b>BPA</b>: low cost, low–moderate risk; problem analysis (users name the problem and solution), e.g. orders on a tablet.</li></ol><p>No one strategy is inherently better; most projects use a combination.</p>"
+   },
+   {
+    "type": "classify",
+    "q": "<p>Name the technique and its strategy (BPA, BPI or BPR):</p><ol><li>The team visits three competitor websites as customers to see how they handle returns.</li><li>Users and managers list the problems in the current system and suggest how to fix each one.</li><li>For every step, the team asks: \"What happens if we remove this step completely?\"</li><li>The team keeps asking \"why?\" about late deliveries until it finds the real cause.</li><li>The team lists QR codes, AI chatbots and mobile payments, and asks how each could change the process.</li><li>The team asks: \"What does the customer really get value from in this process?\"</li></ol>",
+    "a": "<ol><li><b>Informal benchmarking</b> → BPI</li><li><b>Problem analysis</b> → BPA</li><li><b>Activity elimination</b> → BPR (a force-fit exercise: every activity)</li><li><b>Root cause analysis</b> → BPA (fix the cause, not the symptom)</li><li><b>Technology analysis</b> → BPR</li><li><b>Outcome analysis</b> → BPR</li></ol>"
+   },
+   {
+    "type": "mcq",
+    "q": "<p>A strategy has <b>moderate</b> potential business value, <b>low–moderate</b> project cost, <b>narrow–moderate</b> breadth of analysis and <b>low–moderate</b> risk. Which is it?</p><p>A) BPA<br>B) BPI<br>C) BPR<br>D) none: BPA and BPI have different risk</p>",
+    "a": "<p><b>B</b>, because BPI is the middle option on value, cost and breadth. BPA has low–moderate value, low cost and narrow breadth. D is wrong: BPA and BPI have the <b>same</b> risk (low–moderate).</p>"
+   },
+   {
+    "type": "short",
+    "q": "<p>(a) Rank BPA, BPI and BPR by the time spent on the as-is system, and explain why BPR spends the least. (b) Define efficiency and effectiveness.</p>",
+    "a": "<p><b>(a)</b> BPA (a lot) &gt; BPI (much less) &gt; BPR (little). BPR wants <b>new ideas</b>, so studying the old way in detail would only hold the team back.</p><p><b>(b)</b> Efficiency = <b>doing things right</b>. Effectiveness = <b>doing the right things</b>. BPI can improve both.</p>"
+   }
+  ]
+ },
+ {
+  "lesson": "W5b-3",
+  "questions": [
+   {
+    "type": "classify",
+    "q": "<p>Classify each interview question as <b>closed-ended</b>, <b>open-ended</b> or <b>probing</b>:</p><ol><li>How many prescriptions do you fill on a busy day?</li><li>What do you like and dislike about the current stock system?</li><li>You said orders \"get lost\". Can you give me an example?</li><li>Which software do you use to print labels?</li><li>Why does that happen?</li><li>How would you improve the way customers pick up their medicine?</li></ol>",
+    "a": "<ol><li><b>Closed</b>: a specific number.</li><li><b>Open</b>: room to explain, rich information.</li><li><b>Probing</b>: follows up on the last answer.</li><li><b>Closed</b>: one specific answer.</li><li><b>Probing</b>: \"Why?\" follows up.</li><li><b>Open</b>: interviewee has control.</li></ol><p>No type is better than another; mix them. Trap: the slides list \"How do customers place orders?\" as <b>closed</b>.</p>"
+   },
+   {
+    "type": "scenario",
+    "q": "<p>You are the analyst for a dormitory-booking system at a university. (a) In your first meeting with the dormitory director, the current process is still unclear. Which interview type do you use, and what kind of questions? (b) Two weeks later you must find out exactly how the clerk calculates the room fee with discounts. Which type now? (c) What is the difference between top-down and bottom-up ordering, and what do analysts do in practice?</p>",
+    "a": "<p><b>(a)</b> <b>Unstructured</b>: seeks broad, roughly defined information; few closed questions, mostly open and probing questions asked on the fly. It is the most challenging type to conduct.</p><p><b>(b)</b> <b>Structured</b>: specific questions prepared beforehand, with <b>more closed-ended</b> questions, to get exact details.</p><p><b>(c)</b> Top-down = broad, general questions → specific ones. Bottom-up = specific → broad. In practice: broad → specific → back to broad.</p>",
+    "diagram": "flowchart LR\n  subgraph TD1[\"Top-down\"]\n    A1[\"Broad\"] --> A2[\"Specific\"]\n  end\n  subgraph BU[\"Bottom-up\"]\n    B1[\"Specific\"] --> B2[\"Broad\"]\n  end\n  subgraph PR[\"In practice\"]\n    C1[\"Broad\"] --> C2[\"Specific\"] --> C3[\"Broad\"]\n  end"
+   },
+   {
+    "type": "mcq",
+    "q": "<p>After an interview, the interview report should be written within:</p><p>A) 24 hours<br>B) 48 hours<br>C) one week<br>D) one or two weeks</p>",
+    "a": "<p><b>B</b>, because notes fade fast; the report is often sent to the interviewee to check. \"One or two weeks\" is the JAD post-session report (trap).</p>"
+   },
+   {
+    "type": "mcq",
+    "q": "<p>When conducting an interview, the analyst's <b>first goal</b> is to:</p><p>A) ask closed-ended questions to save time<br>B) build rapport with the interviewee<br>C) present the to-be system<br>D) record the interview report</p>",
+    "a": "<p><b>B</b>, because rapport makes the person tell the whole truth, not just what they think you want to hear. Also look professional and unbiased, and explain why you are there.</p>"
+   },
+   {
+    "type": "scenario",
+    "q": "<p>Write an interview schedule for a new pharmacy-chain stock system. Include at least four interviewees and say why each is chosen.</p>",
+    "a": "<table><tr><th>Name / position</th><th>Purpose</th><th>Meeting</th></tr><tr><td>Operations director</td><td>strategic vision for the new system</td><td>Mon 10:00–12:00</td></tr><tr><td>Stock manager</td><td>current problems and future goals</td><td>Tue 9:00–10:00</td></tr><tr><td>Branch pharmacist</td><td>how orders and stock checks are really done</td><td>Tue 14:00–15:00</td></tr><tr><td>Warehouse clerk</td><td>how deliveries are recorded</td><td>Wed 11:00–12:00</td></tr></table><p>Rule: include <b>both managers and staff</b>: managers give the high-level view, staff the low-level view of how the work is actually done. The schedule says <b>who, when and for what purpose</b>.</p>"
+   },
+   {
+    "type": "short",
+    "q": "<p>List what an analyst should do to <b>prepare</b> for an interview, and name the parts of an interview report.</p>",
+    "a": "<p><b>Prepare:</b> a general interview plan with the questions in order; anticipate possible answers and plan follow-ups; plan segues between topics; check the interviewee's areas of knowledge (don't ask what they can't answer); set priorities in case time runs short.</p><p><b>Report parts:</b> approved by, person interviewed, interviewer, purpose, summary, open items, detailed notes.</p>"
+   }
+  ]
+ }
+]

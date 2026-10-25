@@ -1,0 +1,597 @@
+[
+ {
+  "id": "W7-1",
+  "label": "W7·1",
+  "week": "W7",
+  "slides": [
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   23,
+   24,
+   26,
+   27
+  ],
+  "kind": "theory",
+  "title": "From requirements to functional models: where use cases and activity diagrams fit",
+  "hook": "After this lesson you can explain what the analysis phase produces, the three subphases and three activities of requirements work, and what a use case and an activity diagram are for.",
+  "cards": [
+   {
+    "h": "Where we are: the end of analysis",
+    "body": "<p>Think of the university course-registration project. Planning gave us a <b>system request</b>. Now analysis must turn it into a <b>system proposal</b> that management can approve.</p><p>The S2 \"equation\":</p><p><b>Requirements definition + Models + Feasibility analysis + Workplan = System proposal</b></p><p>On the slide, every box has a green tick except <b>Models</b>. That is this week: the <b>functional models</b> (use cases and activity diagrams).</p><p>Same list as W5b-S2 (system proposal = requirements definition + models + feasibility + workplan).</p>",
+    "diagram": "flowchart LR\n  SR[\"System request\"] --> RD[\"Requirements definition\"]\n  RD --> SP([\"System proposal\"])\n  M[\"Models: use cases and activity diagrams\"] --> SP\n  FA[\"Feasibility analysis\"] --> SP\n  WP[\"Workplan\"] --> SP\n  style M fill:#ffe9b3,stroke:#c98a00"
+   },
+   {
+    "h": "Requirements work: 3 subphases and 3 activities",
+    "body": "<p><b>Three overlapping subphases</b> (S3):</p><ol><li><b>Analysis</b>: find the functions together with stakeholders. This is where <b>elicitation</b> happens.</li><li><b>Modeling</b>: organize the requirements, often with <b>UML diagrams</b> (use cases, activity diagrams).</li><li><b>Definition / Specification</b>: write down precise, <b>verifiable</b> requirements.</li></ol><p><b>Three major activities</b> (S4):</p><ol><li><b>Requirements anticipation</b>: guess likely problems and features from <b>past experience</b>, before deep study.</li><li><b>Requirements investigation</b>: study the current system with fact-finding, prototyping and computer tools. \"The <b>heart</b> of systems analysis.\"</li><li><b>Requirements specification</b>: analyze the facts, pick the essential requirements, describe the new system, choose a strategy.</li></ol><p>Memory trick: <b>A-I-S</b> = Anticipate, Investigate, Specify.</p>"
+   },
+   {
+    "h": "Fact-finding techniques (a quick review)",
+    "body": "<table><tr><th>Technique</th><th>Strength</th><th>Limitation</th></tr><tr><td><b>Interview</b> (structured or unstructured)</td><td>Accurate, you can clarify at once; unstructured finds unexpected, deep info</td><td>Time-consuming, depends on interviewer skill, may miss the big picture</td></tr><tr><td><b>Questionnaire</b></td><td>Cheap, reaches people far away, good for usage patterns</td><td>No follow-up, low response rates, hard to design</td></tr><tr><td><b>Document analysis</b></td><td>Non-intrusive, shows formal rules and history</td><td>Documents may be old or incomplete</td></tr><tr><td><b>Observation</b></td><td>Shows what people <b>do</b>, not only what they <b>say</b></td><td>Observer effect, slow, may miss rare but critical events</td></tr></table><p>Two extras on S6 (\"don't forget\"): <b>JAD</b> = facilitated group sessions where stakeholders and analysts define requirements and bound scope together. <b>PIECES</b> = question categories: <b>P</b>erformance, <b>I</b>nformation and data, <b>E</b>conomy, <b>C</b>ontrol, <b>E</b>fficiency, <b>S</b>ervices.</p><p>Small naming note: S6 says Joint Application <b>Design</b>; W6-S4 said <b>Development</b>. Both mean JAD.</p>"
+   },
+   {
+    "h": "Three types of requirements",
+    "body": "<ul><li><b>Functional</b>: what the product should do (and should not do). Locally verifiable. Example: \"The student can register for a course.\"</li><li><b>Non-functional (quality)</b>: properties of the whole system: performance, usability, security, reliability. Example: \"The page loads in under 2 seconds.\"</li><li><b>Constraints</b>: limits on <b>how</b> we may build it: technology, budget, regulation. Example: \"Must run on the university's Oracle server.\"</li></ul><p>A good requirement is <b>verifiable</b> (you can test it). Slide example: \"Visual feedback from tapping a control shall be displayed within <b>100 ms</b> of the tap.\"</p><p>Why it matters this week: <b>use cases model functional requirements only</b>. \"Fast\" or \"beautiful\" never becomes a use case.</p>"
+   },
+   {
+    "h": "Functional modeling = use cases + activity diagrams",
+    "body": "<p><b>Functional models</b> describe business processes and how the information system interacts with its environment (S24).</p><p>In object-oriented development we use two kinds:</p><ul><li><b>Use-case diagrams</b> (with use-case descriptions): the <b>basic functions</b> of the system, seen from the user's side. They show <b>WHAT</b> the system should do.</li><li><b>Activity diagrams</b>: the logic of <b>business processes and workflows</b>. They show <b>HOW</b> the system reaches its goals (S68).</li></ul><p>Both can describe the <b>as-is</b> (current) system and the <b>to-be</b> (new) system.</p><p>S23: the <b>functional</b>, <b>structural</b> and <b>behavioral</b> views of an object-oriented system are <b>interlinked and depend on each other</b>. This week is the functional view.</p>",
+    "diagram": "flowchart LR\n  F[\"Functional view: use cases, activity diagrams\"] <--> S[\"Structural view\"]\n  F <--> B[\"Behavioral view\"]\n  S <--> B\n  style F fill:#ffe9b3,stroke:#c98a00"
+   },
+   {
+    "h": "What is a use case?",
+    "body": "<p>A use case is <b>one job the system does for someone</b>. Example: \"Register for course\".</p><p>Slide definitions:</p><ul><li>\"A sequence of actions a system performs that yields an <b>observable result of value</b> to a particular <b>actor</b>\" (S8).</li><li>\"A set of activities performed to produce some output result\" (S26).</li><li>\"A formal way of representing the way a business system interacts with its environment\" (S27).</li></ul><p><b>Event-driven</b> idea (S26): the system rests and waits. A <b>trigger event</b> happens. The system and its users do the steps of the use case. Then the system goes back to waiting.</p><p>A use case is an <b>external, functional view</b>: it shows how <b>users</b> see the process, not the internal mechanism (S27). It can document the as-is or the to-be system.</p>",
+    "diagram": "flowchart LR\n  W([\"System at rest, waiting\"]) -->|trigger event| R[\"System and user perform the use-case steps\"]\n  R -->|finished| W"
+   }
+  ],
+  "example": {
+   "problem": "<p>For a Tashkent café ordering app, classify each requirement: (a) the customer can order a drink from the menu; (b) the menu screen opens in under 1 second; (c) the app must use the bank's existing payment API; (d) the manager can see daily sales; (e) customer data must be encrypted.</p>",
+   "solution": "<ul><li>(a) <b>Functional</b>: something the system does. It will become a use case: <i>Order drink</i>.</li><li>(b) <b>Non-functional</b> (performance). Not a use case.</li><li>(c) <b>Constraint</b> (technology limit on how we build it).</li><li>(d) <b>Functional</b>. Use case: <i>View daily sales</i>.</li><li>(e) <b>Non-functional</b> (security).</li></ul><p>Only (a) and (d) appear on the use-case diagram.</p>"
+  },
+  "check": [
+   {
+    "q": "Complete: Requirements definition + ____ + Feasibility analysis + Workplan = ____.",
+    "a": "<b>Models</b>; <b>System proposal</b>."
+   },
+   {
+    "q": "Name the three subphases of requirements work. In which one does elicitation happen?",
+    "a": "Analysis, Modeling, Definition/Specification. Elicitation happens in <b>Analysis</b>."
+   },
+   {
+    "q": "Which major activity is \"the heart of systems analysis\"?",
+    "a": "<b>Requirements investigation</b>: studying the current system with fact-finding techniques, prototyping and computer-assisted tools."
+   },
+   {
+    "q": "What does PIECES stand for?",
+    "a": "Performance, Information and data, Economy, Control, Efficiency, Services."
+   },
+   {
+    "q": "Use cases show ____ the system does; activity diagrams show ____ it does it.",
+    "a": "<b>What</b>; <b>how</b>."
+   },
+   {
+    "q": "What is a trigger, and what does the system do when there is no event?",
+    "a": "The event that starts a use case. With no events the system is <b>at rest</b>, waiting for the next trigger."
+   }
+  ],
+  "exam": {
+   "question": "<p>Name and explain the two types of functional models used in object-oriented analysis. What does \"event-driven modeling\" mean for use cases?</p>",
+   "answer": "<p>Functional models describe business processes and the interaction of the system with its environment. Two types:</p><p><b>1. Use cases / use-case diagrams</b>: describe the basic functions of the system from the user's (external) point of view: <b>what</b> the system should do. A use case is a sequence of actions that gives an observable result of value to an actor.</p><p><b>2. Activity diagrams</b>: model the logic of business processes and workflows: <b>how</b> the system accomplishes its goals.</p><p>Both can model the as-is and the to-be system.</p><p><b>Event-driven</b>: everything the system does is a response to a <b>trigger event</b>. With no event the system is at rest; when a trigger occurs, the system and its users perform the use-case actions and then return to waiting.</p>"
+  },
+  "memorize": [
+   "Requirements definition + Models + Feasibility + Workplan = System proposal",
+   "3 subphases: Analysis (elicitation) → Modeling (UML) → Definition/Specification",
+   "3 activities: Anticipation → Investigation (the heart) → Specification",
+   "Fact-finding: interview, questionnaire, document analysis, observation (+ JAD, PIECES)",
+   "PIECES = Performance, Information, Economy, Control, Efficiency, Services",
+   "Requirement types: functional, non-functional (quality), constraints; must be verifiable",
+   "Functional models = use-case diagrams (WHAT) + activity diagrams (HOW); as-is or to-be",
+   "Use case = sequence of actions → observable result of value to an actor; event-driven"
+  ]
+ },
+ {
+  "id": "W7-2",
+  "label": "W7·2",
+  "week": "W7",
+  "slides": [
+   35,
+   45,
+   46,
+   47,
+   48,
+   49,
+   50,
+   51,
+   52,
+   53,
+   61,
+   62,
+   94,
+   95
+  ],
+  "kind": "theory",
+  "title": "Use-case diagram elements: actors, use cases, boundary and the four relationships",
+  "hook": "After this lesson you can name every symbol on a use-case diagram and choose correctly between association, include, extend and generalization (and draw the arrows the right way).",
+  "cards": [
+   {
+    "h": "Actor: a role, not a person",
+    "body": "<p>An <b>actor</b> is a <b>role</b> that someone or something plays when it uses the system. Aziz can be a \"Student\" today and a \"Teaching Assistant\" tomorrow: two actors, one person.</p><ul><li>A person <b>or another system</b> that gets benefit from the subject and is <b>external</b> to it.</li><li>Drawn as a <b>stick figure</b> (default). A non-human system can be a <b>rectangle with «actor»</b> and its name.</li><li>Labelled with its <b>role</b>; placed <b>outside</b> the subject boundary.</li><li>Gives input, receives output, or both.</li></ul><p>Is it an actor? S47 test (picture below). Trap: a database <b>inside</b> your own system (for example, the library's own borrower database) is <b>not</b> an actor, because you design it.</p>",
+    "diagram": "flowchart TD\n  S(( )) --> Q1{\"Is the thing a real person interacting with the system?\"}\n  Q1 -->|Yes| A([\"Probably an actor\"])\n  Q1 -->|No| Q2{\"Can I change it within my system's design?\"}\n  Q2 -->|No| A\n  Q2 -->|Yes| N([\"Probably NOT an actor: part of the system\"])\n  style S fill:#222,stroke:#222"
+   },
+   {
+    "h": "Use case, subject boundary, association",
+    "body": "<p><b>Use case</b> = an <b>oval</b>. A major piece of system functionality that benefits an actor. Name = <b>verb–noun</b> phrase (\"Register for Course\", not \"Registration\"). Placed <b>inside</b> the boundary. It can include or extend another use case.</p><p><b>Subject boundary</b> = a <b>box</b> with the system name inside or on top. It shows the <b>scope</b>: use cases inside, actors outside. Deciding where to draw it is one of the hardest decisions (S51).</p><p><b>Association</b> = a <b>solid line</b> from actor to use case: \"this actor uses this function\". Normally two-way communication. If information goes only one way, add a solid arrowhead. The slides show <b>*</b> at both ends (multiplicity: many).</p>",
+    "diagram": "flowchart LR\n  ST([\"👤 Student\"])\n  subgraph SYS[\"Course Registration System\"]\n    U1((\"Register for course\"))\n    U2((\"View timetable\"))\n  end\n  RO([\"🖥 «actor» Registrar Database\"])\n  ST --- U1\n  ST --- U2\n  U1 --- RO"
+   },
+   {
+    "h": "«include»: always, every time",
+    "body": "<p><b>Include</b> = the functionality of one use case is <b>inside</b> another. It is <b>mandatory</b>: it happens <b>every time</b>.</p><p>Draw: a <b>dashed arrow</b> labelled «include», <b>from the base use case to the included (used) one</b>.</p><p>Example: every time a student registers, the system checks prerequisites. So <i>Register for course</i> --«include»--&gt; <i>Check prerequisites</i>.</p><p>Why use it? To reuse shared behaviour. In S62, both <i>Create a new Blog Account</i> and <i>Create a new Personal Wiki</i> include <i>Check Identity</i>, so we write it once.</p>",
+    "diagram": "flowchart LR\n  ST([\"👤 Student\"])\n  subgraph SYS[\"Course Registration System\"]\n    R((\"Register for course\"))\n    P((\"Check prerequisites\"))\n    D((\"Drop course\"))\n  end\n  ST --- R\n  ST --- D\n  R -.->|include| P"
+   },
+   {
+    "h": "«extend»: only sometimes, under a condition",
+    "body": "<p><b>Extend</b> = <b>optional</b> or <b>conditional</b> behaviour added to a base use case.</p><p>Draw: a <b>dashed arrow</b> labelled «extend», <b>from the extension (optional) use case to the base use case</b>. Write the condition next to it.</p><p>Example: if the course is full, the student may join a waiting list. <i>Join waiting list</i> --«extend» [course full]--&gt; <i>Register for course</i>.</p><p><b>Arrow directions, the #1 trap:</b></p><table><tr><th></th><th>When?</th><th>Arrow goes</th></tr><tr><td>«include»</td><td>always</td><td>base → included</td></tr><tr><td>«extend»</td><td>sometimes</td><td>optional → base</td></tr></table><p>Memory trick: the arrow always starts at the use case that \"knows\" about the other. The base knows what it includes; the extension knows what it extends.</p>",
+    "diagram": "flowchart LR\n  ST([\"👤 Student\"])\n  subgraph SYS[\"Course Registration System\"]\n    R((\"Register for course\"))\n    P((\"Check prerequisites\"))\n    W((\"Join waiting list\"))\n  end\n  ST --- R\n  R -.->|include| P\n  W -.->|\"extend: course is full\"| R"
+   },
+   {
+    "h": "Generalization: \"is a kind of\"",
+    "body": "<p><b>Generalization</b> = a solid line with a <b>hollow triangle</b> pointing to the <b>more general</b> element. The special one inherits everything from the general one and adds something.</p><ul><li><b>Actors</b> (S46): <i>New Patient</i> and <i>Old Patient</i> are kinds of <i>Patient</i>. The arrow goes from the specialized actor to the general actor.</li><li><b>Use cases</b> (S52): <i>Create a new Regular Blog Account</i> and <i>Create a new Editorial Blog Account</i> are kinds of <i>Create a new Blog Account</i> (S62). Arrow from the specialized use case to the base use case.</li></ul><p>The four relationships of S35: <b>association, extend, include, generalization</b>.</p><p>(In our Mermaid pictures the hollow triangle is shown as a solid arrow with the label \"is a kind of\". On paper, draw the hollow triangle.)</p>",
+    "diagram": "flowchart BT\n  NP([\"👤 New Patient\"]) -->|is a kind of| P([\"👤 Patient\"])\n  OP([\"👤 Old Patient\"]) -->|is a kind of| P"
+   },
+   {
+    "h": "Read a full diagram: the Appointment System (S53)",
+    "body": "<p>This doctor's-office diagram (S53, again on S28 and S95) uses every element:</p><ul><li><b>Actors</b>: Management, Doctor, Patient, New Patient, Old Patient (New/Old are kinds of Patient).</li><li><b>Three primary use cases</b> (S49): <i>Manage Appointments</i>, <i>Produce Schedule(s)</i>, <i>Record Availability</i>.</li><li><b>Generalization</b>: <i>Make Old Patient Appt</i> and <i>Make New Patient Appt</i> are kinds of <i>Manage Appointments</i>.</li><li><b>Extend</b>: <i>Make Payment Arrangements</i> → <i>Manage Appointments</i>; <i>Update Patient Information</i> → <i>Make Old Patient Appt</i>.</li><li><b>Include</b>: <i>Make New Patient Appt</i> → <i>Create New Patient</i>; <i>Produce Schedules</i> → <i>Manage Schedule</i>; <i>Record Availability</i> → <i>Manage Schedule</i>.</li></ul><p>Read it aloud: \"A new patient's appointment <b>always</b> creates a new patient record; an old patient <b>may</b> update his information.\"</p>",
+    "diagram": "flowchart LR\n  MG([\"👤 Management\"])\n  DR([\"👤 Doctor\"])\n  subgraph AS[\"Appointment System\"]\n    MA((\"Manage Appointments\"))\n    MP((\"Make Payment Arrangements\"))\n    MO((\"Make Old Patient Appt\"))\n    MN((\"Make New Patient Appt\"))\n    UP((\"Update Patient Information\"))\n    CN((\"Create New Patient\"))\n    PS((\"Produce Schedules\"))\n    RA((\"Record Availability\"))\n    MS((\"Manage Schedule\"))\n  end\n  NP([\"👤 New Patient\"])\n  OP([\"👤 Old Patient\"])\n  PA([\"👤 Patient\"])\n  MP -.->|extend| MA\n  MO -->|is a kind of| MA\n  MN -->|is a kind of| MA\n  UP -.->|extend| MO\n  MN -.->|include| CN\n  PS -.->|include| MS\n  RA -.->|include| MS\n  MG --- PS\n  DR --- RA\n  OP --- MO\n  NP --- MN\n  NP -->|is a kind of| PA\n  OP -->|is a kind of| PA"
+   }
+  ],
+  "example": {
+   "problem": "<p>(S61) Weblog content management system (CMS).<br><b>A.1</b> The CMS shall allow an administrator to create a new blog account, provided the personal details of the new blogger are verified using the Author Credentials Database.<br><b>A.2</b> The CMS shall allow an administrator to create a new personal Wiki, provided the personal details of the applying author are verified using the Author Credentials Database.<br>Extra (from S62): there are regular and editorial blog accounts, and a failed application is recorded. Draw the use-case diagram.</p>",
+   "solution": "<ul><li><b>Actors</b>: Administrator (person); Author Credentials Database (an outside system we cannot change, so an actor).</li><li><b>Use cases</b>: Create a new Blog Account; Create a new Personal Wiki.</li><li>Both <b>always</b> verify details → shared mandatory behaviour → <i>Check Identity</i> with two <b>«include»</b> arrows (base → Check Identity). Check Identity talks to the credentials database (association).</li><li>Recording a failure happens <b>only if</b> the check fails → <i>Record Application Failure</i> <b>«extend»</b>s both create use cases (arrow from Record… to the base).</li><li>Regular and Editorial blog accounts are kinds of Blog Account → <b>generalization</b>.</li></ul>",
+   "diagram": "flowchart LR\n  AD([\"👤 Administrator\"])\n  subgraph CMS[\"Content Management System\"]\n    W((\"Create a new Personal Wiki\"))\n    B((\"Create a new Blog Account\"))\n    CI((\"Check Identity\"))\n    RF((\"Record Application Failure\"))\n    RB((\"Create Regular Blog Account\"))\n    EB((\"Create Editorial Blog Account\"))\n  end\n  DB([\"🖥 Author Credentials Database\"])\n  AD --- W\n  AD --- B\n  W -.->|include| CI\n  B -.->|include| CI\n  RF -.->|extend| W\n  RF -.->|extend| B\n  RB -->|is a kind of| B\n  EB -->|is a kind of| B\n  CI --- DB"
+  },
+  "check": [
+   {
+    "q": "(His S94 quiz) ____ diagrams are simply a graphical overview of the set of functions contained in the system. They illustrate the main functionality of a system and the actors that interact with the system.",
+    "a": "<b>Use-case</b> diagrams."
+   },
+   {
+    "q": "Is an actor a specific user? How do you draw a non-human actor?",
+    "a": "No. An actor is a <b>role</b> a user plays. A non-human actor (another system) can be drawn as a rectangle with «actor» and its name (or a stick figure)."
+   },
+   {
+    "q": "Which way does the «extend» arrow point? And «include»?",
+    "a": "«extend»: from the <b>extension (optional)</b> use case <b>to the base</b>. «include»: from the <b>base</b> to the <b>included (used)</b> use case."
+   },
+   {
+    "q": "Every time a customer pays online, the system verifies the card. Include or extend?",
+    "a": "<b>Include</b>: it happens every time (mandatory). <i>Pay online</i> --«include»--&gt; <i>Verify card</i>."
+   },
+   {
+    "q": "A customer may add a gift message to an order. Include or extend?",
+    "a": "<b>Extend</b>: optional. <i>Add gift message</i> --«extend»--&gt; <i>Place order</i>."
+   },
+   {
+    "q": "List the four use-case relationships (S35).",
+    "a": "Association, extend, include, generalization."
+   }
+  ],
+  "exam": {
+   "question": "<p>Name the elements of a use-case diagram. For each, give its symbol and one rule. Explain the difference between «include» and «extend».</p>",
+   "answer": "<table><tr><th>Element</th><th>Symbol</th><th>Rule</th></tr><tr><td>Actor</td><td>stick figure, or rectangle with «actor» for a system</td><td>a role, external, outside the boundary, labelled with its role</td></tr><tr><td>Use case</td><td>oval</td><td>major function, verb–noun name, inside the boundary</td></tr><tr><td>Subject boundary</td><td>box with the system name</td><td>shows the scope of the system</td></tr><tr><td>Association</td><td>solid line</td><td>links an actor with the use cases it interacts with</td></tr><tr><td>Include</td><td>dashed arrow «include»</td><td>from base to included use case</td></tr><tr><td>Extend</td><td>dashed arrow «extend»</td><td>from extension to base use case</td></tr><tr><td>Generalization</td><td>solid line, hollow triangle</td><td>from the specialized to the general actor or use case</td></tr></table><p><b>Include vs extend:</b> include = behaviour that is <b>mandatory</b>, performed <b>every time</b> the base runs (often shared by several use cases). Extend = <b>optional/conditional</b> behaviour, performed only when a condition holds. Example: <i>Register for course</i> includes <i>Check prerequisites</i>; <i>Join waiting list</i> extends <i>Register for course</i> [course full].</p>"
+  },
+  "memorize": [
+   "Actor = role (person or system), stick figure or «actor» box, OUTSIDE the boundary",
+   "Use case = oval, verb–noun, INSIDE the boundary",
+   "Subject boundary = box = scope of the system",
+   "Association = solid line actor–use case (arrowhead only if one-way)",
+   "«include» = always; dashed arrow base → included",
+   "«extend» = optional/conditional; dashed arrow extension → base (+ condition)",
+   "Generalization = hollow triangle toward the general actor or use case",
+   "4 relationships: association, extend, include, generalization",
+   "Inside your design (own database) = NOT an actor"
+  ],
+  "note": "S91 writes {include} and {extend} in curly braces. The standard UML notation (S52, S62) is «include» and «extend» in guillemets: use those on the exam."
+ },
+ {
+  "id": "W7-3",
+  "label": "W7·3",
+  "week": "W7",
+  "slides": [
+   10,
+   11,
+   12,
+   13,
+   14,
+   15,
+   16,
+   17,
+   18,
+   19,
+   20,
+   21,
+   22,
+   54,
+   55,
+   56,
+   57,
+   58,
+   59,
+   60,
+   90,
+   91
+  ],
+  "kind": "drawing",
+  "title": "Drawing a use-case diagram step by step (by hand and with AI)",
+  "hook": "After this lesson you can turn a text description into a correct use-case diagram: find the actors and use cases, add include/extend, draw the boundary, and check it against the classic error list.",
+  "cards": [
+   {
+    "h": "Step A: identify the major use cases (5 steps)",
+    "body": "<p>Before drawing anything, find the content (S54–S55):</p><ol><li><b>Review the requirements definition</b>: get the full picture of the business process.</li><li><b>Identify the subject's boundary</b>: what is inside the system? (It will probably change later.)</li><li><b>Identify the primary actors and their goals</b>: they come from the list of stakeholders and users.</li><li><b>Identify the business processes and major use cases</b>.</li><li><b>Review the current set of use cases</b>: <b>split</b> some, <b>merge</b> others.</li></ol><p>Practical trick on the exam: underline the <b>nouns that act</b> (actors) and the <b>verbs + objects</b> (use cases). Circle words like \"must / always\" (include) and \"may / if / optionally\" (extend).</p>"
+   },
+   {
+    "h": "Step B: draw it (4 steps)",
+    "body": "<p>S56 order:</p><ol><li><b>Draw the use cases</b> (ovals) found in step A. Add the special relationships now: include, extend, generalization.</li><li><b>Place the actors</b>, each one <b>near the use cases it uses</b>, so fewer lines cross.</li><li><b>Draw the subject boundary</b> around the use cases (actors stay outside). Write the system name on top.</li><li><b>Add the associations</b>: lines from each actor to its use cases.</li></ol><p><b>No order is implied</b> by the diagram: the top oval is not \"first\". Feel free to rearrange to reduce crossing lines.</p><p>On paper: human actors on the left, outside systems («actor» boxes) on the right, like S60.</p>"
+   },
+   {
+    "h": "Worked example: reading the library text (S57–S59)",
+    "body": "<table><tr><th>Sentence in the text</th><th>Element</th></tr><tr><td>\"support searching… by title, author, keywords, ISBN\"</td><td>use case <i>Search Collection</i> (the 4 ways are details, not separate use cases)</td></tr><tr><td>\"checking books out and returning books by borrowers\"</td><td>use cases <i>Borrow Books</i>, <i>Return Books</i>; actor <b>Borrower</b></td></tr><tr><td>\"students, faculty or staff, and guests\"</td><td>types of Borrower (could be shown with actor generalization)</td></tr><tr><td>\"check with the registrar's student database / personnel office's employee database\"</td><td>outside systems → actors <b>«actor» Registrar Office</b>, <b>«actor» Personnel Office</b></td></tr><tr><td>\"checked against the library's own borrower database\"</td><td>inside our system → <b>not</b> an actor</td></tr><tr><td>\"library manager… add and remove the book\"</td><td>use case <i>Maintain Book Collection</i>; actor <b>Librarian</b></td></tr><tr><td>\"Every Monday… reminder emails… fines\"</td><td>use case <i>Process Overdue Books</i> (a <b>temporal</b> trigger)</td></tr></table><p>Overdue/fine checks inside Borrow Books are <b>business rules</b>, not separate use cases.</p>"
+   },
+   {
+    "h": "The library diagram (S60)",
+    "body": "<p>Five use cases, two human actors, two system actors. Notice:</p><ul><li>Borrow Books talks to <b>both</b> outside offices to validate ID cards.</li><li>The slide keeps it simple: no include/extend.</li><li>You could add <i>Request Book</i> «extend» → <i>Search Collection</i> [book is checked out], because S57 says a borrower may request a checked-out book. Not on the slide, but a good bonus.</li></ul>",
+    "diagram": "flowchart LR\n  LI([\"👤 Librarian\"])\n  BO([\"👤 Borrower\"])\n  subgraph LIB[\"Library Book Collection Management System\"]\n    PO((\"Process Overdue Books\"))\n    MB((\"Maintain Book Collection\"))\n    BB((\"Borrow Books\"))\n    SC((\"Search Collection\"))\n    RB((\"Return Books\"))\n  end\n  PE([\"🖥 «actor» Personnel Office\"])\n  RE([\"🖥 «actor» Registrar Office\"])\n  LI --- PO\n  LI --- MB\n  BO --- BB\n  BO --- SC\n  BO --- RB\n  BB --- PE\n  BB --- RE"
+   },
+   {
+    "h": "Using AI to draft the diagram (S10–S15)",
+    "body": "<p>Manual UML is slow and error-prone (ambiguities, redundancies, inconsistencies). LLMs can turn a text description into a diagram.</p><ul><li>Evidence: a 2025 study, <b>17</b> use-case exercises for master's students: LLMs reached <b>comparable completeness and redundancy</b> to humans, <b>no statistically significant difference</b>. Fine-tuned <b>GLM4UML</b>: F1 about <b>72%</b>.</li></ul><p><b>3 architectural approaches</b> (S12):</p><ol><li><b>Direct code generation</b>: LLM writes PlantUML or Mermaid code → rendered. The dominant pattern: interpretable, editable.</li><li><b>Fine-tuned domain models</b>: trained on (text, UML-code) pairs; GLM4UML used <b>10,000</b> entries (class, use case, sequence diagrams).</li><li><b>Interactive clarification loops</b>: the tool asks you about ambiguities first.</li></ol><p>Tools (S13): Visual Paradigm <b>VPasCode</b>, open-source <b>uml-gen</b> (TypeScript + Mermaid.js). Key idea: <b>diagram-as-code</b>, editable source, not a picture.</p><p><b>5-step prompting workflow</b> (S14): prepare the input → specify notation and constraints → generate, then audit against the text → iterate with focused corrections → validate structurally.</p><p>S15: manual = slow, analyst resolves ambiguity, human is the <b>Author</b>. LLM = seconds, may repeat systematic errors, human is the <b>Auditor and corrector</b>.</p>"
+   },
+   {
+    "h": "The audit checklist: use it on YOUR diagram too",
+    "body": "<p>Prompt A (naive) just says \"Draw a use case diagram\". Prompt B (constrained, S18) sets rules: actors outside the boundary; verb–noun names; «include» only for mandatory, «extend» only for optional with the condition labelled; generalization for shared actor roles; <b>do not invent</b> actors; <b>do not model business rules</b> as use cases; give a traceability table.</p><p><b>Audit</b> (S20): for every element, find the sentence that justifies it. No sentence → delete.</p><p><b>Classic error list</b> (S21), check before you hand in:</p><ol><li>Invented actors</li><li>Business rules promoted to use cases (\"at most 3 slots\", \"fee if &lt; 24 h\")</li><li>«extend» arrow the wrong way (must go optional → base)</li><li>«extend» used for mandatory behaviour</li><li>Non-human actors missing or drawn as human</li><li>Generic names: Manage system, Handle data, Process request</li><li>Two near-identical use cases instead of an actor generalization</li><li>No system boundary</li></ol><p><b>Iterate</b> (S22): send targeted corrections (\"remove actor X\", \"reverse the extend arrow\"), do not regenerate from scratch.</p>"
+   }
+  ],
+  "example": {
+   "problem": "<p><b>His in-class practice (S16): HerbHub, rooftop greenhouse irrigation.</b> 20 plots rented by residents. Plot holders look up soil moisture for their plot and book a watering slot (max 3 per week). They can cancel a booking (fee if less than 24 h before). The garden coordinator approves new plot applications, can suspend a plot holder's account, and runs a monthly water usage report for the building committee. The Weather Service supplies a daily forecast (HerbHub skips watering when rain is expected). The Irrigation Controller opens and closes valves: HerbHub sends it watering commands and receives fault alerts from it. If the controller reports a faulty valve, the coordinator may manually open a valve, bypassing the schedule. Fault alerts are also logged for maintenance. Draw the use-case diagram.</p>",
+   "solution": "<p><b>Actors</b>: Plot Holder, Garden Coordinator (people); Weather Service, Irrigation Controller (outside systems → «actor»).<br><b>NOT actors</b>: Building Committee (it only receives the report, it never touches the system: S21 lists it as an invented actor), Payment Gateway, Administrator.</p><p><b>Use cases</b> (verb–noun): Apply for plot (implied by \"approves new plot applications\"), View soil moisture, Book watering slot, Cancel booking, Approve plot application, Suspend account, Run water usage report, Receive daily forecast, Water plots automatically, Receive fault alert, Log fault alert, Open valve manually.</p><p><b>Business rules, NOT use cases</b>: \"max 3 slots per week\", \"fee if &lt; 24 h\", \"skip watering when rain expected\". (\"Pay fee\" → delete: no sentence says anyone pays in the system.)</p><p><b>Relationships</b>: fault alerts are <b>always</b> logged → <i>Receive fault alert</i> «include» <i>Log fault alert</i>. Manual opening happens <b>only if</b> a valve fault is reported → <i>Open valve manually</i> «extend» <i>Water plots automatically</i> [valve fault reported], arrow from the optional case to the base, as in the slide's own S19 output.</p>",
+   "diagram": "flowchart LR\n  PH([\"👤 Plot Holder\"])\n  GC([\"👤 Garden Coordinator\"])\n  subgraph HH[\"HerbHub\"]\n    U1((\"Apply for plot\"))\n    U4((\"View soil moisture\"))\n    U5((\"Book watering slot\"))\n    U6((\"Cancel booking\"))\n    U2((\"Approve plot application\"))\n    U3((\"Suspend account\"))\n    U7((\"Run water usage report\"))\n    U8((\"Receive daily forecast\"))\n    U9((\"Water plots automatically\"))\n    U10((\"Receive fault alert\"))\n    U11((\"Log fault alert\"))\n    U12((\"Open valve manually\"))\n  end\n  WS([\"🖥 «actor» Weather Service\"])\n  IC([\"🖥 «actor» Irrigation Controller\"])\n  PH --- U1\n  PH --- U4\n  PH --- U5\n  PH --- U6\n  GC --- U2\n  GC --- U3\n  GC --- U7\n  GC --- U12\n  U8 --- WS\n  U9 --- IC\n  U10 --- IC\n  U10 -.->|include| U11\n  U12 -.->|\"extend: valve fault reported\"| U9"
+  },
+  "check": [
+   {
+    "q": "Give the 5 steps for identifying the major use cases.",
+    "a": "Review the requirements definition; identify the subject's boundary; identify the primary actors and their goals; identify the business processes and major use cases; review the use cases (split or merge)."
+   },
+   {
+    "q": "Give the 4 steps for drawing a use-case diagram.",
+    "a": "Draw the use cases (+ include/extend/generalization); place the actors near their use cases; draw the subject boundary; add the associations."
+   },
+   {
+    "q": "In the library system, why is the library's own borrower database not an actor, but the Registrar Office is?",
+    "a": "The borrower database is <b>inside</b> our system (we design and can change it). The registrar's student database belongs to another office: an <b>external system</b> we cannot change, so it is an actor."
+   },
+   {
+    "q": "Name the 3 architectural approaches for AI-generated UML. Which is dominant?",
+    "a": "Direct code generation (dominant: interpretable, editable, fits documentation), fine-tuned domain models (e.g., GLM4UML), interactive clarification loops."
+   },
+   {
+    "q": "In LLM-assisted modeling, what is the human's role?",
+    "a": "<b>Auditor and corrector</b> (in manual modeling the human is the <b>author</b>)."
+   },
+   {
+    "q": "Name four items of the classic AI error list.",
+    "a": "Any four: invented actors; business rules as use cases; extend arrow wrong way; extend used for mandatory behaviour; non-human actors missing/drawn as human; generic names; near-identical use cases instead of actor generalization; no system boundary."
+   }
+  ],
+  "exam": {
+   "question": "<p><b>(His S90 exercise)</b> A browser-based training system helps people prepare for the Certified Java Programmer exam. (1) A user can request a quiz. The system picks a set of questions from its database and composes them into a quiz. It rates the user's answers and gives hints if the user requests it. (2) Tutors provide questions and hints. Examinators must certify questions to make sure they are not too trivial and that they are sensical. Make a use-case diagram.</p>",
+   "answer": "<p><b>Actors</b>: User, Tutor, Examinator (all human, outside the boundary). The question database is inside the system → not an actor.</p><p><b>Use cases</b>: <i>Make a quiz</i> (User); <i>Report result</i> (rating the answers); <i>Provide hint</i>; <i>Add questions</i> and <i>Add hints</i> (Tutor); <i>Certify questions</i> (Examinator).</p><p><b>Relationships</b> (as on his S91 answer):</p><ul><li><i>Make a quiz</i> «include» <i>Report result</i>: answers are always rated.</li><li><i>Provide hint</i> «extend» <i>Make a quiz</i> [user requests a hint]: optional, arrow toward the base.</li><li><i>Add questions</i> «include» <i>Certify questions</i>: every new question must be certified.</li></ul><p>Picking questions from the database is an internal step of <i>Make a quiz</i>, not a separate use case. <i>Add hints</i> is my addition from \"tutors provide questions and hints\" (S91 shows only Add questions).</p>",
+   "diagram": "flowchart LR\n  US([\"👤 User\"])\n  subgraph TS[\"Java Certification Training System\"]\n    MQ((\"Make a quiz\"))\n    RR((\"Report result\"))\n    PH((\"Provide hint\"))\n    AQ((\"Add questions\"))\n    AH((\"Add hints\"))\n    CQ((\"Certify questions\"))\n  end\n  TU([\"👤 Tutor\"])\n  EX([\"👤 Examinator\"])\n  US --- MQ\n  MQ -.->|include| RR\n  PH -.->|\"extend: user asks for a hint\"| MQ\n  TU --- AQ\n  TU --- AH\n  AQ -.->|include| CQ\n  EX --- CQ"
+  },
+  "memorize": [
+   "Identify: review req. definition → boundary → primary actors + goals → business processes/use cases → review (split/merge)",
+   "Draw: use cases (+ special relationships) → actors near their use cases → boundary → associations",
+   "No order is implied; minimize crossing lines",
+   "Business rules (limits, fees, quantities) are NOT use cases",
+   "Outside system = «actor»; your own database = not an actor",
+   "AI approaches: direct code generation (dominant), fine-tuned models (GLM4UML, ~72% F1, 10,000 entries), clarification loops",
+   "AI workflow: prepare input → notation + constraints → generate + audit → focused corrections → validate structurally",
+   "Manual: human = author; LLM-assisted: human = auditor and corrector"
+  ]
+ },
+ {
+  "id": "W7-4",
+  "label": "W7·4",
+  "week": "W7",
+  "slides": [
+   28,
+   29,
+   30,
+   31,
+   32,
+   33,
+   34,
+   35,
+   36,
+   37,
+   38,
+   39,
+   40,
+   41,
+   42,
+   43,
+   44,
+   63
+  ],
+  "kind": "drawing",
+  "title": "Writing a use-case description in the slides' template",
+  "hook": "After this lesson you can fill in the fully dressed use-case template (name, ID, priority, actor, trigger, pre/postconditions, normal and alternative courses, exceptions, inputs/outputs) for any function.",
+  "cards": [
+   {
+    "h": "Why a description, and the two formats",
+    "body": "<p>The diagram shows only the <b>names</b> of the functions. The <b>use-case description</b> tells the full story of one use case in a table.</p><p>The slides show the textbook example <i>Request a chemical</i> (a Lawn Chemical Applicator, LCA, asks the warehouse for a chemical) in two versions:</p><ul><li><b>Casual / simpler format</b> (S28–S30): overview, preconditions, a short normal course, postconditions, exceptions.</li><li><b>Fully dressed format</b> (S40, S42, S44): adds <b>Information for Steps</b>, <b>Alternative Courses</b> and a <b>Summary Inputs/Outputs</b> table.</li></ul><p>On the exam, use the fully dressed layout: it shows you know every part.</p>"
+   },
+   {
+    "h": "Overview part: name, ID, priority, actor, description",
+    "body": "<ul><li><b>Use-case name</b>: a <b>verb–noun</b> phrase (\"Request a chemical\").</li><li><b>ID</b> (UC-2): a unique number, so the team can <b>trace design decisions back</b> to a requirement.</li><li><b>Primary actor</b>: usually the <b>trigger</b>, the one who starts the use case. The use case exists to meet <b>this actor's goal</b>.</li><li><b>Brief description</b>: usually <b>one sentence</b>, the essence of the use case.</li><li><b>Importance level / priority</b>: which functions must be in the <b>first version</b> and which can wait.<ul><li>Fuzzy scale: High / Medium / Low, or</li><li>a weighted average of criteria. <b>Larman</b> rates each use case <b>0 to 5</b> on: (1) important business process; (2) supports revenue generation or cost reduction; (3) technology is new or risky, needs research; (4) functionality is complex, risky and/or time-critical (maybe split over versions); (5) could increase understanding of the evolving design relative to the effort.</li></ul></li></ul>"
+   },
+   {
+    "h": "Stakeholders, trigger, relationships",
+    "body": "<p><b>Stakeholders</b> (S34): everyone with an interest in the use case, each with his interest. The list <b>always includes the primary actor</b>.</p><p><b>Trigger</b>: the event that starts the use case. Two types:</p><table><tr><th>External trigger</th><th>Temporal trigger</th></tr><tr><td>something outside happens: a customer places an order, the fire alarm rings, a patient calls for an appointment</td><td>time passes: a library book becomes overdue, the rent must be paid, \"every Monday\"</td></tr></table><p>In the template: <b>Type: ☑ External ☐ Temporal</b>.</p><p><b>Relationships</b> (S35, \"sometimes also may be included\"): association, extend, include, generalization (the same four as on the diagram, see W7·2).</p>"
+   },
+   {
+    "h": "Preconditions and postconditions: the chain",
+    "body": "<p><b>Preconditions</b> = the state the system <b>must be in before</b> the use case starts. Example (S36): the LCA is authenticated; his training and credentials are up to date; the Chemical Supply datastore is available. Other use cases take care of these earlier.</p><p><b>Postconditions</b> = the <b>final products</b> of the use case. Example (S38): the request is stored, the LCA has the Pick-up Authorization, the warehouse is notified, Purchasing is notified of any outage.</p><p>Key idea: <b>the postconditions of one use case become the preconditions of the next</b> (here: picking up the chemical at the warehouse).</p><p>Café example: <i>Log in</i> → post: customer is authenticated → that is a pre of <i>Place order</i>.</p>"
+   },
+   {
+    "h": "Normal course, alternative courses, exceptions",
+    "body": "<table><tr><th></th><th>What it is</th><th>Ends in</th></tr><tr><td><b>Normal course</b> (S37)</td><td>the main steps when everything goes smoothly, with their inputs and outputs: the <b>\"happy path\"</b></td><td>success</td></tr><tr><td><b>Alternative courses</b> (S41)</td><td>other branches in the logic; you must state <b>where</b> the branch leaves the normal course (\"branch at step 5\"); steps are numbered 2a–7a, 2b–3b</td><td><b>success</b> too</td></tr><tr><td><b>Exceptions</b> (S39)</td><td>errors and unusual events, <b>not</b> normal decision branches; ask the user about special situations at each step</td><td><b>unsuccessful</b> result</td></tr></table><p>Example from S42: Alternative 1.1 \"quantity available is less than quantity needed (branch at step 5)\": the LCA takes the available quantity (2a–7a) or cancels (2b–3b). Exception E1: \"chemical is no longer approved for use\".</p><p>S39: handling exceptions can need <b>more coding effort</b> than the normal and alternative courses.</p>"
+   },
+   {
+    "h": "Information for steps + summary inputs/outputs; the blank template",
+    "body": "<p>In the fully dressed format, each step has an arrow to the data it uses: <b>&larr; input</b> (\"Chemical name or ID\", \"Quantity needed\") or <b>&rarr; output</b> (\"Chemical Pick-up Authorization\").</p><p>The last section, <b>Summary Inputs and Outputs</b> (S43–S44), lists <b>all</b> possible inputs with their <b>source</b> and all outputs with their <b>destination</b> (normal and alternative courses).</p><p><b>Blank template to copy on the exam sheet:</b></p><table><tr><td>Use Case Name:</td><td>ID:</td><td>Priority:</td></tr><tr><td colspan=\"3\">Actor:</td></tr><tr><td colspan=\"3\">Description:</td></tr><tr><td colspan=\"3\">Trigger: … Type: ☐ External ☐ Temporal</td></tr><tr><td colspan=\"3\">Preconditions: 1. … 2. …</td></tr><tr><td colspan=\"2\">Normal Course: 1.0 … 1. … 2. …</td><td>Information for Steps</td></tr><tr><td colspan=\"3\">Alternative Courses: 1.1 … (branch at step n)</td></tr><tr><td colspan=\"3\">Postconditions:</td></tr><tr><td colspan=\"3\">Exceptions: E1: … (occurs at step n)</td></tr><tr><td colspan=\"3\">Summary Inputs | Source | Outputs | Destination</td></tr></table>"
+   }
+  ],
+  "example": {
+   "problem": "<p>Write a fully dressed use-case description for <b>Borrow Books</b> in the library system (S58: three borrower types, ID card validated with the registrar's database, the personnel office's database or the library's own database; reject if the card is invalid, or the borrower has overdue books or unpaid fines; otherwise check out and update the collection database).</p>",
+   "solution": "<table><tr><td><b>Use Case Name:</b> Borrow Books</td><td><b>ID:</b> UC-3</td><td><b>Priority:</b> High</td></tr><tr><td colspan=\"3\"><b>Actor:</b> Borrower</td></tr><tr><td colspan=\"3\"><b>Description:</b> The borrower presents an ID card and books. The system validates the card, checks for overdue books and unpaid fines, and checks the books out.</td></tr><tr><td colspan=\"3\"><b>Trigger:</b> A borrower wants to take books home. <b>Type:</b> ☑ External ☐ Temporal</td></tr><tr><td colspan=\"3\"><b>Preconditions:</b><br>1. The library collection database is on-line.<br>2. The registrar's and personnel office's databases are reachable.</td></tr><tr><td colspan=\"2\"><b>Normal Course:</b><br>1.0 Check out books<br>1. The borrower gives the ID card.<br>2. The system identifies the borrower type (student, faculty/staff or guest).<br>3. The system validates the card with the right database (Alternative Course 1.1).<br>4. The system checks for overdue books and unpaid fines.<br>5. The borrower presents the books.<br>6. The system records the loan and updates each book's status in the collection database.<br>7. The system prints a due-date slip.</td><td><b>Information for Steps:</b><br>&larr; ID card number<br>&larr; borrower type<br>&larr; validation result<br>&larr; overdue/fine record<br>&larr; book IDs<br>&rarr; updated book status<br>&rarr; due-date slip</td></tr><tr><td colspan=\"3\"><b>Alternative Courses:</b><br>1.1 Borrower is a guest (branch at step 3)<br>1. The system checks the card against the library's own borrower database.<br>2. Continue at step 4.</td></tr><tr><td colspan=\"3\"><b>Postconditions:</b><br>1. The loan is stored.<br>2. The collection database shows the books as checked out.<br>3. The borrower has a due-date slip.</td></tr><tr><td colspan=\"3\"><b>Exceptions:</b><br>E1: ID card is invalid (occurs at step 3)<br>1. The system displays \"Invalid ID card\".<br>2. The system rejects the request and terminates the use case.<br>E2: Borrower has overdue books or unpaid fines (occurs at step 4)<br>1. The system displays the overdue books and the fine amount.<br>2. The system rejects the request and terminates the use case.</td></tr></table><p><b>Summary Inputs / Outputs:</b></p><table><tr><th>Summary Inputs</th><th>Source</th><th>Outputs</th><th>Destination</th></tr><tr><td>ID card number</td><td>Borrower</td><td>Updated book status</td><td>Collection database</td></tr><tr><td>Student / employee validation</td><td>Registrar Office / Personnel Office</td><td>Loan record</td><td>Loan datastore</td></tr><tr><td>Overdue/fine record</td><td>Borrower datastore</td><td>Due-date slip</td><td>Borrower</td></tr><tr><td>Book IDs</td><td>Borrower</td><td>Rejection message</td><td>Borrower</td></tr></table><p>Why these choices: the guest path still ends in success → <b>alternative course</b>. Invalid card and fines end in rejection → <b>exceptions</b>. The trigger comes from outside → <b>external</b>.</p>"
+  },
+  "check": [
+   {
+    "q": "What kind of phrase is a use-case name? Why do we give an ID?",
+    "a": "A <b>verb–noun</b> phrase. The ID makes every use case easy to find and lets the team <b>trace design decisions back</b> to a specific requirement."
+   },
+   {
+    "q": "External or temporal trigger? (a) a customer places an order; (b) a library book becomes overdue; (c) the fire alarm rings; (d) the rent must be paid.",
+    "a": "(a) external, (b) temporal, (c) external, (d) temporal."
+   },
+   {
+    "q": "What is the difference between an alternative course and an exception?",
+    "a": "Both branch from the normal course, but an <b>alternative course</b> still leads to a <b>successful</b> end, while an <b>exception</b> is an error or unusual event that leads to an <b>unsuccessful</b> result."
+   },
+   {
+    "q": "Which part is called the \"happy path\"?",
+    "a": "The <b>normal course</b>: the steps when everything flows smoothly."
+   },
+   {
+    "q": "How are postconditions linked to the next use case?",
+    "a": "The postconditions of one use case serve as (define) the <b>preconditions</b> of the next use case in the series."
+   },
+   {
+    "q": "Name Larman's five criteria for the importance level (scale 0–5).",
+    "a": "Important business process; supports revenue generation or cost reduction; new or risky technology needing research; complex, risky and/or time-critical functionality; increases understanding of the evolving design relative to effort."
+   }
+  ],
+  "exam": {
+   "question": "<p><b>(S63, the flashcard interview)</b> A business analyst, a teacher and two students describe a new flashcard function for a language app: students add word cards from their dictionary (several at once after a lesson), see a word without the translation, click to see the translation, mark whether they remembered it, see statistics in the card details, delete learned cards, and switch between English→Russian and Russian→English. Student 1 wants it intuitive, fast and beautiful. (a) Identify the actor and use cases and draw the use-case diagram. (b) Write the use-case description for the main use case.</p>",
+   "answer": "<p><b>(a)</b> Actor: <b>Student</b>. (The teacher and the business analyst are stakeholders, but in the text they do not use the function.)<br>Use cases: <i>Add word card</i>; <i>Add several cards at once</i> (extends Add word card, after a lesson); <i>Review word cards</i>; it always includes <i>Show translation</i> and <i>Record self-check</i>; <i>Switch translation mode</i> (extends Review, optional); <i>View card statistics</i>; <i>Delete learned card</i>.<br><b>Not use cases</b>: \"intuitive, fast, beautiful, no long loading\" → <b>non-functional</b> requirements. \"Competitors already have it\" → the business reason, not a function.</p><p><b>(b)</b></p><table><tr><td><b>Use Case Name:</b> Review word cards</td><td><b>ID:</b> UC-F2</td><td><b>Priority:</b> High</td></tr><tr><td colspan=\"3\"><b>Actor:</b> Student</td></tr><tr><td colspan=\"3\"><b>Description:</b> The student goes through his word cards: he sees a word without its translation, tries to remember it, opens the translation and marks whether he remembered it. The system then shows the next card and updates the statistics.</td></tr><tr><td colspan=\"3\"><b>Stakeholders and interests:</b> Student: remember words, see progress. Teacher: consolidate the material, a kind of self-test. Business: keep the competitive advantage.</td></tr><tr><td colspan=\"3\"><b>Trigger:</b> The student opens his cards to study. <b>Type:</b> ☑ External ☐ Temporal</td></tr><tr><td colspan=\"3\"><b>Preconditions:</b><br>1. The student is logged in.<br>2. The student has at least one word card (added from his dictionary).</td></tr><tr><td colspan=\"2\"><b>Normal Course:</b><br>1.0 Review cards<br>1. The student opens his card set.<br>2. The system shows a card with the word in the current mode (English → Russian), without the translation.<br>3. The student tries to remember, then clicks the card.<br>4. The system shows the translation.<br>5. The student chooses \"remembered\" or \"not remembered\".<br>6. The system saves the answer in the card's statistics.<br>7. The system shows the next card (repeat steps 3–7 until the student stops).</td><td><b>Information for Steps:</b><br>&larr; card set<br>&rarr; word<br><br>&rarr; translation<br>&larr; self-check answer<br>&rarr; updated statistics<br>&rarr; next word</td></tr><tr><td colspan=\"3\"><b>Alternative Courses:</b><br>1.1 Student switches the mode (branch at step 2)<br>1. The student selects Russian → English.<br>2. The system shows the words in Russian; continue at step 3.<br>1.2 Student has learned the word (branch at step 5)<br>1. The student deletes the card.<br>2. The system removes the card; continue at step 7.</td></tr><tr><td colspan=\"3\"><b>Postconditions:</b><br>1. The statistics of every reviewed card are updated.<br>2. Deleted cards are removed from the set.</td></tr><tr><td colspan=\"3\"><b>Exceptions:</b><br>E1: The card set is empty (occurs at step 1)<br>1. The system displays \"No cards yet: add words from your dictionary\".<br>2. The system terminates the use case.</td></tr></table>",
+   "diagram": "flowchart LR\n  ST([\"👤 Student\"])\n  subgraph APP[\"Language App: Flashcards\"]\n    AC((\"Add word card\"))\n    AM((\"Add several cards at once\"))\n    RC((\"Review word cards\"))\n    SH((\"Show translation\"))\n    RS((\"Record self-check\"))\n    SM((\"Switch translation mode\"))\n    VS((\"View card statistics\"))\n    DC((\"Delete learned card\"))\n  end\n  ST --- AC\n  ST --- RC\n  ST --- VS\n  ST --- DC\n  AM -.->|\"extend: after a lesson\"| AC\n  RC -.->|include| SH\n  RC -.->|include| RS\n  SM -.->|\"extend: student changes mode\"| RC"
+  },
+  "memorize": [
+   "Template order: Name · ID · Priority · Actor · Description · Trigger + Type · Preconditions · Normal Course (+ Information for Steps) · Alternative Courses · Postconditions · Exceptions · Summary Inputs/Outputs",
+   "Name = verb–noun; ID = traceability; primary actor = usually the trigger",
+   "Importance: High/Medium/Low or Larman 0–5 on 5 criteria",
+   "Stakeholders list always includes the primary actor",
+   "Trigger: external (order, fire alarm) vs temporal (overdue book, rent)",
+   "Postconditions of one = preconditions of the next",
+   "Normal = happy path; alternative = other branch, still success, state the branch step; exception = error, unsuccessful",
+   "Summary inputs with source, outputs with destination"
+  ],
+  "note": "Small slide inconsistencies: S29 is titled \"Casual Use Case Format\" but shows the same Request-a-chemical table. Exception E1 \"occurs at step 1\" on S30 but \"at step 2\" on S42, because the two versions number the steps differently (in the fully dressed one, step 2 is \"verify the chemical is approved\"). Both are correct for their own version."
+ },
+ {
+  "id": "W7-5",
+  "label": "W7·5",
+  "week": "W7",
+  "slides": [
+   64,
+   65,
+   66,
+   67,
+   68,
+   69,
+   70,
+   71,
+   72,
+   73,
+   74,
+   75,
+   76,
+   77,
+   78,
+   79,
+   80,
+   81,
+   94
+  ],
+  "kind": "theory",
+  "title": "Activity diagrams: business process modeling and every symbol",
+  "hook": "After this lesson you can name every activity-diagram symbol (actions, object nodes, the two flows, the seven control nodes, swimlanes) and explain decision vs fork and merge vs join.",
+  "cards": [
+   {
+    "h": "Business process models: why we draw them",
+    "body": "<p>A <b>business process model</b> shows the different activities that together support a business process (S64). Example: a new student's enrolment goes through Admissions, Finance and the Dean's office.</p><ul><li>Business processes <b>cut across functional departments</b> (and, in OO terms, across many objects).</li><li>Early OO approaches often <b>ignored</b> business process modeling.</li><li>Risk: they can push a <b>functional decomposition mindset</b>. But used properly they are <b>very powerful for communicating</b> the analyst's understanding to the user.</li></ul><p><b>Activity diagrams</b> (S68) can model any process, as-is or to-be, computerized or not. They show activities and how objects (data) move between them. Use cases = <b>what</b> the system should do; activity diagrams = <b>how</b> it will accomplish its goals.</p>"
+   },
+   {
+    "h": "Schedlbauer's best practices (7)",
+    "body": "<ol><li><b>Be realistic</b>: you cannot identify everything now, and not everything is equally important.</li><li><b>Be agile</b>: what you do identify, identify rigorously.</li><li><b>Modeling is collaborative/social</b>: do it in <b>teams</b>, not alone (alone you mix up or omit tasks).</li><li><b>Use whiteboards, not a CASE tool</b>, while modeling. Once the process is understood, use a CASE tool to <b>document</b> it.</li><li><b>Iterate</b>: return and revise as you understand more (OO development is iterative and incremental).</li><li><b>Stay focused</b> on this one process; put tasks of other processes on a <b>to-do list</b>.</li><li><b>A model is an abstraction of reality</b>: leave out minor tasks; don't lose the forest for one tree.</li></ol><p>Trap: \"Use a CASE tool from the start\" is FALSE; whiteboard first, CASE to document.</p>"
+   },
+   {
+    "h": "Actions, activities, object nodes, two kinds of flow",
+    "body": "<ul><li><b>Action</b> = rounded rectangle; a simple, <b>non-decomposable</b> piece of behaviour.</li><li><b>Activity</b> = rounded rectangle; a set of actions, <b>can be decomposed</b> further. (The only difference.) Business process models usually use activities. Names: <b>verb + noun</b>, short but clear (\"Get Patient Information\"). Usually each activity is linked to a use case.</li><li><b>Object node</b> = a plain (square-cornered) <b>rectangle</b> with the <b>class name</b> (\"Appt Request Info\"). The information that flows between activities.</li></ul><table><tr><th>Control flow</th><th>Object flow</th></tr><tr><td><b>solid</b> arrow</td><td><b>dashed</b> arrow</td></tr><tr><td>path of execution (order of steps)</td><td>movement of objects into and out of activities</td></tr><tr><td>attached only to actions/activities</td><td>one end on an action/activity, the other end on an <b>object node</b></td></tr></table>"
+   },
+   {
+    "h": "The seven control nodes",
+    "body": "<table><tr><th>Node</th><th>Symbol</th><th>Meaning</th></tr><tr><td><b>Initial</b></td><td>small filled circle ●</td><td>start of the process</td></tr><tr><td><b>Final-activity</b></td><td>bull's-eye ◉ (circle around a filled circle)</td><td>stops <b>everything</b>, at once, even unfinished paths</td></tr><tr><td><b>Final-flow</b></td><td>circle with an <b>X</b> ⊗</td><td>stops <b>one path</b>; parallel paths continue</td></tr><tr><td><b>Decision</b></td><td>diamond, 1 in, several out</td><td>a test; each exit has a <b>guard condition</b> in [brackets]; only <b>one</b> path is taken</td></tr><tr><td><b>Merge</b></td><td>diamond, several in, 1 out</td><td>brings back together <b>mutually exclusive</b> paths from a decision</td></tr><tr><td><b>Fork</b></td><td>thick bar, 1 in, several out</td><td>splits into <b>parallel/concurrent</b> flows (all are executed)</td></tr><tr><td><b>Join</b></td><td>thick bar, several in, 1 out</td><td>brings parallel flows back into one</td></tr></table><p>⚠️ <b>Slide error</b>: the symbol table on S70 shows the two final nodes <b>swapped</b> (X-circle next to \"final-activity\", bull's-eye next to \"final-flow\"). The text on S76 and all the slide diagrams (S78, S80, S88) are right: <b>final-activity = bull's-eye, final-flow = circle with X</b>. Use that.</p>"
+   },
+   {
+    "h": "Decision + merge (and when to skip the merge)",
+    "body": "<p>The order process (S78): for each item, check availability. Available → <i>Process Item</i>; not available → <i>Back Order Item</i>. A merge brings the two paths back. Then a decision: [More Items on Order] loops back, [No More Items on Order] → <i>Process Order</i>.</p><p>S77 asks: the left version has an extra <b>merge</b> node for the loop, the right version does not. In the right one, the <b>decision node plays double duty</b>: it also serves as the merge. Sometimes, for clarity, it is better <b>not</b> to use a merge node.</p>",
+    "diagram": "flowchart TD\n  S(( )) --> PO(\"Place Order\")\n  PO --> D1{\" \"}\n  D1 -->|\"[Item Available]\"| PI(\"Process Item\")\n  D1 -->|\"[Item Not Available]\"| BO(\"Back Order Item\")\n  PI --> M1{\" \"}\n  BO --> M1\n  M1 --> D2{\" \"}\n  D2 -->|\"[More Items on Order]\"| D1\n  D2 -->|\"[No More Items on Order]\"| PR(\"Process Order\")\n  PR --> E(((\" \")))\n  style S fill:#222,stroke:#222\n  style E fill:#222,stroke:#222"
+   },
+   {
+    "h": "Fork, join and swimlanes: the school lunch (S80)",
+    "body": "<p><b>Fork</b>: the paths are <b>not</b> mutually exclusive: all run at the same time. <b>Join</b>: waits for all parallel flows, then continues as one (like merge, but for parallel paths).</p><p><b>Swimlanes</b> (S81): columns (or rows) that assign each activity to the <b>person or object responsible</b>. Here two parents make a school lunch: the first parent makes the peanut-butter-and-jelly sandwich, the second gets the drink and dessert, then packs the lunch. Vertical lanes for top-down diagrams; horizontal lanes for left-to-right. In a real business workflow, lanes are roles (employee, customer) and the information system.</p><p>Decision vs fork: decision = <b>one</b> path chosen by a guard; fork = <b>all</b> paths at once.</p>",
+    "diagram": "flowchart TD\n  S(( )) --> F1[\" \"]\n  subgraph P1[\"firstParent\"]\n    F2[\" \"]\n    GJ(\"Get Jelly\")\n    GB(\"Get Bread\")\n    GP(\"Get Peanut Butter\")\n    J2[\" \"]\n    CS(\"Create Sandwich\")\n  end\n  subgraph P2[\"secondParent\"]\n    F3[\" \"]\n    GD(\"Get Drink\")\n    GE(\"Get Dessert\")\n    J3[\" \"]\n    CL(\"Create Lunch\")\n    PL(\"Put Lunch In Box\")\n  end\n  F1 --> F2\n  F1 --> F3\n  F2 --> GJ\n  F2 --> GB\n  F2 --> GP\n  GJ --> J2\n  GB --> J2\n  GP --> J2\n  J2 --> CS\n  F3 --> GD\n  F3 --> GE\n  GD --> J3\n  GE --> J3\n  CS --> J1[\" \"]\n  J3 --> J1\n  J1 --> CL\n  CL --> PL\n  PL --> E(((\" \")))\n  classDef bar fill:#222,stroke:#222,color:#222\n  class F1,F2,F3,J1,J2,J3 bar\n  style S fill:#222,stroke:#222\n  style E fill:#222,stroke:#222"
+   }
+  ],
+  "example": {
+   "problem": "<p>Read the Manage Appointments activity diagram (S72, S71, S73). Which activities, decisions, merges and object nodes does it contain? Why do two activities appear twice?</p>",
+   "solution": "<ul><li><b>Initial node</b> → <i>Get Patient Information</i>.</li><li><b>Decision</b> [Old Patient] / [New Patient].</li><li>Old patient: decision [New Info] → <i>Update Patient Information</i> → merge; decision [New Arrange] → <i>Make Payment Arrangements</i> → merge; then a decision on the request type: <i>Make New Appointment</i>, <i>Change Appointment</i> or <i>Cancel Appointment</i>.</li><li>New patient: <i>Create New Patient</i> → <i>Make Payment Arrangements</i> → <i>Create Appointment</i>.</li><li><b>Object node</b> <i>Appt Request Info</i> (rectangle) with <b>dashed object flows</b> from Get Patient Information to the later appointment activities: the information is captured early and used later.</li><li><i>Make Payment Arrangements</i> and the make-appointment activity appear <b>twice</b>: once for an old and once for a new patient (S71).</li></ul><p>(The diagram below is simplified: the old patient's payment-arrangement branch is left out to keep it readable.)</p>",
+   "diagram": "flowchart TD\n  S(( )) --> G(\"Get Patient Information\")\n  G -.-> O[\"Appt Request Info\"]\n  G --> D1{\" \"}\n  D1 -->|\"[Old Patient]\"| D2{\" \"}\n  D2 -->|\"[New Info]\"| U(\"Update Patient Information\")\n  D2 -->|\"[No New Info]\"| M1{\" \"}\n  U --> M1\n  M1 --> D3{\" \"}\n  D3 -->|\"[Create]\"| MA(\"Make New Appointment\")\n  D3 -->|\"[Change]\"| CH(\"Change Appointment\")\n  D3 -->|\"[Cancel]\"| CA(\"Cancel Appointment\")\n  D1 -->|\"[New Patient]\"| CN(\"Create New Patient\")\n  CN --> MP(\"Make Payment Arrangements\")\n  MP --> CR(\"Create Appointment\")\n  O -.-> MA\n  O -.-> CR\n  MA --> E(((\" \")))\n  CH --> E\n  CA --> E\n  CR --> E\n  style S fill:#222,stroke:#222\n  style E fill:#222,stroke:#222"
+  },
+  "check": [
+   {
+    "q": "(His S94 quiz) Name this activity-diagram element: two arrows come into a diamond from left and right, one arrow leaves downward.",
+    "a": "A <b>merge node</b>: it brings back together different decision paths created by a decision node."
+   },
+   {
+    "q": "What is the only difference between an action and an activity?",
+    "a": "An <b>activity</b> can be decomposed further into activities and/or actions; an <b>action</b> is a simple, non-decomposable piece of behaviour."
+   },
+   {
+    "q": "Control flow vs object flow: line style and what each connects.",
+    "a": "Control flow: <b>solid</b> arrow, path of execution, only between actions/activities. Object flow: <b>dashed</b> arrow, between an action/activity and an <b>object node</b>."
+   },
+   {
+    "q": "List the seven control nodes.",
+    "a": "Initial, final-activity, final-flow, decision, merge, fork, join."
+   },
+   {
+    "q": "Final-activity vs final-flow node?",
+    "a": "Final-activity (bull's-eye) stops <b>all</b> actions and activities at once. Final-flow (circle with X) stops <b>one path</b> only; other parallel paths continue."
+   },
+   {
+    "q": "Schedlbauer: should you model with a CASE tool?",
+    "a": "No: use <b>whiteboards</b> while modeling; once the process is understood, use a CASE tool to <b>document</b> it."
+   }
+  ],
+  "exam": {
+   "question": "<p>Draw and name the symbols of an activity diagram. Explain the difference between a decision node and a fork node, and between a merge node and a join node.</p>",
+   "answer": "<p>Action/activity = rounded rectangle (verb–noun name). Object node = rectangle with the class name. Control flow = solid arrow. Object flow = dashed arrow. Initial node = filled circle. Final-activity node = bull's-eye. Final-flow node = circle with an X. Decision and merge = diamond. Fork and join = thick bar. Swimlane = a column/row labelled with the responsible person or object.</p><p><b>Decision vs fork</b>: a decision has guard conditions and only <b>one</b> exiting path is taken (mutually exclusive). A fork splits the flow into <b>parallel/concurrent</b> paths that are <b>all</b> executed.</p><p><b>Merge vs join</b>: a merge brings back together <b>mutually exclusive</b> paths created by a decision. A join brings back together <b>parallel</b> flows created by a fork, into a single flow.</p>",
+   "diagram": "flowchart LR\n  S(( )) --> A(\"Action\")\n  A --> D{\"decision\"}\n  D -->|\"[guard 1]\"| B(\"Activity\")\n  D -->|\"[guard 2]\"| C(\"Activity\")\n  B --> M{\"merge\"}\n  C --> M\n  M --> F[\"fork\"]\n  F --> X(\"Action\")\n  F --> Y(\"Action\")\n  X --> J[\"join\"]\n  Y --> J\n  J --> E(((\" \")))\n  A -.->|object flow| O[\"ClassName\"]\n  classDef bar fill:#222,stroke:#222,color:#fff\n  class F,J bar\n  style S fill:#222,stroke:#222\n  style E fill:#222,stroke:#222"
+  },
+  "memorize": [
+   "Business processes cut across departments; risk = functional decomposition mindset; great for communicating with users",
+   "Schedlbauer 7: realistic, agile, collaborative (teams), whiteboard not CASE, iterative, stay focused (to-do list), abstraction",
+   "Action = non-decomposable; activity = decomposable; both rounded rectangles, verb–noun",
+   "Object node = rectangle with class name; object flow = dashed; control flow = solid",
+   "7 control nodes: initial ●, final-activity ◉, final-flow ⊗, decision ◇, merge ◇, fork ▬, join ▬",
+   "Decision = one path (guard conditions); fork = all paths in parallel",
+   "Merge ← decision paths; join ← fork paths",
+   "Swimlanes assign activities to the responsible person/object",
+   "⚠️ S70 swaps the final-node symbols: final-activity = bull's-eye"
+  ]
+ },
+ {
+  "id": "W7-6",
+  "label": "W7·6",
+  "week": "W7",
+  "slides": [
+   82,
+   83,
+   84,
+   85,
+   86,
+   87,
+   88,
+   89,
+   92,
+   93
+  ],
+  "kind": "drawing",
+  "title": "Drawing an activity diagram: decisions, fork/join and swimlanes",
+  "hook": "After this lesson you can turn a narrative into a correct activity diagram, with guard conditions, a fork/join for parallel work and swimlanes for who does what.",
+  "cards": [
+   {
+    "h": "Ambler's guidelines (5)",
+    "body": "<p>Before drawing (S82, Scott Ambler):</p><ol><li>Set the <b>context or scope</b> of the activity being modeled, then give the diagram a proper <b>title</b>.</li><li>Identify the <b>activities, control flows and object flows</b> between them.</li><li>Identify any <b>decisions</b>.</li><li>Look for <b>prospects for parallelism</b>.</li><li><b>Draw</b> the activity diagram.</li></ol>"
+   },
+   {
+    "h": "The 5 steps for creating an activity diagram",
+    "body": "<ol><li><b>Choose a business process</b> that was identified before. Review the requirements definition, the use-case diagram and all requirements documents. The use cases are usually the best place to start.</li><li><b>Identify the activities</b> (e.g., Update Patient Information, Make Payment Arrangements, Create New Patient, Create/Cancel/Change Appointment).</li><li><b>Identify the control flows and control nodes</b> for the logic (initial, final, decisions, merges, forks, joins).</li><li><b>Identify the object flows and object nodes</b>. Usually <b>not shown</b> in business process diagrams. Exception: information captured in one activity is used <b>later</b>, not immediately after (e.g., old/new patient and the type of request).</li><li><b>Lay out and draw</b> the diagram, <b>minimizing line crossings</b>.</li></ol><p>Narrative → diagram dictionary: verb phrase = activity; \"if / whether / otherwise\" = decision + guards; \"at the same time / meanwhile / various / both\" = fork + join; \"who does it\" = swimlane; \"stop / done\" = final node.</p>"
+   },
+   {
+    "h": "Worked example: Borrow Books (S86–S88)",
+    "body": "<p>Step 1: process = <i>Borrow Books</i> use case. Step 2: three activities: <b>Validate ID Card</b>, <b>Check for Overdue Books and Fines</b>, <b>Check Out Books</b>. Step 3: an initial node, decisions and merges for each decision, a final node. Step 4: no object nodes needed. Step 5: draw.</p><p>⚠️ <b>Slide issues</b>: S87 says \"a <b>final-flow</b> node\", but the S88 diagram ends with a bull's-eye (<b>final-activity</b>), which is the right choice because the whole process stops. S88 also has the typo \"[Valid Crad]\" and leaves the \"no\" branches without guard labels. On the exam, label <b>every</b> exit of a decision.</p>",
+    "diagram": "flowchart TD\n  S(( )) --> V(\"Validate ID Card\")\n  V --> D1{\" \"}\n  D1 -->|\"[Valid Card]\"| C(\"Check for Overdue Books and Fines\")\n  D1 -->|\"[Invalid Card]\"| M1{\" \"}\n  C --> D2{\" \"}\n  D2 -->|\"[No Overdue Books and No Fines]\"| CO(\"Check Out Books\")\n  D2 -->|\"[Overdue Books or Fines]\"| M2{\" \"}\n  CO --> M2\n  M2 --> M1\n  M1 --> E(((\" \")))\n  style S fill:#222,stroke:#222\n  style E fill:#222,stroke:#222"
+   },
+   {
+    "h": "His exercise: activity diagram for a Login process (S89)",
+    "body": "<p>S89 shows a brokerage-system login. Notes (dog-eared rectangles, dashed link) give the <b>precondition</b> {Client is registered with the brokerage system} at the start and the <b>result</b> {Client logs into the system} at the end.</p><p>The decision \"Correct login and password?\" has guards [Yes] and [No]. [No] → <i>Invalid login/password</i> → <b>loops back</b> to entering the login again.</p><p>Tip: a loop is just a flow that goes back up. Bring it back into the action (as S89 does) or into a merge diamond just before it.</p>",
+    "diagram": "flowchart TD\n  N1>\"Client is registered\"] -.- S\n  S(( )) --> EN(\"Client enters login name and password\")\n  EN --> D{\"Correct login and password?\"}\n  D -->|\"[No]\"| IV(\"Show invalid login or password\")\n  IV --> EN\n  D -->|\"[Yes]\"| OK(\"Client has successfully logged in\")\n  OK --> SE(\"Display client's settings\")\n  SE --> E(((\" \")))\n  E -.- N2>\"Client logs into the system\"]\n  style S fill:#222,stroke:#222\n  style E fill:#222,stroke:#222"
+   },
+   {
+    "h": "Swimlanes: who does what",
+    "body": "<p>When a narrative has several people or systems, draw one <b>lane per role</b> (a column with the role name on top). Every activity goes in the lane of the one who <b>performs</b> it. Arrows may cross lanes: that is a hand-over.</p><p>Recipe:</p><ol><li>List the roles (nouns that act): they become lane titles.</li><li>Write the activities in time order, top to bottom, each in its lane.</li><li>Put the initial node in the lane where the process starts, the final node where it ends.</li><li>Add decisions (with guards) and fork/join bars.</li></ol><p>His S93 answer for the insurance narrative (S92) uses three lanes: <b>Prospective Customer</b>, <b>Insurance Agent</b>, <b>Insurance Company</b>, with Fill out application → Process application → Create quote → Determine best policy → end. See the exam box for a fuller version.</p>"
+   },
+   {
+    "h": "Exam drawing checklist",
+    "body": "<ul><li>Title (the process / use-case name) on top.</li><li>Exactly <b>one</b> initial node ● at the start.</li><li>Activities = rounded rectangles, <b>verb + noun</b>.</li><li>Every decision diamond: <b>guard on every exit</b>, in [brackets], covering all cases ([valid] / [invalid]).</li><li>Mutually exclusive paths come together at a <b>merge</b> diamond (or the decision does double duty).</li><li>Parallel work: <b>thick fork bar</b> → paths → <b>thick join bar</b>. Never use a diamond for parallel work.</li><li>End with a <b>bull's-eye</b> ◉ (final-activity). Use ⊗ (final-flow) only to stop one parallel path.</li><li>Solid arrows for control flow; dashed only to/from object nodes.</li><li>Swimlanes if more than one role is named.</li><li>Minimize crossing lines.</li></ul>"
+   }
+  ],
+  "example": {
+   "problem": "<p>Draw an activity diagram with swimlanes for a <b>Tashkent café ordering app</b>: The customer chooses drinks and food in the app. The app checks if the items are available. If an item is sold out, the app shows a message and the customer chooses again. Otherwise the customer pays, and the app sends the order to the kitchen. The barista makes the drink while the cook prepares the food at the same time. When both are ready, the kitchen calls the order number and the customer picks up the order.</p>",
+   "solution": "<ul><li><b>Lanes</b>: Customer, Ordering App, Kitchen.</li><li><b>Decision</b> after <i>Check availability</i>: [sold out] → <i>Show sold-out message</i> → back to a <b>merge</b> before <i>Choose items</i>; [available] → <i>Pay for order</i>.</li><li>\"At the same time\" → <b>fork</b> into <i>Make drink</i> and <i>Prepare food</i>; \"when both are ready\" → <b>join</b>.</li><li>Then <i>Call order number</i> → <i>Pick up order</i> → <b>final-activity</b> node.</li></ul>",
+   "diagram": "flowchart TD\n  subgraph CU[\"Customer\"]\n    S(( ))\n    M0{\" \"}\n    CH(\"Choose items\")\n    PA(\"Pay for order\")\n    PU(\"Pick up order\")\n    E(((\" \")))\n  end\n  subgraph AP[\"Ordering App\"]\n    CK(\"Check availability\")\n    D1{\" \"}\n    SO(\"Show sold-out message\")\n    SD(\"Send order to kitchen\")\n  end\n  subgraph KI[\"Kitchen\"]\n    F[\" \"]\n    MD(\"Make drink\")\n    PF(\"Prepare food\")\n    J[\" \"]\n    CA(\"Call order number\")\n  end\n  S --> M0\n  M0 --> CH\n  CH --> CK\n  CK --> D1\n  D1 -->|\"[sold out]\"| SO\n  SO --> M0\n  D1 -->|\"[available]\"| PA\n  PA --> SD\n  SD --> F\n  F --> MD\n  F --> PF\n  MD --> J\n  PF --> J\n  J --> CA\n  CA --> PU\n  PU --> E\n  classDef bar fill:#222,stroke:#222,color:#222\n  class F,J bar\n  style S fill:#222,stroke:#222\n  style E fill:#222,stroke:#222"
+  },
+  "check": [
+   {
+    "q": "Give the 5 steps for creating an activity diagram.",
+    "a": "Choose a business process (use case); identify the activities; identify the control flows and nodes; identify the object flows and nodes; lay out and draw (minimize crossings)."
+   },
+   {
+    "q": "When should object nodes and flows be shown in a business-process activity diagram?",
+    "a": "Usually they are not shown. Exception: information captured in one activity is used in a <b>later</b> activity, not the one right after."
+   },
+   {
+    "q": "Name Ambler's 5 guidelines.",
+    "a": "Set the context/scope and title; identify activities, control flows and object flows; identify decisions; identify prospects for parallelism; draw the diagram."
+   },
+   {
+    "q": "In the Borrow Books diagram, which three activities are there, and which final node is correct?",
+    "a": "Validate ID Card; Check for Overdue Books and Fines; Check Out Books. The final-activity node (bull's-eye), as drawn on S88 (S87's text says final-flow, a slip)."
+   },
+   {
+    "q": "A narrative says \"the agent sends the application to various insurance companies\". Which control nodes fit?",
+    "a": "A <b>fork</b> (one path per company, in parallel) and later a <b>join</b> when all quotes have returned."
+   }
+  ],
+  "exam": {
+   "question": "<p><b>(His S92 exercise)</b> Develop an activity diagram based on the following narrative. The purpose of the Open Access Insurance System is to provide automotive insurance to car owners. Initially, prospective customers fill out an insurance application, which provides information about the customer and his or her vehicles. This information is sent to an agent, who sends it to various insurance companies to get quotes for insurance. When the responses return, the agent then determines the best policy for the type and level of coverage desired and gives the customer a copy of the insurance policy proposal and quote.</p>",
+   "answer": "<p><b>Lanes</b> (from the nouns that act): Prospective Customer, Insurance Agent, Insurance Companies.</p><ol><li>● Initial node in the Customer lane → <i>Fill out insurance application</i>.</li><li>→ Agent: <i>Process application and send it to companies</i>.</li><li>\"various companies\" → <b>fork</b>: each company <i>Creates a quote</i> in parallel.</li><li>\"When the responses return\" → <b>join</b>.</li><li>Agent: <i>Determine best policy</i> → <i>Give proposal and quote to customer</i>.</li><li>Customer: <i>Receive policy proposal and quote</i> → ◉ final-activity node.</li></ol><p>His own S93 answer is the short version: three lanes, Fill out application → Process application → Create quote → Determine best policy → final node. The fork/join for \"various companies\" makes the answer stronger.</p>",
+   "diagram": "flowchart TD\n  subgraph PC[\"Prospective Customer\"]\n    S(( ))\n    FA(\"Fill out insurance application\")\n    RP(\"Receive policy proposal and quote\")\n    E(((\" \")))\n  end\n  subgraph IA[\"Insurance Agent\"]\n    SA(\"Process application and send to companies\")\n    F[\" \"]\n    J[\" \"]\n    DB(\"Determine best policy\")\n    GP(\"Give proposal and quote to customer\")\n  end\n  subgraph IC[\"Insurance Companies\"]\n    Q1(\"Company A: create quote\")\n    Q2(\"Company B: create quote\")\n  end\n  S --> FA\n  FA --> SA\n  SA --> F\n  F --> Q1\n  F --> Q2\n  Q1 --> J\n  Q2 --> J\n  J --> DB\n  DB --> GP\n  GP --> RP\n  RP --> E\n  classDef bar fill:#222,stroke:#222,color:#222\n  class F,J bar\n  style S fill:#222,stroke:#222\n  style E fill:#222,stroke:#222"
+  },
+  "memorize": [
+   "Ambler: scope + title → activities + control/object flows → decisions → parallelism → draw",
+   "5 steps: choose process (use case) → activities → control flows/nodes → object flows/nodes (usually omitted) → lay out, minimize crossings",
+   "Borrow Books: Validate ID Card → Check for Overdue Books and Fines → Check Out Books",
+   "if/otherwise = decision + guards; at the same time/various = fork + join; who = swimlane",
+   "Guard on EVERY exit of a decision",
+   "End the whole process with the bull's-eye (final-activity)"
+  ]
+ }
+]

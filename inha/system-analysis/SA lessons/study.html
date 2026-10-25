@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>SA Midterm Study</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=IBM+Plex+Mono:wght@400;600&family=Schibsted+Grotesk:wght@600;800&display=swap">
+<link rel="stylesheet" href="sa.css">
+<style>
+  html { scroll-padding-top: 20px; }
+  body { display: grid; grid-template-columns: 280px minmax(0, 1fr); }
+  aside { position: sticky; top: 0; height: 100vh; overflow-y: auto; border-right: 1.5px solid var(--line); background: var(--sheet); padding: 20px 12px; display: grid; gap: 2px; align-content: start; }
+  aside .brand { font: 800 18px/1.2 var(--display); padding: 0 8px 4px; }
+  aside .sub { font-size: 13px; color: var(--muted); padding: 0 8px 10px; }
+  aside h5 { margin: 12px 8px 4px; font: 700 11px/1.3 var(--body); letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+  aside a { display: flex; gap: 10px; align-items: baseline; padding: 6px 8px; border-radius: 8px; text-decoration: none; color: var(--ink); font-size: 14px; line-height: 1.3; }
+  aside a:hover { background: var(--tint); }
+  aside a .q { font: 700 12px/1 var(--mono); color: var(--green); min-width: 26px; }
+  main { padding: 36px 24px 80px; min-width: 0; }
+  .inner { max-width: 900px; margin: 0 auto; display: grid; gap: 56px; }
+  .top h1 { font-size: clamp(34px, 5vw, 56px); font-weight: 800; letter-spacing: -.02em; }
+  .top h1 span { color: var(--green); }
+  .top p { font-size: 1.12em; color: var(--ink-soft); margin-top: 12px; max-width: 62ch; }
+  .style { display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr)); margin-top: 18px; }
+  .style div { background: var(--sheet); border: 1.5px solid var(--line); border-radius: 14px; padding: 14px 16px; }
+  .style b { display: block; font: 800 17px/1.3 var(--display); margin-bottom: 4px; }
+  .style span { color: var(--ink-soft); font-size: 15px; }
+  .howto { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 18px; }
+  .weekhead { font: 800 14px/1 var(--body); letter-spacing: .12em; text-transform: uppercase; color: var(--green); margin-bottom: -36px; }
+  .lesson { display: grid; gap: 22px; padding-top: 8px; border-top: 3px solid var(--ink); }
+  .lhead { display: grid; gap: 10px; }
+  .lhead .row { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+  .lhead h2 { font-size: clamp(26px, 3.4vw, 36px); font-weight: 800; }
+  .lhead p { font-size: 1.1em; color: var(--ink-soft); }
+  .teach { display: grid; gap: 20px; }
+  .tcard { display: grid; gap: 10px; }
+  .tcard h3 { font-size: 20px; font-weight: 800; display: flex; gap: 10px; align-items: baseline; }
+  .tcard h3 .n { font: 700 13px/1 var(--mono); color: var(--green); }
+  .tcard .with { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 20px; align-items: start; }
+  .tcard .body { font-size: 1.03em; }
+  .tcard table, .pq table { font-size: .88em; }
+  .practice { background: var(--sheet); border: 1.5px solid var(--line); border-radius: 18px; padding: 20px; display: grid; gap: 12px; box-shadow: var(--shadow); }
+  .practice > h3 { font-size: 22px; font-weight: 800; }
+  .pq { border: 1.5px solid var(--line); border-radius: 12px; padding: 12px 14px; display: grid; gap: 10px; background: var(--paper); }
+  .pq .qline { display: grid; grid-template-columns: auto 1fr; gap: 12px; align-items: start; }
+  .pq .num { font: 800 15px/1.5 var(--mono); color: var(--green); display: grid; gap: 4px; justify-items: start; }
+  .pq .type { font: 700 10px/1 var(--body); letter-spacing: .08em; text-transform: uppercase; padding: 4px 6px; border-radius: 5px; background: var(--tint); color: var(--ink-soft); }
+  .pq .type.drawing, .pq .type.calculation { background: var(--gold-soft); color: var(--gold); }
+  .pq .ans { border-left: 4px solid var(--green); background: var(--green-soft); border-radius: 0 10px 10px 0; padding: 10px 14px; display: grid; gap: 10px; }
+  .pending { color: var(--muted); font-style: italic; }
+  .totop { justify-self: start; font-size: 14px; font-weight: 700; text-decoration: none; }
+  .menu { display: none; }
+  @media (max-width: 920px) {
+    body { grid-template-columns: 1fr; }
+    aside { position: fixed; inset: 0 25% 0 0; z-index: 20; transform: translateX(-105%); transition: transform .2s; box-shadow: var(--shadow); }
+    aside.open { transform: none; }
+    .menu { display: inline-flex; position: fixed; right: 16px; bottom: calc(16px + env(safe-area-inset-bottom, 0px)); z-index: 21; }
+    .tcard .with { grid-template-columns: 1fr; }
+    main { padding-inline: 16px; }
+  }
+</style>
+</head>
+<body>
+<aside id="side"></aside>
+<button class="btn menu" id="menu">☰ Topics</button>
+<main><div class="inner" id="inner">
+  <section class="top" id="top">
+    <span class="chip green">SOC3070 · System Analysis · Prof. Dragunov · Midterm 40%</span>
+    <h1 style="margin-top:14px">System Analysis: <span>learn it, then practise it.</span></h1>
+    <p>Weeks 1–7, topic by topic. Read the short teaching, then answer the practice questions (1.1, 1.2, 1.3…) on paper before you tap "Show answer". Drawing questions: draw first, then compare with the diagram.</p>
+    <div class="style">
+      <div><b>"Depict graphically"</b><span>Quiz 1 asked you to draw Waterfall, Parallel or Phased from memory. Practise every methodology drawing.</span></div>
+      <div><b>ROI · BEP · NPV</b><span>Quiz 1 Part B. Cash-flow table, 3-year life, a discount rate. Also critical path from a task table.</span></div>
+      <div><b>MCQ + short answers</b><span>His review slides: definitions, lists, compare, "which technique and why".</span></div>
+    </div>
+    <div class="howto"><a class="btn" href="#sec0">Start at week 1</a><a class="btn ghost" href="index.html">Lessons (step-by-step view)</a></div>
+  </section>
+</div></main>
+
+<script src="lessons-data.js"></script>
+<script src="practice-data.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@10.9.1/dist/mermaid.min.js"></script>
+<script>
+  const LS = typeof LESSONS !== "undefined" ? LESSONS : [];
+  const PS = typeof PRACTICE !== "undefined" ? PRACTICE : [];
+  const WEEK_NAMES = { W1a: "Week 1 · Introduction & SDLC", W1b: "Week 1 · Development methodologies", W2: "Week 2 · Agile, Scrum, Kanban, DevOps", W3: "Week 3 · Planning & feasibility", W4: "Week 4 · Project management", W5a: "Week 5 · Staffing, CASE, standards", W5b: "Week 5 · Requirements determination 1", W6: "Week 6 · Requirements determination 2", W7: "Week 7 · Business process & functional modeling" };
+  const noSlides = (t) => (t || "")
+    .replace(/^\s*Slides?\s*[\d,\s–\-and&+]+[:·—-]\s*/i, "")
+    .replace(/\s*\((?:on\s+)?(?:W\d[ab]?[-\s]?)?(?:slides?|S)\s*[\d,\s–\-and&+]+\)/gi, "")
+    .replace(/\s*\[(?:W\d[ab]?-)?S\d+(?:[–\-,\s]*S?\d+)*\]/g, "")
+    .replace(/\b([Ss])lides? \d+(?:\s*(?:[–\-,&]|and)\s*\d+)*/g, (m, c) => (c === "S" ? "The slide" : "the slide"));
+  const rich = (h) => `<div class="rich">${noSlides(h).replace(/<table/g, '<div class="tblwrap"><table').replace(/<\/table>/g, "</table></div>")}</div>`;
+  const escD = (t) => t.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+  const diagram = (code) => code ? `<figure class="diagram"><pre class="mermaid">${escD(code)}</pre></figure>` : "";
+
+  let curWeek = null;
+  document.getElementById("side").innerHTML = `<div class="brand">SA midterm</div><div class="sub">${LS.length} topics · weeks 1–7</div>` +
+    LS.map((l, i) => { const h = l.week !== curWeek ? `<h5>${WEEK_NAMES[l.week] || l.week}</h5>` : ""; curWeek = l.week; return `${h}<a href="#sec${i}"><span class="q">${i + 1}</span><span>${noSlides(l.title)}</span></a>`; }).join("");
+
+  curWeek = null;
+  const html = LS.map((l, i) => {
+    const n = i + 1, p = PS.find((x) => x.lesson === l.id);
+    const qs = p ? p.questions.map((x, k) => `
+      <div class="pq"><div class="qline"><span class="num">${n}.${k + 1}<span class="type ${x.type || ""}">${x.type || ""}</span></span>${rich(x.q)}</div>
+        <button class="reveal" data-reveal>Show answer</button><div class="ans" hidden>${rich(x.a)}${diagram(x.diagram)}</div></div>`).join("")
+      : `<p class="pending">Practice questions are being written. Refresh in a few minutes.</p>`;
+    const cards = (l.cards || []).map((c, k) => `<div class="tcard"><h3><span class="n">${k + 1}</span>${noSlides(c.h)}</h3>${c.diagram ? `<div class="with"><div class="body">${rich(c.body)}</div>${diagram(c.diagram)}</div>` : `<div class="body">${rich(c.body)}</div>`}</div>`).join("");
+    const wk = l.week !== curWeek ? `<div class="weekhead">${WEEK_NAMES[l.week] || l.week}</div>` : ""; curWeek = l.week;
+    return `${wk}<section class="lesson" id="sec${i}">
+      <div class="lhead"><div class="row"><span class="qbadge">${n}</span><span class="chip ${l.kind !== "theory" ? "calc" : ""}">${l.kind}</span></div><h2>${noSlides(l.title)}</h2><p>${noSlides(l.hook)}</p></div>
+      <div class="teach">${cards}</div>
+      ${l.example ? `<div class="panel"><span class="lbl">Worked example</span>${rich(l.example.problem)}<button class="reveal" data-reveal>Show solution</button><div class="panel sol" hidden><span class="lbl">Solution</span>${rich(l.example.solution)}${diagram(l.example.diagram)}</div></div>` : ""}
+      <div class="practice"><h3>Practice questions</h3>${qs}</div>
+      <a class="totop" href="#top">↑ Back to top</a>
+    </section>`;
+  }).join("");
+  document.getElementById("inner").insertAdjacentHTML("beforeend", html);
+
+  /* draw visible diagrams lazily as they scroll into view */
+  if (typeof mermaid !== "undefined") {
+    const v = (n) => getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+    mermaid.initialize({ startOnLoad: false, theme: "base", securityLevel: "loose", flowchart: { htmlLabels: true, curve: "basis" },
+      themeVariables: { fontFamily: "Atkinson Hyperlegible, system-ui, sans-serif", fontSize: "15px", background: v("--sheet"), primaryColor: v("--green-soft"), primaryBorderColor: v("--green"), primaryTextColor: v("--ink"), secondaryColor: v("--gold-soft"), tertiaryColor: v("--tint"), lineColor: v("--muted"), textColor: v("--ink"), clusterBkg: v("--tint"), clusterBorder: v("--line"), edgeLabelBackground: v("--sheet") } });
+    let queue = Promise.resolve();
+    const draw = (node) => { queue = queue.then(() => mermaid.run({ nodes: [node] }).catch(() => { node.textContent = "Diagram could not be drawn."; })); };
+    const io = new IntersectionObserver((es) => es.forEach((e) => { if (e.isIntersecting && e.target.offsetParent !== null && !e.target.dataset.processed) { io.unobserve(e.target); draw(e.target); } }), { rootMargin: "600px" });
+    window.watchDiagrams = () => document.querySelectorAll("pre.mermaid:not([data-processed])").forEach((n) => io.observe(n));
+    watchDiagrams();
+  }
+  document.addEventListener("click", (e) => {
+    const r = e.target.closest("[data-reveal]");
+    if (r) { const box = r.nextElementSibling; box.hidden = false; r.remove(); box.querySelectorAll("pre.mermaid:not([data-processed])").forEach((n) => window.watchDiagrams && window.watchDiagrams()); }
+    if (e.target.closest("aside a")) document.getElementById("side").classList.remove("open");
+  });
+  document.getElementById("menu").onclick = () => document.getElementById("side").classList.toggle("open");
+</script>
+</body>
+</html>

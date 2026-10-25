@@ -1,0 +1,1044 @@
+[
+ {
+  "id": "Q19",
+  "label": "Q19",
+  "week": 6,
+  "slides": [
+   4,
+   8
+  ],
+  "kind": "theory",
+  "title": "Short run, long run and diminishing returns",
+  "hook": "This is the root of every cost curve: once you see why each new worker adds less, rising marginal cost will make sense by itself.",
+  "cards": [
+   {
+    "h": "Inputs: fixed and variable",
+    "body": "<p>Think of a small plov café in Tashkent. To make plov it uses <b>inputs</b>: a kitchen with one big kazan, and cooks.</p><ul><li>The <b>production function</b> is the link between how many inputs the café uses and how much output (plates of plov) it makes.</li><li>A <b>fixed input</b> cannot be changed right now (the kitchen, the kazan).</li><li>A <b>variable input</b> can be changed (the number of cooks it hires today).</li></ul>"
+   },
+   {
+    "h": "Short run vs long run (slide 4)",
+    "body": "<p>These two words are <b>not</b> about a number of months. They are about inputs.</p><table><tr><th></th><th>Definition</th><th>Café example</th></tr><tr><td><b>Short run</b></td><td>The time period in which <b>at least one</b> input is fixed.</td><td>Tomorrow it can hire one more cook, but it cannot build a bigger kitchen.</td></tr><tr><td><b>Long run</b></td><td>The time period in which <b>all</b> inputs can be varied.</td><td>In two years it can change the cooks <i>and</i> move to a bigger kitchen.</td></tr></table><p>Key words to write on the exam: short run = \"at least one input is fixed\"; long run = \"all inputs can be varied\".</p>"
+   },
+   {
+    "h": "The total product curve (slide 4)",
+    "body": "<p>The <b>total product curve</b> shows how the quantity of output depends on the quantity of the <b>variable</b> input, for a <b>given quantity of the fixed input</b>.</p><p>Class example: George and Martha farm 10 acres of land (fixed). They choose how many workers to hire (variable). Output: 0, 19, 36, 51, 64, 75, 84, 91, 96 bushels of wheat for 0 to 8 workers.</p><p>The curve goes <b>up</b> (more workers, more wheat) but gets <b>flatter</b>.</p>",
+    "chart": {
+     "x": "Quantity of labor (workers)",
+     "y": "Quantity of wheat (bushels)",
+     "xmax": 8.6,
+     "ymax": 110,
+     "xticks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+     ],
+     "yticks": [
+      20,
+      40,
+      60,
+      80,
+      100
+     ],
+     "lines": [
+      {
+       "pts": [
+        [
+         0,
+         0
+        ],
+        [
+         1,
+         19
+        ],
+        [
+         2,
+         36
+        ],
+        [
+         3,
+         51
+        ],
+        [
+         4,
+         64
+        ],
+        [
+         5,
+         75
+        ],
+        [
+         6,
+         84
+        ],
+        [
+         7,
+         91
+        ],
+        [
+         8,
+         96
+        ]
+       ],
+       "label": "TP",
+       "role": "other"
+      }
+     ],
+     "arrows": [
+      {
+       "from": [
+        1,
+        19
+       ],
+       "to": [
+        2,
+        19
+       ]
+      },
+      {
+       "from": [
+        2,
+        19
+       ],
+       "to": [
+        2,
+        36
+       ]
+      },
+      {
+       "from": [
+        6,
+        84
+       ],
+       "to": [
+        7,
+        84
+       ]
+      },
+      {
+       "from": [
+        7,
+        84
+       ],
+       "to": [
+        7,
+        91
+       ]
+      }
+     ],
+     "points": [
+      {
+       "x": 2,
+       "y": 19,
+       "label": "2nd worker: +17"
+      },
+      {
+       "x": 7,
+       "y": 84,
+       "label": "+7"
+      }
+     ],
+     "caption": "George and Martha's farm (Week 6 slide 5): total product rises, but each step up gets smaller (+17 for the 2nd worker, only +7 for the 7th)."
+    }
+   },
+   {
+    "h": "Marginal product: what one more worker adds",
+    "body": "<p>The <b>marginal product of labor</b> is the extra output from one more worker:</p><p><b>MPL = ΔQ / ΔL</b> (change in output ÷ change in labor).</p><table><tr><th>Worker</th><th>1st</th><th>2nd</th><th>3rd</th><th>4th</th><th>5th</th><th>6th</th><th>7th</th><th>8th</th></tr><tr><td>MPL (bushels)</td><td>19</td><td>17</td><td>15</td><td>13</td><td>11</td><td>9</td><td>7</td><td>5</td></tr></table><p>Example: 3rd worker: 51 − 36 = 15. Small slide note: the table on slide 5 writes \"MPL = Q/L\". The Δ signs are missing. It should be ΔQ/ΔL (Q/L would be a different number: 64/4 = 16, but the 4th worker adds only 13).</p>",
+    "chart": {
+     "x": "Quantity of labor (workers)",
+     "y": "Marginal product of labor (bushels)",
+     "xmax": 8.6,
+     "ymax": 24,
+     "xticks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+     ],
+     "yticks": [
+      5,
+      10,
+      15,
+      20
+     ],
+     "lines": [
+      {
+       "pts": [
+        [
+         0.5,
+         19
+        ],
+        [
+         7.5,
+         5
+        ]
+       ],
+       "label": "MPL",
+       "role": "other"
+      }
+     ],
+     "points": [
+      {
+       "x": 1.5,
+       "y": 17,
+       "label": "2nd worker: 17"
+      },
+      {
+       "x": 6.5,
+       "y": 7,
+       "label": "7th worker: 7"
+      }
+     ],
+     "caption": "MPL = 19, 17, 15, 13, 11, 9, 7, 5. It slopes down: that is diminishing returns. (Each MPL sits between two worker numbers, like on the slide.)"
+    }
+   },
+   {
+    "h": "Diminishing returns (slide 8)",
+    "body": "<p>Look at the MPL numbers: 19, 17, 15 … 5. Each new worker still helps, but <b>less</b> than the one before.</p><p><b>Diminishing returns to an input</b>: when you increase one input and hold all other inputs fixed, the marginal product of that input goes down.</p><p>The professor's short version: <b>\"Diminishing returns = Marginal product is decreasing.\"</b></p><p><b>Why?</b> The land is fixed. More workers share the same 10 acres. Two cooks at one kazan help a lot; the eighth cook mostly waits for space.</p>"
+   },
+   {
+    "h": "The professor's math: f′(L) &gt; 0 but f″(L) &lt; 0",
+    "body": "<p>Write the production function as <b>Q = f(L)</b> (output depends on labor L).</p><ul><li><b>Q = f(L) is an increasing function of L</b>: more workers, more output.</li><li><b>Q′ = f′(L) &gt; 0</b>: f′(L) is the slope of TP = marginal product. Positive slope means every extra worker still <b>adds</b> output, so TP goes up.</li><li><b>Q″ = f″(L) &lt; 0</b>: the slope itself is getting smaller. Marginal product is falling, so TP gets <b>flatter</b>. This is diminishing returns.</li></ul><p>My own check: the farm numbers fit Q = 20L − L² exactly (e.g. L = 3: 60 − 9 = 51). Then f′(L) = 20 − 2L, positive for 0–8 workers, and f″(L) = −2 &lt; 0.</p><p>Slide 7 adds: while MP &gt; 0, TP rises; when MP = 0, TP is at its top; when MP &lt; 0, TP falls.</p>",
+    "chart": {
+     "x": "Quantity of labor (workers)",
+     "y": "Total product (bushels)",
+     "xmax": 14,
+     "ymax": 120,
+     "xticks": [
+      2,
+      4,
+      6,
+      8,
+      10,
+      12
+     ],
+     "yticks": [
+      20,
+      40,
+      60,
+      80,
+      100
+     ],
+     "lines": [
+      {
+       "pts": [
+        [
+         0,
+         0
+        ],
+        [
+         1,
+         19
+        ],
+        [
+         2,
+         36
+        ],
+        [
+         3,
+         51
+        ],
+        [
+         4,
+         64
+        ],
+        [
+         5,
+         75
+        ],
+        [
+         6,
+         84
+        ],
+        [
+         7,
+         91
+        ],
+        [
+         8,
+         96
+        ],
+        [
+         9,
+         99
+        ],
+        [
+         10,
+         100
+        ],
+        [
+         11,
+         99
+        ],
+        [
+         12,
+         96
+        ],
+        [
+         13,
+         91
+        ]
+       ],
+       "label": "TP",
+       "role": "other"
+      }
+     ],
+     "vlines": [
+      {
+       "x": 8,
+       "label": "slide data ends",
+       "role": "other"
+      }
+     ],
+     "points": [
+      {
+       "x": 4,
+       "y": 64,
+       "label": "MP positive: TP rising"
+      },
+      {
+       "x": 10,
+       "y": 100,
+       "label": "MP = 0: top",
+       "guides": true
+      }
+     ],
+     "caption": "Like slide 7: if the farm kept hiring, TP would reach a top (MP = 0) and then fall (MP negative). The farm numbers fit Q = 20L − L²; points after 8 workers are only an illustration."
+    }
+   }
+  ],
+  "example": {
+   "problem": "<p>A bakery has <b>one oven</b>. Bakers 0, 1, 2, 3, 4, 5 make 0, 30, 50, 65, 75, 80 loaves per day. (a) Is this the short run or the long run? (b) Find the marginal product of each baker. (c) Are there diminishing returns? Explain with f′(L) and f″(L).</p>",
+   "solution": "<ol><li><b>(a)</b> Short run: the oven is a fixed input (at least one input is fixed). Bakers are the variable input.</li><li><b>(b)</b> MP = ΔQ/ΔL: 30 − 0 = <b>30</b>; 50 − 30 = <b>20</b>; 65 − 50 = <b>15</b>; 75 − 65 = <b>10</b>; 80 − 75 = <b>5</b>.</li><li><b>(c)</b> Yes. MP falls: 30 &gt; 20 &gt; 15 &gt; 10 &gt; 5. Every MP is still positive, so total output rises: f′(L) &gt; 0. But MP keeps falling: f″(L) &lt; 0. The bakers share one oven, so each new baker adds less.</li></ol>"
+  },
+  "check": [
+   {
+    "q": "A taxi company can hire more drivers this week but cannot buy new cars until next year. Short run or long run?",
+    "a": "Short run: at least one input (cars) is fixed."
+   },
+   {
+    "q": "Output goes 0, 19, 36, 51. What is the marginal product of the 3rd worker?",
+    "a": "51 − 36 = 15 bushels."
+   },
+   {
+    "q": "Diminishing returns means total product falls. True or false?",
+    "a": "False. Diminishing returns means <b>marginal</b> product falls. Total product can still rise (f′(L) &gt; 0), just more slowly (f″(L) &lt; 0)."
+   },
+   {
+    "q": "On the total product curve, what is on each axis, and what stays constant?",
+    "a": "X axis: the variable input (labor). Y axis: output. The fixed input (land) is held constant."
+   },
+   {
+    "q": "If marginal product becomes 0, what happens to total product?",
+    "a": "Total product does not change: TP is at its top (slide 7)."
+   }
+  ],
+  "exam": {
+   "question": "<p>(a) Define the short run and the long run. (b) What does the total product curve show? (c) What are diminishing returns to an input? Explain using the production function Q = f(L), f′(L) and f″(L).</p>",
+   "answer": "<p><b>(a)</b> The <b>long run</b> is the time period in which all inputs can be varied. The <b>short run</b> is the time period in which at least one input is fixed (for example, the farm's land).</p><p><b>(b)</b> The <b>total product curve</b> shows how the quantity of output depends on the quantity of the variable input (labor), for a given quantity of the fixed input. It slopes up and becomes flatter.</p><p><b>(c)</b> There are <b>diminishing returns to an input</b> when an increase in that input, holding all other inputs fixed, leads to a decline in its marginal product. Diminishing returns = marginal product is decreasing.</p><p>With Q = f(L): Q is an increasing function of L, so Q′ = f′(L) &gt; 0 (each extra worker still adds output). But Q″ = f″(L) &lt; 0: marginal product falls as L rises, so the TP curve rises but gets flatter.</p><p>Example: on George and Martha's farm MPL = 19, 17, 15, 13, 11, 9, 7, 5 bushels: always positive, but falling, because more workers share the same fixed land.</p>"
+  },
+  "memorize": [
+   "Short run: at least ONE input fixed. Long run: ALL inputs can be varied.",
+   "Total product curve: output vs variable input, fixed input held constant.",
+   "MPL = ΔQ/ΔL. Farm: 19, 17, 15, 13, 11, 9, 7, 5.",
+   "Diminishing returns = marginal product is decreasing.",
+   "Q = f(L): f′(L) &gt; 0 (TP rises), f″(L) &lt; 0 (TP gets flatter).",
+   "MP &gt; 0 → TP up; MP = 0 → TP top; MP &lt; 0 → TP down."
+  ]
+ },
+ {
+  "id": "Q10",
+  "label": "Q10",
+  "week": 6,
+  "slides": [
+   25
+  ],
+  "kind": "theory",
+  "title": "Minimum-cost output: where MC cuts ATC",
+  "hook": "After this lesson you can find the cheapest output per unit and explain, with a graph, why the MC curve must pass through the bottom of the ATC curve.",
+  "cards": [
+   {
+    "h": "Quick recall: MC and ATC",
+    "body": "<p>Two numbers a firm watches:</p><ul><li><b>Marginal cost</b> MC = ΔTC/ΔQ: the extra cost of making <b>one more</b> unit.</li><li><b>Average total cost</b> ATC = TC/Q: the cost <b>per unit</b>, on average.</li></ul><p>Ben's Boots (Week 6 tables): 2 pairs cost TC = $156, so ATC = 156/2 = $78. Making the 3rd pair adds $60 (TC goes 156 → 216), so MC of the 3rd pair = $60.</p><p>Because of diminishing returns (lesson Q19), MC keeps rising: $12, $36, $60, $84 …</p>"
+   },
+   {
+    "h": "Minimum-cost output (slide 25)",
+    "body": "<p>The <b>minimum-cost output</b> is the quantity of output at which average total cost is lowest: the <b>bottom of the U-shaped ATC curve</b>.</p><table><tr><th>Pairs</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th></tr><tr><td>ATC ($)</td><td>120</td><td>78</td><td><b>72</b></td><td>75</td><td>81.60</td></tr></table><p>ATC falls, reaches its lowest value, then rises. For Ben's Boots the minimum-cost output is <b>3 pairs</b>, with ATC = <b>$72</b> (point M).</p>"
+   },
+   {
+    "h": "The average rule (the professor's example)",
+    "body": "<p>Your class has an average height of 175 cm. A new student walks in.</p><ul><li>New student is <b>taller</b> than 175 → the average goes <b>up</b>.</li><li>New student is <b>shorter</b> than 175 → the average goes <b>down</b>.</li><li>New student is exactly 175 → the average stays the same.</li></ul><p>Slide 28: <b>\"For the average to be bigger, the new comer has to be greater than the average.\"</b></p><p>For costs: the <b>newcomer is MC</b> (the cost of the next unit) and the <b>average is ATC</b>.</p>"
+   },
+   {
+    "h": "Reading Figure 7-9",
+    "body": "<p>The slide's graph has a U-shaped ATC and a rising MC.</p><ul><li><b>Left side, A1 → A2:</b> the MC of the next unit (point MC<sub>L</sub>) is <b>below</b> ATC. So ATC <b>falls</b>. Slide: \"If marginal cost is below average total cost, average total cost is falling.\"</li><li><b>Right side, B1 → B2:</b> the MC of the next unit (point MC<sub>H</sub>) is <b>above</b> ATC. So ATC <b>rises</b>. Slide: \"If marginal cost is above average total cost, average total cost is rising.\"</li></ul><p>The graph below uses Ben's real numbers: 2nd pair MC = $36 &lt; ATC, so ATC falls 120 → 78. 6th pair MC = $132 &gt; ATC, so ATC rises 81.60 → 90.</p>",
+    "chart": {
+     "x": "Quantity of boots (pairs)",
+     "y": "Cost of pair ($)",
+     "xmax": 7.2,
+     "ymax": 180,
+     "xticks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+     ],
+     "yticks": [
+      40,
+      80,
+      120,
+      160
+     ],
+     "lines": [
+      {
+       "pts": [
+        [
+         1,
+         120.0
+        ],
+        [
+         1.25,
+         101.4
+        ],
+        [
+         1.5,
+         90.0
+        ],
+        [
+         1.75,
+         82.71
+        ],
+        [
+         2,
+         78.0
+        ],
+        [
+         2.5,
+         73.2
+        ],
+        [
+         3,
+         72.0
+        ],
+        [
+         3.5,
+         72.86
+        ],
+        [
+         4,
+         75.0
+        ],
+        [
+         5,
+         81.6
+        ],
+        [
+         6,
+         90.0
+        ],
+        [
+         7,
+         99.43
+        ]
+       ],
+       "label": "ATC",
+       "role": "atc"
+      },
+      {
+       "pts": [
+        [
+         0,
+         0
+        ],
+        [
+         7,
+         168
+        ]
+       ],
+       "label": "MC",
+       "role": "mc"
+      }
+     ],
+     "points": [
+      {
+       "x": 1,
+       "y": 120,
+       "label": "A1"
+      },
+      {
+       "x": 2,
+       "y": 78,
+       "label": "A2"
+      },
+      {
+       "x": 1.5,
+       "y": 36,
+       "label": "MC_L"
+      },
+      {
+       "x": 3,
+       "y": 72,
+       "label": "M",
+       "guides": true,
+       "show": true
+      },
+      {
+       "x": 5,
+       "y": 81.6,
+       "label": "B1"
+      },
+      {
+       "x": 6,
+       "y": 90,
+       "label": "B2"
+      },
+      {
+       "x": 5.5,
+       "y": 132,
+       "label": "MC_H"
+      }
+     ],
+     "caption": "Figure 7-9 with Ben's Boots numbers. A1 to A2: MC of the 2nd pair ($36) is below ATC, so ATC falls. B1 to B2: MC of the 6th pair ($132) is above ATC, so ATC rises. MC crosses ATC at M (3 pairs, $72)."
+    }
+   },
+   {
+    "h": "So MC must cross ATC at M",
+    "body": "<p>Put the two sides together:</p><ul><li>Left of M: MC &lt; ATC → ATC is falling.</li><li>Right of M: MC &gt; ATC → ATC is rising.</li><li>ATC stops falling and starts rising exactly where <b>MC = ATC</b>. That turning point is the bottom, M.</li></ul><p>Check with Ben's Boots:</p><ul><li>3rd pair: MC $60 &lt; ATC $78 → ATC falls to (156 + 60)/3 = <b>$72</b>.</li><li>4th pair: MC $84 &gt; ATC $72 → ATC rises to (216 + 84)/4 = <b>$75</b>.</li><li>At 3 pairs, MC is halfway between $60 and $84 = $72 = ATC. On the slide's graph the MC line passes exactly through M.</li></ul>"
+   }
+  ],
+  "example": {
+   "problem": "<p>A firm's total cost for Q = 0, 1, 2, 3, 4, 5 is $50, 70, 84, 102, 128, 165. (a) Find MC and ATC. (b) Find the minimum-cost output. (c) Use the MC–ATC rule to show it is the minimum.</p>",
+   "solution": "<ol><li><b>MC = ΔTC/ΔQ:</b> 70 − 50 = 20; 84 − 70 = 14; 102 − 84 = 18; 128 − 102 = 26; 165 − 128 = 37.</li><li><b>ATC = TC/Q:</b> 70/1 = 70; 84/2 = 42; 102/3 = 34; 128/4 = <b>32</b>; 165/5 = 33.</li><li>Lowest ATC = $32, so the <b>minimum-cost output is 4 units</b>.</li><li>Rule check: 4th unit: MC $26 &lt; ATC(3) $34 → ATC falls (to 32). 5th unit: MC $37 &gt; ATC(4) $32 → ATC rises (to 33). ATC turns around at 4 units, where MC crosses ATC.</li></ol>"
+  },
+  "check": [
+   {
+    "q": "Define minimum-cost output.",
+    "a": "The quantity of output at which average total cost is lowest: the bottom of the U-shaped ATC curve."
+   },
+   {
+    "q": "MC = $50 and ATC = $60. If the firm makes one more unit, what happens to ATC?",
+    "a": "ATC falls, because the new unit costs less than the average."
+   },
+   {
+    "q": "MC = $90 and ATC = $70. What happens to ATC?",
+    "a": "ATC rises (MC is above ATC)."
+   },
+   {
+    "q": "Where does the MC curve cross the ATC curve?",
+    "a": "At the minimum point of ATC (point M), the minimum-cost output."
+   },
+   {
+    "q": "Ben's Boots: what is the minimum-cost output and the ATC there?",
+    "a": "3 pairs, ATC = $72."
+   }
+  ],
+  "exam": {
+   "question": "<p>What is the minimum-cost output? Explain why the marginal cost curve must cross the average total cost curve at the minimum point of ATC. Use a graph.</p>",
+   "answer": "<p><b>Definition:</b> The minimum-cost output is the quantity of output at which average total cost is lowest — the bottom of the U-shaped ATC curve (point M).</p><p><b>Why MC crosses ATC at M:</b></p><ul><li>If MC &lt; ATC, one more unit adds a cost below the average, so ATC falls (movement A1 → A2).</li><li>If MC &gt; ATC, one more unit adds a cost above the average, so ATC rises (movement B1 → B2).</li><li>So ATC falls while MC is below it and rises while MC is above it. It turns around exactly where MC = ATC. That is the minimum of ATC, point M.</li></ul><p><b>Example (Ben's Boots):</b> 3rd pair MC = $60 &lt; ATC $78, so ATC falls to $72. 4th pair MC = $84 &gt; ATC $72, so ATC rises to $75. Minimum ATC = $72 at 3 pairs.</p><p><b>Graph:</b> U-shaped ATC; rising MC that cuts ATC at its lowest point M. Mark A1 → A2 on the falling part (MC below) and B1 → B2 on the rising part (MC above).</p>"
+  },
+  "memorize": [
+   "Minimum-cost output = Q where ATC is lowest = bottom of the U.",
+   "MC &lt; ATC → ATC falls. MC &gt; ATC → ATC rises.",
+   "MC = ATC → ATC at its minimum (point M).",
+   "\"For the average to be bigger, the new comer has to be greater than the average.\"",
+   "Ben's Boots: 3 pairs, ATC = $72."
+  ]
+ },
+ {
+  "id": "Q21-22",
+  "label": "Q21–Q22",
+  "week": 6,
+  "slides": [
+   24
+  ],
+  "kind": "theory",
+  "title": "The family of cost curves (Figure 7-8)",
+  "hook": "One graph, four curves: learn what each curve looks like, why ATC is a U, and why MC passes through its bottom.",
+  "cards": [
+   {
+    "h": "Four curves on one graph",
+    "body": "<p>Slide 24 (Figure 7-8) draws all of Ben's Boots' per-unit costs together. X axis: pairs of boots (0–10). Y axis: cost of a pair ($).</p><table><tr><th>Curve</th><th>Formula</th><th>Ben's numbers</th><th>Shape</th></tr><tr><td><b>MC</b></td><td>ΔTC/ΔQ</td><td>12, 36, 60 … 228</td><td>straight line up</td></tr><tr><td><b>AFC</b></td><td>FC/Q</td><td>108, 54, 36, 27 … 10.80</td><td>always falling</td></tr><tr><td><b>AVC</b></td><td>VC/Q</td><td>12, 24, 36, 48 … 120</td><td>rising line</td></tr><tr><td><b>ATC</b></td><td>TC/Q = AFC + AVC</td><td>120, 78, <b>72</b>, 75 … 130.80</td><td>U-shape</td></tr></table>",
+    "chart": {
+     "x": "Quantity of boots (pairs)",
+     "y": "Cost of pair ($)",
+     "xmax": 10.4,
+     "ymax": 250,
+     "xticks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+     ],
+     "yticks": [
+      50,
+      100,
+      150,
+      200,
+      250
+     ],
+     "lines": [
+      {
+       "pts": [
+        [
+         0,
+         0
+        ],
+        [
+         10,
+         240
+        ]
+       ],
+       "label": "MC",
+       "role": "mc"
+      },
+      {
+       "pts": [
+        [
+         1,
+         120.0
+        ],
+        [
+         1.25,
+         101.4
+        ],
+        [
+         1.5,
+         90.0
+        ],
+        [
+         1.75,
+         82.71
+        ],
+        [
+         2,
+         78.0
+        ],
+        [
+         2.5,
+         73.2
+        ],
+        [
+         3,
+         72.0
+        ],
+        [
+         3.5,
+         72.86
+        ],
+        [
+         4,
+         75.0
+        ],
+        [
+         5,
+         81.6
+        ],
+        [
+         6,
+         90.0
+        ],
+        [
+         7,
+         99.43
+        ],
+        [
+         8,
+         109.5
+        ],
+        [
+         9,
+         120.0
+        ],
+        [
+         10,
+         130.8
+        ]
+       ],
+       "label": "ATC",
+       "role": "atc"
+      },
+      {
+       "pts": [
+        [
+         0,
+         0
+        ],
+        [
+         10,
+         120
+        ]
+       ],
+       "label": "AVC",
+       "role": "avc"
+      },
+      {
+       "pts": [
+        [
+         1,
+         108.0
+        ],
+        [
+         1.25,
+         86.4
+        ],
+        [
+         1.5,
+         72.0
+        ],
+        [
+         1.75,
+         61.71
+        ],
+        [
+         2,
+         54.0
+        ],
+        [
+         2.5,
+         43.2
+        ],
+        [
+         3,
+         36.0
+        ],
+        [
+         3.5,
+         30.86
+        ],
+        [
+         4,
+         27.0
+        ],
+        [
+         5,
+         21.6
+        ],
+        [
+         6,
+         18.0
+        ],
+        [
+         7,
+         15.43
+        ],
+        [
+         8,
+         13.5
+        ],
+        [
+         9,
+         12.0
+        ],
+        [
+         10,
+         10.8
+        ]
+       ],
+       "label": "AFC",
+       "role": "afc"
+      }
+     ],
+     "points": [
+      {
+       "x": 3,
+       "y": 72,
+       "label": "M",
+       "guides": true,
+       "show": true
+      }
+     ],
+     "caption": "Figure 7-8, drawn through the real table values: MC rises in a straight line, AFC always falls, AVC rises, ATC is a U. MC crosses ATC at its bottom M (3 pairs, $72)."
+    }
+   },
+   {
+    "h": "MC goes up: increasing marginal cost",
+    "body": "<p>Each extra pair costs <b>$24 more</b> than the one before: 12, 36, 60, 84 … That is <b>increasing marginal cost</b>.</p><p>Why? Diminishing returns (lesson Q19). Ben's workshop is fixed. Each extra worker adds fewer boots, so each extra pair needs more labor money.</p><p>On the slide the MC dots sit <b>between</b> the whole numbers (at 0.5, 1.5, 2.5 …), because MC is the change from one quantity to the next.</p>"
+   },
+   {
+    "h": "AFC falls, AVC rises",
+    "body": "<ul><li><b>AFC = 108/Q</b>. The $108 fixed cost is shared by more and more pairs: 108 → 54 → 36 → 27 … It never stops falling. This is the <b>spreading effect</b>.</li><li><b>AVC = VC/Q</b>: 12 → 24 → 36 → 48 … It rises, because more output needs more and more variable input per extra unit. This is the <b>diminishing returns effect</b>.</li></ul><p>ATC is their sum: <b>ATC = AFC + AVC</b> (divide TC = FC + VC by Q). Example at 3 pairs: 36 + 36 = 72. (Fun fact: at 3 pairs AFC and AVC are equal, both $36.)</p>"
+   },
+   {
+    "h": "Why ATC is a U: a tug of war (slide 23)",
+    "body": "<p>When output grows, two effects pull ATC in opposite directions:</p><table><tr><th>Move</th><th>AFC change (spreading)</th><th>AVC change (dim. returns)</th><th>ATC</th><th>Winner</th></tr><tr><td>1 → 2</td><td>−54</td><td>+12</td><td>120 → 78</td><td>spreading</td></tr><tr><td>2 → 3</td><td>−18</td><td>+12</td><td>78 → 72</td><td>spreading</td></tr><tr><td>3 → 4</td><td>−9</td><td>+12</td><td>72 → 75</td><td>dim. returns</td></tr><tr><td>4 → 5</td><td>−5.40</td><td>+12</td><td>75 → 81.60</td><td>dim. returns</td></tr></table><p>At low output the spreading effect is big, so ATC falls. Later AFC hardly falls any more, the diminishing returns effect wins, and ATC rises. Fall, then rise = <b>U-shape</b>.</p>"
+   },
+   {
+    "h": "MC cuts ATC at its bottom (point M)",
+    "body": "<p>Use the average rule: a newcomer below the average pulls it down, a newcomer above pulls it up. MC is the newcomer, ATC is the average.</p><ul><li>3rd pair: MC $60 &lt; ATC(2) $78 → ATC falls to $72.</li><li>4th pair: MC $84 &gt; ATC(3) $72 → ATC rises to $75.</li></ul><p>So MC crosses ATC at the bottom of the U: <b>M = 3 pairs, $72</b>, the <b>minimum-cost output</b>.</p><p>The same rule works for AVC: MC = AVC at the lowest AVC. At Ben's, MC of the 1st pair ($12) equals AVC at 1 pair ($12), and after that MC is always above AVC, so AVC only rises. (In the smooth graph, MC = 24Q and AVC = 12Q both start at 0, so they meet at AVC's lowest point.)</p>"
+   },
+   {
+    "h": "The professor's proof (slide 27)",
+    "body": "<p>For ATC to be at its minimum, its slope dATC/dQ must be 0.</p><p>dATC/dQ = d(TC/Q)/dQ = (MC·Q − TC)/Q² = <b>(1/Q)(MC − ATC)</b></p><p>Because 1/Q &gt; 0, the slope of ATC has the same sign as (MC − ATC):</p><ul><li>MC &lt; ATC → slope &lt; 0 → ATC falling.</li><li>MC = ATC → slope = 0 → ATC at its <b>minimum</b>.</li><li>MC &gt; ATC → slope &gt; 0 → ATC rising.</li></ul><p>Replace TC with VC and you get the same result for AVC (slide 28: \"You can prove as (1)\").</p>"
+   }
+  ],
+  "example": {
+   "problem": "<p>Ben's Boots makes 6 pairs: FC = $108, VC = $432. The 7th pair has MC = $156. (a) Find AFC, AVC and ATC at 6 pairs. (b) If Ben makes the 7th pair, will ATC rise or fall? Find the new ATC.</p>",
+   "solution": "<ol><li>AFC = 108/6 = <b>$18</b>.</li><li>AVC = 432/6 = <b>$72</b>.</li><li>ATC = AFC + AVC = 18 + 72 = <b>$90</b> (check: TC = 540, 540/6 = 90).</li><li>MC of the 7th pair ($156) is <b>above</b> ATC ($90), so ATC <b>rises</b>.</li><li>New ATC = (540 + 156)/7 = 696/7 = <b>$99.43</b>. It rose, as the rule says.</li></ol>"
+  },
+  "check": [
+   {
+    "q": "Which cost curve always slopes down?",
+    "a": "AFC (= FC/Q), because the same fixed cost is shared by more units."
+   },
+   {
+    "q": "Name the two effects that make ATC U-shaped.",
+    "a": "The spreading effect (AFC falls) and the diminishing returns effect (AVC rises)."
+   },
+   {
+    "q": "At Ben's Boots, AFC = 27 and AVC = 48 at 4 pairs. What is ATC?",
+    "a": "27 + 48 = $75."
+   },
+   {
+    "q": "Write the professor's formula for the slope of ATC.",
+    "a": "dATC/dQ = (1/Q)(MC − ATC)."
+   },
+   {
+    "q": "Which two average curves does MC cross at their minimum points?",
+    "a": "ATC and AVC."
+   }
+  ],
+  "exam": {
+   "question": "<p><b>Q21.</b> Look at Figure 7-8 for Ben's Boots. Name the four cost curves and describe their shapes. Why is the ATC curve U-shaped?</p><p><b>Q22.</b> Why does the MC curve cross the ATC curve at its lowest point M? What is the minimum-cost output for Ben's Boots and the ATC there?</p>",
+   "answer": "<p><b>Q21.</b> The four curves are:</p><ul><li><b>MC</b> (marginal cost): slopes upward (increasing marginal cost, caused by diminishing returns to the variable input).</li><li><b>AFC</b> (= FC/Q): always falling, because the $108 fixed cost is divided by more pairs.</li><li><b>AVC</b> (= VC/Q): rising.</li><li><b>ATC</b> (= TC/Q = AFC + AVC): U-shaped.</li></ul><p>ATC is U-shaped because more output has two opposite effects. <b>Spreading effect:</b> more units share the fixed cost, so AFC falls. <b>Diminishing returns effect:</b> each extra unit needs more variable input, so AVC rises. At low output the spreading effect dominates and ATC falls (120 → 78 → 72). At high output the diminishing returns effect dominates and ATC rises (72 → 75 → 81.60 …).</p><p><b>Q22.</b> An average falls when the new unit is below it and rises when the new unit is above it. If MC &lt; ATC, ATC falls; if MC &gt; ATC, ATC rises; so ATC is lowest where MC = ATC. Proof: dATC/dQ = (1/Q)(MC − ATC), which is 0 only when MC = ATC.</p><p>Ben's Boots: 3rd pair MC = $60 &lt; ATC $78 → ATC falls to $72; 4th pair MC = $84 &gt; ATC $72 → ATC rises to $75. <b>Minimum-cost output = 3 pairs, minimum ATC = $72</b> (point M).</p>"
+  },
+  "memorize": [
+   "MC: straight line up. AFC: always down. AVC: up. ATC: U.",
+   "ATC = AFC + AVC.",
+   "Spreading effect (AFC ↓) vs diminishing returns effect (AVC ↑).",
+   "MC crosses ATC and AVC at their minimum points.",
+   "dATC/dQ = (1/Q)(MC − ATC).",
+   "Ben's Boots: M = 3 pairs, $72."
+  ]
+ },
+ {
+  "id": "Q27",
+  "label": "Q27",
+  "week": 6,
+  "slides": [
+   16
+  ],
+  "kind": "calculation",
+  "title": "Ben's Boots: calculate TC, MC, ATC, AVC, AFC",
+  "hook": "A sure-points calculation: fill a cost table step by step, with no mistakes.",
+  "cards": [
+   {
+    "h": "The recipe: five formulas",
+    "body": "<ol><li><b>TC = FC + VC</b> (total cost)</li><li><b>MC = ΔTC/ΔQ</b> (marginal cost: change in TC from one row to the next)</li><li><b>ATC = TC/Q</b> (average total cost)</li><li><b>AFC = FC/Q</b> (average fixed cost)</li><li><b>AVC = VC/Q</b> (average variable cost)</li></ol><p>Ben's Boots: <b>FC = $108</b> at every quantity, even at Q = 0 (he pays the workshop rent even if he makes nothing). VC = $0, 12, 48, 108, 192, 300, 432, 588, 768, 972, 1,200 for 0 to 10 pairs.</p>"
+   },
+   {
+    "h": "Step 1: TC = FC + VC",
+    "body": "<p>Add $108 to every VC number:</p><p>Q = 0: 108 + 0 = <b>108</b>. Q = 1: 108 + 12 = <b>120</b>. Q = 2: 108 + 48 = <b>156</b>. Q = 3: 108 + 108 = <b>216</b> … Q = 10: 108 + 1,200 = <b>1,308</b>.</p><p>On a graph, TC is the VC curve lifted up by $108. The gap between them is always FC.</p>",
+    "chart": {
+     "x": "Quantity of boots (pairs)",
+     "y": "Cost ($)",
+     "xmax": 10.4,
+     "ymax": 1400,
+     "xticks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+     ],
+     "yticks": [
+      200,
+      400,
+      600,
+      800,
+      1000,
+      1200,
+      1400
+     ],
+     "lines": [
+      {
+       "pts": [
+        [
+         0,
+         108
+        ],
+        [
+         1,
+         120
+        ],
+        [
+         2,
+         156
+        ],
+        [
+         3,
+         216
+        ],
+        [
+         4,
+         300
+        ],
+        [
+         5,
+         408
+        ],
+        [
+         6,
+         540
+        ],
+        [
+         7,
+         696
+        ],
+        [
+         8,
+         876
+        ],
+        [
+         9,
+         1080
+        ],
+        [
+         10,
+         1308
+        ]
+       ],
+       "label": "TC",
+       "role": "other"
+      },
+      {
+       "pts": [
+        [
+         0,
+         0
+        ],
+        [
+         1,
+         12
+        ],
+        [
+         2,
+         48
+        ],
+        [
+         3,
+         108
+        ],
+        [
+         4,
+         192
+        ],
+        [
+         5,
+         300
+        ],
+        [
+         6,
+         432
+        ],
+        [
+         7,
+         588
+        ],
+        [
+         8,
+         768
+        ],
+        [
+         9,
+         972
+        ],
+        [
+         10,
+         1200
+        ]
+       ],
+       "label": "VC",
+       "role": "avc"
+      }
+     ],
+     "hlines": [
+      {
+       "y": 108,
+       "label": "FC = $108",
+       "role": "other"
+      }
+     ],
+     "points": [
+      {
+       "x": 0,
+       "y": 108,
+       "label": "TC starts at $108"
+      }
+     ],
+     "caption": "TC = FC + VC. TC is VC lifted up by $108 at every quantity. Both get steeper: each extra pair costs more (increasing marginal cost)."
+    }
+   },
+   {
+    "h": "Step 2: MC = ΔTC/ΔQ",
+    "body": "<p>Subtract each TC from the next one (ΔQ = 1 pair each time):</p><p>120 − 108 = <b>12</b>; 156 − 120 = <b>36</b>; 216 − 156 = <b>60</b>; 300 − 216 = <b>84</b>; 408 − 300 = <b>108</b>; then 132, 156, 180, 204, <b>228</b>.</p><ul><li>On slide 16 the MC numbers sit <b>between</b> rows (zig-zag lines). MC belongs to the move from one row to the next. There is no MC \"at\" Q = 0.</li><li>Shortcut: FC never changes, so ΔTC = ΔVC. Example: 48 − 12 = 36, the same as 156 − 120.</li><li>MC rises by $24 each time: <b>increasing marginal cost</b> (slide 17).</li></ul>"
+   },
+   {
+    "h": "Step 3: the averages",
+    "body": "<p>Divide by Q (start at Q = 1; you cannot divide by 0):</p><ul><li>ATC = TC/Q: 120/1 = 120; 156/2 = 78; 216/3 = <b>72</b>; 300/4 = 75; 408/5 = 81.60 …</li><li>AFC = 108/Q: 108; 54; 36; 27; 21.60 …</li><li>AVC = VC/Q: 12; 24; 36; 48; 60 …</li></ul><p><b>Check every row:</b> AFC + AVC must equal ATC (e.g. 54 + 24 = 78). At Q = 7: 696/7 = 99.428… → round to <b>99.43</b>; 108/7 = 15.43.</p>"
+   },
+   {
+    "h": "Step 4: read the answer + common traps",
+    "body": "<ul><li>Lowest ATC = $72 at 3 pairs → <b>minimum-cost output = 3 pairs</b>.</li><li>Check with MC: 3rd pair MC $60 &lt; ATC(2) $78, so ATC falls; 4th pair MC $84 &gt; ATC(3) $72, so ATC rises.</li></ul><p><b>Traps:</b></p><ul><li>Forgetting FC at Q = 0: TC(0) = $108, not $0.</li><li>Writing MC = TC/Q. No! TC/Q is ATC. MC is the <b>change</b> in TC.</li><li>Dividing AFC by the wrong FC: FC stays $108 in every row.</li><li>Rounding too early. Keep 2 decimals at the end.</li></ul>"
+   }
+  ],
+  "example": {
+   "problem": "<p>Practice firm (same pattern, new numbers). FC = $80. VC for Q = 0, 1, 2, 3, 4, 5, 6 is $0, 5, 20, 45, 80, 125, 180. Find TC, MC, ATC, AFC, AVC and the minimum-cost output.</p>",
+   "solution": "<table><tr><th>Q</th><th>VC</th><th>TC</th><th>MC</th><th>ATC</th><th>AFC</th><th>AVC</th></tr><tr><td>0</td><td>0</td><td>80</td><td>—</td><td>—</td><td>—</td><td>—</td></tr><tr><td>1</td><td>5</td><td>85</td><td>5</td><td>85.00</td><td>80.00</td><td>5.00</td></tr><tr><td>2</td><td>20</td><td>100</td><td>15</td><td>50.00</td><td>40.00</td><td>10.00</td></tr><tr><td>3</td><td>45</td><td>125</td><td>25</td><td>41.67</td><td>26.67</td><td>15.00</td></tr><tr><td>4</td><td>80</td><td>160</td><td>35</td><td><b>40.00</b></td><td>20.00</td><td>20.00</td></tr><tr><td>5</td><td>125</td><td>205</td><td>45</td><td>41.00</td><td>16.00</td><td>25.00</td></tr><tr><td>6</td><td>180</td><td>260</td><td>55</td><td>43.33</td><td>13.33</td><td>30.00</td></tr></table><p>Minimum-cost output = <b>4 units</b> (ATC = $40). Check: 4th unit MC $35 &lt; ATC(3) $41.67 → ATC falls; 5th unit MC $45 &gt; ATC(4) $40 → ATC rises. MC rises by $10 each time: increasing marginal cost.</p>"
+  },
+  "check": [
+   {
+    "q": "What is TC at Q = 0 for Ben's Boots?",
+    "a": "$108 (= FC; VC is 0)."
+   },
+   {
+    "q": "TC(4) = 300 and TC(5) = 408. What is the MC of the 5th pair?",
+    "a": "408 − 300 = $108."
+   },
+   {
+    "q": "Find ATC, AFC and AVC at 5 pairs (TC = 408, VC = 300).",
+    "a": "ATC = 81.60, AFC = 21.60, AVC = 60.00 (21.60 + 60 = 81.60 ✓)."
+   },
+   {
+    "q": "Why can you also compute MC from the VC column?",
+    "a": "FC does not change, so ΔTC = ΔVC."
+   },
+   {
+    "q": "Does Ben's Boots have increasing marginal cost? How do you know?",
+    "a": "Yes: each pair costs more than the one before (12 &lt; 36 &lt; 60 &lt; … &lt; 228), +$24 each time."
+   }
+  ],
+  "exam": {
+   "question": "<p>Ben's Boots has a fixed cost of $108. Its variable cost for 0, 1, 2, …, 10 pairs is $0, 12, 48, 108, 192, 300, 432, 588, 768, 972, 1,200. (a) Complete the total cost and marginal cost columns. (b) Does Ben's Boots have increasing marginal cost? (c) Find ATC, AFC and AVC, and the minimum-cost output.</p>",
+   "answer": "<p><b>(a) TC = FC + VC and MC = ΔTC/ΔQ</b></p><table><tr><th>Q (pairs)</th><th>FC</th><th>VC</th><th>TC = FC + VC</th><th>MC = ΔTC/ΔQ</th></tr><tr><td>0</td><td>108</td><td>0</td><td>108 + 0 = 108</td><td>—</td></tr><tr><td>1</td><td>108</td><td>12</td><td>108 + 12 = 120</td><td>120 − 108 = 12</td></tr><tr><td>2</td><td>108</td><td>48</td><td>108 + 48 = 156</td><td>156 − 120 = 36</td></tr><tr><td>3</td><td>108</td><td>108</td><td>108 + 108 = 216</td><td>216 − 156 = 60</td></tr><tr><td>4</td><td>108</td><td>192</td><td>108 + 192 = 300</td><td>300 − 216 = 84</td></tr><tr><td>5</td><td>108</td><td>300</td><td>108 + 300 = 408</td><td>408 − 300 = 108</td></tr><tr><td>6</td><td>108</td><td>432</td><td>108 + 432 = 540</td><td>540 − 408 = 132</td></tr><tr><td>7</td><td>108</td><td>588</td><td>108 + 588 = 696</td><td>696 − 540 = 156</td></tr><tr><td>8</td><td>108</td><td>768</td><td>108 + 768 = 876</td><td>876 − 696 = 180</td></tr><tr><td>9</td><td>108</td><td>972</td><td>108 + 972 = 1,080</td><td>1,080 − 876 = 204</td></tr><tr><td>10</td><td>108</td><td>1,200</td><td>108 + 1,200 = 1,308</td><td>1,308 − 1,080 = 228</td></tr></table><p><b>(b)</b> Yes. Each additional pair costs more than the previous one: 12 &lt; 36 &lt; 60 &lt; … &lt; 228 (MC rises by $24 per pair). This is increasing marginal cost, caused by diminishing returns to the variable input, so the MC curve slopes upward.</p><p><b>(c) Averages</b></p><table><tr><th>Q</th><th>ATC = TC/Q</th><th>AFC = FC/Q</th><th>AVC = VC/Q</th></tr><tr><td>1</td><td>120/1 = 120.00</td><td>108/1 = 108.00</td><td>12/1 = 12.00</td></tr><tr><td>2</td><td>156/2 = 78.00</td><td>108/2 = 54.00</td><td>48/2 = 24.00</td></tr><tr><td>3</td><td>216/3 = <b>72.00</b></td><td>108/3 = 36.00</td><td>108/3 = 36.00</td></tr><tr><td>4</td><td>300/4 = 75.00</td><td>108/4 = 27.00</td><td>192/4 = 48.00</td></tr><tr><td>5</td><td>408/5 = 81.60</td><td>108/5 = 21.60</td><td>300/5 = 60.00</td></tr><tr><td>6</td><td>540/6 = 90.00</td><td>108/6 = 18.00</td><td>432/6 = 72.00</td></tr><tr><td>7</td><td>696/7 = 99.43</td><td>108/7 = 15.43</td><td>588/7 = 84.00</td></tr><tr><td>8</td><td>876/8 = 109.50</td><td>108/8 = 13.50</td><td>768/8 = 96.00</td></tr><tr><td>9</td><td>1,080/9 = 120.00</td><td>108/9 = 12.00</td><td>972/9 = 108.00</td></tr><tr><td>10</td><td>1,308/10 = 130.80</td><td>108/10 = 10.80</td><td>1,200/10 = 120.00</td></tr></table><p>The <b>minimum-cost output is 3 pairs</b> (ATC = $72). Check: the 3rd pair's MC ($60) is below ATC at 2 pairs ($78), so ATC falls; the 4th pair's MC ($84) is above ATC at 3 pairs ($72), so ATC rises.</p>"
+  },
+  "memorize": [
+   "TC = FC + VC; FC = $108 in every row, even Q = 0.",
+   "MC = ΔTC/ΔQ = ΔVC/ΔQ (written between rows).",
+   "MC: 12, 36, 60, 84, 108, 132, 156, 180, 204, 228 (+24 each).",
+   "ATC = TC/Q, AFC = FC/Q, AVC = VC/Q; check AFC + AVC = ATC.",
+   "Min ATC = $72 at 3 pairs (minimum-cost output)."
+  ]
+ }
+]

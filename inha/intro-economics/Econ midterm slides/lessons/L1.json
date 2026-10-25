@@ -1,0 +1,526 @@
+[
+ {
+  "id": "Q1-2",
+  "label": "Q1–Q2",
+  "week": 1,
+  "slides": [
+   48,
+   49,
+   50,
+   51
+  ],
+  "kind": "theory",
+  "title": "Equilibrium, efficiency vs equity, and when government should step in",
+  "hook": "These 4 slides are interaction principles 2–5. After this lesson you can define equilibrium, efficiency and equity, and say the 3 cases when markets fail.",
+  "cards": [
+   {
+    "h": "Where these slides sit",
+    "body": "<p>The course has <b>12 principles</b>: 4 on individual choice + <b>5 on interaction</b> + 3 on the whole economy.</p><p>\"Interaction\" means: my choice meets your choice. I buy, you sell. The 5 interaction principles (slide 33) are:</p><ol><li>There are gains from trade.</li><li><b>Markets move toward equilibrium.</b> (slide 48)</li><li><b>Resources should be used as efficiently as possible to achieve society's goals.</b> (slide 49)</li><li><b>Markets usually lead to efficiency.</b> (slide 50)</li><li><b>When markets don't achieve efficiency, government intervention can improve society's welfare.</b> (slide 51)</li></ol><p>Your two questions come from numbers 2–5. One slide = one principle.</p>"
+   },
+   {
+    "h": "Equilibrium: nobody wants to move (slide 48)",
+    "body": "<p>Picture a supermarket with 6 checkout lines. One line is very short. What do people do? They move to it. Now that line gets longer and the others get shorter.</p><p>Soon all lines are about the same. Now nobody gains by switching. Everybody stays. This is <b>equilibrium</b>.</p><p><b>Slide definition:</b> an economic situation is in equilibrium when <b>no individual would be better off doing something different</b>.</p><p>The key idea is \"move toward\". Nobody plans it. Each person just looks after himself, and the system settles by itself.</p>"
+   },
+   {
+    "h": "The same idea in a market (picture)",
+    "body": "<p>Bread at a Tashkent bazaar. If the price is too high, bakers bring more bread than people want. Bread is left over, so bakers cut the price.</p><p>If the price is too low, people want more bread than there is. Bread runs out, so sellers raise the price.</p><p>The price stops moving only where buyers want exactly what sellers bring: point <b>E</b>. There, no buyer and no seller would be better off doing something different. (You learn this graph fully in week 3.)</p>",
+    "chart": {
+     "x": "Bread (hundreds of loaves per day)",
+     "y": "Price (thousand so'm)",
+     "xmax": 12,
+     "ymax": 11,
+     "xticks": [
+      2,
+      5,
+      8
+     ],
+     "yticks": [
+      2,
+      5,
+      8
+     ],
+     "lines": [
+      {
+       "pts": [
+        [
+         0.5,
+         9.5
+        ],
+        [
+         9.5,
+         0.5
+        ]
+       ],
+       "label": "D",
+       "role": "demand"
+      },
+      {
+       "pts": [
+        [
+         0.5,
+         0.5
+        ],
+        [
+         9.5,
+         9.5
+        ]
+       ],
+       "label": "S",
+       "role": "supply"
+      }
+     ],
+     "hlines": [
+      {
+       "y": 8,
+       "label": "Too high: surplus",
+       "role": "other"
+      },
+      {
+       "y": 2,
+       "label": "Too low: shortage",
+       "role": "other"
+      }
+     ],
+     "points": [
+      {
+       "x": 5,
+       "y": 5,
+       "label": "E",
+       "guides": true
+      },
+      {
+       "x": 2,
+       "y": 8
+      },
+      {
+       "x": 8,
+       "y": 8
+      },
+      {
+       "x": 8,
+       "y": 2
+      },
+      {
+       "x": 2,
+       "y": 2
+      }
+     ],
+     "arrows": [
+      {
+       "from": [
+        5,
+        7.6
+       ],
+       "to": [
+        5,
+        5.6
+       ],
+       "label": "price falls"
+      },
+      {
+       "from": [
+        5,
+        2.4
+       ],
+       "to": [
+        5,
+        4.4
+       ],
+       "label": "price rises"
+      }
+     ],
+     "caption": "At 8: buyers want 2, sellers bring 8, so 6 are left over and the price falls. At 2: buyers want 8, sellers bring 2, so 6 are missing and the price rises. It stops at E (price 5, quantity 5)."
+    }
+   },
+   {
+    "h": "Efficiency vs equity (slide 49)",
+    "body": "<p><b>Efficient:</b> an economy is efficient if it <b>takes all opportunities to make some people better off without making other people worse off</b>.</p><p>Simple test: is there still a free win? On a bus, a seat is empty and an old man is standing. If he sits, he gains and nobody loses. While that seat stays empty, the situation is <b>not efficient</b>. A chance is wasted.</p><p><b>Equity:</b> everyone gets his or her <b>fair share</b>.</p><p>Problem: people disagree about what is \"fair\". Equal pieces for all? More for people who work harder? More for poor people? So <b>equity isn't as well-defined a concept as efficiency</b>. Efficiency has a clear test. Fairness is an opinion.</p><p>The slide title says resources should be used efficiently <b>to achieve society's goals</b>. Society decides its goals (equity is often one of them). Efficiency means not wasting resources on the way there.</p>",
+    "chart": {
+     "x": "Cotton (thousand tons)",
+     "y": "Bread (thousand tons)",
+     "xmax": 12,
+     "ymax": 12,
+     "xticks": [
+      2,
+      4,
+      6,
+      8,
+      10
+     ],
+     "yticks": [
+      2,
+      4,
+      6,
+      8,
+      10
+     ],
+     "lines": [
+      {
+       "pts": [
+        [
+         0,
+         10
+        ],
+        [
+         4,
+         9.17
+        ],
+        [
+         6,
+         8
+        ],
+        [
+         8,
+         6
+        ],
+        [
+         9.17,
+         4
+        ],
+        [
+         10,
+         0
+        ]
+       ],
+       "label": "PPF",
+       "role": "ppf"
+      }
+     ],
+     "points": [
+      {
+       "x": 4,
+       "y": 5,
+       "label": "A: inside = waste"
+      },
+      {
+       "x": 6,
+       "y": 8,
+       "label": "B: on the line = efficient"
+      }
+     ],
+     "arrows": [
+      {
+       "from": [
+        4,
+        5.4
+       ],
+       "to": [
+        4,
+        8.9
+       ]
+      }
+     ],
+     "caption": "At A some workers or land are idle. We can get more bread with no less cotton (arrow), so someone gains and nobody loses: A is not efficient. On the curve (like B) you can only get more of one thing by giving up the other."
+    }
+   },
+   {
+    "h": "Markets usually lead to efficiency (slide 50)",
+    "body": "<p>Why do markets usually avoid waste? Because of <b>incentives</b>.</p><ul><li>A baker wants profit, so he makes bread that people will pay for.</li><li>A buyer wants a good deal, so he buys when the bread is worth the price to him.</li></ul><p>If a trade would help both sides, someone will usually find it and do it. Nobody needs to order them.</p><p>Slide wording to learn: the incentives built into a market economy already ensure that resources are usually put <b>to good use</b>, that <b>opportunities</b> to make people better off <b>are not wasted</b>.</p><p>Note the word <b>usually</b>. Not always. That leads to the next slide.</p>"
+   },
+   {
+    "h": "When markets fail, government can help (slide 51)",
+    "body": "<p>Slide 51 gives <b>3 cases</b> where the market does not reach efficiency:</p><table><tr><th>Case</th><th>Meaning</th><th>Example</th></tr><tr><td>1. Side effects</td><td>Individual actions have <i>side effects</i> that the market does not count properly.</td><td>A factory smokes up the air of the neighbours. The neighbours are not part of the deal, so nobody pays them. (Textbook word: externality.)</td></tr><tr><td>2. One party blocks trades</td><td>One party prevents mutually beneficial trades to capture a greater share of resources for itself.</td><td><b>Monopoly</b>: the only seller sets a high price, so some good trades never happen.</td></tr><tr><td>3. Goods unsuited for markets</td><td>Some goods, by their very nature, are unsuited for efficient management by markets.</td><td><b>Drugs</b> (the slide's example).</td></tr></table><p>In these cases, <b>government intervention can improve society's welfare</b>. Note \"can\": it is possible, not automatic.</p>"
+   }
+  ],
+  "example": {
+   "problem": "<p>At a bazaar, two bread stalls stand side by side. Stall X sells a loaf for 5,000 so'm and Stall Y for 3,000 so'm. Same bread. (a) Is this an equilibrium? What will happen? (b) A city has empty flats while families live on the street, and the owners would happily rent them out at a price the families could pay. Is this efficient?</p>",
+   "solution": "<p><b>(a)</b> No. Buyers at X would be better off buying at Y. So the situation is not an equilibrium (someone would be better off doing something different). Buyers move to Y. Y sells out and can raise its price. X loses buyers and must cut its price. The prices move toward each other until no buyer gains by switching. That is equilibrium.</p><p><b>(b)</b> Not efficient. Renting the flat makes the family better off and the owner better off, and nobody is worse off. This chance is not taken, so the economy is not efficient. If the market cannot fix it, government intervention can improve welfare.</p>"
+  },
+  "check": [
+   {
+    "q": "Define equilibrium in one sentence.",
+    "a": "A situation where no individual would be better off doing something different."
+   },
+   {
+    "q": "What is the picture on slide 48, and why?",
+    "a": "Supermarket checkout lines. People switch to shorter lines until all lines are about equal; then nobody gains by switching = equilibrium."
+   },
+   {
+    "q": "Why is equity less well-defined than efficiency?",
+    "a": "Because people disagree about what is \"fair\". Efficiency has a clear test (no free win left untaken)."
+   },
+   {
+    "q": "What makes markets usually efficient?",
+    "a": "The <b>incentives</b> built into a market economy: resources go to good use and opportunities are not wasted."
+   },
+   {
+    "q": "Name the 3 cases on slide 51 and their examples.",
+    "a": "Side effects (e.g. pollution); one party blocks good trades (monopoly); goods unsuited for markets (drugs)."
+   }
+  ],
+  "exam": {
+   "question": "<p><b>Q1.</b> What does \"markets move toward equilibrium\" mean? Define equilibrium and explain it with the supermarket checkout example.</p><p><b>Q2.</b> Define efficiency and equity. Why is equity less well-defined? Markets usually lead to efficiency; when they do not, how can government help? Give the three cases.</p>",
+   "answer": "<p><b>Q1.</b> An economic situation is in <b>equilibrium</b> when no individual would be better off doing something different. Markets move toward equilibrium by themselves. Example: in a supermarket, if one checkout line is shorter, shoppers switch to it. That line grows and the others shrink, until all lines are about the same length. Then no shopper can gain by switching, so nobody changes. This is equilibrium.</p><p><b>Q2.</b></p><ul><li><b>Efficiency:</b> an economy is efficient if it takes all opportunities to make some people better off without making other people worse off. Resources should be used as efficiently as possible to achieve society's goals.</li><li><b>Equity:</b> everyone gets his or her fair share. People disagree about what is \"fair\", so equity isn't as well-defined a concept as efficiency.</li><li><b>Markets usually lead to efficiency:</b> the incentives built into a market economy ensure that resources are usually put to good use and opportunities to make people better off are not wasted.</li><li><b>When markets don't achieve efficiency, government intervention can improve society's welfare.</b> This happens when: (1) individual actions have side effects the market does not take into account properly (e.g. pollution); (2) one party prevents mutually beneficial trades to capture a greater share of resources for itself (e.g. monopoly); (3) some goods, by their very nature, are unsuited for efficient management by markets (e.g. drugs).</li></ul>"
+  },
+  "memorize": [
+   "Equilibrium = no individual would be better off doing something different (checkout lines)",
+   "Efficient = takes ALL chances to make some better off without making others worse off",
+   "Equity = fair share; less well-defined, because people disagree about \"fair\"",
+   "Markets usually efficient because of incentives: resources to good use, chances not wasted",
+   "Market fails → government CAN improve welfare: side effects, monopoly, drugs"
+  ],
+  "note": "The professor said slides 48–51 give two questions but not how they are split. Most likely Q1 = equilibrium (48) and Q2 = efficiency/equity and government (49–51); the lesson covers all four either way."
+ },
+ {
+  "id": "Q3",
+  "label": "Q3",
+  "week": 1,
+  "slides": [
+   12
+  ],
+  "kind": "theory",
+  "title": "The questions economics asks",
+  "hook": "Slide 12 lists the big questions of economics. After this lesson you can list all five groups and say what joins them.",
+  "cards": [
+   {
+    "h": "First: what economics is (slide 11, just before)",
+    "body": "<p>Economics is a <b>social science</b>. It studies the <b>production, distribution and consumption</b> of goods and services.</p><p>It looks at how <b>individuals, businesses, governments and nations</b> make choices about how to use resources. It assumes people act <b>rationally</b> (they try to do what is best for them).</p><p>Slide 12 then says economics is a <b>scientific study on the economy</b>, and lists the questions it tries to answer.</p>"
+   },
+   {
+    "h": "Think of one bakery in Tashkent",
+    "body": "<p>A family opens a bakery near Chorsu bazaar. Look at all the questions they face:</p><ul><li>How many workers do we hire? (<b>jobs</b>)</li><li>Bread or cakes? How many loaves? A tandir oven by hand or a machine? (<b>production</b>)</li><li>Who gets the bread, and how much each? (<b>distribution</b>)</li><li>And each customer asks: bread or rice today? How much? (<b>consumption</b>)</li></ul><p>Now make it a whole country. Why is one country rich and another poor? That is the fifth question. Every one of these is an economics question.</p>"
+   },
+   {
+    "h": "The 5 groups of questions (slide 12)",
+    "body": "<table><tr><th>Group</th><th>The questions on the slide</th></tr><tr><td><b>Jobs</b></td><td>Who creates jobs? What kinds of jobs? How many jobs are created?</td></tr><tr><td><b>Production</b></td><td>What to produce? How much? How to produce?</td></tr><tr><td><b>Distribution</b></td><td>Who gets, how much?</td></tr><tr><td><b>Consumption</b></td><td>Consume what? How much?</td></tr><tr><td><b>Rich vs poor countries</b></td><td>Why are some countries richer and other countries poor?</td></tr></table><p>Memory trick: <b>J-P-D-C + rich/poor</b>. Production has <b>3</b> questions (what, how much, how). Distribution, consumption: <b>2</b> each.</p>"
+   },
+   {
+    "h": "The key line: common principles",
+    "body": "<p>The last line is in red on the slide: <b>\"All these questions are based on a set of common principles.\"</b></p><p>So economics is not a list of separate topics. The same few ideas answer all of them. In this course these are the <b>12 economic principles</b> (slide 15):</p><ul><li><b>4</b> on individual choice (e.g. resources are scarce; the real cost is what you give up)</li><li><b>5</b> on interaction (e.g. there are gains from trade)</li><li><b>3</b> on economy-wide interactions (e.g. one person's spending is another person's income)</li></ul><p>4 + 5 + 3 = 12.</p>"
+   }
+  ],
+  "example": {
+   "problem": "<p>Put each question into the right group from slide 12: (a) Should Uzbekistan grow more cotton or more wheat? (b) Will a new car factory in Andijan create 2,000 jobs? (c) Why is Korea richer than many other countries? (d) Should a family spend its money on a new phone or on food? (e) Who gets the new flats that the city builds?</p>",
+   "solution": "<p>(a) <b>Production</b>: what to produce. (b) <b>Jobs</b>: how many jobs are created. (c) <b>Rich vs poor countries</b>. (d) <b>Consumption</b>: consume what. (e) <b>Distribution</b>: who gets.</p>"
+  },
+  "check": [
+   {
+    "q": "What are the 3 production questions?",
+    "a": "What to produce? How much? How to produce?"
+   },
+   {
+    "q": "What are the distribution questions?",
+    "a": "Who gets, how much?"
+   },
+   {
+    "q": "What do all the questions have in common?",
+    "a": "They are all based on a set of <b>common principles</b> (the 12 principles: 4 + 5 + 3)."
+   },
+   {
+    "q": "Which question is about whole countries?",
+    "a": "Why are some countries richer and other countries poor?"
+   }
+  ],
+  "exam": {
+   "question": "<p>Economics is a scientific study of the economy. What questions does economics try to answer? List them and say what they have in common.</p>",
+   "answer": "<p>Economics is the scientific study of the economy. It asks questions about:</p><ol><li><b>Jobs:</b> who creates jobs, what kinds of jobs, and how many jobs are created.</li><li><b>Production:</b> what to produce, how much to produce, and how to produce it.</li><li><b>Distribution:</b> who gets the goods and how much each gets.</li><li><b>Consumption:</b> what to consume and how much.</li><li><b>Rich and poor countries:</b> why some countries are richer and other countries are poor.</li></ol><p>All these questions are based on a set of <b>common principles</b>: the 12 economic principles (4 on individual choice, 5 on interaction, 3 on economy-wide interactions).</p>"
+  },
+  "memorize": [
+   "Economics = scientific study on the economy",
+   "5 groups: Jobs, Production, Distribution, Consumption, rich vs poor countries",
+   "Production: what? how much? how?",
+   "Distribution: who gets, how much? Consumption: what? how much?",
+   "All based on common principles (12 = 4 + 5 + 3)"
+  ]
+ },
+ {
+  "id": "Q4",
+  "label": "Q4",
+  "week": 1,
+  "slides": [
+   33
+  ],
+  "kind": "theory",
+  "title": "The five principles of interaction",
+  "hook": "Slide 33 is a list of 5 principles. After this lesson you can write all five in order and explain each in one or two lines.",
+  "cards": [
+   {
+    "h": "Why \"interaction\"?",
+    "body": "<p>Slide 14: the most basic idea in economics is that <b>individuals make choices</b>. But in modern society, my choice is shaped by other people's choices. <b>Our choices interact.</b></p><p>When you buy a phone, a seller sells it, a factory made it, workers were paid. The 5 principles on slide 33 explain what happens when many people's choices meet.</p><p>The full plan of the 12 principles: <b>I.</b> 4 on individual choice → <b>II. 5 on interaction</b> → <b>III.</b> 3 on economy-wide interactions.</p>"
+   },
+   {
+    "h": "The list on slide 33",
+    "body": "<p>Title of the table: <i>Principles That Underlie the Interaction of Individual Choices</i>.</p><ol><li><b>There are gains from trade.</b></li><li><b>Markets move toward equilibrium.</b></li><li><b>Resources should be used as efficiently as possible to achieve society's goals.</b></li><li><b>Markets usually lead to efficiency.</b></li><li><b>When markets don't achieve efficiency, government intervention can improve society's welfare.</b></li></ol><p>Memory story: people <b>trade</b> (1) → the market <b>settles</b> (2) → we want <b>no waste</b> (3) → markets <b>usually</b> give no waste (4) → if not, the <b>government</b> can help (5).</p>"
+   },
+   {
+    "h": "Principle 1: gains from trade",
+    "body": "<p>People get <b>more of what they want</b> by trading than by trying to make everything themselves (being self-sufficient). Why? <b>Specialization</b>: each person does the task he or she is good at.</p><p>Small example (my numbers). In one day Ali can bake 10 loaves or sew 5 shirts. Bobur can bake 4 loaves or sew 4 shirts.</p><table><tr><th></th><th>Bread</th><th>Shirts</th></tr><tr><td>Each spends half a day on each good (no trade)</td><td>5 + 2 = 7</td><td>2.5 + 2 = 4.5</td></tr><tr><td>Bobur only sews; Ali bakes 0.8 day, sews 0.2 day</td><td>8 + 0 = 8</td><td>1 + 4 = 5</td></tr></table><p>Same people, same day, but <b>more of both goods</b>. Then they trade, and both can end up better off. That is the gain from trade. (Bobur sews because a shirt costs him only 1 loaf, but costs Ali 2 loaves: comparative advantage, slide 44.)</p>"
+   },
+   {
+    "h": "Principles 2 and 3: equilibrium and efficiency",
+    "body": "<p><b>2. Markets move toward equilibrium.</b> Equilibrium = <b>no individual would be better off doing something different</b>. Example: supermarket checkout lines. People switch to the short line until all lines are equal, then nobody switches.</p><p><b>3. Resources should be used as efficiently as possible to achieve society's goals.</b> An economy is <b>efficient</b> if it takes all opportunities to make some people better off without making other people worse off. <b>Equity</b> (everyone gets a fair share) is different, and less well-defined, because people disagree about what is \"fair\".</p>"
+   },
+   {
+    "h": "Principles 4 and 5: markets and government",
+    "body": "<p><b>4. Markets usually lead to efficiency.</b> The <b>incentives</b> in a market economy (profit for sellers, good deals for buyers) usually put resources to good use, so chances to make people better off are not wasted.</p><p><b>5. When markets don't achieve efficiency, government intervention can improve society's welfare.</b> Three cases (slide 51):</p><ul><li>actions have <b>side effects</b> the market does not count (e.g. pollution);</li><li>one party blocks good trades to grab more for itself (<b>monopoly</b>);</li><li>some goods by nature are unsuited for markets (<b>drugs</b>).</li></ul>"
+   }
+  ],
+  "example": {
+   "problem": "<p>Which interaction principle does each story show? (a) A taxi app shows one driver charging much more than others; riders choose the cheaper drivers until prices are similar. (b) A chemical plant pours waste into a river and fishermen downstream lose their catch; the government sets a rule. (c) A farmer grows only melons and buys his clothes and phone instead of making them. (d) A field lies empty while people nearby want to farm it and the owner would gladly rent it.</p>",
+   "solution": "<p>(a) <b>2. Markets move toward equilibrium</b>: people switch until nobody gains from switching. (b) <b>5. Government intervention can improve welfare</b>: a side effect the market did not count. (c) <b>1. Gains from trade</b>: he specializes and trades. (d) <b>3. Efficiency</b>: a chance to make people better off without hurting anyone is wasted, so it is not efficient. (If the market usually fixes this by renting it out, that is principle 4.)</p>"
+  },
+  "check": [
+   {
+    "q": "How many principles are on individual choice, interaction and the economy as a whole?",
+    "a": "4 + 5 + 3 = 12."
+   },
+   {
+    "q": "Say the 5 interaction principles in order.",
+    "a": "Gains from trade; markets move toward equilibrium; use resources as efficiently as possible to achieve society's goals; markets usually lead to efficiency; when they don't, government intervention can improve society's welfare."
+   },
+   {
+    "q": "Where do gains from trade come from?",
+    "a": "Specialization: each person does the task he or she is good at."
+   },
+   {
+    "q": "Which word in principle 4 is important, and why?",
+    "a": "\"Usually\". Markets are not always efficient, which is why principle 5 exists."
+   }
+  ],
+  "exam": {
+   "question": "<p>List the five principles that underlie the interaction of individual choices, and briefly explain each one.</p>",
+   "answer": "<ol><li><b>There are gains from trade.</b> Through trade, people get more of what they want than if they tried to be self-sufficient. The increase in output comes from specialization: each person does the task he or she is good at.</li><li><b>Markets move toward equilibrium.</b> A situation is in equilibrium when no individual would be better off doing something different (e.g. supermarket checkout lines become about equal).</li><li><b>Resources should be used as efficiently as possible to achieve society's goals.</b> An economy is efficient if it takes all opportunities to make some people better off without making others worse off. (Equity = everyone gets a fair share; it is less well-defined, because people disagree about what is fair.)</li><li><b>Markets usually lead to efficiency.</b> The incentives built into a market economy usually put resources to good use, so opportunities to make people better off are not wasted.</li><li><b>When markets don't achieve efficiency, government intervention can improve society's welfare.</b> E.g. side effects not counted by the market (pollution), monopoly, and goods unsuited for markets (drugs).</li></ol>"
+  },
+  "memorize": [
+   "12 principles = 4 individual choice + 5 interaction + 3 economy-wide",
+   "1 Gains from trade (specialization)",
+   "2 Markets move toward equilibrium",
+   "3 Use resources as efficiently as possible to achieve society's goals",
+   "4 Markets usually lead to efficiency",
+   "5 If markets fail, government intervention can improve society's welfare"
+  ],
+  "note": "Slide 33 is only the heading plus the 5-item list, so the exam probably asks you to list and explain the five. The explanations come from slides 34–51."
+ },
+ {
+  "id": "Q8",
+  "label": "Q8",
+  "week": 1,
+  "slides": [
+   25,
+   26,
+   27,
+   28
+  ],
+  "kind": "theory",
+  "title": "Opportunity cost: there is no such thing as a free lunch",
+  "hook": "After this lesson you can define opportunity cost, explain the \"free lunch\" saying, and find the opportunity cost in any choice, even one that costs no money.",
+  "cards": [
+   {
+    "h": "Why we must choose",
+    "body": "<p>Just before these slides (slides 23–24): a <b>resource</b> is anything used for production, like labor, land, capital and also <b>time</b>. All resources are <b>scarce</b> because they are finite (limited).</p><p>You have 24 hours a day and limited money. So you cannot have everything. You must <b>choose</b>. And every choice has a cost.</p>"
+   },
+   {
+    "h": "\"No such thing as a free lunch\" (slide 25)",
+    "body": "<p>The saying is linked to the American economist <b>Milton Friedman</b>. It describes <b>opportunity cost</b>.</p><p>A friend invites you to a \"free\" plov lunch. You pay no money. But the lunch takes 2 hours. In those 2 hours you could study for the midterm or work. So the lunch is <b>not really free</b>.</p><p>Slide rule: <b>every choice has at least one alternative that we passed up.</b></p>"
+   },
+   {
+    "h": "Choosing = giving up (slide 26)",
+    "body": "<p>The picture: a boy at a drinks machine with his hands on his head. He has money for one drink. If he picks cola, he gives up the juice.</p><p>Slide rule: <b>choosing one thing means we're giving up an alternative.</b></p><p>Every \"yes\" to one thing is a \"no\" to something else.</p>"
+   },
+   {
+    "h": "Time always costs something (slide 27)",
+    "body": "<p><b>Every activity has the opportunity cost of time.</b></p><ul><li>This includes activities with <b>no monetary cost</b>. The picture is a hiker in the mountains: hiking is free, but it uses your whole day.</li><li>It also includes the activity of <b>searching for alternatives</b>, like looking for a new job. Searching takes time, and that time could be used for something else.</li></ul><p>So \"it costs no money\" never means \"it costs nothing\".</p>"
+   },
+   {
+    "h": "The definition (slide 28)",
+    "body": "<p><b>Opportunity cost = the value of the next-best alternative</b> (what you give up).</p><p>For any decision, ask yourself two questions:</p><ul><li>How much do I value this?</li><li>What am I giving up now to have it?</li></ul><p>Opportunity cost is often expressed in <b>market prices</b> (money), e.g. \"the hike cost me $40 of lost wages\".</p><p><b>Careful:</b> count only the <b>next-best</b> option, the one you would really have done. Do not add up all the options you did not choose.</p><p>(Small typo on the slide: \"is often is expressed\" should read \"is often expressed\". Same meaning.)</p>"
+   },
+   {
+    "h": "See it on a graph",
+    "body": "<p>Saturday: you have 5 free hours. Your next-best option is a job that pays <b>$8 an hour</b>. Every hour you hike is an hour you do not work.</p><p>So each hour of hiking costs <b>$8</b>. Hike 2 hours: you still work 3 hours and earn 3 × $8 = $24 instead of $40. Hike all 5 hours: the opportunity cost is 5 × $8 = <b>$40</b>.</p>",
+    "chart": {
+     "x": "Hours hiking on Saturday",
+     "y": "Money earned ($)",
+     "xmax": 7,
+     "ymax": 50,
+     "xticks": [
+      1,
+      2,
+      3,
+      4,
+      5
+     ],
+     "yticks": [
+      8,
+      16,
+      24,
+      32,
+      40
+     ],
+     "lines": [
+      {
+       "pts": [
+        [
+         0,
+         40
+        ],
+        [
+         5,
+         0
+        ]
+       ],
+       "role": "ppf"
+      }
+     ],
+     "points": [
+      {
+       "x": 0,
+       "y": 40,
+       "label": "All work: $40"
+      },
+      {
+       "x": 2,
+       "y": 24,
+       "label": "2 h hiking, $24",
+       "guides": true
+      },
+      {
+       "x": 5,
+       "y": 0,
+       "label": "All hiking: $0"
+      }
+     ],
+     "caption": "5 free hours, a job that pays $8 an hour. Every hour of hiking moves you down the line by $8. That $8 is the opportunity cost of one hour of hiking."
+    }
+   }
+  ],
+  "example": {
+   "problem": "<p>Dilnoza has a free Saturday. Her options: (a) go to a free concert in the park, (b) work 6 hours in a café for 50,000 so'm an hour, (c) sleep. If she did not go to the concert, she would work. What is the opportunity cost of the concert? Is the concert free?</p>",
+   "solution": "<p><b>Step 1.</b> Find the next-best alternative: working in the café (she says she would work, not sleep).</p><p><b>Step 2.</b> Find its value: 6 × 50,000 = <b>300,000 so'm</b>.</p><p><b>Step 3.</b> Opportunity cost of the concert = 300,000 so'm (the wages she gives up). We do <b>not</b> add the value of sleeping, because she can only use the day once and sleep is not her next-best choice.</p><p><b>Step 4.</b> The ticket costs no money, but the concert is <b>not free</b>. It has the opportunity cost of time. \"There is no such thing as a free lunch.\"</p>"
+  },
+  "check": [
+   {
+    "q": "Define opportunity cost.",
+    "a": "The value of the next-best alternative you give up when you choose."
+   },
+   {
+    "q": "Who is linked to the saying \"There is no such thing as a free lunch\", and what does it describe?",
+    "a": "Milton Friedman; it describes opportunity cost (every choice has at least one alternative we passed up)."
+   },
+   {
+    "q": "Does an activity with no monetary cost have an opportunity cost?",
+    "a": "Yes. Every activity has the opportunity cost of time."
+   },
+   {
+    "q": "What two questions does slide 28 tell you to ask?",
+    "a": "How much do I value this? What am I giving up now to have it?"
+   },
+   {
+    "q": "You can study, work ($30) or watch a film. Work is your next-best choice. What is the opportunity cost of studying?",
+    "a": "$30 (only the next-best option, not work + film)."
+   }
+  ],
+  "exam": {
+   "question": "<p>What is opportunity cost? Explain the saying \"There is no such thing as a free lunch\". Why does even an activity with no monetary cost have an opportunity cost? Give an example.</p>",
+   "answer": "<p><b>Opportunity cost</b> is the value of the <b>next-best alternative</b> that we give up when we make a choice. For any decision we should ask: How much do I value this? What am I giving up now to have it? Opportunity cost is often expressed in market prices.</p><p>\"There is no such thing as a free lunch\" (associated with Milton Friedman) describes opportunity cost: every choice has at least one alternative that we passed up. Choosing one thing means giving up an alternative.</p><p>Every activity has the <b>opportunity cost of time</b>. This includes activities with no monetary cost, and also the activity of searching for alternatives, like a new job.</p><p><b>Example:</b> going hiking costs no money. But if my next-best choice is working 5 hours at $8 an hour, the opportunity cost of the hike is 5 × $8 = $40 of lost wages.</p>"
+  },
+  "memorize": [
+   "Opportunity cost = value of the NEXT-BEST alternative",
+   "\"No such thing as a free lunch\" – Milton Friedman – every choice passes up an alternative",
+   "Choosing one thing = giving up an alternative",
+   "Every activity has the opportunity cost of TIME (even free ones, even job searching)",
+   "Ask: How much do I value this? What am I giving up now to have it?",
+   "Often expressed in market prices"
+  ]
+ }
+]

@@ -1,0 +1,491 @@
+[
+ {
+  "id": "W5a-1",
+  "label": "W5a·1",
+  "week": "W5a",
+  "slides": [
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12,
+   13,
+   14,
+   15,
+   16,
+   17,
+   18
+  ],
+  "kind": "theory",
+  "title": "Staffing the project: how many people, which structure, what kind of team",
+  "hook": "After this lesson you can say what staffing includes, calculate the average team size, draw the team structure, explain why big teams are slow, and answer the professor's W4 review MCQs.",
+  "cards": [
+   {
+    "h": "Staffing = 4 jobs and 2 documents",
+    "body": "<p>Imagine you open a café in Tashkent. Before you open, you must decide: how many workers? Who cooks, who serves? How do I keep them happy? How do I stop fights?</p><p>A project manager does the same. <b>Staffing the project includes 4 jobs</b> [S4]:</p><ol><li>Decide <b>how many people</b> to put on the project.</li><li><b>Match people's skills</b> to what the project needs.</li><li><b>Motivate</b> them to meet the project's objectives.</li><li><b>Minimize the conflict</b> that will happen over time.</li></ol><p><b>The deliverables (outputs):</b></p><ul><li><b>Staffing plan</b>: the number and kinds of people, plus the <b>overall reporting structure</b> (who reports to whom).</li><li><b>Project charter</b>: the project's objectives and rules.</li></ul><p><b>Exam tip:</b> if he asks for the deliverables, write all three bold phrases: staffing plan, reporting structure, project charter.</p>",
+    "diagram": "flowchart LR\n  S[\"Staffing the project\"] --> J1[\"1. How many people\"]\n  S --> J2[\"2. Match skills\"]\n  S --> J3[\"3. Motivate\"]\n  S --> J4[\"4. Minimize conflict\"]\n  J1 --> D1([\"Staffing plan\"])\n  J2 --> D1\n  J4 --> D2([\"Project charter\"])"
+   },
+   {
+    "h": "How many people? Divide, then keep teams small",
+    "body": "<p><b>Step 1 of staffing</b> is to find the <b>average number of staff</b> [S14]:</p><p><b>average staff = total person-months of effort ÷ optimal schedule (months)</b></p><p>Slide example: a 40 person-month project in 10 months → 40 ÷ 10 = <b>4 full-time people</b> on average. The real number goes up and down as specialists join and leave (business analysts, programmers, technical writers).</p><p><b>Big warning (bold on the slide):</b> \"Adding staff resources does <b>not</b> translate into increased productivity.\" Why? A bigger team is <b>harder to coordinate</b>.</p><p><b>The rule</b> [S16]: keep each team to <b>fewer than 8–10 people</b>. If you need more people, make <b>sub-teams</b>. Each sub-team talks inside itself and reports to a contact at a higher level.</p>"
+   },
+   {
+    "h": "Why big teams are slow: the Ringelmann effect",
+    "body": "<p>Think of a <b>tug of war</b>. With 2 people, both pull hard. With 8 people, each one thinks \"my effort is not critical\" and pulls a little less.</p><p><b>Ringelmann effect</b> [S6]: \"the tendency for individual members of a group to become increasingly less productive as the size of their group increases.\" Bigger group → smaller contribution per person (an <i>inverse</i> relationship).</p><p><b>The graph</b> [S7]: the <i>potential</i> line goes straight up (8 people = 800). The <i>actual</i> line bends and flattens (8 people ≈ 400). The gap is called <b>process loss</b>. At 8 people, about half the output is lost.</p><p><b>The picture of lines</b> [S15]: every pair of people needs a communication line. Count them: 2 people → 1 line, 4 → 6, 6 → 15, 8 → 28. People grow slowly, lines grow fast.</p><p><i>My hint (not on the slide):</i> lines = n × (n − 1) ÷ 2. So 10 people → 45 lines.</p>",
+    "diagram": "flowchart LR\n  A((A)) --- B((B))\n  A --- C((C))\n  A --- D((D))\n  B --- C\n  B --- D\n  C --- D"
+   },
+   {
+    "h": "The team structure in the staffing plan",
+    "body": "<p>After you know <i>how many</i> people, the staffing plan lists the <b>roles</b> and the <b>reporting structure</b> [S17]:</p><ul><li><b>Project manager</b>: one per project, oversees the overall progress.</li><li><b>Analysts</b>: the core of the team.</li><li><b>Functional lead</b>: manages a group of <b>analysts</b>.</li><li><b>Technical lead</b>: oversees the <b>programmers</b> and other technical staff.</li></ul><p>The picture on S18 is \"one possible configuration\": PM on top, functional lead with 3 analysts on the left, technical lead with 2 programmers on the right.</p><p>Caption to remember: people have <b>technical skills</b> and <b>interpersonal skills</b>, and <b>both</b> matter when you give out tasks.</p>",
+    "diagram": "flowchart TD\n  PM[\"Project manager\"] --> FL[\"Functional lead\"]\n  PM --> TL[\"Technical lead\"]\n  FL --> A1[\"Analyst\"]\n  FL --> A2[\"Analyst\"]\n  FL --> A3[\"Analyst\"]\n  TL --> P1[\"Programmer\"]\n  TL --> P2[\"Programmer\"]"
+   },
+   {
+    "h": "The goal: a jelled team (5 traits)",
+    "body": "<p>DeMarco and Lister: a <b>jelled team</b> is \"a group of people so strongly knit that <b>the whole is greater than the sum of the parts</b>.\" Together they produce more than the same people would produce alone. It can become \"almost unstoppable\".</p><p><b>The 5 characteristics</b> [S8–S10], in order:</p><ol><li><b>Very low turnover</b>: nobody leaves, because leaving feels like breaking a bond of trust.</li><li><b>Strong sense of identity</b>: like a class group that picks a cute team name.</li><li><b>Sense of eliteness</b>: a little \"swagger\" toward people outside the team.</li><li><b>The team owns the system</b>, not one person. Only the team's output matters.</li><li><b>They have fun</b>: the work is challenging and they learn from it.</li></ol><p>Memory hook: <b>Low turnover · Identity · Eliteness · Ownership · Fun</b>.</p>"
+   },
+   {
+    "h": "Ten steps to more productive teams",
+    "body": "<p>The slides list 10 steps [S11–S13]. Only some are explained:</p><ol><li><b>Give them their own space</b>: the whole team in one place. Cubicles are the worst: they block talking but still let in noise.</li><li><b>Try agile methods.</b></li><li><b>Maximise communication, minimise bureaucracy</b>: daily stand-up meetings, <b>pair programming</b> (two developers at one PC), group design at a whiteboard.</li><li><b>No more heroes</b>: no secret \"lone ranger\" who writes code nobody else understands.</li><li><b>Let them grow.</b></li><li><b>Give them play time and rest time.</b></li><li><b>Trust the team.</b></li><li><b>Work iteratively and incrementally.</b></li><li><b>Use Test First Design</b> (= Test Driven Development): write the tests <i>before</i> the code.</li><li><b>Get a team coach.</b></li></ol><p>Hook: Space · Agile · Communicate · No heroes · Grow · Rest · Trust · Iterate · Test-first · Coach.</p>"
+   }
+  ],
+  "example": {
+   "problem": "<p><b>The professor's Mya case [S3]</b> (it tests W4 + this lesson). The team lost four days to a hurricane. At the 6-week mark of a 9-week project, Mya is 1 week behind. What is the BEST solution?</p><ul><li>Add several people to the project to get it back to schedule</li><li>Do not change the schedule, but expect the teams to work longer days and every other weekend</li><li>Since the project is about 16% behind, increase the project to about 10-and-one-half weeks</li><li>Since the project is about 20% behind, increase the project to about 12 weeks</li><li>Add three people AND increase the project by one week (to 10 weeks)</li></ul>",
+   "solution": "<p><b>Answer: \"about 16% behind → about 10.5 weeks\".</b></p><ol><li>% behind = 1 week late ÷ 6 weeks done = 0.167 ≈ <b>16%</b>.</li><li>New length = 9 × 1.167 = <b>10.5 weeks</b>. The maths matches. This is the W4 <b>low-risk</b> action: increase the whole schedule by the percentage you are behind.</li></ol><p><b>Why not the others?</b></p><ul><li>Add people: \"Adding staff resources does not translate into increased productivity\" [W5a-S14], plus the Ringelmann effect.</li><li>Same schedule + overtime: the W4 <b>high-risk</b> action, and it breaks the don't \"unrealistic deadlines\" and step 6 \"rest time\".</li><li>20% → 12 weeks: wrong maths (9 × 1.2 = 10.8, not 12).</li><li>+3 people +1 week: adding people again.</li></ul>"
+  },
+  "check": [
+   {
+    "q": "<b>Professor's MCQ [S2]:</b> The science (or art) of project management is in making ___ of size, time and cost. (benchmark comparisons / analytical and educated estimates / trade-offs / maximum calculations / minimum calculations)",
+    "a": "<b>Trade-offs.</b> W4-S26: PM makes trade-offs among functionality (size), time and cost. \"Educated estimates\" is the trap."
+   },
+   {
+    "q": "<b>Professor's MCQ [S2]:</b> The most common reason for schedule and cost overruns is ___ (team conflict / lack of communication / lack of sponsor support / scope creep / adding people to a late project)",
+    "a": "<b>Scope creep</b> (W4-S33): new requirements added after the scope was frozen. The others are real problems, but not \"the most common\"."
+   },
+   {
+    "q": "<b>Professor's Micah case [S3]:</b> A project plan in the planning phase says $50,000 and 20 weeks. By the margin-of-error guidelines, the range is…?",
+    "a": "<b>$0 to $100,000 and 15 to 25 weeks.</b> W4-S37: cost ±100% (50,000 ± 50,000), schedule ±25% (20 ± 5). Don't swap the two percentages."
+   },
+   {
+    "q": "A project needs 60 person-months and the optimal schedule is 12 months. Average staff? And what if the PM calculates that 15 people are needed?",
+    "a": "60 ÷ 12 = <b>5</b> full-time people on average. For 15 people: keep teams under 8–10, so split into <b>sub-teams</b> that each report to a contact higher up [S16]."
+   },
+   {
+    "q": "True or false: \"Jelled teams have a high turnover during a project.\"",
+    "a": "<b>False.</b> Jelled teams have a <i>very low</i> turnover [S8]."
+   },
+   {
+    "q": "What is the Ringelmann effect? Give the slide's picture.",
+    "a": "Individual members become less productive as the group gets bigger. Picture: a <b>tug of war</b>; each person feels their own effort is not critical [S6]."
+   }
+  ],
+  "exam": {
+   "question": "<p>(a) What does staffing the project include, and what are its deliverables? (b) A project needs 48 person-months of effort over an optimal schedule of 8 months. What is the average number of staff? (c) Depict a possible configuration of a project team.</p>",
+   "answer": "<p><b>(a)</b> Staffing includes: deciding how many people to assign; matching their skills to the project's needs; motivating them; minimizing conflict. Deliverables: a <b>staffing plan</b> (number and kinds of people + reporting structure) and a <b>project charter</b> (objectives and rules).</p><p><b>(b)</b> Average staff = person-months ÷ schedule = 48 ÷ 8 = <b>6 people</b>. The number can change as specialists join and leave. Adding more people would not raise productivity in proportion, because coordination gets harder.</p><p><b>(c)</b> Project manager on top; functional lead manages the analysts; technical lead manages the programmers. Assign people by technical <b>and</b> interpersonal skills.</p>",
+   "diagram": "flowchart TD\n  PM[\"Project manager\"] --> FL[\"Functional lead\"]\n  PM --> TL[\"Technical lead\"]\n  FL --> A1[\"Analyst\"]\n  FL --> A2[\"Analyst\"]\n  FL --> A3[\"Analyst\"]\n  TL --> P1[\"Programmer\"]\n  TL --> P2[\"Programmer\"]"
+  },
+  "memorize": [
+   "Staffing = how many · match skills · motivate · minimize conflict",
+   "Deliverables: staffing plan (+ reporting structure) and project charter",
+   "Average staff = person-months ÷ optimal schedule (40 ÷ 10 = 4)",
+   "Adding staff does NOT raise productivity; teams fewer than 8–10, else sub-teams",
+   "Ringelmann: bigger group → less per person (tug of war, process loss)",
+   "Lines: 2→1, 4→6, 6→15, 8→28",
+   "PM → functional lead (analysts) + technical lead (programmers)",
+   "Jelled team: low turnover · identity · eliteness · team ownership · fun",
+   "W4 review: trade-offs · scope creep · Micah $0–100k, 15–25 wks · Mya 16% → 10.5 wks"
+  ],
+  "note": "Slide S9 has a double negative: \"not to imply that a member who does not deliver… will not go unpunished\". It means the opposite of what it says literally: a member who doesn't deliver IS breaking the team's trust. The Mya case is a little ambiguous (the hurricane was a one-off delay, which fits W4's \"add the lost week\" action), but the only +1-week option also adds people, so answer \"16% → 10.5 weeks\"."
+ },
+ {
+  "id": "W5a-2",
+  "label": "W5a·2",
+  "week": "W5a",
+  "slides": [
+   19,
+   20,
+   21,
+   22,
+   23,
+   24,
+   25,
+   26,
+   27,
+   28,
+   29,
+   30,
+   31,
+   32,
+   33
+  ],
+  "kind": "theory",
+  "title": "Motivation, conflict, and the team's tools: CASE and standards",
+  "hook": "After this lesson you can explain extrinsic vs intrinsic motivation, list the do's and don'ts, name the conflict-avoidance strategies, and explain CASE tools and the 5 types of standards.",
+  "cards": [
+   {
+    "h": "Two kinds of motivation",
+    "body": "<p>Motivation is \"the <b>number one influence</b> on people's performance\" [S19]. But it is hard to get right.</p><table><tr><th></th><th>Extrinsic</th><th>Intrinsic</th></tr><tr><td>Comes from</td><td>outside (external factors)</td><td>inside the person</td></tr><tr><td>Examples</td><td>pay raise, time off, bonus checks, threat of job loss</td><td>wish to beat a challenge, do high-quality work, work with people you like and trust</td></tr></table><p>Café example: a barista who works hard for a bonus = extrinsic. A barista who loves making perfect latte art = intrinsic.</p><p>The S20 picture lists sub-types. <b>Intrinsic:</b> attitude, competence, achievement, physiological, creative, introjected. <b>Extrinsic:</b> fear, incentive, social, power, identified.</p>",
+    "diagram": "flowchart LR\n  M[\"Motivation\"] --> E[\"Extrinsic: from outside\"]\n  M --> I[\"Intrinsic: from inside\"]\n  E --> E1[\"raise, time off, bonus, fear of job loss\"]\n  I --> I1[\"challenge, quality work, good teammates\"]"
+   },
+   {
+    "h": "Money is the LAST thing: 5 better ideas",
+    "body": "<p>Most PMs agree money is \"<b>the last thing that should be done</b>\". The more you pay, the more people expect it, and money usually doesn't work [S21].</p><p><b>Five principles for 21st-century firms</b> [S21–S23]:</p><ol><li><b>20 percent rule</b>: 20% of an employee's time goes to an idea they believe in, even if it has nothing to do with the project. Gmail and Google News started this way. Too much? Start with 10%.</li><li><b>\"Now That\" awards</b>: tiny money awards (about $50) given by an employee <b>to a peer</b>, not by a manager. The value is that a colleague noticed.</li><li><b>A day to work on anything</b>, from time to time, but it must produce a <b>deliverable</b> (a utility program, a prototype, a better internal process).</li><li><b>High-end development environment</b>: special hardware and software (e.g. for VR or visualization work).</li><li><b>Work that makes a difference</b> in people's lives.</li></ol>"
+   },
+   {
+    "h": "Six motivational don'ts",
+    "body": "<table><tr><th>Don't</th><th>Why (slide reason, short)</th></tr><tr><td>Assign unrealistic deadlines</td><td>Nobody works hard for a deadline they know is impossible.</td></tr><tr><td>Ignore good efforts</td><td>People work harder when appreciated; public praise is often enough.</td></tr><tr><td>Create a low-quality product</td><td>Nobody is proud of low-quality work.</td></tr><tr><td>Give everyone on the project a raise</td><td>Same reward for all → good people think mediocrity is rewarded and resent it.</td></tr><tr><td>Make an important decision without the team's input</td><td>Buy-in matters; involve them.</td></tr><tr><td>Maintain poor working conditions</td><td>Lighting, desk space, technology, privacy, reference resources.</td></tr></table><p>Hook: <b>Deadlines · Efforts · Quality · Raise · Decide · Conditions</b>.</p><p>Trick for EXCEPT questions: every good suggestion is the <b>opposite</b> of a don't. The one that matches a don't is the answer.</p>"
+   },
+   {
+    "h": "Handling conflict",
+    "body": "<p><b>Group cohesiveness</b> = \"the attraction that members feel to the group and to other members\". It adds <b>more to productivity than individual skills or experience</b> [S26].</p><p><b>How to start:</b> define the <b>roles</b> clearly, hold people <b>accountable</b>, and write a <b>project charter</b> (the norms and ground rules). A charter may say when to be at work, when staff meetings are, how the team communicates, and how to update the workplan.</p><p><b>6 conflict-avoidance strategies</b> [S27]:</p><ol><li>Clearly define plans for the project.</li><li>Make sure the team understands why the project is important to the organization.</li><li>Develop detailed operating procedures and tell the team.</li><li>Develop a project charter.</li><li>Develop schedule commitments ahead of time.</li><li>Forecast other priorities and their possible impact on the project.</li></ol>"
+   },
+   {
+    "h": "Environment and infrastructure: what CASE tools are",
+    "body": "<p>Two workflows support the team the whole time [S28]:</p><ul><li><b>Environment workflow</b>: choose the <b>tools</b> + identify the <b>standards</b>.</li><li><b>Infrastructure management workflow</b>: choose the level and type of <b>documentation</b>.</li></ul><p><b>CASE</b> (computer-aided software engineering) = software that <b>automates all or part of the development process</b> [S29]. Three kinds:</p><ul><li><b>Upper CASE</b> → supports <b>analysis</b>: draws integrated diagrams, stores information about system parts.</li><li><b>Lower CASE</b> → supports <b>design</b>: can <b>generate code</b> for database tables and system functions.</li><li><b>I-CASE</b> (integrated) → <b>both</b>, across the whole process.</li></ul><p>Hook: <b>upper = analysis (diagrams), lower = design (code), integrated = both.</b></p>",
+    "diagram": "flowchart LR\n  U[\"Upper CASE: diagrams\"] --> AN[\"Analysis workflow\"]\n  L[\"Lower CASE: generates code\"] --> DE[\"Design workflow\"]\n  I[\"I-CASE: both\"] --> AN\n  I --> DE\n  AN --> DE"
+   },
+   {
+    "h": "CASE benefits and the CASE repository",
+    "body": "<p><b>Benefits of CASE</b> [S30]:</p><ul><li>tasks are done and changed much faster</li><li>development information is centralized</li><li>information is shown as diagrams (easier to understand)</li><li><i>potentially</i>: lower maintenance costs, better quality, enforced discipline</li><li>some teams use it to measure how big a change is</li><li>many modern tools support <b>round-trip engineering</b> (named only, not explained)</li></ul><p><b>CASE repository</b> [S31] = the <b>central part</b> of any CASE tool. Other names: <b>information repository</b>, <b>data dictionary</b>. It stores the diagrams, screen and report designs, and checks how the diagrams fit together. Example: it warns you if a screen has a field that doesn't exist in your structural model.</p>"
+   },
+   {
+    "h": "Standards: why and the 5 types",
+    "body": "<p><b>Why</b> [S32]: many people share the system, so things get \"pretty confusing\". People also get moved to other projects. Their knowledge must not leave with them, and new people must learn fast.</p><table><tr><th>Type</th><th>Slide example</th></tr><tr><td>Documentation</td><td>date and project name as a header on all documents; 1-inch margins</td></tr><tr><td>Coding</td><td>module header (programmer, last update, purpose); 1 comment line per 5 lines of code</td></tr><tr><td>Procedural</td><td>record progress in the work plan every Monday by 10 AM; changes approved by the PM</td></tr><tr><td>Specification requirement</td><td>program name, purpose, special calculations, business rules, pseudocode, due date</td></tr><tr><td>User interface design</td><td>bold left-justified labels with a colon; tab order top left → bottom right</td></tr></table><p>How to classify: how documents look → documentation; how code is written → coding; when or how people report and approve → procedural; what a program spec contains → specification; how screens look → UI design.</p>"
+   }
+  ],
+  "example": {
+   "problem": "<p>A PM at a Tashkent food-delivery startup gives every developer the same $200 bonus. She sets a 2-week deadline that everyone knows is impossible. She chooses a new framework without asking anyone. The team sits in a noisy hall with old laptops. Which don'ts is she breaking, and what should she do instead?</p>",
+   "solution": "<ul><li>Same bonus for all → <b>\"Give everyone on the project a raise\"</b>. Good people feel mediocrity is rewarded. Do: reward outstanding quality and effort.</li><li>Impossible deadline → <b>\"Assign unrealistic deadlines\"</b>. Do: set realistic deadlines.</li><li>Framework chosen alone → <b>\"Make an important decision without the team's input\"</b>. Do: involve them (buy-in).</li><li>Noisy hall, old laptops → <b>\"Maintain poor working conditions\"</b>. Do: a good working environment, maybe a high-end development environment. Also ten-steps #1: give them their own space.</li></ul>"
+  },
+  "check": [
+   {
+    "q": "<b>Professor's MCQ [S25]:</b> Suggestions for motivation might include all of these EXCEPT: setting realistic deadlines / giving all team members the same bonus on a project / recognize and reward good efforts / reward those with outstanding quality and effort / having a good working environment",
+    "a": "<b>Giving all team members the same bonus.</b> It is the don't \"give everyone on the project a raise\". The other four are opposites of don'ts."
+   },
+   {
+    "q": "Which is an <i>extrinsic</i> motivator: a wish to beat a challenge, bonus checks, or enjoying work with people you trust?",
+    "a": "<b>Bonus checks.</b> The other two are intrinsic."
+   },
+   {
+    "q": "Match: (1) upper CASE, (2) lower CASE, (3) I-CASE with (A) generates code for the design workflow, (B) both, (C) diagrams for the analysis workflow.",
+    "a": "<b>1–C, 2–A, 3–B.</b>"
+   },
+   {
+    "q": "\"Record actual task progress in the work plan every Monday morning by 10 AM\" is which type of standard? And which workflow chooses the documentation?",
+    "a": "<b>Procedural</b> standard. Documentation is chosen by the <b>infrastructure management</b> workflow (environment = tools + standards)."
+   },
+   {
+    "q": "What is group cohesiveness, and why does it matter?",
+    "a": "The attraction members feel to the group and to each other. It contributes <b>more to productivity</b> than individual skills or experience [S26]."
+   }
+  ],
+  "exam": {
+   "question": "<p>(a) Explain the three types of CASE tools. (b) What is the CASE repository? (c) Name the five types of standards with one example each.</p>",
+   "answer": "<p><b>(a)</b> CASE is software that automates all or part of the development process. <b>Upper CASE</b> supports the analysis workflow: it creates integrated diagrams and stores information about system components. <b>Lower CASE</b> supports the design workflow: it can generate code for database tables and system functionality. <b>I-CASE</b> has the functions of both and supports the whole development process.</p><p><b>(b)</b> The central component of any CASE tool (also called the information repository or data dictionary). It stores diagrams, screen and report designs, and keeps track of how the diagrams fit together, e.g. it warns if a screen field doesn't exist in the structural model.</p><p><b>(c)</b> Documentation (project name and date as a header); Coding (one comment line per five lines of code); Procedural (record progress every Monday by 10 AM); Specification requirement (program name, purpose, business rules, pseudocode, due date); User interface design (tab order from top left to bottom right).</p>"
+  },
+  "memorize": [
+   "Motivation = #1 influence on performance",
+   "Extrinsic = outside (raise, bonus, time off, fear); intrinsic = inside (challenge, quality, people)",
+   "Money is the LAST thing; 20% rule (Gmail), Now That awards ($50, peer-to-peer), free day + deliverable, high-end environment, make a difference",
+   "6 don'ts: deadlines · efforts · quality · raise for all · decide alone · poor conditions",
+   "Group cohesiveness beats individual skill; roles + accountability + project charter",
+   "6 conflict strategies: plans · importance · procedures · charter · schedule commitments · forecast priorities",
+   "Environment = tools + standards; infrastructure = documentation",
+   "Upper = analysis/diagrams · lower = design/code · I-CASE = both",
+   "CASE repository = information repository = data dictionary",
+   "5 standards: documentation · coding · procedural · specification · UI design"
+  ],
+  "note": "Slide S26 calls conflict \"the third component of staffing\", but on S4 it is the 4th bullet. If asked for \"the third component\", answer: organizing the project to minimize conflict."
+ },
+ {
+  "id": "W5b-1",
+  "label": "W5b·1",
+  "week": "W5b",
+  "slides": [
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   9,
+   10,
+   11,
+   12,
+   13,
+   14,
+   15,
+   16,
+   20
+  ],
+  "kind": "theory",
+  "title": "What a requirement is: functional vs nonfunctional and the requirements definition",
+  "hook": "After this lesson you can define a requirement, tell functional from nonfunctional, put each one in its category, and solve the S15 classification exercise.",
+  "cards": [
+   {
+    "h": "Where we are: the analysis phase",
+    "body": "<p>Planning gave us the <b>system request</b>. Now, in <b>analysis</b>, we build the <b>system proposal</b> [S2]:</p><p><b>System proposal = requirements definition + models + feasibility analysis + workplan</b></p><p>The proposal goes to the <b>approval committee</b> [S3].</p><p><b>Purpose of requirements determination</b> [S11]: turn the <i>high-level</i> business requirements from the system request into <b>detailed requirements</b> that become <b>inputs for the models</b>.</p><p>One of the first jobs of an analyst is to determine the business requirements for the new system [S7].</p>",
+    "diagram": "flowchart TD\n  SR[\"System request\"] --> RD[\"Requirements definition\"]\n  RD --> SP[\"System proposal\"]\n  MO[\"Models\"] --> SP\n  FA[\"Feasibility analysis\"] --> SP\n  WP[\"Workplan\"] --> SP\n  SP --> AC[\"Approval committee\"]"
+   },
+   {
+    "h": "Project requirements vs product requirements",
+    "body": "<table><tr><th></th><th>Project requirements</th><th>Product requirements</th></tr><tr><td>About</td><td>what the <b>project</b> needs to succeed</td><td>what the <b>final product</b> must have for its users</td></tr><tr><td>Set by</td><td>project stakeholders</td><td>product owner / product management team</td></tr><tr><td>Focus</td><td>scope, timeline, budget, resources</td><td>functionality, performance, usability</td></tr></table><p><b>Project requirements include</b> [S5]: workspace and equipment, staff training, documentation (user manuals), infrastructure changes, installing / testing / releasing / migrating, certification and legal (patents), internal company documents, and the SLA with customers (e.g. warranty service).</p><p><b>PRD</b> (product requirements document) = on these slides the same as the <b>requirements definition report</b> [S6]. It covers: goals and strategic fit → user stories → user design → questions and scope.</p>"
+   },
+   {
+    "h": "Business requirements vs system requirements",
+    "body": "<table><tr><th></th><th>Business (user) requirements</th><th>System requirements</th></tr><tr><td>Phase</td><td>analysis</td><td>design</td></tr><tr><td>Point of view</td><td>business person</td><td>developer</td></tr><tr><td>Focus</td><td><b>WHAT</b> the system does</td><td><b>HOW</b> it will be implemented</td></tr></table><p>The S10 tree: business requirements (why, goals) → stakeholder requirements (needs) → solution requirements (capabilities and qualities) → <b>functional</b> (capabilities) + <b>nonfunctional</b> (qualities).</p><p><b>Careful:</b> on S9 \"business requirements\" means <i>all</i> analysis requirements; on the S10 tree it is only the top \"why\" level. Answer with the slide the question uses.</p>",
+    "diagram": "flowchart TD\n  B[\"Business requirements: why, goals\"] --> SH[\"Stakeholder requirements: needs\"]\n  SH --> SO[\"Solution requirements: capabilities and qualities\"]\n  SO --> F[\"Functional: capabilities\"]\n  SO --> N[\"Nonfunctional: qualities\"]"
+   },
+   {
+    "h": "Functional requirements: what the system DOES or KEEPS",
+    "body": "<p><b>Requirement</b> = \"a statement of <b>what the system must do</b> or <b>a characteristic it must have</b>\" [S11]. The first half is functional, the second half is nonfunctional.</p><p><b>Functional</b> = relates directly to a <b>process</b> the system must perform or <b>information</b> it must contain (\"process or data\") [S12].</p><table><tr><th>Subtype</th><th>Meaning</th><th>Course-registration example</th></tr><tr><td>Process-oriented</td><td>a process the system must do</td><td>The system must let students register for a course.</td></tr><tr><td>Information-oriented</td><td>information the system must contain</td><td>The system must keep each student's grades for 4 years.</td></tr></table><p>Slide pair: \"allow customers to <b>review</b> their order history\" = process; \"<b>retain</b> order history for three years\" = information.</p><p>Clue words: <i>allow, check, calculate, produce, print</i> → process. <i>include, retain, store</i> → information.</p>"
+   },
+   {
+    "h": "Nonfunctional requirements: O-P-S-C",
+    "body": "<p><b>Nonfunctional</b> = <b>behavioral properties</b> the system must have, like performance and usability [S13]. They are used mainly in <b>design</b> (user interface, hardware and software, physical architecture).</p><table><tr><th>Type</th><th>About</th><th>Slide example</th></tr><tr><td><b>Operational</b></td><td>physical and technical environment</td><td>work on any Web browser; integrate with the existing inventory system</td></tr><tr><td><b>Performance</b></td><td>speed, capacity, reliability</td><td>no interaction over 2 seconds; available 24 h a day, 365 days a year</td></tr><tr><td><b>Security</b></td><td>who may access what, when</td><td>only direct managers see staff personnel records</td></tr><tr><td><b>Cultural and political</b></td><td>culture, politics, law</td><td>US vs European currency; buy computers only from Dell; insurance industry standards</td></tr></table><p><b>Traps:</b> Web-browser access = nonfunctional (operational). \"24/365\" = performance (reliability), not operational.</p>",
+    "diagram": "flowchart TD\n  R[\"Requirement\"] --> F[\"Functional\"]\n  R --> N[\"Nonfunctional\"]\n  F --> F1[\"Process-oriented\"]\n  F --> F2[\"Information-oriented\"]\n  N --> N1[\"Operational\"]\n  N --> N2[\"Performance\"]\n  N --> N3[\"Security\"]\n  N --> N4[\"Cultural and political\"]"
+   },
+   {
+    "h": "The requirements definition report (and 4 real-world problems)",
+    "body": "<p><b>Requirements definition</b> = \"a straightforward text report that simply lists the functional and nonfunctional requirements <b>in an outline format</b>\" [S16].</p><p>The doctor's-office sample:</p><ul><li><b>Nonfunctional</b>, grouped by the 4 types: 1. Operational (1.1 runs in Windows…), 2. Performance (2.1 store an appointment in 2 seconds or less), 3. Security (3.1 only doctors set their availability), 4. Cultural and political (\"none anticipated\": an empty type is still listed).</li><li><b>Functional</b>, grouped by process: 1. Manage appointments (patient makes / changes / cancels), 2. Produce schedule, 3. Record doctor availability.</li></ul><p><b>4 real-world problems</b> [S20]: (1) no access to the right users; (2) weak specification, especially with agile's light techniques; (3) some requirements can't be known at the start; (4) verifying and validating is hard.</p>"
+   }
+  ],
+  "example": {
+   "problem": "<p><b>The S15 exercise</b> (\"one of the most common mistakes by new analysts is to confuse functional and nonfunctional\"). Classify each requirement of a sales system. The system should:</p><ol><li>be accessible to the Web users</li><li>include the company standard logo and color scheme</li><li>restrict access to profitability information</li><li>include actual and budgeted cost information</li><li>provide management reports</li><li>include sales information that is updated at least daily</li><li>have a two-second maximum response time for predefined queries and ten minutes for ad hoc queries</li><li>include information from all company subsidiaries</li><li>print subsidiary reports in the primary language of the subsidiary</li><li>provide monthly rankings of salesperson performance</li></ol>",
+   "solution": "<table><tr><th>#</th><th>Answer</th><th>Why</th></tr><tr><td>1</td><td>NF, operational</td><td>Web access is nonfunctional (S13)</td></tr><tr><td>2</td><td>NF, cultural and political</td><td>a company standard, not a process or data (borderline: usability also OK)</td></tr><tr><td>3</td><td>NF, security</td><td>who may see what</td></tr><tr><td>4</td><td>F, information</td><td>data the system holds</td></tr><tr><td>5</td><td>F, process</td><td>the system produces reports</td></tr><tr><td>6</td><td>NF, performance</td><td>the point is how often data is refreshed (mixed: \"include sales info\" alone is F)</td></tr><tr><td>7</td><td>NF, performance</td><td>response time = speed</td></tr><tr><td>8</td><td>F, information</td><td>data the system holds</td></tr><tr><td>9</td><td>NF, cultural and political</td><td>local language</td></tr><tr><td>10</td><td>F, process</td><td>computes rankings. Trap: \"performance\" = the salespeople's, not the system's</td></tr></table><p><b>Functional: 4, 5, 8, 10. Nonfunctional: 1, 2, 3, 6, 7, 9.</b> The slide gives no official key; on the exam, add one short reason for items 2 and 6.</p>"
+  },
+  "check": [
+   {
+    "q": "<b>Professor's MCQ [W6-S3]:</b> Which is NOT a purpose of the requirements definition? (a very high-level explanation of the business requirements / a more precise list of requirements used as inputs to the rest of analysis / create functional requirements / create cost/benefit analysis / create non-functional requirements)",
+    "a": "<b>Create cost/benefit analysis.</b> That is economic feasibility, a separate part of the proposal. (The \"very high-level\" option is also doubtful, because the definition makes requirements <i>detailed</i>; but pick cost/benefit.)"
+   },
+   {
+    "q": "<b>Professor's MCQ [W6-S3]:</b> An example of a functional requirement is ___ (access to the customer order system / available in English and Spanish / accessed through a Blackberry device / displayed in IE, Firefox or Chrome / automatically updated every 5 seconds)",
+    "a": "<b>Access to the customer order system.</b> The others: English and Spanish = cultural; Blackberry = operational; browsers = operational; every 5 seconds = performance."
+   },
+   {
+    "q": "<b>Professor's question [W6-S2 #1]:</b> What are the key deliverables created during analysis?",
+    "a": "The <b>requirements definition</b>, the <b>models</b>, the (revised) <b>feasibility analysis</b> and <b>workplan</b>, packaged as the <b>system proposal</b> for the approval committee."
+   },
+   {
+    "q": "<b>Professor's question [W6-S2 #3]:</b> What is the purpose of the requirements definition?",
+    "a": "To convert the high-level business requirements from the system request into <b>detailed requirements</b> that are inputs for the models. It lists the functional and nonfunctional requirements in outline format."
+   },
+   {
+    "q": "\"Staff training needs\": project requirement or product requirement? And \"available 24 hours a day, 365 days a year\": which type?",
+    "a": "Staff training = <b>project</b> requirement (S5). 24/365 = <b>nonfunctional, performance</b> (reliability)."
+   }
+  ],
+  "exam": {
+   "question": "<p>Classify each requirement for a university course-registration system as functional (process / information) or nonfunctional (operational / performance / security / cultural and political):</p><ol><li>Students can drop a course online.</li><li>The system keeps the full list of courses offered each semester.</li><li>Only advisors can approve an overload request.</li><li>Search results appear in under 3 seconds.</li><li>The system works on phones and laptops.</li><li>Screens are available in English, Uzbek and Russian.</li></ol>",
+   "answer": "<p>A requirement is what the system must do (functional) or a characteristic it must have (nonfunctional).</p><ol><li><b>Functional, process-oriented</b>: an action the system performs.</li><li><b>Functional, information-oriented</b>: data it contains.</li><li><b>Nonfunctional, security</b>: who has authorized access.</li><li><b>Nonfunctional, performance</b>: speed.</li><li><b>Nonfunctional, operational</b>: technical environment.</li><li><b>Nonfunctional, cultural and political</b>: languages.</li></ol>"
+  },
+  "memorize": [
+   "System proposal = requirements definition + models + feasibility + workplan → approval committee",
+   "Requirement = what the system must DO or a characteristic it must HAVE",
+   "Project req = scope/time/budget/resources (stakeholders); product req = features (product owner)",
+   "Business req = WHAT, analysis, business view; system req = HOW, design, developer view",
+   "Functional = process-oriented + information-oriented",
+   "Nonfunctional = Operational · Performance · Security · Cultural and political (O-P-S-C)",
+   "Web browser access = operational; 24/365 = performance; \"salesperson performance\" = functional",
+   "Requirements definition = text report, F + NF, outline format",
+   "S15 answer: F = 4, 5, 8, 10; NF = 1, 2, 3, 6, 7, 9"
+  ]
+ },
+ {
+  "id": "W5b-2",
+  "label": "W5b·2",
+  "week": "W5b",
+  "slides": [
+   17,
+   18,
+   19,
+   21,
+   22,
+   23,
+   24,
+   25,
+   26,
+   27,
+   28,
+   29,
+   30,
+   31,
+   32,
+   33
+  ],
+  "kind": "theory",
+  "title": "Requirements analysis strategies: BPA vs BPI vs BPR",
+  "hook": "After this lesson you can compare BPA, BPI and BPR (change, value, cost, breadth, risk), name the 8 techniques under them, and do a duration analysis.",
+  "cards": [
+   {
+    "h": "Two toolboxes and three steps",
+    "body": "<p>Sometimes users don't know what they want. Analysts help them with two toolboxes:</p><ul><li><b>Analysis strategies</b> [S17]: <b>BPA</b> (automation), <b>BPI</b> (improvement), <b>BPR</b> (reengineering). They <i>guide users</i> to discover their needs.</li><li><b>Gathering techniques</b> [S19]: interviews, questionnaires, observation, JAD, document analysis. They <i>collect information</i> from users.</li></ul><p>All three strategies follow the same <b>3 steps</b> [S21]:</p><ol><li>Understand the <b>as-is</b> system (\"the current state of systems and processes\").</li><li>Identify improvements.</li><li>Develop requirements for the <b>to-be</b> system (\"a concept for a new system\").</li></ol><p>The difference is <b>how much change</b>: BPA small, BPI moderate, BPR significant [S18].</p>",
+    "diagram": "flowchart LR\n  A[\"1. Understand the as-is system\"] --> B[\"2. Identify improvements\"]\n  B --> C[\"3. Develop to-be requirements\"]"
+   },
+   {
+    "h": "BPA: automate, change little",
+    "body": "<p><b>BPA</b> keeps the way the organization works and <b>uses computers to do some of the work</b>. More efficient, but \"<b>the least impact on the business</b>\" [S22]. BPA planners spend <b>a lot of time</b> on the as-is system.</p><p>Café example: waiters still take orders the same way, but on a tablet instead of paper.</p><p><b>Technique 1: Problem analysis</b>: ask users and managers to name problems in the as-is system and how to solve them in the to-be system. The most straightforward and \"probably the most commonly used\" <b>analysis</b> technique.</p><p><b>Technique 2: Root cause analysis</b>: users jump to solutions. Every solution makes <b>assumptions</b> about the problem, and they may be wrong. Often the solution fixes a <b>symptom</b>, not the <b>root cause</b>. So ask \"why?\" until you find the real cause.</p>",
+    "diagram": "flowchart LR\n  P[\"Problem: kitchen loses orders\"] --> S1[\"Quick fix: shout louder\"]\n  P --> Q{\"Why does it happen?\"}\n  Q --> RC[\"Root cause: orders on loose paper\"]\n  RC --> S2[\"Real fix: orders go to a kitchen screen\"]"
+   },
+   {
+    "h": "BPI: improve, change moderately",
+    "body": "<p><b>BPI</b> makes <b>moderate changes</b> to use new technology or to <b>copy what competitors do</b> [S24]. It improves:</p><ul><li><b>efficiency</b> = doing things right</li><li><b>effectiveness</b> = doing the right things</li></ul><p>BPI spends <b>much less time</b> on the as-is than BPA. Three activities:</p><ol><li><b>Duration analysis</b>: time each step and compare with the total time (next card).</li><li><b>Activity-based costing</b>: same idea but with <b>cost</b>. Find the cost of each step, find the most costly ones, improve those. Direct costs = labour + materials (labour = time spent × hourly cost of staff). Indirect costs (rent, depreciation) can be added.</li><li><b>Informal benchmarking</b>: study how <b>other organizations</b> do the process, often by <b>visiting them as customers</b>. Common for customer-facing processes. Slide example: for a car-dealer website, visit competitors' sites, other car-industry sites, and award-winning sites from other industries.</li></ol>"
+   },
+   {
+    "h": "Duration analysis in numbers",
+    "body": "<p><b>Method</b> [S25]:</p><ol><li>Measure the average <b>total time</b> of the process for a typical input.</li><li>Time <b>each step</b>.</li><li>Add the step times.</li><li><b>Compare</b> the sum with the total.</li></ol><p><b>Slide example</b> [S26]: a bank takes <b>30 days</b> to approve a home mortgage. The steps (data entry, credit check, title search, appraisal) take only about <b>8 hours</b> in total.</p><table><tr><th>View</th><th>Elapsed</th><th>Work</th><th>Work share</th></tr><tr><td>Working days (8 h)</td><td>30 × 8 = 240 h</td><td>8 h</td><td>8 ÷ 240 ≈ 3.3%</td></tr><tr><td>Clock hours</td><td>30 × 24 = 720 h</td><td>8 h</td><td>8 ÷ 720 ≈ 1.1%</td></tr></table><p>Conclusion in the slide's words: \"a strong indication that the overall process is <b>badly broken</b>, because it takes thirty days to perform one day's work.\" The order mostly sits and waits.</p>"
+   },
+   {
+    "h": "BPR: reinvent, change a lot",
+    "body": "<p><b>BPR</b> changes the <b>fundamental</b> way the organization works, \"<b>obliterating</b> the current way of doing business\" [S29]. Planners spend <b>little time</b> on the as-is, because they want new ideas.</p><p>Café example: no waiters at all; customers order and pay in an app, and food goes to a pickup shelf.</p><ol><li><b>Outcome analysis</b>: find the basic outcomes that give <b>value to customers</b>. They sound obvious but often are not.</li><li><b>Technology analysis</b>: list important and interesting technologies, then for <b>every</b> one, find how it could be used in the process and how the business would benefit.</li><li><b>Activity elimination</b>: for <b>each</b> activity, ask how to remove it, how the work could go on without it, and what would happen. A \"<b>force-fit exercise</b>\": you must address every activity, even if some results are silly.</li></ol>"
+   },
+   {
+    "h": "Comparing and choosing a strategy",
+    "body": "<table><tr><th></th><th>BPA</th><th>BPI</th><th>BPR</th></tr><tr><td>Amount of change</td><td>small</td><td>moderate</td><td>significant</td></tr><tr><td>Time on as-is</td><td>a lot</td><td>much less</td><td>little</td></tr><tr><td>Techniques</td><td>problem analysis, root cause analysis</td><td>duration analysis, activity-based costing, informal benchmarking</td><td>outcome analysis, technology analysis, activity elimination</td></tr><tr><td>Potential business value</td><td>Low–moderate</td><td>Moderate</td><td>High</td></tr><tr><td>Project cost</td><td>Low</td><td>Low–moderate</td><td>High</td></tr><tr><td>Breadth of analysis</td><td>Narrow</td><td>Narrow–moderate</td><td>Very broad</td></tr><tr><td>Risk</td><td>Low–moderate</td><td>Low–moderate</td><td>Very high</td></tr></table><p>Pattern: BPA → BPR, value, cost and breadth go up. <b>Risk is the same for BPA and BPI</b>, then jumps to very high.</p><p>S33: \"No one technique is inherently better than the others, and in practice most projects use a <b>combination</b>.\"</p>",
+    "diagram": "flowchart LR\n  subgraph BPA[\"BPA: small change\"]\n    a1[\"Problem analysis\"]\n    a2[\"Root cause analysis\"]\n  end\n  subgraph BPI[\"BPI: moderate change\"]\n    b1[\"Duration analysis\"]\n    b2[\"Activity-based costing\"]\n    b3[\"Informal benchmarking\"]\n  end\n  subgraph BPR[\"BPR: significant change\"]\n    c1[\"Outcome analysis\"]\n    c2[\"Technology analysis\"]\n    c3[\"Activity elimination\"]\n  end\n  BPA -->|\"more value, cost, risk\"| BPI\n  BPI -->|\"even more\"| BPR"
+   }
+  ],
+  "example": {
+   "problem": "<p><b>Practice (new numbers, slide method).</b> At a university, a request to join a full course takes on average <b>10 working days</b> (8-hour days). The analysts time each step: student fills the form 0.5 h · advisor checks 0.25 h · department head signs 0.25 h · registrar checks timetable clash 0.5 h · registrar enters it 0.5 h.</p><p>(a) Do the duration analysis. (b) What does it show? (c) Which strategy is this, and what are its other two activities?</p>",
+   "solution": "<p><b>(a)</b></p><ul><li>Step total = 0.5 + 0.25 + 0.25 + 0.5 + 0.5 = <b>2 h</b>.</li><li>Elapsed = 10 × 8 = <b>80 working hours</b>.</li><li>Ratio = 80 : 2 = <b>40 : 1</b>.</li><li>Real work = 2 ÷ 80 = <b>2.5%</b>; waiting = 78 h = <b>97.5%</b>.</li></ul><p><b>(b)</b> Like the mortgage case, it is \"a strong indication that the overall process is badly broken\": 10 days for a quarter of a day's work. The request mostly waits between signatures.</p><p><b>(c)</b> <b>BPI</b>. Its other activities: <b>activity-based costing</b> and <b>informal benchmarking</b>.</p>"
+  },
+  "check": [
+   {
+    "q": "<b>Professor's question [W6-S2 #2]:</b> What is the difference between an as-is system and a to-be system?",
+    "a": "<b>As-is</b> = the current state of systems and processes. <b>To-be</b> = a concept for the new system [S18]."
+   },
+   {
+    "q": "<b>Professor's question [W6-S2 #4]:</b> What are the three basic steps of analysis? Which step is sometimes skipped or done quickly, and why?",
+    "a": "Understand the as-is → identify improvements → develop to-be requirements. The <b>as-is step</b> gets cut: BPA spends a lot of time on it, BPI much less, and BPR little, because BPR wants new ideas, not the old way."
+   },
+   {
+    "q": "Which strategy does each belong to: activity elimination, informal benchmarking, root cause analysis, technology analysis, activity-based costing?",
+    "a": "Activity elimination → <b>BPR</b>; informal benchmarking → <b>BPI</b>; root cause analysis → <b>BPA</b>; technology analysis → <b>BPR</b>; activity-based costing → <b>BPI</b>."
+   },
+   {
+    "q": "On the S33 table, which two strategies have the same risk? Which has the highest cost?",
+    "a": "<b>BPA and BPI</b> (both low–moderate). <b>BPR</b> has high cost (and very high risk)."
+   },
+   {
+    "q": "Efficiency vs effectiveness?",
+    "a": "Efficiency = <b>doing things right</b>. Effectiveness = <b>doing the right things</b>. BPI can improve both [S24]."
+   }
+  ],
+  "exam": {
+   "question": "<p>Compare business process automation, business process improvement and business process reengineering. For each, give the amount of change, the time spent on the as-is system, two techniques, and the potential value, cost, breadth and risk. Which one should a project choose?</p>",
+   "answer": "<table><tr><th></th><th>BPA</th><th>BPI</th><th>BPR</th></tr><tr><td>Idea</td><td>keep the process, computers do some work</td><td>moderate changes: new technology or copy competitors</td><td>change the fundamental way of working</td></tr><tr><td>Change</td><td>small</td><td>moderate</td><td>significant</td></tr><tr><td>As-is time</td><td>significant</td><td>much less</td><td>little</td></tr><tr><td>Techniques</td><td>problem analysis, root cause analysis</td><td>duration analysis, activity-based costing, informal benchmarking</td><td>outcome analysis, technology analysis, activity elimination</td></tr><tr><td>Value</td><td>low–moderate</td><td>moderate</td><td>high</td></tr><tr><td>Cost</td><td>low</td><td>low–moderate</td><td>high</td></tr><tr><td>Breadth</td><td>narrow</td><td>narrow–moderate</td><td>very broad</td></tr><tr><td>Risk</td><td>low–moderate</td><td>low–moderate</td><td>very high</td></tr></table><p>No one technique is inherently better; most projects use a combination.</p>",
+   "diagram": "flowchart LR\n  A[\"BPA: automate\"] -->|\"more change\"| B[\"BPI: improve\"]\n  B -->|\"more change\"| C[\"BPR: reinvent\"]"
+  },
+  "memorize": [
+   "3 steps: understand as-is → identify improvements → develop to-be",
+   "BPA small · BPI moderate · BPR significant change",
+   "As-is time: BPA a lot, then BPI much less, then BPR little",
+   "BPA: problem analysis, root cause analysis",
+   "BPI: duration analysis, activity-based costing, informal benchmarking",
+   "BPR: outcome analysis, technology analysis, activity elimination",
+   "S33: value L–M / M / H · cost L / L–M / H · breadth N / N–M / very broad · risk L–M / L–M / very high",
+   "Efficiency = doing things right; effectiveness = doing the right things",
+   "Mortgage: 30 days for 8 h of work → badly broken",
+   "Problem analysis = most common ANALYSIS technique; activity elimination = force-fit"
+  ]
+ },
+ {
+  "id": "W5b-3",
+  "label": "W5b·3",
+  "week": "W5b",
+  "slides": [
+   34,
+   35,
+   36,
+   37,
+   38,
+   39,
+   40,
+   41,
+   42,
+   43,
+   44,
+   45
+  ],
+  "kind": "theory",
+  "title": "Interviews: the most common way to gather requirements",
+  "hook": "After this lesson you can describe the 5 interview steps, write closed, open and probing questions, and explain structured vs unstructured and top-down vs bottom-up interviews.",
+  "cards": [
+   {
+    "h": "Why gathering matters, and the 5 interview steps",
+    "body": "<p>Gathering requirements does more than collect facts. It builds <b>political support</b> for the project and <b>trust and rapport</b> with the users, who will decide to use the system or not. <b>All key stakeholders must be included</b> [S34].</p><p>The <b>interview</b> is \"the <b>most commonly used</b> requirements-gathering technique\": if you want to know something, you ask [S35]. Usually one-on-one; several people at once only when time is short.</p><p><b>5 steps:</b></p><ol><li>Select interviewees</li><li>Design interview questions</li><li>Prepare for the interview</li><li>Conduct the interview</li><li>Post-interview follow-up</li></ol>",
+    "diagram": "flowchart LR\n  S1[\"1. Select interviewees\"] --> S2[\"2. Design questions\"]\n  S2 --> S3[\"3. Prepare\"]\n  S3 --> S4[\"4. Conduct\"]\n  S4 --> S5[\"5. Follow up\"]"
+   },
+   {
+    "h": "Step 1: choose who, the interview schedule",
+    "body": "<p>Make an <b>interview schedule</b>: <b>who</b> will be interviewed, <b>when</b>, and <b>for what purpose</b> [S36].</p><p>Include <b>both</b> managers (who manage the processes) and staff (who actually do them). You get high-level <i>and</i> low-level views.</p><p>The slide's schedule goes down the company: Director of Accounting (strategic vision, 2 h) → AR and AP managers (current problems, future goals) → data-entry supervisor and clerk (how the processes are done).</p><p>Café app example: interview the owner (vision), the manager (problems), and a waiter and a cook (how orders really move).</p>"
+   },
+   {
+    "h": "Step 2a: three types of questions",
+    "body": "<table><tr><th>Type</th><th>What it is</th><th>Like on an exam</th><th>Slide example</th></tr><tr><td><b>Closed-ended</b></td><td>needs a specific answer; for specific, precise information</td><td>multiple choice or arithmetic</td><td>How many telephone orders are received per day?</td></tr><tr><td><b>Open-ended</b></td><td>room to explain; rich information; the interviewee has more control</td><td>essay</td><td>What do you think about the current system?</td></tr><tr><td><b>Probing</b></td><td>follows up on the last answer when it is unclear; shows you are listening</td><td>–</td><td>Why? Can you give me an example?</td></tr></table><p>\"No type of question is better than another\"; mix them [S39].</p><p><b>Trap:</b> the slide lists \"How do customers place orders?\" and \"What information is missing from the monthly sales report?\" as <b>closed-ended</b>. Answer as the slide does.</p>"
+   },
+   {
+    "h": "Step 2b: structured vs unstructured, top-down vs bottom-up",
+    "body": "<table><tr><th></th><th>Unstructured</th><th>Structured</th></tr><tr><td>When</td><td>early; the as-is is unclear</td><td>later; you know the process well</td></tr><tr><td>Seeks</td><td>broad, roughly defined information</td><td>very specific information (e.g. exactly how a credit card is approved)</td></tr><tr><td>Questions</td><td>few closed; open and probing \"on the fly\"</td><td>prepared before; <b>more closed-ended</b></td></tr><tr><td>Note</td><td>the <b>most challenging</b> to conduct</td><td>–</td></tr></table><p><b>Order of questions</b> [S40]: <b>top-down</b> = broad → specific. <b>Bottom-up</b> = specific → broad. In practice: broad → specific → back to broad.</p>",
+    "diagram": "flowchart TD\n  H[\"Very general: How can order processing be improved?\"] --> M[\"Moderately specific: How can we reduce returned items?\"]\n  M --> L[\"Very specific: How can we stop shipping the wrong products?\"]"
+   },
+   {
+    "h": "Steps 3 and 4: prepare and conduct",
+    "body": "<p><b>Prepare</b> like for a presentation [S42]:</p><ul><li>a general interview plan with the questions in order</li><li>expect possible answers and plan follow-ups</li><li>plan segues (smooth moves) between topics</li><li>check what the person knows, so you don't ask what they can't answer</li><li>decide priorities in case time runs short</li></ul><p><b>Conduct</b> [S43]:</p><ul><li><b>First goal: build rapport</b>, so the person tells the whole truth, not just what they think you want.</li><li>Look professional, unbiased, an independent seeker of information.</li><li>Start by explaining why you are there and why you chose them.</li><li><b>Take careful notes of everything</b>, even if it seems unimportant. It's fine to ask them to slow down.</li></ul>"
+   },
+   {
+    "h": "Step 5: follow-up and the interview report",
+    "body": "<p>After the interview, write an <b>interview report</b>: your notes, summarized in a useful format [S44].</p><ul><li>Write it <b>within 48 hours</b>, because you forget fast.</li><li>Often <b>send it to the interviewee</b> to check and add clarifications.</li></ul><p><b>Parts of the sample report</b> [S45]: approved by · person interviewed · interviewer · purpose · summary · open items · detailed notes.</p><p>In the sample, the HR director names two big problems: data too old (needed 2 days after month end, delivered after 3 weeks) and poor data quality. One open item is \"interview Jim Wack about the <i>reasons</i> for data quality problems\": that is root cause thinking from BPA.</p>"
+   }
+  ],
+  "example": {
+   "problem": "<p>You are the analyst for a new ordering app for a Tashkent café. (a) Who do you put on the interview schedule? (b) Write one closed-ended, one open-ended and one probing question. (c) Early in the project, would you use a structured or an unstructured interview?</p>",
+   "solution": "<p><b>(a)</b> Managers <i>and</i> staff: the owner (strategic vision), the manager (current problems, future goals), a waiter and a cook (how orders really flow). For each: name, position, purpose, meeting time.</p><p><b>(b)</b></p><ul><li>Closed: \"How many orders do you get on a Friday evening?\"</li><li>Open: \"What problems do you face with orders every day?\"</li><li>Probing: \"Can you give me an example of a lost order?\"</li></ul><p><b>(c)</b> <b>Unstructured</b>: the as-is process is still unclear, so ask broad open questions and probe on the fly. Later, use structured interviews with more closed questions.</p>"
+  },
+  "check": [
+   {
+    "q": "<b>Professor's question [W6-S2 #6]:</b> Explain the differences among closed-ended, open-ended and probing questions. When would you use each?",
+    "a": "<b>Closed</b>: needs a specific answer; use for specific, precise information (how many per day). <b>Open</b>: leaves room to explain; use to gather rich information and give the interviewee control. <b>Probing</b>: follows up on an answer; use when the answer is unclear, to expand or confirm."
+   },
+   {
+    "q": "<b>Professor's question [W6-S2 #7]:</b> Explain the differences between unstructured and structured interviews. When would you use each?",
+    "a": "<b>Unstructured</b>: broad, roughly defined information; early, when the as-is is unclear; open questions and probing on the fly; the most challenging. <b>Structured</b>: specific questions prepared in advance; later, when you need exact details; more closed-ended questions."
+   },
+   {
+    "q": "Within how many hours should the interview report be written, and who often checks it?",
+    "a": "<b>48 hours.</b> It is often sent to the <b>interviewee</b> to check and clarify."
+   },
+   {
+    "q": "\"Can you explain that in a bit more detail?\" Which type of question?",
+    "a": "<b>Probing.</b>"
+   },
+   {
+    "q": "Top-down vs bottom-up interview?",
+    "a": "Top-down: start broad and general, move to specific. Bottom-up: start very specific, move to broad. In practice analysts mix them: broad → specific → broad."
+   }
+  ],
+  "exam": {
+   "question": "<p><b>Professor's question [W6-S2 #5]:</b> Describe the five major steps in conducting interviews.</p>",
+   "answer": "<ol><li><b>Select interviewees</b>: make an interview schedule (who, when, for what purpose). Include managers and staff to get high- and low-level views.</li><li><b>Design interview questions</b>: closed-ended, open-ended and probing; structured or unstructured; ordered top-down or bottom-up.</li><li><b>Prepare</b>: an interview plan with questions in order, expected answers and follow-ups, segues, check the interviewee's knowledge, set priorities in case time runs short.</li><li><b>Conduct</b>: build rapport first, appear professional and unbiased, explain why you are there, take careful notes of everything.</li><li><b>Post-interview follow-up</b>: write the interview report within 48 hours and send it to the interviewee to check.</li></ol>",
+   "diagram": "flowchart LR\n  S1[\"Select\"] --> S2[\"Design\"]\n  S2 --> S3[\"Prepare\"]\n  S3 --> S4[\"Conduct\"]\n  S4 --> S5[\"Follow up: report in 48 h\"]"
+  },
+  "memorize": [
+   "Gathering builds political support + trust and rapport; include ALL key stakeholders",
+   "Interview = most commonly used GATHERING technique",
+   "5 steps: select · design · prepare · conduct · follow up",
+   "Schedule = who, when, purpose; managers AND staff",
+   "Closed = specific (MCQ) · open = rich (essay) · probing = follow-up (Why?)",
+   "Unstructured = early, broad, most challenging; structured = later, prepared, more closed",
+   "Top-down = broad → specific; bottom-up = specific → broad; practice = mix",
+   "Conduct: rapport first, notes on everything",
+   "Report within 48 h, sent to the interviewee"
+  ],
+  "note": "Slide S39 has a small typo: \"more closed-ended questions in a structured interview then in the unstructured\" should be \"than\". The meaning: structured interviews have MORE closed-ended questions."
+ }
+]

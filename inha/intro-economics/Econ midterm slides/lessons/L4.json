@@ -1,0 +1,874 @@
+[
+ {
+  "id": "Q9",
+  "label": "Q9",
+  "week": 5,
+  "slides": [
+   12
+  ],
+  "kind": "theory",
+  "title": "What a price rise does to total revenue: dR/dP = Q(1 − e)",
+  "hook": "After this lesson you can look at one number, the elasticity e, and say if a price rise makes the seller richer or poorer.",
+  "cards": [
+   {
+    "h": "Total revenue = price × quantity",
+    "body": "<p>You sell bread at the bazaar: 100 loaves at 4,000 som each. Your <b>total revenue</b> is R = P × Q = 4,000 × 100 = 400,000 som.</p><p>On a demand graph, revenue is a <b>rectangle</b>: height = price, width = quantity. Slide 10 shows a bridge toll: $0.90 × 1,100 crossings = <b>$990</b>.</p>"
+   },
+   {
+    "h": "A price rise pulls revenue two ways",
+    "body": "<p>When the seller raises the price, two things happen at the same time:</p><ul><li><b>Price effect</b> (area C): every unit you still sell brings more money. Revenue goes <b>up</b>.</li><li><b>Quantity effect</b> (area A): buyers buy fewer units. Revenue goes <b>down</b>.</li></ul><p>With the slide 10 numbers, C = $0.20 × 900 = $180 and A = $0.90 × 200 = $180. They cancel, so revenue stays $990. Which effect wins in general? <b>Elasticity decides.</b></p>",
+    "chart": {
+     "x": "Quantity of crossings (per day)",
+     "y": "Price of crossing ($)",
+     "xmax": 1400,
+     "ymax": 1.5,
+     "xticks": [
+      900,
+      1100
+     ],
+     "yticks": [
+      0.9,
+      1.1
+     ],
+     "lines": [
+      {
+       "pts": [
+        [
+         700,
+         1.414
+        ],
+        [
+         800,
+         1.238
+        ],
+        [
+         900,
+         1.1
+        ],
+        [
+         1000,
+         0.99
+        ],
+        [
+         1100,
+         0.9
+        ],
+        [
+         1250,
+         0.792
+        ],
+        [
+         1400,
+         0.707
+        ]
+       ],
+       "label": "D",
+       "role": "demand"
+      }
+     ],
+     "areas": [
+      {
+       "pts": [
+        [
+         0,
+         0
+        ],
+        [
+         900,
+         0
+        ],
+        [
+         900,
+         0.9
+        ],
+        [
+         0,
+         0.9
+        ]
+       ],
+       "role": "other",
+       "label": "B: kept $810"
+      },
+      {
+       "pts": [
+        [
+         0,
+         0.9
+        ],
+        [
+         900,
+         0.9
+        ],
+        [
+         900,
+         1.1
+        ],
+        [
+         0,
+         1.1
+        ]
+       ],
+       "role": "cs",
+       "label": "C: +$180"
+      },
+      {
+       "pts": [
+        [
+         900,
+         0
+        ],
+        [
+         1100,
+         0
+        ],
+        [
+         1100,
+         0.9
+        ],
+        [
+         900,
+         0.9
+        ]
+       ],
+       "role": "dwl",
+       "label": "A: −$180"
+      }
+     ],
+     "points": [
+      {
+       "x": 900,
+       "y": 1.1,
+       "label": "after"
+      },
+      {
+       "x": 1100,
+       "y": 0.9,
+       "label": "before"
+      }
+     ],
+     "caption": "Price $0.90 → $1.10. Gain C (price effect) = $180, loss A (quantity effect) = $180. Revenue stays $990."
+    }
+   },
+   {
+    "h": "The formula on slide 12",
+    "body": "<p><b>dR/dP = Q(1 − e)</b></p><ul><li>dR/dP means: \"if the price goes up a little, how much does revenue change?\"</li><li>Q = quantity sold. It is always <b>positive</b>.</li><li>e = price elasticity of demand (a positive number).</li></ul><p>Because Q &gt; 0, the <b>sign</b> of dR/dP is the sign of <b>(1 − e)</b>. So only e decides if revenue goes up or down. (Where the formula comes from is lesson Q18.)</p>"
+   },
+   {
+    "h": "The three cases",
+    "body": "<table><tr><th>e</th><th>1 − e</th><th>dR/dP</th><th>Seller raises price → revenue</th></tr><tr><td>e &lt; 1 (inelastic)</td><td>&gt; 0</td><td>&gt; 0</td><td><b>increases</b>, even though Q decreases</td></tr><tr><td>e = 1 (unit-elastic)</td><td>= 0</td><td>= 0</td><td><b>does not change</b>; revenue is at its maximum (or minimum)</td></tr><tr><td>e &gt; 1 (elastic)</td><td>&lt; 0</td><td>&lt; 0</td><td><b>decreases</b>: \"demand decreases too much\"</td></tr></table><p>Simple picture: inelastic buyers stay, so the price effect wins. Elastic buyers run away, so the quantity effect wins.</p>"
+   },
+   {
+    "h": "Where is each case on a demand line?",
+    "body": "<p>On a straight demand line, elasticity is <b>not the same</b> everywhere. High prices (top part): elastic. Low prices (bottom part): inelastic. In the middle: e = 1, and revenue is the biggest there.</p><p>Table 5-1 examples: <b>eggs e = 0.1</b>, inelastic, so an egg seller earns more by raising the price. <b>Foreign travel e = 4.1</b>, elastic, so a travel company earns more by <b>cutting</b> the price.</p>",
+    "chart": {
+     "x": "Quantity Q",
+     "y": "Price P",
+     "xmax": 100,
+     "ymax": 50,
+     "xticks": [
+      20,
+      50,
+      80
+     ],
+     "yticks": [
+      10,
+      25,
+      40
+     ],
+     "lines": [
+      {
+       "pts": [
+        [
+         0,
+         50
+        ],
+        [
+         100,
+         0
+        ]
+       ],
+       "label": "D: Q = 100 − 2P",
+       "role": "demand"
+      }
+     ],
+     "points": [
+      {
+       "x": 20,
+       "y": 40,
+       "label": "e = 4 (elastic): raise P → R falls",
+       "guides": true
+      },
+      {
+       "x": 50,
+       "y": 25,
+       "label": "e = 1: R is maximum",
+       "guides": true
+      },
+      {
+       "x": 80,
+       "y": 10,
+       "label": "e = 0.25 (inelastic): raise P → R rises",
+       "guides": true
+      }
+     ],
+     "caption": "On a straight demand line: top part elastic, bottom part inelastic, middle e = 1."
+    }
+   }
+  ],
+  "example": {
+   "problem": "<p>Use dR/dP = Q(1 − e).</p><p>(a) An egg seller sells Q = 1,000 eggs a day; e = 0.1.<br>(b) An airline sells Q = 500 tickets a day; e = 2.4.</p><p>For each one, find the sign of dR/dP. Should the seller raise the price to earn more revenue?</p>",
+   "solution": "<p><b>(a)</b> dR/dP = 1,000 × (1 − 0.1) = 1,000 × 0.9 = <b>900 &gt; 0</b>. Demand is inelastic (e &lt; 1). A higher price raises revenue, so <b>yes, raise the price</b>.</p><p><b>(b)</b> dR/dP = 500 × (1 − 2.4) = 500 × (−1.4) = <b>−700 &lt; 0</b>. Demand is elastic (e &gt; 1). A higher price lowers revenue, because buyers leave. So <b>no</b>. To earn more, the airline should <b>lower</b> the price.</p>"
+  },
+  "check": [
+   {
+    "q": "e = 0.3. What is the sign of dR/dP? What happens to revenue if the price goes up?",
+    "a": "1 − 0.3 = 0.7 &gt; 0, so dR/dP &gt; 0. Revenue goes <b>up</b>."
+   },
+   {
+    "q": "e = 1. The seller raises the price a little. What happens to revenue?",
+    "a": "Nothing: dR/dP = 0. Revenue is at its maximum (or minimum)."
+   },
+   {
+    "q": "Why can revenue fall when the price goes up?",
+    "a": "Because Q falls too much: the quantity effect (lost units) is bigger than the price effect (higher price per unit). This happens when e &gt; 1."
+   },
+   {
+    "q": "Foreign travel has e = 4.1. To earn more, raise or cut the price?",
+    "a": "Cut the price. Elastic demand: a lower price raises revenue."
+   }
+  ],
+  "exam": {
+   "question": "<p>Explain the meaning of dR/dP = Q(1 − e). What happens to the seller's total revenue when he raises the price, if demand is (1) inelastic, (2) unit-elastic, (3) elastic?</p>",
+   "answer": "<p>R = P × Q is total revenue and e is the price elasticity of demand. dR/dP = Q(1 − e) shows how revenue changes when the price rises. Since Q &gt; 0, the sign of dR/dP is the sign of (1 − e).</p><ol><li><b>Inelastic (e &lt; 1):</b> 1 − e &gt; 0, so dR/dP &gt; 0. As price goes up, total revenue increases, even though the quantity demanded decreases. The seller's revenue increases if he raises the price.</li><li><b>Unit-elastic (e = 1):</b> dR/dP = 0. Although the price changes, total revenue does not change. At e = 1 total revenue is at its maximum (or minimum).</li><li><b>Elastic (e &gt; 1):</b> 1 − e &lt; 0, so dR/dP &lt; 0. As price goes up, total revenue decreases, because the quantity demanded decreases too much.</li></ol>"
+  },
+  "memorize": [
+   "R = P × Q; dR/dP = Q(1 − e)",
+   "Q &gt; 0, so the sign of dR/dP = the sign of (1 − e)",
+   "e &lt; 1 (inelastic): raise price → revenue UP",
+   "e = 1: revenue unchanged; revenue is max (or min)",
+   "e &gt; 1 (elastic): raise price → revenue DOWN (Q falls too much)"
+  ]
+ },
+ {
+  "id": "Q17",
+  "label": "Q17",
+  "week": 5,
+  "slides": [
+   9
+  ],
+  "kind": "theory",
+  "title": "Four things that make demand elastic or inelastic",
+  "hook": "After this lesson you can look at any good and explain why buyers react strongly or weakly to its price.",
+  "cards": [
+   {
+    "h": "Quick recall: what elasticity measures",
+    "body": "<p>Price elasticity of demand: e = (% change in quantity demanded) ÷ (% change in price).</p><ul><li><b>e &gt; 1, elastic:</b> buyers react a lot. The demand curve looks <b>flat</b>.</li><li><b>e &lt; 1, inelastic:</b> buyers react a little. The demand curve looks <b>steep</b>.</li></ul><p>Slide 9 asks: <i>why</i> is demand elastic for some goods and inelastic for others? It names four factors.</p>",
+    "chart": {
+     "x": "Quantity",
+     "y": "Price",
+     "xmax": 10,
+     "ymax": 10,
+     "xticks": [
+      2.5,
+      4.8
+     ],
+     "yticks": [
+      5,
+      6
+     ],
+     "lines": [
+      {
+       "pts": [
+        [
+         4,
+         10
+        ],
+        [
+         6,
+         0
+        ]
+       ],
+       "label": "steep D: inelastic",
+       "role": "demand"
+      },
+      {
+       "pts": [
+        [
+         0,
+         7
+        ],
+        [
+         10,
+         3
+        ]
+       ],
+       "label": "flat D: elastic",
+       "role": "demand"
+      }
+     ],
+     "points": [
+      {
+       "x": 5,
+       "y": 5,
+       "label": "start",
+       "guides": true
+      },
+      {
+       "x": 4.8,
+       "y": 6,
+       "label": "Q = 4.8",
+       "guides": true
+      },
+      {
+       "x": 2.5,
+       "y": 6,
+       "label": "Q = 2.5",
+       "guides": true
+      }
+     ],
+     "caption": "Same price rise (5 → 6, +20%). Steep curve: Q falls only 4%. Flat curve: Q falls 50%."
+    }
+   },
+   {
+    "h": "Factor 1: are close substitutes available?",
+    "body": "<p>At the bazaar, ten stalls sell the same bread. If one stall raises its price, you just walk to the next stall. Many close substitutes → buyers switch easily → <b>more elastic</b>.</p><p>Insulin for a diabetic person has no substitute. Even if the price goes up, they must buy it → <b>inelastic</b>.</p><p>Rule: <b>more close substitutes → more elastic</b>.</p>"
+   },
+   {
+    "h": "Factor 2: necessity or luxury?",
+    "body": "<p>A <b>necessity</b> is something you need every day. You keep buying it when the price rises → <b>inelastic</b>. Eggs: e = 0.1 (Table 5-1).</p><p>A <b>luxury</b> is something you can live without. When it gets expensive, you skip it → <b>elastic</b>. Foreign travel: e = 4.1.</p>"
+   },
+   {
+    "h": "Factor 3: time",
+    "body": "<p>Gasoline price goes up. Next week you still drive to work: you have no other way yet. After a few years you can buy a smaller car, move closer, or use the metro.</p><p>Rule: <b>the longer the time after a price change, the more elastic</b> demand becomes. Buyers need time to find substitutes. (This is the chapter opener on slide 2: \"Drive we must\", gasoline e = 0.5 in the short run.)</p>",
+    "chart": {
+     "x": "Quantity of gasoline",
+     "y": "Price of gasoline",
+     "xmax": 10,
+     "ymax": 10,
+     "xticks": [
+      3,
+      5
+     ],
+     "yticks": [
+      5,
+      7
+     ],
+     "lines": [
+      {
+       "pts": [
+        [
+         4.5,
+         10
+        ],
+        [
+         5.5,
+         0
+        ]
+       ],
+       "label": "short run (steep)",
+       "role": "demand"
+      },
+      {
+       "pts": [
+        [
+         2,
+         8
+        ],
+        [
+         8,
+         2
+        ]
+       ],
+       "label": "long run (flatter)",
+       "role": "demand2"
+      }
+     ],
+     "points": [
+      {
+       "x": 5,
+       "y": 5,
+       "label": "start",
+       "guides": true
+      },
+      {
+       "x": 4.8,
+       "y": 7,
+       "label": "next week"
+      },
+      {
+       "x": 3,
+       "y": 7,
+       "label": "after years",
+       "guides": true
+      }
+     ],
+     "caption": "Price rises 5 → 7. Next week people buy almost the same. After some years they buy much less."
+    }
+   },
+   {
+    "h": "Factor 4: share of the consumer's budget",
+    "body": "<p>Salt costs very little. If its price rises 20%, you hardly notice → <b>inelastic</b>.</p><p>Rent or a car takes a big part of your income. A 20% rise hurts a lot, so you look hard for a cheaper option → <b>more elastic</b>. Housing: e = 1.2.</p><p>Rule: <b>bigger share of income spent on the good → more elastic</b>. Slide 13 asks the same thing: \"Is the share of the income spent on the good high?\"</p>"
+   },
+   {
+    "h": "Putting it together: Table 5-1",
+    "body": "<table><tr><th>Good</th><th>e</th><th>Why</th></tr><tr><td>Eggs</td><td>0.1</td><td>necessity, small budget share</td></tr><tr><td>Gasoline</td><td>0.5</td><td>few substitutes in the short run</td></tr><tr><td>Housing</td><td>1.2</td><td>big budget share</td></tr><tr><td>Restaurant meals</td><td>2.3</td><td>luxury; you can cook at home (substitute)</td></tr><tr><td>Foreign travel</td><td>4.1</td><td>luxury, big budget share, many substitutes (travel at home)</td></tr></table><p>Note: slide 9 only <b>names</b> the four factors. The directions above are the standard textbook (Krugman) logic.</p>"
+   }
+  ],
+  "example": {
+   "problem": "<p>For each good, say if demand is likely elastic or inelastic, and name the factor that explains it:</p><ol><li>Insulin</li><li>One brand of cola (e.g. Pepsi)</li><li>A new car</li><li>Gasoline: one week after a price rise vs five years after</li></ol>",
+   "solution": "<ol><li><b>Inelastic.</b> No close substitutes, and it is a necessity.</li><li><b>Elastic.</b> Many close substitutes (Coca-Cola, other brands). If Pepsi gets expensive, people switch.</li><li><b>Elastic.</b> Large share of the budget, and it is more of a luxury; people can wait or buy a used car.</li><li><b>Inelastic after one week, more elastic after five years.</b> Factor: time. Over time people buy smaller cars or use public transport.</li></ol>"
+  },
+  "check": [
+   {
+    "q": "Name the four factors on slide 9.",
+    "a": "Close substitutes; necessity or luxury; time; proportion (share) of the consumer's budget."
+   },
+   {
+    "q": "More substitutes → more or less elastic?",
+    "a": "More elastic."
+   },
+   {
+    "q": "Is demand more elastic in the short run or the long run?",
+    "a": "The long run. Buyers have time to adjust and find substitutes."
+   },
+   {
+    "q": "Salt vs housing: which has more elastic demand, and why?",
+    "a": "Housing. It takes a big share of the budget, so buyers react strongly to its price."
+   }
+  ],
+  "exam": {
+   "question": "<p>What factors determine the price elasticity of demand? Explain each one with an example.</p>",
+   "answer": "<ol><li><b>Availability of close substitutes:</b> when close substitutes are available, consumers switch easily when the price rises, so demand is more elastic (one brand of cola). Without substitutes demand is inelastic (insulin).</li><li><b>Necessity or luxury:</b> demand for a necessity is inelastic because people buy it anyway (eggs, e = 0.1). Demand for a luxury is elastic because people can do without it (foreign travel, e = 4.1).</li><li><b>Time:</b> demand becomes more elastic the longer the time after the price change, because consumers can adjust (gasoline: small change next week, bigger change after years).</li><li><b>Proportion of the consumer's budget:</b> if the good takes a large share of income, consumers react strongly, so demand is more elastic (housing, e = 1.2). A small share gives inelastic demand (salt).</li></ol>"
+  },
+  "memorize": [
+   "4 factors: substitutes, necessity/luxury, time, budget share",
+   "More close substitutes → more elastic",
+   "Necessity → inelastic; luxury → elastic",
+   "Longer time → more elastic",
+   "Bigger share of budget → more elastic",
+   "Eggs 0.1 (inelastic) … foreign travel 4.1 (elastic)"
+  ],
+  "note": "Slide 9 lists only the names of the factors. The direction of each factor comes from the textbook, not from the slide text."
+ },
+ {
+  "id": "Q18",
+  "label": "Q18",
+  "week": 5,
+  "slides": [
+   11,
+   12
+  ],
+  "kind": "theory",
+  "title": "Deriving dR/dP = Q(1 − e), step by step",
+  "hook": "After this lesson you can rebuild the professor's revenue formula from R = P × Q in five lines, and explain what it means.",
+  "cards": [
+   {
+    "h": "Why price appears twice in revenue",
+    "body": "<p>Revenue is R = P × Q. But Q is not fixed: when P goes up, buyers buy less. So Q <b>depends on</b> P. We write it as Q(P):</p><p><b>R = P × Q(P)</b></p><p>So price affects revenue in two ways: directly (P), and through quantity (Q(P)). This is the same \"price effect vs quantity effect\" you saw as rectangles on slide 10.</p>"
+   },
+   {
+    "h": "Step 1: differentiate (product rule)",
+    "body": "<p>Product rule: the derivative of (first × second) = (derivative of first) × second + first × (derivative of second).</p><p>Here first = P (its derivative is 1) and second = Q(P) (its derivative is dQ/dP):</p><p><b>dR/dP = Q + (dQ/dP)·P</b>, where dQ/dP &lt; 0</p><ul><li><b>Q</b>: price effect. Each unit sold pays a bit more. Positive.</li><li><b>(dQ/dP)·P</b>: quantity effect. Fewer units are sold. Negative, because dQ/dP &lt; 0 (demand slopes down).</li></ul>"
+   },
+   {
+    "h": "Step 2: divide by Q",
+    "body": "<p>Divide every term by Q:</p><p><b>(dR/dP)·(1/Q) = 1 + (dQ/dP)·(P/Q)</b></p><p>Why? Because the last term now has exactly the shape of an elasticity. Look at the next card.</p>"
+   },
+   {
+    "h": "Step 3: find the elasticity inside",
+    "body": "<p>Elasticity = % change in Q ÷ % change in P:</p><p>e = |(dQ/Q) / (dP/P)| = |(dQ/dP)·(P/Q)|</p><p>We use the absolute value, so e is positive. But dQ/dP is negative, so the term itself is negative:</p><p><b>(dQ/dP)·(P/Q) = −e</b></p><p>Kind warning: slide 11 writes the last part as |dQ/dP / P/Q| (divided). It should be <b>multiplied</b>: dividing by (dP/P) is the same as multiplying by (P/dP). The next line of the slide uses the correct product.</p>"
+   },
+   {
+    "h": "Step 4: finish, and read the result",
+    "body": "<p>Put −e into Step 2:</p><p>(dR/dP)·(1/Q) = 1 − e</p><p>Multiply both sides by Q:</p><p><b>dR/dP = Q(1 − e)</b></p><p>Slide 12 reads it. Q &gt; 0, so only (1 − e) decides the sign:</p><ul><li>e &lt; 1 → dR/dP &gt; 0 → raise price, revenue <b>rises</b>.</li><li>e = 1 → dR/dP = 0 → revenue does not change; it is at its <b>maximum (or minimum)</b>.</li><li>e &gt; 1 → dR/dP &lt; 0 → raise price, revenue <b>falls</b> (demand decreases too much).</li></ul>"
+   },
+   {
+    "h": "See it on a graph: the revenue hill",
+    "body": "<p>Take demand Q = 100 − 2P. Then R = P(100 − 2P) = 100P − 2P². Draw R against P: it is a hill.</p><ul><li>Left side (low price, e &lt; 1): raising the price moves you <b>up</b> the hill.</li><li>Top (P = 25, e = 1): dR/dP = 0, revenue is maximum, R = 1,250.</li><li>Right side (high price, e &gt; 1): raising the price moves you <b>down</b>.</li></ul>",
+    "chart": {
+     "x": "Price P",
+     "y": "Total revenue R = P × Q",
+     "xmax": 52,
+     "ymax": 1400,
+     "xticks": [
+      10,
+      25,
+      40
+     ],
+     "yticks": [
+      800,
+      1250
+     ],
+     "lines": [
+      {
+       "pts": [
+        [
+         0,
+         0
+        ],
+        [
+         5,
+         450
+        ],
+        [
+         10,
+         800
+        ],
+        [
+         15,
+         1050
+        ],
+        [
+         20,
+         1200
+        ],
+        [
+         25,
+         1250
+        ],
+        [
+         30,
+         1200
+        ],
+        [
+         35,
+         1050
+        ],
+        [
+         40,
+         800
+        ],
+        [
+         45,
+         450
+        ],
+        [
+         50,
+         0
+        ]
+       ],
+       "label": "R(P)",
+       "role": "other"
+      }
+     ],
+     "points": [
+      {
+       "x": 25,
+       "y": 1250,
+       "label": "top: e = 1, dR/dP = 0",
+       "guides": true,
+       "show": true
+      },
+      {
+       "x": 10,
+       "y": 800,
+       "label": "e = 0.25: going up"
+      },
+      {
+       "x": 40,
+       "y": 800,
+       "label": "e = 4: going down"
+      }
+     ],
+     "caption": "Demand Q = 100 − 2P, so R = 100P − 2P². Revenue climbs while e is below 1, peaks at e = 1, falls when e is above 1."
+    }
+   }
+  ],
+  "example": {
+   "problem": "<p>Demand is Q = 100 − 2P (so dQ/dP = −2). For P = 10, 25 and 40, find Q, the elasticity e = |dQ/dP|·P/Q, and dR/dP = Q(1 − e). Check with the direct derivative of R = 100P − 2P². What should the seller do at each price?</p>",
+   "solution": "<p>e = 2 × P / Q. Direct derivative: dR/dP = 100 − 4P.</p><table><tr><th>P</th><th>Q</th><th>e</th><th>Q(1 − e)</th><th>100 − 4P</th><th>R</th></tr><tr><td>10</td><td>80</td><td>20/80 = 0.25</td><td>80 × 0.75 = 60</td><td>60</td><td>800</td></tr><tr><td>25</td><td>50</td><td>50/50 = 1</td><td>50 × 0 = 0</td><td>0</td><td>1,250</td></tr><tr><td>40</td><td>20</td><td>80/20 = 4</td><td>20 × (−3) = −60</td><td>−60</td><td>800</td></tr></table><ul><li>P = 10: inelastic, dR/dP &gt; 0 → <b>raise</b> the price.</li><li>P = 25: unit-elastic, dR/dP = 0 → revenue is already <b>maximum</b> (1,250).</li><li>P = 40: elastic, dR/dP &lt; 0 → <b>lower</b> the price.</li></ul><p>Both methods give the same numbers, so the formula works.</p>"
+  },
+  "check": [
+   {
+    "q": "In dR/dP = Q + (dQ/dP)·P, what does the term Q mean?",
+    "a": "The price effect: each of the Q units sold now pays a bit more, so revenue rises by Q."
+   },
+   {
+    "q": "Why is (dQ/dP)·(P/Q) equal to −e, not +e?",
+    "a": "Because dQ/dP &lt; 0 (demand slopes down), while e is defined as an absolute value (positive)."
+   },
+   {
+    "q": "Demand Q = 60 − 3P. At P = 10, find Q, e and the sign of dR/dP.",
+    "a": "Q = 30, e = 3 × 10 / 30 = 1, so dR/dP = 30 × 0 = 0. Revenue is at its maximum: R = 10 × 30 = 300."
+   },
+   {
+    "q": "What is wrong in slide 11's line e = |dQ/dP / P/Q|?",
+    "a": "It should be multiplication: e = |(dQ/dP)·(P/Q)|."
+   }
+  ],
+  "exam": {
+   "question": "<p>Revenue is R = P × Q, where Q depends on P. Show that dR/dP = Q(1 − e), where e is the price elasticity of demand, and explain what it means for a seller who raises the price.</p>",
+   "answer": "<p>R = P · Q(P)</p><p>dR/dP = Q + (dQ/dP)·P, where dQ/dP &lt; 0 (product rule)</p><p>Divide by Q: (dR/dP)·(1/Q) = 1 + (dQ/dP)·(P/Q)</p><p>Since e = |(dQ/Q)/(dP/P)| = |(dQ/dP)·(P/Q)| and dQ/dP &lt; 0, we have (dQ/dP)·(P/Q) = −e.</p><p>So (dR/dP)·(1/Q) = 1 − e, and <b>dR/dP = Q(1 − e)</b>.</p><p>Q &gt; 0, so the sign depends on 1 − e: (1) if e &lt; 1 (inelastic), dR/dP &gt; 0 and revenue rises when price rises, even though Q falls; (2) if e = 1, dR/dP = 0, revenue does not change and is at its maximum or minimum; (3) if e &gt; 1 (elastic), dR/dP &lt; 0 and revenue falls when price rises, because demand decreases too much.</p>"
+  },
+  "memorize": [
+   "R = P · Q(P)",
+   "dR/dP = Q + P·(dQ/dP), dQ/dP &lt; 0",
+   "Divide by Q; (dQ/dP)(P/Q) = −e",
+   "dR/dP = Q(1 − e)",
+   "e &lt; 1: R ↑ with P; e = 1: R max; e &gt; 1: R ↓",
+   "Slide 11 typo: e = |(dQ/dP) × (P/Q)|, not divided"
+  ]
+ },
+ {
+  "id": "Q25",
+  "label": "Q25",
+  "week": 5,
+  "slides": [
+   6
+  ],
+  "kind": "calculation",
+  "title": "The midpoint method for elasticity",
+  "hook": "After this lesson you can compute an elasticity that gives the same answer whether the price goes up or down.",
+  "cards": [
+   {
+    "h": "The problem it fixes",
+    "body": "<p>The simple method (slide 4) divides each change by the <b>starting</b> value. On slide 5, the same two points gave e = <b>0.82</b> going A → B, but e = <b>1.22</b> going B → A. One looks inelastic, the other elastic. That is confusing.</p><p>We want <b>one</b> answer for two points. The midpoint method gives it.</p>"
+   },
+   {
+    "h": "The idea: divide by the average",
+    "body": "<p>Bread goes from 4,000 to 6,000 som. Simple method: +2,000/4,000 = <b>+50%</b>. Going back from 6,000 to 4,000: 2,000/6,000 = <b>33%</b>. Two answers!</p><p>Midpoint method: use the <b>average</b> of the two prices, (4,000 + 6,000)/2 = 5,000. Change = 2,000/5,000 = <b>40%</b>, in both directions.</p><p>Slide 6, formula (5-4):</p><p><b>% change in X = (Change in X ÷ Average value of X) × 100</b></p>"
+   },
+   {
+    "h": "The full formula (5-5) as a recipe",
+    "body": "<p>Price elasticity of demand = [ (Q<sub>2</sub> − Q<sub>1</sub>) ÷ ((Q<sub>1</sub> + Q<sub>2</sub>)/2) ] ÷ [ (P<sub>2</sub> − P<sub>1</sub>) ÷ ((P<sub>1</sub> + P<sub>2</sub>)/2) ]</p><ol><li>Average quantity = (Q<sub>1</sub> + Q<sub>2</sub>)/2.</li><li>% change in Q = change in Q ÷ average Q × 100.</li><li>Average price = (P<sub>1</sub> + P<sub>2</sub>)/2.</li><li>% change in P = change in P ÷ average P × 100.</li><li>e = % change in Q ÷ % change in P. Drop the minus sign (absolute value).</li></ol>"
+   },
+   {
+    "h": "Solve the slide's numbers",
+    "body": "<p>A: P = $0.90, Q = 1,100. B: P = $1.10, Q = 900.</p><ol><li>Average Q = (1,100 + 900)/2 = <b>1,000</b>.</li><li>% change in Q = 200 / 1,000 × 100 = <b>20%</b>.</li><li>Average P = (0.90 + 1.10)/2 = <b>$1.00</b>.</li><li>% change in P = 0.20 / 1.00 × 100 = <b>20%</b>.</li><li>e = 20% / 20% = <b>1.00</b>.</li></ol><p>Going B → A uses the <b>same averages</b> (1,000 and $1.00), so again e = 1.00. Demand is <b>unit-elastic</b>.</p><p>Revenue check: 0.90 × 1,100 = $990 and 1.10 × 900 = $990. No change, exactly as unit-elastic demand predicts.</p>",
+    "chart": {
+     "x": "Quantity Q",
+     "y": "Price P ($)",
+     "xmax": 1400,
+     "ymax": 1.5,
+     "xticks": [
+      900,
+      1000,
+      1100
+     ],
+     "yticks": [
+      0.9,
+      1.0,
+      1.1
+     ],
+     "lines": [
+      {
+       "pts": [
+        [
+         700,
+         1.3
+        ],
+        [
+         1400,
+         0.6
+        ]
+       ],
+       "label": "D",
+       "role": "demand"
+      }
+     ],
+     "points": [
+      {
+       "x": 900,
+       "y": 1.1,
+       "label": "B"
+      },
+      {
+       "x": 1000,
+       "y": 1.0,
+       "label": "M = midpoint (1,000; $1.00)",
+       "guides": true
+      },
+      {
+       "x": 1100,
+       "y": 0.9,
+       "label": "A"
+      }
+     ],
+     "caption": "The midpoint M sits exactly halfway between A and B. We divide every change by M's values."
+    }
+   },
+   {
+    "h": "Read the answer",
+    "body": "<ul><li>e &gt; 1: elastic (price up → revenue down)</li><li>e = 1: unit-elastic (revenue unchanged)</li><li>e &lt; 1: inelastic (price up → revenue up)</li></ul><p>Exam tip: write every step (two averages, two % changes, the ratio). Round at the end, not in the middle.</p>"
+   }
+  ],
+  "example": {
+   "problem": "<p><b>Practice.</b> A taxi company raises the fare from 10,000 som to 14,000 som. Rides per day fall from 260 to 220.</p><p>(a) Find the price elasticity of demand with the midpoint method. (b) Is demand elastic or inelastic? (c) Check with total revenue. (d) Bonus: what does the simple method give in each direction?</p>",
+   "solution": "<p><b>(a)</b></p><ol><li>Average Q = (260 + 220)/2 = 240. Change in Q = 40. % change in Q = 40/240 × 100 = <b>16.67%</b>.</li><li>Average P = (10,000 + 14,000)/2 = 12,000. Change in P = 4,000. % change in P = 4,000/12,000 × 100 = <b>33.33%</b>.</li><li>e = 16.67 / 33.33 = <b>0.5</b>.</li></ol><p><b>(b)</b> e = 0.5 &lt; 1, so demand is <b>inelastic</b>.</p><p><b>(c)</b> Before: 10,000 × 260 = 2,600,000 som. After: 14,000 × 220 = 3,080,000 som. Revenue <b>rises</b> when the price rises, which matches inelastic demand.</p><p><b>(d)</b> Simple, going up: (40/260) ÷ (4,000/10,000) = 15.38% ÷ 40% = 0.38. Simple, going down: (40/220) ÷ (4,000/14,000) = 18.18% ÷ 28.57% = 0.64. Two different numbers; the midpoint method gives one: 0.5.</p>"
+  },
+  "check": [
+   {
+    "q": "What is the average of $0.90 and $1.10?",
+    "a": "$1.00"
+   },
+   {
+    "q": "Why does the midpoint method give the same answer in both directions?",
+    "a": "The average of the two values is the same whichever point you start from."
+   },
+   {
+    "q": "Price 8 → 12, quantity 30 → 24. Midpoint elasticity?",
+    "a": "% change in Q = 6/27 × 100 = 22.2%. % change in P = 4/10 × 100 = 40%. e = 22.2/40 ≈ 0.56, inelastic."
+   },
+   {
+    "q": "Midpoint e = 1.6. Classify it. What happens to revenue if the price rises?",
+    "a": "Elastic (e &gt; 1). Revenue falls."
+   }
+  ],
+  "exam": {
+   "question": "<p>Using the midpoint method, calculate the price elasticity of demand between A (P = $0.90, Q = 1,100) and B (P = $1.10, Q = 900). Show that the answer is the same from A to B and from B to A, and classify demand.</p>",
+   "answer": "<p>Midpoint formula: e = [(Q<sub>2</sub> − Q<sub>1</sub>)/((Q<sub>1</sub> + Q<sub>2</sub>)/2)] ÷ [(P<sub>2</sub> − P<sub>1</sub>)/((P<sub>1</sub> + P<sub>2</sub>)/2)].</p><p>Average Q = (1,100 + 900)/2 = 1,000; % change in Q = 200/1,000 × 100 = 20%.</p><p>Average P = (0.90 + 1.10)/2 = 1.00; % change in P = 0.20/1.00 × 100 = 20%.</p><p>e = 20% / 20% = <b>1.00</b>.</p><p>From B to A the averages are the same (1,000 and $1.00), so e = 1.00 again. Demand is <b>unit-elastic</b>. (Total revenue: $990 at A and $990 at B, unchanged.) The midpoint method removes the direction problem of the simple method (0.82 vs 1.22).</p>"
+  },
+  "memorize": [
+   "% change = change ÷ AVERAGE × 100",
+   "e = [ΔQ ÷ avg Q] ÷ [ΔP ÷ avg P]",
+   "Slide numbers: 200/1,000 = 20%, 0.20/1.00 = 20% → e = 1.00",
+   "Same answer A → B and B → A",
+   "e = 1 → revenue unchanged ($990 = $990)"
+  ]
+ },
+ {
+  "id": "Q26",
+  "label": "Q26",
+  "week": 5,
+  "slides": [
+   5
+  ],
+  "kind": "calculation",
+  "title": "Why the simple % method gives two different elasticities",
+  "hook": "After this lesson you can compute elasticity with the simple formula in both directions and explain why the two answers differ.",
+  "cards": [
+   {
+    "h": "The simple formula (slide 4)",
+    "body": "<p>Elasticity = how strongly buyers react to price.</p><ul><li>% change in Q = (change in Q ÷ <b>initial</b> Q) × 100</li><li>% change in P = (change in P ÷ <b>initial</b> P) × 100</li><li>e = % change in Q ÷ % change in P</li></ul><p>We ignore the minus sign (absolute value). Key word: <b>initial</b>. You divide by the value where you <b>start</b>.</p>"
+   },
+   {
+    "h": "The slide's data",
+    "body": "<table><tr><th></th><th>Price</th><th>Quantity</th></tr><tr><td>Situation A</td><td>$0.90</td><td>1,100</td></tr><tr><td>Situation B</td><td>$1.10</td><td>900</td></tr></table><p>Change in price = 0.20. Change in quantity = 200. These two changes are the same in both directions. Only the starting point changes.</p><p>(The table on the slide is printed a bit messy: \"Situation A\" slipped into the header row. The graph confirms A = $0.90 with 1,100 and B = $1.10 with 900.)</p>",
+    "chart": {
+     "x": "Quantity Q",
+     "y": "Price P ($)",
+     "xmax": 1400,
+     "ymax": 1.5,
+     "xticks": [
+      900,
+      1100
+     ],
+     "yticks": [
+      0.9,
+      1.1
+     ],
+     "lines": [
+      {
+       "pts": [
+        [
+         700,
+         1.414
+        ],
+        [
+         800,
+         1.238
+        ],
+        [
+         900,
+         1.1
+        ],
+        [
+         1000,
+         0.99
+        ],
+        [
+         1100,
+         0.9
+        ],
+        [
+         1250,
+         0.792
+        ],
+        [
+         1400,
+         0.707
+        ]
+       ],
+       "label": "D",
+       "role": "demand"
+      }
+     ],
+     "points": [
+      {
+       "x": 900,
+       "y": 1.1,
+       "label": "B",
+       "guides": true
+      },
+      {
+       "x": 1100,
+       "y": 0.9,
+       "label": "A",
+       "guides": true
+      }
+     ],
+     "arrows": [
+      {
+       "from": [
+        1130,
+        1.02
+       ],
+       "to": [
+        960,
+        1.17
+       ],
+       "label": "A → B: price up"
+      }
+     ],
+     "caption": "Slide 5: A = ($0.90, 1,100), B = ($1.10, 900). Same two points, but the simple method gives 0.82 or 1.22."
+    }
+   },
+   {
+    "h": "Go A → B (price rises)",
+    "body": "<p>Start at A, so divide by A's values (0.90 and 1,100):</p><ol><li>% change in P = 0.20 / 0.90 × 100 = <b>22.22%</b></li><li>% change in Q = 200 / 1,100 × 100 = <b>18.18%</b></li><li>e = 18.18 / 22.22 = <b>0.82</b></li></ol><p>0.82 &lt; 1 → looks <b>inelastic</b>.</p>"
+   },
+   {
+    "h": "Go B → A (price falls)",
+    "body": "<p>Start at B, so divide by B's values (1.10 and 900):</p><ol><li>% change in P = 0.20 / 1.10 × 100 = <b>18.18%</b></li><li>% change in Q = 200 / 900 × 100 = <b>22.22%</b></li><li>e = 22.22 / 18.18 = <b>1.22</b></li></ol><p>1.22 &gt; 1 → looks <b>elastic</b>.</p>"
+   },
+   {
+    "h": "Why two answers, and why it matters",
+    "body": "<p>Same two points, same demand curve, but two answers (exactly 9/11 = 0.82 and 11/9 = 1.22). The reason: the simple method divides by the <b>starting</b> value, and the starting value depends on the direction.</p><p>It matters because the <b>classification flips</b>: inelastic one way, elastic the other way. The fix is the <b>midpoint method</b> (slide 6): divide by the averages (1,000 and $1.00) → 20% / 20% = <b>1.00</b> both ways.</p><p>Kind warning about slide typos: it writes \"(= 18.1 / 22.22)\"; exactly it is 18.18 / 22.22. And \"(= 22.2 / 1.2)\" should be <b>22.22 / 18.18</b> (22.2 / 1.2 would be 18.5). The final answers 0.82 and 1.22 are correct.</p>"
+   }
+  ],
+  "example": {
+   "problem": "<p><b>Practice.</b> At the bazaar, a melon seller raises the price from 10,000 som (A) to 15,000 som (B). Sales fall from 100 to 60 melons a day.</p><p>(a) Simple method, A → B. (b) Simple method, B → A. (c) Midpoint method. (d) Which answer agrees with what happens to revenue?</p>",
+   "solution": "<p>Change in P = 5,000. Change in Q = 40.</p><p><b>(a) A → B</b> (divide by 10,000 and 100): % change in P = 5,000/10,000 × 100 = 50%. % change in Q = 40/100 × 100 = 40%. e = 40/50 = <b>0.8</b> (looks inelastic).</p><p><b>(b) B → A</b> (divide by 15,000 and 60): % change in P = 5,000/15,000 × 100 = 33.33%. % change in Q = 40/60 × 100 = 66.67%. e = 66.67/33.33 = <b>2.0</b> (looks elastic).</p><p><b>(c) Midpoint</b>: average P = 12,500, average Q = 80. % change in P = 5,000/12,500 × 100 = 40%. % change in Q = 40/80 × 100 = 50%. e = 50/40 = <b>1.25</b> (elastic), same in both directions.</p><p><b>(d)</b> Revenue at A = 10,000 × 100 = 1,000,000 som. At B = 15,000 × 60 = 900,000 som. The price rose and revenue <b>fell</b>, so demand is elastic. The midpoint answer (1.25) agrees. The simple A → B answer (0.8) gives the wrong picture.</p>"
+  },
+  "check": [
+   {
+    "q": "Going A → B with the simple method, whose values do you divide by?",
+    "a": "A's values (the starting point): 0.90 and 1,100."
+   },
+   {
+    "q": "Compute 200 / 900 × 100.",
+    "a": "22.22%"
+   },
+   {
+    "q": "Is 0.82 elastic or inelastic? And 1.22?",
+    "a": "0.82 &lt; 1: inelastic. 1.22 &gt; 1: elastic."
+   },
+   {
+    "q": "How do we get one answer for both directions?",
+    "a": "Use the midpoint method: divide by the averages. Here 20% / 20% = 1.00."
+   }
+  ],
+  "exam": {
+   "question": "<p>The price rises from $0.90 (A, quantity demanded 1,100) to $1.10 (B, quantity demanded 900). Using the simple percent-change formula, compute the price elasticity of demand from A to B and from B to A. Why are the answers different? How can this problem be solved?</p>",
+   "answer": "<p><b>A → B</b> (divide by A's values): % change in P = 0.2/0.9 × 100 = 22.22%; % change in Q = 200/1,100 × 100 = 18.18%; e = 18.18/22.22 = <b>0.82</b> (inelastic).</p><p><b>B → A</b> (divide by B's values): % change in P = 0.2/1.10 × 100 = 18.18%; % change in Q = 200/900 × 100 = 22.22%; e = 22.22/18.18 = <b>1.22</b> (elastic).</p><p><b>Why different:</b> the simple method divides the change by the initial value, and the initial value depends on the direction of the move. So the same two points give two elasticities, even two different classifications.</p><p><b>Solution:</b> use the midpoint method, dividing by the average values: % change in Q = 200/1,000 = 20%, % change in P = 0.20/1.00 = 20%, e = <b>1.00</b> in both directions (unit-elastic).</p>"
+  },
+  "memorize": [
+   "Simple method: divide by the STARTING value",
+   "A → B: 18.18% / 22.22% = 0.82 (inelastic)",
+   "B → A: 22.22% / 18.18% = 1.22 (elastic)",
+   "Cause: different base in each direction",
+   "Fix: midpoint method → 20% / 20% = 1.00",
+   "Slide typos: 18.1 → 18.18; 22.2/1.2 → 22.22/18.18"
+  ]
+ }
+]
